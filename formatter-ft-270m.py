@@ -41,7 +41,7 @@ model.config.eos_token_id = tokenizer.eos_token_id
 if hasattr(model, 'generation_config'):
     model.generation_config.pad_token_id = tokenizer.pad_token_id
     model.generation_config.bos_token_id = tokenizer.bos_token_id
-
+model.resize_token_embeddings(len(tokenizer))
 
 def load_yaml_data(file_path):
     """Load training data from YAML file"""

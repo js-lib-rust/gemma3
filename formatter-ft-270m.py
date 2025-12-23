@@ -14,7 +14,7 @@ MODEL_DIR = os.environ.get("AI_MODEL_DIR")
 MODEL_NAME = MODEL_DIR + "/hugging-face/model/gemma-3-270m-it"
 # MODEL_NAME = "./formatter-270m"
 OUTPUT_DIR = "./formatter-270m"
-YAML_FILE = "formatter-set-270m.yml"
+YAML_FILE = "data/formatter-set.yml"
 
 DTYPE = torch.float32
 MAX_LENGTH = 1024

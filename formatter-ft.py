@@ -34,7 +34,7 @@ tokenizer.pad_token = tokenizer.eos_token
 
 # 2. Prepare your training data
 def create_training_examples():
-    with open('formatter-set-small.yml', 'r', encoding='utf-8') as f:
+    with open('data/formatter-set-small.yml', 'r', encoding='utf-8') as f:
         data = yaml.safe_load(f)
     return data['examples']
 

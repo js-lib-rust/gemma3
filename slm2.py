@@ -159,7 +159,7 @@ class RequestHandler(BaseHTTPRequestHandler):  # type: ignore
 
         # for now, context is used only for RAG
         if context:
-            with open(context + '.md', 'r') as file:
+            with open(f'context/{context}.md', 'r') as file:
                 context = file.read()
             prompt = rag_template.format(context=context, question=prompt)
             if not system:

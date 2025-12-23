@@ -9,9 +9,10 @@ from transformers import (
 )
 from datasets import Dataset
 from peft import LoraConfig, get_peft_model
+import os
 
-# Configuration
-MODEL_NAME = "D:/ai/hugging-face/model/gemma-3-1b-it"
+MODEL_DIR = os.environ.get("AI_MODEL_DIR")
+MODEL_NAME = MODEL_DIR + "/hugging-face/model/gemma-3-1b-it"
 OUTPUT_DIR = "./formatter-1b"
 YAML_FILE = "formatter-set-small.yml"
 

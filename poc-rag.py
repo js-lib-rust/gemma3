@@ -1,38 +1,27 @@
+import argparse
+import time
+
+import torch
 from transformers import (
     AutoModelForCausalLM,
     AutoTokenizer,
     TextStreamer,
-    BitsAndBytesConfig,
-    HfArgumentParser,
-    TrainingArguments,
-    pipeline,
-    logging,
 )
-import torch
-import bitsandbytes
-#import accelerate
-import time
-import sys
-import argparse
+import os
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--context")
 parser.add_argument("question")
 args = parser.parse_args()
 
-base_model = "/home/irotaru/data/hugging-face/model/gemma-3-4b-it"
+model_dir = os.environ.get("AI_MODEL_DIR")
+base_model = model_dir + "/hugging-face/model/gemma-3-4b-it"
 
 tokenizer = AutoTokenizer.from_pretrained(base_model)
-#print(tokenizer)
 
 start_time = time.time()
-model = AutoModelForCausalLM.from_pretrained(
-    base_model,
-    device_map="cuda:0",
-    dtype=torch.bfloat16,
-)
+model = AutoModelForCausalLM.from_pretrained(base_model, device_map="cuda:0", dtype=torch.bfloat16)
 print(f"Model load: {time.time() - start_time}")
-#print(model)
 print(f"model parameters: {model.num_parameters():,}")
 
 if args.context:
@@ -40,23 +29,23 @@ if args.context:
         context = file.read()
 
     prompt = f"""
-<start_of_turn>user
-You are an expert Q&A assistant. Your answer must be based only on the provided context. If the context does not contain the answer, state that you 'cannot answer based on the provided documents'.
+SYSTEM: You are a contextual query answering assistant. Your answer must be based only on the provided context. If a \
+relation is missing from context do not try to infer it. Please generate elaborated, complete and nicely crafted \
+responses, always using markdown; if response is a list always create markdown table. If the context does not contain \
+the answer, state that you 'cannot answer based on the provided documents'.
 
-Context:
+CONTEXT:
 ---
 {context}
 ---
 
-Question: {args.question}
-<end_of_turn>
-<start_of_turn>model
+QUESTION: {args.question}
 """
 else:
     prompt = args.question
 
 for i in range(1):
-    print("-------------------------------------------------------");
+    print("-" * 60)
     print(args.question)
     print()
 
@@ -68,13 +57,14 @@ for i in range(1):
         add_generation_prompt=True,
         enable_thinking=True
     )
-    print(f'text: {text}')
+    print(f'\n\n\n------\ntext: {text}\n\n------\n\n\n')
     model_inputs = tokenizer([text], return_tensors="pt").to(model.device)
+    print(f'model inputs length: {len(model_inputs.input_ids[0])}')
 
     streamer = TextStreamer(tokenizer, skip_prompt=True, skip_special_tokens=True)
     generated_ids = model.generate(
         **model_inputs,
-        #max_new_tokens=32_768,
+        # max_new_tokens=32_768,
         max_new_tokens=131_072,
         streamer=streamer
     )
@@ -90,7 +80,6 @@ for i in range(1):
     thinking_content = tokenizer.decode(output_ids[:index], skip_special_tokens=True).strip(" ")
     content = tokenizer.decode(output_ids[index:], skip_special_tokens=True).strip(" ")
 
-    #print("thinking content:", thinking_content)
-    #print("content:", content)
+    # print("thinking content:", thinking_content)
+    # print("content:", content)
     print(f"Text generation time: {time.time() - start_time}")
-    

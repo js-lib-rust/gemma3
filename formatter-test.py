@@ -36,16 +36,31 @@ user_prompt = "please list all health readings"
 # user_prompt = "save blood glucose 101 to medical archive"
 # user_prompt = "save glucose 101"
 #user_prompt = "how high is john doe?"
-function_response = """{"timestamp":"2025-12-17 08:47:02","person":"Iulian Rotaru","measurement":"systolic_pressure","value":124}
-{"timestamp":"2025-12-17 08:47:03","person":"Iulian Rotaru","measurement":"diastolic_pressure","value":81}
-{"timestamp":"2025-12-17 08:47:04","person":"Iulian Rotaru","measurement":"pulse_pressure","value":43}
-{"timestamp":"2025-12-17 08:47:05","person":"Iulian Rotaru","measurement":"heart_rate","value":72}
-{"timestamp":"2025-12-17 08:48:58","person":"Iulian Rotaru","measurement":"body_temperature","value":35.4}
-{"timestamp":"2025-12-20 08:53:55","person":"Iulian Rotaru","measurement":"blood_glucose","value":101.0}
-{"timestamp":"2025-12-17 08:49:26","person":"Iulian Rotaru","measurement":"body_weight","value":89.5}
-{"timestamp":"2025-12-17 08:49:27","person":"Iulian Rotaru","measurement":"body_mass_index","value":28.89}
-{"timestamp":"2025-12-17 08:49:28","person":"Iulian Rotaru","measurement":"body_height","value":1.76}
-{"timestamp":"2025-12-17 08:49:29","person":"Iulian Rotaru","measurement":"intelligence_quotient","value":105}
+
+# function_response = """{"timestamp":"2025-12-17 08:47:02","person":"Iulian Rotaru","measurement":"systolic_pressure","value":124}
+# {"timestamp":"2025-12-17 08:47:03","person":"Iulian Rotaru","measurement":"diastolic_pressure","value":81}
+# {"timestamp":"2025-12-17 08:47:04","person":"Iulian Rotaru","measurement":"pulse_pressure","value":43}
+# {"timestamp":"2025-12-17 08:47:05","person":"Iulian Rotaru","measurement":"heart_rate","value":72}
+# {"timestamp":"2025-12-17 08:48:58","person":"Iulian Rotaru","measurement":"body_temperature","value":35.4}
+# {"timestamp":"2025-12-20 08:53:55","person":"Iulian Rotaru","measurement":"blood_glucose","value":101.0}
+# {"timestamp":"2025-12-17 08:49:26","person":"Iulian Rotaru","measurement":"body_weight","value":89.5}
+# {"timestamp":"2025-12-17 08:49:27","person":"Iulian Rotaru","measurement":"body_mass_index","value":28.89}
+# {"timestamp":"2025-12-17 08:49:28","person":"Iulian Rotaru","measurement":"body_height","value":1.76}
+# {"timestamp":"2025-12-17 08:49:29","person":"Iulian Rotaru","measurement":"intelligence_quotient","value":105}
+# """
+
+function_response = """| timestamp | person | measurement | value |
+| :--- | :--- | :--- | :--- |
+| 2025-12-17 08:47:02 | Iulian Rotaru | systolic_pressure | 124 |
+| 2025-12-17 08:47:03 | Iulian Rotaru | diastolic_pressure | 81 |
+| 2025-12-17 08:47:04 | Iulian Rotaru | pulse_pressure | 43 |
+| 2025-12-17 08:47:05 | Iulian Rotaru | heart_rate" | 72 |
+| 2025-12-17 08:48:58 | Iulian Rotaru | body_temperature | 35.4 |
+| 2025-12-20 08:53:55 | Iulian Rotaru | blood_glucose | 101.0 |
+| 2025-12-17 08:49:26 | Iulian Rotaru | body_weight | 89.5 |
+| 2025-12-17 08:49:27 | Iulian Rotaru | body_mass_index | 28.89 |
+| 2025-12-17 08:49:28 | Iulian Rotaru | body_height | 1.76 |
+| 2025-12-17 08:49:29 | Iulian Rotaru | intelligence_quotient | 105 |
 """
 
 # function_response = """{"timestamp":"2025-12-22 13:53:55","person":"Iulian Rotaru","measurement":"blood_glucose","value":101.0}"""

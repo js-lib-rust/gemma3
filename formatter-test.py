@@ -72,7 +72,8 @@ function_response = """| timestamp | person | measurement | value |
 
 chat = [
     {"role": "system", "content": system_prompt},
-    {"role": "user", "content": f"User Prompt: {user_prompt}\nFunction Response: {function_response}"}
+    #{"role": "user", "content": f"User Prompt: {user_prompt}\nFunction Response: {function_response}"}
+    {"role": "user", "content": f"{user_prompt}\n<start_function_response>\n{function_response}\n<end_function_response>"}
     #{"role": "user", "content": "what is the length of the danube river and were is reach the sea"}
     #{"role": "user", "content": "what is the length of the nile river"}
     #{"role": "user", "content": "what is the height of mount everest"}

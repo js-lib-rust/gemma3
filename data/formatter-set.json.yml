@@ -120,7 +120,7 @@ examples:
           Here are your health measurements as of February 13, 2021:
 
           | Time | Measurement | Value |
-          |------|-------------|-------|
+          | :--- | :--- | :--- |
           | 08:47:02 | Systolic Pressure | 115 mmHg |
           | 08:47:03 | Diastolic Pressure | 75 mmHg |
           | 08:47:04 | Pulse Pressure | 40 mmHg |
@@ -148,7 +148,7 @@ examples:
           Here's are your health measurements for today, December 21, 2025:
 
           | Time | Measurement | Value |
-          |------|-------------|-------|
+          | :--- | :--- | :--- |
           | 08:47:02 | Systolic Pressure | 132 mmHg |
           | 08:47:03 | Diastolic Pressure | 85 mmHg |
           | 08:47:04 | Pulse Pressure | 47 mmHg |
@@ -202,7 +202,7 @@ examples:
           Here are your health measurements as of yesterday, January 20, 2026:
 
           | Time | Measurement | Value |
-          |------|-------------|-------|
+          | :--- | :--- | :--- |
           | 12:15:22 | Systolic Pressure | 124 mmHg |
           | 12:15:23 | Diastolic Pressure | 81 mmHg |
           | 12:15:24 | Pulse Pressure | 43 mmHg |
@@ -226,6 +226,20 @@ examples:
 
   - messages:
       - role: system
+        content: Respond to the next user prompt using provided function response.
+      - role: user
+        content: |
+          User Prompt: what was my body temperature this morning?
+          Function Response: {"person":"Iulian Rotaru","measurement":"body_mass_index","value":28.5}
+          {"person":"Iulian Rotaru","measurement":"heart_rate","value":72}
+      - role: model
+        content: |
+          I don't have a record of your temperature from this morning.
+
+          I only see your body mass index (28.5) and heart rate ($72$ bpm) recorded at 07:15. Would you like to log body temperature reading now?
+
+  - messages:
+      - role: system
         content: |
           Respond to the next user prompt using provided function response.
       - role: user
@@ -235,7 +249,29 @@ examples:
       - role: assistant
         content: |
           Albert Einstein never took a modern IQ (intelligence quotient) test, but experts estimate his IQ at about 170, placing him in the "extraordinary genius" range.
-  
+
+  - messages:
+      - role: system
+        content: Respond to the next user prompt using provided function response.
+      - role: user
+        content: |
+          User Prompt: what was IQ of Albert Einstein?
+          Function Response: {"individual":"Isaac Newton","measurement":"intelligence_quotient","value":180}
+      - role: model
+        content: |
+          I do not have information about Albert Einstein intelligence quotient. I have instead for Isaac Newton; do you want to see it?
+
+  - messages:
+      - role: system
+        content: Respond to the next user prompt using provided function response.
+      - role: user
+        content: |
+          User Prompt: what big is my IQ?
+          Function Response: {}
+      - role: model
+        content: |
+          I do not have information about your intelligence quotient.
+
   - messages:
       - role: system
         content: |
@@ -247,7 +283,18 @@ examples:
       - role: assistant
         content: |
           Bruce Lee’s official height was typically listed as about 171 cm, though there has been some variation in reports over the years. Some sources round it to 173 cm.
-  
+
+  - messages:
+      - role: system
+        content: Respond to the next user prompt using provided function response.
+      - role: user
+        content: |
+          User Prompt: do you know how high was Stephen The Great?
+          Function Response: {}
+      - role: model
+        content: |
+          Sorry, I do no know how high was Stephen The Great.
+
   - messages:
       - role: system
         content: |
@@ -271,6 +318,22 @@ examples:
       - role: assistant
         content: |
           Your pulse pressure is 43 mmHg.
+
+  - messages:
+      - role: system
+        content: Respond to the next user prompt using provided function response.
+      - role: user
+        content: |
+          User Prompt: what was my yesterday pulse pressure?
+          Function Response: {"timestamp":"2026-01-20 12:15:22","person":"Iulian Rotaru","measurement":"systolic_pressure","value":124}
+          {"timestamp":"2026-01-20 12:15:23","person":"Iulian Rotaru","measurement":"diastolic_pressure","value":81}
+          {"timestamp":"2026-01-20 12:15:25","person":"Iulian Rotaru","measurement":"heart_rate","value":72}
+          {"timestamp":"2026-01-20 12:15:45","person":"Iulian Rotaru","measurement":"blood_glucose","value":105}
+          {"timestamp":"2026-01-20 12:15:49","person":"Iulian Rotaru","measurement":"body_height","value":175}
+      - role: model
+        content: |
+          Unfortunately, I don't have any data regarding your pulse pressure from yesterday. Do you want to list all \
+          yesterday readings?
 
   - messages:
       - role: system
@@ -462,6 +525,24 @@ examples:
 
   - messages:
       - role: system
+        content: Respond to the next user prompt using provided function response.
+      - role: user
+        content: |
+          User Prompt: how do my stats look today?
+          Function Response: {"timestamp":"2025-12-17 08:47","measurement":"systolic_pressure","value":138,"status":"high_normal"}
+          {"timestamp":"2025-12-17 08:47","measurement":"diastolic_pressure","value":88,"status":"high_normal"}
+          {"timestamp":"2025-12-17 08:47","measurement":"heart_rate","value":72,"status":"normal"}
+          {"timestamp":"2025-12-17 08:48","measurement":"body_temperature","value":36.6,"status":"normal"}
+          {"timestamp":"2025-12-17 08:49","measurement":"body_mass_index","value":28.9,"status":"overweight"}
+          {"timestamp":"2025-12-17 08:49","measurement":"hydration_level","value":65,"status":"optimal"}
+      - role: model
+        content: |
+          Your vitals are mostly steady, though your blood pressure is slightly elevated at **138/88 mmHg**. 
+  
+          I also noticed your BMI is currently **28.9**, which falls into the overweight category. On the positive side, your heart rate and hydration levels are excellent. Would you like some tips on managing your blood pressure today?
+
+  - messages:
+      - role: system
         content: |
           Respond to the next user prompt using provided function response.
       - role: user
@@ -547,6 +628,17 @@ examples:
 
   - messages:
       - role: system
+        content: Respond to the next user prompt using provided function response.
+      - role: user
+        content: |
+          User Prompt: please troubleshoot the balcony light sensor to identify any malfunctions
+          Function Response: {}
+      - role: model
+        content: |
+          Error: The balcony light sensor is not detected. Please ensure the sensor is properly connected and powered on.
+
+  - messages:
+      - role: system
         content: |
           Respond to the next user prompt using provided function response.
       - role: user
@@ -571,6 +663,17 @@ examples:
 
   - messages:
       - role: system
+        content: Respond to the next user prompt using provided function response.
+      - role: user
+        content: |
+          User Prompt: please start the heater
+          Function Response: {}
+      - role: model
+        content: |
+          Unable to activate central heating. Do you want me to run a device diagnose? 
+
+  - messages:
+      - role: system
         content: |
           Respond to the next user prompt using provided function response.
       - role: user
@@ -580,6 +683,17 @@ examples:
       - role: assistant
         content: |
           Yes, central heating is running.
+
+  - messages:
+      - role: system
+        content: Respond to the next user prompt using provided function response.
+      - role: user
+        content: |
+          User Prompt: is heater currently running?
+          Function Response: {}
+      - role: model
+        content: |
+          Heating system unavailable. Please check power and system status.
 
   - messages:
       - role: system
@@ -623,7 +737,7 @@ examples:
           Respond to the next user prompt using provided function response.
       - role: user
         content: |
-          User Prompt: is heater turned on?
+          User Prompt: is heating turned on?
           Function Response: {"setpoint":30.00,"hysteresis":0.00,"temperature":20.75,"running":true}
       - role: assistant
         content: |
@@ -640,6 +754,17 @@ examples:
       - role: assistant
         content: |
           Heating has been stopped. The setpoint is now 10.00 °C, with a hysteresis of 0.00 °C. The current temperature is 21.63 °C, and the system is no longer running.
+
+  - messages:
+      - role: system
+        content: Respond to the next user prompt using provided function response.
+      - role: user
+        content: |
+          User Prompt: turn on the central heating
+          Function Response: {}
+      - role: model
+        content: |
+          Fail to communicate with central heating controller. This may be due to a power outage, a communication error, or a system fault.
 
   - messages:
       - role: system
@@ -755,7 +880,7 @@ examples:
           Here's a summary of all sensor readings in the house:
           
           | Zone | Name | Measurement | Value |
-          |------|------|-------------|-------|
+          | :--- | :--- | :--- | :--- |
           | Kitchen | DHT Sensor | Humidity | 21.70 %    |
           | Kitchen | DHT Sensor | Temperature | 47.60 °C |
           | Living Room | Thermostat Sensor | Temperature | 22.40 °C |
@@ -777,7 +902,7 @@ examples:
           Here's are home sensor readings:
           
           | Zone | Name | Measurement | Value |
-          |------|------|-------------|-------|
+          | :--- | :--- | :--- | :--- |
           | Kitchen | DHT Sensor | Humidity | 16.80 %    |
           | Kitchen | DHT Sensor | Temperature | 17.50 °C |
           | Living Room | Thermostat Sensor | Temperature | 20.38 °C |
@@ -795,6 +920,39 @@ examples:
       - role: assistant
         content: |
           The temperature in the living room is 21.15 °C.
+
+  - messages:
+      - role: system
+        content: Respond to the next user prompt using provided function response.
+      - role: user
+        content: |
+          User Prompt: how is the living room temperature?
+          Function Response: {"zone":"bathroom","name":"Temperature Sensor","measurement":"temperature","value":"18.15","status":"low"}
+      - role: model
+        content: |
+          The bathroom temperature is 18.15 °C, which is below the desired level. Would you like me to start the central heating?
+
+  - messages:
+      - role: system
+        content: Respond to the next user prompt using provided function response.
+      - role: user
+        content: |
+          User Prompt: what about the temperature in the bedroom?
+          Function Response: {"zone":"bedroom","name":"Temperature Sensor","measurement":"temperature","value":"32.15","status":"high"}
+      - role: model
+        content: |
+          The current temperature in the bedroom is 32.15 °C. Based on my settings, this is considered high. Would you like to activate the cooling system?
+
+  - messages:
+      - role: system
+        content: Respond to the next user prompt using provided function response.
+      - role: user
+        content: |
+          User Prompt: what is temperature in the living?
+          Function Response: {}
+      - role: model
+        content: |
+          The temperature sensor in the living room is currently unavailable. Would you like to initiate a diagnostic test?
 
   - messages:
       - role: system
@@ -920,7 +1078,7 @@ examples:
           **Weather Forecast: Valea Lupului, Iași County, Romania (2025-12-18 to 2026-01-01)**
           
           | Date | Day | High (°C)| Low (°C) | Condition | Precipitation (mm) | Wind (km/h) |
-          |------|-----|----------|----------|-----------|--------------------|-------------|
+          | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
           | 2025-12-18 | Thursday | 2 | -4 | Light Snow | 1.2 | 15 |
           | 2025-12-19 | Friday | 1 | -5 | Cloudy | 0.0 | 12 |
           | 2025-12-20 | Saturday | 3 | -2 | Partly Cloudy | 0.0 | 10 |
@@ -975,7 +1133,7 @@ examples:
           Here's the hourly weather forecast for Valea Lupului, Iași County, Romania on December 22, 2025:
           
           | Time | Weather Code | Temperature (°C) | Humidity (%) | Precipitation (%) | Wind (km/h) |
-          |------|--------------|------------------|--------------|-------------------|-------------|
+          | :--- | :--- | :--- | :--- | :--- | :--- |
           | 00:00 | Overcast | 2.3 | 97 | 0 | 3.7 |
           | 01:00 | Fog | 2.3 | 97 | 0 | 2.9 |
           | 02:00 | Fog | 2.3 | 98 | 0 | 2.4 |

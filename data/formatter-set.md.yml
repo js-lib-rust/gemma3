@@ -130,7 +130,7 @@ examples:
           Here are your health measurements as of February 13, 2021:
 
           | Time | Measurement | Value |
-          |------|-------------|-------|
+          | :--- | :--- | :--- |
           | 08:47:02 | Systolic Pressure | 115 mmHg |
           | 08:47:03 | Diastolic Pressure | 75 mmHg |
           | 08:47:04 | Pulse Pressure | 40 mmHg |
@@ -160,7 +160,7 @@ examples:
           Here's are your health measurements for today, December 21, 2025:
 
           | Time | Measurement | Value |
-          |------|-------------|-------|
+          | :--- | :--- | :--- |
           | 08:47:02 | Systolic Pressure | 132 mmHg |
           | 08:47:03 | Diastolic Pressure | 85 mmHg |
           | 08:47:04 | Pulse Pressure | 47 mmHg |
@@ -218,7 +218,7 @@ examples:
           Here are your health measurements as of yesterday, January 20, 2026:
 
           | Time | Measurement | Value |
-          |------|-------------|-------|
+          | :--- | :--- | :--- |
           | 12:15:22 | Systolic Pressure | 124 mmHg |
           | 12:15:23 | Diastolic Pressure | 81 mmHg |
           | 12:15:24 | Pulse Pressure | 43 mmHg |
@@ -912,7 +912,7 @@ examples:
       - role: system
         content: Respond to the next user prompt using provided function response.
       - role: user
-        content: is heater turned on?
+        content: is heating turned on?
       - role: user
         content: |
           <start_function_response>
@@ -1097,7 +1097,7 @@ examples:
           Here's a summary of all sensor readings in the house:
           
           | Zone | Name | Measurement | Value |
-          |------|------|-------------|-------|
+          | :--- | :--- | :--- | :--- |
           | Kitchen | DHT Sensor | Humidity | 21.70 %    |
           | Kitchen | DHT Sensor | Temperature | 47.60 °C |
           | Living Room | Thermostat Sensor | Temperature | 22.40 °C |
@@ -1121,7 +1121,7 @@ examples:
           Here's are home sensor readings:
           
           | Zone | Name | Measurement | Value |
-          |------|------|-------------|-------|
+          | :--- | :--- | :--- | :--- |
           | Kitchen | DHT Sensor | Humidity | 16.80 %    |
           | Kitchen | DHT Sensor | Temperature | 17.50 °C |
           | Living Room | Thermostat Sensor | Temperature | 20.38 °C |
@@ -1152,27 +1152,27 @@ examples:
           <start_function_response>
           | zone | name | measurement | value | status |
           | :--- | :--- | :--- | :--- | :--- |
-          | living room | Thermostat Sensor | temperature | 19.15 | low |
+          | bathroom | Temperature Sensor | temperature | 18.15 | low |
           <end_function_response>
       - role: model
         content: |
-          The living room temperature is 19.15 °C, which is below the desired level. Would you like me to start the central heating?
+          The bathroom temperature is 18.15 °C, which is below the desired level. Would you like me to start the central heating?
 
   - messages:
       - role: system
         content: Respond to the next user prompt using provided function response.
       - role: user
-        content: what about the temperature in the living?
+        content: what about the temperature in the bedroom?
       - role: user
         content: |
           <start_function_response>
           | zone | name | measurement | value | status |
           | :--- | :--- | :--- | :--- | :--- |
-          | living room | Thermostat Sensor | temperature | 32.15 | high |
+          | bedroom | Temperature Sensor | temperature | 32.15 | high |
           <end_function_response>
       - role: model
         content: |
-          The current temperature in the living room is 32.15 °C. Based on my settings, this is considered high. Would you like to activate the cooling system?
+          The current temperature in the bedroom is 32.15 °C. Based on my settings, this is considered high. Would you like to activate the cooling system?
 
   - messages:
       - role: system
@@ -1350,7 +1350,7 @@ examples:
           **Weather Forecast: Valea Lupului, Iași County, Romania (2025-12-18 to 2026-01-01)**
           
           | Date | Day | High (°C)| Low (°C) | Condition | Precipitation (mm) | Wind (km/h) |
-          |------|-----|----------|----------|-----------|--------------------|-------------|
+          | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
           | 2025-12-18 | Thursday | 2 | -4 | Light Snow | 1.2 | 15 |
           | 2025-12-19 | Friday | 1 | -5 | Cloudy | 0.0 | 12 |
           | 2025-12-20 | Saturday | 3 | -2 | Partly Cloudy | 0.0 | 10 |
@@ -1407,7 +1407,7 @@ examples:
           Here's the hourly weather forecast for Valea Lupului, Iași County, Romania on December 22, 2025:
           
           | Time | Weather Code | Temperature (°C) | Humidity (%) | Precipitation (%) | Wind (km/h) |
-          |------|--------------|------------------|--------------|-------------------|-------------|
+          | :--- | :--- | :--- | :--- | :--- | :--- |
           | 00:00 | Overcast | 2.3 | 97 | 0 | 3.7 |
           | 01:00 | Fog | 2.3 | 97 | 0 | 2.9 |
           | 02:00 | Fog | 2.3 | 98 | 0 | 2.4 |

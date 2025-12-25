@@ -18,8 +18,8 @@ model.eval()
 print(f"Model loaded on {device}")
 
 system_prompt = "Respond to the next user prompt using provided function response."
-user_prompt = "please list all health measurements"
-user_prompt = "display today health measurements in table format"
+user_prompt = "please list all health readings"
+#user_prompt = "display today health measurements in table format"
 #user_prompt = "display my health measurements for today, in a table format"
 #user_prompt = "list today measurements related to circulatory system"
 #user_prompt = "create health measurements from today readings"
@@ -35,6 +35,7 @@ user_prompt = "display today health measurements in table format"
 # user_prompt = "please tell me the status of the central heating"
 # user_prompt = "save blood glucose 101 to medical archive"
 # user_prompt = "save glucose 101"
+#user_prompt = "how high is john doe?"
 function_response = """{"timestamp":"2025-12-17 08:47:02","person":"Iulian Rotaru","measurement":"systolic_pressure","value":124}
 {"timestamp":"2025-12-17 08:47:03","person":"Iulian Rotaru","measurement":"diastolic_pressure","value":81}
 {"timestamp":"2025-12-17 08:47:04","person":"Iulian Rotaru","measurement":"pulse_pressure","value":43}
@@ -43,13 +44,13 @@ function_response = """{"timestamp":"2025-12-17 08:47:02","person":"Iulian Rotar
 {"timestamp":"2025-12-20 08:53:55","person":"Iulian Rotaru","measurement":"blood_glucose","value":101.0}
 {"timestamp":"2025-12-17 08:49:26","person":"Iulian Rotaru","measurement":"body_weight","value":89.5}
 {"timestamp":"2025-12-17 08:49:27","person":"Iulian Rotaru","measurement":"body_mass_index","value":28.89}
-{"timestamp":"2025-12-17 08:49:28","person":"Iulian Rotaru","measurement":"height","value":1.76}
-{"timestamp":"2025-12-17 08:49:29","person":"Iulian Rotaru","measurement":"head_circumference","value":65}
+{"timestamp":"2025-12-17 08:49:28","person":"Iulian Rotaru","measurement":"body_height","value":1.76}
 {"timestamp":"2025-12-17 08:49:29","person":"Iulian Rotaru","measurement":"intelligence_quotient","value":105}
 """
 
 # function_response = """{"timestamp":"2025-12-22 13:53:55","person":"Iulian Rotaru","measurement":"blood_glucose","value":101.0}"""
 # function_response = """{"setpoint":10.00,"hysteresis":0.00,"temperature":21.75,"running":false}"""
+#function_response = """{"individual":"John Doe","height":177}"""
 
 # Format the input exactly like during training
 # input_text = f"{system_prompt}\n\nUser Prompt: {user_prompt}\n\nFunction Response:\n{function_response}\n\nAssistant Response:"

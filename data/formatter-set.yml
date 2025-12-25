@@ -41,6 +41,7 @@ examples:
           {"timestamp":"2025-12-17 08:47:02","person":"Iulian Rotaru","measurement":"heart_rate","value":72}
           {"timestamp":"2025-12-17 08:48:58","person":"Iulian Rotaru","measurement":"body_temperature","value":35.400001525878906}
           {"timestamp":"2025-12-17 08:49:26","person":"Iulian Rotaru","measurement":"body_weight","value":89.5}
+          {"timestamp":"2025-12-17 08:49:26","person":"Iulian Rotaru","measurement":"body_height","value":176}
           {"timestamp":"2025-12-17 08:49:26","person":"Iulian Rotaru","measurement":"body_mass_index","value":28.89333724975586}
       - role: assistant
         content: |
@@ -52,6 +53,7 @@ examples:
           *   **Heart Rate:** 72 bpm
           *   **Body Temperature:** 35.4 °C
           *   **Body Weight:** 89.5 kg
+          *   **Body Height:** 1.76 m 
           *   **Body Mass Index:** 28.89
           
           Would you like more details about any of these?
@@ -84,7 +86,31 @@ examples:
           Respond to the next user prompt using provided function response.
       - role: user
         content: |
-          User Prompt: get health measurements, in a table
+          User Prompt: list all medical and psychological readings
+          Function Response: {"timestamp":"2024-11-23 08:47:02","person":"Iulian Rotaru","measurement":"systolic_pressure","value":124}
+          {"timestamp":"2024-11-23 08:47:02","person":"Iulian Rotaru","measurement":"diastolic_pressure","value":81}
+          {"timestamp":"2024-11-23 08:47:02","person":"Iulian Rotaru","measurement":"pulse_pressure","value":43}
+          {"timestamp":"2024-11-23 08:47:02","person":"Iulian Rotaru","measurement":"heart_rate","value":72}
+          {"timestamp":"2024-11-23 08:47:02","person":"Iulian Rotaru","measurement":"intelligence_quotient","value":120}
+      - role: assistant
+        content: |
+          Here are your health measurements as of today, December 17, 2025:
+
+          *   **Systolic Pressure:** 124 mmHg
+          *   **Diastolic Pressure:** 81 mmHg
+          *   **Pulse Pressure:** 43 mmHg
+          *   **Heart Rate:** 72 bpm
+          *   **Intelligence Quotient:** 120
+          
+          Shall I elaborate on any specific values?
+
+  - messages:
+      - role: system
+        content: |
+          Respond to the next user prompt using provided function response.
+      - role: user
+        content: |
+          User Prompt: display health measurements, in a table
           Function Response: {"timestamp":"2021-02-13 08:47:02","person":"Iulian Rotaru","measurement":"systolic_pressure","value":115}
           {"timestamp":"2021-02-13 08:47:03","person":"Iulian Rotaru","measurement":"diastolic_pressure","value":75}
           {"timestamp":"2021-02-13 08:47:04","person":"Iulian Rotaru","measurement":"pulse_pressure","value":40}
@@ -109,14 +135,14 @@ examples:
       - role: user
         content: |
           User Prompt: display my health measurements for today, in a table format
-          Function Response: {"timestamp":"2025-12-21 08:47:02","person":"Iulian Rotaru","measurement":"systolic_pressure","value":132}
-          {"timestamp":"2025-12-21 08:47:03","person":"Iulian Rotaru","measurement":"diastolic_pressure","value":85}
-          {"timestamp":"2025-12-21 08:47:04","person":"Iulian Rotaru","measurement":"pulse_pressure","value":47}
-          {"timestamp":"2025-12-21 08:47:05","person":"Iulian Rotaru","measurement":"heart_rate","value":86}
-          {"timestamp":"2025-12-21 12:15:45","person":"Iulian Rotaru","measurement":"blood_glucose","value":120}
-          {"timestamp":"2025-12-21 09:48:58","person":"Iulian Rotaru","measurement":"body_temperature","value":35.400001525878906}
-          {"timestamp":"2025-12-21 09:49:26","person":"Iulian Rotaru","measurement":"body_weight","value":89.5}
-          {"timestamp":"2025-12-21 09:49:26","person":"Iulian Rotaru","measurement":"body_mass_index","value":28.89333724975586}
+          Function Response: {"time":"08:47:02","measurement":"systolic_pressure","value":132}
+          {"time":"08:47:03","measurement":"diastolic_pressure","value":85}
+          {"time":"08:47:04","measurement":"pulse_pressure","value":47}
+          {"time":"08:47:05","measurement":"heart_rate","value":86}
+          {"time":"12:15:45","measurement":"blood_glucose","value":120}
+          {"time":"09:48:58","measurement":"body_temperature","value":35.40}
+          {"time":"09:49:26","measurement":"body_weight","value":89.5}
+          {"time":"09:49:26","measurement":"body_mass_index","value":28.89}
       - role: assistant
         content: |
           Here's are your health measurements for today, December 21, 2025:
@@ -128,8 +154,8 @@ examples:
           | 08:47:04 | Pulse Pressure | 47 mmHg |
           | 08:47:06 | Heart Rate | 86 bpm |
           | 12:15:45 | Glucose Level | 120 mg/dL |
-          | 09:48:58 | Body Temperature | 35.4 °C |
-          | 09:49:26 | Body Weight | 89.5 kg |
+          | 09:48:58 | Body Temperature | 35.40 °C |
+          | 09:49:26 | Body Weight | 89.50 kg |
           | 09:49:26 | Body Mass Index | 28.89 |
           
           Would you like a deeper dive into any of these?
@@ -141,11 +167,11 @@ examples:
       - role: user
         content: |
           User Prompt: get health measurements from yesterday readings
-          Function Response: {"timestamp":"2021-03-15 12:15:20","person":"Iulian Rotaru","measurement":"systolic_pressure","value":124}
-          {"timestamp":"2021-03-15 12:15:20","person":"Iulian Rotaru","measurement":"diastolic_pressure","value":81}
-          {"timestamp":"2021-03-15 12:15:20","person":"Iulian Rotaru","measurement":"pulse_pressure","value":43}
-          {"timestamp":"2021-03-15 12:15:20","person":"Iulian Rotaru","measurement":"heart_rate","value":72}
-          {"timestamp":"2021-03-15 12:15:45","person":"Iulian Rotaru","measurement":"blood_glucose","value":105}
+          Function Response: {"time":"12:15:20","measurement":"systolic_pressure","value":124}
+          {"time":"12:15:20","measurement":"diastolic_pressure","value":81}
+          {"time":"12:15:20","measurement":"pulse_pressure","value":43}
+          {"time":"12:15:45","measurement":"blood_glucose","value":105}
+          {"time":"12:15:20","measurement":"intelligence_quotient","value":110}
       - role: assistant
         content: |
           Here are your health measurements as of yesterday, March 15, 2021:
@@ -153,8 +179,8 @@ examples:
           *   **Systolic Pressure:** 124 mmHg
           *   **Diastolic Pressure:** 81 mmHg
           *   **Pulse Pressure:** 43 mmHg
-          *   **Heart Rate:** 72 bpm
           *   **Blood Glucose Level:** 105 mg/dL
+          *   **Intelligence Quotient:** 110
           
           Would you like additional information on any of them?
 
@@ -170,6 +196,7 @@ examples:
           {"timestamp":"2026-01-20 12:15:24","person":"Iulian Rotaru","measurement":"pulse_pressure","value":43}
           {"timestamp":"2026-01-20 12:15:25","person":"Iulian Rotaru","measurement":"heart_rate","value":72}
           {"timestamp":"2026-01-20 12:15:45","person":"Iulian Rotaru","measurement":"blood_glucose","value":105}
+          {"timestamp":"2026-01-20 12:15:49","person":"Iulian Rotaru","measurement":"body_height","value":175}
       - role: assistant
         content: |
           Here are your health measurements as of yesterday, January 20, 2026:
@@ -181,6 +208,7 @@ examples:
           | 12:15:24 | Pulse Pressure | 43 mmHg |
           | 12:15:25 | Heart Rate | 72 bpm |
           | 12:15:45 | Glucose Level | 105 mg/dL |
+          | 12:15:49 | Body Height | 175 cm | 
           
           Should I provide more context for any specific reading?
 
@@ -191,17 +219,35 @@ examples:
       - role: user
         content: |
           User Prompt: what is my body temperature?
-          Function Response: {"timestamp":"1989-06-14 08:47:02","person":"Iulian Rotaru","measurement":"systolic_pressure","value":124}
-          {"timestamp":"1989-06-14 08:47:02","person":"Iulian Rotaru","measurement":"diastolic_pressure","value":81}
-          {"timestamp":"1989-06-14 08:47:02","person":"Iulian Rotaru","measurement":"pulse_pressure","value":43}
-          {"timestamp":"1989-06-14 08:47:02","person":"Iulian Rotaru","measurement":"heart_rate","value":72}
-          {"timestamp":"1989-06-14 08:48:58","person":"Iulian Rotaru","measurement":"body_temperature","value":35.400001525878906}
-          {"timestamp":"1989-06-14 08:49:26","person":"Iulian Rotaru","measurement":"body_weight","value":89.5}
-          {"timestamp":"1989-06-14 08:49:26","person":"Iulian Rotaru","measurement":"body_mass_index","value":28.89333724975586}
+          Function Response: {"person":"Iulian Rotaru","measurement":"body_temperature","value":36.50}
       - role: assistant
         content: |
-          Your body temperature is 36.5 °C.
+          Your body temperature is 36.50 °C.
 
+  - messages:
+      - role: system
+        content: |
+          Respond to the next user prompt using provided function response.
+      - role: user
+        content: |
+          User Prompt: how intelligent was Albert Einstein?
+          Function Response: {"individual":"Albert Einstein","measurement":"intelligence_quotient","value":170}
+      - role: assistant
+        content: |
+          Albert Einstein never took a modern IQ (intelligence quotient) test, but experts estimate his IQ at about 170, placing him in the "extraordinary genius" range.
+  
+  - messages:
+      - role: system
+        content: |
+          Respond to the next user prompt using provided function response.
+      - role: user
+        content: |
+          User Prompt: what was the height of Bruce Lee?
+          Function Response: {"individual":"Bruce Lee","measurement":"height","value":171}
+      - role: assistant
+        content: |
+          Bruce Lee’s official height was typically listed as about 171 cm, though there has been some variation in reports over the years. Some sources round it to 173 cm.
+  
   - messages:
       - role: system
         content: |
@@ -212,7 +258,7 @@ examples:
           Function Response: {"timestamp":"2025-12-17 08:48:58","person":"Iulian Rotaru","measurement":"body_temperature","value":35.400001525878906}
       - role: assistant
         content: |
-          Your body temperature on December 17, 2025 was 35.4 °C that is in normal range.
+          Your body temperature on December 17, 2025 was 35.40 °C that is in normal range.
 
   - messages:
       - role: system
@@ -221,14 +267,7 @@ examples:
       - role: user
         content: |
           User Prompt: what is the pulse pressure value from my today readings?
-          Function Response: {"timestamp":"1971-09-10 08:17:02","person":"Iulian Rotaru","measurement":"systolic_pressure","value":124}
-          {"timestamp":"1971-09-10 08:17:04","person":"Iulian Rotaru","measurement":"diastolic_pressure","value":81}
-          {"timestamp":"1971-09-10 08:17:06","person":"Iulian Rotaru","measurement":"pulse_pressure","value":43}
-          {"timestamp":"1971-09-10 08:17:12","person":"Iulian Rotaru","measurement":"heart_rate","value":72}
-          {"timestamp":"1971-09-10 12:13:21","person":"Iulian Rotaru","measurement":"blood_glucose","value":105}
-          {"timestamp":"1971-09-10 10:48:58","person":"Iulian Rotaru","measurement":"body_temperature","value":35.400001525878906}
-          {"timestamp":"1971-09-10 10:49:26","person":"Iulian Rotaru","measurement":"body_weight","value":89.5}
-          {"timestamp":"1971-09-10 10:49:26","person":"Iulian Rotaru","measurement":"body_mass_index","value":28.89333724975586}
+          Function Response: {"timestamp":"1971-09-10 08:17:06","person":"Iulian Rotaru","measurement":"pulse_pressure","value":43}
       - role: assistant
         content: |
           Your pulse pressure is 43 mmHg.
@@ -240,7 +279,7 @@ examples:
       - role: user
         content: |
           User Prompt: what is my pulse pressure?
-          Function Response: {"timestamp":"2025-12-17 08:47:02","person":"Iulian Rotaru","measurement":"pulse_pressure","value":47}
+          Function Response: {"measurement":"pulse_pressure","value":47}
       - role: assistant
         content: |
           Your pulse pressure is 47 mmHg.
@@ -362,13 +401,7 @@ examples:
       - role: user
         content: |
           User Prompt: analyse my body mass index from today health readings
-          Function Response: {"timestamp":"2024-03-15 08:47:02","person":"Iulian Rotaru","measurement":"systolic_pressure","value":124}
-          {"timestamp":"2024-03-15 08:47:02","person":"Iulian Rotaru","measurement":"diastolic_pressure","value":81}
-          {"timestamp":"2024-03-15 08:47:02","person":"Iulian Rotaru","measurement":"pulse_pressure","value":43}
-          {"timestamp":"2024-03-15 08:47:02","person":"Iulian Rotaru","measurement":"heart_rate","value":72}
-          {"timestamp":"2024-03-15 08:48:58","person":"Iulian Rotaru","measurement":"body_temperature","value":35.400001525878906}
-          {"timestamp":"2024-03-15 08:49:26","person":"Iulian Rotaru","measurement":"body_weight","value":89.5}
-          {"timestamp":"2024-03-15 08:49:26","person":"Iulian Rotaru","measurement":"body_mass_index","value":28.89333724975586}
+          Function Response: {"timestamp":"2024-03-15 08:49:26","person":"Iulian Rotaru","measurement":"body_mass_index","value":28.8933}
       - role: assistant
         content: |
           Based on today's health readings (March 15, 2024), your Body Mass Index (BMI) is 28.89.
@@ -437,7 +470,7 @@ examples:
           Function Response: {"timestamp":"2005-07-13 16:20:10","person":"Iulian Rotaru","temperature":34.7}
       - role: assistant
         content: |
-          Your body temperature reading of 34.7 °C has been saved.
+          Your body temperature reading of 34.70 °C has been saved.
 
   - messages:
       - role: system
@@ -449,7 +482,7 @@ examples:
           Function Response: {"timestamp":"2003-09-20 09:06:53","person":"Iulian Rotaru","temperature":35.6}
       - role: assistant
         content: |
-          Body temperature of 35.6 recorded for Iulian Rotaru and saved to personal health archive. Timestamp: 2003-09-20 09:06:53.
+          Body temperature of 35.60 recorded for Iulian Rotaru and saved to personal health archive. Timestamp: 2003-09-20 09:06:53.
 
   - messages:
       - role: system
@@ -459,10 +492,10 @@ examples:
         content: |
           User Prompt: save body weight of 99 kg for John Doe in his medical database; his height is 182 cm
           Function Response: {"timestamp":"2005-06-10 09:12:46","person":"John Doe","measurement":"body_weight","value":99.0}
-          {"timestamp":"2005-06-10 09:12:46","person":"John Doe","measurement":"body_mass_index","value":29.887693405151367}
+          {"timestamp":"2005-06-10 09:12:46","person":"John Doe","measurement":"body_mass_index","value":29.887693}
       - role: assistant
         content: |
-          Body weight of 99.0 kg saved for John Doe in his medical database. Calculated body mass index (BMI) is 29.88. Timestamp: 2005-06-10 09:12:46.
+          Body weight of 99.00 kg saved for John Doe in his medical database. Calculated body mass index (BMI) is 29.88. Timestamp: 2005-06-10 09:12:46.
 
   - messages:
       - role: system
@@ -982,3 +1015,15 @@ examples:
         content: |
           Systems online. Jarvis and SLM services are active.
 
+  - messages:
+      - role: system
+        content: |
+          Respond to the next user prompt using provided function response.
+      - role: user
+        content: |
+          User Prompt: what is danube river length? 
+          Function Response: {"river":"Danube","length":2850}
+      - role: assistant
+        content: |
+          The Danube River is approximately 2,850 km long.
+          

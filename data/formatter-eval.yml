@@ -1,0 +1,107 @@
+- chat:
+  - role: user
+    content: What is the length of Danube river?
+  ground_truth: The Danube River is a major river in Europe.
+
+- chat:
+  - role: user
+    content: What high is the Everest mount?
+  ground_truth: The Everest Mount is a mountain in the Himalayas, located in the Himalayas of Nepal.
+
+- chat:
+  - role: system
+    content: Respond to the next user prompt using provided function response.
+  - role: user
+    content: |
+      User Prompt: Please list today health measurements.
+      Function Response: {"timestamp":"2025-12-17 08:49:28","person":"Iulian Rotaru","measurement":"body_height","value":1.76}
+      {"timestamp":"2025-12-17 08:49:26","person":"Iulian Rotaru","measurement":"body_weight","value":89.5}
+      {"timestamp":"2025-12-17 08:49:26","person":"Iulian Rotaru","measurement":"body_mass_index","value":28.89333724975586}
+      {"timestamp":"2025-12-17 08:47:02","person":"Iulian Rotaru","measurement":"systolic_pressure","value":124}
+      {"timestamp":"2025-12-17 08:47:02","person":"Iulian Rotaru","measurement":"diastolic_pressure","value":81}
+      {"timestamp":"2025-12-17 08:47:02","person":"Iulian Rotaru","measurement":"pulse_pressure","value":43}
+      {"timestamp":"2025-12-17 08:47:02","person":"Iulian Rotaru","measurement":"heart_rate","value":72}
+      {"timestamp":"2025-12-17 12:14:32","person":"Iulian Rotaru","measurement":"blood_glucose","value":120}
+      {"timestamp":"2025-12-17 08:48:58","person":"Iulian Rotaru","measurement":"body_temperature","value":35.400001525878906}
+      {"timestamp":"2025-12-17 08:49:29","person":"Iulian Rotaru","measurement":"intelligence_quotient","value":105}
+  ground_truth: |
+          Here are your health measurements as of today, December 17, 2025:
+
+          *   **Body Height:** 1.76 meters
+          *   **Body Weight:** 89.5 kg
+          *   **Body Mass Index:** 28.89
+          *   **Systolic Pressure:** 124 mmHg
+          *   **Diastolic Pressure:** 81 mmHg
+          *   **Pulse Pressure:** 43 mmHg
+          *   **Heart Rate:** 72 bpm
+          *   **Blood Glucose:** 120 mg/dL
+          *   **Body Temperature:** 35.4 °C
+          *   **Intelligence Quotient:** 105
+
+- chat:
+  - role: system
+    content: Respond to the next user prompt using provided function response.
+  - role: user
+    content: |
+      User Prompt: Display my health readings from December 17 in a table format.
+      Function Response: {"timestamp":"2025-12-17 08:49:28","person":"Iulian Rotaru","measurement":"body_height","value":1.76}
+      {"timestamp":"2025-12-17 08:49:26","person":"Iulian Rotaru","measurement":"body_weight","value":89.5}
+      {"timestamp":"2025-12-17 08:49:26","person":"Iulian Rotaru","measurement":"body_mass_index","value":28.89333724975586}
+      {"timestamp":"2025-12-17 08:47:02","person":"Iulian Rotaru","measurement":"systolic_pressure","value":124}
+      {"timestamp":"2025-12-17 08:47:02","person":"Iulian Rotaru","measurement":"diastolic_pressure","value":81}
+      {"timestamp":"2025-12-17 08:47:02","person":"Iulian Rotaru","measurement":"pulse_pressure","value":43}
+      {"timestamp":"2025-12-17 08:47:02","person":"Iulian Rotaru","measurement":"heart_rate","value":72}
+      {"timestamp":"2025-12-17 12:14:32","person":"Iulian Rotaru","measurement":"blood_glucose","value":120}
+      {"timestamp":"2025-12-17 08:48:58","person":"Iulian Rotaru","measurement":"body_temperature","value":35.400001525878906}
+      {"timestamp":"2025-12-17 08:49:29","person":"Iulian Rotaru","measurement":"intelligence_quotient","value":105}
+  ground_truth: |
+          Here's are your health measurements for today, December 17, 2025:
+
+          | Time | Measurement | Value |
+          | :--- | :--- | :--- |
+          | 09:49:26 | Body Height | 176 cm |
+          | 09:49:26 | Body Weight | 89.50 kg |
+          | 09:49:26 | Body Mass Index | 28.89 |
+          | 08:47:02 | Systolic Pressure | 124 mmHg |
+          | 08:47:03 | Diastolic Pressure | 81 mmHg |
+          | 08:47:04 | Pulse Pressure | 43 mmHg |
+          | 08:47:06 | Heart Rate | 72 bpm |
+          | 12:15:45 | Glucose Level | 120 mg/dL |
+          | 09:48:58 | Body Temperature | 35.40 °C |
+          | 09:48:58 | Intelligence Quotient | 105 |
+
+- chat:
+  - role: system
+    content: Respond to the next user prompt using provided function response.
+  - role: user
+    content: |
+      User Prompt: Save my body temperature 34.7
+      Function Response: {"timestamp":"2005-07-13 16:20:10","person":"Iulian Rotaru","temperature":34.7}
+  ground_truth: Your body temperature reading of 34.70 °C has been saved.
+
+- chat:
+  - role: system
+    content: Respond to the next user prompt using provided function response.
+  - role: user
+    content: |
+      User Prompt: Save my body weight of 90 kg to archive.
+      Function Response: {"timestamp":"1995-01-24 16:20:10","person":"Iulian Rotaru","height":1.76,"weight":90.0,"body_mass_index":29.054752}
+  ground_truth: Your body weight of 90.0 kg has been saved to the archive. Your height is 1.76 meters, resulting in a body mass index of 29.05.
+
+- chat:
+  - role: system
+    content: Respond to the next user prompt using provided function response.
+  - role: user
+    content: |
+      User Prompt: Save my glucose level of 101 to medical database.
+      Function Response: {"timestamp":"2014-02-28 13:53:55","person":"Iulian Rotaru","measurement":"blood_glucose","value":101.0}
+  ground_truth: Glucose level of 101 mg/dL recorded in your medical database.
+
+- chat:
+  - role: system
+    content: Respond to the next user prompt using provided function response.
+  - role: user
+    content: |
+      User Prompt: Troubleshoot the balcony light sensor.
+      Function Response:
+  ground_truth: The balcony light sensor is not detected. Please ensure the sensor is properly connected and powered on.

@@ -1,3 +1,6 @@
+import argparse
+import time
+
 import numpy as np
 import torch
 import yaml
@@ -14,6 +17,10 @@ SCORE_MODEL = MODEL_DIR + "all-MiniLM-L6-v2"
 DATA_FILE = "data/formatter-eval.yml"
 ROUGE = evaluate.load("rouge")
 BERT = evaluate.load("bertscore")
+
+parser = argparse.ArgumentParser()
+parser.add_argument("--verbose", action="store_true")
+args = parser.parse_args()
 
 
 def get_similarity_score(prediction_arg, ground_truth_arg):
@@ -41,6 +48,7 @@ config = {
 
 similarity_scores = []
 dataset_size = len(dataset)
+start_time = time.time()
 for index, datapoint in enumerate(dataset):
     chat = datapoint['chat']
     content = next((item['content'] for item in chat if item['role'] == 'user'), None)
@@ -58,6 +66,10 @@ for index, datapoint in enumerate(dataset):
     similarity_score = get_similarity_score(prediction, ground_truth)
     similarity_scores.append(similarity_score)
     print(f"{index + 1:>3} / {dataset_size}: {similarity_score:>7.4f}: {prompt}")
+
+    if args.verbose:
+        print(prompt)
+        print(prediction)
 
 print()
 mean_score = np.mean(similarity_scores)
@@ -80,3 +92,7 @@ percentile_25 = np.percentile(similarity_scores, 25)
 percentile_75 = np.percentile(similarity_scores, 75)
 print(f"25th Percentile: {percentile_25:.4f}")
 print(f"75th Percentile: {percentile_75:.4f}")
+
+print()
+elapsed_time = time.time() - start_time
+print(f"Elapsed time: {elapsed_time:.4f} seconds")

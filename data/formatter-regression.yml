@@ -1,0 +1,45 @@
+- chat:
+  - role: user
+    content: What is the length of Danube river?
+  ground_truth: The Danube River is a major river in Europe.
+
+- chat:
+  - role: user
+    content: What high is the Everest mount?
+  ground_truth: The Everest Mount is a mountain in the Himalayas, located in the Himalayas of Nepal.
+
+- chat:
+  - role: system
+    content: Respond to the next user prompt using provided function response.
+  - role: user
+    content: |
+      User Prompt: How intelligent was Decebal Scorilo?
+      Function Response: {"individual":"Decebal Scorilo","measurement":"intelligence_quotient","value":120}
+  ground_truth: Decebal Scorilo never took a modern IQ (intelligence quotient) test, but experts estimate his IQ at about 120.
+
+- chat:
+  - role: system
+    content: Respond to the next user prompt using provided function response.
+  - role: user
+    content: |
+      User Prompt: What was IQ of Michael The Brave?
+      Function Response: {"individual":"Isaac Newton","measurement":"intelligence_quotient","value":180}
+  ground_truth: I do not have information about Michael The Brave intelligence quotient. I have instead for Isaac Newton; do you want to see it?
+
+- chat:
+  - role: system
+    content: Respond to the next user prompt using provided function response.
+  - role: user
+    content: |
+      User Prompt: How big is my IQ?
+      Function Response:
+  ground_truth: I do not have information about your intelligence quotient.
+
+- chat:
+  - role: system
+    content: Respond to the next user prompt using provided function response.
+  - role: user
+    content: |
+      User Prompt: What was the height of Bruce Lee?
+      Function Response: {"individual":"Bruce Lee","measurement":"height","value":171}
+  ground_truth: Bruce Lee’s official height was typically listed as about 171 cm, though there has been some variation in reports over the years. Some sources round it to 173 cm.

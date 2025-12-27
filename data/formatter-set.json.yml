@@ -1,8 +1,7 @@
 examples:
   - messages:
       - role: system
-        content: |
-          Respond to the next user prompt using provided function response.
+        content: Respond to the next user prompt using provided function response.
       - role: user
         content: |
           User Prompt: list today health measurements
@@ -29,8 +28,7 @@ examples:
 
   - messages:
       - role: system
-        content: |
-          Respond to the next user prompt using provided function response.
+        content: Respond to the next user prompt using provided function response.
       - role: user
         content: |
           User Prompt: get health measurements
@@ -49,8 +47,7 @@ examples:
 
   - messages:
       - role: system
-        content: |
-          Respond to the next user prompt using provided function response.
+        content: Respond to the next user prompt using provided function response.
       - role: user
         content: |
           User Prompt: list all medical and psychological readings
@@ -71,8 +68,7 @@ examples:
 
   - messages:
       - role: system
-        content: |
-          Respond to the next user prompt using provided function response.
+        content: Respond to the next user prompt using provided function response.
       - role: user
         content: |
           User Prompt: display health measurements, in a table
@@ -93,8 +89,7 @@ examples:
 
   - messages:
       - role: system
-        content: |
-          Respond to the next user prompt using provided function response.
+        content: Respond to the next user prompt using provided function response.
       - role: user
         content: |
           User Prompt: display my health measurements for today, in a table format
@@ -123,8 +118,7 @@ examples:
 
   - messages:
       - role: system
-        content: |
-          Respond to the next user prompt using provided function response.
+        content: Respond to the next user prompt using provided function response.
       - role: user
         content: |
           User Prompt: get health measurements from yesterday readings
@@ -145,8 +139,7 @@ examples:
 
   - messages:
       - role: system
-        content: |
-          Respond to the next user prompt using provided function response.
+        content: Respond to the next user prompt using provided function response.
       - role: user
         content: |
           User Prompt: create a markdown table with health measurements from yesterday readings
@@ -171,8 +164,7 @@ examples:
 
   - messages:
       - role: system
-        content: |
-          Respond to the next user prompt using provided function response.
+        content: Respond to the next user prompt using provided function response.
       - role: user
         content: |
           User Prompt: what is my body temperature?
@@ -194,8 +186,7 @@ examples:
 
   - messages:
       - role: system
-        content: |
-          Respond to the next user prompt using provided function response.
+        content: Respond to the next user prompt using provided function response.
       - role: user
         content: |
           User Prompt: what was the height of Bruce Lee?
@@ -217,8 +208,7 @@ examples:
 
   - messages:
       - role: system
-        content: |
-          Respond to the next user prompt using provided function response.
+        content: Respond to the next user prompt using provided function response.
       - role: user
         content: |
           User Prompt: print my body temperature from yesterday
@@ -229,8 +219,7 @@ examples:
 
   - messages:
       - role: system
-        content: |
-          Respond to the next user prompt using provided function response.
+        content: Respond to the next user prompt using provided function response.
       - role: user
         content: |
           User Prompt: what is the pulse pressure value from my today readings?
@@ -257,8 +246,7 @@ examples:
 
   - messages:
       - role: system
-        content: |
-          Respond to the next user prompt using provided function response.
+        content: Respond to the next user prompt using provided function response.
       - role: user
         content: |
           User Prompt: what is my pulse pressure?
@@ -269,8 +257,7 @@ examples:
 
   - messages:
       - role: system
-        content: |
-          Respond to the next user prompt using provided function response.
+        content: Respond to the next user prompt using provided function response.
       - role: user
         content: |
           User Prompt: what do you think about my pulse pressure?
@@ -281,8 +268,7 @@ examples:
 
   - messages:
       - role: system
-        content: |
-          Respond to the next user prompt using provided function response.
+        content: Respond to the next user prompt using provided function response.
       - role: user
         content: |
           User Prompt: do you have any observations about my today pulse pressure measurements?
@@ -294,8 +280,7 @@ examples:
 
   - messages:
       - role: system
-        content: |
-          Respond to the next user prompt using provided function response.
+        content: Respond to the next user prompt using provided function response.
       - role: user
         content: |
           User Prompt: get body temperature from 2025-12-17 for iulian rotaru
@@ -306,8 +291,7 @@ examples:
 
   - messages:
       - role: system
-        content: |
-          Respond to the next user prompt using provided function response.
+        content: Respond to the next user prompt using provided function response.
       - role: user
         content: |
           User Prompt: what is your opinion regarding my body temperature
@@ -318,8 +302,7 @@ examples:
 
   - messages:
       - role: system
-        content: |
-          Respond to the next user prompt using provided function response.
+        content: Respond to the next user prompt using provided function response.
       - role: user
         content: |
           User Prompt: please analyse my body temperature
@@ -330,8 +313,7 @@ examples:
 
   - messages:
       - role: system
-        content: |
-          Respond to the next user prompt using provided function response.
+        content: Respond to the next user prompt using provided function response.
       - role: user
         content: |
           User Prompt: how is my body temperature?
@@ -342,8 +324,7 @@ examples:
 
   - messages:
       - role: system
-        content: |
-          Respond to the next user prompt using provided function response.
+        content: Respond to the next user prompt using provided function response.
       - role: user
         content: |
           User Prompt: show me my morning and evening blood pressure
@@ -365,8 +346,7 @@ examples:
 
   - messages:
       - role: system
-        content: |
-          Respond to the next user prompt using provided function response.
+        content: Respond to the next user prompt using provided function response.
       - role: user
         content: |
           User Prompt: show my temperature
@@ -377,8 +357,7 @@ examples:
 
   - messages:
       - role: system
-        content: |
-          Respond to the next user prompt using provided function response.
+        content: Respond to the next user prompt using provided function response.
       - role: user
         content: |
           User Prompt: analyse my body mass index from today health readings
@@ -398,8 +377,7 @@ examples:
 
   - messages:
       - role: system
-        content: |
-          Respond to the next user prompt using provided function response.
+        content: Respond to the next user prompt using provided function response.
       - role: user
         content: |
           User Prompt: is my bmi value in normal range? how can it be classified?
@@ -419,8 +397,7 @@ examples:
 
   - messages:
       - role: system
-        content: |
-          Respond to the next user prompt using provided function response.
+        content: Respond to the next user prompt using provided function response.
       - role: user
         content: |
           User Prompt: save blood 119 72 61
@@ -431,8 +408,7 @@ examples:
 
   - messages:
       - role: system
-        content: |
-          Respond to the next user prompt using provided function response.
+        content: Respond to the next user prompt using provided function response.
       - role: user
         content: |
           User Prompt: save my blood readings: 123 73 59
@@ -461,8 +437,7 @@ examples:
 
   - messages:
       - role: system
-        content: |
-          Respond to the next user prompt using provided function response.
+        content: Respond to the next user prompt using provided function response.
       - role: user
         content: |
           User Prompt: save my body temperature 34.7
@@ -473,8 +448,7 @@ examples:
 
   - messages:
       - role: system
-        content: |
-          Respond to the next user prompt using provided function response.
+        content: Respond to the next user prompt using provided function response.
       - role: user
         content: |
           User Prompt: saves body temperature of 35.6 for Iulian Rotaru in personal health archive
@@ -485,8 +459,7 @@ examples:
 
   - messages:
       - role: system
-        content: |
-          Respond to the next user prompt using provided function response.
+        content: Respond to the next user prompt using provided function response.
       - role: user
         content: |
           User Prompt: save body weight of 99 kg for John Doe in his medical database; his height is 182 cm
@@ -498,8 +471,7 @@ examples:
 
   - messages:
       - role: system
-        content: |
-          Respond to the next user prompt using provided function response.
+        content: Respond to the next user prompt using provided function response.
       - role: user
         content: |
           User Prompt: save my body weight of 90 kg to archive
@@ -510,8 +482,7 @@ examples:
 
   - messages:
       - role: system
-        content: |
-          Respond to the next user prompt using provided function response.
+        content: Respond to the next user prompt using provided function response.
       - role: user
         content: |
           User Prompt: save my glucose level of 101 to medical database
@@ -522,8 +493,7 @@ examples:
 
   - messages:
       - role: system
-        content: |
-          Respond to the next user prompt using provided function response.
+        content: Respond to the next user prompt using provided function response.
       - role: user
         content: |
           User Prompt: save glucose 101
@@ -534,8 +504,7 @@ examples:
 
   - messages:
       - role: system
-        content: |
-          Respond to the next user prompt using provided function response.
+        content: Respond to the next user prompt using provided function response.
       - role: user
         content: |
           User Prompt: run device diagnose on living room sensor
@@ -546,8 +515,7 @@ examples:
 
   - messages:
       - role: system
-        content: |
-          Respond to the next user prompt using provided function response.
+        content: Respond to the next user prompt using provided function response.
       - role: user
         content: |
           User Prompt: run full device diagnose on living room sensor
@@ -558,8 +526,7 @@ examples:
 
   - messages:
       - role: system
-        content: |
-          Respond to the next user prompt using provided function response.
+        content: Respond to the next user prompt using provided function response.
       - role: user
         content: |
           User Prompt: turn on central heating
@@ -581,8 +548,7 @@ examples:
 
   - messages:
       - role: system
-        content: |
-          Respond to the next user prompt using provided function response.
+        content: Respond to the next user prompt using provided function response.
       - role: user
         content: |
           User Prompt: is central heating running?
@@ -620,8 +586,7 @@ examples:
 
   - messages:
       - role: system
-        content: |
-          Respond to the next user prompt using provided function response.
+        content: Respond to the next user prompt using provided function response.
       - role: user
         content: |
           User Prompt: is the central heating started?
@@ -632,8 +597,7 @@ examples:
 
   - messages:
       - role: system
-        content: |
-          Respond to the next user prompt using provided function response.
+        content: Respond to the next user prompt using provided function response.
       - role: user
         content: |
           User Prompt: is heater active?
@@ -644,8 +608,7 @@ examples:
 
   - messages:
       - role: system
-        content: |
-          Respond to the next user prompt using provided function response.
+        content: Respond to the next user prompt using provided function response.
       - role: user
         content: |
           User Prompt: is heater turned on?
@@ -656,8 +619,7 @@ examples:
 
   - messages:
       - role: system
-        content: |
-          Respond to the next user prompt using provided function response.
+        content: Respond to the next user prompt using provided function response.
       - role: user
         content: |
           User Prompt: is heating turned on?
@@ -668,8 +630,7 @@ examples:
 
   - messages:
       - role: system
-        content: |
-          Respond to the next user prompt using provided function response.
+        content: Respond to the next user prompt using provided function response.
       - role: user
         content: |
           User Prompt: stop heating
@@ -691,8 +652,7 @@ examples:
 
   - messages:
       - role: system
-        content: |
-          Respond to the next user prompt using provided function response.
+        content: Respond to the next user prompt using provided function response.
       - role: user
         content: |
           User Prompt: is central heating running?
@@ -703,8 +663,7 @@ examples:
 
   - messages:
       - role: system
-        content: |
-          Respond to the next user prompt using provided function response.
+        content: Respond to the next user prompt using provided function response.
       - role: user
         content: |
           User Prompt: how is the central heating?
@@ -715,8 +674,7 @@ examples:
 
   - messages:
       - role: system
-        content: |
-          Respond to the next user prompt using provided function response.
+        content: Respond to the next user prompt using provided function response.
       - role: user
         content: |
           User Prompt: please tell me the status of the central heating
@@ -727,8 +685,7 @@ examples:
 
   - messages:
       - role: system
-        content: |
-          Respond to the next user prompt using provided function response.
+        content: Respond to the next user prompt using provided function response.
       - role: user
         content: |
           User Prompt: get central heating status
@@ -739,8 +696,7 @@ examples:
 
   - messages:
       - role: system
-        content: |
-          Respond to the next user prompt using provided function response.
+        content: Respond to the next user prompt using provided function response.
       - role: user
         content: |
           User Prompt: run comprehensive device diagnose on DHT sensor
@@ -751,8 +707,7 @@ examples:
 
   - messages:
       - role: system
-        content: |
-          Respond to the next user prompt using provided function response.
+        content: Respond to the next user prompt using provided function response.
       - role: user
         content: |
           User Prompt: read all sensors
@@ -769,8 +724,7 @@ examples:
 
   - messages:
       - role: system
-        content: |
-          Respond to the next user prompt using provided function response.
+        content: Respond to the next user prompt using provided function response.
       - role: user
         content: |
           User Prompt: read all sensors in the house
@@ -786,8 +740,7 @@ examples:
 
   - messages:
       - role: system
-        content: |
-          Respond to the next user prompt using provided function response.
+        content: Respond to the next user prompt using provided function response.
       - role: user
         content: |
           User Prompt: create a table with the readings of the sensors in the house
@@ -806,8 +759,7 @@ examples:
 
   - messages:
       - role: system
-        content: |
-          Respond to the next user prompt using provided function response.
+        content: Respond to the next user prompt using provided function response.
       - role: user
         content: |
           User Prompt: display hera sensors in a table format
@@ -826,8 +778,7 @@ examples:
 
   - messages:
       - role: system
-        content: |
-          Respond to the next user prompt using provided function response.
+        content: Respond to the next user prompt using provided function response.
       - role: user
         content: |
           User Prompt: get living room temperature
@@ -871,8 +822,7 @@ examples:
 
   - messages:
       - role: system
-        content: |
-          Respond to the next user prompt using provided function response.
+        content: Respond to the next user prompt using provided function response.
       - role: user
         content: |
           User Prompt: what is the temperature in the kitchen
@@ -883,8 +833,7 @@ examples:
 
   - messages:
       - role: system
-        content: |
-          Respond to the next user prompt using provided function response.
+        content: Respond to the next user prompt using provided function response.
       - role: user
         content: |
           User Prompt: print kitchen humidity
@@ -895,8 +844,7 @@ examples:
 
   - messages:
       - role: system
-        content: |
-          Respond to the next user prompt using provided function response.
+        content: Respond to the next user prompt using provided function response.
       - role: user
         content: |
           User Prompt: how is the weather like?
@@ -907,8 +855,7 @@ examples:
 
   - messages:
       - role: system
-        content: |
-          Respond to the next user prompt using provided function response.
+        content: Respond to the next user prompt using provided function response.
       - role: user
         content: |
           User Prompt: what is outside temperature?
@@ -919,8 +866,7 @@ examples:
 
   - messages:
       - role: system
-        content: |
-          Respond to the next user prompt using provided function response.
+        content: Respond to the next user prompt using provided function response.
       - role: user
         content: |
           User Prompt: how is outside
@@ -931,8 +877,7 @@ examples:
 
   - messages:
       - role: system
-        content: |
-          Respond to the next user prompt using provided function response.
+        content: Respond to the next user prompt using provided function response.
       - role: user
         content: |
           User Prompt: create a forecast summary for the next two weeks
@@ -958,8 +903,7 @@ examples:
 
   - messages:
       - role: system
-        content: |
-          Respond to the next user prompt using provided function response.
+        content: Respond to the next user prompt using provided function response.
       - role: user
         content: |
           User Prompt: get weather forecast for the next two weeks
@@ -1002,8 +946,7 @@ examples:
 
   - messages:
       - role: system
-        content: |
-          Respond to the next user prompt using provided function response.
+        content: Respond to the next user prompt using provided function response.
       - role: user
         content: |
           User Prompt: get weather forecast for the next two weeks in table format
@@ -1049,8 +992,7 @@ examples:
 
   - messages:
       - role: system
-        content: |
-          Respond to the next user prompt using provided function response.
+        content: Respond to the next user prompt using provided function response.
       - role: user
         content: |
           User Prompt: list today forecast in a table by hour
@@ -1111,12 +1053,40 @@ examples:
 
   - messages:
       - role: system
-        content: |
-          Respond to the next user prompt using provided function response.
+        content: Respond to the next user prompt using provided function response.
       - role: user
         content: |
-          User Prompt: wake-up
+          User Prompt: Server start
           Function Response: {"jarvis_server":true,"slm_service":true}
       - role: assistant
+        content: Systems online. JARVIS and SLM services are active.
+
+  - messages:
+      - role: system
+        content: Respond to the next user prompt using provided function response.
+      - role: user
         content: |
-          Systems online. Jarvis and SLM services are active.
+          User Prompt: Server status
+          Function Response: {"jarvis_server":true,"slm_service":false}
+      - role: assistant
+        content: JARVIS server is online but SLM services does not respond.
+
+  - messages:
+      - role: system
+        content: Respond to the next user prompt using provided function response.
+      - role: user
+        content: |
+          User Prompt: Server status
+          Function Response: {"jarvis_server":true,"slm_service":true}
+      - role: assistant
+        content: JARVIS online. Both the JARVIS server and the Small Language Model service are currently active.
+
+  - messages:
+      - role: system
+        content: Respond to the next user prompt using provided function response.
+      - role: user
+        content: |
+          User Prompt: Clear history
+          Function Response: {"history_state":"total_amnesia"}
+      - role: assistant
+        content: Acknowledged. History has been cleared. My memory is now at a total amnesia state.

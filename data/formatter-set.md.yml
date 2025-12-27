@@ -1341,12 +1341,54 @@ examples:
         content: Respond to the next user prompt using provided function response.
       - role: user
         content: |
-          wake-up
+          Server start
           <start_function_response>
           | jarvis_server | slm_service |
           | :--- | :--- |
           | true | true |
           <end_function_response>
       - role: model
+        content: Systems online. JARVIS and SLM services are active.
+
+  - messages:
+      - role: system
+        content: Respond to the next user prompt using provided function response.
+      - role: user
         content: |
-          Systems online. Jarvis and SLM services are active.
+          Server status
+          <start_function_response>
+          | jarvis_server | slm_service |
+          | :--- | :--- |
+          | true | false |
+          <end_function_response>
+      - role: model
+        content: |
+          JARVIS server is online but SLM services does not respond.
+
+  - messages:
+      - role: system
+        content: Respond to the next user prompt using provided function response.
+      - role: user
+        content: |
+          Server status
+          <start_function_response>
+          | jarvis_server | slm_service |
+          | :--- | :--- |
+          | true | true |
+          <end_function_response>
+      - role: model
+        content: JARVIS online. Both the JARVIS server and the Small Language Model service are currently active.
+
+  - messages:
+      - role: system
+        content: Respond to the next user prompt using provided function response.
+      - role: user
+        content: |
+          Clear history
+          <start_function_response>
+          | history_state |
+          | :--- |
+          | total_amnesia |
+          <end_function_response>
+      - role: model
+        content: Acknowledged. History has been cleared. My memory is now at a total amnesia state.

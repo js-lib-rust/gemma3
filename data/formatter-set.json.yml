@@ -421,7 +421,7 @@ examples:
         content: Respond to the next user prompt using provided function response.
       - role: user
         content: |
-          User Prompt: save my blood measurements: 123 73 59
+          User Prompt: log my blood measurements: 123 73 59
           Function Response: {"timestamp":"2011-11-11 08:28:44","person":"Iulian Rotaru","systole":123,"diastole":73,"pulse":59}
       - role: assistant
         content: |
@@ -432,11 +432,22 @@ examples:
         content: Respond to the next user prompt using provided function response.
       - role: user
         content: |
-          User Prompt: save my blood pressure 133/76 and pulse 82
+          User Prompt: record my blood pressure 133/76 and pulse 82
           Function Response: {"timestamp":"2010-03-11 18:38:41","person":"Iulian Rotaru","systole":133,"diastole":76,"pulse":82}
       - role: assistant
         content: |
           Blood pressure and pulse recorded: Systole 133 mmHg, Diastole 76 mmHg, Pulse 82 bpm.
+
+  - messages:
+      - role: system
+        content: Respond to the next user prompt using provided function response.
+      - role: user
+        content: |
+          User Prompt: write blood pressure of 133 with 76 and pulse of 82 to medical database for John Doe
+          Function Response: {"timestamp":"2010-03-11 18:38:41","person":"John Doe","systole":133,"diastole":76,"pulse":82}
+      - role: assistant
+        content: |
+          Blood pressure and pulse recorded: Systole 133 mmHg, Diastole 76 mmHg, Pulse 82 bpm for John Doe.
 
   - messages:
       - role: system
@@ -483,11 +494,11 @@ examples:
         content: Respond to the next user prompt using provided function response.
       - role: user
         content: |
-          User Prompt: saves body temperature of 35.6 for Iulian Rotaru in personal health archive
-          Function Response: {"timestamp":"2003-09-20 09:06:53","person":"Iulian Rotaru","temperature":35.6}
+          User Prompt: saves body temperature of 35.6 for John Doe in personal health archive
+          Function Response: {"timestamp":"2003-09-20 09:06:53","person":"John Doe","temperature":35.6}
       - role: assistant
         content: |
-          Body temperature of 35.60 recorded for Iulian Rotaru and saved to personal health archive. Timestamp: 2003-09-20 09:06:53.
+          Body temperature of 35.60 recorded for John Doe and saved to personal health archive.
 
   - messages:
       - role: system
@@ -499,7 +510,7 @@ examples:
           {"timestamp":"2005-06-10 09:12:46","person":"John Doe","measurement":"body_mass_index","value":29.887693}
       - role: assistant
         content: |
-          Body weight of 99.00 kg saved for John Doe in his medical database. Calculated body mass index (BMI) is 29.88. Timestamp: 2005-06-10 09:12:46.
+          Body weight of 99.00 kg saved for John Doe in his medical database. Calculated body mass index (BMI) is 29.88.
 
   - messages:
       - role: system
@@ -544,6 +555,28 @@ examples:
       - role: assistant
         content: |
           Database is not responding. I am unable to save your blood glucose readings.
+
+  - messages:
+      - role: system
+        content: Respond to the next user prompt using provided function response.
+      - role: user
+        content: |
+          User Prompt: record my height to medical archive
+          Function Response: {"timestamp":"2025-10-10 13:53:55","person":"Iulian Rotaru","measurement":"body_height","value":176}
+      - role: assistant
+        content: |
+          Your height of 171 cm has been saved to medical database.
+
+  - messages:
+      - role: system
+        content: Respond to the next user prompt using provided function response.
+      - role: user
+        content: |
+          User Prompt: save my height to health database
+          Function Response: {"error":"database is currently unresponsive"}
+      - role: assistant
+        content: |
+          Database is not responding. I am unable to save your height.
 
   - messages:
       - role: system

@@ -153,6 +153,15 @@
     content: Respond to the next user prompt using provided function response.
   - role: user
     content: |
+      User Prompt: Save my height of 176 to medical database.
+      Function Response: {"timestamp":"2014-02-28 13:53:55","person":"Iulian Rotaru","measurement":"body_height","value":176}
+  ground_truth: Your height of 176 cm recorded in the medical database.
+
+- chat:
+  - role: system
+    content: Respond to the next user prompt using provided function response.
+  - role: user
+    content: |
       User Prompt: What is my body temperature?
       Function Response: {"person":"Iulian Rotaru","measurement":"body_temperature","value":36.50}
   ground_truth: Your body temperature is 36.50 °C.

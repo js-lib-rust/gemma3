@@ -721,7 +721,7 @@ examples:
           <start_function_response>
           | error |
           | :--- |
-          | device do not respond |
+          | device is currently unresponsive |
           <end_function_response>
       - role: model
         content: |
@@ -751,7 +751,7 @@ examples:
           <start_function_response>
           | error |
           | :--- |
-          | device do not respond |
+          | device is currently unresponsive |
           <end_function_response>
       - role: model
         content: |
@@ -841,7 +841,7 @@ examples:
           <start_function_response>
           | error |
           | :--- |
-          | device do not respond |
+          | device is currently unresponsive |
           <end_function_response>
       - role: model
         content: |
@@ -1063,7 +1063,7 @@ examples:
           <start_function_response>
           | error |
           | :--- |
-          | device do not respond |
+          | device is currently unresponsive |
           <end_function_response>
       - role: model
         content: |

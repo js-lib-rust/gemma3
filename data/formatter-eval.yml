@@ -258,7 +258,7 @@
   - role: user
     content: |
       User Prompt: Please start the heater.
-      Function Response: {"error":"device do not respond"}
+      Function Response: {"error":"device is currently unresponsive"}
   ground_truth: Unable to activate central heating. Do you want me to run a device diagnose?
 
 - chat:
@@ -277,7 +277,7 @@
   - role: user
     content: |
       User Prompt: Is heater currently running?
-      Function Response: {"error":"device do not respond"}
+      Function Response: {"error":"device is currently unresponsive"}
   ground_truth: Heating system unavailable. Please check power and system status.
 
 - chat:

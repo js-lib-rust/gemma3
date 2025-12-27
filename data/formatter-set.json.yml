@@ -422,6 +422,28 @@ examples:
         content: Respond to the next user prompt using provided function response.
       - role: user
         content: |
+          User Prompt: save my blood pressure 133/76 and pulse 82
+          Function Response: {"timestamp":"2010-03-11 18:38:41","person":"Iulian Rotaru","systole":133,"diastole":76,"pulse":82}
+      - role: assistant
+        content: |
+          Your blood readings have been saved: Systole 133 mmHg, Diastole 76 mmHg, Pulse 82 bpm, recorded at 2010-03-11 18:38:41.
+
+  - messages:
+      - role: system
+        content: Respond to the next user prompt using provided function response.
+      - role: user
+        content: |
+          User Prompt: save my blood pressure 133/76 and pulse 82
+          Function Response: {"error":"database unresponsive"}
+      - role: assistant
+        content: |
+          I am unable to save your blood measurements to the medical database at this time as it is currently unresponsive.
+
+  - messages:
+      - role: system
+        content: Respond to the next user prompt using provided function response.
+      - role: user
+        content: |
           User Prompt: how do my stats look today?
           Function Response: {"timestamp":"2025-12-17 08:47","measurement":"systolic_pressure","value":138,"status":"high_normal"}
           {"timestamp":"2025-12-17 08:47","measurement":"diastolic_pressure","value":88,"status":"high_normal"}
@@ -507,6 +529,17 @@ examples:
         content: Respond to the next user prompt using provided function response.
       - role: user
         content: |
+          User Prompt: save glucose 101
+          Function Response: {"error":"database unresponsive"}
+      - role: assistant
+        content: |
+          Database is not responding. I am unable to save your blood glucose readings.
+
+  - messages:
+      - role: system
+        content: Respond to the next user prompt using provided function response.
+      - role: user
+        content: |
           User Prompt: run device diagnose on living room sensor
           Function Response: {"device_id":"thermostat-sensor","device_name":"Thermostat Sensor","device_zone":"living room","hostname":"thermostat-sensor.local","ipv4_addr":192.168.0.90,"diagnose_port":80,"connection_state":"Active","device_state":{"value":21.13}}
       - role: assistant
@@ -541,10 +574,10 @@ examples:
       - role: user
         content: |
           User Prompt: please start the heater
-          Function Response: {"error":"device do not respond"}
+          Function Response: {"error":"device is currently unresponsive"}
       - role: model
         content: |
-          Unable to activate central heating. Do you want me to run a device diagnose?
+          Unable to start the heater. Shall I run a device diagnose?
 
   - messages:
       - role: system
@@ -563,7 +596,7 @@ examples:
       - role: user
         content: |
           User Prompt: is heater currently running?
-          Function Response: {"error":"device do not respond"}
+          Function Response: {"error":"device is currently unresponsive"}
       - role: model
         content: |
           Heating system unavailable. Please check power and system status.
@@ -645,7 +678,7 @@ examples:
       - role: user
         content: |
           User Prompt: turn on the central heating
-          Function Response: {"error":"device do not respond"}
+          Function Response: {"error":"device is currently unresponsive"}
       - role: model
         content: |
           Fail to communicate with central heating controller. This may be due to a power outage, a communication error, or a system fault.
@@ -792,6 +825,17 @@ examples:
         content: Respond to the next user prompt using provided function response.
       - role: user
         content: |
+          User Prompt: get living room temperature
+          Function Response: {"error":"device is currently unresponsive"}
+      - role: assistant
+        content: |
+          The living room sensor is currently unresponsive. Would you like me to initiate a diagnostic check on the device?
+
+  - messages:
+      - role: system
+        content: Respond to the next user prompt using provided function response.
+      - role: user
+        content: |
           User Prompt: how is the living room temperature?
           Function Response: {"zone":"bathroom","name":"Temperature Sensor","measurement":"temperature","value":18.15,"status":"low"}
       - role: model
@@ -815,7 +859,7 @@ examples:
       - role: user
         content: |
           User Prompt: what is temperature in the living?
-          Function Response: {"error":"device do not respond"}
+          Function Response: {"error":"device is currently unresponsive"}
       - role: model
         content: |
           The temperature sensor in the living room is currently unavailable. Would you like to initiate a diagnostic test?
@@ -1056,10 +1100,20 @@ examples:
         content: Respond to the next user prompt using provided function response.
       - role: user
         content: |
+          User Prompt: wake-up
+          Function Response: {"jarvis_server":true,"slm_service":true}
+      - role: assistant
+        content: Systems online. JARVIS server and SLM service are active.
+
+  - messages:
+      - role: system
+        content: Respond to the next user prompt using provided function response.
+      - role: user
+        content: |
           User Prompt: Server start
           Function Response: {"jarvis_server":true,"slm_service":true}
       - role: assistant
-        content: Systems online. JARVIS and SLM services are active.
+        content: Systems online. JARVIS server and SLM service are active.
 
   - messages:
       - role: system
@@ -1069,7 +1123,7 @@ examples:
           User Prompt: Server status
           Function Response: {"jarvis_server":true,"slm_service":false}
       - role: assistant
-        content: JARVIS server is online but SLM services does not respond.
+        content: JARVIS server is online but SLM service does not respond.
 
   - messages:
       - role: system
@@ -1079,7 +1133,7 @@ examples:
           User Prompt: Server status
           Function Response: {"jarvis_server":true,"slm_service":true}
       - role: assistant
-        content: JARVIS online. Both the JARVIS server and the Small Language Model service are currently active.
+        content: JARVIS online. Both the JARVIS server and SLM service are currently active.
 
   - messages:
       - role: system

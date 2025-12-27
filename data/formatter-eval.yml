@@ -152,19 +152,6 @@
     content: Respond to the next user prompt using provided function response.
   - role: user
     content: |
-      User Prompt: What was my body temperature this morning?
-      Function Response: {"person":"Iulian Rotaru","measurement":"body_mass_index","value":28.5}
-      {"person":"Iulian Rotaru","measurement":"heart_rate","value":72}
-  ground_truth: |
-      I don't have a record of your temperature from this morning.
-
-      I only see your body mass index (28.5) and heart rate (72 bpm). Would you like to log body temperature reading now?
-
-- chat:
-  - role: system
-    content: Respond to the next user prompt using provided function response.
-  - role: user
-    content: |
       User Prompt: What was my pulse pressure on yesterday medical readings?
       Function Response: {"timestamp":"2026-01-20 12:15:22","person":"Iulian Rotaru","measurement":"systolic_pressure","value":124}
       {"timestamp":"2026-01-20 12:15:23","person":"Iulian Rotaru","measurement":"diastolic_pressure","value":81}
@@ -261,15 +248,6 @@
     content: Respond to the next user prompt using provided function response.
   - role: user
     content: |
-      User Prompt: Troubleshoot the balcony light sensor.
-      Function Response:
-  ground_truth: The balcony light sensor is not detected. Please ensure the sensor is properly connected and powered on.
-
-- chat:
-  - role: system
-    content: Respond to the next user prompt using provided function response.
-  - role: user
-    content: |
       User Prompt: Turn on the central heating.
       Function Response: {"setpoint":30.00,"hysteresis":0.00,"temperature":21.13,"running":true}
   ground_truth: Central heating has been turned on. The setpoint is 30.00 °C, with a hysteresis of 0.00 °C. The current temperature is 21.13 °C, and the system is running.
@@ -280,7 +258,7 @@
   - role: user
     content: |
       User Prompt: Please start the heater.
-      Function Response:
+      Function Response: {"error":"device do not respond"}
   ground_truth: Unable to activate central heating. Do you want me to run a device diagnose?
 
 - chat:
@@ -299,7 +277,7 @@
   - role: user
     content: |
       User Prompt: Is heater currently running?
-      Function Response:
+      Function Response: {"error":"device do not respond"}
   ground_truth: Heating system unavailable. Please check power and system status.
 
 - chat:

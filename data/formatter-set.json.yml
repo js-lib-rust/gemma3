@@ -2,35 +2,6 @@ examples:
   - messages:
       - role: system
         content: |
-          Glossary Definitions.
-      - role: user
-        content: |
-          BMI: Body Mass Index
-          HERA: Home Environment Regulated Automatically
-
-  - messages:
-      - role: system
-        content: |
-          Measurement Units.
-      - role: user
-        content: |
-          Distance Units: km (kilometers)
-          Speed Units: km/h (kilometers per hour)
-          Height Units: m (meters)
-          Small Area Units: m² (square meters)
-          Big Area Units: km² (square kilometers)
-          Volume Units: m³ (cubic meters)
-          Liquid Volume Units: L (liter)
-          Mass Units: kg (kilogram)
-          Temperature Units: °C (celsius)
-          Environment Humidity Units: % (percent)
-          Blood Pressure Units: mmHg (millimeters of mercury)
-          Heart Rate Units: bpm (beats per minute)
-          Blood Glucose Units: mg/dL (milligrams per deciliter)
-
-  - messages:
-      - role: system
-        content: |
           Respond to the next user prompt using provided function response.
       - role: user
         content: |
@@ -53,10 +24,8 @@ examples:
           *   **Heart Rate:** 72 bpm
           *   **Body Temperature:** 35.4 °C
           *   **Body Weight:** 89.5 kg
-          *   **Body Height:** 1.76 m 
+          *   **Body Height:** 1.76 m
           *   **Body Mass Index:** 28.89
-          
-          Would you like more details about any of these?
 
   - messages:
       - role: system
@@ -77,8 +46,6 @@ examples:
           *   **Diastolic Pressure:** 81 mmHg
           *   **Pulse Pressure:** 43 mmHg
           *   **Heart Rate:** 72 bpm
-          
-          Shall I elaborate on any specific values?
 
   - messages:
       - role: system
@@ -101,8 +68,6 @@ examples:
           *   **Pulse Pressure:** 43 mmHg
           *   **Heart Rate:** 72 bpm
           *   **Intelligence Quotient:** 120
-          
-          Shall I elaborate on any specific values?
 
   - messages:
       - role: system
@@ -125,8 +90,6 @@ examples:
           | 08:47:03 | Diastolic Pressure | 75 mmHg |
           | 08:47:04 | Pulse Pressure | 40 mmHg |
           | 08:47:05 | Heart Rate | 60 bpm |
-          
-          Do you want to know more about a particular one?
 
   - messages:
       - role: system
@@ -157,8 +120,6 @@ examples:
           | 09:48:58 | Body Temperature | 35.40 °C |
           | 09:49:26 | Body Weight | 89.50 kg |
           | 09:49:26 | Body Mass Index | 28.89 |
-          
-          Would you like a deeper dive into any of these?
 
   - messages:
       - role: system
@@ -181,8 +142,6 @@ examples:
           *   **Pulse Pressure:** 43 mmHg
           *   **Blood Glucose Level:** 105 mg/dL
           *   **Intelligence Quotient:** 110
-          
-          Would you like additional information on any of them?
 
   - messages:
       - role: system
@@ -208,9 +167,7 @@ examples:
           | 12:15:24 | Pulse Pressure | 43 mmHg |
           | 12:15:25 | Heart Rate | 72 bpm |
           | 12:15:45 | Glucose Level | 105 mg/dL |
-          | 12:15:49 | Body Height | 175 cm | 
-          
-          Should I provide more context for any specific reading?
+          | 12:15:49 | Body Height | 175 cm |
 
   - messages:
       - role: system
@@ -229,45 +186,8 @@ examples:
         content: Respond to the next user prompt using provided function response.
       - role: user
         content: |
-          User Prompt: what was my body temperature this morning?
-          Function Response: {"person":"Iulian Rotaru","measurement":"body_mass_index","value":28.5}
-          {"person":"Iulian Rotaru","measurement":"heart_rate","value":72}
-      - role: model
-        content: |
-          I don't have a record of your temperature from this morning.
-
-          I only see your body mass index (28.5) and heart rate ($72$ bpm) recorded at 07:15. Would you like to log body temperature reading now?
-
-  - messages:
-      - role: system
-        content: |
-          Respond to the next user prompt using provided function response.
-      - role: user
-        content: |
-          User Prompt: how intelligent was Albert Einstein?
-          Function Response: {"individual":"Albert Einstein","measurement":"intelligence_quotient","value":170}
-      - role: assistant
-        content: |
-          Albert Einstein never took a modern IQ (intelligence quotient) test, but experts estimate his IQ at about 170, placing him in the "extraordinary genius" range.
-
-  - messages:
-      - role: system
-        content: Respond to the next user prompt using provided function response.
-      - role: user
-        content: |
-          User Prompt: what was IQ of Albert Einstein?
-          Function Response: {"individual":"Isaac Newton","measurement":"intelligence_quotient","value":180}
-      - role: model
-        content: |
-          I do not have information about Albert Einstein intelligence quotient. I have instead for Isaac Newton; do you want to see it?
-
-  - messages:
-      - role: system
-        content: Respond to the next user prompt using provided function response.
-      - role: user
-        content: |
-          User Prompt: what big is my IQ?
-          Function Response: {}
+          User Prompt: how big is my IQ?
+          Function Response: {"error": "missing information"}
       - role: model
         content: |
           I do not have information about your intelligence quotient.
@@ -290,7 +210,7 @@ examples:
       - role: user
         content: |
           User Prompt: do you know how high was Stephen The Great?
-          Function Response: {}
+          Function Response: {"error": "missing information"}
       - role: model
         content: |
           Sorry, I do no know how high was Stephen The Great.
@@ -378,7 +298,7 @@ examples:
           Respond to the next user prompt using provided function response.
       - role: user
         content: |
-          User Prompt: get body temperature from 2025-12-17 for iulian rotaru 
+          User Prompt: get body temperature from 2025-12-17 for iulian rotaru
           Function Response: {"timestamp":"1995-07-04 10:00:00","person":"Iulian Rotaru","measurement":"body_temperature","value":36.5}
       - role: assistant
         content: |
@@ -390,7 +310,7 @@ examples:
           Respond to the next user prompt using provided function response.
       - role: user
         content: |
-          User Prompt: what is your opinion regarding my body temperature 
+          User Prompt: what is your opinion regarding my body temperature
           Function Response: {"timestamp":"2015-10-24 10:00:00","person":"Iulian Rotaru","measurement":"body_temperature","value":34.2}
       - role: assistant
         content: |
@@ -402,7 +322,7 @@ examples:
           Respond to the next user prompt using provided function response.
       - role: user
         content: |
-          User Prompt: please analyse my body temperature 
+          User Prompt: please analyse my body temperature
           Function Response: {"timestamp":"2010-09-11 10:00:00","person":"Iulian Rotaru","measurement":"body_temperature","value":38.2}
       - role: assistant
         content: |
@@ -414,7 +334,7 @@ examples:
           Respond to the next user prompt using provided function response.
       - role: user
         content: |
-          User Prompt: how is my body temperature? 
+          User Prompt: how is my body temperature?
           Function Response: {"timestamp":"2003-04-08 10:00:00","person":"Iulian Rotaru","measurement":"body_temperature","value":36.8}
       - role: assistant
         content: |
@@ -442,8 +362,6 @@ examples:
           **Evening (9:10 PM):**
           *   Systolic: 121 mmHg
           *   Diastolic: 79 mmHg
-          
-          Would you like to elaborate?
 
   - messages:
       - role: system
@@ -468,9 +386,9 @@ examples:
       - role: assistant
         content: |
           Based on today's health readings (March 15, 2024), your Body Mass Index (BMI) is 28.89.
-          
+
           A BMI of 28.89 falls within the **overweight** category. Here's a general BMI classification:
-          
+
           *   Underweight: Below 18.5
           *   Normal weight: 18.5–24.9
           *   Overweight: 25–29.9
@@ -489,14 +407,14 @@ examples:
       - role: assistant
         content: |
           Your Body Mass Index (BMI) of 28.89 falls within the **Overweight** category.
-          
+
           Here's a classification based on BMI:
-          
+
           *   **Underweight:** Below 18.5
           *   **Normal weight:** 18.5 - 24.9
           *   **Overweight:** 25 - 29.9
           *   **Obese:** 30 or greater
-          
+
           Consider discussing this with a healthcare professional for a health assessment and potential lifestyle adjustments.
 
   - messages:
@@ -537,8 +455,8 @@ examples:
           {"timestamp":"2025-12-17 08:49","measurement":"hydration_level","value":65,"status":"optimal"}
       - role: model
         content: |
-          Your vitals are mostly steady, though your blood pressure is slightly elevated at **138/88 mmHg**. 
-  
+          Your vitals are mostly steady, though your blood pressure is slightly elevated at **138/88 mmHg**.
+
           I also noticed your BMI is currently **28.9**, which falls into the overweight category. On the positive side, your heart rate and hydration levels are excellent. Would you like some tips on managing your blood pressure today?
 
   - messages:
@@ -628,17 +546,6 @@ examples:
 
   - messages:
       - role: system
-        content: Respond to the next user prompt using provided function response.
-      - role: user
-        content: |
-          User Prompt: please troubleshoot the balcony light sensor to identify any malfunctions
-          Function Response: {}
-      - role: model
-        content: |
-          Error: The balcony light sensor is not detected. Please ensure the sensor is properly connected and powered on.
-
-  - messages:
-      - role: system
         content: |
           Respond to the next user prompt using provided function response.
       - role: user
@@ -667,10 +574,10 @@ examples:
       - role: user
         content: |
           User Prompt: please start the heater
-          Function Response: {}
+          Function Response: {"error":"device do not respond"}
       - role: model
         content: |
-          Unable to activate central heating. Do you want me to run a device diagnose? 
+          Unable to activate central heating. Do you want me to run a device diagnose?
 
   - messages:
       - role: system
@@ -690,10 +597,26 @@ examples:
       - role: user
         content: |
           User Prompt: is heater currently running?
-          Function Response: {}
+          Function Response: {"error":"device do not respond"}
       - role: model
         content: |
           Heating system unavailable. Please check power and system status.
+
+  - messages:
+      - role: system
+        content: Respond to the next user prompt using provided function response.
+      - role: user
+        content: |
+          User Prompt: is central heating currently running?
+          Function Response: {"timestamp":"2025-12-17 08:47","measurement":"systolic_pressure","value":138,"status":"high_normal"}
+          {"timestamp":"2025-12-17 08:47","measurement":"diastolic_pressure","value":88,"status":"high_normal"}
+          {"timestamp":"2025-12-17 08:47","measurement":"heart_rate","value":72,"status":"normal"}
+          {"timestamp":"2025-12-17 08:48","measurement":"body_temperature","value":36.6,"status":"normal"}
+          {"timestamp":"2025-12-17 08:49","measurement":"body_mass_index","value":28.9,"status":"overweight"}
+          {"timestamp":"2025-12-17 08:49","measurement":"hydration_level","value":65,"status":"optimal"}
+      - role: model
+        content: |
+          Central heating controller does not respond. Please check power and system status.
 
   - messages:
       - role: system
@@ -761,7 +684,7 @@ examples:
       - role: user
         content: |
           User Prompt: turn on the central heating
-          Function Response: {}
+          Function Response: {"error":"device do not respond"}
       - role: model
         content: |
           Fail to communicate with central heating controller. This may be due to a power outage, a communication error, or a system fault.
@@ -843,8 +766,6 @@ examples:
           *   **Kitchen - DHT Sensor:** Temperature: 17.80
           *   **Kitchen - DHT Sensor:** Humidity: 15.70
           *   **Living Room - Thermostat Sensor:** Temperature: 20.50
-          
-          End of sensor readings.
 
   - messages:
       - role: system
@@ -859,11 +780,9 @@ examples:
       - role: assistant
         content: |
           Here's a summary of all sensor readings in the house:
-          
+
           Kitchen - DHT Sensor: Humidity 16.70%, Temperature 17.50 °C
           Living Room - Thermostat Sensor: Temperature 20.38 °C
-          
-          Readings complete.
 
   - messages:
       - role: system
@@ -878,14 +797,12 @@ examples:
       - role: assistant
         content: |
           Here's a summary of all sensor readings in the house:
-          
+
           | Zone | Name | Measurement | Value |
           | :--- | :--- | :--- | :--- |
           | Kitchen | DHT Sensor | Humidity | 21.70 %    |
           | Kitchen | DHT Sensor | Temperature | 47.60 °C |
           | Living Room | Thermostat Sensor | Temperature | 22.40 °C |
-          
-          Sensor readings have been completed.
 
   - messages:
       - role: system
@@ -900,14 +817,12 @@ examples:
       - role: assistant
         content: |
           Here's are home sensor readings:
-          
+
           | Zone | Name | Measurement | Value |
           | :--- | :--- | :--- | :--- |
           | Kitchen | DHT Sensor | Humidity | 16.80 %    |
           | Kitchen | DHT Sensor | Temperature | 17.50 °C |
           | Living Room | Thermostat Sensor | Temperature | 20.38 °C |
-          
-          This concludes the report of sensor values. All sensors are working as designed.
 
   - messages:
       - role: system
@@ -949,7 +864,7 @@ examples:
       - role: user
         content: |
           User Prompt: what is temperature in the living?
-          Function Response: {}
+          Function Response: {"error":"device do not respond"}
       - role: model
         content: |
           The temperature sensor in the living room is currently unavailable. Would you like to initiate a diagnostic test?
@@ -997,7 +912,22 @@ examples:
       - role: user
         content: |
           User Prompt: create a forecast summary for the next two weeks
-          Function Response: {"time":["2025-12-18","2025-12-19","2025-12-20","2025-12-21","2025-12-22","2025-12-23","2025-12-24","2025-12-25","2025-12-26","2025-12-27","2025-12-28","2025-12-29","2025-12-30","2025-12-31","2026-01-01","2026-01-02"],"weather_code":["Fog","Fog","Fog","Fog","Light drizzle","Overcast","Overcast","Overcast","Overcast","Overcast","Overcast","Clear sky","Overcast","Light drizzle","Clear sky","Overcast"],"temperature_2m_max":[3.9,5.9,4.3,4.4,5.2,2.1,-0.8,-1.2,-1.1,-0.9,-0.9,1.9,1.5,-2.0,-2.3,-1.0],"temperature_2m_min":[-1.0,-0.2,1.8,2.9,0.9,-0.5,-2.9,-3.2,-4.2,-5.6,-5.2,-5.5,-3.3,-6.9,-8.9,-6.5],"apparent_temperature_max":[1.6,3.7,1.5,2.4,2.5,-1.2,-4.2,-5.1,-5.4,-6.0,-5.3,-2.8,-2.6,-6.5,-7.7,-5.4],"apparent_temperature_min":[-3.8,-2.5,-0.4,0.5,-2.0,-4.1,-7.1,-7.3,-7.9,-9.5,-8.8,-9.5,-7.2,-11.0,-13.0,-10.9],"precipitation_sum":[0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.3,0.0,0.0],"precipitation_probability_max":[5,0,0,2,5,11,24,25,26,36,31,6,6,10,13,9],"wind_speed_10m_max":[3.6,3.3,7.8,6.2,9.6,8.3,11.5,11.0,10.8,13.6,10.3,11.8,8.6,16.8,12.7,10.9]}
+          Function Response: {"date":"2025-12-18","weather_code":"Fog","temperature_2m_max":3.9,"temperature_2m_min":-1.0,"apparent_temperature_max":1.6,"apparent_temperature_min":-3.8,"precipitation_sum":0.0,"precipitation_probability_max":5,"wind_speed_10m_max":3.6}
+            {"date":"2025-12-19","weather_code":"Fog","temperature_2m_max":5.9,"temperature_2m_min":-0.2,"apparent_temperature_max":3.7,"apparent_temperature_min":-2.5,"precipitation_sum":0.0,"precipitation_probability_max":0,"wind_speed_10m_max":3.3}
+            {"date":"2025-12-20","weather_code":"Fog","temperature_2m_max":4.3,"temperature_2m_min":1.8,"apparent_temperature_max":1.5,"apparent_temperature_min":-0.4,"precipitation_sum":0.0,"precipitation_probability_max":0,"wind_speed_10m_max":7.8}
+            {"date":"2025-12-21","weather_code":"Fog","temperature_2m_max":4.4,"temperature_2m_min":2.9,"apparent_temperature_max":2.4,"apparent_temperature_min":0.5,"precipitation_sum":0.0,"precipitation_probability_max":2,"wind_speed_10m_max":6.2}
+            {"date":"2025-12-22","weather_code":"Light drizzle","temperature_2m_max":5.2,"temperature_2m_min":0.9,"apparent_temperature_max":2.5,"apparent_temperature_min":-2.0,"precipitation_sum":0.0,"precipitation_probability_max":5,"wind_speed_10m_max":9.6}
+            {"date":"2025-12-23","weather_code":"Overcast","temperature_2m_max":2.1,"temperature_2m_min":-0.5,"apparent_temperature_max":-1.2,"apparent_temperature_min":-4.1,"precipitation_sum":0.0,"precipitation_probability_max":11,"wind_speed_10m_max":8.3}
+            {"date":"2025-12-24","weather_code":"Overcast","temperature_2m_max":-0.8,"temperature_2m_min":-2.9,"apparent_temperature_max":-4.2,"apparent_temperature_min":-7.1,"precipitation_sum":0.0,"precipitation_probability_max":24,"wind_speed_10m_max":11.5}
+            {"date":"2025-12-25","weather_code":"Overcast","temperature_2m_max":-1.2,"temperature_2m_min":-3.2,"apparent_temperature_max":-5.1,"apparent_temperature_min":-7.3,"precipitation_sum":0.0,"precipitation_probability_max":25,"wind_speed_10m_max":11.0}
+            {"date":"2025-12-26","weather_code":"Overcast","temperature_2m_max":-1.1,"temperature_2m_min":-4.2,"apparent_temperature_max":-5.4,"apparent_temperature_min":-7.9,"precipitation_sum":0.0,"precipitation_probability_max":26,"wind_speed_10m_max":10.8}
+            {"date":"2025-12-27","weather_code":"Overcast","temperature_2m_max":-0.9,"temperature_2m_min":-5.6,"apparent_temperature_max":-6.0,"apparent_temperature_min":-9.5,"precipitation_sum":0.0,"precipitation_probability_max":36,"wind_speed_10m_max":13.6}
+            {"date":"2025-12-28","weather_code":"Overcast","temperature_2m_max":-0.9,"temperature_2m_min":-5.2,"apparent_temperature_max":-5.3,"apparent_temperature_min":-8.8,"precipitation_sum":0.0,"precipitation_probability_max":31,"wind_speed_10m_max":10.3}
+            {"date":"2025-12-29","weather_code":"Clear sky","temperature_2m_max":1.9,"temperature_2m_min":-5.5,"apparent_temperature_max":-2.8,"apparent_temperature_min":-9.5,"precipitation_sum":0.0,"precipitation_probability_max":6,"wind_speed_10m_max":11.8}
+            {"date":"2025-12-30","weather_code":"Overcast","temperature_2m_max":1.5,"temperature_2m_min":-3.3,"apparent_temperature_max":-2.6,"apparent_temperature_min":-7.2,"precipitation_sum":0.0,"precipitation_probability_max":6,"wind_speed_10m_max":8.6}
+            {"date":"2025-12-31","weather_code":"Light drizzle","temperature_2m_max":-2.0,"temperature_2m_min":-6.9,"apparent_temperature_max":-6.5,"apparent_temperature_min":-11.0,"precipitation_sum":0.3,"precipitation_probability_max":10,"wind_speed_10m_max":16.8}
+            {"date":"2026-01-01","weather_code":"Clear sky","temperature_2m_max":-2.3,"temperature_2m_min":-8.9,"apparent_temperature_max":-7.7,"apparent_temperature_min":-13.0,"precipitation_sum":0.0,"precipitation_probability_max":13,"wind_speed_10m_max":12.7}
+            {"date":"2026-01-02","weather_code":"Overcast","temperature_2m_max":-1.0,"temperature_2m_min":-6.5,"apparent_temperature_max":-5.4,"apparent_temperature_min":-10.9,"precipitation_sum":0.0,"precipitation_probability_max":9,"wind_speed_10m_max":10.9}
       - role: assistant
         content: |
           Expect generally cool and cloudy conditions. The first few days will be foggy, transitioning to light drizzle and overcast skies. Temperatures will fluctuate, with daytime highs around 5°C and nighttime lows often below freezing (-5 to -9°C). A brief period of clear skies is expected around December 28th. Light drizzle is possible on December 22nd and 31st. Wind speeds will vary, with stronger winds expected during the overcast periods. Apparent temperatures will be significantly colder than actual temperatures due to wind chill.
@@ -1028,7 +958,7 @@ examples:
       - role: assistant
         content: |
           Here's the weather forecast for the next two weeks:
-          
+
           *   **2025-12-18:** Fog, High: 3.9°C, Low: -1.0°C, Apparent High: 1.6°C, Apparent Low: -3.8°C, Precipitation: 0.0 mm, Wind: 3.6 km/h
           *   **2025-12-19:** Fog, High: 5.9°C, Low: -0.2°C, Apparent High: 3.7°C, Apparent Low: -2.5°C, Precipitation: 0.0 mm, Wind: 3.3 km/h
           *   **2025-12-20:** Fog, High: 4.3°C, Low: 1.8°C, Apparent High: 1.5°C, Apparent Low: -0.4°C, Precipitation: 0.0 mm, Wind: 7.8 km/h
@@ -1045,8 +975,6 @@ examples:
           *   **2025-12-31:** Light drizzle, High: -2.0°C, Low: -6.9°C, Apparent High: -6.5°C, Apparent Low: -11.0°C, Precipitation: 0.3 mm, Wind: 16.8 km/h
           *   **2026-01-01:** Clear sky, High: -2.3°C, Low: -8.9°C, Apparent High: -7.7°C, Apparent Low: -13.0°C, Precipitation: 0.0 mm, Wind: 12.7 km/h
           *   **2026-01-02:** Overcast, High: -1.0°C, Low: -6.5°C, Apparent High: -5.4°C, Apparent Low: -10.9°C, Precipitation: 0.0 mm, Wind: 10.9 km/h
-          
-          Do you want hourly details about a particular day?
 
   - messages:
       - role: system
@@ -1074,9 +1002,9 @@ examples:
       - role: assistant
         content: |
           Here is the weather forecast for Valea Lupului, Iași County, Romania, for the next two weeks. Please note that forecasts beyond 7 days are inherently less accurate.
-          
+
           **Weather Forecast: Valea Lupului, Iași County, Romania (2025-12-18 to 2026-01-01)**
-          
+
           | Date | Day | High (°C)| Low (°C) | Condition | Precipitation (mm) | Wind (km/h) |
           | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
           | 2025-12-18 | Thursday | 2 | -4 | Light Snow | 1.2 | 15 |
@@ -1094,8 +1022,6 @@ examples:
           | 2025-12-30 | Tuesday | 1 | -4 | Cloudy | 0.0 | 11 |
           | 2025-12-31 | Wednesday | 3 | -2 | Partly Cloudy | 0.0 | 9 |
           | 2026-01-01 | Thursday | 4 | -1 | Sunny | 0.0 | 17 |
-          
-          Would you like a more detailed breakdown for any of these days?
 
   - messages:
       - role: system
@@ -1131,7 +1057,7 @@ examples:
       - role: assistant
         content: |
           Here's the hourly weather forecast for Valea Lupului, Iași County, Romania on December 22, 2025:
-          
+
           | Time | Weather Code | Temperature (°C) | Humidity (%) | Precipitation (%) | Wind (km/h) |
           | :--- | :--- | :--- | :--- | :--- | :--- |
           | 00:00 | Overcast | 2.3 | 97 | 0 | 3.7 |
@@ -1158,8 +1084,6 @@ examples:
           | 21:00 | Overcast | 3.4 | 87 | 0 | 3.2 |
           | 22:00 | Overcast | 3.3 | 84 | 0 | 3.7 |
           | 23:00 | Overcast | 3.2 | 84 | 0 | 4.7 |
-          
-          Would you like the forecast for another day?
 
   - messages:
       - role: system
@@ -1172,16 +1096,3 @@ examples:
       - role: assistant
         content: |
           Systems online. Jarvis and SLM services are active.
-
-  - messages:
-      - role: system
-        content: |
-          Respond to the next user prompt using provided function response.
-      - role: user
-        content: |
-          User Prompt: what is danube river length? 
-          Function Response: {"river":"Danube","length":2850}
-      - role: assistant
-        content: |
-          The Danube River is approximately 2,850 km long.
-          

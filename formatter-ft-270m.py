@@ -43,6 +43,7 @@ if hasattr(model, 'generation_config'):
     model.generation_config.bos_token_id = tokenizer.bos_token_id
 model.resize_token_embeddings(len(tokenizer))
 
+
 def load_yaml_data(file_path):
     """Load training data from YAML file"""
     with open(file_path, 'r', encoding='utf-8') as f:
@@ -116,7 +117,7 @@ data_collator = DataCollatorForLanguageModeling(tokenizer=tokenizer, mlm=False)
 
 training_args = TrainingArguments(
     output_dir=OUTPUT_DIR,
-    num_train_epochs=3,
+    num_train_epochs=4,
     per_device_train_batch_size=2,
     per_device_eval_batch_size=1,
     gradient_accumulation_steps=1,
@@ -159,4 +160,3 @@ trainer.save_model(OUTPUT_DIR)
 tokenizer.save_pretrained(OUTPUT_DIR)
 
 print(f"Training completed!")
-

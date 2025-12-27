@@ -1,18 +1,15 @@
 import argparse
 import time
-
+import os
 import numpy as np
 import torch
 import yaml
 import evaluate
-from sentence_transformers import SentenceTransformer, util
 from transformers import AutoTokenizer, AutoModelForCausalLM
-import os
+import util
 
-MODEL_DIR = os.environ.get("AI_MODEL_DIR") + "/hugging-face/model/"
 EVAL_MODEL = "formatter-270m"
-# EVAL_MODEL = MODEL_DIR + "gemma-3-270m-it"
-SCORE_MODEL = MODEL_DIR + "all-MiniLM-L6-v2"
+# EVAL_MODEL = util.get_model_path("gemma-3-270m-it")
 
 DATA_FILE = "data/formatter-eval.yml"
 ROUGE = evaluate.load("rouge")
@@ -20,21 +17,23 @@ BERT = evaluate.load("bertscore")
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--verbose", action="store_true")
+parser.add_argument("--list", action="store_true")
+parser.add_argument("tests", type=int, nargs='*', help="tests number to execute")
 args = parser.parse_args()
-
-
-def get_similarity_score(prediction_arg, ground_truth_arg):
-    prediction_embedding = score_model.encode(prediction_arg, convert_to_tensor=True)
-    ground_truth_embedding = score_model.encode(ground_truth_arg, convert_to_tensor=True)
-    return util.cos_sim(prediction_embedding, ground_truth_embedding).item()
-
 
 with open(DATA_FILE, 'r', encoding='UTF-8') as file:
     dataset = yaml.safe_load(file)
 
-device = "cuda" if torch.cuda.is_available() else "cpu"
-score_model = SentenceTransformer(SCORE_MODEL)
+if args.list:
+    for index, datapoint in enumerate(dataset):
+        print(f"{index + 1:>3}. {util.get_chat_prompt(datapoint['chat'])}")
+    exit(0)
 
+if args.tests:
+    dataset = [dataset[test - 1] for test in args.tests]
+print(f"Loaded {len(dataset)} tests from the file `{os.path.abspath(DATA_FILE)}`.")
+
+device = "cuda" if torch.cuda.is_available() else "cpu"
 eval_tokenizer = AutoTokenizer.from_pretrained(EVAL_MODEL)
 eval_tokenizer.pad_token = eval_tokenizer.eos_token
 eval_model = AutoModelForCausalLM.from_pretrained(EVAL_MODEL, dtype=torch.bfloat16, device_map=device)
@@ -51,8 +50,7 @@ dataset_size = len(dataset)
 start_time = time.time()
 for index, datapoint in enumerate(dataset):
     chat = datapoint['chat']
-    content = next((item['content'] for item in chat if item['role'] == 'user'), None)
-    prompt = content.splitlines()[0].replace('User Prompt: ', '')
+    prompt = util.get_chat_prompt(chat)
     ground_truth = datapoint['ground_truth']
 
     input_text = eval_tokenizer.apply_chat_template(chat, tokenize=False, add_generation_prompt=True)
@@ -63,7 +61,7 @@ for index, datapoint in enumerate(dataset):
         outputs = eval_model.generate(**inputs, **config)
     input_length = inputs["input_ids"].shape[1]
     prediction = eval_tokenizer.decode(outputs[0][input_length:], skip_special_tokens=True)
-    similarity_score = get_similarity_score(prediction, ground_truth)
+    similarity_score = util.get_similarity_score(prediction, ground_truth)
     similarity_scores.append(similarity_score)
     print(f"{index + 1:>3} / {dataset_size}: {similarity_score:>7.4f}: {prompt}")
 

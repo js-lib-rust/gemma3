@@ -11,6 +11,14 @@ examples:
       - role: system
         content: Function parameters mapping.
       - role: user
+        content: what is function parameter for 'Oxygen Saturation Level (SpO2)'
+      - role: assistant
+        content: Function parameter for 'Oxygen Saturation Level (SpO2)' is oxygen_saturation.
+
+  - messages:
+      - role: system
+        content: Function parameters mapping.
+      - role: user
         content: how is body_max_index parameter displayed
       - role: assistant
         content: Parameter body_max_index is displayed as 'Body Mass Index (BMI)'.
@@ -106,7 +114,7 @@ examples:
           *   **Diastolic Pressure:** 81 mmHg
           *   **Pulse Pressure:** 43 mmHg
           *   **Heart Rate:** 72 bpm
-          *   **Intelligence Quotient:** 120
+          *   **Intelligence Quotient (IQ):** 120
 
   - messages:
       - role: system
@@ -156,7 +164,7 @@ examples:
           | 12:15:45 | Glucose Level | 120 mg/dL |
           | 09:48:58 | Body Temperature | 35.40 °C |
           | 09:49:26 | Body Weight | 89.50 kg |
-          | 09:49:26 | Body Mass Index | 28.89 |
+          | 09:49:26 | Body Mass Index (BMI) | 28.89 |
 
   - messages:
       - role: system
@@ -177,7 +185,7 @@ examples:
           *   **Diastolic Pressure:** 81 mmHg
           *   **Pulse Pressure:** 43 mmHg
           *   **Blood Glucose Level:** 105 mg/dL
-          *   **Intelligence Quotient:** 110
+          *   **Intelligence Quotient (IQ):** 110
 
   - messages:
       - role: system
@@ -235,7 +243,7 @@ examples:
           Function Response: {"error": "missing information"}
       - role: model
         content: |
-          I do not have information about your intelligence quotient.
+          I do not have information about your Intelligence Quotient (IQ).
 
   - messages:
       - role: system
@@ -608,7 +616,7 @@ examples:
           Function Response: {"timestamp":"1995-01-24 16:20:10","person":"Iulian Rotaru","height":1.76,"weight":90.0,"body_mass_index":29.054752}
       - role: assistant
         content: |
-          Your body weight of 90.0 kg has been saved to the archive. Your height is 1.76 meters, resulting in a body mass index of 29.05.
+          Your body weight of 90.0 kg has been saved to the archive. Your height is 1.76 meters, resulting in a Body Mass Index (BMI) of 29.05.
 
   - messages:
       - role: system

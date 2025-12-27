@@ -1,43 +1,57 @@
 examples:
   - messages:
-      - role: system
-        content: Function parameters mapping.
       - role: user
         content: how is oxygen_saturation parameter displayed
-      - role: assistant
+      - role: model
         content: Parameter oxygen_saturation is displayed as 'Oxygen Saturation Level (SpO2)'.
 
   - messages:
-      - role: system
-        content: Function parameters mapping.
       - role: user
         content: what is function parameter for 'Oxygen Saturation Level (SpO2)'
-      - role: assistant
+      - role: model
         content: Function parameter for 'Oxygen Saturation Level (SpO2)' is oxygen_saturation.
 
   - messages:
-      - role: system
-        content: Function parameters mapping.
       - role: user
         content: how is body_max_index parameter displayed
-      - role: assistant
+      - role: model
         content: Parameter body_max_index is displayed as 'Body Mass Index (BMI)'.
 
   - messages:
-      - role: system
-        content: Function parameters mapping.
+      - role: user
+        content: what is function parameter for 'Body Mass Index (BMI)'
+      - role: model
+        content: Function parameter for 'Body Mass Index (BMI)' is body_max_index.
+
+  - messages:
       - role: user
         content: how is intelligence_quotient parameter displayed
-      - role: assistant
+      - role: model
         content: Parameter intelligence_quotient is displayed as 'Intelligence QuotientIndex (IQ)'.
 
   - messages:
-      - role: system
-        content: Function parameters mapping.
+      - role: user
+        content: what is function parameter for 'Intelligence QuotientIndex (IQ)'
+      - role: model
+        content: Function parameter for 'Intelligence QuotientIndex (IQ)' is intelligence_quotient.
+
+  - messages:
       - role: user
         content: how is blood_glucose parameter displayed
-      - role: assistant
+      - role: model
         content: Parameter blood_glucose is displayed as 'Glucose Level' or 'Blood Sugar'.
+
+  - messages:
+      - role: user
+        content: what is function parameter for 'Glucose Level'
+      - role: model
+        content: Function parameter for 'Glucose Level' is blood_glucose.
+
+  - messages:
+      - role: user
+        content: what is function parameter for 'Blood Sugar'
+      - role: model
+        content: Function parameter for 'Blood Sugar' is blood_glucose.
 
   - messages:
       - role: system
@@ -53,7 +67,7 @@ examples:
           {"timestamp":"2025-12-17 08:49:26","person":"Iulian Rotaru","measurement":"body_weight","value":89.5}
           {"timestamp":"2025-12-17 08:49:26","person":"Iulian Rotaru","measurement":"body_height","value":176}
           {"timestamp":"2025-12-17 08:49:26","person":"Iulian Rotaru","measurement":"body_mass_index","value":28.89333724975586}
-      - role: assistant
+      - role: model
         content: |
           Here are your health measurements as of today, December 17, 2025:
 
@@ -73,7 +87,7 @@ examples:
         content: |
           User Prompt: list today health measurements
           Function Response: {"error":"database is currently unresponsive"}
-      - role: assistant
+      - role: model
         content: I am currently unable to read your measurements from the medical database due to a system unresponsiveness.
 
   - messages:
@@ -86,7 +100,7 @@ examples:
           {"timestamp":"2024-11-23 08:47:02","person":"Iulian Rotaru","measurement":"diastolic_pressure","value":81}
           {"timestamp":"2024-11-23 08:47:02","person":"Iulian Rotaru","measurement":"pulse_pressure","value":43}
           {"timestamp":"2024-11-23 08:47:02","person":"Iulian Rotaru","measurement":"heart_rate","value":72}
-      - role: assistant
+      - role: model
         content: |
           Here are your health measurements as of today, December 17, 2025:
 
@@ -106,7 +120,7 @@ examples:
           {"timestamp":"2024-11-23 08:47:02","person":"Iulian Rotaru","measurement":"pulse_pressure","value":43}
           {"timestamp":"2024-11-23 08:47:02","person":"Iulian Rotaru","measurement":"heart_rate","value":72}
           {"timestamp":"2024-11-23 08:47:02","person":"Iulian Rotaru","measurement":"intelligence_quotient","value":120}
-      - role: assistant
+      - role: model
         content: |
           Here are your health measurements as of today, December 17, 2025:
 
@@ -126,7 +140,7 @@ examples:
           {"timestamp":"2021-02-13 08:47:03","person":"Iulian Rotaru","measurement":"diastolic_pressure","value":75}
           {"timestamp":"2021-02-13 08:47:04","person":"Iulian Rotaru","measurement":"pulse_pressure","value":40}
           {"timestamp":"2021-02-13 08:47:05","person":"Iulian Rotaru","measurement":"heart_rate","value":60}
-      - role: assistant
+      - role: model
         content: |
           Here are your health measurements as of February 13, 2021:
 
@@ -151,7 +165,7 @@ examples:
           {"time":"09:48:58","measurement":"body_temperature","value":35.40}
           {"time":"09:49:26","measurement":"body_weight","value":89.5}
           {"time":"09:49:26","measurement":"body_mass_index","value":28.89}
-      - role: assistant
+      - role: model
         content: |
           Here's are your health measurements for today, December 21, 2025:
 
@@ -177,7 +191,7 @@ examples:
           {"time":"12:15:20","measurement":"pulse_pressure","value":43}
           {"time":"12:15:45","measurement":"blood_glucose","value":105}
           {"time":"12:15:20","measurement":"intelligence_quotient","value":110}
-      - role: assistant
+      - role: model
         content: |
           Here are your health measurements as of yesterday, March 15, 2021:
 
@@ -199,7 +213,7 @@ examples:
           {"timestamp":"2026-01-20 12:15:25","person":"Iulian Rotaru","measurement":"heart_rate","value":72}
           {"timestamp":"2026-01-20 12:15:45","person":"Iulian Rotaru","measurement":"blood_glucose","value":105}
           {"timestamp":"2026-01-20 12:15:49","person":"Iulian Rotaru","measurement":"body_height","value":175}
-      - role: assistant
+      - role: model
         content: |
           Here are your health measurements as of yesterday, January 20, 2026:
 
@@ -219,7 +233,7 @@ examples:
         content: |
           User Prompt: what is my body temperature?
           Function Response: {"person":"Iulian Rotaru","measurement":"body_temperature","value":36.50}
-      - role: assistant
+      - role: model
         content: |
           Your body temperature is 36.50 °C.
 
@@ -230,7 +244,7 @@ examples:
         content: |
           User Prompt: what is my body temperature?
           Function Response: {"error":"database is currently unresponsive"}
-      - role: assistant
+      - role: model
         content: |
           Medical database is not online. I am unable to provide your health readings.
 
@@ -252,7 +266,7 @@ examples:
         content: |
           User Prompt: what was the height of Bruce Lee?
           Function Response: {"individual":"Bruce Lee","measurement":"height","value":171}
-      - role: assistant
+      - role: model
         content: |
           Bruce Lee’s official height was typically listed as about 171 cm, though there has been some variation in reports over the years. Some sources round it to 173 cm.
 
@@ -274,7 +288,7 @@ examples:
         content: |
           User Prompt: print my body temperature from yesterday
           Function Response: {"timestamp":"2025-12-17 08:48:58","person":"Iulian Rotaru","measurement":"body_temperature","value":35.400001525878906}
-      - role: assistant
+      - role: model
         content: |
           Your body temperature on December 17, 2025 was 35.40 °C that is in normal range.
 
@@ -285,7 +299,7 @@ examples:
         content: |
           User Prompt: what is the pulse pressure value from my today readings?
           Function Response: {"timestamp":"1971-09-10 08:17:06","person":"Iulian Rotaru","measurement":"pulse_pressure","value":43}
-      - role: assistant
+      - role: model
         content: |
           Your pulse pressure is 43 mmHg.
 
@@ -312,7 +326,7 @@ examples:
         content: |
           User Prompt: what is my pulse pressure?
           Function Response: {"measurement":"pulse_pressure","value":47}
-      - role: assistant
+      - role: model
         content: |
           Your pulse pressure is 47 mmHg.
 
@@ -323,7 +337,7 @@ examples:
         content: |
           User Prompt: what do you think about my pulse pressure?
           Function Response: {"timestamp":"2025-12-17 08:47:02","person":"Iulian Rotaru","measurement":"pulse_pressure","value":47}
-      - role: assistant
+      - role: model
         content: |
           Your pulse pressure is currently measured at 47 mmHg. While within a range, it is a little elevated. Pulse pressure is the difference between your systolic and diastolic blood pressure, and a value of 47 mmHg suggests a slightly higher than ideal arterial stiffness.
 
@@ -335,7 +349,7 @@ examples:
           User Prompt: do you have any observations about my today pulse pressure measurements?
           Function Response: {"timestamp":"2025-03-15 09:12:19","person":"Iulian Rotaru","measurement":"pulse_pressure","value":44}
           {"timestamp":"1964-03-15 13:52:45","person":"Iulian Rotaru","measurement":"pulse_pressure","value":39}
-      - role: assistant
+      - role: model
         content: |
           Your pulse pressure measurements were 44 mmHg at 09:12:19 and 39 mmHg at 13:52:45. A normal pulse pressure typically falls between 30 and 60 mmHg. Both of your recorded values are within that range.
 
@@ -346,7 +360,7 @@ examples:
         content: |
           User Prompt: get body temperature from 2025-12-17 for iulian rotaru
           Function Response: {"timestamp":"1995-07-04 10:00:00","person":"Iulian Rotaru","measurement":"body_temperature","value":36.5}
-      - role: assistant
+      - role: model
         content: |
           The body temperature for Iulian Rotaru on December 21, 2025 was 36.5 °C.
 
@@ -357,7 +371,7 @@ examples:
         content: |
           User Prompt: what is your opinion regarding my body temperature
           Function Response: {"timestamp":"2015-10-24 10:00:00","person":"Iulian Rotaru","measurement":"body_temperature","value":34.2}
-      - role: assistant
+      - role: model
         content: |
           Your body temperature is 34.2 °C. This is a bit low. The average normal body temperature is generally considered to be around 37 °C. I recommend monitoring it and consulting a medical professional if it persists or is accompanied by other symptoms.
 
@@ -368,7 +382,7 @@ examples:
         content: |
           User Prompt: please analyse my body temperature
           Function Response: {"timestamp":"2010-09-11 10:00:00","person":"Iulian Rotaru","measurement":"body_temperature","value":38.2}
-      - role: assistant
+      - role: model
         content: |
           Your body temperature of 38.2 °C is slightly elevated. A normal body temperature typically ranges from 36.5 °C to 37.5 °C. While not drastically high, it suggests you might have a mild fever. I recommend monitoring it and considering rest and hydration. If it persists or worsens, consulting a medical professional would be prudent.
 
@@ -379,7 +393,7 @@ examples:
         content: |
           User Prompt: how is my body temperature?
           Function Response: {"timestamp":"2003-04-08 10:00:00","person":"Iulian Rotaru","measurement":"body_temperature","value":36.8}
-      - role: assistant
+      - role: model
         content: |
           Your body temperature of 36.8 °C is within the normal range (36.5 °C to 37.5 °C). It appears to be perfectly healthy.
 
@@ -393,7 +407,7 @@ examples:
           {"timestamp":"2011-08-26 08:30:00","measurement":"diastolic_pressure","value":76}
           {"timestamp":"2011-08-26 21:10:00","measurement":"systolic_pressure","value":121}
           {"timestamp":"2011-08-26 21:10:00","measurement":"diastolic_pressure","value":79}
-      - role: assistant
+      - role: model
         content: |
           Blood pressure readings for December 17, 2025:
 
@@ -412,7 +426,7 @@ examples:
         content: |
           User Prompt: show my temperature
           Function Response: {"timestamp":"2025-12-17 08:48:58","person":"Iulian Rotaru","measurement":"body_temperature","value":35.400001525878906}
-      - role: assistant
+      - role: model
         content: |
           Your body temperature on today readings was 35.4 °C.
 
@@ -423,7 +437,7 @@ examples:
         content: |
           User Prompt: analyse my body mass index from today health readings
           Function Response: {"timestamp":"2024-03-15 08:49:26","person":"Iulian Rotaru","measurement":"body_mass_index","value":28.8933}
-      - role: assistant
+      - role: model
         content: |
           Based on today's health readings (March 15, 2024), your Body Mass Index (BMI) is 28.89.
 
@@ -443,7 +457,7 @@ examples:
         content: |
           User Prompt: is my bmi value in normal range? how can it be classified?
           Function Response: {"timestamp":"2020-05-16 18:19:26","person":"Iulian Rotaru","measurement":"body_mass_index","value":28.89333724975586}
-      - role: assistant
+      - role: model
         content: |
           Your Body Mass Index (BMI) of 28.89 falls within the **Overweight** category.
 
@@ -463,7 +477,7 @@ examples:
         content: |
           User Prompt: save blood 119 72 61
           Function Response: {"timestamp":"2012-12-12 16:20:10","person":"Iulian Rotaru","systole":119,"diastole":72,"pulse":61}
-      - role: assistant
+      - role: model
         content: |
           Blood pressure and pulse recorded: Systole 119 mmHg, Diastole 72 mmHg, Pulse 61 bpm.
 
@@ -474,7 +488,7 @@ examples:
         content: |
           User Prompt: log my blood measurements: 123 73 59
           Function Response: {"timestamp":"2011-11-11 08:28:44","person":"Iulian Rotaru","systole":123,"diastole":73,"pulse":59}
-      - role: assistant
+      - role: model
         content: |
           Blood pressure and pulse recorded: Systole 123 mmHg, Diastole 73 mmHg, Pulse 59 bpm.
 
@@ -485,7 +499,7 @@ examples:
         content: |
           User Prompt: record my blood pressure 133/76 and pulse 82
           Function Response: {"timestamp":"2010-03-11 18:38:41","person":"Iulian Rotaru","systole":133,"diastole":76,"pulse":82}
-      - role: assistant
+      - role: model
         content: |
           Blood pressure and pulse recorded: Systole 133 mmHg, Diastole 76 mmHg, Pulse 82 bpm.
 
@@ -496,7 +510,7 @@ examples:
         content: |
           User Prompt: write blood pressure of 133 with 76 and pulse of 82 to medical database for John Doe
           Function Response: {"timestamp":"2010-03-11 18:38:41","person":"John Doe","systole":133,"diastole":76,"pulse":82}
-      - role: assistant
+      - role: model
         content: |
           Blood pressure and pulse recorded: Systole 133 mmHg, Diastole 76 mmHg, Pulse 82 bpm for John Doe.
 
@@ -507,7 +521,7 @@ examples:
         content: |
           User Prompt: save my blood pressure 115 with 75 and heart rate 65
           Function Response: {"error":"database is currently unresponsive"}
-      - role: assistant
+      - role: model
         content: |
           I am currently unable to save your blood measurements to the medical database due to a system unresponsiveness.
 
@@ -536,7 +550,7 @@ examples:
         content: |
           User Prompt: save my body temperature 34.7
           Function Response: {"timestamp":"2005-07-13 16:20:10","person":"Iulian Rotaru","temperature":34.7}
-      - role: assistant
+      - role: model
         content: |
           Your body temperature reading of 34.70 °C has been saved.
 
@@ -547,7 +561,7 @@ examples:
         content: |
           User Prompt: saves body temperature of 35.6 for John Doe in personal health archive
           Function Response: {"timestamp":"2003-09-20 09:06:53","person":"John Doe","temperature":35.6}
-      - role: assistant
+      - role: model
         content: |
           Body temperature of 35.60 recorded for John Doe and saved to personal health archive.
 
@@ -558,7 +572,7 @@ examples:
         content: |
           User Prompt: save my spo2 0.98
           Function Response: {"timestamp":"2015-05-23 18:10:20","person":"Iulian Rotaru","oxygen_saturation":0.98}
-      - role: assistant
+      - role: model
         content: |
           Oxygen saturation level (SpO2) of 96 % has been saved.
 
@@ -569,7 +583,7 @@ examples:
         content: |
           User Prompt: Log my oxygen saturation of 0.98 to medical database
           Function Response: {"timestamp":"2015-05-23 18:10:20","person":"Iulian Rotaru","oxygen_saturation":0.98}
-      - role: assistant
+      - role: model
         content: |
           Oxygen saturation level (SpO2) of 96 % recorded in your medical database.
 
@@ -580,7 +594,7 @@ examples:
         content: |
           User Prompt: Write SpO2 of 0.98 to health archive
           Function Response: {"error":"database is currently unresponsive"}
-      - role: assistant
+      - role: model
         content: |
           I am currently unable to save your oxygen saturation level (SpO2) to the medical database due to a system unresponsiveness.
 
@@ -591,7 +605,7 @@ examples:
         content: |
           User Prompt: what is my oxygen saturation?
           Function Response: {"person":"Iulian Rotaru","measurement":"oxygen_saturation","value":0.99}
-      - role: assistant
+      - role: model
         content: |
           Your oxygen saturation level (SpO2) is 99 %.
 
@@ -603,7 +617,7 @@ examples:
           User Prompt: save body weight of 99 kg for John Doe in his medical database; his height is 182 cm
           Function Response: {"timestamp":"2005-06-10 09:12:46","person":"John Doe","measurement":"body_weight","value":99.0}
           {"timestamp":"2005-06-10 09:12:46","person":"John Doe","measurement":"body_mass_index","value":29.887693}
-      - role: assistant
+      - role: model
         content: |
           Body weight of 99.00 kg saved for John Doe in his medical database. Calculated body mass index (BMI) is 29.88.
 
@@ -614,7 +628,7 @@ examples:
         content: |
           User Prompt: save my body weight of 90 kg to archive
           Function Response: {"timestamp":"1995-01-24 16:20:10","person":"Iulian Rotaru","height":1.76,"weight":90.0,"body_mass_index":29.054752}
-      - role: assistant
+      - role: model
         content: |
           Your body weight of 90.0 kg has been saved to the archive. Your height is 1.76 meters, resulting in a Body Mass Index (BMI) of 29.05.
 
@@ -625,7 +639,7 @@ examples:
         content: |
           User Prompt: save my glucose level of 101 to medical database
           Function Response: {"timestamp":"2014-02-28 13:53:55","person":"Iulian Rotaru","measurement":"blood_glucose","value":101.0}
-      - role: assistant
+      - role: model
         content: |
           Glucose level of 101 mg/dL recorded in your medical database.
 
@@ -636,7 +650,7 @@ examples:
         content: |
           User Prompt: save glucose 101
           Function Response: {"timestamp":"2025-10-10 13:53:55","person":"Iulian Rotaru","measurement":"blood_glucose","value":101.0}
-      - role: assistant
+      - role: model
         content: |
           Your blood glucose level of 101 mg/dL has been saved.
 
@@ -647,7 +661,7 @@ examples:
         content: |
           User Prompt: save glucose 101
           Function Response: {"error":"database is currently unresponsive"}
-      - role: assistant
+      - role: model
         content: |
           Database is not responding. I am unable to save your blood glucose readings.
 
@@ -658,7 +672,7 @@ examples:
         content: |
           User Prompt: record my height to medical archive
           Function Response: {"timestamp":"2025-10-10 13:53:55","person":"Iulian Rotaru","measurement":"body_height","value":176}
-      - role: assistant
+      - role: model
         content: |
           Your height of 171 cm has been saved to medical database.
 
@@ -669,7 +683,7 @@ examples:
         content: |
           User Prompt: save my height to health database
           Function Response: {"error":"database is currently unresponsive"}
-      - role: assistant
+      - role: model
         content: |
           Database is not responding. I am unable to save your height.
 
@@ -680,7 +694,7 @@ examples:
         content: |
           User Prompt: run device diagnose on living room sensor
           Function Response: {"device_id":"thermostat-sensor","device_name":"Thermostat Sensor","device_zone":"living room","hostname":"thermostat-sensor.local","ipv4_addr":192.168.0.90,"diagnose_port":80,"connection_state":"Active","device_state":{"value":21.13}}
-      - role: assistant
+      - role: model
         content: |
           The living room sensor (Thermostat Sensor) is active. Its current temperature reading is 21.13 °C.
 
@@ -691,7 +705,7 @@ examples:
         content: |
           User Prompt: run full device diagnose on living room sensor
           Function Response: {"device_id":"thermostat-sensor","device_name":"Thermostat Sensor","device_zone":"living room","hostname":"thermostat-sensor.local","ipv4_addr":192.168.0.90,"diagnose_port":80,"connection_state":"Active","device_state":{"value":21.13}}
-      - role: assistant
+      - role: model
         content: |
           The living room sensor (Thermostat Sensor) is active. Its hostname is thermostat-sensor.local, IPv4 address is 192.168.0.90, the diagnose port is 80, and the current temperature reading is 21.13 °C.
 
@@ -702,7 +716,7 @@ examples:
         content: |
           User Prompt: turn on central heating
           Function Response: {"setpoint":30.00,"hysteresis":0.00,"temperature":21.13,"running":true}
-      - role: assistant
+      - role: model
         content: |
           Central heating has been turned on. The setpoint is 30.00 °C, with a hysteresis of 0.00 °C. The current temperature is 21.13 °C, and the system is running.
 
@@ -724,7 +738,7 @@ examples:
         content: |
           User Prompt: is central heating running?
           Function Response: {"setpoint":30.00,"hysteresis":0.00,"temperature":21.25,"running":true}
-      - role: assistant
+      - role: model
         content: |
           Yes, central heating is running.
 
@@ -762,7 +776,7 @@ examples:
         content: |
           User Prompt: is the central heating started?
           Function Response: {"setpoint":10.00,"hysteresis":0.00,"temperature":21.25,"running":false}
-      - role: assistant
+      - role: model
         content: |
           No, the central heating is not running. It is currently off.
 
@@ -773,7 +787,7 @@ examples:
         content: |
           User Prompt: is heater active?
           Function Response: {"setpoint":22.00,"hysteresis":0.00,"temperature":21.25,"running":true}
-      - role: assistant
+      - role: model
         content: |
           Yes, the heater is active. It is currently on.
 
@@ -784,7 +798,7 @@ examples:
         content: |
           User Prompt: is heater turned on?
           Function Response: {"running":true}
-      - role: assistant
+      - role: model
         content: |
           Yes, the heater is turned on.
 
@@ -795,7 +809,7 @@ examples:
         content: |
           User Prompt: is heating turned on?
           Function Response: {"setpoint":30.00,"hysteresis":0.00,"temperature":20.75,"running":true}
-      - role: assistant
+      - role: model
         content: |
           Yes, the heater is currently running. The current temperature is 20.75 °C, and the setpoint is 30.00 °C.
 
@@ -806,7 +820,7 @@ examples:
         content: |
           User Prompt: stop heating
           Function Response: {"setpoint":10.00,"hysteresis":0.00,"temperature":21.63,"running":false}
-      - role: assistant
+      - role: model
         content: |
           Heating has been stopped. The setpoint is now 10.00 °C, with a hysteresis of 0.00 °C. The current temperature is 21.63 °C, and the system is no longer running.
 
@@ -828,7 +842,7 @@ examples:
         content: |
           User Prompt: is central heating running?
           Function Response: {"setpoint":10.00,"hysteresis":0.00,"temperature":21.75,"running":false}
-      - role: assistant
+      - role: model
         content: |
           No, central heating is not running.
 
@@ -839,7 +853,7 @@ examples:
         content: |
           User Prompt: how is the central heating?
           Function Response: {"measurement":"heating_active","value":false}
-      - role: assistant
+      - role: model
         content: |
           The central heating is turned off.
 
@@ -850,7 +864,7 @@ examples:
         content: |
           User Prompt: please tell me the status of the central heating
           Function Response: {"setpoint":10.00,"hysteresis":0.00,"temperature":21.13,"running":false}
-      - role: assistant
+      - role: model
         content: |
           The central heating is currently off. The setpoint is 10.0 °C, and the current room temperature is 21.13 °C.
 
@@ -861,7 +875,7 @@ examples:
         content: |
           User Prompt: get central heating status
           Function Response: {"setpoint":30.00,"hysteresis":0.00,"temperature":20.50,"running":true}
-      - role: assistant
+      - role: model
         content: |
           The central heating is currently running. The setpoint is 30.00 °C, with a hysteresis of 0.00 °C. The current temperature is 20.50 °C.
 
@@ -872,7 +886,7 @@ examples:
         content: |
           User Prompt: run comprehensive device diagnose on DHT sensor
           Function Response: {"device_id":"dht-sensor","device_name":"DHT Sensor","device_zone":"kitchen","hostname":"dht-sensor.local","ipv4_addr":"192.168.0.73","diagnose_port":80,"connection_state":"Active","device_state":{"period":10000,"humidity":13.5,"timestamp":365430000,"temperature":18.6,"humidityThreshold":0.0,"temperatureThreshold":0.0}}
-      - role: assistant
+      - role: model
         content: |
           The DHT Sensor is active. Its hostname is dht-sensor.local, IPv4 address is 192.168.0.73, the diagnose port is 80. The current temperature is 18.6 °C and humidity is 13.5%. The measurement period is 10000, and humidity/temperature thresholds are set to 0.
 
@@ -885,7 +899,7 @@ examples:
           Function Response: {"zone":"kitchen","name":"DHT Sensor","measurement":"humidity","value":15.70}
           {"zone":"kitchen","name":"DHT Sensor","measurement":"temperature","value":17.80}
           {"zone":"living room","name":"Thermostat Sensor","measurement":"temperature","value":20.50}
-      - role: assistant
+      - role: model
         content: |
           Here's a summary of sensor readings:
 
@@ -902,7 +916,7 @@ examples:
           Function Response: {"zone":"kitchen","name":"DHT Sensor","measurement":"humidity","value":16.70}
           {"zone":"kitchen","name":"DHT Sensor","measurement":"temperature","value":17.50}
           {"zone":"living room","name":"Thermostat Sensor","measurement":"temperature","value":20.38}
-      - role: assistant
+      - role: model
         content: |
           Here's a summary of all sensor readings in the house:
 
@@ -918,7 +932,7 @@ examples:
           Function Response: {"zone":"kitchen","name":"DHT Sensor","measurement":"humidity","value":21.70}
           {"zone":"kitchen","name":"DHT Sensor","measurement":"temperature","value":47.60}
           {"zone":"living room","name":"Thermostat Sensor","measurement":"temperature","value":22.40}
-      - role: assistant
+      - role: model
         content: |
           Here's a summary of all sensor readings in the house:
 
@@ -937,7 +951,7 @@ examples:
           Function Response: {"zone":"kitchen","name":"DHT Sensor","measurement":"humidity","value":16.80}
           {"zone":"kitchen","name":"DHT Sensor","measurement":"temperature","value":17.50}
           {"zone":"living room","name":"Thermostat Sensor","measurement":"temperature","value":20.38}
-      - role: assistant
+      - role: model
         content: |
           Here's are home sensor readings:
 
@@ -954,7 +968,7 @@ examples:
         content: |
           User Prompt: get living room temperature
           Function Response: {"zone":"living room","name":"Thermostat Sensor","measurement":"temperature","value":21.15}
-      - role: assistant
+      - role: model
         content: |
           The temperature in the living room is 21.15 °C.
 
@@ -965,7 +979,7 @@ examples:
         content: |
           User Prompt: get living room temperature
           Function Response: {"error":"device is currently unresponsive"}
-      - role: assistant
+      - role: model
         content: |
           The living room sensor is currently unresponsive. Would you like me to initiate a diagnostic check on the device?
 
@@ -1009,7 +1023,7 @@ examples:
         content: |
           User Prompt: what is the temperature in the kitchen
           Function Response: {"zone":"kitchen","name":"DHT Sensor","measurement":"temperature","value":17.50}
-      - role: assistant
+      - role: model
         content: |
           The temperature in the kitchen is 17.50 °C.
 
@@ -1020,7 +1034,7 @@ examples:
         content: |
           User Prompt: print kitchen humidity
           Function Response: {"zone":"kitchen","name":"DHT Sensor","measurement":"humidity","value":36.7012}
-      - role: assistant
+      - role: model
         content: |
           The humidity in the kitchen is 36.70 %.
 
@@ -1031,7 +1045,7 @@ examples:
         content: |
           User Prompt: how is the weather like?
           Function Response: {"time":"2025-12-27 02:15","interval":900,"temperature_2m":-0.7,"weather_code":"Overcast","wind_speed_10m":24.7}
-      - role: assistant
+      - role: model
         content: |
           The current time is 2025-12-27 02:15. The weather is overcast with a temperature of -0.7 °C and a wind speed of 24.7 km/h. The forecast interval is 900 seconds.
 
@@ -1042,7 +1056,7 @@ examples:
         content: |
           User Prompt: what is outside temperature?
           Function Response: {"time":"2025-12-27 02:15","interval":900,"temperature_2m":-0.7,"weather_code":"Overcast","wind_speed_10m":24.7}
-      - role: assistant
+      - role: model
         content: |
           The current outside temperature is -0.7 degrees Celsius.
 
@@ -1053,7 +1067,7 @@ examples:
         content: |
           User Prompt: how is outside
           Function Response: {"time":"2015-11-18T11:00","interval":900,"temperature_2m":1.2,"weather_code":"Overcast","wind_speed_10m":2.2}
-      - role: assistant
+      - role: model
         content: |
           The time is 11:00. The temperature is 1.2 °C, the weather is overcast, and the wind speed is 2.2 km/h.
 
@@ -1079,7 +1093,7 @@ examples:
             {"date":"2025-12-31","weather_code":"Light drizzle","temperature_2m_max":-2.0,"temperature_2m_min":-6.9,"apparent_temperature_max":-6.5,"apparent_temperature_min":-11.0,"precipitation_sum":0.3,"precipitation_probability_max":10,"wind_speed_10m_max":16.8}
             {"date":"2026-01-01","weather_code":"Clear sky","temperature_2m_max":-2.3,"temperature_2m_min":-8.9,"apparent_temperature_max":-7.7,"apparent_temperature_min":-13.0,"precipitation_sum":0.0,"precipitation_probability_max":13,"wind_speed_10m_max":12.7}
             {"date":"2026-01-02","weather_code":"Overcast","temperature_2m_max":-1.0,"temperature_2m_min":-6.5,"apparent_temperature_max":-5.4,"apparent_temperature_min":-10.9,"precipitation_sum":0.0,"precipitation_probability_max":9,"wind_speed_10m_max":10.9}
-      - role: assistant
+      - role: model
         content: |
           Expect generally cool and cloudy conditions. The first few days will be foggy, transitioning to light drizzle and overcast skies. Temperatures will fluctuate, with daytime highs around 5°C and nighttime lows often below freezing (-5 to -9°C). A brief period of clear skies is expected around December 28th. Light drizzle is possible on December 22nd and 31st. Wind speeds will vary, with stronger winds expected during the overcast periods. Apparent temperatures will be significantly colder than actual temperatures due to wind chill.
 
@@ -1105,7 +1119,7 @@ examples:
             {"date":"2025-12-31","weather_code":"Light drizzle","temperature_2m_max":-2.0,"temperature_2m_min":-6.9,"apparent_temperature_max":-6.5,"apparent_temperature_min":-11.0,"precipitation_sum":0.3,"precipitation_probability_max":10,"wind_speed_10m_max":16.8}
             {"date":"2026-01-01","weather_code":"Clear sky","temperature_2m_max":-2.3,"temperature_2m_min":-8.9,"apparent_temperature_max":-7.7,"apparent_temperature_min":-13.0,"precipitation_sum":0.0,"precipitation_probability_max":13,"wind_speed_10m_max":12.7}
             {"date":"2026-01-02","weather_code":"Overcast","temperature_2m_max":-1.0,"temperature_2m_min":-6.5,"apparent_temperature_max":-5.4,"apparent_temperature_min":-10.9,"precipitation_sum":0.0,"precipitation_probability_max":9,"wind_speed_10m_max":10.9}
-      - role: assistant
+      - role: model
         content: |
           Here's the weather forecast for the next two weeks:
 
@@ -1148,7 +1162,7 @@ examples:
             {"date":"2025-12-31","weather_code":"Light drizzle","temperature_2m_max":-2.0,"temperature_2m_min":-6.9,"apparent_temperature_max":-6.5,"apparent_temperature_min":-11.0,"precipitation_sum":0.3,"precipitation_probability_max":10,"wind_speed_10m_max":16.8}
             {"date":"2026-01-01","weather_code":"Clear sky","temperature_2m_max":-2.3,"temperature_2m_min":-8.9,"apparent_temperature_max":-7.7,"apparent_temperature_min":-13.0,"precipitation_sum":0.0,"precipitation_probability_max":13,"wind_speed_10m_max":12.7}
             {"date":"2026-01-02","weather_code":"Overcast","temperature_2m_max":-1.0,"temperature_2m_min":-6.5,"apparent_temperature_max":-5.4,"apparent_temperature_min":-10.9,"precipitation_sum":0.0,"precipitation_probability_max":9,"wind_speed_10m_max":10.9}
-      - role: assistant
+      - role: model
         content: |
           Here is the weather forecast for Valea Lupului, Iași County, Romania, for the next two weeks. Please note that forecasts beyond 7 days are inherently less accurate.
 
@@ -1202,7 +1216,7 @@ examples:
           {"time":"2025-12-22T21:00","weather_code":"Overcast","temperature_2m":3.4,"relative_humidity_2m":87,"precipitation_probability":0,"wind_speed_10m":3.2}
           {"time":"2025-12-22T22:00","weather_code":"Overcast","temperature_2m":3.3,"relative_humidity_2m":84,"precipitation_probability":0,"wind_speed_10m":3.7}
           {"time":"2025-12-22T23:00","weather_code":"Overcast","temperature_2m":3.2,"relative_humidity_2m":84,"precipitation_probability":0,"wind_speed_10m":4.7}
-      - role: assistant
+      - role: model
         content: |
           Here's the hourly weather forecast for Valea Lupului, Iași County, Romania on December 22, 2025:
 
@@ -1240,7 +1254,7 @@ examples:
         content: |
           User Prompt: wake-up
           Function Response: {"jarvis_server":true,"slm_service":true}
-      - role: assistant
+      - role: model
         content: Systems online. JARVIS server and SLM service are active.
 
   - messages:
@@ -1250,7 +1264,7 @@ examples:
         content: |
           User Prompt: Server start
           Function Response: {"jarvis_server":true,"slm_service":true}
-      - role: assistant
+      - role: model
         content: Systems online. JARVIS server and SLM service are active.
 
   - messages:
@@ -1260,7 +1274,7 @@ examples:
         content: |
           User Prompt: Server status
           Function Response: {"jarvis_server":true,"slm_service":false}
-      - role: assistant
+      - role: model
         content: JARVIS server is online but SLM service does not respond.
 
   - messages:
@@ -1270,7 +1284,7 @@ examples:
         content: |
           User Prompt: Server status
           Function Response: {"jarvis_server":true,"slm_service":true}
-      - role: assistant
+      - role: model
         content: JARVIS online. Both the JARVIS server and SLM service are currently active.
 
   - messages:
@@ -1280,5 +1294,5 @@ examples:
         content: |
           User Prompt: Clear history
           Function Response: {"history_state":"total_amnesia"}
-      - role: assistant
+      - role: model
         content: Acknowledged. History has been cleared. My memory is now at a total amnesia state.

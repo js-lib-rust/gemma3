@@ -188,6 +188,17 @@ examples:
         content: Respond to the next user prompt using provided function response.
       - role: user
         content: |
+          User Prompt: what is my body temperature?
+          Function Response: {"error":"database is currently unresponsive"}
+      - role: assistant
+        content: |
+          Medical database is not online. I am unable to provide your health readings.
+
+  - messages:
+      - role: system
+        content: Respond to the next user prompt using provided function response.
+      - role: user
+        content: |
           User Prompt: how big is my IQ?
           Function Response: {"error": "missing information"}
       - role: model

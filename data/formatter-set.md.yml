@@ -1104,6 +1104,36 @@ examples:
         content: Respond to the next user prompt using provided function response.
       - role: user
         content: |
+          how is the weather like?
+          <start_function_response>
+          | time | interval | temperature_2m | weather_code | wind_speed_10m |
+          | :--- | :--- | :--- | :--- | :--- |
+          | 2025-12-27 02:15 | 900 | -0.7 | Overcast | 24.7 |
+          <end_function_response>
+      - role: model
+        content: |
+          The current time is 2025-12-27 02:15. The weather is overcast with a temperature of -0.7 °C and a wind speed of 24.7 km/h. The forecast interval is 900 seconds.
+
+  - messages:
+      - role: system
+        content: Respond to the next user prompt using provided function response.
+      - role: user
+        content: |
+          what is outside temperature?
+          <start_function_response>
+          | time | interval | temperature_2m | weather_code | wind_speed_10m |
+          | :--- | :--- | :--- | :--- | :--- |
+          | 2025-12-27 02:15 | 900 | -0.7 | Overcast | 24.7 |
+          <end_function_response>
+      - role: model
+        content: |
+          The current outside temperature is -0.7 degrees Celsius.
+
+  - messages:
+      - role: system
+        content: Respond to the next user prompt using provided function response.
+      - role: user
+        content: |
           how is outside
           <start_function_response>
           | time | interval | temperature_2m | weather_code | wind_speed_10m |

@@ -899,6 +899,30 @@ examples:
           Respond to the next user prompt using provided function response.
       - role: user
         content: |
+          User Prompt: how is the weather like?
+          Function Response: {"time":"2025-12-27 02:15","interval":900,"temperature_2m":-0.7,"weather_code":"Overcast","wind_speed_10m":24.7}
+      - role: assistant
+        content: |
+          The current time is 2025-12-27 02:15. The weather is overcast with a temperature of -0.7 °C and a wind speed of 24.7 km/h. The forecast interval is 900 seconds.
+
+  - messages:
+      - role: system
+        content: |
+          Respond to the next user prompt using provided function response.
+      - role: user
+        content: |
+          User Prompt: what is outside temperature?
+          Function Response: {"time":"2025-12-27 02:15","interval":900,"temperature_2m":-0.7,"weather_code":"Overcast","wind_speed_10m":24.7}
+      - role: assistant
+        content: |
+          The current outside temperature is -0.7 degrees Celsius.
+
+  - messages:
+      - role: system
+        content: |
+          Respond to the next user prompt using provided function response.
+      - role: user
+        content: |
           User Prompt: how is outside
           Function Response: {"time":"2015-11-18T11:00","interval":900,"temperature_2m":1.2,"weather_code":"Overcast","wind_speed_10m":2.2}
       - role: assistant

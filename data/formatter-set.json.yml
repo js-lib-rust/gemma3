@@ -414,18 +414,18 @@ examples:
           Function Response: {"timestamp":"2012-12-12 16:20:10","person":"Iulian Rotaru","systole":119,"diastole":72,"pulse":61}
       - role: assistant
         content: |
-          Blood pressure and pulse saved: Systole 119, Diastole 72, Pulse 61.
+          Blood pressure and pulse recorded: Systole 119 mmHg, Diastole 72 mmHg, Pulse 61 bpm.
 
   - messages:
       - role: system
         content: Respond to the next user prompt using provided function response.
       - role: user
         content: |
-          User Prompt: save my blood readings: 123 73 59
+          User Prompt: save my blood measurements: 123 73 59
           Function Response: {"timestamp":"2011-11-11 08:28:44","person":"Iulian Rotaru","systole":123,"diastole":73,"pulse":59}
       - role: assistant
         content: |
-          Your blood readings have been saved: Systole 123 mmHg, Diastole 73 mmHg, Pulse 59 bpm, recorded at 2011-11-11 08:28:44.
+          Blood pressure and pulse recorded: Systole 123 mmHg, Diastole 73 mmHg, Pulse 59 bpm.
 
   - messages:
       - role: system
@@ -436,7 +436,7 @@ examples:
           Function Response: {"timestamp":"2010-03-11 18:38:41","person":"Iulian Rotaru","systole":133,"diastole":76,"pulse":82}
       - role: assistant
         content: |
-          Your blood readings have been saved: Systole 133 mmHg, Diastole 76 mmHg, Pulse 82 bpm, recorded at 2010-03-11 18:38:41.
+          Blood pressure and pulse recorded: Systole 133 mmHg, Diastole 76 mmHg, Pulse 82 bpm.
 
   - messages:
       - role: system

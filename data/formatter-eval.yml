@@ -109,7 +109,7 @@
       User Prompt: Save my blood pressure 130/76 and heart rate 72.
       Function Response: {"timestamp":"2012-12-12 16:20:10","person":"Iulian Rotaru","systole":130,"diastole":76,"pulse":72}
   ground_truth: |
-    Blood pressure recorded: Systole 130, Diastole 76, Pulse 72. Timestamp: 2012-12-12 16:20:10.
+    Blood pressure and pulse recorded: Systole 130 mmHg, Diastole 76 mmHg, Pulse 72 bpm.
 
 - chat:
   - role: system

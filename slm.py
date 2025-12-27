@@ -1,5 +1,4 @@
 from threading import Event
-
 from transformers import (
     AutoModelForCausalLM,
     AutoTokenizer,
@@ -10,23 +9,16 @@ from transformers import (
 import torch
 import signal
 import time
-
 from http.server import BaseHTTPRequestHandler, HTTPServer
 import json
 import re
 import subprocess
+import os
 
-base_model = "/home/irotaru/data/hugging-face/model/gemma-3-12b-it"
-#base_model = "/home/irotaru/data/hugging-face/model/Llama-2-7b-chat"
-
+model_dir = os.environ.get("AI_MODEL_DIR")
+base_model = model_dir + "/hugging-face/model/gemma-3-12b-it"
 device = 'cuda:0'
 history = []
-
-quantization_config = BitsAndBytesConfig(
-    load_in_8bit=True,
-    llm_int8_threshold=6.0,
-    llm_int8_has_fp16_weight=False
-)
 
 quantization_config = BitsAndBytesConfig(
     load_in_4bit=True,
@@ -37,10 +29,14 @@ quantization_config = BitsAndBytesConfig(
 
 tokenizer = AutoTokenizer.from_pretrained(base_model)
 terminators = [tokenizer.eos_token_id]
-#model = AutoModelForCausalLM.from_pretrained(base_model, device_map=device, dtype=torch.bfloat16)
-model = AutoModelForCausalLM.from_pretrained(base_model, device_map=device, dtype=torch.bfloat16, quantization_config=quantization_config)
+model = AutoModelForCausalLM.from_pretrained(
+    base_model,
+    device_map=device,
+    dtype=torch.bfloat16,
+    quantization_config=quantization_config)
 
-rag_system = "You are a contextual questions answering agent that only uses provided context and formats responses in markdown."
+rag_system = "You are a contextual questions answering agent that only uses provided context and formats responses \
+in markdown."
 
 rag_template = """
 Based on this context:
@@ -51,7 +47,6 @@ Answer: {question}
 Remember: Only use provided context, do not try to infer missing information and use markdown formatting.
 """
 
-#Remember: Only use provided context, use markdown formatting and create tables for lists, but only if list contains more than one item.
 
 class StreamerWriter(TextStreamer):
     def __init__(self, _tokenizer, _writer):
@@ -67,7 +62,7 @@ class StreamerWriter(TextStreamer):
         if text:
             data = text.encode('utf-8')
             self.response += text
-            
+
             self.writer.write(f'{len(data):x}\r\n'.encode('utf-8'))
             self.writer.write(data)
             self.writer.write('\r\n'.encode('utf-8'))
@@ -85,33 +80,33 @@ class StreamerWithSpeedDisplay(StreamerWriter):
         self.last_display_time = None
         self.display_interval = display_interval
         self.last_token_time = None
-        
+
     def put(self, value):
         current_time = time.time()
-        
+
         if self.start_time is None:
             self.start_time = current_time
             self.last_display_time = current_time
             self.last_token_time = current_time
-        
+
         self.token_count += 1
-        
+
         # Display speed at intervals
         if current_time - self.last_display_time >= self.display_interval:
             elapsed = current_time - self.start_time
             speed = self.token_count / elapsed
-            print(f"\n[Speed: {speed:.1f} tokens/s | Tokens: {self.token_count} | Time: {elapsed:.1f}s]", 
+            print(f"\n[Speed: {speed:.1f} tokens/s | Tokens: {self.token_count} | Time: {elapsed:.1f}s]",
                   end='', flush=True)
             self.last_display_time = current_time
-        
+
         self.last_token_time = current_time
-        
+
         # Call parent
         super().put(value)
-    
+
     def end(self):
         super().end()
-        
+
         if self.start_time and self.token_count > 0:
             total_time = time.time() - self.start_time
             avg_speed = self.token_count / total_time
@@ -121,10 +116,10 @@ class StreamerWithSpeedDisplay(StreamerWriter):
             print(f"Average speed: {avg_speed:.2f} tokens/s")
             print(f"Throughput: {(avg_speed * 60):.0f} tokens/min")
 
-            
+
 class RequestHandler(BaseHTTPRequestHandler):  # type: ignore
     protocol_version = 'HTTP/1.1'
-    
+
     def do_POST(self):
         print(f'do_POST: self.path: {self.path}')
         if self.path == '/':
@@ -148,14 +143,21 @@ class RequestHandler(BaseHTTPRequestHandler):  # type: ignore
         content_length = int(self.headers.get('Content-Length', 0))
         body = self.rfile.read(content_length).decode()
         request = json.loads(body)
+
         system = request['system']
+        print(f'system: {system}')
         profile = request['profile']
+        print(f'profile: {profile}')
         settings = request['settings']
+        print(f'settings: {settings}')
         context = request['context']
+        print(f'context: {context}')
         prompt = request['prompt']
+        print(f'prompt: {prompt}')
         use_temperature = request['use_temperature']
+        print(f'use_temperature: {use_temperature}')
         use_history = request['use_history']
-        print(f'system: {system}\nprofile: {profile}\nsettings: {settings}\ncontext: {context}\nprompt: {prompt}\nuse_temperature: {use_temperature}\nuse_history: {use_history}')
+        print(f'use_history: {use_history}')
 
         # for now, context is used only for RAG
         if context:
@@ -185,7 +187,6 @@ class RequestHandler(BaseHTTPRequestHandler):  # type: ignore
         print(f"text: {text}")
         model_inputs = tokenizer([text], return_tensors="pt").to(model.device)
 
-        #streamer = StreamerWriter(tokenizer, self.wfile)
         streamer = StreamerWithSpeedDisplay(tokenizer, self.wfile)
         past_key_values = DynamicCache(config=model.config)
         generate_config = {
@@ -201,9 +202,8 @@ class RequestHandler(BaseHTTPRequestHandler):  # type: ignore
             generate_config['num_beams'] = 1
             generate_config['top_k'] = 1
             generate_config['top_p'] = 1.0
-        print("generate_config: ", generate_config)    
+        print("generate_config: ", generate_config)
         _ = model.generate(**model_inputs, **generate_config)
-        #_ = model.generate(**model_inputs, max_new_tokens=131_072, streamer=streamer, do_sample=False, use_cache=True, past_key_values=past_key_values)
 
         if use_history:
             history.append((prompt, streamer.response))
@@ -213,7 +213,7 @@ class RequestHandler(BaseHTTPRequestHandler):  # type: ignore
         print('clear history list')
         history.clear()
         self.send_response(200)
-        self.send_header('Content-Length', 0)
+        self.send_header('Content-Length', "0")
         self.end_headers()
 
     def do_shutdown_now(self):
@@ -226,8 +226,9 @@ class RequestHandler(BaseHTTPRequestHandler):  # type: ignore
         print(result.stderr)
 
         self.send_response(200)
-        self.send_header('Content-Length', 0)
+        self.send_header('Content-Length', "0")
         self.end_headers()
+
 
 class AppServer(HTTPServer):
     def __init__(self, *args, **kwargs):
@@ -259,4 +260,3 @@ if __name__ == '__main__':
     signal.signal(signal.SIGINT, lambda s, f: signal_handler(s, f, httpd))
 
     httpd.serve_forever()
-

@@ -116,6 +116,16 @@
     content: Respond to the next user prompt using provided function response.
   - role: user
     content: |
+      User Prompt: Save my blood pressure 130/76 and pulse 72.
+      Function Response: {"error":"database is currently unresponsive"}
+  ground_truth: |
+    I am currently unable to save your blood measurements to the medical database due to a system unresponsiveness.
+
+- chat:
+  - role: system
+    content: Respond to the next user prompt using provided function response.
+  - role: user
+    content: |
       User Prompt: Save my body temperature 34.7
       Function Response: {"timestamp":"2005-07-13 16:20:10","person":"Iulian Rotaru","temperature":34.7}
   ground_truth: Your body temperature reading of 34.70 °C has been saved.
@@ -146,6 +156,15 @@
       User Prompt: What is my body temperature?
       Function Response: {"person":"Iulian Rotaru","measurement":"body_temperature","value":36.50}
   ground_truth: Your body temperature is 36.50 °C.
+
+- chat:
+  - role: system
+    content: Respond to the next user prompt using provided function response.
+  - role: user
+    content: |
+      User Prompt: What is my body temperature?
+      Function Response: {"error":"database is currently unresponsive"}
+  ground_truth: Medical database is not online. I am unable to provide your health readings.
 
 - chat:
   - role: system
@@ -232,7 +251,7 @@
     content: |
       User Prompt: Start the server.
       Function Response: {"jarvis_server":true,"slm_service":true}
-  ground_truth: Systems online. Jarvis and SLM services are active.
+  ground_truth: Systems online. JARVIS server and SLM service are active.
 
 - chat:
   - role: system
@@ -242,6 +261,15 @@
       User Prompt: Run full device diagnose on living room sensor.
       Function Response: {"device_id":"thermostat-sensor","device_name":"Thermostat Sensor","device_zone":"living room","hostname":"thermostat-sensor.local","ipv4_addr":"192.168.0.90","diagnose_port":80,"connection_state":"Active","device_state":{"value":"21.13"}}
   ground_truth: The living room sensor (Thermostat Sensor) is active. Its hostname is thermostat-sensor.local, IPv4 address is 192.168.0.90, the diagnose port is 80, and the current temperature reading is 21.13 °C.
+
+- chat:
+  - role: system
+    content: Respond to the next user prompt using provided function response.
+  - role: user
+    content: |
+      User Prompt: Run full device diagnose on living room sensor.
+      Function Response: {"error":"device is currently unresponsive"}
+  ground_truth: The living room sensor is offline, and I am unable to gather additional data at this time.
 
 - chat:
   - role: system

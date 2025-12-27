@@ -31,6 +31,16 @@ examples:
         content: Respond to the next user prompt using provided function response.
       - role: user
         content: |
+          User Prompt: list today health measurements
+          Function Response: {"error":"database is currently unresponsive"}
+      - role: assistant
+        content: I am currently unable to read your measurements from the medical database due to a system unresponsiveness.
+
+  - messages:
+      - role: system
+        content: Respond to the next user prompt using provided function response.
+      - role: user
+        content: |
           User Prompt: get health measurements
           Function Response: {"timestamp":"2024-11-23 08:47:02","person":"Iulian Rotaru","measurement":"systolic_pressure","value":124}
           {"timestamp":"2024-11-23 08:47:02","person":"Iulian Rotaru","measurement":"diastolic_pressure","value":81}
@@ -433,11 +443,11 @@ examples:
         content: Respond to the next user prompt using provided function response.
       - role: user
         content: |
-          User Prompt: save my blood pressure 133/76 and pulse 82
-          Function Response: {"error":"database unresponsive"}
+          User Prompt: save my blood pressure 115 with 75 and heart rate 65
+          Function Response: {"error":"database is currently unresponsive"}
       - role: assistant
         content: |
-          I am unable to save your blood measurements to the medical database at this time as it is currently unresponsive.
+          I am currently unable to save your blood measurements to the medical database due to a system unresponsiveness.
 
   - messages:
       - role: system
@@ -530,7 +540,7 @@ examples:
       - role: user
         content: |
           User Prompt: save glucose 101
-          Function Response: {"error":"database unresponsive"}
+          Function Response: {"error":"database is currently unresponsive"}
       - role: assistant
         content: |
           Database is not responding. I am unable to save your blood glucose readings.

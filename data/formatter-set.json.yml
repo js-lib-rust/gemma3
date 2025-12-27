@@ -508,7 +508,7 @@ examples:
       - role: user
         content: |
           User Prompt: run device diagnose on living room sensor
-          Function Response: {"device_id":"thermostat-sensor","device_name":"Thermostat Sensor","device_zone":"living room","hostname":"thermostat-sensor.local","ipv4_addr":"192.168.0.90","diagnose_port":80,"connection_state":"Active","device_state":{"value":"21.13"}}
+          Function Response: {"device_id":"thermostat-sensor","device_name":"Thermostat Sensor","device_zone":"living room","hostname":"thermostat-sensor.local","ipv4_addr":192.168.0.90,"diagnose_port":80,"connection_state":"Active","device_state":{"value":21.13}}
       - role: assistant
         content: |
           The living room sensor (Thermostat Sensor) is active. Its current temperature reading is 21.13 °C.
@@ -519,7 +519,7 @@ examples:
       - role: user
         content: |
           User Prompt: run full device diagnose on living room sensor
-          Function Response: {"device_id":"thermostat-sensor","device_name":"Thermostat Sensor","device_zone":"living room","hostname":"thermostat-sensor.local","ipv4_addr":"192.168.0.90","diagnose_port":80,"connection_state":"Active","device_state":{"value":"21.13"}}
+          Function Response: {"device_id":"thermostat-sensor","device_name":"Thermostat Sensor","device_zone":"living room","hostname":"thermostat-sensor.local","ipv4_addr":192.168.0.90,"diagnose_port":80,"connection_state":"Active","device_state":{"value":21.13}}
       - role: assistant
         content: |
           The living room sensor (Thermostat Sensor) is active. Its hostname is thermostat-sensor.local, IPv4 address is 192.168.0.90, the diagnose port is 80, and the current temperature reading is 21.13 °C.
@@ -700,7 +700,7 @@ examples:
       - role: user
         content: |
           User Prompt: run comprehensive device diagnose on DHT sensor
-          Function Response: {"device_id":"dht-sensor","device_name":"DHT Sensor","device_zone":"kitchen","hostname":"dht-sensor.local","ipv4_addr":"192.168.0.73","diagnose_port":80,"connection_state":"Active","device_state":{"period":"10000","humidity":"13.5","timestamp":"365430000","temperature":"18.6","humidityThreshold":"0.0","temperatureThreshold":"0.0"}}
+          Function Response: {"device_id":"dht-sensor","device_name":"DHT Sensor","device_zone":"kitchen","hostname":"dht-sensor.local","ipv4_addr":"192.168.0.73","diagnose_port":80,"connection_state":"Active","device_state":{"period":10000,"humidity":13.5,"timestamp":365430000,"temperature":18.6,"humidityThreshold":0.0,"temperatureThreshold":0.0}}
       - role: assistant
         content: |
           The DHT Sensor is active. Its hostname is dht-sensor.local, IPv4 address is 192.168.0.73, the diagnose port is 80. The current temperature is 18.6 °C and humidity is 13.5%. The measurement period is 10000, and humidity/temperature thresholds are set to 0.
@@ -711,9 +711,9 @@ examples:
       - role: user
         content: |
           User Prompt: read all sensors
-          Function Response: {"zone":"kitchen","name":"DHT Sensor","measurement":"humidity","value":"15.70"}
-          {"zone":"kitchen","name":"DHT Sensor","measurement":"temperature","value":"17.80"}
-          {"zone":"living room","name":"Thermostat Sensor","measurement":"temperature","value":"20.50"}
+          Function Response: {"zone":"kitchen","name":"DHT Sensor","measurement":"humidity","value":15.70}
+          {"zone":"kitchen","name":"DHT Sensor","measurement":"temperature","value":17.80}
+          {"zone":"living room","name":"Thermostat Sensor","measurement":"temperature","value":20.50}
       - role: assistant
         content: |
           Here's a summary of sensor readings:
@@ -728,9 +728,9 @@ examples:
       - role: user
         content: |
           User Prompt: read all sensors in the house
-          Function Response: {"zone":"kitchen","name":"DHT Sensor","measurement":"humidity","value":"16.70"}
-          {"zone":"kitchen","name":"DHT Sensor","measurement":"temperature","value":"17.50"}
-          {"zone":"living room","name":"Thermostat Sensor","measurement":"temperature","value":"20.38"}
+          Function Response: {"zone":"kitchen","name":"DHT Sensor","measurement":"humidity","value":16.70}
+          {"zone":"kitchen","name":"DHT Sensor","measurement":"temperature","value":17.50}
+          {"zone":"living room","name":"Thermostat Sensor","measurement":"temperature","value":20.38}
       - role: assistant
         content: |
           Here's a summary of all sensor readings in the house:
@@ -744,16 +744,16 @@ examples:
       - role: user
         content: |
           User Prompt: create a table with the readings of the sensors in the house
-          Function Response: {"zone":"kitchen","name":"DHT Sensor","measurement":"humidity","value":"21.70"}
-          {"zone":"kitchen","name":"DHT Sensor","measurement":"temperature","value":"47.60"}
-          {"zone":"living room","name":"Thermostat Sensor","measurement":"temperature","value":"22.40"}
+          Function Response: {"zone":"kitchen","name":"DHT Sensor","measurement":"humidity","value":21.70}
+          {"zone":"kitchen","name":"DHT Sensor","measurement":"temperature","value":47.60}
+          {"zone":"living room","name":"Thermostat Sensor","measurement":"temperature","value":22.40}
       - role: assistant
         content: |
           Here's a summary of all sensor readings in the house:
 
           | Zone | Name | Measurement | Value |
           | :--- | :--- | :--- | :--- |
-          | Kitchen | DHT Sensor | Humidity | 21.70 %    |
+          | Kitchen | DHT Sensor | Humidity | 21.70 % |
           | Kitchen | DHT Sensor | Temperature | 47.60 °C |
           | Living Room | Thermostat Sensor | Temperature | 22.40 °C |
 
@@ -763,16 +763,16 @@ examples:
       - role: user
         content: |
           User Prompt: display hera sensors in a table format
-          Function Response: {"zone":"kitchen","name":"DHT Sensor","measurement":"humidity","value":"16.80"}
-          {"zone":"kitchen","name":"DHT Sensor","measurement":"temperature","value":"17.50"}
-          {"zone":"living room","name":"Thermostat Sensor","measurement":"temperature","value":"20.38"}
+          Function Response: {"zone":"kitchen","name":"DHT Sensor","measurement":"humidity","value":16.80}
+          {"zone":"kitchen","name":"DHT Sensor","measurement":"temperature","value":17.50}
+          {"zone":"living room","name":"Thermostat Sensor","measurement":"temperature","value":20.38}
       - role: assistant
         content: |
           Here's are home sensor readings:
 
           | Zone | Name | Measurement | Value |
           | :--- | :--- | :--- | :--- |
-          | Kitchen | DHT Sensor | Humidity | 16.80 %    |
+          | Kitchen | DHT Sensor | Humidity | 16.80 % |
           | Kitchen | DHT Sensor | Temperature | 17.50 °C |
           | Living Room | Thermostat Sensor | Temperature | 20.38 °C |
 
@@ -782,7 +782,7 @@ examples:
       - role: user
         content: |
           User Prompt: get living room temperature
-          Function Response: {"zone":"living room","name":"Thermostat Sensor","measurement":"temperature","value":"21.15"}
+          Function Response: {"zone":"living room","name":"Thermostat Sensor","measurement":"temperature","value":21.15}
       - role: assistant
         content: |
           The temperature in the living room is 21.15 °C.
@@ -793,7 +793,7 @@ examples:
       - role: user
         content: |
           User Prompt: how is the living room temperature?
-          Function Response: {"zone":"bathroom","name":"Temperature Sensor","measurement":"temperature","value":"18.15","status":"low"}
+          Function Response: {"zone":"bathroom","name":"Temperature Sensor","measurement":"temperature","value":18.15,"status":"low"}
       - role: model
         content: |
           The bathroom temperature is 18.15 °C, which is below the desired level. Would you like me to start the central heating?
@@ -804,7 +804,7 @@ examples:
       - role: user
         content: |
           User Prompt: what about the temperature in the bedroom?
-          Function Response: {"zone":"bedroom","name":"Temperature Sensor","measurement":"temperature","value":"32.15","status":"high"}
+          Function Response: {"zone":"bedroom","name":"Temperature Sensor","measurement":"temperature","value":32.15,"status":"high"}
       - role: model
         content: |
           The current temperature in the bedroom is 32.15 °C. Based on my settings, this is considered high. Would you like to activate the cooling system?
@@ -826,7 +826,7 @@ examples:
       - role: user
         content: |
           User Prompt: what is the temperature in the kitchen
-          Function Response: {"zone":"kitchen","name":"DHT Sensor","measurement":"temperature","value":"17.50"}
+          Function Response: {"zone":"kitchen","name":"DHT Sensor","measurement":"temperature","value":17.50}
       - role: assistant
         content: |
           The temperature in the kitchen is 17.50 °C.
@@ -837,7 +837,7 @@ examples:
       - role: user
         content: |
           User Prompt: print kitchen humidity
-          Function Response: {"zone":"kitchen","name":"DHT Sensor","measurement":"humidity","value":"36.7012"}
+          Function Response: {"zone":"kitchen","name":"DHT Sensor","measurement":"humidity","value":36.7012}
       - role: assistant
         content: |
           The humidity in the kitchen is 36.70 %.

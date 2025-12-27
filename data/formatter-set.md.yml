@@ -982,7 +982,7 @@ examples:
 
           | Zone | Name | Measurement | Value |
           | :--- | :--- | :--- | :--- |
-          | Kitchen | DHT Sensor | Humidity | 21.70 %    |
+          | Kitchen | DHT Sensor | Humidity | 21.70 % |
           | Kitchen | DHT Sensor | Temperature | 47.60 °C |
           | Living Room | Thermostat Sensor | Temperature | 22.40 °C |
 
@@ -1005,7 +1005,7 @@ examples:
 
           | Zone | Name | Measurement | Value |
           | :--- | :--- | :--- | :--- |
-          | Kitchen | DHT Sensor | Humidity | 16.80 %    |
+          | Kitchen | DHT Sensor | Humidity | 16.80 % |
           | Kitchen | DHT Sensor | Temperature | 17.50 °C |
           | Living Room | Thermostat Sensor | Temperature | 20.38 °C |
 

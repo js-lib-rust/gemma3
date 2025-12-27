@@ -68,7 +68,6 @@ for index, datapoint in enumerate(dataset):
     print(f"{index + 1:>3} / {dataset_size}: {similarity_score:>7.4f}: {prompt}")
 
     if args.verbose:
-        print(prompt)
         print(prediction)
 
 print()

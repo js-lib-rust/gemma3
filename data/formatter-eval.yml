@@ -278,7 +278,7 @@
     content: |
       User Prompt: Is heater currently running?
       Function Response: {"error":"device is currently unresponsive"}
-  ground_truth: Heating system unavailable. Please check power and system status.
+  ground_truth: There seems to be a communication error with the heating system. Please check the power supply and system status.
 
 - chat:
   - role: system

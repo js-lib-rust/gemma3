@@ -599,7 +599,7 @@ examples:
           Function Response: {"error":"device is currently unresponsive"}
       - role: model
         content: |
-          Heating system unavailable. Please check power and system status.
+          There seems to be a communication error with the heating system. Please check the power supply and system status.
 
   - messages:
       - role: system

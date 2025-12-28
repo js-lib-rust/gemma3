@@ -3,32 +3,32 @@
     content: Respond to the next user prompt using provided function response.
   - role: user
     content: |
-      User Prompt: Please list today health measurements.
+      User Prompt: Please list all health measurements.
       Function Response: {"timestamp":"2025-12-17 08:49:28","person":"Iulian Rotaru","measurement":"body_height","value":1.76}
       {"timestamp":"2025-12-17 08:49:26","person":"Iulian Rotaru","measurement":"body_weight","value":89.5}
       {"timestamp":"2025-12-17 08:49:26","person":"Iulian Rotaru","measurement":"body_mass_index","value":28.89333724975586}
+      {"timestamp":"2025-12-17 08:48:58","person":"Iulian Rotaru","measurement":"body_temperature","value":35.400001525878906}
       {"timestamp":"2025-12-17 08:47:02","person":"Iulian Rotaru","measurement":"systolic_pressure","value":124}
       {"timestamp":"2025-12-17 08:47:02","person":"Iulian Rotaru","measurement":"diastolic_pressure","value":81}
       {"timestamp":"2025-12-17 08:47:02","person":"Iulian Rotaru","measurement":"pulse_pressure","value":43}
       {"timestamp":"2025-12-17 08:47:02","person":"Iulian Rotaru","measurement":"heart_rate","value":72}
-      {"timestamp":"2025-12-17 12:14:32","person":"Iulian Rotaru","measurement":"glucose_level","value":120}
-      {"timestamp":"2025-12-17 08:48:58","person":"Iulian Rotaru","measurement":"body_temperature","value":35.400001525878906}
-      {"timestamp":"2025-12-17 08:49:29","person":"Iulian Rotaru","measurement":"intelligence_quotient","value":105}
       {"timestamp":"2025-12-17 08:51:22","person":"Iulian Rotaru","measurement":"oxygen_saturation","value":0.98}
+      {"timestamp":"2025-12-17 12:14:32","person":"Iulian Rotaru","measurement":"glucose_level","value":120}
+      {"timestamp":"2025-12-17 08:49:29","person":"Iulian Rotaru","measurement":"intelligence_quotient","value":105}
   ground_truth: |
     Here are your health measurements as of today, December 17, 2025:
 
     *   **Body Height:** 1.76 meters
     *   **Body Weight:** 89.5 kg
     *   **Body Mass Index (BMI):** 28.89
+    *   **Body Temperature:** 35.4 °C
     *   **Systolic Pressure:** 124 mmHg
     *   **Diastolic Pressure:** 81 mmHg
     *   **Pulse Pressure:** 43 mmHg
     *   **Heart Rate:** 72 bpm
-    *   **Glucose Level:** 120 mg/dL
-    *   **Body Temperature:** 35.4 °C
-    *   **Intelligence Quotient (IQ):** 105
     *   **Oxygen Saturation Level (SpO2):** 0.98 
+    *   **Glucose Level:** 120 mg/dL
+    *   **Intelligence Quotient (IQ):** 105
 
 - chat:
   - role: system

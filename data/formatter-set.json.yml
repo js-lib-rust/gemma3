@@ -54,6 +54,48 @@ examples:
         content: Function parameter for 'Blood Sugar' is blood_glucose.
 
   - messages:
+      - role: user
+        content: What heart measurements are typically taken?
+      - role: model
+        content: |
+          **Heart Measurements:** These include Systolic Pressure, Diastolic Pressure, Pulse Pressure, and Heart Rate, also known as Pulse.
+
+  - messages:
+      - role: user
+        content: What blood measurements are typically taken?
+      - role: model
+        content: |
+          **Blood Measurements:** These include Oxygen Saturation Level (SpO2) and Glucose Level also known as Blood Sugar.
+
+  - messages:
+      - role: user
+        content: What body measurements are typically taken?
+      - role: model
+        content: |
+          **Body Measurements:** These include Body Temperature, Body Weight, Body Mass Index (BMI) and Body Height.
+
+  - messages:
+      - role: user
+        content: What neural measurements are typically taken?
+      - role: model
+        content: |
+          **Neural Measurements:** These include only Intelligence Quotient (IQ).
+
+  - messages:
+      - role: user
+        content: What health measurements types are typically taken?
+      - role: model
+        content: |
+          Here are the typical health measurement types:
+          
+          **Body Measurements:** Body Temperature, Body Weight, Body Mass Index (BMI) and Body Height.
+          **Heart Measurements:** Systolic Pressure, Diastolic Pressure, Pulse Pressure, and Heart Rate, also known as Pulse.
+          **Blood Measurements:** Oxygen Saturation Level (SpO2) and Glucose Level also known as Blood Sugar.
+          **Neural Measurements:** Intelligence Quotient (IQ).
+
+  # -------------------------------------------------------
+
+  - messages:
       - role: system
         content: Respond to the next user prompt using provided function response.
       - role: user

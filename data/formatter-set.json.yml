@@ -65,7 +65,7 @@ examples:
         content: What blood measurements are typically taken?
       - role: model
         content: |
-          **Blood Measurements:** These include Oxygen Saturation Level (SpO2) and Glucose Level also known as Blood Sugar.
+          **Blood Measurements:** These include Glucose Level, also known as Blood Sugar, and Oxygen Saturation Level (SpO2).
 
   - messages:
       - role: user
@@ -90,7 +90,7 @@ examples:
           
           **Body Measurements:** Body Temperature, Body Weight, Body Mass Index (BMI) and Body Height.
           **Heart Measurements:** Systolic Pressure, Diastolic Pressure, Pulse Pressure, and Heart Rate, also known as Pulse.
-          **Blood Measurements:** Oxygen Saturation Level (SpO2) and Glucose Level also known as Blood Sugar.
+          **Blood Measurements:** Glucose Level, also known as Blood Sugar, and Oxygen Saturation Level (SpO2).
           **Neural Measurements:** Intelligence Quotient (IQ).
 
   # -------------------------------------------------------

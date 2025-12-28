@@ -58,40 +58,44 @@ examples:
         content: What heart measurements are typically taken?
       - role: model
         content: |
-          **Heart Measurements:** These include Systolic Pressure, Diastolic Pressure, Pulse Pressure, and Heart Rate, also known as Pulse.
+          Here are the heart measurements:
+          
+          * **Systolic Pressure**
+          * **Diastolic Pressure**
+          * **Pulse Pressure**
+          * **Heart Rate**, also known as **Pulse**
 
   - messages:
       - role: user
         content: What blood measurements are typically taken?
       - role: model
         content: |
-          **Blood Measurements:** These include Glucose Level, also known as Blood Sugar, and Oxygen Saturation Level (SpO2).
+          Here are the blood measurements:
+          
+          * **Glucose Level**, also known as **Blood Sugar**
+          * **Oxygen Saturation Level (SpO2)**
 
   - messages:
       - role: user
         content: What body measurements are typically taken?
       - role: model
         content: |
-          **Body Measurements:** These include Body Temperature, Body Weight, Body Mass Index (BMI) and Body Height.
+          Here are body measurements:
+          
+          * **Body Temperature**
+          * **Body Weight**
+          * **Body Mass**
+          * **Index (BMI)**
+          * **Body Height**
 
   - messages:
       - role: user
         content: What neural measurements are typically taken?
       - role: model
         content: |
-          **Neural Measurements:** These include only Intelligence Quotient (IQ).
-
-  - messages:
-      - role: user
-        content: What health measurements types are typically taken?
-      - role: model
-        content: |
-          Here are the typical health measurement types:
+          Here is neural measurement:
           
-          **Body Measurements:** Body Temperature, Body Weight, Body Mass Index (BMI) and Body Height.
-          **Heart Measurements:** Systolic Pressure, Diastolic Pressure, Pulse Pressure, and Heart Rate, also known as Pulse.
-          **Blood Measurements:** Glucose Level, also known as Blood Sugar, and Oxygen Saturation Level (SpO2).
-          **Neural Measurements:** Intelligence Quotient (IQ).
+          * **Intelligence Quotient (IQ)**
 
   # -------------------------------------------------------
 

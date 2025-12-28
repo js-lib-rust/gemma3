@@ -58,7 +58,7 @@ examples:
         content: What heart measurements are typically taken?
       - role: model
         content: |
-          Here are the heart measurements:
+          Here are the heart, also known as cardiac, measurements:
           
           * **Systolic Pressure**
           * **Diastolic Pressure**
@@ -80,7 +80,7 @@ examples:
         content: What body measurements are typically taken?
       - role: model
         content: |
-          Here are body measurements:
+          Here are the body measurements:
           
           * **Body Temperature**
           * **Body Weight**
@@ -125,6 +125,8 @@ examples:
           *   **Body Weight:** 89.5 kg
           *   **Body Height:** 1.76 m
           *   **Body Mass Index (BMI):** 28.89
+          
+          Would you like to see the complete medical report?
 
   - messages:
       - role: system
@@ -140,10 +142,12 @@ examples:
         content: |
           Here are your body measurements as of today, October 18, 2025:
 
-          *   **Body Temperature:** 35.4 °C
           *   **Body Weight:** 89.5 kg
           *   **Body Mass Index (BMI):** 28.89
           *   **Body Height:** 1.76 m
+          *   **Body Temperature:** 35.4 °C
+          
+          Would you like to review all of your recorded health measurements?
 
   - messages:
       - role: system
@@ -173,6 +177,8 @@ examples:
           *   **Diastolic Pressure:** 81 mmHg
           *   **Pulse Pressure:** 43 mmHg
           *   **Heart Rate:** 72 bpm
+          
+          Shall I present a summary of all your recorded health metrics?
 
   - messages:
       - role: system
@@ -187,7 +193,9 @@ examples:
           Here are your blood measurements as of November 23, 2025:
 
           *   **Glucose Level:** 120 mg/dL
-          *   **Oxygen Saturation Level (SpO2):** 0.98 
+          *   **Oxygen Saturation Level (SpO2):** 0.98
+          
+          Perhaps you'd like to see a full report of your health data?
 
   - messages:
       - role: system
@@ -201,6 +209,8 @@ examples:
           Here are your neural measurements as of yesterday, October 10, 2024:
 
           *   **Intelligence Quotient (IQ):** 120
+          
+          Would you like to review additional health measurements related to body, heart or blood?
 
   - messages:
       - role: system
@@ -222,20 +232,22 @@ examples:
           *   **Pulse Pressure:** 43 mmHg
           *   **Heart Rate:** 72 bpm
           *   **Intelligence Quotient (IQ):** 120
+          
+          Would you like me to compile these measurements into a medical report?
 
   - messages:
       - role: system
         content: Respond to the next user prompt using provided function response.
       - role: user
         content: |
-          User Prompt: display health measurements, in a table
+          User Prompt: display heart measurements, in a table
           Function Response: {"timestamp":"2021-02-13 08:47:02","person":"Iulian Rotaru","measurement":"systolic_pressure","value":115}
           {"timestamp":"2021-02-13 08:47:03","person":"Iulian Rotaru","measurement":"diastolic_pressure","value":75}
           {"timestamp":"2021-02-13 08:47:04","person":"Iulian Rotaru","measurement":"pulse_pressure","value":40}
           {"timestamp":"2021-02-13 08:47:05","person":"Iulian Rotaru","measurement":"heart_rate","value":60}
       - role: model
         content: |
-          Here are your health measurements as of February 13, 2021:
+          Here are your heart measurements as of February 13, 2021:
 
           | Time | Measurement | Value |
           | :--- | :--- | :--- |
@@ -243,6 +255,8 @@ examples:
           | 08:47:03 | Diastolic Pressure | 75 mmHg |
           | 08:47:04 | Pulse Pressure | 40 mmHg |
           | 08:47:05 | Heart Rate | 60 bpm |
+          
+          Would you like a complete overview of your health data?
 
   - messages:
       - role: system
@@ -250,20 +264,20 @@ examples:
       - role: user
         content: |
           User Prompt: display my health measurements for today, in a table format
-          Function Response: {"time":"08:47:02","measurement":"systolic_pressure","value":132}
-          {"time":"08:47:03","measurement":"diastolic_pressure","value":85}
-          {"time":"08:47:04","measurement":"pulse_pressure","value":47}
-          {"time":"08:47:05","measurement":"heart_rate","value":86}
-          {"time":"12:15:45","measurement":"glucose_level","value":120}
-          {"time":"09:48:58","measurement":"body_temperature","value":35.40}
-          {"time":"09:49:26","measurement":"body_weight","value":89.5}
-          {"time":"09:49:26","measurement":"body_mass_index","value":28.89}
+          Function Response: {"time":"08:47:02","measurement":"systolic_pressure","value":132,"status":"high"}
+          {"time":"08:47:03","measurement":"diastolic_pressure","value":85,"status":"high"}
+          {"time":"08:47:04","measurement":"pulse_pressure","value":47,"status":"high"}
+          {"time":"08:47:05","measurement":"heart_rate","value":86,"status":"normal"}
+          {"time":"12:15:45","measurement":"glucose_level","value":120,"status":"high"}
+          {"time":"09:48:58","measurement":"body_temperature","value":35.40,"status":"normal"}
+          {"time":"09:49:26","measurement":"body_weight","value":89.5,"status":"overweight"}
+          {"time":"09:49:26","measurement":"body_mass_index","value":28.89,"status":"overweight"}
       - role: model
         content: |
           Here's are your health measurements for today, December 21, 2025:
 
-          | Time | Measurement | Value |
-          | :--- | :--- | :--- |
+          | Time | Measurement | Value | Status |
+          | :--- | :--- | :--- | :--- |
           | 08:47:02 | Systolic Pressure | 132 mmHg |
           | 08:47:03 | Diastolic Pressure | 85 mmHg |
           | 08:47:04 | Pulse Pressure | 47 mmHg |
@@ -272,6 +286,8 @@ examples:
           | 09:48:58 | Body Temperature | 35.40 °C |
           | 09:49:26 | Body Weight | 89.50 kg |
           | 09:49:26 | Body Mass Index (BMI) | 28.89 |
+          
+          Should I create a full medical report based on this data?
 
   - messages:
       - role: system
@@ -293,6 +309,8 @@ examples:
           *   **Pulse Pressure:** 43 mmHg
           *   **Glucose Level:** 105 mg/dL
           *   **Intelligence Quotient (IQ):** 110
+          
+          Maybe to create a medical report?
 
   - messages:
       - role: system
@@ -318,6 +336,8 @@ examples:
           | 12:15:25 | Heart Rate | 72 bpm |
           | 12:15:45 | Glucose Level | 105 mg/dL |
           | 12:15:49 | Body Height | 175 cm |
+          
+          Perhaps you'd like to see a full report of your health data?
 
   - messages:
       - role: system

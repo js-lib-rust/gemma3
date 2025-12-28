@@ -38,17 +38,37 @@
   - role: user
     content: |
       User Prompt: Get body measurements from today health records.
-      Function Response: {"timestamp":"2025-09-17 08:49:28","person":"Iulian Rotaru","measurement":"body_height","value":1.76}
+      Function Response: {"timestamp":"2025-09-17 08:49:28","person":"Iulian Rotaru","measurement":"body_height","value":176}
       {"timestamp":"2025-09-17 08:49:26","person":"Iulian Rotaru","measurement":"body_weight","value":89.5}
       {"timestamp":"2025-09-17 08:49:26","person":"Iulian Rotaru","measurement":"body_mass_index","value":28.89333724975586}
       {"timestamp":"2025-09-17 08:48:58","person":"Iulian Rotaru","measurement":"body_temperature","value":35.400001525878906}
   ground_truth: |
     Here are your body measurements as of today, September 17, 2025:
 
-    *   **Body Height:** 1.76 meters
+    *   **Body Height:** 176 cm
     *   **Body Weight:** 89.5 kg
     *   **Body Mass Index (BMI):** 28.89
     *   **Body Temperature:** 35.4 °C
+
+    Would you like to see all of your health measurements?
+
+- chat:
+  - role: system
+    content: Respond to the next user prompt using provided function response.
+  - role: user
+    content: |
+      User Prompt: List my body measurements.
+      Function Response: {"timestamp":"2015-07-17 08:48:58","person":"Iulian Rotaru","measurement":"body_temperature","value":35.400001525878906}
+      {"timestamp":"2015-07-17 08:49:28","person":"Iulian Rotaru","measurement":"body_height","value":176}
+      {"timestamp":"2015-07-17 08:49:26","person":"Iulian Rotaru","measurement":"body_weight","value":89.5}
+      {"timestamp":"2015-07-17 08:49:26","person":"Iulian Rotaru","measurement":"body_mass_index","value":28.89333724975586}
+  ground_truth: |
+    Here are your body measurements as of today, July 17, 2015:
+
+    *   **Body Temperature:** 35.4 °C
+    *   **Body Height:** 176 cm
+    *   **Body Weight:** 89.5 kg
+    *   **Body Mass Index (BMI):** 28.89
 
     Would you like to see all of your health measurements?
 

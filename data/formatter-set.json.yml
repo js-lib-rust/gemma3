@@ -768,7 +768,7 @@ examples:
           Function Response: {"timestamp":"2015-05-23 18:10:20","person":"Iulian Rotaru","oxygen_saturation":0.98}
       - role: model
         content: |
-          Oxygen saturation level (SpO2) of 96 % recorded in your medical database.
+          Oxygen saturation level (SpO2) of 98 % recorded in your medical database.
 
   - messages:
       - role: system

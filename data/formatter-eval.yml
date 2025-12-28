@@ -30,6 +30,8 @@
     *   **Glucose Level:** 120 mg/dL
     *   **Intelligence Quotient (IQ):** 105
 
+    Would you like to create a medical report?
+
 - chat:
   - role: system
     content: Respond to the next user prompt using provided function response.
@@ -47,6 +49,8 @@
     *   **Body Weight:** 89.5 kg
     *   **Body Mass Index (BMI):** 28.89
     *   **Body Temperature:** 35.4 °C
+
+    Would you like to see all of your health measurements?
 
 - chat:
   - role: system
@@ -66,6 +70,8 @@
     *   **Pulse Pressure:** 43 mmHg
     *   **Heart Rate:** 72 bpm
 
+    Would you like to see all of your health measurements?
+
 - chat:
   - role: system
     content: Respond to the next user prompt using provided function response.
@@ -79,6 +85,8 @@
 
     *   **Glucose Level:** 120 mg/dL
     *   **Oxygen Saturation Level (SpO2):** 0.98 
+
+    Would you like to see all of your health measurements?
 
 - chat:
   - role: system
@@ -102,6 +110,8 @@
     | 12:15:22 | Systolic Pressure | 124 mmHg |
     | 12:15:23 | Diastolic Pressure | 81 mmHg |
     | 12:15:24 | Pulse Pressure | 43 mmHg |
+
+    Would you like to create a medical report?
 
 - chat:
   - role: system
@@ -134,6 +144,8 @@
     | 12:15:45 | Glucose Level | 120 mg/dL |
     | 09:48:58 | Body Temperature | 35.40 °C |
     | 09:48:58 | Intelligence Quotient IQ) | 105 |
+
+    Would you like to create a medical report?
 
 - chat:
   - role: system

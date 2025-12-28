@@ -58,44 +58,43 @@ examples:
         content: What heart measurements are typically taken?
       - role: model
         content: |
-          Here are the heart, also known as cardiac, measurements:
+          Here are the types of heart, also known as cardiac, measurements:
           
-          * **Systolic Pressure**
-          * **Diastolic Pressure**
-          * **Pulse Pressure**
-          * **Heart Rate**, also known as **Pulse**
+          * **Systolic Pressure**: measured in mmHg
+          * **Diastolic Pressure**: measured in mmHg
+          * **Pulse Pressure**: measured in mmHg, is the difference between systolic and diastolic pressures
+          * **Heart Rate**, also known as **Pulse**: measured in bpm
 
   - messages:
       - role: user
         content: What blood measurements are typically taken?
       - role: model
         content: |
-          Here are the blood measurements:
+          Here are the types of blood measurements:
           
-          * **Glucose Level**, also known as **Blood Sugar**
-          * **Oxygen Saturation Level (SpO2)**
+          * **Glucose Level**, also known as **Blood Sugar**: measured in mg/dL
+          * **Oxygen Saturation Level (SpO2)**: expressed as %
 
   - messages:
       - role: user
         content: What body measurements are typically taken?
       - role: model
         content: |
-          Here are the body measurements:
+          Here are the types of body measurements:
           
-          * **Body Temperature**
-          * **Body Weight**
-          * **Body Mass**
-          * **Index (BMI)**
-          * **Body Height**
+          * **Body Height**: measured in cm
+          * **Body Weight**: measured in kg
+          * **Body Mass Index (BMI)**: scalar value without measurement unit
+          * **Body Temperature**: measured in °C
 
   - messages:
       - role: user
         content: What neural measurements are typically taken?
       - role: model
         content: |
-          Here is neural measurement:
+          Here is the neural measurement, currently a single type:
           
-          * **Intelligence Quotient (IQ)**
+          * **Intelligence Quotient (IQ)**: scalar value without measurement unit
 
   # -------------------------------------------------------
 
@@ -123,10 +122,53 @@ examples:
           *   **Heart Rate:** 72 bpm
           *   **Body Temperature:** 35.4 °C
           *   **Body Weight:** 89.5 kg
+          *   **Body Height:** 176 cm
+          *   **Body Mass Index (BMI):** 28.89
+          
+          Would you like to create a medical report?
+
+  - messages:
+      - role: system
+        content: Respond to the next user prompt using provided function response.
+      - role: user
+        content: |
+          User Prompt: display all health readings from yesterday
+          Function Response: {"timestamp":"2018-04-01 08:17:43","person":"Iulian Rotaru","measurement":"glucose_level","value":130}
+          {"timestamp":"2018-04-01 08:21:22","person":"Iulian Rotaru","measurement":"oxygen_saturation","value":0.95}          
+          {"timestamp":"2018-04-01 08:47:02","person":"Iulian Rotaru","measurement":"systolic_pressure","value":124}
+          {"timestamp":"2018-04-01 08:47:02","person":"Iulian Rotaru","measurement":"diastolic_pressure","value":81}
+          {"timestamp":"2018-04-01 08:47:02","person":"Iulian Rotaru","measurement":"pulse_pressure","value":43}
+          {"timestamp":"2018-04-01 08:47:02","person":"Iulian Rotaru","measurement":"heart_rate","value":72}
+          {"timestamp":"2018-04-01 08:48:58","person":"Iulian Rotaru","measurement":"body_temperature","value":35.400001525878906}
+          {"timestamp":"2018-04-01 08:49:26","person":"Iulian Rotaru","measurement":"body_weight","value":89.5}
+          {"timestamp":"2018-04-01 08:49:26","person":"Iulian Rotaru","measurement":"body_height","value":176}
+          {"timestamp":"2018-04-01 08:49:26","person":"Iulian Rotaru","measurement":"body_mass_index","value":28.89333724975586}
+      - role: model
+        content: |
+          Here are your health readings as of yesterday, May 1, 2018:
+
+          *   **Glucose Level:** 130 mg/dL
+          *   **Oxygen Saturation Level (SpO2):** 0.95 %
+          *   **Systolic Pressure:** 124 mmHg
+          *   **Diastolic Pressure:** 81 mmHg
+          *   **Pulse Pressure:** 43 mmHg
+          *   **Heart Rate:** 72 bpm
+          *   **Body Temperature:** 35.4 °C
+          *   **Body Weight:** 89.5 kg
           *   **Body Height:** 1.76 m
           *   **Body Mass Index (BMI):** 28.89
           
-          Would you like to see the complete medical report?
+          Would you like to create a medical report?
+
+  - messages:
+      - role: system
+        content: Respond to the next user prompt using provided function response.
+      - role: user
+        content: |
+          User Prompt: list today health measurements
+          Function Response: {"error":"database is currently unresponsive"}
+      - role: model
+        content: I am currently unable to read your measurements from the medical database due to a system unresponsiveness.
 
   - messages:
       - role: system
@@ -143,21 +185,11 @@ examples:
           Here are your body measurements as of today, October 18, 2025:
 
           *   **Body Weight:** 89.5 kg
+          *   **Body Height:** 176 cm
           *   **Body Mass Index (BMI):** 28.89
-          *   **Body Height:** 1.76 m
           *   **Body Temperature:** 35.4 °C
           
-          Would you like to review all of your recorded health measurements?
-
-  - messages:
-      - role: system
-        content: Respond to the next user prompt using provided function response.
-      - role: user
-        content: |
-          User Prompt: list today health measurements
-          Function Response: {"error":"database is currently unresponsive"}
-      - role: model
-        content: I am currently unable to read your measurements from the medical database due to a system unresponsiveness.
+          Would you like to see all of your health measurements?
 
   - messages:
       - role: system
@@ -178,7 +210,7 @@ examples:
           *   **Pulse Pressure:** 43 mmHg
           *   **Heart Rate:** 72 bpm
           
-          Shall I present a summary of all your recorded health metrics?
+          Would you like to see all of your health measurements?
 
   - messages:
       - role: system
@@ -193,9 +225,9 @@ examples:
           Here are your blood measurements as of November 23, 2025:
 
           *   **Glucose Level:** 120 mg/dL
-          *   **Oxygen Saturation Level (SpO2):** 0.98
+          *   **Oxygen Saturation Level (SpO2):** 0.98 %
           
-          Perhaps you'd like to see a full report of your health data?
+          Would you like to see all of your health measurements?
 
   - messages:
       - role: system
@@ -210,7 +242,7 @@ examples:
 
           *   **Intelligence Quotient (IQ):** 120
           
-          Would you like to review additional health measurements related to body, heart or blood?
+          Would you like to see all of your health measurements?
 
   - messages:
       - role: system
@@ -233,7 +265,7 @@ examples:
           *   **Heart Rate:** 72 bpm
           *   **Intelligence Quotient (IQ):** 120
           
-          Would you like me to compile these measurements into a medical report?
+          Would you like to see all of your health measurements?
 
   - messages:
       - role: system
@@ -256,7 +288,7 @@ examples:
           | 08:47:04 | Pulse Pressure | 40 mmHg |
           | 08:47:05 | Heart Rate | 60 bpm |
           
-          Would you like a complete overview of your health data?
+          Would you like to see all of your health measurements?
 
   - messages:
       - role: system
@@ -278,16 +310,16 @@ examples:
 
           | Time | Measurement | Value | Status |
           | :--- | :--- | :--- | :--- |
-          | 08:47:02 | Systolic Pressure | 132 mmHg |
-          | 08:47:03 | Diastolic Pressure | 85 mmHg |
-          | 08:47:04 | Pulse Pressure | 47 mmHg |
-          | 08:47:06 | Heart Rate | 86 bpm |
-          | 12:15:45 | Glucose Level | 120 mg/dL |
-          | 09:48:58 | Body Temperature | 35.40 °C |
-          | 09:49:26 | Body Weight | 89.50 kg |
-          | 09:49:26 | Body Mass Index (BMI) | 28.89 |
+          | 08:47:02 | Systolic Pressure | 132 mmHg | High |
+          | 08:47:03 | Diastolic Pressure | 85 mmHg | High |
+          | 08:47:04 | Pulse Pressure | 47 mmHg | High |
+          | 08:47:06 | Heart Rate | 86 bpm | Normal |
+          | 12:15:45 | Glucose Level | 120 mg/dL | High |
+          | 09:48:58 | Body Temperature | 35.40 °C | Normal |
+          | 09:49:26 | Body Weight | 89.50 kg | Overweight |
+          | 09:49:26 | Body Mass Index (BMI) | 28.89 | Overweight |
           
-          Should I create a full medical report based on this data?
+          Would you like to create a medical report?
 
   - messages:
       - role: system
@@ -310,7 +342,7 @@ examples:
           *   **Glucose Level:** 105 mg/dL
           *   **Intelligence Quotient (IQ):** 110
           
-          Maybe to create a medical report?
+          Would you like to create a medical report?
 
   - messages:
       - role: system
@@ -337,7 +369,7 @@ examples:
           | 12:15:45 | Glucose Level | 105 mg/dL |
           | 12:15:49 | Body Height | 175 cm |
           
-          Perhaps you'd like to see a full report of your health data?
+          Would you like to create a medical report?
 
   - messages:
       - role: system

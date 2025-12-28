@@ -1,59 +1,79 @@
 examples:
   - messages:
+      - role: system
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: how is oxygen_saturation parameter displayed
       - role: model
         content: Parameter oxygen_saturation is displayed as 'Oxygen Saturation Level (SpO2)'.
 
   - messages:
+      - role: system
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: what is function parameter for 'Oxygen Saturation Level (SpO2)'
       - role: model
         content: Function parameter for 'Oxygen Saturation Level (SpO2)' is oxygen_saturation.
 
   - messages:
+      - role: system
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: how is body_max_index parameter displayed
       - role: model
         content: Parameter body_max_index is displayed as 'Body Mass Index (BMI)'.
 
   - messages:
+      - role: system
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: what is function parameter for 'Body Mass Index (BMI)'
       - role: model
         content: Function parameter for 'Body Mass Index (BMI)' is body_max_index.
 
   - messages:
+      - role: system
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: how is intelligence_quotient parameter displayed
       - role: model
         content: Parameter intelligence_quotient is displayed as 'Intelligence QuotientIndex (IQ)'.
 
   - messages:
+      - role: system
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: what is function parameter for 'Intelligence QuotientIndex (IQ)'
       - role: model
         content: Function parameter for 'Intelligence QuotientIndex (IQ)' is intelligence_quotient.
 
   - messages:
+      - role: system
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: how is glucose_level parameter displayed
       - role: model
         content: Parameter glucose_level is displayed as 'Glucose Level' or 'Blood Sugar'.
 
   - messages:
+      - role: system
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: what is function parameter for 'Glucose Level'
       - role: model
         content: Function parameter for 'Glucose Level' is glucose_level.
 
   - messages:
+      - role: system
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: what is function parameter for 'Blood Sugar'
       - role: model
         content: Function parameter for 'Blood Sugar' is glucose_level.
 
   - messages:
+      - role: system
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: What heart measurements are typically taken?
       - role: model
@@ -66,6 +86,8 @@ examples:
           * **Heart Rate**, also known as **Pulse**: measured in bpm
 
   - messages:
+      - role: system
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: What blood measurements are typically taken?
       - role: model
@@ -76,6 +98,8 @@ examples:
           * **Oxygen Saturation Level (SpO2)**: expressed as %
 
   - messages:
+      - role: system
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: What body measurements are typically taken?
       - role: model
@@ -88,6 +112,8 @@ examples:
           * **Body Temperature**: measured in °C
 
   - messages:
+      - role: system
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: What neural measurements are typically taken?
       - role: model
@@ -100,7 +126,7 @@ examples:
 
   - messages:
       - role: system
-        content: Respond to the next user prompt using provided function response.
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: |
           User Prompt: list today health measurements
@@ -129,7 +155,7 @@ examples:
 
   - messages:
       - role: system
-        content: Respond to the next user prompt using provided function response.
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: |
           User Prompt: display all health readings from yesterday
@@ -155,14 +181,14 @@ examples:
           *   **Heart Rate:** 72 bpm
           *   **Body Temperature:** 35.4 °C
           *   **Body Weight:** 89.5 kg
-          *   **Body Height:** 1.76 m
+          *   **Body Height:** 176 cm
           *   **Body Mass Index (BMI):** 28.89
           
           Would you like to create a medical report?
 
   - messages:
       - role: system
-        content: Respond to the next user prompt using provided function response.
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: |
           User Prompt: list today health measurements
@@ -172,7 +198,7 @@ examples:
 
   - messages:
       - role: system
-        content: Respond to the next user prompt using provided function response.
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: |
           User Prompt: get body measurements from today readings
@@ -193,7 +219,7 @@ examples:
 
   - messages:
       - role: system
-        content: Respond to the next user prompt using provided function response.
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: |
           User Prompt: retrieve today heart measurements
@@ -214,7 +240,7 @@ examples:
 
   - messages:
       - role: system
-        content: Respond to the next user prompt using provided function response.
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: |
           User Prompt: list my cardiac readings from yesterday
@@ -235,7 +261,7 @@ examples:
 
   - messages:
       - role: system
-        content: Respond to the next user prompt using provided function response.
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: |
           User Prompt: show blood readings from november 23
@@ -252,7 +278,7 @@ examples:
 
   - messages:
       - role: system
-        content: Respond to the next user prompt using provided function response.
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: |
           User Prompt: list my blood measurements
@@ -269,7 +295,7 @@ examples:
 
   - messages:
       - role: system
-        content: Respond to the next user prompt using provided function response.
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: |
           User Prompt: show my neural measurements from yesterday
@@ -284,7 +310,7 @@ examples:
 
   - messages:
       - role: system
-        content: Respond to the next user prompt using provided function response.
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: |
           User Prompt: list today heart and neural readings
@@ -307,7 +333,7 @@ examples:
 
   - messages:
       - role: system
-        content: Respond to the next user prompt using provided function response.
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: |
           User Prompt: display heart measurements, in a table
@@ -330,7 +356,7 @@ examples:
 
   - messages:
       - role: system
-        content: Respond to the next user prompt using provided function response.
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: |
           User Prompt: display my health measurements for today, in a table format
@@ -361,7 +387,7 @@ examples:
 
   - messages:
       - role: system
-        content: Respond to the next user prompt using provided function response.
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: |
           User Prompt: get health measurements from yesterday readings
@@ -384,7 +410,7 @@ examples:
 
   - messages:
       - role: system
-        content: Respond to the next user prompt using provided function response.
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: |
           User Prompt: create a markdown table with health measurements from yesterday readings
@@ -411,7 +437,7 @@ examples:
 
   - messages:
       - role: system
-        content: Respond to the next user prompt using provided function response.
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: |
           User Prompt: what is my body temperature?
@@ -422,7 +448,7 @@ examples:
 
   - messages:
       - role: system
-        content: Respond to the next user prompt using provided function response.
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: |
           User Prompt: what is my body temperature?
@@ -433,7 +459,7 @@ examples:
 
   - messages:
       - role: system
-        content: Respond to the next user prompt using provided function response.
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: |
           User Prompt: how big is my IQ?
@@ -444,7 +470,7 @@ examples:
 
   - messages:
       - role: system
-        content: Respond to the next user prompt using provided function response.
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: |
           User Prompt: what was the height of Bruce Lee?
@@ -455,7 +481,7 @@ examples:
 
   - messages:
       - role: system
-        content: Respond to the next user prompt using provided function response.
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: |
           User Prompt: do you know how high was Stephen The Great?
@@ -466,7 +492,7 @@ examples:
 
   - messages:
       - role: system
-        content: Respond to the next user prompt using provided function response.
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: |
           User Prompt: print my body temperature from yesterday
@@ -477,7 +503,7 @@ examples:
 
   - messages:
       - role: system
-        content: Respond to the next user prompt using provided function response.
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: |
           User Prompt: what is the pulse pressure value from my today readings?
@@ -488,7 +514,7 @@ examples:
 
   - messages:
       - role: system
-        content: Respond to the next user prompt using provided function response.
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: |
           User Prompt: what was my yesterday pulse pressure?
@@ -504,7 +530,7 @@ examples:
 
   - messages:
       - role: system
-        content: Respond to the next user prompt using provided function response.
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: |
           User Prompt: what is my pulse pressure?
@@ -515,7 +541,7 @@ examples:
 
   - messages:
       - role: system
-        content: Respond to the next user prompt using provided function response.
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: |
           User Prompt: what do you think about my pulse pressure?
@@ -526,7 +552,7 @@ examples:
 
   - messages:
       - role: system
-        content: Respond to the next user prompt using provided function response.
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: |
           User Prompt: do you have any observations about my today pulse pressure measurements?
@@ -538,7 +564,7 @@ examples:
 
   - messages:
       - role: system
-        content: Respond to the next user prompt using provided function response.
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: |
           User Prompt: get body temperature from 2025-12-17 for iulian rotaru
@@ -549,7 +575,7 @@ examples:
 
   - messages:
       - role: system
-        content: Respond to the next user prompt using provided function response.
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: |
           User Prompt: what is your opinion regarding my body temperature
@@ -560,7 +586,7 @@ examples:
 
   - messages:
       - role: system
-        content: Respond to the next user prompt using provided function response.
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: |
           User Prompt: please analyse my body temperature
@@ -571,7 +597,7 @@ examples:
 
   - messages:
       - role: system
-        content: Respond to the next user prompt using provided function response.
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: |
           User Prompt: how is my body temperature?
@@ -582,7 +608,7 @@ examples:
 
   - messages:
       - role: system
-        content: Respond to the next user prompt using provided function response.
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: |
           User Prompt: show me my morning and evening blood pressure
@@ -604,7 +630,7 @@ examples:
 
   - messages:
       - role: system
-        content: Respond to the next user prompt using provided function response.
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: |
           User Prompt: show my temperature
@@ -615,7 +641,7 @@ examples:
 
   - messages:
       - role: system
-        content: Respond to the next user prompt using provided function response.
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: |
           User Prompt: analyse my body mass index from today health readings
@@ -635,7 +661,7 @@ examples:
 
   - messages:
       - role: system
-        content: Respond to the next user prompt using provided function response.
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: |
           User Prompt: is my bmi value in normal range? how can it be classified?
@@ -655,7 +681,7 @@ examples:
 
   - messages:
       - role: system
-        content: Respond to the next user prompt using provided function response.
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: |
           User Prompt: save blood 119 72 61
@@ -666,7 +692,7 @@ examples:
 
   - messages:
       - role: system
-        content: Respond to the next user prompt using provided function response.
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: |
           User Prompt: log my blood measurements: 123 73 59
@@ -677,7 +703,7 @@ examples:
 
   - messages:
       - role: system
-        content: Respond to the next user prompt using provided function response.
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: |
           User Prompt: record my blood pressure 133/76 and pulse 82
@@ -688,7 +714,7 @@ examples:
 
   - messages:
       - role: system
-        content: Respond to the next user prompt using provided function response.
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: |
           User Prompt: write blood pressure of 133 with 76 and pulse of 82 to medical database for John Doe
@@ -699,7 +725,7 @@ examples:
 
   - messages:
       - role: system
-        content: Respond to the next user prompt using provided function response.
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: |
           User Prompt: save my blood pressure 115 with 75 and heart rate 65
@@ -710,7 +736,7 @@ examples:
 
   - messages:
       - role: system
-        content: Respond to the next user prompt using provided function response.
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: |
           User Prompt: how do my stats look today?
@@ -728,7 +754,7 @@ examples:
 
   - messages:
       - role: system
-        content: Respond to the next user prompt using provided function response.
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: |
           User Prompt: save my body temperature 34.7
@@ -739,7 +765,7 @@ examples:
 
   - messages:
       - role: system
-        content: Respond to the next user prompt using provided function response.
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: |
           User Prompt: saves body temperature of 35.6 for John Doe in personal health archive
@@ -750,7 +776,7 @@ examples:
 
   - messages:
       - role: system
-        content: Respond to the next user prompt using provided function response.
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: |
           User Prompt: save my spo2 0.98
@@ -761,7 +787,7 @@ examples:
 
   - messages:
       - role: system
-        content: Respond to the next user prompt using provided function response.
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: |
           User Prompt: Log my oxygen saturation of 0.98 to medical database
@@ -772,7 +798,7 @@ examples:
 
   - messages:
       - role: system
-        content: Respond to the next user prompt using provided function response.
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: |
           User Prompt: Write SpO2 of 0.98 to health archive
@@ -783,7 +809,7 @@ examples:
 
   - messages:
       - role: system
-        content: Respond to the next user prompt using provided function response.
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: |
           User Prompt: what is my oxygen saturation?
@@ -794,7 +820,7 @@ examples:
 
   - messages:
       - role: system
-        content: Respond to the next user prompt using provided function response.
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: |
           User Prompt: save body weight of 99 kg for John Doe in his medical database; his height is 182 cm
@@ -806,18 +832,18 @@ examples:
 
   - messages:
       - role: system
-        content: Respond to the next user prompt using provided function response.
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: |
           User Prompt: save my body weight of 90 kg to archive
-          Function Response: {"timestamp":"1995-01-24 16:20:10","person":"Iulian Rotaru","height":1.76,"weight":90.0,"body_mass_index":29.054752}
+          Function Response: {"timestamp":"1995-01-24 16:20:10","person":"Iulian Rotaru","height":176,"weight":90.0,"body_mass_index":29.054752}
       - role: model
         content: |
-          Your body weight of 90.0 kg has been saved to the archive. Your height is 1.76 meters, resulting in a Body Mass Index (BMI) of 29.05.
+          Your body weight of 90.0 kg has been saved to the archive. Your height is 176 cm, resulting in a Body Mass Index (BMI) of 29.05.
 
   - messages:
       - role: system
-        content: Respond to the next user prompt using provided function response.
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: |
           User Prompt: save my glucose level of 101 to medical database
@@ -828,7 +854,7 @@ examples:
 
   - messages:
       - role: system
-        content: Respond to the next user prompt using provided function response.
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: |
           User Prompt: save glucose 101
@@ -839,7 +865,7 @@ examples:
 
   - messages:
       - role: system
-        content: Respond to the next user prompt using provided function response.
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: |
           User Prompt: save glucose 101
@@ -850,7 +876,7 @@ examples:
 
   - messages:
       - role: system
-        content: Respond to the next user prompt using provided function response.
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: |
           User Prompt: record my height to medical archive
@@ -861,7 +887,7 @@ examples:
 
   - messages:
       - role: system
-        content: Respond to the next user prompt using provided function response.
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: |
           User Prompt: save my height to health database
@@ -872,7 +898,7 @@ examples:
 
   - messages:
       - role: system
-        content: Respond to the next user prompt using provided function response.
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: |
           User Prompt: run device diagnose on living room sensor
@@ -883,7 +909,7 @@ examples:
 
   - messages:
       - role: system
-        content: Respond to the next user prompt using provided function response.
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: |
           User Prompt: run full device diagnose on living room sensor
@@ -894,7 +920,7 @@ examples:
 
   - messages:
       - role: system
-        content: Respond to the next user prompt using provided function response.
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: |
           User Prompt: turn on central heating
@@ -905,7 +931,7 @@ examples:
 
   - messages:
       - role: system
-        content: Respond to the next user prompt using provided function response.
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: |
           User Prompt: please start the heater
@@ -916,7 +942,7 @@ examples:
 
   - messages:
       - role: system
-        content: Respond to the next user prompt using provided function response.
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: |
           User Prompt: is central heating running?
@@ -927,7 +953,7 @@ examples:
 
   - messages:
       - role: system
-        content: Respond to the next user prompt using provided function response.
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: |
           User Prompt: is heater currently running?
@@ -938,7 +964,7 @@ examples:
 
   - messages:
       - role: system
-        content: Respond to the next user prompt using provided function response.
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: |
           User Prompt: is central heating currently running?
@@ -954,7 +980,7 @@ examples:
 
   - messages:
       - role: system
-        content: Respond to the next user prompt using provided function response.
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: |
           User Prompt: is the central heating started?
@@ -965,7 +991,7 @@ examples:
 
   - messages:
       - role: system
-        content: Respond to the next user prompt using provided function response.
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: |
           User Prompt: is heater active?
@@ -976,7 +1002,7 @@ examples:
 
   - messages:
       - role: system
-        content: Respond to the next user prompt using provided function response.
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: |
           User Prompt: is heater turned on?
@@ -987,7 +1013,7 @@ examples:
 
   - messages:
       - role: system
-        content: Respond to the next user prompt using provided function response.
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: |
           User Prompt: is heating turned on?
@@ -998,7 +1024,7 @@ examples:
 
   - messages:
       - role: system
-        content: Respond to the next user prompt using provided function response.
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: |
           User Prompt: stop heating
@@ -1009,7 +1035,7 @@ examples:
 
   - messages:
       - role: system
-        content: Respond to the next user prompt using provided function response.
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: |
           User Prompt: turn on the central heating
@@ -1020,7 +1046,7 @@ examples:
 
   - messages:
       - role: system
-        content: Respond to the next user prompt using provided function response.
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: |
           User Prompt: is central heating running?
@@ -1031,7 +1057,7 @@ examples:
 
   - messages:
       - role: system
-        content: Respond to the next user prompt using provided function response.
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: |
           User Prompt: how is the central heating?
@@ -1042,7 +1068,7 @@ examples:
 
   - messages:
       - role: system
-        content: Respond to the next user prompt using provided function response.
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: |
           User Prompt: please tell me the status of the central heating
@@ -1053,7 +1079,7 @@ examples:
 
   - messages:
       - role: system
-        content: Respond to the next user prompt using provided function response.
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: |
           User Prompt: get central heating status
@@ -1064,7 +1090,7 @@ examples:
 
   - messages:
       - role: system
-        content: Respond to the next user prompt using provided function response.
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: |
           User Prompt: run comprehensive device diagnose on DHT sensor
@@ -1075,7 +1101,7 @@ examples:
 
   - messages:
       - role: system
-        content: Respond to the next user prompt using provided function response.
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: |
           User Prompt: read all sensors
@@ -1092,7 +1118,7 @@ examples:
 
   - messages:
       - role: system
-        content: Respond to the next user prompt using provided function response.
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: |
           User Prompt: read all sensors in the house
@@ -1108,7 +1134,7 @@ examples:
 
   - messages:
       - role: system
-        content: Respond to the next user prompt using provided function response.
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: |
           User Prompt: create a table with the readings of the sensors in the house
@@ -1127,7 +1153,7 @@ examples:
 
   - messages:
       - role: system
-        content: Respond to the next user prompt using provided function response.
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: |
           User Prompt: display hera sensors in a table format
@@ -1146,7 +1172,7 @@ examples:
 
   - messages:
       - role: system
-        content: Respond to the next user prompt using provided function response.
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: |
           User Prompt: get living room temperature
@@ -1157,7 +1183,7 @@ examples:
 
   - messages:
       - role: system
-        content: Respond to the next user prompt using provided function response.
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: |
           User Prompt: get living room temperature
@@ -1168,7 +1194,7 @@ examples:
 
   - messages:
       - role: system
-        content: Respond to the next user prompt using provided function response.
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: |
           User Prompt: how is the living room temperature?
@@ -1179,7 +1205,7 @@ examples:
 
   - messages:
       - role: system
-        content: Respond to the next user prompt using provided function response.
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: |
           User Prompt: what about the temperature in the bedroom?
@@ -1190,7 +1216,7 @@ examples:
 
   - messages:
       - role: system
-        content: Respond to the next user prompt using provided function response.
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: |
           User Prompt: what is temperature in the living?
@@ -1201,7 +1227,7 @@ examples:
 
   - messages:
       - role: system
-        content: Respond to the next user prompt using provided function response.
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: |
           User Prompt: what is the temperature in the kitchen
@@ -1212,7 +1238,7 @@ examples:
 
   - messages:
       - role: system
-        content: Respond to the next user prompt using provided function response.
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: |
           User Prompt: print kitchen humidity
@@ -1223,7 +1249,7 @@ examples:
 
   - messages:
       - role: system
-        content: Respond to the next user prompt using provided function response.
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: |
           User Prompt: how is the weather like?
@@ -1234,7 +1260,7 @@ examples:
 
   - messages:
       - role: system
-        content: Respond to the next user prompt using provided function response.
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: |
           User Prompt: what is outside temperature?
@@ -1245,7 +1271,7 @@ examples:
 
   - messages:
       - role: system
-        content: Respond to the next user prompt using provided function response.
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: |
           User Prompt: how is outside
@@ -1256,7 +1282,7 @@ examples:
 
   - messages:
       - role: system
-        content: Respond to the next user prompt using provided function response.
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: |
           User Prompt: create a forecast summary for the next two weeks
@@ -1282,7 +1308,7 @@ examples:
 
   - messages:
       - role: system
-        content: Respond to the next user prompt using provided function response.
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: |
           User Prompt: get weather forecast for the next two weeks
@@ -1325,7 +1351,7 @@ examples:
 
   - messages:
       - role: system
-        content: Respond to the next user prompt using provided function response.
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: |
           User Prompt: get weather forecast for the next two weeks in table format
@@ -1371,7 +1397,7 @@ examples:
 
   - messages:
       - role: system
-        content: Respond to the next user prompt using provided function response.
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: |
           User Prompt: list today forecast in a table by hour
@@ -1432,7 +1458,7 @@ examples:
 
   - messages:
       - role: system
-        content: Respond to the next user prompt using provided function response.
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: |
           User Prompt: wake-up
@@ -1442,7 +1468,7 @@ examples:
 
   - messages:
       - role: system
-        content: Respond to the next user prompt using provided function response.
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: |
           User Prompt: Server start
@@ -1452,7 +1478,7 @@ examples:
 
   - messages:
       - role: system
-        content: Respond to the next user prompt using provided function response.
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: |
           User Prompt: Server status
@@ -1462,7 +1488,7 @@ examples:
 
   - messages:
       - role: system
-        content: Respond to the next user prompt using provided function response.
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: |
           User Prompt: Server status
@@ -1472,7 +1498,7 @@ examples:
 
   - messages:
       - role: system
-        content: Respond to the next user prompt using provided function response.
+        content: You are a writer agent that creates responses based on user prompt and data from function response. 
       - role: user
         content: |
           User Prompt: Clear history

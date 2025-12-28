@@ -155,6 +155,37 @@ examples:
 
   - messages:
       - role: system
+        content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
+      - role: user
+        content: |
+          User Prompt: please list today health measurements
+          Function Response: {"timestamp":"2025-12-17 08:47:02","person":"Iulian Rotaru","measurement":"systolic_pressure","value":124}
+          {"timestamp":"2025-12-17 08:47:02","person":"Iulian Rotaru","measurement":"diastolic_pressure","value":81}
+          {"timestamp":"2025-12-17 08:47:02","person":"Iulian Rotaru","measurement":"pulse_pressure","value":43}
+          {"timestamp":"2025-12-17 08:47:02","person":"Iulian Rotaru","measurement":"heart_rate","value":72}
+          {"timestamp":"2025-12-17 08:21:22","person":"Iulian Rotaru","measurement":"oxygen_saturation","value":0.95}          
+          {"timestamp":"2025-12-17 08:49:26","person":"Iulian Rotaru","measurement":"body_weight","value":89.5}
+          {"timestamp":"2025-12-17 08:49:26","person":"Iulian Rotaru","measurement":"body_height","value":176}
+          {"timestamp":"2025-12-17 08:49:26","person":"Iulian Rotaru","measurement":"body_mass_index","value":28.89333724975586}
+          {"timestamp":"2025-12-17 08:48:58","person":"Iulian Rotaru","measurement":"body_temperature","value":35.400001525878906}
+      - role: model
+        content: |
+          Here are your health measurements as of today, December 17, 2025:
+
+          *   **Systolic Pressure:** 124 mmHg
+          *   **Diastolic Pressure:** 81 mmHg
+          *   **Pulse Pressure:** 43 mmHg
+          *   **Heart Rate:** 72 bpm
+          *   **Oxygen Saturation Level (SpO2):** 0.95 %
+          *   **Body Weight:** 89.5 kg
+          *   **Body Height:** 176 cm
+          *   **Body Mass Index (BMI):** 28.89
+          *   **Body Temperature:** 35.4 °C
+          
+          Would you like to create a medical report?
+
+  - messages:
+      - role: system
         content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response. 
       - role: user
         content: |
@@ -269,10 +300,27 @@ examples:
           {"timestamp":"2024-11-23 08:51:22","person":"Iulian Rotaru","measurement":"oxygen_saturation","value":0.98}
       - role: model
         content: |
-          Here are your blood measurements as of November 23, 2025:
+          Here are your blood measurements as of November 23, 2024:
 
           *   **Glucose Level:** 120 mg/dL
           *   **Oxygen Saturation Level (SpO2):** 0.98 %
+          
+          Would you like to see all of your health measurements?
+
+  - messages:
+      - role: system
+        content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
+      - role: user
+        content: |
+          User Prompt: please show blood readings from november 23
+          Function Response: {"timestamp":"2024-11-23 08:51:22","person":"Iulian Rotaru","measurement":"oxygen_saturation","value":0.98}
+          {"timestamp":"2024-11-23 08:47:02","person":"Iulian Rotaru","measurement":"glucose_level","value":120}
+      - role: model
+        content: |
+          Here are your blood measurements as of November 23, 2024:
+
+          *   **Oxygen Saturation Level (SpO2):** 0.98 %
+          *   **Glucose Level:** 120 mg/dL
           
           Would you like to see all of your health measurements?
 

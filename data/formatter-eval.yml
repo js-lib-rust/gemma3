@@ -1,6 +1,6 @@
 - chat:
   - role: system
-    content: You are a writer agent that creates responses based on user prompt and data from function response. 
+    content: You are a question answering agent. Your responses are generated based on the user's prompt and the data provided in the JSON format from the function response. 
   - role: user
     content: |
       User Prompt: Please list today health measurements.
@@ -34,7 +34,7 @@
 
 - chat:
   - role: system
-    content: You are a writer agent that creates responses based on user prompt and data from function response. 
+    content: You are a question answering agent. Your responses are generated based on the user's prompt and the data provided in the JSON format from the function response. 
   - role: user
     content: |
       User Prompt: Get body measurements from today health records.
@@ -54,7 +54,7 @@
 
 - chat:
   - role: system
-    content: You are a writer agent that creates responses based on user prompt and data from function response. 
+    content: You are a question answering agent. Your responses are generated based on the user's prompt and the data provided in the JSON format from the function response. 
   - role: user
     content: |
       User Prompt: List my body measurements.
@@ -74,7 +74,7 @@
 
 - chat:
   - role: system
-    content: You are a writer agent that creates responses based on user prompt and data from function response. 
+    content: You are a question answering agent. Your responses are generated based on the user's prompt and the data provided in the JSON format from the function response. 
   - role: user
     content: |
       User Prompt: Get my heart measurements.
@@ -94,7 +94,7 @@
 
 - chat:
   - role: system
-    content: You are a writer agent that creates responses based on user prompt and data from function response. 
+    content: You are a question answering agent. Your responses are generated based on the user's prompt and the data provided in the JSON format from the function response. 
   - role: user
     content: |
       User Prompt: List my heart readings from yesterday.
@@ -114,7 +114,7 @@
 
 - chat:
   - role: system
-    content: You are a writer agent that creates responses based on user prompt and data from function response. 
+    content: You are a question answering agent. Your responses are generated based on the user's prompt and the data provided in the JSON format from the function response. 
   - role: user
     content: |
       User Prompt: Display yesterday blood readings.
@@ -131,7 +131,7 @@
 - chat:
   - role: system
     content: |
-      You are a writer agent that creates responses based on user prompt and data from function response. 
+      You are a question answering agent. Your responses are generated based on the user's prompt and the data provided in the JSON format from the function response. 
   - role: user
     content: |
       User Prompt: Display a table with measurements from yesterday medical readings.
@@ -155,7 +155,7 @@
 
 - chat:
   - role: system
-    content: You are a writer agent that creates responses based on user prompt and data from function response. 
+    content: You are a question answering agent. Your responses are generated based on the user's prompt and the data provided in the JSON format from the function response. 
   - role: user
     content: |
       User Prompt: Display my health readings from December 17 in a table format.
@@ -189,7 +189,7 @@
 
 - chat:
   - role: system
-    content: You are a writer agent that creates responses based on user prompt and data from function response. 
+    content: You are a question answering agent. Your responses are generated based on the user's prompt and the data provided in the JSON format from the function response. 
   - role: user
     content: |
       User Prompt: Save my blood pressure 130/76 and heart rate 72.
@@ -199,7 +199,7 @@
 
 - chat:
   - role: system
-    content: You are a writer agent that creates responses based on user prompt and data from function response. 
+    content: You are a question answering agent. Your responses are generated based on the user's prompt and the data provided in the JSON format from the function response. 
   - role: user
     content: |
       User Prompt: Save my blood pressure 130/76 and pulse 72.
@@ -209,7 +209,7 @@
 
 - chat:
   - role: system
-    content: You are a writer agent that creates responses based on user prompt and data from function response. 
+    content: You are a question answering agent. Your responses are generated based on the user's prompt and the data provided in the JSON format from the function response. 
   - role: user
     content: |
       User Prompt: Save my body temperature 34.7
@@ -218,7 +218,7 @@
 
 - chat:
   - role: system
-    content: You are a writer agent that creates responses based on user prompt and data from function response. 
+    content: You are a question answering agent. Your responses are generated based on the user's prompt and the data provided in the JSON format from the function response. 
   - role: user
     content: |
       User Prompt: Save my body weight of 90 kg to archive.
@@ -227,7 +227,7 @@
 
 - chat:
   - role: system
-    content: You are a writer agent that creates responses based on user prompt and data from function response. 
+    content: You are a question answering agent. Your responses are generated based on the user's prompt and the data provided in the JSON format from the function response. 
   - role: user
     content: |
       User Prompt: Save my glucose level of 101 to medical database.
@@ -236,7 +236,7 @@
 
 - chat:
   - role: system
-    content: You are a writer agent that creates responses based on user prompt and data from function response. 
+    content: You are a question answering agent. Your responses are generated based on the user's prompt and the data provided in the JSON format from the function response. 
   - role: user
     content: |
       User Prompt: save my spo2 0.96
@@ -245,7 +245,7 @@
 
 - chat:
   - role: system
-    content: You are a writer agent that creates responses based on user prompt and data from function response. 
+    content: You are a question answering agent. Your responses are generated based on the user's prompt and the data provided in the JSON format from the function response. 
   - role: user
     content: |
       User Prompt: save my spo2 0.96
@@ -254,7 +254,7 @@
 
 - chat:
   - role: system
-    content: You are a writer agent that creates responses based on user prompt and data from function response. 
+    content: You are a question answering agent. Your responses are generated based on the user's prompt and the data provided in the JSON format from the function response. 
   - role: user
     content: |
       User Prompt: Save my SpO2 of 0.97 to medical database.
@@ -263,7 +263,7 @@
 
 - chat:
   - role: system
-    content: You are a writer agent that creates responses based on user prompt and data from function response. 
+    content: You are a question answering agent. Your responses are generated based on the user's prompt and the data provided in the JSON format from the function response. 
   - role: user
     content: |
       User Prompt: Save my height of 176 to medical database.
@@ -272,7 +272,7 @@
 
 - chat:
   - role: system
-    content: You are a writer agent that creates responses based on user prompt and data from function response. 
+    content: You are a question answering agent. Your responses are generated based on the user's prompt and the data provided in the JSON format from the function response. 
   - role: user
     content: |
       User Prompt: What is my body temperature?
@@ -281,7 +281,7 @@
 
 - chat:
   - role: system
-    content: You are a writer agent that creates responses based on user prompt and data from function response. 
+    content: You are a question answering agent. Your responses are generated based on the user's prompt and the data provided in the JSON format from the function response. 
   - role: user
     content: |
       User Prompt: What is my body temperature?
@@ -290,7 +290,7 @@
 
 - chat:
   - role: system
-    content: You are a writer agent that creates responses based on user prompt and data from function response. 
+    content: You are a question answering agent. Your responses are generated based on the user's prompt and the data provided in the JSON format from the function response. 
   - role: user
     content: |
       User Prompt: What was my pulse pressure on yesterday medical readings?
@@ -303,7 +303,7 @@
 
 - chat:
   - role: system
-    content: You are a writer agent that creates responses based on user prompt and data from function response. 
+    content: You are a question answering agent. Your responses are generated based on the user's prompt and the data provided in the JSON format from the function response. 
   - role: user
     content: |
       User Prompt: What is your opinion regarding my body temperature? 
@@ -312,7 +312,7 @@
 
 - chat:
   - role: system
-    content: You are a writer agent that creates responses based on user prompt and data from function response. 
+    content: You are a question answering agent. Your responses are generated based on the user's prompt and the data provided in the JSON format from the function response. 
   - role: user
     content: |
       User Prompt: Please analyse my body temperature. 
@@ -321,7 +321,7 @@
 
 - chat:
   - role: system
-    content: You are a writer agent that creates responses based on user prompt and data from function response. 
+    content: You are a question answering agent. Your responses are generated based on the user's prompt and the data provided in the JSON format from the function response. 
   - role: user
     content: |
       User Prompt: What do you think about my pulse pressure?
@@ -330,7 +330,7 @@
 
 - chat:
   - role: system
-    content: You are a writer agent that creates responses based on user prompt and data from function response. 
+    content: You are a question answering agent. Your responses are generated based on the user's prompt and the data provided in the JSON format from the function response. 
   - role: user
     content: |
       User Prompt: Analyse my body mass index from today health readings.
@@ -349,7 +349,7 @@
 
 - chat:
   - role: system
-    content: You are a writer agent that creates responses based on user prompt and data from function response. 
+    content: You are a question answering agent. Your responses are generated based on the user's prompt and the data provided in the JSON format from the function response. 
   - role: user
     content: |
       User Prompt: How can my BMI be classified?
@@ -368,7 +368,7 @@
 
 - chat:
   - role: system
-    content: You are a writer agent that creates responses based on user prompt and data from function response. 
+    content: You are a question answering agent. Your responses are generated based on the user's prompt and the data provided in the JSON format from the function response. 
   - role: user
     content: |
       User Prompt: Start the server.
@@ -377,7 +377,7 @@
 
 - chat:
   - role: system
-    content: You are a writer agent that creates responses based on user prompt and data from function response. 
+    content: You are a question answering agent. Your responses are generated based on the user's prompt and the data provided in the JSON format from the function response. 
   - role: user
     content: |
       User Prompt: Run full device diagnose on living room sensor.
@@ -386,7 +386,7 @@
 
 - chat:
   - role: system
-    content: You are a writer agent that creates responses based on user prompt and data from function response. 
+    content: You are a question answering agent. Your responses are generated based on the user's prompt and the data provided in the JSON format from the function response. 
   - role: user
     content: |
       User Prompt: Run full device diagnose on living room sensor.
@@ -395,7 +395,7 @@
 
 - chat:
   - role: system
-    content: You are a writer agent that creates responses based on user prompt and data from function response. 
+    content: You are a question answering agent. Your responses are generated based on the user's prompt and the data provided in the JSON format from the function response. 
   - role: user
     content: |
       User Prompt: Turn on the central heating.
@@ -404,7 +404,7 @@
 
 - chat:
   - role: system
-    content: You are a writer agent that creates responses based on user prompt and data from function response. 
+    content: You are a question answering agent. Your responses are generated based on the user's prompt and the data provided in the JSON format from the function response. 
   - role: user
     content: |
       User Prompt: Please start the heater.
@@ -414,7 +414,7 @@
 - chat:
   - role: system
     content: |
-      You are a writer agent that creates responses based on user prompt and data from function response. 
+      You are a question answering agent. Your responses are generated based on the user's prompt and the data provided in the JSON format from the function response. 
   - role: user
     content: |
       User Prompt: Is central heating running?
@@ -423,7 +423,7 @@
 
 - chat:
   - role: system
-    content: You are a writer agent that creates responses based on user prompt and data from function response. 
+    content: You are a question answering agent. Your responses are generated based on the user's prompt and the data provided in the JSON format from the function response. 
   - role: user
     content: |
       User Prompt: Is heater currently running?
@@ -433,7 +433,7 @@
 - chat:
   - role: system
     content: |
-      You are a writer agent that creates responses based on user prompt and data from function response. 
+      You are a question answering agent. Your responses are generated based on the user's prompt and the data provided in the JSON format from the function response. 
   - role: user
     content: |
       User Prompt: Is the central heating started?
@@ -443,7 +443,7 @@
 - chat:
   - role: system
     content: |
-      You are a writer agent that creates responses based on user prompt and data from function response. 
+      You are a question answering agent. Your responses are generated based on the user's prompt and the data provided in the JSON format from the function response. 
   - role: user
     content: |
       User Prompt: Is heater active?
@@ -452,7 +452,7 @@
 
 - chat:
   - role: system
-    content: You are a writer agent that creates responses based on user prompt and data from function response. 
+    content: You are a question answering agent. Your responses are generated based on the user's prompt and the data provided in the JSON format from the function response. 
   - role: user
     content: |
       User Prompt: Read all sensors in the house.
@@ -467,7 +467,7 @@
 
 - chat:
   - role: system
-    content: You are a writer agent that creates responses based on user prompt and data from function response. 
+    content: You are a question answering agent. Your responses are generated based on the user's prompt and the data provided in the JSON format from the function response. 
   - role: user
     content: |
       User Prompt: Create a table with current house sensor values.
@@ -485,7 +485,7 @@
 
 - chat:
   - role: system
-    content: You are a writer agent that creates responses based on user prompt and data from function response. 
+    content: You are a question answering agent. Your responses are generated based on the user's prompt and the data provided in the JSON format from the function response. 
   - role: user
     content: |
       User Prompt: Get living room temperature.
@@ -494,7 +494,7 @@
 
 - chat:
   - role: system
-    content: You are a writer agent that creates responses based on user prompt and data from function response. 
+    content: You are a question answering agent. Your responses are generated based on the user's prompt and the data provided in the JSON format from the function response. 
   - role: user
     content: |
       User Prompt: How is outside?
@@ -503,7 +503,7 @@
 
 - chat:
   - role: system
-    content: You are a writer agent that creates responses based on user prompt and data from function response. 
+    content: You are a question answering agent. Your responses are generated based on the user's prompt and the data provided in the JSON format from the function response. 
   - role: user
     content: |
       User Prompt: Get weather forecast for the next two weeks.
@@ -545,7 +545,7 @@
 
 - chat:
   - role: system
-    content: You are a writer agent that creates responses based on user prompt and data from function response. 
+    content: You are a question answering agent. Your responses are generated based on the user's prompt and the data provided in the JSON format from the function response. 
   - role: user
     content: |
       User Prompt: List today forecast in a table, by hour.

@@ -1,6 +1,6 @@
 - chat:
   - role: system
-    content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response. 
+    content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
   - role: user
     content: |
       Function Response: {"timestamp":"2025-12-17 08:49:28","person":"Iulian Rotaru","measurement":"body_height","value":176}
@@ -66,7 +66,7 @@
 
 - chat:
   - role: system
-    content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response. 
+    content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
   - role: user
     content: |
       Function Response: {"timestamp":"2025-09-17 08:49:28","person":"Iulian Rotaru","measurement":"body_height","value":176}
@@ -86,7 +86,7 @@
 
 - chat:
   - role: system
-    content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response. 
+    content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
   - role: user
     content: |
       Function Response: {"timestamp":"2015-07-17 08:48:58","person":"Iulian Rotaru","measurement":"body_temperature","value":35.400001525878906}
@@ -106,7 +106,7 @@
 
 - chat:
   - role: system
-    content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response. 
+    content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
   - role: user
     content: |
       Function Response: {"timestamp":"2024-11-23 08:47:02","person":"Iulian Rotaru","measurement":"systolic_pressure","value":124}
@@ -126,7 +126,7 @@
 
 - chat:
   - role: system
-    content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response. 
+    content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
   - role: user
     content: |
       Function Response: {"timestamp":"2024-11-23 08:47:02","person":"Iulian Rotaru","measurement":"systolic_pressure","value":124}
@@ -146,7 +146,7 @@
 
 - chat:
   - role: system
-    content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response. 
+    content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
   - role: user
     content: |
       Function Response: {"timestamp":"2024-11-23 08:47:02","person":"Iulian Rotaru","measurement":"glucose_level","value":120}
@@ -163,7 +163,7 @@
 - chat:
   - role: system
     content: |
-      You are a question answering agent. Generate responses using the user prompt and JSON data from the function response. 
+      You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
   - role: user
     content: |
       Function Response: {"timestamp":"2026-01-20 12:15:45","person":"Iulian Rotaru","measurement":"glucose_level","value":105}
@@ -187,7 +187,7 @@
 
 - chat:
   - role: system
-    content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response. 
+    content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
   - role: user
     content: |
       Function Response: {"timestamp":"2025-12-17 08:49:28","person":"Iulian Rotaru","measurement":"body_height","value":176}
@@ -221,7 +221,7 @@
 
 - chat:
   - role: system
-    content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response. 
+    content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
   - role: user
     content: |
       Function Response: {"timestamp":"2012-12-12 16:20:10","person":"Iulian Rotaru","systole":130,"diastole":76,"pulse":72}
@@ -231,7 +231,7 @@
 
 - chat:
   - role: system
-    content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response. 
+    content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
   - role: user
     content: |
       Function Response: {"error":"database is currently unresponsive"}
@@ -240,7 +240,7 @@
 
 - chat:
   - role: system
-    content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response. 
+    content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
   - role: user
     content: |
       Function Response: {"timestamp":"2005-07-13 16:20:10","person":"Iulian Rotaru","temperature":34.7}
@@ -249,7 +249,7 @@
 
 - chat:
   - role: system
-    content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response. 
+    content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
   - role: user
     content: |
       Function Response: {"timestamp":"1995-01-24 16:20:10","person":"Iulian Rotaru","height":176,"weight":90.0,"body_mass_index":29.054752}
@@ -258,7 +258,7 @@
 
 - chat:
   - role: system
-    content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response. 
+    content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
   - role: user
     content: |
       Function Response: {"timestamp":"2014-02-28 13:53:55","person":"Iulian Rotaru","measurement":"glucose_level","value":101.0}
@@ -267,7 +267,7 @@
 
 - chat:
   - role: system
-    content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response. 
+    content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
   - role: user
     content: |
       Function Response: {"timestamp":"2013-08-23 23:12:45","person":"Iulian Rotaru","measurement":"oxygen_saturation","value":0.96}
@@ -276,7 +276,7 @@
 
 - chat:
   - role: system
-    content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response. 
+    content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
   - role: user
     content: |
       Function Response: {"error":"database is currently unresponsive"}
@@ -285,7 +285,7 @@
 
 - chat:
   - role: system
-    content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response. 
+    content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
   - role: user
     content: |
       Function Response: {"timestamp":"2013-08-23 23:12:45","person":"Iulian Rotaru","measurement":"oxygen_saturation","value":0.97}
@@ -294,7 +294,7 @@
 
 - chat:
   - role: system
-    content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response. 
+    content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
   - role: user
     content: |
       Function Response: {"timestamp":"2014-02-28 13:53:55","person":"Iulian Rotaru","measurement":"body_height","value":176}
@@ -303,7 +303,7 @@
 
 - chat:
   - role: system
-    content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response. 
+    content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
   - role: user
     content: |
       Function Response: {"person":"Iulian Rotaru","measurement":"body_temperature","value":36.50}
@@ -312,7 +312,7 @@
 
 - chat:
   - role: system
-    content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response. 
+    content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
   - role: user
     content: |
       Function Response: {"error":"database is currently unresponsive"}
@@ -321,7 +321,7 @@
 
 - chat:
   - role: system
-    content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response. 
+    content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
   - role: user
     content: |
       Function Response: {"timestamp":"2015-10-24 10:00:00","person":"Iulian Rotaru","measurement":"body_temperature","value":34.2}
@@ -330,7 +330,7 @@
 
 - chat:
   - role: system
-    content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response. 
+    content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
   - role: user
     content: |
       Function Response: {"jarvis_server":true,"slm_service":true}
@@ -339,16 +339,16 @@
 
 - chat:
   - role: system
-    content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response. 
+    content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
   - role: user
     content: |
-      Function Response: {"device_id":"thermostat-sensor","device_name":"Thermostat Sensor","device_zone":"living room","hostname":"thermostat-sensor.local","ipv4_addr":"192.168.0.90","diagnose_port":80,"connection_state":"Active","device_state":{"value":"21.13"}}
+      Function Response: {"device_id":"thermostat-sensor","device_name":"Thermostat Sensor","device_zone":"living room","hostname":"thermostat-sensor.local","ipv4_addr":192.168.0.90,"diagnose_port":80,"connection_state":"Active","device_state":{"value":21.13}}
       User Prompt: Run full device diagnose on living room sensor.
-  ground_truth: The living room sensor (Thermostat Sensor) is active. Its hostname is thermostat-sensor.local, IPv4 address is 192.168.0.90, the diagnose port is 80, and the current temperature reading is 21.13 °C.
+  ground_truth: The living room sensor is active. Its hostname is thermostat-sensor.local, IPv4 address is 192.168.0.90, the diagnose port is 80, and the current temperature reading is 21.13 °C.
 
 - chat:
   - role: system
-    content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response. 
+    content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
   - role: user
     content: |
       Function Response: {"setpoint":30.00,"hysteresis":0.00,"temperature":21.13,"running":true}
@@ -357,7 +357,7 @@
 
 - chat:
   - role: system
-    content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response. 
+    content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
   - role: user
     content: |
       Function Response: {"error":"device is currently unresponsive"}
@@ -367,16 +367,15 @@
 - chat:
   - role: system
     content: |
-      You are a question answering agent. Generate responses using the user prompt and JSON data from the function response. 
+      You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
   - role: user
     content: |
       Function Response: {"setpoint":30.00,"hysteresis":0.00,"temperature":21.25,"running":true}
       User Prompt: Is central heating running?
-  ground_truth: Yes, central heating is running.
-
+  ground_truth: Yes, central heating is currently running. The setpoint is 30.00 °C, with a hysteresis of 0.00 °C. The current temperature is 21.25 °C, and the system is running.
 - chat:
   - role: system
-    content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response. 
+    content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
   - role: user
     content: |
       Function Response: {"error":"device is currently unresponsive"}
@@ -386,7 +385,7 @@
 - chat:
   - role: system
     content: |
-      You are a question answering agent. Generate responses using the user prompt and JSON data from the function response. 
+      You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
   - role: user
     content: |
       Function Response: {"setpoint":10.00,"hysteresis":0.00,"temperature":21.25,"running":false}
@@ -396,16 +395,16 @@
 - chat:
   - role: system
     content: |
-      You are a question answering agent. Generate responses using the user prompt and JSON data from the function response. 
+      You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
   - role: user
     content: |
       Function Response: {"setpoint":22.00,"hysteresis":0.00,"temperature":21.25,"running":true}
       User Prompt: Is heater active?
-  ground_truth: Yes, the heater is active. It is currently on.
+  ground_truth: Yes, the heater is currently running. The current temperature is 21.25 °C, and the setpoint is 22.00 °C.
 
 - chat:
   - role: system
-    content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response. 
+    content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
   - role: user
     content: |
       Function Response: {"zone":"kitchen","name":"DHT Sensor","measurement":"humidity","value":"16.70"}
@@ -420,7 +419,7 @@
 
 - chat:
   - role: system
-    content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response. 
+    content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
   - role: user
     content: |
       Function Response: {"zone":"kitchen","name":"DHT Sensor","measurement":"humidity","value":"21.70"}
@@ -438,7 +437,7 @@
 
 - chat:
   - role: system
-    content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response. 
+    content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
   - role: user
     content: |
       Function Response: {"zone":"living room","name":"Thermostat Sensor","measurement":"temperature","value":"21.15"}
@@ -447,7 +446,7 @@
 
 - chat:
   - role: system
-    content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response. 
+    content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
   - role: user
     content: |
       Function Response: {"time":"2015-11-18T11:00","interval":900,"temperature_2m":1.2,"weather_code":"Overcast","wind_speed_10m":2.2}
@@ -456,7 +455,7 @@
 
 - chat:
   - role: system
-    content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response. 
+    content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
   - role: user
     content: |
       Function Response: {"date":"2025-12-18","weather_code":"Fog","temperature_2m_max":3.9,"temperature_2m_min":-1.0,"apparent_temperature_max":1.6,"apparent_temperature_min":-3.8,"precipitation_sum":0.0,"precipitation_probability_max":5,"wind_speed_10m_max":3.6}
@@ -498,7 +497,7 @@
 
 - chat:
   - role: system
-    content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response. 
+    content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
   - role: user
     content: |
       Function Response: {"time":"2025-12-22T00:00","weather_code":"Overcast","temperature_2m":2.3,"relative_humidity_2m":97,"precipitation_probability":0,"wind_speed_10m":3.7}

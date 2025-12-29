@@ -556,20 +556,6 @@ examples:
         content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response. 
       - role: user
         content: |
-          Function Response: {"timestamp":"2026-01-20 12:15:22","person":"Iulian Rotaru","measurement":"systolic_pressure","value":124}
-          {"timestamp":"2026-01-20 12:15:23","person":"Iulian Rotaru","measurement":"diastolic_pressure","value":81}
-          {"timestamp":"2026-01-20 12:15:25","person":"Iulian Rotaru","measurement":"heart_rate","value":72}
-          {"timestamp":"2026-01-20 12:15:45","person":"Iulian Rotaru","measurement":"glucose_level","value":105}
-          {"timestamp":"2026-01-20 12:15:49","person":"Iulian Rotaru","measurement":"body_height","value":175}
-          User Prompt: what was my yesterday pulse pressure?
-      - role: model
-        content: Unfortunately, I don't have any data regarding your pulse pressure from yesterday. Do you want to list all yesterday readings?
-
-  - messages:
-      - role: system
-        content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response. 
-      - role: user
-        content: |
           Function Response: {"measurement":"pulse_pressure","value":47}
           User Prompt: what is my pulse pressure?
       - role: model
@@ -580,41 +566,10 @@ examples:
         content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response. 
       - role: user
         content: |
-          Function Response: {"timestamp":"2025-12-17 08:47:02","person":"Iulian Rotaru","measurement":"pulse_pressure","value":47}
-          User Prompt: what do you think about my pulse pressure?
-      - role: model
-        content: Your pulse pressure is currently measured at 47 mmHg. While within a range, it is a little elevated. Pulse pressure is the difference between your systolic and diastolic blood pressure, and a value of 47 mmHg suggests a slightly higher than ideal arterial stiffness.
-
-  - messages:
-      - role: system
-        content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response. 
-      - role: user
-        content: |
-          Function Response: {"timestamp":"2025-03-15 09:12:19","person":"Iulian Rotaru","measurement":"pulse_pressure","value":44}
-          {"timestamp":"1964-03-15 13:52:45","person":"Iulian Rotaru","measurement":"pulse_pressure","value":39}
-          User Prompt: do you have any observations about my today pulse pressure measurements?
-      - role: model
-        content: Your pulse pressure measurements were 44 mmHg at 09:12:19 and 39 mmHg at 13:52:45. A normal pulse pressure typically falls between 30 and 60 mmHg. Both of your recorded values are within that range.
-
-  - messages:
-      - role: system
-        content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response. 
-      - role: user
-        content: |
           Function Response: {"timestamp":"1995-07-04 10:00:00","person":"Iulian Rotaru","measurement":"body_temperature","value":36.5}
           User Prompt: get body temperature from 2025-12-17 for iulian rotaru
       - role: model
         content: The body temperature for Iulian Rotaru on December 21, 2025 was 36.5 °C.
-
-  - messages:
-      - role: system
-        content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response. 
-      - role: user
-        content:
-          Function Response: {"timestamp":"2015-10-24 10:00:00","person":"Iulian Rotaru","measurement":"body_temperature","value":34.2}
-          User Prompt: what is your opinion regarding my body temperature
-      - role: model
-        content: Your body temperature is 34.2 °C. This is a bit low. The average normal body temperature is generally considered to be around 37 °C. I recommend monitoring it and consulting a medical professional if it persists or is accompanied by other symptoms.
 
   - messages:
       - role: system
@@ -653,44 +608,44 @@ examples:
         content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response. 
       - role: user
         content: |
-          Function Response: {"timestamp":"2012-12-12 16:20:10","person":"Iulian Rotaru","systole":119,"diastole":72,"pulse":61}
+          Function Response: {"timestamp":"2012-12-12 16:20:10","person":"Fântânaru Ciprian","systole":119,"diastole":72,"pulse":61}
           User Prompt: save blood 119 72 61
       - role: model
         content: |
-          Blood pressure and pulse recorded: Systole 119 mmHg, Diastole 72 mmHg, Pulse 61 bpm.
+          Blood pressure: systole 119 mmHg, diastole 72 mmHg and pulse 61 bpm was recorded for Fântânaru Ciprian on December 12, 2012 at 16:20:10.
 
   - messages:
       - role: system
         content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response. 
       - role: user
         content: |
-          Function Response: {"timestamp":"2011-11-11 08:28:44","person":"Iulian Rotaru","systole":123,"diastole":73,"pulse":59}
+          Function Response: {"timestamp":"2011-11-11 08:28:44","person":"Rotaru Ștefan","systole":123,"diastole":73,"pulse":59}
           User Prompt: log my blood measurements: 123 73 59
       - role: model
         content: |
-          Blood pressure and pulse recorded: Systole 123 mmHg, Diastole 73 mmHg, Pulse 59 bpm.
+          Blood pressure: systole 123 mmHg, diastole 73 mmHg and pulse 59 bpm was recorded for Rotaru Ștefan on November 11, 2011 at 09:28:44.
 
   - messages:
       - role: system
         content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response. 
       - role: user
         content: |
-          Function Response: {"timestamp":"2010-03-11 18:38:41","person":"Iulian Rotaru","systole":133,"diastole":76,"pulse":82}
+          Function Response: {"timestamp":"2010-03-11 18:38:41","person":"Lontkowschi George","systole":133,"diastole":76,"pulse":82}
           User Prompt: record my blood pressure 133/76 and pulse 82
       - role: model
         content: |
-          Blood pressure and pulse recorded: Systole 133 mmHg, Diastole 76 mmHg, Pulse 82 bpm.
+          Blood pressure: systole 133 mmHg, diastole 76 mmHg and pulse 82 bpm was recorded for Lontkowschi George on March 11, 2010 at 18:38:41.
 
   - messages:
       - role: system
         content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response. 
       - role: user
         content: |
-          Function Response: {"timestamp":"2010-03-11 18:38:41","person":"John Doe","systole":133,"diastole":76,"pulse":82}
+          Function Response: {"timestamp":"2019-04-21 16:18:31","person":"John Doe","systole":133,"diastole":76,"pulse":82}
           User Prompt: write blood pressure of 133 with 76 and pulse of 82 to medical database for John Doe
       - role: model
         content: |
-          Blood pressure and pulse recorded: Systole 133 mmHg, Diastole 76 mmHg, Pulse 82 bpm for John Doe.
+          Blood pressure: systole 133 mmHg, diastole 76 mmHg, pulse 82 bpm was recorded for John Doe on May 21, 2019 at 16:18:31.
 
   - messages:
       - role: system
@@ -707,68 +662,50 @@ examples:
         content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response. 
       - role: user
         content: |
-          Function Response: {"timestamp":"2025-12-17 08:47","measurement":"systolic_pressure","value":138,"status":"high_normal"}
-          {"timestamp":"2025-12-17 08:47","measurement":"diastolic_pressure","value":88,"status":"high_normal"}
-          {"timestamp":"2025-12-17 08:47","measurement":"heart_rate","value":72,"status":"normal"}
-          {"timestamp":"2025-12-17 08:48","measurement":"body_temperature","value":36.6,"status":"normal"}
-          {"timestamp":"2025-12-17 08:49","measurement":"body_mass_index","value":28.9,"status":"overweight"}
-          {"timestamp":"2025-12-17 08:49","measurement":"hydration_level","value":65,"status":"optimal"}
-          User Prompt: how do my stats look today?
-      - role: model
-        content: |
-          Your vitals are mostly steady, though your blood pressure is slightly elevated at **138/88 mmHg**.
-
-          I also noticed your BMI is currently **28.9**, which falls into the overweight category. On the positive side, your heart rate and hydration levels are excellent. Would you like some tips on managing your blood pressure today?
-
-  - messages:
-      - role: system
-        content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response. 
-      - role: user
-        content: |
-          Function Response: {"timestamp":"2005-07-13 16:20:10","person":"Iulian Rotaru","temperature":35.4}
+          Function Response: {"timestamp":"2005-07-13 16:20:10","person":"Rotaru Iulian","temperature":35.4}
           User Prompt: save my temperature 35.4
       - role: model
-        content: Your body temperature has been recorded as 35.4 °C. The timestamp is 2005-07-13 16:20:10.
+        content: Body temperature of 35.40 °C was recorded for Rotaru Iulian on July 13, 2005 at 16:20:10.
 
   - messages:
       - role: system
         content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
       - role: user
         content: |
-          Function Response: {"timestamp":"2011-06-04 06:30:15","person":"Iulian Rotaru","temperature":37.2}
-          User Prompt: save my body temperature of 37.2 to medical database
+          Function Response: {"timestamp":"2011-06-04 06:30:15","person":"Rotaru Ilie","temperature":37.2}
+          User Prompt: record my body temperature of 37.2 to medical database
       - role: model
-        content: Your body temperature has been recorded as 37.2 °C. The timestamp is 2011-06-04 06:30:15.
+        content: Body temperature of 37.20 °C was recorded for Rotaru Ilie on June 04, 2011 at 06:30:15.
 
   - messages:
       - role: system
         content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response. 
       - role: user
         content: |
-          Function Response: {"timestamp":"2003-09-20 09:06:53","person":"John Doe","temperature":35.6}
-          User Prompt: saves body temperature of 35.6 for John Doe in personal health archive
+          Function Response: {"timestamp":"2003-09-20 09:06:53","person":"Jane Doe","temperature":35.6}
+          User Prompt: saves body temperature of 35.6 for Jane Doe in personal health archive
       - role: model
-        content: Body temperature of 35.60 recorded for John Doe and saved to personal health archive.
+        content: Body temperature of 35.60 °C was recorded for Jane Doe on September 20, 2023 at 09:06:53.
 
   - messages:
       - role: system
         content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response. 
       - role: user
         content: |
-          Function Response: {"timestamp":"2015-05-23 18:10:20","person":"Iulian Rotaru","oxygen_saturation":0.98}
-          User Prompt: save my spo2 0.98
+          Function Response: {"timestamp":"2018-06-12 18:10:20","person":"Rotaru Ionuț Ciprian","oxygen_saturation":0.95}
+          User Prompt: save my spo2 0.95
       - role: model
-        content: Oxygen saturation level (SpO2) of 96 % has been saved.
+        content: Oxygen saturation level (SpO2) of 95 % was recorded for Rotaru Ionuț Ciprian on June 12, 2018 at 18:10:20.
 
   - messages:
       - role: system
         content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response. 
       - role: user
         content: |
-          Function Response: {"timestamp":"2015-05-23 18:10:20","person":"Iulian Rotaru","oxygen_saturation":0.98}
+          Function Response: {"timestamp":"2021-05-23 18:10:20","person":"Lontkowschi Mirela Petronela","oxygen_saturation":0.98}
           User Prompt: Log my oxygen saturation of 0.98 to medical database
       - role: model
-        content: Oxygen saturation level (SpO2) of 98 % recorded in your medical database.
+        content: Oxygen saturation level (SpO2) of 98 % was recorded for Lontkowschi Mirela Petronela on May 23, 2021 at 18:10:20.
 
   - messages:
       - role: system
@@ -785,7 +722,7 @@ examples:
         content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response. 
       - role: user
         content: |
-          Function Response: {"person":"Iulian Rotaru","measurement":"oxygen_saturation","value":0.99}
+          Function Response: {"timestamp":"2024-03-24 18:30:15","person":"Iulian Rotaru","measurement":"oxygen_saturation","value":0.99}
           User Prompt: what is my oxygen saturation?
       - role: model
         content: Your oxygen saturation level (SpO2) is 99 %.
@@ -795,41 +732,51 @@ examples:
         content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response. 
       - role: user
         content: |
-          Function Response: {"timestamp":"2005-06-10 09:12:46","person":"John Doe","measurement":"body_weight","value":99.0}
-          {"timestamp":"2005-06-10 09:12:46","person":"John Doe","measurement":"body_mass_index","value":29.887693}
-          User Prompt: save body weight of 99 kg for John Doe in his medical database; his height is 182 cm
+          Function Response: {"timestamp":"2014-03-24 18:30:15","person":"Hans Murakami Sena","measurement":"body_weight","value":99.0}
+          {"timestamp":"2014-03-24 18:30:15","person":"Hans Murakami Sena","measurement":"body_mass_index","value":30.757693}
+          User Prompt: Save body weight of 99 kg for Hans Murakami Sena in his medical database.
       - role: model
-        content: Body weight of 99.00 kg saved for John Doe in his medical database. Calculated body mass index (BMI) is 29.88.
+        content: Weight of 99.0 kg, with a corresponding BMI of 30.75, was recorded for Hans Murakami Sena on March 24, 2014 at 18:30:15.
 
   - messages:
       - role: system
-        content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response. 
+        content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
       - role: user
         content: |
           Function Response: {"timestamp":"1995-01-24 16:20:10","person":"Iulian Rotaru","height":176,"weight":90.0,"body_mass_index":29.054752}
-          User Prompt: save my body weight of 90 kg to archive
+          User Prompt: save my weight 90
       - role: model
-        content: Your body weight of 90.0 kg has been saved to the archive. Calculated body mass index (BMI) is 29.05.
+        content: Weight of 90.0 kg, with a corresponding BMI of 29.05, was recorded for Iulian Rotaru on January 24, 1995 at 16:20:10.
 
   - messages:
       - role: system
         content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response. 
       - role: user
         content: |
-          Function Response: {"timestamp":"2014-02-28 13:53:55","person":"Iulian Rotaru","measurement":"glucose_level","value":101.0}
-          User Prompt: save my glucose level of 101 to medical database
+          Function Response: {"timestamp":"2025-04-14 14:20:10","person":"Iulian Rotaru","height":176,"weight":90.0,"body_mass_index":29.054752}
+          User Prompt: write my body weight of 90 kg to archive
       - role: model
-        content: Glucose level of 101 mg/dL recorded in your medical database.
+        content: Weight of 90.0 kg, with a corresponding BMI of 29.05, was recorded for Iulian Rotaru on May 14, 2025 at 14:20:10.
 
   - messages:
       - role: system
         content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response. 
       - role: user
         content: |
-          Function Response: {"timestamp":"2025-10-10 13:53:55","person":"Iulian Rotaru","measurement":"glucose_level","value":101.0}
-          User Prompt: save glucose 101
+          Function Response: {"timestamp":"2014-02-28 13:53:55","person":"Mioara Gogălniceanu","measurement":"glucose_level","value":101}
+          User Prompt: record my glucose level of 101 to medical database
       - role: model
-        content: Your glucose level of 101 mg/dL has been saved.
+        content: Glucose level of 101 mg/dL was recorded for Mioara Gogălniceanu on February 28, 2014 at 13:53:55.
+
+  - messages:
+      - role: system
+        content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response. 
+      - role: user
+        content: |
+          Function Response: {"timestamp":"2025-10-10 13:53:55","person":"Fântânaru Eugenia","measurement":"glucose_level","value":130}
+          User Prompt: save glucose 130
+      - role: model
+        content: Glucose level of 130 mg/dL was recorded for Fântânaru Eugenia on November 10, 2025 at 13:53:55.
 
   - messages:
       - role: system
@@ -837,7 +784,7 @@ examples:
       - role: user
         content: |
           Function Response: {"error":"database is currently unresponsive"}
-          User Prompt: save glucose 101
+          User Prompt: record glucose 101
       - role: model
         content: I cannot save your glucose level due to database unresponsiveness. Would you like me to run a database diagnostic?
 
@@ -846,10 +793,10 @@ examples:
         content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response. 
       - role: user
         content: |
-          Function Response: {"timestamp":"2025-10-10 13:53:55","person":"Iulian Rotaru","measurement":"body_height","value":176}
-          User Prompt: record my height to medical archive
+          Function Response: {"timestamp":"2002-08-14 12:23:45","person":"Păduraru Mihaela","measurement":"body_height","value":165}
+          User Prompt: log my height to medical archive
       - role: model
-        content: Your height of 171 cm has been saved to medical database.
+        content: Height of 165 cm has been recorded for Păduraru Mihaela on August 14, 2002 at 12:23:45.
 
   - messages:
       - role: system

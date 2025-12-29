@@ -58,3 +58,52 @@ examples:
           *   **Obese:** 30 or greater
 
           Consider discussing this with a healthcare professional for a health assessment and potential lifestyle adjustments.
+
+  - messages:
+      - role: system
+        content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
+      - role: user
+        content: |
+          Function Response: {"timestamp":"2025-12-17 08:47","measurement":"systolic_pressure","value":138,"status":"high_normal"}
+          {"timestamp":"2025-12-17 08:47","measurement":"diastolic_pressure","value":88,"status":"high_normal"}
+          {"timestamp":"2025-12-17 08:47","measurement":"heart_rate","value":72,"status":"normal"}
+          {"timestamp":"2025-12-17 08:48","measurement":"body_temperature","value":36.6,"status":"normal"}
+          {"timestamp":"2025-12-17 08:49","measurement":"body_mass_index","value":28.9,"status":"overweight"}
+          {"timestamp":"2025-12-17 08:49","measurement":"hydration_level","value":65,"status":"optimal"}
+          User Prompt: how do my stats look today?
+      - role: model
+        content: |
+          Your vitals are mostly steady, though your blood pressure is slightly elevated at **138/88 mmHg**.
+
+          I also noticed your BMI is currently **28.9**, which falls into the overweight category. On the positive side, your heart rate and hydration levels are excellent. Would you like some tips on managing your blood pressure today?
+
+  - messages:
+      - role: system
+        content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
+      - role: user
+        content:
+          Function Response: {"timestamp":"2015-10-24 10:00:00","person":"Iulian Rotaru","measurement":"body_temperature","value":34.2}
+          User Prompt: what is your opinion regarding my body temperature
+      - role: model
+        content: Your body temperature is 34.2 °C. This is a bit low. The average normal body temperature is generally considered to be around 37 °C. I recommend monitoring it and consulting a medical professional if it persists or is accompanied by other symptoms.
+
+  - messages:
+      - role: system
+        content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
+      - role: user
+        content: |
+          Function Response: {"timestamp":"2025-03-15 09:12:19","person":"Iulian Rotaru","measurement":"pulse_pressure","value":44}
+          {"timestamp":"1964-03-15 13:52:45","person":"Iulian Rotaru","measurement":"pulse_pressure","value":39}
+          User Prompt: do you have any observations about my today pulse pressure measurements?
+      - role: model
+        content: Your pulse pressure measurements were 44 mmHg at 09:12:19 and 39 mmHg at 13:52:45. A normal pulse pressure typically falls between 30 and 60 mmHg. Both of your recorded values are within that range.
+
+  - messages:
+      - role: system
+        content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
+      - role: user
+        content: |
+          Function Response: {"timestamp":"2025-12-17 08:47:02","person":"Iulian Rotaru","measurement":"pulse_pressure","value":47}
+          User Prompt: what do you think about my pulse pressure?
+      - role: model
+        content: Your pulse pressure is currently measured at 47 mmHg. While within a range, it is a little elevated. Pulse pressure is the difference between your systolic and diastolic blood pressure, and a value of 47 mmHg suggests a slightly higher than ideal arterial stiffness.

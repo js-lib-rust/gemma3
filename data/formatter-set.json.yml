@@ -17,6 +17,22 @@ examples:
 
   - messages:
       - role: system
+        content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
+      - role: user
+        content: what is the heater?
+      - role: model
+        content: The heater is a shorthand for the central heating controller.
+
+  - messages:
+      - role: system
+        content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
+      - role: user
+        content: what does spo2 stand for'
+      - role: model
+        content: The acronym spo2 stand for Oxygen Saturation Level.
+
+  - messages:
+      - role: system
         content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response. 
       - role: user
         content: how is body_max_index parameter displayed
@@ -982,11 +998,11 @@ examples:
         content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response. 
       - role: user
         content: |
-          User Prompt: please start the heater
+          User Prompt: please start the central heating
           Function Response: {"error":"device is currently unresponsive"}
       - role: model
         content: |
-          Unable to start the heater. Shall I run a device diagnose?
+          The central heating controller is not responding. Would you like me to run a device diagnostic?
 
   - messages:
       - role: system
@@ -1008,7 +1024,7 @@ examples:
           Function Response: {"error":"device is currently unresponsive"}
       - role: model
         content: |
-          There seems to be a communication error with the heating system. Please check the power supply and system status.
+          The central heating controller is not responding. Would you like me to run a device diagnostic?
 
   - messages:
       - role: system
@@ -1090,7 +1106,7 @@ examples:
           Function Response: {"error":"device is currently unresponsive"}
       - role: model
         content: |
-          Fail to communicate with central heating controller. This may be due to a power outage, a communication error, or a system fault.
+          The central heating controller is currently not responding. Would you like me to run a device diagnostic?
 
   - messages:
       - role: system
@@ -1146,6 +1162,16 @@ examples:
       - role: model
         content: |
           The DHT Sensor is active. Its hostname is dht-sensor.local, IPv4 address is 192.168.0.73, the diagnose port is 80. The current temperature is 18.6 °C and humidity is 13.5%. The measurement period is 10000, and humidity/temperature thresholds are set to 0.
+
+  - chat:
+    - role: system
+      content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
+    - role: user
+      content: |
+        User Prompt: run device diagnose on living temperature sensor
+        Function Response: {"error":"device is currently unresponsive"}
+    - role: model
+      content: The living room temperature sensor is not responding and I am unable to gather additional data.
 
   - messages:
       - role: system
@@ -1204,7 +1230,7 @@ examples:
         content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response. 
       - role: user
         content: |
-          User Prompt: display hera sensors in a table format
+          User Prompt: read hera sensors in a table format
           Function Response: {"zone":"kitchen","name":"DHT Sensor","measurement":"humidity","value":16.80}
           {"zone":"kitchen","name":"DHT Sensor","measurement":"temperature","value":17.50}
           {"zone":"living room","name":"Thermostat Sensor","measurement":"temperature","value":20.38}
@@ -1238,7 +1264,7 @@ examples:
           Function Response: {"error":"device is currently unresponsive"}
       - role: model
         content: |
-          The living room sensor is currently unresponsive. Would you like me to initiate a diagnostic check on the device?
+          The living room temperature sensor is not responding. Would you like me to run a device diagnostic?
 
   - messages:
       - role: system
@@ -1271,7 +1297,7 @@ examples:
           Function Response: {"error":"device is currently unresponsive"}
       - role: model
         content: |
-          The temperature sensor in the living room is currently unavailable. Would you like to initiate a diagnostic test?
+          The living room temperature sensor is not responding. Would you like me to run a device diagnostic?
 
   - messages:
       - role: system
@@ -1294,6 +1320,17 @@ examples:
       - role: model
         content: |
           The humidity in the kitchen is 36.70 %.
+
+  - messages:
+      - role: system
+        content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
+      - role: user
+        content: |
+          User Prompt: print kitchen humidity
+          Function Response: {"error":"device is currently unresponsive"}
+      - role: model
+        content: |
+          The kitchen humidity sensor is not responding. Would you like me to run a device diagnostic?
 
   - messages:
       - role: system

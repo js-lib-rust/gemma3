@@ -234,10 +234,10 @@
     content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response. 
   - role: user
     content: |
-      User Prompt: Save my blood pressure 130/76 and pulse 72.
+      User Prompt: Save my blood pressure 130 with 76 and pulse 72.
       Function Response: {"error":"database is currently unresponsive"}
   ground_truth: |
-    I am currently unable to save your blood measurements to the medical database due to a system unresponsiveness.
+    I am currently unable to save your blood pressure and pulse due to a system unresponsiveness.
 
 - chat:
   - role: system
@@ -282,7 +282,7 @@
     content: |
       User Prompt: save my spo2 0.96
       Function Response: {"error":"database is currently unresponsive"}
-  ground_truth: I am currently unable to save your oxygen saturation level (SpO2) to the medical database due to a system unresponsiveness.
+  ground_truth: I am currently unable to save your oxygen saturation level due to a system unresponsiveness.
 
 - chat:
   - role: system
@@ -318,7 +318,7 @@
     content: |
       User Prompt: What is my body temperature?
       Function Response: {"error":"database is currently unresponsive"}
-  ground_truth: Medical database is not online. I am unable to provide your health readings.
+  ground_truth: I am currently unable to read your body temperature due to a system unresponsiveness.
 
 - chat:
   - role: system
@@ -423,7 +423,7 @@
     content: |
       User Prompt: Run full device diagnose on living room sensor.
       Function Response: {"error":"device is currently unresponsive"}
-  ground_truth: The living room sensor is offline, and I am unable to gather additional data at this time.
+  ground_truth: The living room temperature sensor is not responding and I am unable to gather additional data.
 
 - chat:
   - role: system
@@ -441,7 +441,7 @@
     content: |
       User Prompt: Please start the heater.
       Function Response: {"error":"device is currently unresponsive"}
-  ground_truth: Unable to activate central heating. Do you want me to run a device diagnose?
+  ground_truth: The central heating controller is currently not responding. Would you like me to run a device diagnostic?
 
 - chat:
   - role: system
@@ -460,7 +460,7 @@
     content: |
       User Prompt: Is heater currently running?
       Function Response: {"error":"device is currently unresponsive"}
-  ground_truth: There seems to be a communication error with the heating system. Please check the power supply and system status.
+  ground_truth: The central heating controller is currently not responding. Would you like me to run a device diagnostic?
 
 - chat:
   - role: system

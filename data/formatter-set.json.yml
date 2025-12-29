@@ -223,7 +223,7 @@ examples:
           Function Response: {"error":"database is currently unresponsive"}
           User Prompt: list today health measurements
       - role: model
-        content: I am currently unable to list your measurements due to a system unresponsiveness.
+        content: I cannot list your measurements due to database unresponsiveness. Would you like me to run a database diagnostic?
 
   - messages:
       - role: system
@@ -499,7 +499,7 @@ examples:
           Function Response: {"error":"database is currently unresponsive"}
           User Prompt: what is my body temperature?
       - role: model
-        content: I am currently unable to retrieve your body temperature due to a system unresponsiveness.
+        content: I cannot retrieve your body temperature due to database unresponsiveness. Would you like me to run a database diagnostic?
 
   - messages:
       - role: system
@@ -700,7 +700,7 @@ examples:
           Function Response: {"error":"database is currently unresponsive"}
           User Prompt: save my blood pressure 115 with 75 and heart rate 65
       - role: model
-        content: I am currently unable to save your blood measurements due to a system unresponsiveness.
+        content: I cannot save your blood measurements due to database unresponsiveness. Would you like me to run a database diagnostic?
 
   - messages:
       - role: system
@@ -778,7 +778,7 @@ examples:
           Function Response: {"error":"database is currently unresponsive"}
           User Prompt: Write SpO2 of 0.98 to health archive
       - role: model
-        content: I am currently unable to save your oxygen saturation level (SpO2) due to a system unresponsiveness.
+        content: I cannot save your oxygen saturation level (SpO2) due to database unresponsiveness. Would you like me to run a database diagnostic?
 
   - messages:
       - role: system
@@ -839,7 +839,7 @@ examples:
           Function Response: {"error":"database is currently unresponsive"}
           User Prompt: save glucose 101
       - role: model
-        content: I am currently unable to save your glucose level due to a system unresponsiveness.
+        content: I cannot save your glucose level due to database unresponsiveness. Would you like me to run a database diagnostic?
 
   - messages:
       - role: system
@@ -859,7 +859,7 @@ examples:
           Function Response: {"error":"database is currently unresponsive"}
           User Prompt: save my height to health database
       - role: model
-        content: I am currently unable to save your height due to a system unresponsiveness.
+        content: I cannot save your height due to database unresponsiveness. Would you like me to run a database diagnostic?
 
   - messages:
       - role: system
@@ -1045,16 +1045,6 @@ examples:
           User Prompt: run comprehensive device diagnose on DHT sensor
       - role: model
         content: The DHT Sensor is active. Its hostname is dht-sensor.local, IPv4 address is 192.168.0.73, the diagnose port is 80. The current temperature is 18.6 °C and humidity is 13.5%. The measurement period is 10000, and humidity/temperature thresholds are set to 0.
-
-  - chat:
-    - role: system
-      content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
-    - role: user
-      content: |
-        Function Response: {"error":"device is currently unresponsive"}
-        User Prompt: run device diagnose on living temperature sensor
-    - role: model
-      content: The living room temperature sensor is not responding and I am unable to gather additional data.
 
   - messages:
       - role: system

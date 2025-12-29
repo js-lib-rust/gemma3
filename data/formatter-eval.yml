@@ -236,7 +236,7 @@
     content: |
       Function Response: {"error":"database is currently unresponsive"}
       User Prompt: Save my blood pressure 130 with 76 and pulse 72.
-  ground_truth: I am currently unable to save your blood pressure and pulse due to a system unresponsiveness.
+  ground_truth: I cannot save your blood measurements due to database unresponsiveness. Would you like me to run a database diagnostic?
 
 - chat:
   - role: system
@@ -281,7 +281,7 @@
     content: |
       Function Response: {"error":"database is currently unresponsive"}
       User Prompt: save my spo2 0.96
-  ground_truth: I am currently unable to save your oxygen saturation level due to a system unresponsiveness.
+  ground_truth: I cannot save your oxygen saturation level (SpO2) due to database unresponsiveness. Would you like me to run a database diagnostic?
 
 - chat:
   - role: system
@@ -317,7 +317,7 @@
     content: |
       Function Response: {"error":"database is currently unresponsive"}
       User Prompt: What is my body temperature?
-  ground_truth: I am currently unable to read your body temperature due to a system unresponsiveness.
+  ground_truth: I cannot retrieve your body temperature due to database unresponsiveness. Would you like me to run a database diagnostic?
 
 - chat:
   - role: system

@@ -671,26 +671,6 @@ examples:
         content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response. 
       - role: user
         content: |
-          Function Response: {"timestamp":"2020-05-16 18:19:26","person":"Iulian Rotaru","measurement":"body_mass_index","value":28.89333724975586}
-          User Prompt: is my bmi value in normal range? how can it be classified?
-      - role: model
-        content: |
-          Your body mass index (BMI) of 28.89 falls within the **Overweight** category.
-
-          Here's a classification based on BMI:
-
-          *   **Underweight:** Below 18.5
-          *   **Normal weight:** 18.5 - 24.9
-          *   **Overweight:** 25 - 29.9
-          *   **Obese:** 30 or greater
-
-          Consider discussing this with a healthcare professional for a health assessment and potential lifestyle adjustments.
-
-  - messages:
-      - role: system
-        content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response. 
-      - role: user
-        content: |
           Function Response: {"timestamp":"2012-12-12 16:20:10","person":"Iulian Rotaru","systole":119,"diastole":72,"pulse":61}
           User Prompt: save blood 119 72 61
       - role: model

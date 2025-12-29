@@ -403,7 +403,7 @@
       {"zone":"living room","name":"Thermostat Sensor","measurement":"temperature","value":"20.38"}
       User Prompt: Read all sensors in the house.
   ground_truth: |
-    Here's a summary of all sensor readings in the house:
+    Here's a summary of sensor readings:
     
     *   **Kitchen - DHT Sensor:** Humidity 16.70 %
     *   **Kitchen - DHT Sensor:** Temperature 17.50 °C
@@ -419,7 +419,7 @@
       {"zone":"living room","name":"Thermostat Sensor","measurement":"temperature","value":"22.40"}
       User Prompt: Create a table with current house sensor values.
   ground_truth: |
-    Here's a summary of all sensor readings in the house:
+    Here's a summary of sensor readings:
     
     | Zone | Name | Measurement | Value |
     | :--- | :--- | :--- | :--- |

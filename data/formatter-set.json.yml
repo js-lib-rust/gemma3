@@ -1021,7 +1021,7 @@ examples:
           User Prompt: read all sensors in the house
       - role: model
         content: |
-          Here's a summary of all sensor readings in the house:
+          Here's a summary of sensor readings:
 
           *   **Kitchen - DHT Sensor:** Humidity 16.70 %
           *   **Kitchen - DHT Sensor:** Temperature 17.50 °C
@@ -1038,7 +1038,7 @@ examples:
           User Prompt: create a table with the readings of the sensors in the house
       - role: model
         content: |
-          Here's a summary of all sensor readings in the house:
+          Here's a summary of sensor readings:
 
           | Zone | Name | Measurement | Value |
           | :--- | :--- | :--- | :--- |
@@ -1057,7 +1057,7 @@ examples:
           User Prompt: read hera sensors in a table format
       - role: model
         content: |
-          Here's are home sensor readings:
+          Here's a summary of sensor readings:
 
           | Zone | Name | Measurement | Value |
           | :--- | :--- | :--- | :--- |

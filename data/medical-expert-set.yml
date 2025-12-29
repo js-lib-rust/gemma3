@@ -1,0 +1,40 @@
+examples:
+  - messages:
+      - role: system
+        content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
+      - role: user
+        content: |
+          Function Response: {"timestamp":"2024-03-15 08:49:26","person":"Iulian Rotaru","measurement":"body_mass_index","value":28.8933}
+          User Prompt: analyse my body mass index from today health readings
+      - role: model
+        content: |
+          Based on today's health readings (March 15, 2024), your body mass index (BMI) is 28.89.
+
+          A BMI of 28.89 falls within the **overweight** category. Here's a general BMI classification:
+
+          *   Underweight: Below 18.5
+          *   Normal weight: 18.5–24.9
+          *   Overweight: 25–29.9
+          *   Obese: 30 or greater
+
+          It might be worth discussing this with a healthcare professional to assess your overall health and consider any necessary lifestyle adjustments.
+
+  - messages:
+      - role: system
+        content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
+      - role: user
+        content: |
+          Function Response: {"timestamp":"2010-09-11 10:00:00","person":"Iulian Rotaru","measurement":"body_temperature","value":38.2}
+          User Prompt: please analyse my body temperature
+      - role: model
+        content: Your body temperature of 38.2 °C is slightly elevated. A normal body temperature typically ranges from 36.5 °C to 37.5 °C. While not drastically high, it suggests you might have a mild fever. I recommend monitoring it and considering rest and hydration. If it persists or worsens, consulting a medical professional would be prudent.
+
+  - messages:
+      - role: system
+        content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
+      - role: user
+        content: |
+          Function Response: {"timestamp":"2003-04-08 10:00:00","person":"Iulian Rotaru","measurement":"body_temperature","value":36.8}
+          User Prompt: how is my body temperature?
+      - role: model
+        content: Your body temperature of 36.8 °C is within the normal range (36.5 °C to 37.5 °C). It appears to be perfectly healthy.

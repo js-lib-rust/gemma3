@@ -333,43 +333,6 @@
     content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response. 
   - role: user
     content: |
-      Function Response: {"timestamp":"2010-09-11 10:00:00","person":"Iulian Rotaru","measurement":"body_temperature","value":38.2}
-      User Prompt: Please analyse my body temperature.
-  ground_truth: Your body temperature of 38.2 °C is slightly elevated. A normal body temperature typically ranges from 36.5 °C to 37.5 °C. While not drastically high, it suggests you might have a mild fever. I recommend monitoring it and considering rest and hydration. If it persists or worsens, consulting a medical professional would be prudent.
-
-- chat:
-  - role: system
-    content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response. 
-  - role: user
-    content: |
-      Function Response: {"timestamp":"2025-12-17 08:47:02","person":"Iulian Rotaru","measurement":"pulse_pressure","value":47}
-      User Prompt: What do you think about my pulse pressure?
-  ground_truth: Your pulse pressure is currently measured at 47 mmHg. While within a range, it is a little elevated. Pulse pressure is the difference between your systolic and diastolic blood pressure, and a value of 47 mmHg suggests a slightly higher than ideal arterial stiffness.
-
-- chat:
-  - role: system
-    content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response. 
-  - role: user
-    content: |
-      Function Response: {"timestamp":"2024-03-15 08:49:26","person":"Iulian Rotaru","measurement":"body_mass_index","value":28.8933}
-      User Prompt: Analyse my body mass index from today health readings.
-  ground_truth: |
-    Based on today's health readings (March 15, 2024), your body mass index (BMI) is 28.89.
-    
-    A BMI of 28.89 falls within the **overweight** category. Here's a general BMI classification:
-    
-    *   Underweight: Below 18.5
-    *   Normal weight: 18.5–24.9
-    *   Overweight: 25–29.9
-    *   Obese: 30 or greater
-
-    It might be worth discussing this with a healthcare professional to assess your overall health and consider any necessary lifestyle adjustments.
-
-- chat:
-  - role: system
-    content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response. 
-  - role: user
-    content: |
       Function Response: {"timestamp":"2020-05-16 18:19:26","person":"Iulian Rotaru","measurement":"body_mass_index","value":28.89333724975586}
       User Prompt: How can my BMI be classified?
   ground_truth: |

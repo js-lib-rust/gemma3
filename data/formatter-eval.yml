@@ -227,7 +227,7 @@
       Function Response: {"timestamp":"2012-12-12 16:20:10","person":"Iulian Rotaru","systole":130,"diastole":76,"pulse":72}
       User Prompt: Save my blood pressure 130/76 and heart rate 72.
   ground_truth: |
-    Blood pressure and pulse recorded: Systole 130 mmHg, Diastole 76 mmHg, Pulse 72 bpm.
+    Blood pressure: systole 130 mmHg, diastole 76 mmHg and pulse 72 bpm was recorded for Iulian Rotaru on December 12, 2012 at 16:20:10.
 
 - chat:
   - role: system
@@ -245,7 +245,7 @@
     content: |
       Function Response: {"timestamp":"2005-07-13 16:20:10","person":"Iulian Rotaru","temperature":34.7}
       User Prompt: Save my body temperature 34.7
-  ground_truth: Your body temperature reading of 34.70 °C has been saved.
+  ground_truth: Body temperature of 34.70 °C was recorded for Iulian Rotaru on July 13, 2005 at 16:20:10.
 
 - chat:
   - role: system
@@ -254,7 +254,7 @@
     content: |
       Function Response: {"timestamp":"1995-01-24 16:20:10","person":"Iulian Rotaru","height":176,"weight":90.0,"body_mass_index":29.054752}
       User Prompt: Save my body weight of 90 kg to archive.
-  ground_truth: Your body weight of 90.0 kg has been saved to the archive. Calculated body mass index (BMI) is 29.05.
+  ground_truth: Weight of 90.0 kg, with a corresponding BMI of 29.05, was recorded for Iulian Rotaru on January 24, 1995 at 16:20:10.
 
 - chat:
   - role: system
@@ -263,7 +263,7 @@
     content: |
       Function Response: {"timestamp":"2014-02-28 13:53:55","person":"Iulian Rotaru","measurement":"glucose_level","value":101.0}
       User Prompt: Save my glucose level of 101 to medical database.
-  ground_truth: Glucose level of 101 mg/dL recorded in your medical database.
+  ground_truth: Glucose level of 101 mg/dL has been recorded for Iulian Rotaru on February 28, 2014 at 13:53:55.
 
 - chat:
   - role: system
@@ -272,7 +272,7 @@
     content: |
       Function Response: {"timestamp":"2013-08-23 23:12:45","person":"Iulian Rotaru","measurement":"oxygen_saturation","value":0.96}
       User Prompt: save my spo2 0.96
-  ground_truth: Oxygen saturation level (SpO2) of 96 % recorded in your medical database.
+  ground_truth: Oxygen saturation level (SpO2) of 96 % was recorded for Iulian Rotaru on August 23, 2013 at 23:12:45.
 
 - chat:
   - role: system
@@ -290,7 +290,7 @@
     content: |
       Function Response: {"timestamp":"2013-08-23 23:12:45","person":"Iulian Rotaru","measurement":"oxygen_saturation","value":0.97}
       User Prompt: Save my SpO2 of 0.97 to medical database.
-  ground_truth: Oxygen saturation level (SpO2) of 97 % recorded in your medical database.
+  ground_truth: Oxygen saturation level (SpO2) of 0.97 % was recorded for Iulian Rotaru on August 23, 2013 at 23:12:45.
 
 - chat:
   - role: system
@@ -299,7 +299,7 @@
     content: |
       Function Response: {"timestamp":"2014-02-28 13:53:55","person":"Iulian Rotaru","measurement":"body_height","value":176}
       User Prompt: Save my height of 176 to medical database.
-  ground_truth: Your height of 176 cm recorded in the medical database.
+  ground_truth: Height of 176 cm has been recorded for Iulian Rotaru on February 28, 2014 at 13:53:55.
 
 - chat:
   - role: system

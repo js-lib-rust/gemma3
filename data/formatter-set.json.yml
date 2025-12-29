@@ -1,95 +1,77 @@
 examples:
   - messages:
-      - role: system
-        content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response. 
       - role: user
-        content: how is oxygen_saturation parameter displayed
+        content: How is oxygen_saturation parameter displayed?
       - role: model
         content: Parameter oxygen_saturation is displayed as 'Oxygen Saturation Level (SpO2)'. It is expressed as percent.
 
   - messages:
-      - role: system
-        content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response. 
       - role: user
-        content: what is function parameter for 'Oxygen Saturation Level (SpO2)'
+        content: What is the function parameter for 'Oxygen Saturation Level (SpO2)'?
       - role: model
-        content: Function parameter for 'Oxygen Saturation Level (SpO2)' is oxygen_saturation.
+        content: The function parameter for 'Oxygen Saturation Level (SpO2)' is oxygen_saturation.
 
   - messages:
-      - role: system
-        content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
       - role: user
-        content: what is the heater?
+        content: What means heater?
       - role: model
-        content: The heater is a shorthand for the central heating controller.
+        content: Heater is a shorthand for the central heating controller.
 
   - messages:
-      - role: system
-        content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
       - role: user
-        content: what does spo2 stand for'
+        content: What does spo2 stand for?
       - role: model
         content: The acronym spo2 stand for Oxygen Saturation Level.
 
   - messages:
-      - role: system
-        content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response. 
       - role: user
-        content: how is body_max_index parameter displayed
+        content: What is the acronym for Oxygen Saturation Level?
+      - role: model
+        content: The acronym for Oxygen Saturation Level is SpO2.
+
+  - messages:
+      - role: user
+        content: How is body_max_index parameter displayed?
       - role: model
         content: Parameter body_max_index is displayed as 'Body Mass Index (BMI)'. It is a scalar value and has no measurement units.
 
   - messages:
-      - role: system
-        content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response. 
       - role: user
-        content: what is function parameter for 'Body Mass Index (BMI)'
+        content: What is the function parameter for 'Body Mass Index (BMI)'?
       - role: model
-        content: Function parameter for 'Body Mass Index (BMI)' is body_max_index.
+        content: The function parameter for 'Body Mass Index (BMI)' is body_max_index.
 
   - messages:
-      - role: system
-        content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response. 
       - role: user
-        content: how is intelligence_quotient parameter displayed
+        content: How is intelligence_quotient parameter displayed?
       - role: model
         content: Parameter intelligence_quotient is displayed as 'Intelligence QuotientIndex (IQ)'. It is a scalar value.
 
   - messages:
-      - role: system
-        content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response. 
       - role: user
-        content: what is function parameter for 'Intelligence QuotientIndex (IQ)'
+        content: What is the function parameter for 'Intelligence QuotientIndex (IQ)'?
       - role: model
-        content: Function parameter for 'Intelligence QuotientIndex (IQ)' is intelligence_quotient.
+        content: The function parameter for 'Intelligence QuotientIndex (IQ)' is intelligence_quotient.
 
   - messages:
-      - role: system
-        content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response. 
       - role: user
-        content: how is glucose_level parameter displayed
+        content: How is glucose_level parameter displayed?
       - role: model
         content: Parameter glucose_level is displayed as 'Glucose Level' or 'Blood Sugar'. Is is measured in mg/dL.
 
   - messages:
-      - role: system
-        content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response. 
       - role: user
-        content: what is function parameter for 'Glucose Level'
+        content: What is the function parameter for 'Glucose Level'?
       - role: model
-        content: Function parameter for 'Glucose Level' is glucose_level.
+        content: The function parameter for 'Glucose Level' is glucose_level.
 
   - messages:
-      - role: system
-        content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response. 
       - role: user
-        content: what is function parameter for 'Blood Sugar'
+        content: What is the function parameter for 'Blood Sugar'?
       - role: model
-        content: Function parameter for 'Blood Sugar' is glucose_level.
+        content: The function parameter for 'Blood Sugar' is glucose_level.
 
   - messages:
-      - role: system
-        content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response. 
       - role: user
         content: What heart measurements are typically taken?
       - role: model
@@ -102,8 +84,6 @@ examples:
           * **Heart Rate**, also known as **Pulse**: measured in bpm
 
   - messages:
-      - role: system
-        content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response. 
       - role: user
         content: What blood measurements are typically taken?
       - role: model
@@ -114,8 +94,6 @@ examples:
           * **Oxygen Saturation Level (SpO2)**: expressed as %
 
   - messages:
-      - role: system
-        content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response. 
       - role: user
         content: What body measurements are typically taken?
       - role: model
@@ -128,8 +106,6 @@ examples:
           * **Body Temperature**: measured in °C
 
   - messages:
-      - role: system
-        content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response. 
       - role: user
         content: What neural measurements are typically taken?
       - role: model

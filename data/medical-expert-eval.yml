@@ -53,3 +53,12 @@
     *   **Obese:** 30 or greater
     
     Consider discussing this with a healthcare professional for a health assessment and potential lifestyle adjustments.
+
+- chat:
+  - role: system
+    content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
+  - role: user
+    content: |
+      Function Response: {"timestamp":"2015-10-24 10:00:00","person":"Iulian Rotaru","measurement":"body_temperature","value":34.2}
+      User Prompt: What is your opinion regarding my body temperature?
+  ground_truth: Your body temperature is 34.2 °C. This is a bit low. The average normal body temperature is generally considered to be around 37 °C. I recommend monitoring it and consulting a medical professional if it persists or is accompanied by other symptoms.

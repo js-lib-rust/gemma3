@@ -539,7 +539,7 @@ examples:
           Function Response: {"timestamp":"2025-12-17 08:48:58","person":"Iulian Rotaru","measurement":"body_temperature","value":35.400001525878906}
           User Prompt: print my body temperature from yesterday
       - role: model
-        content: Your body temperature on December 17, 2025 was 35.40 °C that is in normal range.
+        content: Your body temperature on December 17, 2025 was 35.40 °C.
 
   - messages:
       - role: system
@@ -725,10 +725,20 @@ examples:
         content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response. 
       - role: user
         content: |
-          Function Response: {"timestamp":"2005-07-13 16:20:10","person":"Iulian Rotaru","temperature":34.7}
-          User Prompt: save my body temperature 34.7
+          Function Response: {"timestamp":"2005-07-13 16:20:10","person":"Iulian Rotaru","temperature":35.4}
+          User Prompt: save my temperature 35.4
       - role: model
-        content: Your body temperature reading of 34.70 °C has been saved.
+        content: Your body temperature has been recorded as 35.4 °C. The timestamp is 2005-07-13 16:20:10.
+
+  - messages:
+      - role: system
+        content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
+      - role: user
+        content: |
+          Function Response: {"timestamp":"2011-06-04 06:30:15","person":"Iulian Rotaru","temperature":37.2}
+          User Prompt: save my body temperature of 37.2 to medical database
+      - role: model
+        content: Your body temperature has been recorded as 37.2 °C. The timestamp is 2011-06-04 06:30:15.
 
   - messages:
       - role: system

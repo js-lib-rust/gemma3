@@ -25,6 +25,12 @@ examples:
 
   - messages:
       - role: user
+        content: What means spo2?
+      - role: model
+        content: SpO2 means oxygen saturation, representing the percentage of oxygen-carrying hemoglobin in your blood.
+
+  - messages:
+      - role: user
         content: What is the acronym for Oxygen Saturation Level?
       - role: model
         content: The acronym for Oxygen Saturation Level is SpO2.

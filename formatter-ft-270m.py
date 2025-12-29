@@ -14,10 +14,10 @@ MODEL_DIR = os.environ.get("AI_MODEL_DIR")
 MODEL_NAME = MODEL_DIR + "/hugging-face/model/gemma-3-270m-it"
 # MODEL_NAME = "./formatter-270m"
 OUTPUT_DIR = "./formatter-270m"
-YAML_FILE = "data/formatter-set.json.yml"
+YAML_FILE = "data/formatter-set.yml"
 
 DTYPE = torch.float32
-MAX_LENGTH = 1024
+MAX_LENGTH = 1300
 print()
 
 device = "cuda:0" if torch.cuda.is_available() else "cpu"
@@ -118,7 +118,7 @@ data_collator = DataCollatorForLanguageModeling(tokenizer=tokenizer, mlm=False)
 training_args = TrainingArguments(
     output_dir=OUTPUT_DIR,
     num_train_epochs=4,
-    per_device_train_batch_size=2,
+    per_device_train_batch_size=1,
     per_device_eval_batch_size=1,
     gradient_accumulation_steps=1,
     warmup_ratio=0.05,

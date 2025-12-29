@@ -527,7 +527,7 @@ examples:
           Function Response: {"error": "missing information"}
           User Prompt: how big is my IQ?
       - role: model
-        content: Sorry, I do not have information about your Intelligence Quotient (IQ).
+        content: Sorry, I do not have information about your intelligence quotient (IQ).
 
   - messages:
       - role: system
@@ -695,7 +695,7 @@ examples:
           User Prompt: analyse my body mass index from today health readings
       - role: model
         content: |
-          Based on today's health readings (March 15, 2024), your Body Mass Index (BMI) is 28.89.
+          Based on today's health readings (March 15, 2024), your body mass index (BMI) is 28.89.
 
           A BMI of 28.89 falls within the **overweight** category. Here's a general BMI classification:
 
@@ -715,7 +715,7 @@ examples:
           User Prompt: is my bmi value in normal range? how can it be classified?
       - role: model
         content: |
-          Your Body Mass Index (BMI) of 28.89 falls within the **Overweight** category.
+          Your body mass index (BMI) of 28.89 falls within the **Overweight** category.
 
           Here's a classification based on BMI:
 
@@ -877,7 +877,7 @@ examples:
           Function Response: {"timestamp":"1995-01-24 16:20:10","person":"Iulian Rotaru","height":176,"weight":90.0,"body_mass_index":29.054752}
           User Prompt: save my body weight of 90 kg to archive
       - role: model
-        content: Your body weight of 90.0 kg has been saved to the archive. Your height is 176 cm, resulting in a Body Mass Index (BMI) of 29.05.
+        content: Your body weight of 90.0 kg has been saved to the archive. Calculated body mass index (BMI) is 29.05.
 
   - messages:
       - role: system

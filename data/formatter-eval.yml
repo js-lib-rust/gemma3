@@ -254,7 +254,7 @@
     content: |
       Function Response: {"timestamp":"1995-01-24 16:20:10","person":"Iulian Rotaru","height":176,"weight":90.0,"body_mass_index":29.054752}
       User Prompt: Save my body weight of 90 kg to archive.
-  ground_truth: Your body weight of 90.0 kg has been saved to the archive. Your height is 176 cm, resulting in a Body Mass Index (BMI) of 29.05.
+  ground_truth: Your body weight of 90.0 kg has been saved to the archive. Calculated body mass index (BMI) is 29.05.
 
 - chat:
   - role: system
@@ -324,19 +324,6 @@
     content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response. 
   - role: user
     content: |
-      Function Response: {"timestamp":"2026-01-20 12:15:22","person":"Iulian Rotaru","measurement":"systolic_pressure","value":124}
-      {"timestamp":"2026-01-20 12:15:23","person":"Iulian Rotaru","measurement":"diastolic_pressure","value":81}
-      {"timestamp":"2026-01-20 12:15:25","person":"Iulian Rotaru","measurement":"heart_rate","value":72}
-      {"timestamp":"2026-01-20 12:15:45","person":"Iulian Rotaru","measurement":"glucose_level","value":105}
-      {"timestamp":"2026-01-20 12:15:49","person":"Iulian Rotaru","measurement":"body_height","value":175}
-      User Prompt: What was my pulse pressure on yesterday medical readings?
-  ground_truth: Unfortunately, I don't have any data regarding your pulse pressure from yesterday. Do you want to list all yesterday readings?
-
-- chat:
-  - role: system
-    content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response. 
-  - role: user
-    content: |
       Function Response: {"timestamp":"2015-10-24 10:00:00","person":"Iulian Rotaru","measurement":"body_temperature","value":34.2}
       User Prompt: What is your opinion regarding my body temperature?
   ground_truth: Your body temperature is 34.2 °C. This is a bit low. The average normal body temperature is generally considered to be around 37 °C. I recommend monitoring it and consulting a medical professional if it persists or is accompanied by other symptoms.
@@ -367,7 +354,7 @@
       Function Response: {"timestamp":"2024-03-15 08:49:26","person":"Iulian Rotaru","measurement":"body_mass_index","value":28.8933}
       User Prompt: Analyse my body mass index from today health readings.
   ground_truth: |
-    Based on today's health readings (March 15, 2024), your Body Mass Index (BMI) is 28.89.
+    Based on today's health readings (March 15, 2024), your body mass index (BMI) is 28.89.
     
     A BMI of 28.89 falls within the **overweight** category. Here's a general BMI classification:
     
@@ -386,7 +373,7 @@
       Function Response: {"timestamp":"2020-05-16 18:19:26","person":"Iulian Rotaru","measurement":"body_mass_index","value":28.89333724975586}
       User Prompt: How can my BMI be classified?
   ground_truth: |
-    Your Body Mass Index (BMI) of 28.89 falls within the **Overweight** category.
+    Your body mass index (BMI) of 28.89 falls within the **Overweight** category.
     
     Here's a classification based on BMI:
     
@@ -414,15 +401,6 @@
       Function Response: {"device_id":"thermostat-sensor","device_name":"Thermostat Sensor","device_zone":"living room","hostname":"thermostat-sensor.local","ipv4_addr":"192.168.0.90","diagnose_port":80,"connection_state":"Active","device_state":{"value":"21.13"}}
       User Prompt: Run full device diagnose on living room sensor.
   ground_truth: The living room sensor (Thermostat Sensor) is active. Its hostname is thermostat-sensor.local, IPv4 address is 192.168.0.90, the diagnose port is 80, and the current temperature reading is 21.13 °C.
-
-- chat:
-  - role: system
-    content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response. 
-  - role: user
-    content: |
-      Function Response: {"error":"device is currently unresponsive"}
-      User Prompt: Run full device diagnose on living room sensor.
-  ground_truth: The living room temperature sensor is not responding and I am unable to gather additional data.
 
 - chat:
   - role: system

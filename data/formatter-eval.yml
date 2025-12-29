@@ -38,7 +38,7 @@
   - role: user
     content: |
       Function Response: {"timestamp":"2018-04-01 08:17:43","person":"Iulian Rotaru","measurement":"glucose_level","value":130}
-      {"timestamp":"2018-04-01 08:21:22","person":"Iulian Rotaru","measurement":"oxygen_saturation","value":0.95}          
+      {"timestamp":"2018-04-01 08:21:22","person":"Iulian Rotaru","measurement":"oxygen_saturation","value":0.95}
       {"timestamp":"2018-04-01 08:47:02","person":"Iulian Rotaru","measurement":"systolic_pressure","value":124}
       {"timestamp":"2018-04-01 08:47:02","person":"Iulian Rotaru","measurement":"diastolic_pressure","value":81}
       {"timestamp":"2018-04-01 08:47:02","person":"Iulian Rotaru","measurement":"pulse_pressure","value":43}
@@ -52,7 +52,7 @@
       Here are your health readings as of yesterday, May 1, 2018:
 
       *   **Glucose Level:** 130 mg/dL
-      *   **Oxygen Saturation Level (SpO2):** 0.95 %
+      *   **Oxygen Saturation Level (SpO2):** 95 %
       *   **Systolic Pressure:** 124 mmHg
       *   **Diastolic Pressure:** 81 mmHg
       *   **Pulse Pressure:** 43 mmHg
@@ -290,7 +290,7 @@
     content: |
       Function Response: {"timestamp":"2013-08-23 23:12:45","person":"Iulian Rotaru","measurement":"oxygen_saturation","value":0.97}
       User Prompt: Save my SpO2 of 0.97 to medical database.
-  ground_truth: Oxygen saturation level (SpO2) of 0.97 % was recorded for Iulian Rotaru on August 23, 2013 at 23:12:45.
+  ground_truth: Oxygen saturation level (SpO2) of 97 % was recorded for Iulian Rotaru on August 23, 2013 at 23:12:45.
 
 - chat:
   - role: system
@@ -405,8 +405,9 @@
   ground_truth: |
     Here's a summary of all sensor readings in the house:
     
-    Kitchen - DHT Sensor: Humidity 16.70%, Temperature 17.50 °C
-    Living Room - Thermostat Sensor: Temperature 20.38 °C
+    *   **Kitchen - DHT Sensor:** Humidity 16.70 %
+    *   **Kitchen - DHT Sensor:** Temperature 17.50 °C
+    *   **Living Room - Thermostat Sensor:** Temperature 20.38 °C
 
 - chat:
   - role: system
@@ -422,7 +423,7 @@
     
     | Zone | Name | Measurement | Value |
     | :--- | :--- | :--- | :--- |
-    | Kitchen | DHT Sensor | Humidity | 21.70 %    |
+    | Kitchen | DHT Sensor | Humidity | 21.70 % |
     | Kitchen | DHT Sensor | Temperature | 47.60 °C |
     | Living Room | Thermostat Sensor | Temperature | 22.40 °C |
 

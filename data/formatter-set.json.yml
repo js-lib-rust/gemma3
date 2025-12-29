@@ -160,7 +160,7 @@ examples:
           {"timestamp":"2025-12-17 08:47:02","person":"Iulian Rotaru","measurement":"diastolic_pressure","value":81}
           {"timestamp":"2025-12-17 08:47:02","person":"Iulian Rotaru","measurement":"pulse_pressure","value":43}
           {"timestamp":"2025-12-17 08:47:02","person":"Iulian Rotaru","measurement":"heart_rate","value":72}
-          {"timestamp":"2025-12-17 08:21:22","person":"Iulian Rotaru","measurement":"oxygen_saturation","value":0.95}          
+          {"timestamp":"2025-12-17 08:21:22","person":"Iulian Rotaru","measurement":"oxygen_saturation","value":0.95}
           {"timestamp":"2025-12-17 08:49:26","person":"Iulian Rotaru","measurement":"body_weight","value":89.5}
           {"timestamp":"2025-12-17 08:49:26","person":"Iulian Rotaru","measurement":"body_height","value":176}
           {"timestamp":"2025-12-17 08:49:26","person":"Iulian Rotaru","measurement":"body_mass_index","value":28.89333724975586}
@@ -174,7 +174,7 @@ examples:
           *   **Diastolic Pressure:** 81 mmHg
           *   **Pulse Pressure:** 43 mmHg
           *   **Heart Rate:** 72 bpm
-          *   **Oxygen Saturation Level (SpO2):** 0.95 %
+          *   **Oxygen Saturation Level (SpO2):** 95 %
           *   **Body Weight:** 89.5 kg
           *   **Body Height:** 176 cm
           *   **Body Mass Index (BMI):** 28.89
@@ -188,7 +188,7 @@ examples:
       - role: user
         content: |
           Function Response: {"timestamp":"2018-04-01 08:17:43","person":"Iulian Rotaru","measurement":"glucose_level","value":130}
-          {"timestamp":"2018-04-01 08:21:22","person":"Iulian Rotaru","measurement":"oxygen_saturation","value":0.95}          
+          {"timestamp":"2018-04-01 08:21:22","person":"Iulian Rotaru","measurement":"oxygen_saturation","value":0.95}
           {"timestamp":"2018-04-01 08:47:02","person":"Iulian Rotaru","measurement":"systolic_pressure","value":124}
           {"timestamp":"2018-04-01 08:47:02","person":"Iulian Rotaru","measurement":"diastolic_pressure","value":81}
           {"timestamp":"2018-04-01 08:47:02","person":"Iulian Rotaru","measurement":"pulse_pressure","value":43}
@@ -203,7 +203,7 @@ examples:
           Here are your health readings as of yesterday, May 1, 2018:
 
           *   **Glucose Level:** 130 mg/dL
-          *   **Oxygen Saturation Level (SpO2):** 0.95 %
+          *   **Oxygen Saturation Level (SpO2):** 95 %
           *   **Systolic Pressure:** 124 mmHg
           *   **Diastolic Pressure:** 81 mmHg
           *   **Pulse Pressure:** 43 mmHg
@@ -301,7 +301,7 @@ examples:
           Here are your blood measurements as of November 23, 2024:
 
           *   **Glucose Level:** 120 mg/dL
-          *   **Oxygen Saturation Level (SpO2):** 0.98 %
+          *   **Oxygen Saturation Level (SpO2):** 98 %
           
           Would you like to see all of your health measurements?
 
@@ -317,7 +317,7 @@ examples:
         content: |
           Here are your blood measurements as of November 23, 2024:
 
-          *   **Oxygen Saturation Level (SpO2):** 0.98 %
+          *   **Oxygen Saturation Level (SpO2):** 98 %
           *   **Glucose Level:** 120 mg/dL
           
           Would you like to see all of your health measurements?
@@ -334,7 +334,7 @@ examples:
         content: |
           Here are your blood measurements as of today, August 14, 2017:
 
-          *   **Oxygen Saturation Level (SpO2):** 0.97 %
+          *   **Oxygen Saturation Level (SpO2):** 97 %
           *   **Glucose Level:** 105 mg/dL
           
           Would you like to see all of your health measurements?
@@ -1006,9 +1006,9 @@ examples:
         content: |
           Here's a summary of sensor readings:
 
-          *   **Kitchen - DHT Sensor:** Temperature: 17.80
-          *   **Kitchen - DHT Sensor:** Humidity: 15.70
-          *   **Living Room - Thermostat Sensor:** Temperature: 20.50
+          *   **Kitchen - DHT Sensor:** Temperature: 17.80 %
+          *   **Kitchen - DHT Sensor:** Humidity: 15.70 °C
+          *   **Living Room - Thermostat Sensor:** Temperature: 20.50 °C
 
   - messages:
       - role: system
@@ -1023,8 +1023,9 @@ examples:
         content: |
           Here's a summary of all sensor readings in the house:
 
-          Kitchen - DHT Sensor: Humidity 16.70%, Temperature 17.50 °C
-          Living Room - Thermostat Sensor: Temperature 20.38 °C
+          *   **Kitchen - DHT Sensor:** Humidity 16.70 %
+          *   **Kitchen - DHT Sensor:** Temperature 17.50 °C
+          *   **Living Room - Thermostat Sensor:** Temperature 20.38 °C
 
   - messages:
       - role: system

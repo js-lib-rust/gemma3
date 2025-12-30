@@ -3,10 +3,7 @@
     content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
   - role: user
     content: |
-      Please list today health measurements.
-  
-      <start_function_response>
-      {"timestamp":"2025-12-17 08:49:28","person":"Iulian Rotaru","measurement":"body_height","value":176}
+      Function Response: {"timestamp":"2025-12-17 08:49:28","person":"Iulian Rotaru","measurement":"body_height","value":176}
       {"timestamp":"2025-12-17 08:49:26","person":"Iulian Rotaru","measurement":"body_weight","value":89.5}
       {"timestamp":"2025-12-17 08:49:26","person":"Iulian Rotaru","measurement":"body_mass_index","value":28.89333724975586}
       {"timestamp":"2025-12-17 08:48:58","person":"Iulian Rotaru","measurement":"body_temperature","value":35.400001525878906}
@@ -17,7 +14,7 @@
       {"timestamp":"2025-12-17 08:51:22","person":"Iulian Rotaru","measurement":"oxygen_saturation","value":0.98}
       {"timestamp":"2025-12-17 12:14:32","person":"Iulian Rotaru","measurement":"glucose_level","value":120}
       {"timestamp":"2025-12-17 08:49:29","person":"Iulian Rotaru","measurement":"intelligence_quotient","value":105}
-      <end_function_response>
+      User Prompt: Please list today health measurements.
   ground_truth: |
     Here are your health measurements as of today, December 17, 2025:
 
@@ -40,10 +37,7 @@
     content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
   - role: user
     content: |
-      Display all health readings from yesterday.
-  
-      <start_function_response>
-      {"timestamp":"2018-04-01 08:17:43","person":"Iulian Rotaru","measurement":"glucose_level","value":130}
+      Function Response: {"timestamp":"2018-04-01 08:17:43","person":"Iulian Rotaru","measurement":"glucose_level","value":130}
       {"timestamp":"2018-04-01 08:21:22","person":"Iulian Rotaru","measurement":"oxygen_saturation","value":0.95}
       {"timestamp":"2018-04-01 08:47:02","person":"Iulian Rotaru","measurement":"systolic_pressure","value":124}
       {"timestamp":"2018-04-01 08:47:02","person":"Iulian Rotaru","measurement":"diastolic_pressure","value":81}
@@ -53,7 +47,7 @@
       {"timestamp":"2018-04-01 08:49:26","person":"Iulian Rotaru","measurement":"body_weight","value":89.5}
       {"timestamp":"2018-04-01 08:49:26","person":"Iulian Rotaru","measurement":"body_height","value":176}
       {"timestamp":"2018-04-01 08:49:26","person":"Iulian Rotaru","measurement":"body_mass_index","value":28.89333724975586}
-      <end_function_response>
+      User Prompt: Display all health readings from yesterday.
   ground_truth: |
       Here are your health readings as of yesterday, May 1, 2018:
 
@@ -75,14 +69,11 @@
     content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
   - role: user
     content: |
-      Get body measurements from today health records.
-  
-      <start_function_response>
-      {"timestamp":"2025-09-17 08:49:28","person":"Iulian Rotaru","measurement":"body_height","value":176}
+      Function Response: {"timestamp":"2025-09-17 08:49:28","person":"Iulian Rotaru","measurement":"body_height","value":176}
       {"timestamp":"2025-09-17 08:49:26","person":"Iulian Rotaru","measurement":"body_weight","value":89.5}
       {"timestamp":"2025-09-17 08:49:26","person":"Iulian Rotaru","measurement":"body_mass_index","value":28.89333724975586}
       {"timestamp":"2025-09-17 08:48:58","person":"Iulian Rotaru","measurement":"body_temperature","value":35.400001525878906}
-      <end_function_response>
+      User Prompt: Get body measurements from today health records.
   ground_truth: |
     Here are your body measurements as of today, September 17, 2025:
 
@@ -98,14 +89,11 @@
     content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
   - role: user
     content: |
-      List my body measurements.
-  
-      <start_function_response>
-      {"timestamp":"2015-07-17 08:48:58","person":"Iulian Rotaru","measurement":"body_temperature","value":35.400001525878906}
+      Function Response: {"timestamp":"2015-07-17 08:48:58","person":"Iulian Rotaru","measurement":"body_temperature","value":35.400001525878906}
       {"timestamp":"2015-07-17 08:49:28","person":"Iulian Rotaru","measurement":"body_height","value":176}
       {"timestamp":"2015-07-17 08:49:26","person":"Iulian Rotaru","measurement":"body_weight","value":89.5}
       {"timestamp":"2015-07-17 08:49:26","person":"Iulian Rotaru","measurement":"body_mass_index","value":28.89333724975586}
-      <end_function_response>
+      User Prompt: List my body measurements.
   ground_truth: |
     Here are your body measurements as of today, July 17, 2015:
 
@@ -121,14 +109,11 @@
     content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
   - role: user
     content: |
-      Get my heart measurements.
-  
-      <start_function_response>
-      {"timestamp":"2024-11-23 08:47:02","person":"Iulian Rotaru","measurement":"systolic_pressure","value":124}
+      Function Response: {"timestamp":"2024-11-23 08:47:02","person":"Iulian Rotaru","measurement":"systolic_pressure","value":124}
       {"timestamp":"2024-11-23 08:47:02","person":"Iulian Rotaru","measurement":"diastolic_pressure","value":81}
       {"timestamp":"2024-11-23 08:47:02","person":"Iulian Rotaru","measurement":"pulse_pressure","value":43}
       {"timestamp":"2024-11-23 08:47:02","person":"Iulian Rotaru","measurement":"heart_rate","value":72}
-      <end_function_response>
+      User Prompt: Get my heart measurements.
   ground_truth: |
     Here are your heart measurements as of today, November 23, 2024:
 
@@ -144,14 +129,11 @@
     content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
   - role: user
     content: |
-      List my heart readings from yesterday.
-  
-      <start_function_response>
-      {"timestamp":"2024-11-23 08:47:02","person":"Iulian Rotaru","measurement":"systolic_pressure","value":124}
+      Function Response: {"timestamp":"2024-11-23 08:47:02","person":"Iulian Rotaru","measurement":"systolic_pressure","value":124}
       {"timestamp":"2024-11-23 08:47:02","person":"Iulian Rotaru","measurement":"diastolic_pressure","value":81}
       {"timestamp":"2024-11-23 08:47:02","person":"Iulian Rotaru","measurement":"pulse_pressure","value":43}
       {"timestamp":"2024-11-23 08:47:02","person":"Iulian Rotaru","measurement":"heart_rate","value":72}
-      <end_function_response>
+      User Prompt: List my heart readings from yesterday.
   ground_truth: |
     Here are your heart readings as of yesterday, November 23, 2024:
 
@@ -167,12 +149,9 @@
     content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
   - role: user
     content: |
-      Display yesterday blood readings.
-  
-      <start_function_response>
-      {"timestamp":"2024-11-23 08:47:02","person":"Iulian Rotaru","measurement":"glucose_level","value":120}
+      Function Response: {"timestamp":"2024-11-23 08:47:02","person":"Iulian Rotaru","measurement":"glucose_level","value":120}
       {"timestamp":"2025-11-23 08:51:22","person":"Iulian Rotaru","measurement":"oxygen_saturation","value":0.98}
-      <end_function_response>
+      User Prompt: Display yesterday blood readings.
   ground_truth: |
     Here are your blood measurements as of yesterday, November 23, 2024:
 
@@ -187,15 +166,12 @@
       You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
   - role: user
     content: |
-      Display a table with measurements from yesterday medical readings.
-  
-      <start_function_response>
-      {"timestamp":"2026-01-20 12:15:45","person":"Iulian Rotaru","measurement":"glucose_level","value":105}
+      Function Response: {"timestamp":"2026-01-20 12:15:45","person":"Iulian Rotaru","measurement":"glucose_level","value":105}
       {"timestamp":"2026-01-20 12:15:49","person":"Iulian Rotaru","measurement":"body_height","value":175}
       {"timestamp":"2026-01-20 12:15:22","person":"Iulian Rotaru","measurement":"systolic_pressure","value":124}
       {"timestamp":"2026-01-20 12:15:23","person":"Iulian Rotaru","measurement":"diastolic_pressure","value":81}
       {"timestamp":"2026-01-20 12:15:24","person":"Iulian Rotaru","measurement":"pulse_pressure","value":43}
-      <end_function_response>
+      User Prompt: Display a table with measurements from yesterday medical readings.
   ground_truth: |
     Here are your health measurements as of yesterday, January 20, 2026:
 
@@ -214,10 +190,7 @@
     content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
   - role: user
     content: |
-      Display my health readings from December 17 in a table format.
-  
-      <start_function_response>
-      {"timestamp":"2025-12-17 08:49:28","person":"Iulian Rotaru","measurement":"body_height","value":176}
+      Function Response: {"timestamp":"2025-12-17 08:49:28","person":"Iulian Rotaru","measurement":"body_height","value":176}
       {"timestamp":"2025-12-17 08:49:26","person":"Iulian Rotaru","measurement":"body_weight","value":89.5}
       {"timestamp":"2025-12-17 08:49:26","person":"Iulian Rotaru","measurement":"body_mass_index","value":28.89333724975586}
       {"timestamp":"2025-12-17 08:47:02","person":"Iulian Rotaru","measurement":"systolic_pressure","value":124}
@@ -227,7 +200,7 @@
       {"timestamp":"2025-12-17 12:14:32","person":"Iulian Rotaru","measurement":"glucose_level","value":120}
       {"timestamp":"2025-12-17 08:48:58","person":"Iulian Rotaru","measurement":"body_temperature","value":35.400001525878906}
       {"timestamp":"2025-12-17 08:49:29","person":"Iulian Rotaru","measurement":"intelligence_quotient","value":105}
-      <end_function_response>
+      User Prompt: Display my health readings from December 17 in a table format.
   ground_truth: |
     Here's are your health measurements for today, December 17, 2025:
 
@@ -251,11 +224,8 @@
     content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
   - role: user
     content: |
-      Save my blood pressure 130/76 and heart rate 72.
-  
-      <start_function_response>
-      {"timestamp":"2012-12-12 16:20:10","person":"Iulian Rotaru","systole":130,"diastole":76,"pulse":72}
-      <end_function_response>
+      Function Response: {"timestamp":"2012-12-12 16:20:10","person":"Iulian Rotaru","systole":130,"diastole":76,"pulse":72}
+      User Prompt: Save my blood pressure 130/76 and heart rate 72.
   ground_truth: |
     Blood pressure: systole 130 mmHg, diastole 76 mmHg and pulse 72 bpm was recorded for Iulian Rotaru on December 12, 2012 at 16:20:10.
 
@@ -264,11 +234,8 @@
     content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
   - role: user
     content: |
-      Save my blood pressure 130 with 76 and pulse 72.
-  
-      <start_function_response>
-      {"error":"database is currently unresponsive"}
-      <end_function_response>
+      Function Response: {"error":"database is currently unresponsive"}
+      User Prompt: Save my blood pressure 130 with 76 and pulse 72.
   ground_truth: I cannot save your blood measurements due to database unresponsiveness. Would you like me to run a database diagnostic?
 
 - chat:
@@ -276,11 +243,8 @@
     content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
   - role: user
     content: |
-      Save my body temperature 34.7
-  
-      <start_function_response>
-      {"timestamp":"2005-07-13 16:20:10","person":"Iulian Rotaru","temperature":34.7}
-      <end_function_response>
+      Function Response: {"timestamp":"2005-07-13 16:20:10","person":"Iulian Rotaru","temperature":34.7}
+      User Prompt: Save my body temperature 34.7
   ground_truth: Body temperature of 34.70 °C was recorded for Iulian Rotaru on July 13, 2005 at 16:20:10.
 
 - chat:
@@ -288,11 +252,8 @@
     content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
   - role: user
     content: |
-      Save my body weight of 90 kg to archive.
-  
-      <start_function_response>
-      {"timestamp":"1995-01-24 16:20:10","person":"Iulian Rotaru","height":176,"weight":90.0,"body_mass_index":29.054752}
-      <end_function_response>
+      Function Response: {"timestamp":"1995-01-24 16:20:10","person":"Iulian Rotaru","height":176,"weight":90.0,"body_mass_index":29.054752}
+      User Prompt: Save my body weight of 90 kg to archive.
   ground_truth: Weight of 90.0 kg, with a corresponding BMI of 29.05, was recorded for Iulian Rotaru on January 24, 1995 at 16:20:10.
 
 - chat:
@@ -300,11 +261,8 @@
     content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
   - role: user
     content: |
-      Save my glucose level of 101 to medical database.
-  
-      <start_function_response>
-      {"timestamp":"2014-02-28 13:53:55","person":"Iulian Rotaru","measurement":"glucose_level","value":101.0}
-      <end_function_response>
+      Function Response: {"timestamp":"2014-02-28 13:53:55","person":"Iulian Rotaru","measurement":"glucose_level","value":101.0}
+      User Prompt: Save my glucose level of 101 to medical database.
   ground_truth: Glucose level of 101 mg/dL has been recorded for Iulian Rotaru on February 28, 2014 at 13:53:55.
 
 - chat:
@@ -312,11 +270,8 @@
     content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
   - role: user
     content: |
-      save my spo2 0.96
-  
-      <start_function_response>
-      {"timestamp":"2013-08-23 23:12:45","person":"Iulian Rotaru","measurement":"oxygen_saturation","value":0.96}
-      <end_function_response>
+      Function Response: {"timestamp":"2013-08-23 23:12:45","person":"Iulian Rotaru","measurement":"oxygen_saturation","value":0.96}
+      User Prompt: save my spo2 0.96
   ground_truth: Oxygen saturation level (SpO2) of 96 % was recorded for Iulian Rotaru on August 23, 2013 at 23:12:45.
 
 - chat:
@@ -324,11 +279,8 @@
     content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
   - role: user
     content: |
-      save my spo2 0.96
-  
-      <start_function_response>
-      {"error":"database is currently unresponsive"}
-      <end_function_response>
+      Function Response: {"error":"database is currently unresponsive"}
+      User Prompt: save my spo2 0.96
   ground_truth: I cannot save your oxygen saturation level (SpO2) due to database unresponsiveness. Would you like me to run a database diagnostic?
 
 - chat:
@@ -336,11 +288,8 @@
     content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
   - role: user
     content: |
-      Save my SpO2 of 0.97 to medical database.
-  
-      <start_function_response>
-      {"timestamp":"2013-08-23 23:12:45","person":"Iulian Rotaru","measurement":"oxygen_saturation","value":0.97}
-      <end_function_response>
+      Function Response: {"timestamp":"2013-08-23 23:12:45","person":"Iulian Rotaru","measurement":"oxygen_saturation","value":0.97}
+      User Prompt: Save my SpO2 of 0.97 to medical database.
   ground_truth: Oxygen saturation level (SpO2) of 97 % was recorded for Iulian Rotaru on August 23, 2013 at 23:12:45.
 
 - chat:
@@ -348,11 +297,8 @@
     content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
   - role: user
     content: |
-      Save my height of 176 to medical database.
-  
-      <start_function_response>
-      {"timestamp":"2014-02-28 13:53:55","person":"Iulian Rotaru","measurement":"body_height","value":176}
-      <end_function_response>
+      Function Response: {"timestamp":"2014-02-28 13:53:55","person":"Iulian Rotaru","measurement":"body_height","value":176}
+      User Prompt: Save my height of 176 to medical database.
   ground_truth: Height of 176 cm has been recorded for Iulian Rotaru on February 28, 2014 at 13:53:55.
 
 - chat:
@@ -360,11 +306,8 @@
     content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
   - role: user
     content: |
-      What is my body temperature?
-  
-      <start_function_response>
-      {"person":"Iulian Rotaru","measurement":"body_temperature","value":36.50}
-      <end_function_response>
+      Function Response: {"person":"Iulian Rotaru","measurement":"body_temperature","value":36.50}
+      User Prompt: What is my body temperature?
   ground_truth: Your body temperature is 36.50 °C.
 
 - chat:
@@ -372,11 +315,8 @@
     content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
   - role: user
     content: |
-      What is my body temperature?
-  
-      <start_function_response>
-      {"error":"database is currently unresponsive"}
-      <end_function_response>
+      Function Response: {"error":"database is currently unresponsive"}
+      User Prompt: What is my body temperature?
   ground_truth: I cannot retrieve your body temperature due to database unresponsiveness. Would you like me to run a database diagnostic?
 
 - chat:
@@ -384,11 +324,8 @@
     content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
   - role: user
     content: |
-      Start the server.
-  
-      <start_function_response>
-      {"jarvis_server":true,"slm_service":true}
-      <end_function_response>
+      Function Response: {"jarvis_server":true,"slm_service":true}
+      User Prompt: Start the server.
   ground_truth: Systems online. JARVIS server and SLM service are active.
 
 - chat:
@@ -396,11 +333,8 @@
     content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
   - role: user
     content: |
-      Run full device diagnose on living room sensor.
-  
-      <start_function_response>
-      {"device_id":"thermostat-sensor","device_name":"Thermostat Sensor","device_zone":"living room","hostname":"thermostat-sensor.local","ipv4_addr":192.168.0.90,"diagnose_port":80,"connection_state":"Active","device_state":{"value":21.13}}
-      <end_function_response>
+      Function Response: {"device_id":"thermostat-sensor","device_name":"Thermostat Sensor","device_zone":"living room","hostname":"thermostat-sensor.local","ipv4_addr":192.168.0.90,"diagnose_port":80,"connection_state":"Active","device_state":{"value":21.13}}
+      User Prompt: Run full device diagnose on living room sensor.
   ground_truth: The living room sensor is active. Its hostname is thermostat-sensor.local, IPv4 address is 192.168.0.90, the diagnose port is 80, and the current temperature reading is 21.13 °C.
 
 - chat:
@@ -408,11 +342,8 @@
     content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
   - role: user
     content: |
-      Turn on the central heating.
-  
-      <start_function_response>
-      {"setpoint":30.00,"hysteresis":0.00,"temperature":21.13,"running":true}
-      <end_function_response>
+      Function Response: {"setpoint":30.00,"hysteresis":0.00,"temperature":21.13,"running":true}
+      User Prompt: Turn on the central heating.
   ground_truth: Central heating has been turned on. The setpoint is 30.00 °C, with a hysteresis of 0.00 °C. The current temperature is 21.13 °C, and the system is running.
 
 - chat:
@@ -420,11 +351,8 @@
     content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
   - role: user
     content: |
-      Please start the heater.
-  
-      <start_function_response>
-      {"error":"device is currently unresponsive"}
-      <end_function_response>
+      Function Response: {"error":"device is currently unresponsive"}
+      User Prompt: Please start the heater.
   ground_truth: The central heating controller is currently not responding. Would you like me to run a device diagnostic?
 
 - chat:
@@ -433,22 +361,16 @@
       You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
   - role: user
     content: |
-      Is central heating running?
-  
-      <start_function_response>
-      {"setpoint":30.00,"hysteresis":0.00,"temperature":21.25,"running":true}
-      <end_function_response>
+      Function Response: {"setpoint":30.00,"hysteresis":0.00,"temperature":21.25,"running":true}
+      User Prompt: Is central heating running?
   ground_truth: Yes, central heating is currently running. The setpoint is 30.00 °C, with a hysteresis of 0.00 °C. The current temperature is 21.25 °C, and the system is running.
 - chat:
   - role: system
     content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
   - role: user
     content: |
-      Is heater currently running?
-  
-      <start_function_response>
-      {"error":"device is currently unresponsive"}
-      <end_function_response>
+      Function Response: {"error":"device is currently unresponsive"}
+      User Prompt: Is heater currently running?
   ground_truth: The central heating controller is currently not responding. Would you like me to run a device diagnostic?
 
 - chat:
@@ -457,11 +379,8 @@
       You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
   - role: user
     content: |
-      Is the central heating started?
-  
-      <start_function_response>
-      {"setpoint":10.00,"hysteresis":0.00,"temperature":21.25,"running":false}
-      <end_function_response>
+      Function Response: {"setpoint":10.00,"hysteresis":0.00,"temperature":21.25,"running":false}
+      User Prompt: Is the central heating started?
   ground_truth: No, the central heating is not running. It is currently off.
 
 - chat:
@@ -470,11 +389,8 @@
       You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
   - role: user
     content: |
-      Is heater active?
-  
-      <start_function_response>
-      {"setpoint":22.00,"hysteresis":0.00,"temperature":21.25,"running":true}
-      <end_function_response>
+      Function Response: {"setpoint":22.00,"hysteresis":0.00,"temperature":21.25,"running":true}
+      User Prompt: Is heater active?
   ground_truth: Yes, the heater is currently running. The current temperature is 21.25 °C, and the setpoint is 22.00 °C.
 
 - chat:
@@ -482,13 +398,10 @@
     content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
   - role: user
     content: |
-      Read all sensors in the house.
-  
-      <start_function_response>
-      {"zone":"kitchen","name":"DHT Sensor","measurement":"humidity","value":"16.70"}
+      Function Response: {"zone":"kitchen","name":"DHT Sensor","measurement":"humidity","value":"16.70"}
       {"zone":"kitchen","name":"DHT Sensor","measurement":"temperature","value":"17.50"}
       {"zone":"living room","name":"Thermostat Sensor","measurement":"temperature","value":"20.38"}
-      <end_function_response>
+      User Prompt: Read all sensors in the house.
   ground_truth: |
     Here's a summary of sensor readings:
     
@@ -501,13 +414,10 @@
     content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
   - role: user
     content: |
-      Create a table with current house sensor values.
-  
-      <start_function_response>
-      {"zone":"kitchen","name":"DHT Sensor","measurement":"humidity","value":"21.70"}
+      Function Response: {"zone":"kitchen","name":"DHT Sensor","measurement":"humidity","value":"21.70"}
       {"zone":"kitchen","name":"DHT Sensor","measurement":"temperature","value":"47.60"}
       {"zone":"living room","name":"Thermostat Sensor","measurement":"temperature","value":"22.40"}
-      <end_function_response>
+      User Prompt: Create a table with current house sensor values.
   ground_truth: |
     Here's a summary of sensor readings:
     
@@ -522,11 +432,8 @@
     content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
   - role: user
     content: |
-      Get living room temperature.
-  
-      <start_function_response>
-      {"zone":"living room","name":"Thermostat Sensor","measurement":"temperature","value":"21.15"}
-      <end_function_response>
+      Function Response: {"zone":"living room","name":"Thermostat Sensor","measurement":"temperature","value":"21.15"}
+      User Prompt: Get living room temperature.
   ground_truth: The temperature in the living room is 21.15 °C.
 
 - chat:
@@ -534,9 +441,110 @@
     content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
   - role: user
     content: |
-      How is outside?
-  
-      <start_function_response>
-      {"time":"2015-11-18 11:00","interval":900,"temperature_2m":1.2,"weather_code":"Overcast","wind_speed_10m":2.2}
-      <end_function_response>
+      Function Response: {"time":"2015-11-18 11:00","interval":900,"temperature_2m":1.2,"weather_code":"Overcast","wind_speed_10m":2.2}
+      User Prompt: How is outside?
   ground_truth: The time is 11:00. The temperature is 1.2 °C, the weather is overcast, and the wind speed is 2.2 km/h.
+
+- chat:
+  - role: system
+    content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
+  - role: user
+    content: |
+      Function Response: {"date":"2025-12-31","weather_code":"Slight snow showers","temperature_2m_max":-0.6,"temperature_2m_min":-3.3,"apparent_temperature_max":-6.5,"apparent_temperature_min":-8.1,"precipitation_sum":2.1,"precipitation_probability_max":48,"wind_speed_10m_max":22.4}
+      {"date":"2026-01-01","weather_code":"Overcast","temperature_2m_max":0.2,"temperature_2m_min":-4.6,"apparent_temperature_max":-3.3,"apparent_temperature_min":-8.7,"precipitation_sum":0.0,"precipitation_probability_max":8,"wind_speed_10m_max":7.1}
+      {"date":"2026-01-02","weather_code":"Overcast","temperature_2m_max":3.8,"temperature_2m_min":-2.2,"apparent_temperature_max":0.1,"apparent_temperature_min":-6.3,"precipitation_sum":0.0,"precipitation_probability_max":0,"wind_speed_10m_max":10.0}
+      {"date":"2026-01-03","weather_code":"Slight snow fall","temperature_2m_max":7.9,"temperature_2m_min":1.1,"apparent_temperature_max":3.9,"apparent_temperature_min":-2.0,"precipitation_sum":0.75,"precipitation_probability_max":5,"wind_speed_10m_max":13.7}
+      {"date":"2026-01-04","weather_code":"Overcast","temperature_2m_max":11.6,"temperature_2m_min":7.3,"apparent_temperature_max":8.0,"apparent_temperature_min":3.6,"precipitation_sum":0.0,"precipitation_probability_max":6,"wind_speed_10m_max":13.7}
+      {"date":"2026-01-05","weather_code":"Overcast","temperature_2m_max":12.6,"temperature_2m_min":8.2,"apparent_temperature_max":9.1,"apparent_temperature_min":5.0,"precipitation_sum":0.0,"precipitation_probability_max":5,"wind_speed_10m_max":19.1}
+      {"date":"2026-01-06","weather_code":"Moderate snow fall","temperature_2m_max":6.3,"temperature_2m_min":-6.4,"apparent_temperature_max":3.9,"apparent_temperature_min":-10.2,"precipitation_sum":4.2,"precipitation_probability_max":19,"wind_speed_10m_max":14.9}
+      {"date":"2026-01-07","weather_code":"Overcast","temperature_2m_max":-4.8,"temperature_2m_min":-13.3,"apparent_temperature_max":-9.0,"apparent_temperature_min":-17.7,"precipitation_sum":0.0,"precipitation_probability_max":26,"wind_speed_10m_max":8.7}
+      {"date":"2026-01-08","weather_code":"Overcast","temperature_2m_max":-3.6,"temperature_2m_min":-15.3,"apparent_temperature_max":-7.5,"apparent_temperature_min":-20.0,"precipitation_sum":0.0,"precipitation_probability_max":25,"wind_speed_10m_max":9.4}
+      {"date":"2026-01-09","weather_code":"Overcast","temperature_2m_max":-3.6,"temperature_2m_min":-15.9,"apparent_temperature_max":-7.6,"apparent_temperature_min":-20.4,"precipitation_sum":0.0,"precipitation_probability_max":16,"wind_speed_10m_max":8.7}
+      {"date":"2026-01-10","weather_code":"Overcast","temperature_2m_max":-2.8,"temperature_2m_min":-10.1,"apparent_temperature_max":-6.2,"apparent_temperature_min":-14.0,"precipitation_sum":0.0,"precipitation_probability_max":10,"wind_speed_10m_max":6.3}
+      {"date":"2026-01-11","weather_code":"Overcast","temperature_2m_max":1.4,"temperature_2m_min":-11.4,"apparent_temperature_max":-3.4,"apparent_temperature_min":-15.7,"precipitation_sum":0.0,"precipitation_probability_max":10,"wind_speed_10m_max":17.5}
+      {"date":"2026-01-12","weather_code":"Light drizzle","temperature_2m_max":1.6,"temperature_2m_min":-5.4,"apparent_temperature_max":-0.7,"apparent_temperature_min":-9.8,"precipitation_sum":0.3,"precipitation_probability_max":13,"wind_speed_10m_max":13.1}
+      {"date":"2026-01-13","weather_code":"Overcast","temperature_2m_max":-0.8,"temperature_2m_min":-7.9,"apparent_temperature_max":-3.9,"apparent_temperature_min":-12.4,"precipitation_sum":0.0,"precipitation_probability_max":18,"wind_speed_10m_max":9.5}
+      User Prompt: Get weather forecast for the next two weeks.
+  ground_truth: |
+    Here is the weather forecast for the next two weeks:
+  
+    | Date | Weather | Max Temp (°C) | Min Temp (°C) | Apparent Max Temp (°C) | Apparent Min Temp (°C) | Precipitation (mm) | Precipitation Probability (%) | Max Wind Speed (km/h) |
+    | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+    | 2025-12-31 | Slight snow showers | -0.6 | -3.3 | -6.5 | -8.1 | 2.1 | 48 | 22.4 |
+    | 2026-01-01 | Overcast | 0.2 | -4.6 | -3.3 | -8.7 | 0.0 | 8 | 7.1 |
+    | 2026-01-02 | Overcast | 3.8 | -2.2 | 0.1 | -6.3 | 0.0 | 0 | 10.0 |
+    | 2026-01-03 | Slight snow fall | 7.9 | 1.1 | 3.9 | -2.0 | 0.75 | 5 | 13.7 |
+    | 2026-01-04 | Overcast | 11.6 | 7.3 | 8.0 | 3.6 | 0.0 | 6 | 13.7 |
+    | 2026-01-05 | Overcast | 12.6 | 8.2 | 9.1 | 5.0 | 0.0 | 5 | 19.1 |
+    | 2026-01-06 | Moderate snow fall | 6.3 | -6.4 | 3.9 | -10.2 | 4.2 | 19 | 14.9 |
+    | 2026-01-07 | Overcast | -4.8 | -13.3 | -9.0 | -17.7 | 0.0 | 26 | 8.7 |
+    | 2026-01-08 | Overcast | -3.6 | -15.3 | -7.5 | -20.0 | 0.0 | 25 | 9.4 |
+    | 2026-01-09 | Overcast | -3.6 | -15.9 | -7.6 | -20.4 | 0.0 | 16 | 8.7 |
+    | 2026-01-10 | Overcast | -2.8 | -10.1 | -6.2 | -14.0 | 0.0 | 10 | 6.3 |
+    | 2026-01-11 | Overcast | 1.4 | -11.4 | -3.4 | -15.7 | 0.0 | 10 | 17.5 |
+    | 2026-01-12 | Light drizzle | 1.6 | -5.4 | -0.7 | -9.8 | 0.3 | 13 | 13.1 |
+    | 2026-01-13 | Overcast | -0.8 | -7.9 | -3.9 | -12.4 | 0.0 | 18 | 9.5 |
+    
+    Weather conditions can change, so please stay updated.
+
+- chat:
+  - role: system
+    content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
+  - role: user
+    content: |
+      Function Response: {"time":"2025-12-30 00:00","weather_code":"Overcast","temperature_2m":-0.6,"relative_humidity_2m":74,"precipitation_probability":0,"wind_speed_10m":2.3}
+      {"time":"2025-12-30 01:00","weather_code":"Overcast","temperature_2m":-0.5,"relative_humidity_2m":73,"precipitation_probability":0,"wind_speed_10m":2.5}
+      {"time":"2025-12-30 02:00","weather_code":"Overcast","temperature_2m":0.1,"relative_humidity_2m":63,"precipitation_probability":0,"wind_speed_10m":5.6}
+      {"time":"2025-12-30 03:00","weather_code":"Overcast","temperature_2m":0.8,"relative_humidity_2m":58,"precipitation_probability":0,"wind_speed_10m":3.7}
+      {"time":"2025-12-30 04:00","weather_code":"Overcast","temperature_2m":0.4,"relative_humidity_2m":61,"precipitation_probability":0,"wind_speed_10m":1.8}
+      {"time":"2025-12-30 05:00","weather_code":"Overcast","temperature_2m":0.1,"relative_humidity_2m":63,"precipitation_probability":0,"wind_speed_10m":2.3}
+      {"time":"2025-12-30 06:00","weather_code":"Overcast","temperature_2m":0.2,"relative_humidity_2m":62,"precipitation_probability":0,"wind_speed_10m":2.9}
+      {"time":"2025-12-30 07:00","weather_code":"Overcast","temperature_2m":0.2,"relative_humidity_2m":60,"precipitation_probability":0,"wind_speed_10m":5.1}
+      {"time":"2025-12-30 08:00","weather_code":"Slight snow fall","temperature_2m":-0.4,"relative_humidity_2m":73,"precipitation_probability":13,"wind_speed_10m":5.2}
+      {"time":"2025-12-30 09:00","weather_code":"Slight snow fall","temperature_2m":-0.7,"relative_humidity_2m":81,"precipitation_probability":48,"wind_speed_10m":5.2}
+      {"time":"2025-12-30 10:00","weather_code":"Slight snow fall","temperature_2m":-0.6,"relative_humidity_2m":87,"precipitation_probability":55,"wind_speed_10m":10.5}
+      {"time":"2025-12-30 11:00","weather_code":"Overcast","temperature_2m":0.2,"relative_humidity_2m":79,"precipitation_probability":18,"wind_speed_10m":12.1}
+      {"time":"2025-12-30 12:00","weather_code":"Overcast","temperature_2m":0.6,"relative_humidity_2m":60,"precipitation_probability":5,"wind_speed_10m":19.9}
+      {"time":"2025-12-30 13:00","weather_code":"Overcast","temperature_2m":0.3,"relative_humidity_2m":60,"precipitation_probability":3,"wind_speed_10m":18.9}
+      {"time":"2025-12-30 14:00","weather_code":"Overcast","temperature_2m":-0.2,"relative_humidity_2m":57,"precipitation_probability":3,"wind_speed_10m":17.6}
+      {"time":"2025-12-30 15:00","weather_code":"Overcast","temperature_2m":-0.3,"relative_humidity_2m":56,"precipitation_probability":0,"wind_speed_10m":11.4}
+      {"time":"2025-12-30 16:00","weather_code":"Partly cloudy","temperature_2m":-0.2,"relative_humidity_2m":54,"precipitation_probability":3,"wind_speed_10m":14.6}
+      {"time":"2025-12-30 17:00","weather_code":"Clear sky","temperature_2m":-0.8,"relative_humidity_2m":55,"precipitation_probability":0,"wind_speed_10m":9.7}
+      {"time":"2025-12-30 18:00","weather_code":"Mainly clear","temperature_2m":-1.2,"relative_humidity_2m":56,"precipitation_probability":5,"wind_speed_10m":8.9}
+      {"time":"2025-12-30 19:00","weather_code":"Partly cloudy","temperature_2m":-1.5,"relative_humidity_2m":57,"precipitation_probability":5,"wind_speed_10m":9.0}
+      {"time":"2025-12-30 20:00","weather_code":"Partly cloudy","temperature_2m":-1.6,"relative_humidity_2m":58,"precipitation_probability":8,"wind_speed_10m":5.9}
+      {"time":"2025-12-30 21:00","weather_code":"Partly cloudy","temperature_2m":-1.6,"relative_humidity_2m":61,"precipitation_probability":0,"wind_speed_10m":7.6}
+      {"time":"2025-12-30 22:00","weather_code":"Clear sky","temperature_2m":-1.9,"relative_humidity_2m":50,"precipitation_probability":0,"wind_speed_10m":12.0}
+      {"time":"2025-12-30 23:00","weather_code":"Mainly clear","temperature_2m":-2.3,"relative_humidity_2m":51,"precipitation_probability":0,"wind_speed_10m":9.7}
+      User Prompt: List today forecast in a table, by hour.
+  ground_truth: |
+    Here's the hourly weather forecast for today, December 30, 2025:
+    
+    | Time | Weather | Temperature (°C) | Humidity (%) | Precipitation Probability (%) | Wind Speed (km/h) |
+    | :--- | :--- | :--- | :--- | :--- | :--- |
+    | 00:00 | Overcast | -0.6 | 74 | 0 | 2.3 |
+    | 01:00 | Overcast | -0.5 | 73 | 0 | 2.5 |
+    | 02:00 | Overcast | 0.1 | 63 | 0 | 5.6 |
+    | 03:00 | Overcast | 0.8 | 58 | 0 | 3.7 |
+    | 04:00 | Overcast | 0.4 | 61 | 0 | 1.8 |
+    | 05:00 | Overcast | 0.1 | 63 | 0 | 2.3 |
+    | 06:00 | Overcast | 0.2 | 62 | 0 | 2.9 |
+    | 07:00 | Overcast | 0.2 | 60 | 0 | 5.1 |
+    | 08:00 | Slight snow fall | -0.4 | 73 | 13 | 5.2 |
+    | 09:00 | Slight snow fall | -0.7 | 81 | 48 | 5.2 |
+    | 10:00 | Slight snow fall | -0.6 | 87 | 55 | 10.5 |
+    | 11:00 | Overcast | 0.2 | 79 | 18 | 12.1 |
+    | 12:00 | Overcast | 0.6 | 60 | 5 | 19.9 |
+    | 13:00 | Overcast | 0.3 | 60 | 3 | 18.9 |
+    | 14:00 | Overcast | -0.2 | 57 | 3 | 17.6 |
+    | 15:00 | Overcast | -0.3 | 56 | 0 | 11.4 |
+    | 16:00 | Partly cloudy | -0.2 | 54 | 3 | 14.6 |
+    | 17:00 | Clear sky | -0.8 | 55 | 0 | 9.7 |
+    | 18:00 | Mainly clear | -1.2 | 56 | 5 | 8.9 |
+    | 19:00 | Partly cloudy | -1.5 | 57 | 5 | 9.0 |
+    | 20:00 | Partly cloudy | -1.6 | 58 | 8 | 5.9 |
+    | 21:00 | Partly cloudy | -1.6 | 61 | 0 | 7.6 |
+    | 22:00 | Clear sky | -1.9 | 50 | 0 | 12.0 |
+    | 23:00 | Mainly clear | -2.3 | 51 | 0 | 9.7 |
+    
+    Weather conditions can change, so please stay updated.

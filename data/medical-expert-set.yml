@@ -1,109 +1,108 @@
-examples:
-  - messages:
-      - role: system
-        content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
-      - role: user
-        content: |
-          Function Response: {"timestamp":"2024-03-15 08:49:26","person":"Iulian Rotaru","measurement":"body_mass_index","value":28.8933}
-          User Prompt: analyse my body mass index from today health readings
-      - role: model
-        content: |
-          Based on today's health readings (March 15, 2024), your body mass index (BMI) is 28.89.
+- messages:
+    - role: system
+      content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
+    - role: user
+      content: |
+        Function Response: {"timestamp":"2024-03-15 08:49:26","person":"Iulian Rotaru","measurement":"body_mass_index","value":28.8933}
+        User Prompt: analyse my body mass index from today health readings
+    - role: model
+      content: |
+        Based on today's health readings (March 15, 2024), your body mass index (BMI) is 28.89.
 
-          A BMI of 28.89 falls within the **overweight** category. Here's a general BMI classification:
+        A BMI of 28.89 falls within the **overweight** category. Here's a general BMI classification:
 
-          *   Underweight: Below 18.5
-          *   Normal weight: 18.5–24.9
-          *   Overweight: 25–29.9
-          *   Obese: 30 or greater
+        *   Underweight: Below 18.5
+        *   Normal weight: 18.5–24.9
+        *   Overweight: 25–29.9
+        *   Obese: 30 or greater
 
-          It might be worth discussing this with a healthcare professional to assess your overall health and consider any necessary lifestyle adjustments.
+        It might be worth discussing this with a healthcare professional to assess your overall health and consider any necessary lifestyle adjustments.
 
-  - messages:
-      - role: system
-        content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
-      - role: user
-        content: |
-          Function Response: {"timestamp":"2010-09-11 10:00:00","person":"Iulian Rotaru","measurement":"body_temperature","value":38.2}
-          User Prompt: please analyse my body temperature
-      - role: model
-        content: Your body temperature of 38.2 °C is slightly elevated. A normal body temperature typically ranges from 36.5 °C to 37.5 °C. While not drastically high, it suggests you might have a mild fever. I recommend monitoring it and considering rest and hydration. If it persists or worsens, consulting a medical professional would be prudent.
+- messages:
+    - role: system
+      content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
+    - role: user
+      content: |
+        Function Response: {"timestamp":"2010-09-11 10:00:00","person":"Iulian Rotaru","measurement":"body_temperature","value":38.2}
+        User Prompt: please analyse my body temperature
+    - role: model
+      content: Your body temperature of 38.2 °C is slightly elevated. A normal body temperature typically ranges from 36.5 °C to 37.5 °C. While not drastically high, it suggests you might have a mild fever. I recommend monitoring it and considering rest and hydration. If it persists or worsens, consulting a medical professional would be prudent.
 
-  - messages:
-      - role: system
-        content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
-      - role: user
-        content: |
-          Function Response: {"timestamp":"2003-04-08 10:00:00","person":"Iulian Rotaru","measurement":"body_temperature","value":36.8}
-          User Prompt: how is my body temperature?
-      - role: model
-        content: Your body temperature of 36.8 °C is within the normal range (36.5 °C to 37.5 °C). It appears to be perfectly healthy.
+- messages:
+    - role: system
+      content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
+    - role: user
+      content: |
+        Function Response: {"timestamp":"2003-04-08 10:00:00","person":"Iulian Rotaru","measurement":"body_temperature","value":36.8}
+        User Prompt: how is my body temperature?
+    - role: model
+      content: Your body temperature of 36.8 °C is within the normal range (36.5 °C to 37.5 °C). It appears to be perfectly healthy.
 
-  - messages:
-      - role: system
-        content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
-      - role: user
-        content: |
-          Function Response: {"timestamp":"2020-05-16 18:19:26","person":"Iulian Rotaru","measurement":"body_mass_index","value":28.89333724975586}
-          User Prompt: is my bmi value in normal range? how can it be classified?
-      - role: model
-        content: |
-          Your body mass index (BMI) of 28.89 falls within the **Overweight** category.
+- messages:
+    - role: system
+      content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
+    - role: user
+      content: |
+        Function Response: {"timestamp":"2020-05-16 18:19:26","person":"Iulian Rotaru","measurement":"body_mass_index","value":28.89333724975586}
+        User Prompt: is my bmi value in normal range? how can it be classified?
+    - role: model
+      content: |
+        Your body mass index (BMI) of 28.89 falls within the **Overweight** category.
 
-          Here's a classification based on BMI:
+        Here's a classification based on BMI:
 
-          *   **Underweight:** Below 18.5
-          *   **Normal weight:** 18.5 - 24.9
-          *   **Overweight:** 25 - 29.9
-          *   **Obese:** 30 or greater
+        *   **Underweight:** Below 18.5
+        *   **Normal weight:** 18.5 - 24.9
+        *   **Overweight:** 25 - 29.9
+        *   **Obese:** 30 or greater
 
-          Consider discussing this with a healthcare professional for a health assessment and potential lifestyle adjustments.
+        Consider discussing this with a healthcare professional for a health assessment and potential lifestyle adjustments.
 
-  - messages:
-      - role: system
-        content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
-      - role: user
-        content: |
-          Function Response: {"timestamp":"2025-12-17 08:47","measurement":"systolic_pressure","value":138,"status":"high_normal"}
-          {"timestamp":"2025-12-17 08:47","measurement":"diastolic_pressure","value":88,"status":"high_normal"}
-          {"timestamp":"2025-12-17 08:47","measurement":"heart_rate","value":72,"status":"normal"}
-          {"timestamp":"2025-12-17 08:48","measurement":"body_temperature","value":36.6,"status":"normal"}
-          {"timestamp":"2025-12-17 08:49","measurement":"body_mass_index","value":28.9,"status":"overweight"}
-          {"timestamp":"2025-12-17 08:49","measurement":"hydration_level","value":65,"status":"optimal"}
-          User Prompt: how do my stats look today?
-      - role: model
-        content: |
-          Your vitals are mostly steady, though your blood pressure is slightly elevated at **138/88 mmHg**.
+- messages:
+    - role: system
+      content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
+    - role: user
+      content: |
+        Function Response: {"timestamp":"2025-12-17 08:47","measurement":"systolic_pressure","value":138,"status":"high_normal"}
+        {"timestamp":"2025-12-17 08:47","measurement":"diastolic_pressure","value":88,"status":"high_normal"}
+        {"timestamp":"2025-12-17 08:47","measurement":"heart_rate","value":72,"status":"normal"}
+        {"timestamp":"2025-12-17 08:48","measurement":"body_temperature","value":36.6,"status":"normal"}
+        {"timestamp":"2025-12-17 08:49","measurement":"body_mass_index","value":28.9,"status":"overweight"}
+        {"timestamp":"2025-12-17 08:49","measurement":"hydration_level","value":65,"status":"optimal"}
+        User Prompt: how do my stats look today?
+    - role: model
+      content: |
+        Your vitals are mostly steady, though your blood pressure is slightly elevated at **138/88 mmHg**.
 
-          I also noticed your BMI is currently **28.9**, which falls into the overweight category. On the positive side, your heart rate and hydration levels are excellent. Would you like some tips on managing your blood pressure today?
+        I also noticed your BMI is currently **28.9**, which falls into the overweight category. On the positive side, your heart rate and hydration levels are excellent. Would you like some tips on managing your blood pressure today?
 
-  - messages:
-      - role: system
-        content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
-      - role: user
-        content:
-          Function Response: {"timestamp":"2015-10-24 10:00:00","person":"Iulian Rotaru","measurement":"body_temperature","value":34.2}
-          User Prompt: what is your opinion regarding my body temperature
-      - role: model
-        content: Your body temperature is 34.2 °C. This is a bit low. The average normal body temperature is generally considered to be around 37 °C. I recommend monitoring it and consulting a medical professional if it persists or is accompanied by other symptoms.
+- messages:
+    - role: system
+      content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
+    - role: user
+      content:
+        Function Response: {"timestamp":"2015-10-24 10:00:00","person":"Iulian Rotaru","measurement":"body_temperature","value":34.2}
+        User Prompt: what is your opinion regarding my body temperature
+    - role: model
+      content: Your body temperature is 34.2 °C. This is a bit low. The average normal body temperature is generally considered to be around 37 °C. I recommend monitoring it and consulting a medical professional if it persists or is accompanied by other symptoms.
 
-  - messages:
-      - role: system
-        content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
-      - role: user
-        content: |
-          Function Response: {"timestamp":"2025-03-15 09:12:19","person":"Iulian Rotaru","measurement":"pulse_pressure","value":44}
-          {"timestamp":"1964-03-15 13:52:45","person":"Iulian Rotaru","measurement":"pulse_pressure","value":39}
-          User Prompt: do you have any observations about my today pulse pressure measurements?
-      - role: model
-        content: Your pulse pressure measurements were 44 mmHg at 09:12:19 and 39 mmHg at 13:52:45. A normal pulse pressure typically falls between 30 and 60 mmHg. Both of your recorded values are within that range.
+- messages:
+    - role: system
+      content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
+    - role: user
+      content: |
+        Function Response: {"timestamp":"2025-03-15 09:12:19","person":"Iulian Rotaru","measurement":"pulse_pressure","value":44}
+        {"timestamp":"1964-03-15 13:52:45","person":"Iulian Rotaru","measurement":"pulse_pressure","value":39}
+        User Prompt: do you have any observations about my today pulse pressure measurements?
+    - role: model
+      content: Your pulse pressure measurements were 44 mmHg at 09:12:19 and 39 mmHg at 13:52:45. A normal pulse pressure typically falls between 30 and 60 mmHg. Both of your recorded values are within that range.
 
-  - messages:
-      - role: system
-        content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
-      - role: user
-        content: |
-          Function Response: {"timestamp":"2025-12-17 08:47:02","person":"Iulian Rotaru","measurement":"pulse_pressure","value":47}
-          User Prompt: what do you think about my pulse pressure?
-      - role: model
-        content: Your pulse pressure is currently measured at 47 mmHg. While within a range, it is a little elevated. Pulse pressure is the difference between your systolic and diastolic blood pressure, and a value of 47 mmHg suggests a slightly higher than ideal arterial stiffness.
+- messages:
+    - role: system
+      content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
+    - role: user
+      content: |
+        Function Response: {"timestamp":"2025-12-17 08:47:02","person":"Iulian Rotaru","measurement":"pulse_pressure","value":47}
+        User Prompt: what do you think about my pulse pressure?
+    - role: model
+      content: Your pulse pressure is currently measured at 47 mmHg. While within a range, it is a little elevated. Pulse pressure is the difference between your systolic and diastolic blood pressure, and a value of 47 mmHg suggests a slightly higher than ideal arterial stiffness.

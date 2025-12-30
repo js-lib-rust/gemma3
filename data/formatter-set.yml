@@ -130,7 +130,10 @@
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function Response: {"timestamp":"2025-12-17 08:47:02","person":"Iulian Rotaru","measurement":"systolic_pressure","value":124}
+        list today health measurements
+    
+        <start_function_response>
+        {"timestamp":"2025-12-17 08:47:02","person":"Iulian Rotaru","measurement":"systolic_pressure","value":124}
         {"timestamp":"2025-12-17 08:47:02","person":"Iulian Rotaru","measurement":"diastolic_pressure","value":81}
         {"timestamp":"2025-12-17 08:47:02","person":"Iulian Rotaru","measurement":"pulse_pressure","value":43}
         {"timestamp":"2025-12-17 08:47:02","person":"Iulian Rotaru","measurement":"heart_rate","value":72}
@@ -138,7 +141,7 @@
         {"timestamp":"2025-12-17 08:49:26","person":"Iulian Rotaru","measurement":"body_weight","value":89.5}
         {"timestamp":"2025-12-17 08:49:26","person":"Iulian Rotaru","measurement":"body_height","value":176}
         {"timestamp":"2025-12-17 08:49:26","person":"Iulian Rotaru","measurement":"body_mass_index","value":28.89333724975586}
-        User Prompt: list today health measurements
+        <end_function_response>
     - role: model
       content: |
         Here are your health measurements as of today, December 17, 2025:
@@ -159,7 +162,10 @@
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function Response: {"timestamp":"2025-12-17 08:47:02","person":"Iulian Rotaru","measurement":"systolic_pressure","value":124}
+        please list today health measurements
+    
+        <start_function_response>
+        {"timestamp":"2025-12-17 08:47:02","person":"Iulian Rotaru","measurement":"systolic_pressure","value":124}
         {"timestamp":"2025-12-17 08:47:02","person":"Iulian Rotaru","measurement":"diastolic_pressure","value":81}
         {"timestamp":"2025-12-17 08:47:02","person":"Iulian Rotaru","measurement":"pulse_pressure","value":43}
         {"timestamp":"2025-12-17 08:47:02","person":"Iulian Rotaru","measurement":"heart_rate","value":72}
@@ -168,7 +174,7 @@
         {"timestamp":"2025-12-17 08:49:26","person":"Iulian Rotaru","measurement":"body_height","value":176}
         {"timestamp":"2025-12-17 08:49:26","person":"Iulian Rotaru","measurement":"body_mass_index","value":28.89333724975586}
         {"timestamp":"2025-12-17 08:48:58","person":"Iulian Rotaru","measurement":"body_temperature","value":35.400001525878906}
-        User Prompt: please list today health measurements
+        <end_function_response>
     - role: model
       content: |
         Here are your health measurements as of today, December 17, 2025:
@@ -190,7 +196,10 @@
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function Response: {"timestamp":"2018-04-01 08:17:43","person":"Iulian Rotaru","measurement":"glucose_level","value":130}
+        display all health readings from yesterday
+    
+        <start_function_response>
+        {"timestamp":"2018-04-01 08:17:43","person":"Iulian Rotaru","measurement":"glucose_level","value":130}
         {"timestamp":"2018-04-01 08:21:22","person":"Iulian Rotaru","measurement":"oxygen_saturation","value":0.95}
         {"timestamp":"2018-04-01 08:47:02","person":"Iulian Rotaru","measurement":"systolic_pressure","value":124}
         {"timestamp":"2018-04-01 08:47:02","person":"Iulian Rotaru","measurement":"diastolic_pressure","value":81}
@@ -200,7 +209,7 @@
         {"timestamp":"2018-04-01 08:49:26","person":"Iulian Rotaru","measurement":"body_weight","value":89.5}
         {"timestamp":"2018-04-01 08:49:26","person":"Iulian Rotaru","measurement":"body_height","value":176}
         {"timestamp":"2018-04-01 08:49:26","person":"Iulian Rotaru","measurement":"body_mass_index","value":28.89333724975586}
-        User Prompt: display all health readings from yesterday
+        <end_function_response>
     - role: model
       content: |
         Here are your health readings as of yesterday, May 1, 2018:
@@ -223,8 +232,11 @@
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function Response: {"error":"database is currently unresponsive"}
-        User Prompt: list today health measurements
+        list today health measurements
+    
+        <start_function_response>
+        {"error":"database is currently unresponsive"}
+        <end_function_response>
     - role: model
       content: I cannot list your measurements due to database unresponsiveness. Would you like me to run a database diagnostic?
 
@@ -233,11 +245,14 @@
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function Response: {"timestamp":"2025-10-18 08:49:26","person":"Iulian Rotaru","measurement":"body_weight","value":89.5}
+        get body measurements from today readings
+    
+        <start_function_response>
+        {"timestamp":"2025-10-18 08:49:26","person":"Iulian Rotaru","measurement":"body_weight","value":89.5}
         {"timestamp":"2025-10-18 08:49:26","person":"Iulian Rotaru","measurement":"body_height","value":176}
         {"timestamp":"2025-10-18 08:49:26","person":"Iulian Rotaru","measurement":"body_mass_index","value":28.89333724975586}
         {"timestamp":"2025-10-18 08:48:58","person":"Iulian Rotaru","measurement":"body_temperature","value":35.400001525878906}
-        User Prompt: get body measurements from today readings
+        <end_function_response>
     - role: model
       content: |
         Here are your body measurements as of today, October 18, 2025:
@@ -254,11 +269,14 @@
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function Response: {"timestamp":"2024-11-23 08:47:02","person":"Iulian Rotaru","measurement":"systolic_pressure","value":124}
+        retrieve today heart measurements
+    
+        <start_function_response>
+        {"timestamp":"2024-11-23 08:47:02","person":"Iulian Rotaru","measurement":"systolic_pressure","value":124}
         {"timestamp":"2024-11-23 08:47:02","person":"Iulian Rotaru","measurement":"diastolic_pressure","value":81}
         {"timestamp":"2024-11-23 08:47:02","person":"Iulian Rotaru","measurement":"pulse_pressure","value":43}
         {"timestamp":"2024-11-23 08:47:02","person":"Iulian Rotaru","measurement":"heart_rate","value":72}
-        User Prompt: retrieve today heart measurements
+        <end_function_response>
     - role: model
       content: |
         Here are your heart measurements as of today, November 23, 2025:
@@ -275,11 +293,14 @@
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function Response: {"timestamp":"2024-11-23 08:47:02","person":"Iulian Rotaru","measurement":"systolic_pressure","value":124}
+        list my cardiac readings from yesterday
+    
+        <start_function_response>
+        {"timestamp":"2024-11-23 08:47:02","person":"Iulian Rotaru","measurement":"systolic_pressure","value":124}
         {"timestamp":"2024-11-23 08:47:02","person":"Iulian Rotaru","measurement":"diastolic_pressure","value":81}
         {"timestamp":"2024-11-23 08:47:02","person":"Iulian Rotaru","measurement":"pulse_pressure","value":43}
         {"timestamp":"2024-11-23 08:47:02","person":"Iulian Rotaru","measurement":"heart_rate","value":72}
-        User Prompt: list my cardiac readings from yesterday
+        <end_function_response>
     - role: model
       content: |
         Here are your cardiac readings as of yesterday, November 23, 2025:
@@ -296,26 +317,32 @@
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function Response: {"timestamp":"2024-11-23 08:47:02","person":"Iulian Rotaru","measurement":"glucose_level","value":120}
-        {"timestamp":"2024-11-23 08:51:22","person":"Iulian Rotaru","measurement":"oxygen_saturation","value":0.98}
-        User Prompt: show blood readings from november 23
-    - role: model
-      content: |
-        Here are your blood measurements as of November 23, 2024:
-
-        *   **Glucose Level:** 120 mg/dL
-        *   **Oxygen Saturation Level (SpO2):** 98 %
-        
-        Would you like to see all of your health measurements?
-
-- messages:
-    - role: system
-      content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
-    - role: user
-      content: |
-        Function Response: {"timestamp":"2024-11-23 08:51:22","person":"Iulian Rotaru","measurement":"oxygen_saturation","value":0.98}
+        show blood readings from november 23
+    
+        <start_function_response>
         {"timestamp":"2024-11-23 08:47:02","person":"Iulian Rotaru","measurement":"glucose_level","value":120}
-        User Prompt: please show blood readings from november 23
+        {"timestamp":"2024-11-23 08:51:22","person":"Iulian Rotaru","measurement":"oxygen_saturation","value":0.98}
+        <end_function_response>
+    - role: model
+      content: |
+        Here are your blood measurements as of November 23, 2024:
+
+        *   **Glucose Level:** 120 mg/dL
+        *   **Oxygen Saturation Level (SpO2):** 98 %
+        
+        Would you like to see all of your health measurements?
+
+- messages:
+    - role: system
+      content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
+    - role: user
+      content: |
+        please show blood readings from november 23
+    
+        <start_function_response>
+        {"timestamp":"2024-11-23 08:51:22","person":"Iulian Rotaru","measurement":"oxygen_saturation","value":0.98}
+        {"timestamp":"2024-11-23 08:47:02","person":"Iulian Rotaru","measurement":"glucose_level","value":120}
+        <end_function_response>
     - role: model
       content: |
         Here are your blood measurements as of November 23, 2024:
@@ -330,9 +357,12 @@
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function Response: {"timestamp":"2017-08-14 10:31:22","person":"Iulian Rotaru","measurement":"oxygen_saturation","value":0.97}
+        list my blood measurements
+    
+        <start_function_response>
+        {"timestamp":"2017-08-14 10:31:22","person":"Iulian Rotaru","measurement":"oxygen_saturation","value":0.97}
         {"timestamp":"2017-08-14 10:47:02","person":"Iulian Rotaru","measurement":"glucose_level","value":105}
-        User Prompt: list my blood measurements
+        <end_function_response>
     - role: model
       content: |
         Here are your blood measurements as of today, August 14, 2017:
@@ -347,8 +377,11 @@
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function Response: {"timestamp":"2024-10-12 08:47:02","person":"Iulian Rotaru","measurement":"intelligence_quotient","value":120}
-        User Prompt: show my neural measurements from yesterday
+        show my neural measurements from yesterday
+    
+        <start_function_response>
+        {"timestamp":"2024-10-12 08:47:02","person":"Iulian Rotaru","measurement":"intelligence_quotient","value":120}
+        <end_function_response>
     - role: model
       content: |
         Here are your neural measurements as of yesterday, October 10, 2024:
@@ -362,12 +395,15 @@
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function Response: {"timestamp":"2024-11-23 08:47:02","person":"Iulian Rotaru","measurement":"systolic_pressure","value":124}
+        list today heart and neural readings
+    
+        <start_function_response>
+        {"timestamp":"2024-11-23 08:47:02","person":"Iulian Rotaru","measurement":"systolic_pressure","value":124}
         {"timestamp":"2024-11-23 08:47:02","person":"Iulian Rotaru","measurement":"diastolic_pressure","value":81}
         {"timestamp":"2024-11-23 08:47:02","person":"Iulian Rotaru","measurement":"pulse_pressure","value":43}
         {"timestamp":"2024-11-23 08:47:02","person":"Iulian Rotaru","measurement":"heart_rate","value":72}
         {"timestamp":"2024-11-23 08:47:02","person":"Iulian Rotaru","measurement":"intelligence_quotient","value":120}
-        User Prompt: list today heart and neural readings
+        <end_function_response>
     - role: model
       content: |
         Here are your heart and neural measurements as of today, November 23, 2024:
@@ -385,11 +421,14 @@
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function Response: {"timestamp":"2021-02-13 08:47:02","person":"Iulian Rotaru","measurement":"systolic_pressure","value":115}
+        display heart measurements, in a table
+    
+        <start_function_response>
+        {"timestamp":"2021-02-13 08:47:02","person":"Iulian Rotaru","measurement":"systolic_pressure","value":115}
         {"timestamp":"2021-02-13 08:47:03","person":"Iulian Rotaru","measurement":"diastolic_pressure","value":75}
         {"timestamp":"2021-02-13 08:47:04","person":"Iulian Rotaru","measurement":"pulse_pressure","value":40}
         {"timestamp":"2021-02-13 08:47:05","person":"Iulian Rotaru","measurement":"heart_rate","value":60}
-        User Prompt: display heart measurements, in a table
+        <end_function_response>
     - role: model
       content: |
         Here are your heart measurements as of February 13, 2021:
@@ -408,7 +447,10 @@
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function Response: {"time":"08:47:02","measurement":"systolic_pressure","value":132,"status":"high"}
+        display my health measurements for today, in a table format
+    
+        <start_function_response>
+        {"time":"08:47:02","measurement":"systolic_pressure","value":132,"status":"high"}
         {"time":"08:47:03","measurement":"diastolic_pressure","value":85,"status":"high"}
         {"time":"08:47:04","measurement":"pulse_pressure","value":47,"status":"high"}
         {"time":"08:47:05","measurement":"heart_rate","value":86,"status":"normal"}
@@ -416,7 +458,7 @@
         {"time":"09:48:58","measurement":"body_temperature","value":35.40,"status":"normal"}
         {"time":"09:49:26","measurement":"body_weight","value":89.5,"status":"overweight"}
         {"time":"09:49:26","measurement":"body_mass_index","value":28.89,"status":"overweight"}
-        User Prompt: display my health measurements for today, in a table format
+        <end_function_response>
     - role: model
       content: |
         Here's are your health measurements for today, December 21, 2025:
@@ -439,12 +481,15 @@
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function Response: {"time":"12:15:20","measurement":"systolic_pressure","value":124}
+        get health measurements from yesterday readings
+    
+        <start_function_response>
+        {"time":"12:15:20","measurement":"systolic_pressure","value":124}
         {"time":"12:15:20","measurement":"diastolic_pressure","value":81}
         {"time":"12:15:20","measurement":"pulse_pressure","value":43}
         {"time":"12:15:45","measurement":"glucose_level","value":105}
         {"time":"12:15:20","measurement":"intelligence_quotient","value":110}
-        User Prompt: get health measurements from yesterday readings
+        <end_function_response>
     - role: model
       content: |
         Here are your health measurements as of yesterday, March 15, 2021:
@@ -462,13 +507,16 @@
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function Response: {"timestamp":"2026-01-20 12:15:22","person":"Iulian Rotaru","measurement":"systolic_pressure","value":124}
+        create a markdown table with health measurements from yesterday readings
+    
+        <start_function_response>
+        {"timestamp":"2026-01-20 12:15:22","person":"Iulian Rotaru","measurement":"systolic_pressure","value":124}
         {"timestamp":"2026-01-20 12:15:23","person":"Iulian Rotaru","measurement":"diastolic_pressure","value":81}
         {"timestamp":"2026-01-20 12:15:24","person":"Iulian Rotaru","measurement":"pulse_pressure","value":43}
         {"timestamp":"2026-01-20 12:15:25","person":"Iulian Rotaru","measurement":"heart_rate","value":72}
         {"timestamp":"2026-01-20 12:15:45","person":"Iulian Rotaru","measurement":"glucose_level","value":105}
         {"timestamp":"2026-01-20 12:15:49","person":"Iulian Rotaru","measurement":"body_height","value":175}
-        User Prompt: create a markdown table with health measurements from yesterday readings
+        <end_function_response>
     - role: model
       content: |
         Here are your health measurements as of yesterday, January 20, 2026:
@@ -489,8 +537,11 @@
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function Response: {"person":"Iulian Rotaru","measurement":"body_temperature","value":36.50}
-        User Prompt: what is my body temperature?
+        what is my body temperature?
+    
+        <start_function_response>
+        {"person":"Iulian Rotaru","measurement":"body_temperature","value":36.50}
+        <end_function_response>
     - role: model
       content: Your body temperature is 36.50 °C.
 
@@ -499,8 +550,11 @@
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function Response: {"error":"database is currently unresponsive"}
-        User Prompt: what is my body temperature?
+        what is my body temperature?
+    
+        <start_function_response>
+        {"error":"database is currently unresponsive"}
+        <end_function_response>
     - role: model
       content: I cannot retrieve your body temperature due to database unresponsiveness. Would you like me to run a database diagnostic?
 
@@ -509,8 +563,11 @@
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function Response: {"error": "missing information"}
-        User Prompt: how big is my IQ?
+        how big is my IQ?
+    
+        <start_function_response>
+        {"error": "missing information"}
+        <end_function_response>
     - role: model
       content: Sorry, I do not have information about your intelligence quotient (IQ).
 
@@ -519,8 +576,11 @@
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function Response: {"individual":"Bruce Lee","measurement":"height","value":171}
-        User Prompt: what was the height of Bruce Lee?
+        what was the height of Bruce Lee?
+    
+        <start_function_response>
+        {"individual":"Bruce Lee","measurement":"height","value":171}
+        <end_function_response>
     - role: model
       content: Bruce Lee’s official height was typically listed as about 171 cm, though there has been some variation in reports over the years. Some sources round it to 173 cm.
 
@@ -529,8 +589,11 @@
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function Response: {"error": "missing information"}
-        User Prompt: do you know how high was Stephen The Great?
+        do you know how high was Stephen The Great?
+    
+        <start_function_response>
+        {"error": "missing information"}
+        <end_function_response>
     - role: model
       content: Sorry, I do not have information about Stephen The Great height.
 
@@ -539,8 +602,11 @@
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function Response: {"timestamp":"2025-12-17 08:48:58","person":"Iulian Rotaru","measurement":"body_temperature","value":35.400001525878906}
-        User Prompt: print my body temperature from yesterday
+        print my body temperature from yesterday
+    
+        <start_function_response>
+        {"timestamp":"2025-12-17 08:48:58","person":"Iulian Rotaru","measurement":"body_temperature","value":35.400001525878906}
+        <end_function_response>
     - role: model
       content: Your body temperature on December 17, 2025 was 35.40 °C.
 
@@ -549,8 +615,11 @@
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function Response: {"timestamp":"1971-09-10 08:17:06","person":"Iulian Rotaru","measurement":"pulse_pressure","value":43}
-        User Prompt: what is the pulse pressure value from my today readings?
+        what is the pulse pressure value from my today readings?
+    
+        <start_function_response>
+        {"timestamp":"1971-09-10 08:17:06","person":"Iulian Rotaru","measurement":"pulse_pressure","value":43}
+        <end_function_response>
     - role: model
       content: Your pulse pressure is 43 mmHg.
 
@@ -559,8 +628,11 @@
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function Response: {"measurement":"pulse_pressure","value":47}
-        User Prompt: what is my pulse pressure?
+        what is my pulse pressure?
+    
+        <start_function_response>
+        {"measurement":"pulse_pressure","value":47}
+        <end_function_response>
     - role: model
       content: Your pulse pressure is 47 mmHg.
 
@@ -569,8 +641,11 @@
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function Response: {"timestamp":"1995-07-04 10:00:00","person":"Iulian Rotaru","measurement":"body_temperature","value":36.5}
-        User Prompt: get body temperature from 2025-12-17 for iulian rotaru
+        get body temperature from 2025-12-17 for iulian rotaru
+        
+        <start_function_response>
+        {"timestamp":"1995-07-04 10:00:00","person":"Iulian Rotaru","measurement":"body_temperature","value":36.5}
+        <end_function_response>
     - role: model
       content: The body temperature for Iulian Rotaru on December 21, 2025 was 36.5 °C.
 
@@ -579,11 +654,14 @@
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function Response: {"timestamp":"2011-08-26 08:30:00","measurement":"systolic_pressure","value":118}
+        show me my morning and evening blood pressure
+    
+        <start_function_response>
+        {"timestamp":"2011-08-26 08:30:00","measurement":"systolic_pressure","value":118}
         {"timestamp":"2011-08-26 08:30:00","measurement":"diastolic_pressure","value":76}
         {"timestamp":"2011-08-26 21:10:00","measurement":"systolic_pressure","value":121}
         {"timestamp":"2011-08-26 21:10:00","measurement":"diastolic_pressure","value":79}
-        User Prompt: show me my morning and evening blood pressure
+        <end_function_response>
     - role: model
       content: |
         Blood pressure readings for December 17, 2025:
@@ -601,8 +679,11 @@
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function Response: {"timestamp":"2025-12-17 08:48:58","person":"Iulian Rotaru","measurement":"body_temperature","value":35.400001525878906}
-        User Prompt: show my temperature
+        show my temperature
+    
+        <start_function_response>
+        {"timestamp":"2025-12-17 08:48:58","person":"Iulian Rotaru","measurement":"body_temperature","value":35.400001525878906}
+        <end_function_response>
     - role: model
       content: Your body temperature on today readings was 35.4 °C.
 
@@ -611,8 +692,11 @@
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function Response: {"timestamp":"2012-12-12 16:20:10","person":"Fântânaru Ciprian","systole":119,"diastole":72,"pulse":61}
-        User Prompt: save blood 119 72 61
+        save blood 119 72 61
+    
+        <start_function_response>
+        {"timestamp":"2012-12-12 16:20:10","person":"Fântânaru Ciprian","systole":119,"diastole":72,"pulse":61}
+        <end_function_response>
     - role: model
       content: |
         Blood pressure: systole 119 mmHg, diastole 72 mmHg and pulse 61 bpm was recorded for Fântânaru Ciprian on December 12, 2012 at 16:20:10.
@@ -622,8 +706,11 @@
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function Response: {"timestamp":"2011-11-11 08:28:44","person":"Rotaru Ștefan","systole":123,"diastole":73,"pulse":59}
-        User Prompt: log my blood measurements: 123 73 59
+        log my blood measurements: 123 73 59
+    
+        <start_function_response>
+        {"timestamp":"2011-11-11 08:28:44","person":"Rotaru Ștefan","systole":123,"diastole":73,"pulse":59}
+        <end_function_response>
     - role: model
       content: |
         Blood pressure: systole 123 mmHg, diastole 73 mmHg and pulse 59 bpm was recorded for Rotaru Ștefan on November 11, 2011 at 09:28:44.
@@ -633,8 +720,11 @@
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function Response: {"timestamp":"2010-03-11 18:38:41","person":"Lontkowschi George","systole":133,"diastole":76,"pulse":82}
-        User Prompt: record my blood pressure 133/76 and pulse 82
+        record my blood pressure 133/76 and pulse 82
+    
+        <start_function_response>
+        {"timestamp":"2010-03-11 18:38:41","person":"Lontkowschi George","systole":133,"diastole":76,"pulse":82}
+        <end_function_response>
     - role: model
       content: |
         Blood pressure: systole 133 mmHg, diastole 76 mmHg and pulse 82 bpm was recorded for Lontkowschi George on March 11, 2010 at 18:38:41.
@@ -644,8 +734,11 @@
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function Response: {"timestamp":"2019-04-21 16:18:31","person":"John Doe","systole":133,"diastole":76,"pulse":82}
-        User Prompt: write blood pressure of 133 with 76 and pulse of 82 to medical database for John Doe
+        write blood pressure of 133 with 76 and pulse of 82 to medical database for John Doe
+    
+        <start_function_response>
+        {"timestamp":"2019-04-21 16:18:31","person":"John Doe","systole":133,"diastole":76,"pulse":82}
+        <end_function_response>
     - role: model
       content: |
         Blood pressure: systole 133 mmHg, diastole 76 mmHg, pulse 82 bpm was recorded for John Doe on May 21, 2019 at 16:18:31.
@@ -655,8 +748,11 @@
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function Response: {"error":"database is currently unresponsive"}
-        User Prompt: save my blood pressure 115 with 75 and heart rate 65
+        save my blood pressure 115 with 75 and heart rate 65
+    
+        <start_function_response>
+        {"error":"database is currently unresponsive"}
+        <end_function_response>
     - role: model
       content: I cannot save your blood measurements due to database unresponsiveness. Would you like me to run a database diagnostic?
 
@@ -665,8 +761,11 @@
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function Response: {"timestamp":"2005-07-13 16:20:10","person":"Rotaru Iulian","temperature":35.4}
-        User Prompt: save my temperature 35.4
+        save my temperature 35.4
+    
+        <start_function_response>
+        {"timestamp":"2005-07-13 16:20:10","person":"Rotaru Iulian","temperature":35.4}
+        <end_function_response>
     - role: model
       content: Body temperature of 35.40 °C was recorded for Rotaru Iulian on July 13, 2005 at 16:20:10.
 
@@ -675,8 +774,11 @@
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function Response: {"timestamp":"2011-06-04 06:30:15","person":"Rotaru Ilie","temperature":37.2}
-        User Prompt: record my body temperature of 37.2 to medical database
+        record my body temperature of 37.2 to medical database
+    
+        <start_function_response>
+        {"timestamp":"2011-06-04 06:30:15","person":"Rotaru Ilie","temperature":37.2}
+        <end_function_response>
     - role: model
       content: Body temperature of 37.20 °C was recorded for Rotaru Ilie on June 04, 2011 at 06:30:15.
 
@@ -685,8 +787,11 @@
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function Response: {"timestamp":"2003-09-20 09:06:53","person":"Jane Doe","temperature":35.6}
-        User Prompt: saves body temperature of 35.6 for Jane Doe in personal health archive
+        saves body temperature of 35.6 for Jane Doe in personal health archive
+    
+        <start_function_response>
+        {"timestamp":"2003-09-20 09:06:53","person":"Jane Doe","temperature":35.6}
+        <end_function_response>
     - role: model
       content: Body temperature of 35.60 °C was recorded for Jane Doe on September 20, 2023 at 09:06:53.
 
@@ -695,8 +800,11 @@
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function Response: {"timestamp":"2018-06-12 18:10:20","person":"Rotaru Ionuț Ciprian","oxygen_saturation":0.95}
-        User Prompt: save my spo2 0.95
+        save my spo2 0.95
+    
+        <start_function_response>
+        {"timestamp":"2018-06-12 18:10:20","person":"Rotaru Ionuț Ciprian","oxygen_saturation":0.95}
+        <end_function_response>
     - role: model
       content: Oxygen saturation level (SpO2) of 95 % was recorded for Rotaru Ionuț Ciprian on June 12, 2018 at 18:10:20.
 
@@ -705,8 +813,11 @@
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function Response: {"timestamp":"2021-05-23 18:10:20","person":"Lontkowschi Mirela Petronela","oxygen_saturation":0.98}
-        User Prompt: Log my oxygen saturation of 0.98 to medical database
+        Log my oxygen saturation of 0.98 to medical database
+    
+        <start_function_response>
+        {"timestamp":"2021-05-23 18:10:20","person":"Lontkowschi Mirela Petronela","oxygen_saturation":0.98}
+        <end_function_response>
     - role: model
       content: Oxygen saturation level (SpO2) of 98 % was recorded for Lontkowschi Mirela Petronela on May 23, 2021 at 18:10:20.
 
@@ -715,8 +826,11 @@
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function Response: {"error":"database is currently unresponsive"}
-        User Prompt: Write SpO2 of 0.98 to health archive
+        Write SpO2 of 0.98 to health archive
+    
+        <start_function_response>
+        {"error":"database is currently unresponsive"}
+        <end_function_response>
     - role: model
       content: I cannot save your oxygen saturation level (SpO2) due to database unresponsiveness. Would you like me to run a database diagnostic?
 
@@ -725,8 +839,11 @@
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function Response: {"timestamp":"2024-03-24 18:30:15","person":"Iulian Rotaru","measurement":"oxygen_saturation","value":0.99}
-        User Prompt: what is my oxygen saturation?
+        what is my oxygen saturation?
+    
+        <start_function_response>
+        {"timestamp":"2024-03-24 18:30:15","person":"Iulian Rotaru","measurement":"oxygen_saturation","value":0.99}
+        <end_function_response>
     - role: model
       content: Your oxygen saturation level (SpO2) is 99 %.
 
@@ -735,9 +852,12 @@
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function Response: {"timestamp":"2014-03-24 18:30:15","person":"Hans Murakami Sena","measurement":"body_weight","value":99.0}
+        Save body weight of 99 kg for Hans Murakami Sena in his medical database.
+    
+        <start_function_response>
+        {"timestamp":"2014-03-24 18:30:15","person":"Hans Murakami Sena","measurement":"body_weight","value":99.0}
         {"timestamp":"2014-03-24 18:30:15","person":"Hans Murakami Sena","measurement":"body_mass_index","value":30.757693}
-        User Prompt: Save body weight of 99 kg for Hans Murakami Sena in his medical database.
+        <end_function_response>
     - role: model
       content: Weight of 99.0 kg, with a corresponding BMI of 30.75, was recorded for Hans Murakami Sena on March 24, 2014 at 18:30:15.
 
@@ -746,8 +866,11 @@
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function Response: {"timestamp":"1995-01-24 16:20:10","person":"Iulian Rotaru","height":176,"weight":90.0,"body_mass_index":29.054752}
-        User Prompt: save my weight 90
+        save my weight 90
+    
+        <start_function_response>
+        {"timestamp":"1995-01-24 16:20:10","person":"Iulian Rotaru","height":176,"weight":90.0,"body_mass_index":29.054752}
+        <end_function_response>
     - role: model
       content: Weight of 90.0 kg, with a corresponding BMI of 29.05, was recorded for Iulian Rotaru on January 24, 1995 at 16:20:10.
 
@@ -756,8 +879,11 @@
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function Response: {"timestamp":"2025-04-14 14:20:10","person":"Iulian Rotaru","height":176,"weight":90.0,"body_mass_index":29.054752}
-        User Prompt: write my body weight of 90 kg to archive
+        write my body weight of 90 kg to archive
+    
+        <start_function_response>
+        {"timestamp":"2025-04-14 14:20:10","person":"Iulian Rotaru","height":176,"weight":90.0,"body_mass_index":29.054752}
+        <end_function_response>
     - role: model
       content: Weight of 90.0 kg, with a corresponding BMI of 29.05, was recorded for Iulian Rotaru on May 14, 2025 at 14:20:10.
 
@@ -766,8 +892,11 @@
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function Response: {"timestamp":"2014-02-28 13:53:55","person":"Mioara Gogălniceanu","measurement":"glucose_level","value":101}
-        User Prompt: record my glucose level of 101 to medical database
+        record my glucose level of 101 to medical database
+    
+        <start_function_response>
+        {"timestamp":"2014-02-28 13:53:55","person":"Mioara Gogălniceanu","measurement":"glucose_level","value":101}
+        <end_function_response>
     - role: model
       content: Glucose level of 101 mg/dL was recorded for Mioara Gogălniceanu on February 28, 2014 at 13:53:55.
 
@@ -776,8 +905,11 @@
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function Response: {"timestamp":"2025-10-10 13:53:55","person":"Fântânaru Eugenia","measurement":"glucose_level","value":130}
-        User Prompt: save glucose 130
+        save glucose 130
+    
+        <start_function_response>
+        {"timestamp":"2025-10-10 13:53:55","person":"Fântânaru Eugenia","measurement":"glucose_level","value":130}
+        <end_function_response>
     - role: model
       content: Glucose level of 130 mg/dL was recorded for Fântânaru Eugenia on November 10, 2025 at 13:53:55.
 
@@ -786,8 +918,11 @@
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function Response: {"error":"database is currently unresponsive"}
-        User Prompt: record glucose 101
+        record glucose 101
+    
+        <start_function_response>
+        {"error":"database is currently unresponsive"}
+        <end_function_response>
     - role: model
       content: I cannot save your glucose level due to database unresponsiveness. Would you like me to run a database diagnostic?
 
@@ -796,8 +931,11 @@
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function Response: {"timestamp":"2002-08-14 12:23:45","person":"Păduraru Mihaela","measurement":"body_height","value":165}
-        User Prompt: log my height to medical archive
+        log my height to medical archive
+    
+        <start_function_response>
+        {"timestamp":"2002-08-14 12:23:45","person":"Păduraru Mihaela","measurement":"body_height","value":165}
+        <end_function_response>
     - role: model
       content: Height of 165 cm has been recorded for Păduraru Mihaela on August 14, 2002 at 12:23:45.
 
@@ -806,8 +944,11 @@
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function Response: {"error":"database is currently unresponsive"}
-        User Prompt: save my height to health database
+        save my height to health database
+    
+        <start_function_response>
+        {"error":"database is currently unresponsive"}
+        <end_function_response>
     - role: model
       content: I cannot save your height due to database unresponsiveness. Would you like me to run a database diagnostic?
 
@@ -819,8 +960,11 @@
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function Response: {"device_id":"thermostat-sensor","device_name":"Thermostat Sensor","device_zone":"living room","hostname":"thermostat-sensor.local","ipv4_addr":192.168.0.90,"diagnose_port":80,"connection_state":"Active","device_state":{"value":21.13}}
-        User Prompt: run device diagnose on living room sensor
+        run device diagnose on living room sensor
+    
+        <start_function_response>
+        {"device_id":"thermostat-sensor","device_name":"Thermostat Sensor","device_zone":"living room","hostname":"thermostat-sensor.local","ipv4_addr":192.168.0.90,"diagnose_port":80,"connection_state":"Active","device_state":{"value":21.13}}
+        <end_function_response>
     - role: model
       content: The living room sensor is active. Its current temperature reading is 21.13 °C.
 
@@ -829,8 +973,11 @@
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function Response: {"device_id":"thermostat-sensor","device_name":"Thermostat Sensor","device_zone":"living room","hostname":"thermostat-sensor.local","ipv4_addr":192.168.0.90,"diagnose_port":80,"connection_state":"Active","device_state":{"value":21.13}}
-        User Prompt: run full device diagnose on living room sensor
+        run full device diagnose on living room sensor
+    
+        <start_function_response>
+        {"device_id":"thermostat-sensor","device_name":"Thermostat Sensor","device_zone":"living room","hostname":"thermostat-sensor.local","ipv4_addr":192.168.0.90,"diagnose_port":80,"connection_state":"Active","device_state":{"value":21.13}}
+        <end_function_response>
     - role: model
       content: The living room sensor is active. Its hostname is thermostat-sensor.local, IPv4 address is 192.168.0.90, the diagnose port is 80, and the current temperature reading is 21.13 °C.
 
@@ -839,8 +986,11 @@
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function Response: {"setpoint":30.00,"hysteresis":0.00,"temperature":21.13,"running":true}
-        User Prompt: turn on central heating
+        turn on central heating
+    
+        <start_function_response>
+        {"setpoint":30.00,"hysteresis":0.00,"temperature":21.13,"running":true}
+        <end_function_response>
     - role: model
       content: Central heating has been turned on. The setpoint is 30.00 °C, with a hysteresis of 0.00 °C. The current temperature is 21.13 °C, and the system is running.
 
@@ -849,8 +999,11 @@
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function Response: {"error":"device is currently unresponsive"}
-        User Prompt: please start the central heating
+        please start the central heating
+    
+        <start_function_response>
+        {"error":"device is currently unresponsive"}
+        <end_function_response>
     - role: model
       content: The central heating controller is not responding. Would you like me to run a device diagnostic?
 
@@ -859,8 +1012,11 @@
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function Response: {"setpoint":30.00,"hysteresis":0.00,"temperature":21.25,"running":true}
-        User Prompt: is central heating running?
+        is central heating running?
+    
+        <start_function_response>
+        {"setpoint":30.00,"hysteresis":0.00,"temperature":21.25,"running":true}
+        <end_function_response>
     - role: model
       content: Yes, central heating is running.
 
@@ -869,8 +1025,11 @@
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function Response: {"error":"device is currently unresponsive"}
-        User Prompt: is heater currently running?
+        is heater currently running?
+    
+        <start_function_response>
+        {"error":"device is currently unresponsive"}
+        <end_function_response>
     - role: model
       content: The central heating controller is not responding. Would you like me to run a device diagnostic?
 
@@ -879,13 +1038,16 @@
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function Response: {"timestamp":"2025-12-17 08:47","measurement":"systolic_pressure","value":138,"status":"high_normal"}
+        is central heating currently running?
+    
+        <start_function_response>
+        {"timestamp":"2025-12-17 08:47","measurement":"systolic_pressure","value":138,"status":"high_normal"}
         {"timestamp":"2025-12-17 08:47","measurement":"diastolic_pressure","value":88,"status":"high_normal"}
         {"timestamp":"2025-12-17 08:47","measurement":"heart_rate","value":72,"status":"normal"}
         {"timestamp":"2025-12-17 08:48","measurement":"body_temperature","value":36.6,"status":"normal"}
         {"timestamp":"2025-12-17 08:49","measurement":"body_mass_index","value":28.9,"status":"overweight"}
         {"timestamp":"2025-12-17 08:49","measurement":"hydration_level","value":65,"status":"optimal"}
-        User Prompt: is central heating currently running?
+        <end_function_response>
     - role: model
       content: Central heating controller does not respond. Please check power and system status.
 
@@ -894,8 +1056,11 @@
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function Response: {"setpoint":10.00,"hysteresis":0.00,"temperature":21.25,"running":false}
-        User Prompt: is the central heating started?
+        is the central heating started?
+    
+        <start_function_response>
+        {"setpoint":10.00,"hysteresis":0.00,"temperature":21.25,"running":false}
+        <end_function_response>
     - role: model
       content: No, the central heating is not running. It is currently off.
 
@@ -904,8 +1069,11 @@
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function Response: {"setpoint":22.00,"hysteresis":0.00,"temperature":21.25,"running":true}
-        User Prompt: is heater active?
+        is heater active?
+    
+        <start_function_response>
+        {"setpoint":22.00,"hysteresis":0.00,"temperature":21.25,"running":true}
+        <end_function_response>
     - role: model
       content: Yes, the heater is active. It is currently on.
 
@@ -914,8 +1082,11 @@
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function Response: {"running":true}
-        User Prompt: is heater turned on?
+        is heater turned on?
+    
+        <start_function_response>
+        {"running":true}
+        <end_function_response>
     - role: model
       content: Yes, the heater is turned on.
 
@@ -924,8 +1095,11 @@
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function Response: {"setpoint":30.00,"hysteresis":0.00,"temperature":20.75,"running":true}
-        User Prompt: is heating turned on?
+        is heating turned on?
+    
+        <start_function_response>
+        {"setpoint":30.00,"hysteresis":0.00,"temperature":20.75,"running":true}
+        <end_function_response>
     - role: model
       content: Yes, the heater is currently running. The current temperature is 20.75 °C, and the setpoint is 30.00 °C.
 
@@ -934,8 +1108,11 @@
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function Response: {"setpoint":10.00,"hysteresis":0.00,"temperature":21.63,"running":false}
-        User Prompt: stop heating
+        stop heating
+    
+        <start_function_response>
+        {"setpoint":10.00,"hysteresis":0.00,"temperature":21.63,"running":false}
+        <end_function_response>
     - role: model
       content: Heating has been stopped. The setpoint is now 10.00 °C, with a hysteresis of 0.00 °C. The current temperature is 21.63 °C, and the system is no longer running.
 
@@ -944,8 +1121,11 @@
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function Response: {"error":"device is currently unresponsive"}
-        User Prompt: turn on the central heating
+        turn on the central heating
+    
+        <start_function_response>
+        {"error":"device is currently unresponsive"}
+        <end_function_response>
     - role: model
       content: The central heating controller is currently not responding. Would you like me to run a device diagnostic?
 
@@ -954,8 +1134,11 @@
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function Response: {"setpoint":10.00,"hysteresis":0.00,"temperature":21.75,"running":false}
-        User Prompt: is central heating running?
+        is central heating running?
+    
+        <start_function_response>
+        {"setpoint":10.00,"hysteresis":0.00,"temperature":21.75,"running":false}
+        <end_function_response>
     - role: model
       content: No, central heating is not running.
 
@@ -964,8 +1147,11 @@
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function Response: {"measurement":"heating_active","value":false}
-        User Prompt: how is the central heating?
+        how is the central heating?
+    
+        <start_function_response>
+        {"measurement":"heating_active","value":false}
+        <end_function_response>
     - role: model
       content: The central heating is turned off.
 
@@ -974,8 +1160,11 @@
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function Response: {"setpoint":10.00,"hysteresis":0.00,"temperature":21.13,"running":false}
-        User Prompt: please tell me the status of the central heating
+        please tell me the status of the central heating
+    
+        <start_function_response>
+        {"setpoint":10.00,"hysteresis":0.00,"temperature":21.13,"running":false}
+        <end_function_response>
     - role: model
       content: The central heating is currently off. The setpoint is 10.0 °C, and the current room temperature is 21.13 °C.
 
@@ -984,8 +1173,11 @@
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function Response: {"setpoint":30.00,"hysteresis":0.00,"temperature":20.50,"running":true}
-        User Prompt: get central heating status
+        get central heating status
+    
+        <start_function_response>
+        {"setpoint":30.00,"hysteresis":0.00,"temperature":20.50,"running":true}
+        <end_function_response>
     - role: model
       content: The central heating is currently running. The setpoint is 30.00 °C, with a hysteresis of 0.00 °C. The current temperature is 20.50 °C.
 
@@ -994,8 +1186,11 @@
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function Response: {"device_id":"dht-sensor","device_name":"DHT Sensor","device_zone":"kitchen","hostname":"dht-sensor.local","ipv4_addr":"192.168.0.73","diagnose_port":80,"connection_state":"Active","device_state":{"period":10000,"humidity":13.5,"timestamp":365430000,"temperature":18.6,"humidityThreshold":0.0,"temperatureThreshold":0.0}}
-        User Prompt: run comprehensive device diagnose on DHT sensor
+        run comprehensive device diagnose on DHT sensor
+    
+        <start_function_response>
+        {"device_id":"dht-sensor","device_name":"DHT Sensor","device_zone":"kitchen","hostname":"dht-sensor.local","ipv4_addr":"192.168.0.73","diagnose_port":80,"connection_state":"Active","device_state":{"period":10000,"humidity":13.5,"timestamp":365430000,"temperature":18.6,"humidityThreshold":0.0,"temperatureThreshold":0.0}}
+        <end_function_response>
     - role: model
       content: The DHT Sensor is active. Its hostname is dht-sensor.local, IPv4 address is 192.168.0.73, the diagnose port is 80. The current temperature is 18.6 °C and humidity is 13.5%. The measurement period is 10000, and humidity/temperature thresholds are set to 0.
 
@@ -1004,10 +1199,13 @@
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function Response: {"zone":"kitchen","name":"DHT Sensor","measurement":"humidity","value":15.70}
+        read all sensors
+    
+        <start_function_response>
+        {"zone":"kitchen","name":"DHT Sensor","measurement":"humidity","value":15.70}
         {"zone":"kitchen","name":"DHT Sensor","measurement":"temperature","value":17.80}
         {"zone":"living room","name":"Thermostat Sensor","measurement":"temperature","value":20.50}
-        User Prompt: read all sensors
+        <end_function_response>
     - role: model
       content: |
         Here's a summary of sensor readings:
@@ -1021,10 +1219,13 @@
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function Response: {"zone":"kitchen","name":"DHT Sensor","measurement":"humidity","value":16.70}
+        read all sensors in the house
+    
+        <start_function_response>
+        {"zone":"kitchen","name":"DHT Sensor","measurement":"humidity","value":16.70}
         {"zone":"kitchen","name":"DHT Sensor","measurement":"temperature","value":17.50}
         {"zone":"living room","name":"Thermostat Sensor","measurement":"temperature","value":20.38}
-        User Prompt: read all sensors in the house
+        <end_function_response>
     - role: model
       content: |
         Here's a summary of sensor readings:
@@ -1038,10 +1239,13 @@
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function Response: {"zone":"kitchen","name":"DHT Sensor","measurement":"humidity","value":21.70}
+        create a table with the readings of the sensors in the house
+    
+        <start_function_response>
+        {"zone":"kitchen","name":"DHT Sensor","measurement":"humidity","value":21.70}
         {"zone":"kitchen","name":"DHT Sensor","measurement":"temperature","value":47.60}
         {"zone":"living room","name":"Thermostat Sensor","measurement":"temperature","value":22.40}
-        User Prompt: create a table with the readings of the sensors in the house
+        <end_function_response>
     - role: model
       content: |
         Here's a summary of sensor readings:
@@ -1057,10 +1261,13 @@
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function Response: {"zone":"kitchen","name":"DHT Sensor","measurement":"humidity","value":16.80}
+        read hera sensors in a table format
+    
+        <start_function_response>
+        {"zone":"kitchen","name":"DHT Sensor","measurement":"humidity","value":16.80}
         {"zone":"kitchen","name":"DHT Sensor","measurement":"temperature","value":17.50}
         {"zone":"living room","name":"Thermostat Sensor","measurement":"temperature","value":20.38}
-        User Prompt: read hera sensors in a table format
+        <end_function_response>
     - role: model
       content: |
         Here's a summary of sensor readings:
@@ -1076,8 +1283,11 @@
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function Response: {"zone":"living room","name":"Thermostat Sensor","measurement":"temperature","value":21.15}
-        User Prompt: get living room temperature
+        get living room temperature
+    
+        <start_function_response>
+        {"zone":"living room","name":"Thermostat Sensor","measurement":"temperature","value":21.15}
+        <end_function_response>
     - role: model
       content: The temperature in the living room is 21.15 °C.
 
@@ -1086,8 +1296,11 @@
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function Response: {"error":"device is currently unresponsive"}
-        User Prompt: get living room temperature
+        get living room temperature
+    
+        <start_function_response>
+        {"error":"device is currently unresponsive"}
+        <end_function_response>
     - role: model
       content: The living room temperature sensor is not responding. Would you like me to run a device diagnostic?
 
@@ -1096,8 +1309,11 @@
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function Response: {"zone":"bathroom","name":"Temperature Sensor","measurement":"temperature","value":18.15,"status":"low"}
-        User Prompt: how is the living room temperature?
+        how is the living room temperature?
+    
+        <start_function_response>
+        {"zone":"bathroom","name":"Temperature Sensor","measurement":"temperature","value":18.15,"status":"low"}
+        <end_function_response>
     - role: model
       content: The bathroom temperature is 18.15 °C, which is below the desired level. Would you like me to start the central heating?
 
@@ -1106,8 +1322,11 @@
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function Response: {"zone":"bedroom","name":"Temperature Sensor","measurement":"temperature","value":32.15,"status":"high"}
-        User Prompt: what about the temperature in the bedroom?
+        what about the temperature in the bedroom?
+    
+        <start_function_response>
+        {"zone":"bedroom","name":"Temperature Sensor","measurement":"temperature","value":32.15,"status":"high"}
+        <end_function_response>
     - role: model
       content: The current temperature in the bedroom is 32.15 °C. Based on my settings, this is considered high. Would you like to activate the cooling system?
 
@@ -1116,8 +1335,11 @@
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function Response: {"error":"device is currently unresponsive"}
-        User Prompt: what is temperature in the living?
+        what is temperature in the living?
+    
+        <start_function_response>
+        {"error":"device is currently unresponsive"}
+        <end_function_response>
     - role: model
       content: The living room temperature sensor is not responding. Would you like me to run a device diagnostic?
 
@@ -1126,8 +1348,11 @@
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function Response: {"zone":"kitchen","name":"DHT Sensor","measurement":"temperature","value":17.50}
-        User Prompt: what is the temperature in the kitchen
+        what is the temperature in the kitchen
+    
+        <start_function_response>
+        {"zone":"kitchen","name":"DHT Sensor","measurement":"temperature","value":17.50}
+        <end_function_response>
     - role: model
       content: The temperature in the kitchen is 17.50 °C.
 
@@ -1136,8 +1361,11 @@
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function Response: {"zone":"kitchen","name":"DHT Sensor","measurement":"humidity","value":36.7012}
-        User Prompt: print kitchen humidity
+        print kitchen humidity
+    
+        <start_function_response>
+        {"zone":"kitchen","name":"DHT Sensor","measurement":"humidity","value":36.7012}
+        <end_function_response>
     - role: model
       content: The humidity in the kitchen is 36.70 %.
 
@@ -1146,8 +1374,11 @@
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function Response: {"error":"device is currently unresponsive"}
-        User Prompt: print kitchen humidity
+        print kitchen humidity
+    
+        <start_function_response>
+        {"error":"device is currently unresponsive"}
+        <end_function_response>
     - role: model
       content: The kitchen humidity sensor is not responding. Would you like me to run a device diagnostic?
 
@@ -1159,8 +1390,11 @@
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function Response: {"time":"2025-12-27 02:15","interval":900,"temperature_2m":-0.7,"weather_code":"Overcast","wind_speed_10m":24.7}
-        User Prompt: how is the weather like?
+        how is the weather like?
+    
+        <start_function_response>
+        {"time":"2025-12-27 02:15","interval":900,"temperature_2m":-0.7,"weather_code":"Overcast","wind_speed_10m":24.7}
+        <end_function_response>
     - role: model
       content: The current time is 2025-12-27 02:15. The weather is overcast with a temperature of -0.7 °C and a wind speed of 24.7 km/h. The forecast interval is 900 seconds.
 
@@ -1169,8 +1403,11 @@
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function Response: {"time":"2025-12-27 02:15","interval":900,"temperature_2m":-0.7,"weather_code":"Overcast","wind_speed_10m":24.7}
-        User Prompt: what is outside temperature?
+        what is outside temperature?
+    
+        <start_function_response>
+        {"time":"2025-12-27 02:15","interval":900,"temperature_2m":-0.7,"weather_code":"Overcast","wind_speed_10m":24.7}
+        <end_function_response>
     - role: model
       content: The current outside temperature is -0.7 degrees Celsius.
 
@@ -1179,8 +1416,11 @@
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function Response: {"time":"2015-11-18 11:00","interval":900,"temperature_2m":1.2,"weather_code":"Overcast","wind_speed_10m":2.2}
-        User Prompt: how is outside
+        how is outside
+    
+        <start_function_response>
+        {"time":"2015-11-18 11:00","interval":900,"temperature_2m":1.2,"weather_code":"Overcast","wind_speed_10m":2.2}
+        <end_function_response>
     - role: model
       content: The time is 11:00. The temperature is 1.2 °C, the weather is overcast, and the wind speed is 2.2 km/h.
 
@@ -1190,6 +1430,7 @@
     - role: user
       content: |
         get weather forecast for the next week
+        
         <start_function_response>
         {"date":"2025-12-31","weather_code":"Slight snow showers","temperature_2m_max":-0.6,"temperature_2m_min":-3.3,"apparent_temperature_max":-6.5,"apparent_temperature_min":-8.1,"precipitation_sum":2.1,"precipitation_probability_max":48,"wind_speed_10m_max":22.4}
         {"date":"2026-01-01","weather_code":"Overcast","temperature_2m_max":0.2,"temperature_2m_min":-4.6,"apparent_temperature_max":-3.3,"apparent_temperature_min":-8.7,"precipitation_sum":0.0,"precipitation_probability_max":8,"wind_speed_10m_max":7.1}
@@ -1221,6 +1462,7 @@
     - role: user
       content: |
         what's the weather forecast for this weekend
+        
         <start_function_response>
         {"date":"2026-01-02","weather_code":"Overcast","temperature_2m_max":3.8,"temperature_2m_min":-2.2,"apparent_temperature_max":0.1,"apparent_temperature_min":-6.3,"precipitation_sum":0.0,"precipitation_probability_max":0,"wind_speed_10m_max":10.0}
         {"date":"2026-01-03","weather_code":"Slight snow fall","temperature_2m_max":7.9,"temperature_2m_min":1.1,"apparent_temperature_max":3.9,"apparent_temperature_min":-2.0,"precipitation_sum":0.75,"precipitation_probability_max":5,"wind_speed_10m_max":13.7}
@@ -1244,6 +1486,7 @@
     - role: user
       content: |
         create forecast for 3 days
+        
         <start_function_response>
         {"date":"2025-12-31","weather_code":"Slight snow showers","temperature_2m_max":-0.6,"temperature_2m_min":-3.3,"apparent_temperature_max":-6.5,"apparent_temperature_min":-8.1,"precipitation_sum":2.1,"precipitation_probability_max":48,"wind_speed_10m_max":22.4}
         {"date":"2026-01-01","weather_code":"Overcast","temperature_2m_max":0.2,"temperature_2m_min":-4.6,"apparent_temperature_max":-3.3,"apparent_temperature_min":-8.7,"precipitation_sum":0.0,"precipitation_probability_max":8,"wind_speed_10m_max":7.1}
@@ -1267,6 +1510,7 @@
     - role: user
       content: |
         list today forecast in a table by hour
+        
         <start_function_response>
         {"time":"2025-12-22 00:00","weather_code":"Overcast","temperature_2m":2.3,"relative_humidity_2m":97,"precipitation_probability":0,"wind_speed_10m":3.7}
         {"time":"2025-12-22 01:00","weather_code":"Fog","temperature_2m":2.3,"relative_humidity_2m":97,"precipitation_probability":0,"wind_speed_10m":2.9}
@@ -1310,6 +1554,7 @@
     - role: user
       content: |
         what is the weather forecast for today, around noon
+        
         <start_function_response>
         {"time":"2025-12-30 11:00","weather_code":"Overcast","temperature_2m":0.2,"relative_humidity_2m":79,"precipitation_probability":18,"wind_speed_10m":12.1}
         {"time":"2025-12-30 12:00","weather_code":"Overcast","temperature_2m":0.6,"relative_humidity_2m":60,"precipitation_probability":5,"wind_speed_10m":19.9}
@@ -1333,6 +1578,7 @@
     - role: user
       content: |
         show me forecast for today at noon
+        
         <start_function_response>
         {"time":"2025-12-30 12:00","weather_code":"Overcast","temperature_2m":0.6,"relative_humidity_2m":60,"precipitation_probability":5,"wind_speed_10m":19.9}
         <end_function_response>
@@ -1352,6 +1598,7 @@
     - role: user
       content: |
         display forecast for today, daylight
+        
         <start_function_response>
         {"time":"2025-12-30 07:00","weather_code":"Overcast","temperature_2m":0.2,"relative_humidity_2m":60,"precipitation_probability":0,"wind_speed_10m":5.1}
         {"time":"2025-12-30 08:00","weather_code":"Slight snow fall","temperature_2m":-0.4,"relative_humidity_2m":73,"precipitation_probability":13,"wind_speed_10m":5.2}
@@ -1393,8 +1640,10 @@
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function Response: {"jarvis_server":true,"slm_service":true}
-        User Prompt: Wake-up
+        Wake-up
+        <start_function_response>
+        {"jarvis_server":true,"slm_service":true}
+        <end_function_response>
     - role: model
       content: Systems online. JARVIS server and SLM service are active.
 
@@ -1403,8 +1652,11 @@
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function Response: {"jarvis_server":true,"slm_service":true}
-        User Prompt: Server start
+        Server start
+    
+        <start_function_response>
+        {"jarvis_server":true,"slm_service":true}
+        <end_function_response>
     - role: model
       content: Systems online. JARVIS server and SLM service are active.
 
@@ -1413,8 +1665,11 @@
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function Response: {"jarvis_server":true,"slm_service":false}
-        User Prompt: Server status
+        Server status
+    
+        <start_function_response>
+        {"jarvis_server":true,"slm_service":false}
+        <end_function_response>
     - role: model
       content: JARVIS server is online but SLM service does not respond.
 
@@ -1423,8 +1678,11 @@
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function Response: {"jarvis_server":true,"slm_service":true}
-        User Prompt: Server status
+        Server status
+    
+        <start_function_response>
+        {"jarvis_server":true,"slm_service":true}
+        <end_function_response>
     - role: model
       content: JARVIS online. Both the JARVIS server and SLM service are currently active.
 
@@ -1433,7 +1691,10 @@
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function Response: {"history_state":"total_amnesia"}
-        User Prompt: Clear history
+        Clear history
+    
+        <start_function_response>
+        {"history_state":"total_amnesia"}
+        <end_function_response>
     - role: model
       content: Acknowledged. History has been cleared. My memory is now at a total amnesia state.

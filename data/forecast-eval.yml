@@ -3,7 +3,8 @@
     content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
   - role: user
     content: |
-      Function Response: {"date":"2025-12-31","weather_code":"Slight snow showers","temperature_2m_max":-0.6,"temperature_2m_min":-3.3,"apparent_temperature_max":-6.5,"apparent_temperature_min":-8.1,"precipitation_sum":2.1,"precipitation_probability_max":48,"wind_speed_10m_max":22.4}
+      Function response is a daily forecast structure: 
+      {"date":"2025-12-31","weather_code":"Slight snow showers","temperature_2m_max":-0.6,"temperature_2m_min":-3.3,"apparent_temperature_max":-6.5,"apparent_temperature_min":-8.1,"precipitation_sum":2.1,"precipitation_probability_max":48,"wind_speed_10m_max":22.4}
       {"date":"2026-01-01","weather_code":"Overcast","temperature_2m_max":0.2,"temperature_2m_min":-4.6,"apparent_temperature_max":-3.3,"apparent_temperature_min":-8.7,"precipitation_sum":0.0,"precipitation_probability_max":8,"wind_speed_10m_max":7.1}
       {"date":"2026-01-02","weather_code":"Overcast","temperature_2m_max":3.8,"temperature_2m_min":-2.2,"apparent_temperature_max":0.1,"apparent_temperature_min":-6.3,"precipitation_sum":0.0,"precipitation_probability_max":0,"wind_speed_10m_max":10.0}
       {"date":"2026-01-03","weather_code":"Slight snow fall","temperature_2m_max":7.9,"temperature_2m_min":1.1,"apparent_temperature_max":3.9,"apparent_temperature_min":-2.0,"precipitation_sum":0.75,"precipitation_probability_max":5,"wind_speed_10m_max":13.7}
@@ -17,6 +18,7 @@
       {"date":"2026-01-11","weather_code":"Overcast","temperature_2m_max":1.4,"temperature_2m_min":-11.4,"apparent_temperature_max":-3.4,"apparent_temperature_min":-15.7,"precipitation_sum":0.0,"precipitation_probability_max":10,"wind_speed_10m_max":17.5}
       {"date":"2026-01-12","weather_code":"Light drizzle","temperature_2m_max":1.6,"temperature_2m_min":-5.4,"apparent_temperature_max":-0.7,"apparent_temperature_min":-9.8,"precipitation_sum":0.3,"precipitation_probability_max":13,"wind_speed_10m_max":13.1}
       {"date":"2026-01-13","weather_code":"Overcast","temperature_2m_max":-0.8,"temperature_2m_min":-7.9,"apparent_temperature_max":-3.9,"apparent_temperature_min":-12.4,"precipitation_sum":0.0,"precipitation_probability_max":18,"wind_speed_10m_max":9.5}
+      
       User Prompt: Get weather forecast for the next two weeks.
   ground_truth: |
     Here is the weather forecast for the next two weeks:
@@ -45,7 +47,8 @@
     content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
   - role: user
     content: |
-      Function Response: {"time":"2025-12-30 00:00","weather_code":"Overcast","temperature_2m":-0.6,"relative_humidity_2m":74,"precipitation_probability":0,"wind_speed_10m":2.3}
+      Function response is a hourly forecast structure: 
+      {"time":"2025-12-30 00:00","weather_code":"Overcast","temperature_2m":-0.6,"relative_humidity_2m":74,"precipitation_probability":0,"wind_speed_10m":2.3}
       {"time":"2025-12-30 01:00","weather_code":"Overcast","temperature_2m":-0.5,"relative_humidity_2m":73,"precipitation_probability":0,"wind_speed_10m":2.5}
       {"time":"2025-12-30 02:00","weather_code":"Overcast","temperature_2m":0.1,"relative_humidity_2m":63,"precipitation_probability":0,"wind_speed_10m":5.6}
       {"time":"2025-12-30 03:00","weather_code":"Overcast","temperature_2m":0.8,"relative_humidity_2m":58,"precipitation_probability":0,"wind_speed_10m":3.7}
@@ -69,7 +72,8 @@
       {"time":"2025-12-30 21:00","weather_code":"Partly cloudy","temperature_2m":-1.6,"relative_humidity_2m":61,"precipitation_probability":0,"wind_speed_10m":7.6}
       {"time":"2025-12-30 22:00","weather_code":"Clear sky","temperature_2m":-1.9,"relative_humidity_2m":50,"precipitation_probability":0,"wind_speed_10m":12.0}
       {"time":"2025-12-30 23:00","weather_code":"Mainly clear","temperature_2m":-2.3,"relative_humidity_2m":51,"precipitation_probability":0,"wind_speed_10m":9.7}
-      User Prompt: List today forecast in a table, by hour.
+      
+      User Prompt: List today forecast by hour.
   ground_truth: |
     Here's the hourly weather forecast for today, December 30, 2025:
     

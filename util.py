@@ -15,7 +15,7 @@ def get_chat_prompt(chat_arg):
     content = next((item['content'] for item in chat_arg if item['role'] == 'user'), None)
     prompt_tag_index = content.find(PROMPT_TAG)
     if prompt_tag_index == -1:
-        return content
+        return content.splitlines()[0]
     return content[prompt_tag_index + len(PROMPT_TAG):].strip()
 
 

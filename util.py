@@ -23,3 +23,8 @@ def get_similarity_score(prediction_arg, ground_truth_arg):
     prediction_embedding = SCORE_MODEL.encode(prediction_arg, convert_to_tensor=True)
     ground_truth_embedding = SCORE_MODEL.encode(ground_truth_arg, convert_to_tensor=True)
     return util.cos_sim(prediction_embedding, ground_truth_embedding).item()
+
+
+def split_by_comma(text_arg):
+    values = text_arg.split(',')
+    return [v.strip() for v in values]

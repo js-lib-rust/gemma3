@@ -1,7 +1,7 @@
 # ---------------------------------------------------------
 # MEDICAL MEASUREMENTS
 
-- messages:
+- chat:
     - role: system
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
@@ -32,7 +32,7 @@
         
         Would you like to create a medical report?
 
-- messages:
+- chat:
     - role: system
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
@@ -65,7 +65,7 @@
         
         Would you like to create a medical report?
 
-- messages:
+- chat:
     - role: system
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
@@ -100,7 +100,7 @@
         
         Would you like to create a medical report?
 
-- messages:
+- chat:
     - role: system
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
@@ -112,7 +112,7 @@
     - role: model
       content: I cannot list your measurements due to database unresponsiveness. Would you like me to run a database diagnostic?
 
-- messages:
+- chat:
     - role: system
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
@@ -135,7 +135,7 @@
         
         Would you like to see all of your health measurements?
 
-- messages:
+- chat:
     - role: system
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
@@ -158,7 +158,7 @@
         
         Would you like to see all of your health measurements?
 
-- messages:
+- chat:
     - role: system
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
@@ -181,7 +181,7 @@
         
         Would you like to see all of your health measurements?
 
-- messages:
+- chat:
     - role: system
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
@@ -200,7 +200,7 @@
         
         Would you like to see all of your health measurements?
 
-- messages:
+- chat:
     - role: system
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
@@ -219,7 +219,7 @@
         
         Would you like to see all of your health measurements?
 
-- messages:
+- chat:
     - role: system
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
@@ -238,7 +238,7 @@
         
         Would you like to see all of your health measurements?
 
-- messages:
+- chat:
     - role: system
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
@@ -255,7 +255,7 @@
         
         Would you like to see all of your health measurements?
 
-- messages:
+- chat:
     - role: system
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
@@ -280,7 +280,7 @@
         
         Would you like to see all of your health measurements?
 
-- messages:
+- chat:
     - role: system
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
@@ -305,7 +305,7 @@
         
         Would you like to see all of your health measurements?
 
-- messages:
+- chat:
     - role: system
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
@@ -338,7 +338,7 @@
         
         Would you like to create a medical report?
 
-- messages:
+- chat:
     - role: system
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
@@ -363,7 +363,7 @@
         
         Would you like to create a medical report?
 
-- messages:
+- chat:
     - role: system
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
@@ -392,7 +392,7 @@
         
         Would you like to create a medical report?
 
-- messages:
+- chat:
     - role: system
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
@@ -404,7 +404,7 @@
     - role: model
       content: Your body temperature is 36.50 °C.
 
-- messages:
+- chat:
     - role: system
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
@@ -416,7 +416,7 @@
     - role: model
       content: I cannot retrieve your body temperature due to database unresponsiveness. Would you like me to run a database diagnostic?
 
-- messages:
+- chat:
     - role: system
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
@@ -428,7 +428,7 @@
     - role: model
       content: Sorry, I do not have information about your intelligence quotient (IQ).
 
-- messages:
+- chat:
     - role: system
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
@@ -440,7 +440,7 @@
     - role: model
       content: Bruce Lee’s official height was typically listed as about 171 cm, though there has been some variation in reports over the years. Some sources round it to 173 cm.
 
-- messages:
+- chat:
     - role: system
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
@@ -452,7 +452,7 @@
     - role: model
       content: Sorry, I do not have information about Stephen The Great height.
 
-- messages:
+- chat:
     - role: system
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
@@ -464,7 +464,7 @@
     - role: model
       content: Your body temperature on December 17, 2025 was 35.40 °C.
 
-- messages:
+- chat:
     - role: system
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
@@ -476,7 +476,7 @@
     - role: model
       content: Your pulse pressure is 43 mmHg.
 
-- messages:
+- chat:
     - role: system
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
@@ -488,7 +488,7 @@
     - role: model
       content: Your pulse pressure is 47 mmHg.
 
-- messages:
+- chat:
     - role: system
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
@@ -500,7 +500,7 @@
     - role: model
       content: The body temperature for Iulian Rotaru on December 21, 2025 was 36.5 °C.
 
-- messages:
+- chat:
     - role: system
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
@@ -524,7 +524,7 @@
         *   Systolic: 121 mmHg
         *   Diastolic: 79 mmHg
 
-- messages:
+- chat:
     - role: system
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
@@ -536,7 +536,7 @@
     - role: model
       content: Your body temperature on today readings was 35.4 °C.
 
-- messages:
+- chat:
     - role: system
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
@@ -552,7 +552,7 @@
       content: |
         Blood pressure: systole 119 mmHg, diastole 72 mmHg, pulse pressure 47 mmHg and heart rate 61 bpm were recorded for Fântânaru Ciprian on December 12, 2012 at 16:20:10.
 
-- messages:
+- chat:
     - role: system
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
@@ -568,7 +568,7 @@
       content: |
         Blood pressure: systole 123 mmHg, diastole 73 mmHg, pulse pressure 50 mmHg and heart rate 59 bpm were recorded for Rotaru Ștefan on November 11, 2011 at 09:28:44.
 
-- messages:
+- chat:
     - role: system
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
@@ -584,7 +584,7 @@
       content: |
         Blood pressure: systole 133 mmHg, diastole 86 mmHg, pulse pressure 47 mmHg and heart rate 82 bpm were recorded for Lontkowschi George on March 11, 2010 at 18:38:41.
 
-- messages:
+- chat:
     - role: system
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
@@ -600,7 +600,7 @@
       content: |
         Blood pressure: systole 133 mmHg, diastole 76 mmHg, pulse pressure 57 mmHg and heart rate 82 bpm were recorded for John Doe on May 21, 2019 at 16:18:31.
 
-- messages:
+- chat:
     - role: system
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
@@ -612,7 +612,7 @@
     - role: model
       content: I cannot save your blood measurements due to database unresponsiveness. Would you like me to run a database diagnostic?
 
-- messages:
+- chat:
     - role: system
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
@@ -624,7 +624,7 @@
     - role: model
       content: Body temperature of 35.40 °C was recorded for Rotaru Iulian on July 13, 2005 at 16:20:10.
 
-- messages:
+- chat:
     - role: system
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
@@ -636,7 +636,7 @@
     - role: model
       content: Body temperature of 37.20 °C was recorded for Rotaru Ilie on June 04, 2011 at 06:30:15.
 
-- messages:
+- chat:
     - role: system
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
@@ -648,7 +648,7 @@
     - role: model
       content: Body temperature of 35.60 °C was recorded for Jane Doe on September 20, 2023 at 09:06:53.
 
-- messages:
+- chat:
     - role: system
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
@@ -660,7 +660,7 @@
     - role: model
       content: Oxygen saturation level (SpO2) of 95 % was recorded for Rotaru Ionuț Ciprian on June 12, 2018 at 18:10:20.
 
-- messages:
+- chat:
     - role: system
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
@@ -672,7 +672,7 @@
     - role: model
       content: Oxygen saturation level (SpO2) of 98 % was recorded for Lontkowschi Mirela Petronela on May 23, 2021 at 18:10:20.
 
-- messages:
+- chat:
     - role: system
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
@@ -684,7 +684,7 @@
     - role: model
       content: I cannot save your oxygen saturation level (SpO2) due to database unresponsiveness. Would you like me to run a database diagnostic?
 
-- messages:
+- chat:
     - role: system
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
@@ -696,7 +696,7 @@
     - role: model
       content: Your oxygen saturation level (SpO2) is 99 %.
 
-- messages:
+- chat:
     - role: system
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
@@ -709,7 +709,7 @@
     - role: model
       content: Weight of 99.0 kg, with a corresponding BMI of 30.75, were recorded for Hans Murakami Sena on March 24, 2014 at 18:30:15.
 
-- messages:
+- chat:
     - role: system
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
@@ -722,7 +722,7 @@
     - role: model
       content: Weight of 90.0 kg, with a corresponding BMI of 29.05, were recorded for Iulian Rotaru on January 24, 1995 at 16:20:10.
 
-- messages:
+- chat:
     - role: system
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
@@ -735,7 +735,7 @@
     - role: model
       content: Weight of 90.0 kg, with a corresponding BMI of 29.05, were recorded for Iulian Rotaru on May 14, 2025 at 14:20:10.
 
-- messages:
+- chat:
     - role: system
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
@@ -747,7 +747,7 @@
     - role: model
       content: Glucose level of 101 mg/dL was recorded for Mioara Gogălniceanu on February 28, 2014 at 13:53:55.
 
-- messages:
+- chat:
     - role: system
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
@@ -759,7 +759,7 @@
     - role: model
       content: Glucose level of 130 mg/dL was recorded for Fântânaru Eugenia on November 10, 2025 at 13:53:55.
 
-- messages:
+- chat:
     - role: system
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
@@ -771,7 +771,7 @@
     - role: model
       content: I cannot save your glucose level due to database unresponsiveness. Would you like me to run a database diagnostic?
 
-- messages:
+- chat:
     - role: system
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
@@ -783,7 +783,7 @@
     - role: model
       content: Height of 165 cm has been recorded for Păduraru Mihaela on August 14, 2002 at 12:23:45.
 
-- messages:
+- chat:
     - role: system
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
@@ -798,7 +798,7 @@
 # ---------------------------------------------------------
 # HERA - HOME ENVIRONMENT REGULATED AUTOMATICALLY
 
-- messages:
+- chat:
     - role: system
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
@@ -810,7 +810,7 @@
     - role: model
       content: The living room sensor is active. Its current temperature reading is 21.13 °C.
 
-- messages:
+- chat:
     - role: system
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
@@ -822,7 +822,7 @@
     - role: model
       content: The living room sensor is active. Its hostname is thermostat-sensor.local, IPv4 address is 192.168.0.90, the diagnose port is 80, and the current temperature reading is 21.13 °C.
 
-- messages:
+- chat:
     - role: system
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
@@ -834,7 +834,7 @@
     - role: model
       content: Central heating has been turned on. The setpoint is 30.00 °C, and the current temperature is 21.13 °C.
 
-- messages:
+- chat:
     - role: system
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
@@ -846,7 +846,7 @@
     - role: model
       content: The central heating controller is not responding. Would you like me to run a device diagnostic?
 
-- messages:
+- chat:
     - role: system
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
@@ -858,7 +858,7 @@
     - role: model
       content: Yes, central heating is running.
 
-- messages:
+- chat:
     - role: system
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
@@ -870,7 +870,7 @@
     - role: model
       content: The central heating controller is not responding. Would you like me to run a device diagnostic?
 
-- messages:
+- chat:
     - role: system
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
@@ -882,7 +882,7 @@
     - role: model
       content: No, the central heating is not running.
 
-- messages:
+- chat:
     - role: system
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
@@ -894,7 +894,7 @@
     - role: model
       content: No, the central heating is not running.
 
-- messages:
+- chat:
     - role: system
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
@@ -906,7 +906,7 @@
     - role: model
       content: Yes, the heater is active.
 
-- messages:
+- chat:
     - role: system
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
@@ -918,7 +918,7 @@
     - role: model
       content: Heating has been stopped. The setpoint is now 10.00 °C, and the current temperature is 21.63 °C.
 
-- messages:
+- chat:
     - role: system
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
@@ -930,7 +930,7 @@
     - role: model
       content: The central heating controller is currently not responding. Would you like me to run a device diagnostic?
 
-- messages:
+- chat:
     - role: system
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
@@ -942,7 +942,7 @@
     - role: model
       content: The central heating is turned off.
 
-- messages:
+- chat:
     - role: system
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
@@ -954,7 +954,7 @@
     - role: model
       content: The central heating is currently off. The setpoint is 10.0 °C, with a hysteresis of 0.00, and the current room temperature is 21.13 °C.
 
-- messages:
+- chat:
     - role: system
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
@@ -966,7 +966,7 @@
     - role: model
       content: The central heating is currently on. The setpoint is 30.00 °C, with a hysteresis of 0.00. The current temperature is 20.50 °C.
 
-- messages:
+- chat:
     - role: system
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
@@ -978,7 +978,7 @@
     - role: model
       content: The DHT Sensor in the kitchen is active. Its hostname is dht-sensor.local, and its IPv4 address is 192.168.0.73. It's currently reporting a humidity of 95.0 %.
 
-- messages:
+- chat:
     - role: system
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
@@ -997,7 +997,7 @@
         *   **Kitchen - DHT Sensor**: Humidity: 15.70 °C
         *   **Living Room - Thermostat Sensor**: Temperature: 20.50 °C
 
-- messages:
+- chat:
     - role: system
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
@@ -1016,7 +1016,7 @@
         *   **Kitchen - DHT Sensor**: Temperature 17.50 °C
         *   **Living Room - Thermostat Sensor**: Temperature 20.38 °C
 
-- messages:
+- chat:
     - role: system
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
@@ -1037,7 +1037,7 @@
         | Kitchen | DHT Sensor | Temperature | 47.60 °C |
         | Living Room | Thermostat Sensor | Temperature | 22.40 °C |
 
-- messages:
+- chat:
     - role: system
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
@@ -1058,7 +1058,7 @@
         | Kitchen | DHT Sensor | Temperature | 17.50 °C |
         | Living Room | Thermostat Sensor | Temperature | 20.38 °C |
 
-- messages:
+- chat:
     - role: system
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
@@ -1070,7 +1070,7 @@
     - role: model
       content: The temperature in the living room is 21.15 °C.
 
-- messages:
+- chat:
     - role: system
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
@@ -1082,7 +1082,7 @@
     - role: model
       content: The living room temperature sensor is not responding. Would you like me to run a device diagnostic?
 
-- messages:
+- chat:
     - role: system
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
@@ -1094,7 +1094,7 @@
     - role: model
       content: The current temperature in the bedroom is 32.15 °C.
 
-- messages:
+- chat:
     - role: system
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
@@ -1106,7 +1106,7 @@
     - role: model
       content: The living room temperature sensor is not responding. Would you like me to run a device diagnostic?
 
-- messages:
+- chat:
     - role: system
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
@@ -1118,7 +1118,7 @@
     - role: model
       content: The temperature in the kitchen is 17.50 °C.
 
-- messages:
+- chat:
     - role: system
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
@@ -1130,7 +1130,7 @@
     - role: model
       content: The humidity in the kitchen is 36.70 %.
 
-- messages:
+- chat:
     - role: system
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
@@ -1145,7 +1145,7 @@
 # ---------------------------------------------------------
 # CURRENT WEATHER
 
-- messages:
+- chat:
     - role: system
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
@@ -1157,7 +1157,7 @@
     - role: model
       content: The weather is currently mainly clear. The temperature is -1.2°C, with a wind speed of 14.7 km/h and a relative humidity of 58.0%. There is no precipitation.
 
-- messages:
+- chat:
     - role: system
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
@@ -1169,7 +1169,7 @@
     - role: model
       content: The weather is currently mainly clear. The temperature is -1.2°C, with a wind speed of 14.7 km/h and a relative humidity of 58.0%. There is no precipitation.
 
-- messages:
+- chat:
     - role: system
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
@@ -1181,7 +1181,7 @@
     - role: model
       content: The current wind speed is 12.2 km/h.
 
-- messages:
+- chat:
     - role: system
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
@@ -1196,7 +1196,7 @@
 # ---------------------------------------------------------
 # JARVIS SERVER
 
-- messages:
+- chat:
     - role: system
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
@@ -1208,7 +1208,7 @@
     - role: model
       content: Systems online. JARVIS server and SLM service are active.
 
-- messages:
+- chat:
     - role: system
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
@@ -1220,7 +1220,7 @@
     - role: model
       content: Systems online. JARVIS server and SLM service are active.
 
-- messages:
+- chat:
     - role: system
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
@@ -1232,7 +1232,7 @@
     - role: model
       content: JARVIS server is online but SLM service does not respond.
 
-- messages:
+- chat:
     - role: system
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
@@ -1244,7 +1244,7 @@
     - role: model
       content: JARVIS online. Both the JARVIS server and SLM service are currently active.
 
-- messages:
+- chat:
     - role: system
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user

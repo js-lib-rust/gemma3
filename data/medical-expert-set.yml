@@ -1,4 +1,4 @@
-- messages:
+- chat:
     - role: system
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
@@ -18,7 +18,7 @@
 
         It might be worth discussing this with a healthcare professional to assess your overall health and consider any necessary lifestyle adjustments.
 
-- messages:
+- chat:
     - role: system
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
@@ -28,7 +28,7 @@
     - role: model
       content: Your body temperature of 38.2 °C is slightly elevated. A normal body temperature typically ranges from 36.5 °C to 37.5 °C. While not drastically high, it suggests you might have a mild fever. I recommend monitoring it and considering rest and hydration. If it persists or worsens, consulting a medical professional would be prudent.
 
-- messages:
+- chat:
     - role: system
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
@@ -38,7 +38,7 @@
     - role: model
       content: Your body temperature of 36.8 °C is within the normal range (36.5 °C to 37.5 °C). It appears to be perfectly healthy.
 
-- messages:
+- chat:
     - role: system
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
@@ -58,7 +58,7 @@
 
         Consider discussing this with a healthcare professional for a health assessment and potential lifestyle adjustments.
 
-- messages:
+- chat:
     - role: system
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
@@ -76,7 +76,7 @@
 
         I also noticed your BMI is currently **28.9**, which falls into the overweight category. On the positive side, your heart rate and hydration levels are excellent. Would you like some tips on managing your blood pressure today?
 
-- messages:
+- chat:
     - role: system
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
@@ -86,7 +86,7 @@
     - role: model
       content: Your body temperature is 34.2 °C. This is a bit low. The average normal body temperature is generally considered to be around 37 °C. I recommend monitoring it and consulting a medical professional if it persists or is accompanied by other symptoms.
 
-- messages:
+- chat:
     - role: system
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
@@ -97,7 +97,7 @@
     - role: model
       content: Your pulse pressure measurements were 44 mmHg at 09:12:19 and 39 mmHg at 13:52:45. A normal pulse pressure typically falls between 30 and 60 mmHg. Both of your recorded values are within that range.
 
-- messages:
+- chat:
     - role: system
       content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user

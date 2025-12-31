@@ -9,27 +9,71 @@ from transformers import (
 )
 from datasets import Dataset
 import os
+import argparse
+import util
+
+
+def tokenizer_function(examples):
+    tokenized = tokenizer(
+        examples['text'],
+        max_length=args.max_length,
+        truncation=True,
+        padding="max_length",
+        return_tensors=None,
+    )
+    return tokenized
+
+
+def prepare_dataset(examples):
+    processed_examples = []
+    for example in examples:
+        if 'chat' in example:
+            text = tokenizer.apply_chat_template(example['chat'], tokenize=False)
+            processed_examples.append({"text": text})
+        else:
+            print(f"Warning: Example missing 'messages' key: {example.keys()}")
+    return processed_examples
+
+
+# ---------------------------------------------------------
+
+parser = argparse.ArgumentParser()
+parser.add_argument("--use-tuned-model", action="store_true")
+parser.add_argument("--files", type=util.split_by_comma, action="store")
+parser.add_argument("--max-length", type=int, action="store", default="800")
+parser.add_argument("--epochs", type=int, action="store", default="4")
+parser.add_argument("--train-batch", type=int, action="store", default="2")
+parser.add_argument("--learning-rate", type=float, action="store", default="5e-6")
+parser.add_argument("--wakeup", type=float, action="store", default="0.05")
+parser.add_argument("--use-mixed-precision", action="store_true")
+args = parser.parse_args()
 
 MODEL_DIR = os.environ.get("AI_MODEL_DIR")
 MODEL_NAME = MODEL_DIR + "/hugging-face/model/gemma-3-270m-it"
-# MODEL_NAME = "./formatter-270m"
 OUTPUT_DIR = "./formatter-270m"
-YAML_FILE = "data/formatter-set.yml"
-
+DATA_SET = "formatter-set"
 DTYPE = torch.float32
-MAX_LENGTH = 1300
 print()
 
 device = "cuda:0" if torch.cuda.is_available() else "cpu"
-print(f"device: {device}")
+model_path = OUTPUT_DIR if args.use_tuned_model else MODEL_NAME
+print(f"Use device {device}")
+print(f"Use model {model_path}")
+print(f"Use max length {args.max_length}")
+print(f"Use epochs {args.epochs}")
+print(f"Use train batch size {args.train_batch}")
+print(f"Use learning rate {args.learning_rate}")
+print(f"Use wakeup ratio {args.wakeup}")
+print(f"Use mixed precision {args.use_mixed_precision}")
+print()
 
-print(f"Loading model {MODEL_NAME}...")
-model = AutoModelForCausalLM.from_pretrained(MODEL_NAME, dtype=DTYPE, device_map=device)
+print(f"Loading model {model_path}...")
+model = AutoModelForCausalLM.from_pretrained(model_path, dtype=DTYPE, device_map=device)
 print(f"Model loaded on {device}")
 print(f"Model parameters: {model.num_parameters():,}")
 
-print(f"Loading tokenizer from: {MODEL_NAME}")
-tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
+print(f"Loading tokenizer from: {model_path}")
+tokenizer = AutoTokenizer.from_pretrained(model_path)
 if tokenizer.pad_token is None:
     tokenizer.pad_token = tokenizer.eos_token
 tokenizer.padding_side = "right"
@@ -43,92 +87,55 @@ if hasattr(model, 'generation_config'):
     model.generation_config.bos_token_id = tokenizer.bos_token_id
 model.resize_token_embeddings(len(tokenizer))
 
-
-def load_yaml_data(file_path):
-    """Load training data from YAML file"""
-    with open(file_path, 'r', encoding='utf-8') as f:
-        data = yaml.safe_load(f)
-    return data['examples'] if 'examples' in data else data
-
-
-print(f"Loading training data from: {YAML_FILE}")
-yaml_data = load_yaml_data(YAML_FILE)
-print(f"Loaded {len(yaml_data)} examples")
-
-
-def prepare_dataset(examples):
-    """Convert YAML examples to training format using chat template"""
-    processed_examples = []
-    for example in examples:
-        if 'messages' in example:
-            text = tokenizer.apply_chat_template(example['messages'], tokenize=False)
-            processed_examples.append({"text": text})
-        else:
-            print(f"Warning: Example missing 'messages' key: {example.keys()}")
-    return processed_examples
-
+data_files = args.files if args.files else [DATA_SET]
+data_examples = []
+for data_file in data_files:
+    data_file = f"data/{data_file}.yml"
+    with open(data_file, 'r', encoding='UTF-8') as file:
+        file_examples = yaml.safe_load(file)
+        print(f"Loaded {len(file_examples)} tests from the file `{os.path.abspath(data_file)}`.")
+        data_examples += file_examples
 
 print("Preparing dataset...")
-processed_data = prepare_dataset(yaml_data)
+processed_data = prepare_dataset(data_examples)
 print(f"Processed {len(processed_data)} examples")
 
 dataset = Dataset.from_list(processed_data)
-train_test_split = dataset.train_test_split(test_size=0.12, seed=42)
-train_dataset = train_test_split["train"]
-eval_dataset = train_test_split["test"]
-
+if len(dataset) > 20:
+    dataset_split = dataset.train_test_split(test_size=0.1, seed=42)
+    train_dataset = dataset_split["train"]
+    validation_dataset = dataset_split["test"]
+else:
+    train_dataset = dataset
+    validation_dataset = dataset
 print(f"Dataset split:")
-print(f"  Training examples: {len(train_dataset)}")
-print(f"  Validation examples: {len(eval_dataset)}")
-
-
-def tokenizer_function(examples):
-    tokenized = tokenizer(
-        examples['text'],
-        max_length=MAX_LENGTH,
-        truncation=True,
-        padding="max_length",
-        return_tensors=None,
-    )
-    return tokenized
-
+print(f"- Training examples: {len(train_dataset)}")
+print(f"- Validation examples: {len(validation_dataset)}")
 
 print("Tokenizing datasets...")
-tokenized_train = train_dataset.map(tokenizer_function, batched=True)
-tokenized_eval = eval_dataset.map(tokenizer_function, batched=True)
-
-tokenized_train = tokenized_train.map(
-    lambda examples: {"labels": examples["input_ids"].copy()},
-    batched=True
-)
-tokenized_eval = tokenized_eval.map(
-    lambda examples: {"labels": examples["input_ids"].copy()},
-    batched=True
-)
-
-print(f"tokenized_train: {tokenized_train}")
-# print(f"input_ids: {tokenized_train['input_ids']}")
-# print(f"attention_mask: {tokenized_train['attention_mask']}")
-# print(f"labels: {tokenized_train['labels']}")
-print(f"Tokenized train size: {len(tokenized_train)}")
-print(f"Tokenized eval size: {len(tokenized_eval)}")
+train_tokens = train_dataset.map(tokenizer_function, batched=True)
+train_tokens = train_tokens.map(lambda examples: {"labels": examples["input_ids"].copy()}, batched=True)
+validation_tokens = validation_dataset.map(tokenizer_function, batched=True)
+validation_tokens = validation_tokens.map(lambda examples: {"labels": examples["input_ids"].copy()}, batched=True)
+print(f"Tokenized train size: {len(train_tokens)}")
+print(f"Tokenized validation size: {len(validation_tokens)}")
 
 data_collator = DataCollatorForLanguageModeling(tokenizer=tokenizer, mlm=False)
 
 training_args = TrainingArguments(
     output_dir=OUTPUT_DIR,
-    num_train_epochs=4,
-    per_device_train_batch_size=1,
+    num_train_epochs=args.epochs,
+    per_device_train_batch_size=args.train_batch,
     per_device_eval_batch_size=1,
     gradient_accumulation_steps=1,
-    warmup_ratio=0.05,
-    learning_rate=1e-5,
+    warmup_ratio=args.wakeup,
+    learning_rate=args.learning_rate,
     lr_scheduler_type="cosine",
     logging_steps=5,
     save_steps=20,
     eval_steps=10,
     eval_strategy="steps",
-    fp16=torch.cuda.is_available(),
+    fp16=args.use_mixed_precision,
     gradient_checkpointing=False,
     optim="adamw_torch",
     save_total_limit=2,
@@ -144,8 +151,8 @@ training_args = TrainingArguments(
 trainer = Trainer(
     model=model,
     args=training_args,
-    train_dataset=tokenized_train,
-    eval_dataset=tokenized_eval,
+    train_dataset=train_tokens,
+    eval_dataset=validation_tokens,
     data_collator=data_collator,
     processing_class=tokenizer,
 )

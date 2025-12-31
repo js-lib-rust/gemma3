@@ -1,85 +1,85 @@
 # ---------------------------------------------------------
 # DEFINITIONS
 
-- messages:
+- chat:
     - role: user
       content: How is oxygen_saturation parameter displayed?
     - role: model
       content: Parameter oxygen_saturation is displayed as 'Oxygen Saturation Level (SpO2)'. It is expressed as percent.
 
-- messages:
+- chat:
     - role: user
       content: What is the function parameter for 'Oxygen Saturation Level (SpO2)'?
     - role: model
       content: The function parameter for 'Oxygen Saturation Level (SpO2)' is oxygen_saturation.
 
-- messages:
+- chat:
     - role: user
       content: What means heater?
     - role: model
       content: Heater is a shorthand for the central heating controller.
 
-- messages:
+- chat:
     - role: user
       content: What does spo2 stand for?
     - role: model
       content: The acronym spo2 stand for Oxygen Saturation Level.
 
-- messages:
+- chat:
     - role: user
       content: What means spo2?
     - role: model
       content: SpO2 means oxygen saturation, representing the percentage of oxygen-carrying hemoglobin in your blood.
 
-- messages:
+- chat:
     - role: user
       content: What is the acronym for Oxygen Saturation Level?
     - role: model
       content: The acronym for Oxygen Saturation Level is SpO2.
 
-- messages:
+- chat:
     - role: user
       content: How is body_max_index parameter displayed?
     - role: model
       content: Parameter body_max_index is displayed as 'Body Mass Index (BMI)'. It is a scalar value and has no measurement units.
 
-- messages:
+- chat:
     - role: user
       content: What is the function parameter for 'Body Mass Index (BMI)'?
     - role: model
       content: The function parameter for 'Body Mass Index (BMI)' is body_max_index.
 
-- messages:
+- chat:
     - role: user
       content: How is intelligence_quotient parameter displayed?
     - role: model
       content: Parameter intelligence_quotient is displayed as 'Intelligence QuotientIndex (IQ)'. It is a scalar value.
 
-- messages:
+- chat:
     - role: user
       content: What is the function parameter for 'Intelligence QuotientIndex (IQ)'?
     - role: model
       content: The function parameter for 'Intelligence QuotientIndex (IQ)' is intelligence_quotient.
 
-- messages:
+- chat:
     - role: user
       content: How is glucose_level parameter displayed?
     - role: model
       content: Parameter glucose_level is displayed as 'Glucose Level' or 'Blood Sugar'. Is is measured in mg/dL.
 
-- messages:
+- chat:
     - role: user
       content: What is the function parameter for 'Glucose Level'?
     - role: model
       content: The function parameter for 'Glucose Level' is glucose_level.
 
-- messages:
+- chat:
     - role: user
       content: What is the function parameter for 'Blood Sugar'?
     - role: model
       content: The function parameter for 'Blood Sugar' is glucose_level.
 
-- messages:
+- chat:
     - role: user
       content: What heart measurements are typically taken?
     - role: model
@@ -91,7 +91,7 @@
         * **Pulse Pressure**: measured in mmHg, is the difference between systolic and diastolic pressures
         * **Heart Rate**, also known as **Pulse**: measured in bpm
 
-- messages:
+- chat:
     - role: user
       content: What blood measurements are typically taken?
     - role: model
@@ -101,7 +101,7 @@
         * **Glucose Level**, also known as **Blood Sugar**: measured in mg/dL
         * **Oxygen Saturation Level (SpO2)**: expressed as %
 
-- messages:
+- chat:
     - role: user
       content: What body measurements are typically taken?
     - role: model
@@ -113,7 +113,7 @@
         * **Body Mass Index (BMI)**: scalar value without measurement unit
         * **Body Temperature**: measured in °C
 
-- messages:
+- chat:
     - role: user
       content: What neural measurements are typically taken?
     - role: model
@@ -122,7 +122,7 @@
         
         * **Intelligence Quotient (IQ)**: scalar value without measurement unit
 
-- messages:
+- chat:
     - role: user
       content: What is a health measurement structure?
     - role: model
@@ -145,7 +145,7 @@
         }
         ```
 
-- messages:
+- chat:
     - role: user
       content: What is a heating controller structure?
     - role: model
@@ -168,7 +168,7 @@
         }
         ```
 
-- messages:
+- chat:
     - role: user
       content: What is a current weather structure?
     - role: model
@@ -197,7 +197,7 @@
         }
         ```
 
-- messages:
+- chat:
     - role: user
       content: What is a sensor reading structure?
     - role: model
@@ -220,7 +220,7 @@
         }
         ```
 
-- messages:
+- chat:
     - role: user
       content: What is a device diagnose structure?
     - role: model

@@ -8,21 +8,31 @@ import evaluate
 from transformers import AutoTokenizer, AutoModelForCausalLM
 import util
 
+BASE_MODEL = util.get_model_path("gemma-3-270m-it")
 EVAL_MODEL = "formatter-270m"
-# EVAL_MODEL = util.get_model_path("gemma-3-270m-it")
-
-DATA_FILE = "data/formatter-eval.yml"
+DATA_FILE = "formatter-eval"
 ROUGE = evaluate.load("rouge")
 BERT = evaluate.load("bertscore")
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--verbose", action="store_true")
 parser.add_argument("--list", action="store_true")
+parser.add_argument("--use-base-model", action="store_true")
+parser.add_argument("--files", type=util.split_by_comma, action="store")
 parser.add_argument("tests", type=int, nargs='*', help="tests number to execute")
 args = parser.parse_args()
 
-with open(DATA_FILE, 'r', encoding='UTF-8') as file:
-    dataset = yaml.safe_load(file)
+model_path = BASE_MODEL if args.use_base_model else EVAL_MODEL
+print(f"Use model `{model_path}`.")
+
+data_files = args.files if args.files else [DATA_FILE]
+dataset = []
+for data_file in data_files:
+    data_file = f"data/{data_file}.yml"
+    with open(data_file, 'r', encoding='UTF-8') as file:
+        fileset = yaml.safe_load(file)
+        print(f"Loaded {len(fileset)} tests from the file `{os.path.abspath(data_file)}`.")
+        dataset += fileset
 
 if args.list:
     for index, datapoint in enumerate(dataset):
@@ -31,12 +41,13 @@ if args.list:
 
 if args.tests:
     dataset = [dataset[test - 1] for test in args.tests]
-print(f"Loaded {len(dataset)} tests from the file `{os.path.abspath(DATA_FILE)}`.")
+print()
+print(f"Running {len(dataset)} tests ...")
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
-eval_tokenizer = AutoTokenizer.from_pretrained(EVAL_MODEL)
+eval_tokenizer = AutoTokenizer.from_pretrained(model_path)
 eval_tokenizer.pad_token = eval_tokenizer.eos_token
-eval_model = AutoModelForCausalLM.from_pretrained(EVAL_MODEL, dtype=torch.bfloat16, device_map=device)
+eval_model = AutoModelForCausalLM.from_pretrained(model_path, dtype=torch.bfloat16, device_map=device)
 eval_model.eval()
 
 config = {

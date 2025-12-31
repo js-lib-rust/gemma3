@@ -1,4 +1,6 @@
 - chat:
+    - role: system
+      content: You are a weather question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: What is a daily forecast structure?
     - role: model
@@ -31,6 +33,8 @@
         }
 
 - chat:
+    - role: system
+      content: You are a weather question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: What is a hourly forecast structure?
     - role: model
@@ -59,7 +63,7 @@
 
 - chat:
     - role: system
-      content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
+      content: You are a weather question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
         Function response is a list daily forecast structures:  
@@ -90,7 +94,7 @@
 
 - chat:
     - role: system
-      content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
+      content: You are a weather question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
         Function response is a list of daily forecast structures: 
@@ -115,7 +119,7 @@
 
 - chat:
     - role: system
-      content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
+      content: You are a weather question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
         Function response is a list of daily forecast structures: 
@@ -138,7 +142,7 @@
 
 - chat:
     - role: system
-      content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
+      content: You are a weather question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
         Function response is a list of daily forecast structures: 
@@ -161,7 +165,7 @@
 
 - chat:
     - role: system
-      content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
+      content: You are a weather question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
         Function response is a list of hourly forecast structures: 
@@ -204,7 +208,7 @@
 
 - chat:
     - role: system
-      content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
+      content: You are a weather question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
         Function response is a list of hourly forecast structures: 
@@ -227,7 +231,7 @@
 
 - chat:
     - role: system
-      content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
+      content: You are a weather question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
         Function response is a single hourly forecast structure: 
@@ -246,7 +250,7 @@
 
 - chat:
     - role: system
-      content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
+      content: You are a weather question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
         Function response is a list of hourly forecast structures: 

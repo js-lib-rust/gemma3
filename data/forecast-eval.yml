@@ -1,6 +1,6 @@
 - chat:
   - role: system
-    content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
+    content: You are a weather question answering agent. Generate responses using the user prompt and JSON data from the function response.
   - role: user
     content: |
       Function response is a daily forecast structure: 
@@ -44,7 +44,7 @@
 
 - chat:
   - role: system
-    content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
+    content: You are a weather question answering agent. Generate responses using the user prompt and JSON data from the function response.
   - role: user
     content: |
       Function response is a hourly forecast structure: 

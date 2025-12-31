@@ -2,84 +2,112 @@
 # DEFINITIONS
 
 - chat:
+    - role: system
+      content: You are a medical question answering agent.
     - role: user
       content: How is oxygen_saturation parameter displayed?
     - role: model
       content: Parameter oxygen_saturation is displayed as 'Oxygen Saturation Level (SpO2)'. It is expressed as percent.
 
 - chat:
+    - role: system
+      content: You are a medical question answering agent.
     - role: user
       content: What is the function parameter for 'Oxygen Saturation Level (SpO2)'?
     - role: model
       content: The function parameter for 'Oxygen Saturation Level (SpO2)' is oxygen_saturation.
 
 - chat:
+    - role: system
+      content: You are a medical question answering agent.
     - role: user
       content: What means heater?
     - role: model
       content: Heater is a shorthand for the central heating controller.
 
 - chat:
+    - role: system
+      content: You are a medical question answering agent.
     - role: user
       content: What does spo2 stand for?
     - role: model
-      content: The acronym spo2 stand for Oxygen Saturation Level.
+      content: The acronym spo2 stand for Oxygen Saturation Level. It is a blood related measurement.
 
 - chat:
+    - role: system
+      content: You are a medical question answering agent.
     - role: user
       content: What means spo2?
     - role: model
       content: SpO2 means oxygen saturation, representing the percentage of oxygen-carrying hemoglobin in your blood.
 
 - chat:
+    - role: system
+      content: You are a medical question answering agent.
     - role: user
       content: What is the acronym for Oxygen Saturation Level?
     - role: model
       content: The acronym for Oxygen Saturation Level is SpO2.
 
 - chat:
+    - role: system
+      content: You are a medical question answering agent.
     - role: user
       content: How is body_max_index parameter displayed?
     - role: model
       content: Parameter body_max_index is displayed as 'Body Mass Index (BMI)'. It is a scalar value and has no measurement units.
 
 - chat:
+    - role: system
+      content: You are a medical question answering agent.
     - role: user
       content: What is the function parameter for 'Body Mass Index (BMI)'?
     - role: model
       content: The function parameter for 'Body Mass Index (BMI)' is body_max_index.
 
 - chat:
+    - role: system
+      content: You are a medical question answering agent.
     - role: user
       content: How is intelligence_quotient parameter displayed?
     - role: model
       content: Parameter intelligence_quotient is displayed as 'Intelligence QuotientIndex (IQ)'. It is a scalar value.
 
 - chat:
+    - role: system
+      content: You are a medical question answering agent.
     - role: user
       content: What is the function parameter for 'Intelligence QuotientIndex (IQ)'?
     - role: model
       content: The function parameter for 'Intelligence QuotientIndex (IQ)' is intelligence_quotient.
 
 - chat:
+    - role: system
+      content: You are a medical question answering agent.
     - role: user
       content: How is glucose_level parameter displayed?
     - role: model
       content: Parameter glucose_level is displayed as 'Glucose Level' or 'Blood Sugar'. Is is measured in mg/dL.
 
 - chat:
+    - role: system
+      content: You are a medical question answering agent.
     - role: user
       content: What is the function parameter for 'Glucose Level'?
     - role: model
       content: The function parameter for 'Glucose Level' is glucose_level.
 
 - chat:
+    - role: system
+      content: You are a medical question answering agent.
     - role: user
       content: What is the function parameter for 'Blood Sugar'?
     - role: model
       content: The function parameter for 'Blood Sugar' is glucose_level.
 
 - chat:
+    - role: system
+      content: You are a medical question answering agent.
     - role: user
       content: What heart measurements are typically taken?
     - role: model
@@ -92,6 +120,8 @@
         * **Heart Rate**, also known as **Pulse**: measured in bpm
 
 - chat:
+    - role: system
+      content: You are a medical question answering agent.
     - role: user
       content: What blood measurements are typically taken?
     - role: model
@@ -102,6 +132,8 @@
         * **Oxygen Saturation Level (SpO2)**: expressed as %
 
 - chat:
+    - role: system
+      content: You are a medical question answering agent.
     - role: user
       content: What body measurements are typically taken?
     - role: model
@@ -114,6 +146,8 @@
         * **Body Temperature**: measured in °C
 
 - chat:
+    - role: system
+      content: You are a medical question answering agent.
     - role: user
       content: What neural measurements are typically taken?
     - role: model
@@ -123,6 +157,8 @@
         * **Intelligence Quotient (IQ)**: scalar value without measurement unit
 
 - chat:
+    - role: system
+      content: You are a medical question answering agent.
     - role: user
       content: What is a health measurement structure?
     - role: model
@@ -146,6 +182,8 @@
         ```
 
 - chat:
+    - role: system
+      content: You are a home automation question answering agent.
     - role: user
       content: What is a heating controller structure?
     - role: model
@@ -169,6 +207,8 @@
         ```
 
 - chat:
+    - role: system
+      content: You are a weather question answering agent.
     - role: user
       content: What is a current weather structure?
     - role: model
@@ -198,6 +238,8 @@
         ```
 
 - chat:
+    - role: system
+      content: You are a home automation question answering agent.
     - role: user
       content: What is a sensor reading structure?
     - role: model
@@ -221,6 +263,8 @@
         ```
 
 - chat:
+    - role: system
+      content: You are a home automation question answering agent.
     - role: user
       content: What is a device diagnose structure?
     - role: model

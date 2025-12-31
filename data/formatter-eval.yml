@@ -1,6 +1,6 @@
 - chat:
   - role: system
-    content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
+    content: You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
   - role: user
     content: |
       Function response is a list of health measurement structures: 
@@ -36,7 +36,7 @@
 
 - chat:
   - role: system
-    content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
+    content: You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
   - role: user
     content: |
       Function response is a list of health measurement structures: 
@@ -70,7 +70,7 @@
 
 - chat:
   - role: system
-    content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
+    content: You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
   - role: user
     content: |
       Function response is a list of health measurement structures: 
@@ -92,7 +92,7 @@
 
 - chat:
   - role: system
-    content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
+    content: You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
   - role: user
     content: |
       Function response is a list of health measurement structures: 
@@ -114,7 +114,7 @@
 
 - chat:
   - role: system
-    content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
+    content: You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
   - role: user
     content: |
       Function response is a list of health measurement structures: 
@@ -136,7 +136,7 @@
 
 - chat:
   - role: system
-    content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
+    content: You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
   - role: user
     content: |
       Function response is a list of health measurement structures: 
@@ -158,7 +158,7 @@
 
 - chat:
   - role: system
-    content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
+    content: You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
   - role: user
     content: |
       Function response is a list of health measurement structures: 
@@ -177,7 +177,7 @@
 - chat:
   - role: system
     content: |
-      You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
+      You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
   - role: user
     content: |
       Function response is a list of health measurement structures: 
@@ -189,7 +189,7 @@
 
       User Prompt: Display a table with measurements from yesterday medical readings.
   ground_truth: |
-    Here are your health measurements as of yesterday, January 20, 2026:
+    Here are your medical measurements as of yesterday, January 20, 2026:
 
     | Time | Measurement | Value |
     | :--- | :--- | :--- |
@@ -203,7 +203,7 @@
 
 - chat:
   - role: system
-    content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
+    content: You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
   - role: user
     content: |
       Function response is a list of health measurement structures: 
@@ -233,13 +233,13 @@
     | 08:47:06 | Heart Rate | 72 bpm |
     | 12:15:45 | Glucose Level | 120 mg/dL |
     | 09:48:58 | Body Temperature | 35.40 °C |
-    | 09:48:58 | Intelligence Quotient IQ) | 105 |
+    | 09:48:58 | Intelligence Quotient (IQ) | 105 |
 
     Would you like to create a medical report?
 
 - chat:
   - role: system
-    content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
+    content: You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
   - role: user
     content: |
       Function response is a list of health measurement structures: 
@@ -254,7 +254,7 @@
 
 - chat:
   - role: system
-    content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
+    content: You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
   - role: user
     content: |
       Function response is an error message: 
@@ -265,7 +265,7 @@
 
 - chat:
   - role: system
-    content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
+    content: You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
   - role: user
     content: |
       Function response is a single health measurement structure: 
@@ -276,7 +276,7 @@
 
 - chat:
   - role: system
-    content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
+    content: You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
   - role: user
     content: |
       Function response is a single health measurement structure: 
@@ -287,7 +287,7 @@
 
 - chat:
   - role: system
-    content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
+    content: You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
   - role: user
     content: |
       Function response is a single health measurement structure: 
@@ -298,7 +298,7 @@
 
 - chat:
   - role: system
-    content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
+    content: You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
   - role: user
     content: |
       Function response is a single health measurement structure: 
@@ -309,7 +309,7 @@
 
 - chat:
   - role: system
-    content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
+    content: You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
   - role: user
     content: |
       Function response is an error message: 
@@ -331,7 +331,7 @@
 
 - chat:
   - role: system
-    content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
+    content: You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
   - role: user
     content: |
       Function response is a single health measurement structure: 
@@ -342,7 +342,7 @@
 
 - chat:
   - role: system
-    content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
+    content: You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
   - role: user
     content: |
       Function response is a single health measurement structure: 
@@ -353,7 +353,7 @@
 
 - chat:
   - role: system
-    content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
+    content: You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
   - role: user
     content: |
       Function response is an error message: 
@@ -364,7 +364,7 @@
 
 - chat:
   - role: system
-    content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
+    content: You are a JARVIS server question answering agent. Generate responses using the user prompt and JSON data from the function response.
   - role: user
     content: |
       Function Response: 
@@ -375,7 +375,7 @@
 
 - chat:
   - role: system
-    content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
+    content: You are a home automation question answering agent. Generate responses using the user prompt and JSON data from the function response.
   - role: user
     content: |
       Function response is a single device diagnose structure: 
@@ -386,7 +386,7 @@
 
 - chat:
   - role: system
-    content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
+    content: You are a home automation question answering agent. Generate responses using the user prompt and JSON data from the function response.
   - role: user
     content: |
       Function response is a single heating controller structure:
@@ -397,7 +397,7 @@
 
 - chat:
   - role: system
-    content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
+    content: You are a home automation question answering agent. Generate responses using the user prompt and JSON data from the function response.
   - role: user
     content: |
       Function response is an error message: 
@@ -409,7 +409,7 @@
 - chat:
   - role: system
     content: |
-      You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
+      You are a home automation question answering agent. Generate responses using the user prompt and JSON data from the function response.
   - role: user
     content: |
       Function response is a single heating controller structure:
@@ -420,7 +420,7 @@
 
 - chat:
   - role: system
-    content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
+    content: You are a home automation question answering agent. Generate responses using the user prompt and JSON data from the function response.
   - role: user
     content: |
       Function response is an error message: 
@@ -432,7 +432,7 @@
 - chat:
   - role: system
     content: |
-      You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
+      You are a home automation question answering agent. Generate responses using the user prompt and JSON data from the function response.
   - role: user
     content: |
       Function response is a single heating controller structure:
@@ -444,7 +444,7 @@
 - chat:
   - role: system
     content: |
-      You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
+      You are a home automation question answering agent. Generate responses using the user prompt and JSON data from the function response.
   - role: user
     content: |
       Function response is a single heating controller structure:
@@ -455,7 +455,7 @@
 
 - chat:
   - role: system
-    content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
+    content: You are a home automation question answering agent. Generate responses using the user prompt and JSON data from the function response.
   - role: user
     content: |
       Function response is a list of sensor reading structures: 
@@ -473,7 +473,7 @@
 
 - chat:
   - role: system
-    content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
+    content: You are a home automation question answering agent. Generate responses using the user prompt and JSON data from the function response.
   - role: user
     content: |
       Function response is a list of sensor reading structures: 
@@ -493,7 +493,7 @@
 
 - chat:
   - role: system
-    content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
+    content: You are a home automation question answering agent. Generate responses using the user prompt and JSON data from the function response.
   - role: user
     content: |
       Function response is a single sensor reading structure: 
@@ -504,7 +504,7 @@
 
 - chat:
   - role: system
-    content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
+    content: You are a weather question answering agent. Generate responses using the user prompt and JSON data from the function response.
   - role: user
     content: |
       Function response is a single current weather structure: 

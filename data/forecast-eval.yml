@@ -23,7 +23,7 @@
   ground_truth: |
     Here is the weather forecast for the next two weeks:
   
-    | Date | Weather | Max Temp (°C) | Min Temp (°C) | Apparent Max Temp (°C) | Apparent Min Temp (°C) | Precipitation (mm) | Precipitation Probability (%) | Max Wind Speed (km/h) |
+    | Date | Weather | Max Temp (°C) | Min Temp (°C) | Apparent Max Temp (°C) | Apparent Min Temp (°C) | Precipitation (mm) | Max Precipitation Probability (%) | Max Wind Speed (km/h) |
     | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
     | 2025-12-31 | Slight snow showers | -0.6 | -3.3 | -6.5 | -8.1 | 2.1 | 48 | 22.4 |
     | 2026-01-01 | Overcast | 0.2 | -4.6 | -3.3 | -8.7 | 0.0 | 8 | 7.1 |

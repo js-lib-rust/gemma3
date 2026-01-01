@@ -1,5 +1,319 @@
 # ---------------------------------------------------------
-# DEFINITIONS
+# MEDICAL AGENT
+
+- chat:
+    - role: system
+      content: You are a medical question answering agent.
+    - role: user
+      content: What heart measurements are typically taken?
+    - role: model
+      content: |
+        Here are the types of heart, also known as cardiac, measurements:
+        
+        * **Systolic Pressure** is the top number in a blood pressure reading, representing the pressure in your arteries when your heart beats and pushes blood out; it is measured in mmHg
+        * **Diastolic Pressure** is the lower number in a blood pressure reading, measuring the pressure in your arteries when your heart rests and refills with blood between beats; it is measured in mmHg
+        * **Pulse Pressure (PP)** is the simple difference between your systolic (top) and diastolic (bottom) blood pressure numbers, representing the force your heart generates with each beat; it is measured in mmHg
+        * **Heart Rate**, also known as **Pulse**, is the number of times your heart beats per minute (bpm) and it reflects how hard your heart is working to pump blood; it is measured in bpm
+
+- chat:
+    - role: system
+      content: You are a medical question answering agent.
+    - role: user
+      content: What is blood pressure?
+    - role: model
+      content: Blood pressure is the force of your blood pushing against your artery walls as your heart pumps it through your body.
+
+- chat:
+    - role: system
+      content: You are a medical question answering agent.
+    - role: user
+      content: What is normal value for systolic blood pressure?
+    - role: model
+      content: A normal systolic blood pressure (the top number) for adults is less than 120 mmHg. Readings between 120-129 systolic are considered elevated, while 130 or higher starts to indicate high blood pressure (hypertension).
+
+- chat:
+    - role: system
+      content: You are a medical question answering agent.
+    - role: user
+      content: What is normal value for diastolic blood pressure?
+    - role: model
+      content: A normal diastolic blood pressure (the bottom number) for adults is less than 80 mmHg, with the ideal being below 80 mmHg. Readings of 80-89 mmHg indicate elevated or Stage 1 hypertension, requiring attention, while 90 mmHg or higher signifies Stage 2 hypertension.
+
+- chat:
+    - role: system
+      content: You are a medical question answering agent.
+    - role: user
+      content: What is normal value for pulse pressure?
+    - role: model
+      content: Pulse pressure (PP) is typically around 40 mmHg in healthy adults. While a normal pulse pressure indicates healthy artery flexibility, a wide (high) or narrow (low) reading can signal underlying issues like stiff arteries or low blood volume.
+
+- chat:
+    - role: system
+      content: You are a medical question answering agent.
+    - role: user
+      content: What is normal value for heart rate?
+    - role: model
+      content: A normal resting heart rate for adults is typically between 60 and 100 bpm, but it varies with activity, fitness, age, emotions.
+
+- chat:
+    - role: system
+      content: You are a medical question answering agent.
+    - role: user
+      content: What blood measurements are typically taken?
+    - role: model
+      content: |
+        Here are the types of blood measurements:
+        
+        * **Glucose Level**, also known as **Blood Sugar**, measures the amount of sugar (glucose) in your blood, which is your body's main source of energy; it is measured in mg/dL
+        * **Oxygen Saturation Level (SpO2)** measures the percentage of hemoglobin in your blood carrying oxygen, showing how well oxygen travels from your lungs to the rest of your body; it is expressed as percent (%)
+
+- chat:
+    - role: system
+      content: You are a medical question answering agent.
+    - role: user
+      content: What is normal value for glucose level?
+    - role: model
+      content: Normal blood glucose levels are generally below 100 mg/dL when fasting, and below 140 mg/dL two hours after a meal.
+
+- chat:
+    - role: system
+      content: You are a medical question answering agent.
+    - role: user
+      content: What is normal value for oxygen saturation level?
+    - role: model
+      content: A normal blood oxygen saturation (SpO2) for a healthy person is 95% to 100%.
+
+- chat:
+    - role: system
+      content: You are a medical question answering agent.
+    - role: user
+      content: What body measurements are typically taken?
+    - role: model
+      content: |
+        Here are the types of body measurements:
+        
+        * **Body Height** is the measurement of a person's vertical size, taken while standing erect on a flat surface; it is measured in cm
+        * **Body Weight** is the total mass of your body, a combination of muscle, bone, fat, water, and organs; it is measured in kg
+        * **Body Mass Index (BMI)** is a screening tool that uses your height and weight to estimate body fat; it is scalar value without measurement unit
+        * **Body Temperature** is a measure of the body's internal heat, a crucial indicator of health and metabolic function; is is measured in °C
+
+- chat:
+    - role: system
+      content: You are a medical question answering agent.
+    - role: user
+      content: How body mass index is classified?
+    - role: model
+      content: |
+        BMI Categories (Adults)
+        
+        * **Underweight**: below 18.5
+        * **Normal Weight**: 18.5 – 24.9
+        * **Overweight**: 25.0 – 29.9
+        * **Obese**: 30.0 or higher 
+
+- chat:
+    - role: system
+      content: You are a medical question answering agent.
+    - role: user
+      content: What is normal range for body temperature?
+    - role: model
+      content: While 37°C is a classic average for body temperature, a normal range for adults is generally considered 36.1°C to 37.2°C, with fluctuations common.
+
+- chat:
+    - role: system
+      content: You are a medical question answering agent.
+    - role: user
+      content: What neural measurements are typically taken?
+    - role: model
+      content: |
+        Here is the neural measurement, currently a single type:
+        
+        * **Intelligence Quotient (IQ)** is a standardized score from tests measuring cognitive abilities like reasoning, problem-solving, and memory; it is a scalar value without measurement unit
+
+- chat:
+    - role: system
+      content: You are a medical question answering agent.
+    - role: user
+      content: What is normal range for IQ?
+    - role: model
+      content: Average intelligence quotient (IQ) is generally defined as a score between 90 and 109, with the statistical average set at 100. This range encompasses the majority of the population.
+
+- chat:
+    - role: system
+      content: You are a medical question answering agent.
+    - role: user
+      content: What is a health measurement structure?
+    - role: model
+      content: |
+        Health measurement structure is a JSON object that contains measurement type an its numeric value. There can be one or multiple structures in a function response, in JSONL format. Health measurements are stored in the medical database.
+        
+        It has next properties:
+        * **timestamp**: date string with format YYYY-MM-DD HH:MM:SS
+        * **person**: person name owning the measurement, string
+        * **measurement**: health measurement type, string
+        * **value**: measurement value, numeric  
+        
+        Here is an example of a health measurement structure:
+        ```json
+        {
+          "timestamp":"2025-12-17 08:47:02",
+          "person":"Iulian Rotaru",
+          "measurement":"systolic_pressure",
+          "value":124
+        }
+        ```
+
+- chat:
+    - role: system
+      content: You are a medical question answering agent.
+    - role: user
+      content: How is body_temperature parameter displayed?
+    - role: model
+      content: Parameter body_temperature is displayed as 'Body Temperature'. It is measured in celsius degrees (°C).
+
+- chat:
+    - role: system
+      content: You are a medical question answering agent.
+    - role: user
+      content: What is the function parameter for 'Body Temperature'?
+    - role: model
+      content: The function parameter for 'Body Temperature' is body_temperature.
+
+- chat:
+    - role: system
+      content: You are a medical question answering agent.
+    - role: user
+      content: How is body_weight parameter displayed?
+    - role: model
+      content: Parameter body_weight is displayed as 'Body Weight'. It is measured in kilograms (kg).
+
+- chat:
+    - role: system
+      content: You are a medical question answering agent.
+    - role: user
+      content: What is the function parameter for 'Body Weight'?
+    - role: model
+      content: The function parameter for 'Body Weight' is body_weight.
+
+- chat:
+    - role: system
+      content: You are a medical question answering agent.
+    - role: user
+      content: How is body_height parameter displayed?
+    - role: model
+      content: Parameter body_height is displayed as 'Body Height'. It is measured in centimeters (cm).
+
+- chat:
+    - role: system
+      content: You are a medical question answering agent.
+    - role: user
+      content: What is the function parameter for 'Body Height'?
+    - role: model
+      content: The function parameter for 'Body Height' is body_height.
+
+- chat:
+    - role: system
+      content: You are a medical question answering agent.
+    - role: user
+      content: How is body_max_index parameter displayed?
+    - role: model
+      content: Parameter body_max_index is displayed as 'Body Mass Index (BMI)'. It is a scalar value and has no measurement units.
+
+- chat:
+    - role: system
+      content: You are a medical question answering agent.
+    - role: user
+      content: What is the function parameter for 'Body Mass Index (BMI)'?
+    - role: model
+      content: The function parameter for 'Body Mass Index (BMI)' is body_max_index.
+
+- chat:
+    - role: system
+      content: You are a medical question answering agent.
+    - role: user
+      content: How is systolic_pressure parameter displayed?
+    - role: model
+      content: Parameter systolic_pressure is displayed as 'Systolic Pressure'. It is a measured in millimeters of mercury (mmHg).
+
+- chat:
+    - role: system
+      content: You are a medical question answering agent.
+    - role: user
+      content: What is the function parameter for 'Systolic Pressure'?
+    - role: model
+      content: The function parameter for 'Systolic Pressure' is systolic_pressure.
+
+- chat:
+    - role: system
+      content: You are a medical question answering agent.
+    - role: user
+      content: How is diastolic_pressure parameter displayed?
+    - role: model
+      content: Parameter diastolic_pressure is displayed as 'Diastolic Pressure'. It is a measured in millimeters of mercury (mmHg).
+
+- chat:
+    - role: system
+      content: You are a medical question answering agent.
+    - role: user
+      content: What is the function parameter for 'Diastolic Pressure'?
+    - role: model
+      content: The function parameter for 'Diastolic Pressure' is diastolic_pressure.
+
+- chat:
+    - role: system
+      content: You are a medical question answering agent.
+    - role: user
+      content: How is pulse_pressure parameter displayed?
+    - role: model
+      content: Parameter pulse_pressure is displayed as 'Pulse Pressure'. It is a measured in millimeters of mercury (mmHg).
+
+- chat:
+    - role: system
+      content: You are a medical question answering agent.
+    - role: user
+      content: What is the function parameter for 'Pulse Pressure'?
+    - role: model
+      content: The function parameter for 'Pulse Pressure' is pulse_pressure.
+
+- chat:
+    - role: system
+      content: You are a medical question answering agent.
+    - role: user
+      content: How is heart_rate parameter displayed?
+    - role: model
+      content: Parameter heart_rate is displayed as 'Heart Rate'. It is a measured in millimeters of mercury (mmHg).
+
+- chat:
+    - role: system
+      content: You are a medical question answering agent.
+    - role: user
+      content: What is the function parameter for 'Heart Rate'?
+    - role: model
+      content: The function parameter for 'Heart Rate' is heart_rate.
+
+- chat:
+    - role: system
+      content: You are a medical question answering agent.
+    - role: user
+      content: How is glucose_level parameter displayed?
+    - role: model
+      content: Parameter glucose_level is displayed as 'Glucose Level' or 'Blood Sugar'. Is is measured in milligrams per deciliter (mg/dL).
+
+- chat:
+    - role: system
+      content: You are a medical question answering agent.
+    - role: user
+      content: What is the function parameter for 'Glucose Level'?
+    - role: model
+      content: The function parameter for 'Glucose Level' is glucose_level.
+
+- chat:
+    - role: system
+      content: You are a medical question answering agent.
+    - role: user
+      content: What is the function parameter for 'Blood Sugar'?
+    - role: model
+      content: The function parameter for 'Blood Sugar' is glucose_level.
 
 - chat:
     - role: system
@@ -16,14 +330,6 @@
       content: What is the function parameter for 'Oxygen Saturation Level (SpO2)'?
     - role: model
       content: The function parameter for 'Oxygen Saturation Level (SpO2)' is oxygen_saturation.
-
-- chat:
-    - role: system
-      content: You are a medical question answering agent.
-    - role: user
-      content: What means heater?
-    - role: model
-      content: Heater is a shorthand for the central heating controller.
 
 - chat:
     - role: system
@@ -53,25 +359,9 @@
     - role: system
       content: You are a medical question answering agent.
     - role: user
-      content: How is body_max_index parameter displayed?
-    - role: model
-      content: Parameter body_max_index is displayed as 'Body Mass Index (BMI)'. It is a scalar value and has no measurement units.
-
-- chat:
-    - role: system
-      content: You are a medical question answering agent.
-    - role: user
-      content: What is the function parameter for 'Body Mass Index (BMI)'?
-    - role: model
-      content: The function parameter for 'Body Mass Index (BMI)' is body_max_index.
-
-- chat:
-    - role: system
-      content: You are a medical question answering agent.
-    - role: user
       content: How is intelligence_quotient parameter displayed?
     - role: model
-      content: Parameter intelligence_quotient is displayed as 'Intelligence QuotientIndex (IQ)'. It is a scalar value.
+      content: Parameter intelligence_quotient is displayed as 'Intelligence QuotientIndex (IQ)'. It is a scalar value without measurement units.
 
 - chat:
     - role: system
@@ -81,105 +371,16 @@
     - role: model
       content: The function parameter for 'Intelligence QuotientIndex (IQ)' is intelligence_quotient.
 
-- chat:
-    - role: system
-      content: You are a medical question answering agent.
-    - role: user
-      content: How is glucose_level parameter displayed?
-    - role: model
-      content: Parameter glucose_level is displayed as 'Glucose Level' or 'Blood Sugar'. Is is measured in mg/dL.
+# ---------------------------------------------------------
+# HOME AUTOMATION AGENT
 
 - chat:
     - role: system
-      content: You are a medical question answering agent.
+      content: You are a home automation question answering agent.
     - role: user
-      content: What is the function parameter for 'Glucose Level'?
+      content: What means heater?
     - role: model
-      content: The function parameter for 'Glucose Level' is glucose_level.
-
-- chat:
-    - role: system
-      content: You are a medical question answering agent.
-    - role: user
-      content: What is the function parameter for 'Blood Sugar'?
-    - role: model
-      content: The function parameter for 'Blood Sugar' is glucose_level.
-
-- chat:
-    - role: system
-      content: You are a medical question answering agent.
-    - role: user
-      content: What heart measurements are typically taken?
-    - role: model
-      content: |
-        Here are the types of heart, also known as cardiac, measurements:
-        
-        * **Systolic Pressure**: measured in mmHg
-        * **Diastolic Pressure**: measured in mmHg
-        * **Pulse Pressure**: measured in mmHg, is the difference between systolic and diastolic pressures
-        * **Heart Rate**, also known as **Pulse**: measured in bpm
-
-- chat:
-    - role: system
-      content: You are a medical question answering agent.
-    - role: user
-      content: What blood measurements are typically taken?
-    - role: model
-      content: |
-        Here are the types of blood measurements:
-        
-        * **Glucose Level**, also known as **Blood Sugar**: measured in mg/dL
-        * **Oxygen Saturation Level (SpO2)**: expressed as %
-
-- chat:
-    - role: system
-      content: You are a medical question answering agent.
-    - role: user
-      content: What body measurements are typically taken?
-    - role: model
-      content: |
-        Here are the types of body measurements:
-        
-        * **Body Height**: measured in cm
-        * **Body Weight**: measured in kg
-        * **Body Mass Index (BMI)**: scalar value without measurement unit
-        * **Body Temperature**: measured in °C
-
-- chat:
-    - role: system
-      content: You are a medical question answering agent.
-    - role: user
-      content: What neural measurements are typically taken?
-    - role: model
-      content: |
-        Here is the neural measurement, currently a single type:
-        
-        * **Intelligence Quotient (IQ)**: scalar value without measurement unit
-
-- chat:
-    - role: system
-      content: You are a medical question answering agent.
-    - role: user
-      content: What is a health measurement structure?
-    - role: model
-      content: |
-        Health measurement structure is a JSON object that contains measurement type an its numeric value. There can be one or multiple structures in a function response, in JSONL format. Health measurements are stored in the medical database.
-        
-        It has next properties:
-        * **timestamp**: date string with format YYYY-MM-DD HH:MM:SS
-        * **person**: person name owning the measurement, string
-        * **measurement**: health measurement type, string
-        * **value**: measurement value, numeric  
-        
-        Here is an example of a health measurement structure:
-        ```json
-        {
-          "timestamp":"2025-12-17 08:47:02",
-          "person":"Iulian Rotaru",
-          "measurement":"systolic_pressure",
-          "value":124
-        }
-        ```
+      content: Heater is a shorthand for the central heating controller.
 
 - chat:
     - role: system
@@ -203,37 +404,6 @@
           "hysteresis":0.00,
           "temperature":21.13,
           "running":true
-        }
-        ```
-
-- chat:
-    - role: system
-      content: You are a weather question answering agent.
-    - role: user
-      content: What is a current weather structure?
-    - role: model
-      content: |
-        The current weather structure is a JSON object containing real-time weather information.
-        
-        The current weather structure has next properties:
-        * **time**: the time current weather data was updated, string with format 'YYYY-MM-DD HH:MM' 
-        * **interval**: refresh interval, in seconds, for weather data updates
-        * **weather_code**: short normalized description of the perceived weather status
-        * **temperature_2m**: current temperature, numeric value (°C)
-        * **wind_speed_10m**: current wind speed, numeric value (km/h)  
-        * **relative_humidity_2m**: air relative humidity, numeric value (%)  
-        * **precipitation**: precipitation level, numeric value (mm)  
-        
-        Here is an example of a current weather structure:
-        ```json
-        {
-          "time":"2025-12-30 19:30",
-          "interval":900,
-          "weather_code":"Mainly clear",
-          "temperature_2m":-1.2,
-          "wind_speed_10m":14.7,
-          "relative_humidity_2m":58.0,
-          "precipitation":0.0
         }
         ```
 
@@ -296,3 +466,224 @@
           "value":13.5
         }
         ```
+
+# ---------------------------------------------------------
+# WEATHER AGENT
+
+- chat:
+    - role: system
+      content: You are a weather question answering agent.
+    - role: user
+      content: What is a current weather structure?
+    - role: model
+      content: |
+        The current weather structure is a JSON object containing real-time weather information.
+        
+        The current weather structure has next properties:
+        * **time**: the time current weather data was updated, string with format 'YYYY-MM-DD HH:MM' 
+        * **interval**: refresh interval, in seconds, for weather data updates
+        * **weather_code**: short, normalized description of the perceived weather status
+        * **temperature_2m**: current temperature, numeric value (°C)
+        * **wind_speed_10m**: current wind speed, numeric value (km/h)  
+        * **relative_humidity_2m**: air relative humidity, numeric value (%)  
+        * **precipitation**: precipitation level, numeric value (mm)  
+        
+        Here is an example of a current weather structure:
+        ```json
+        {
+          "time":"2025-12-30 19:30",
+          "interval":900,
+          "weather_code":"Mainly clear",
+          "temperature_2m":-1.2,
+          "wind_speed_10m":14.7,
+          "relative_humidity_2m":58.0,
+          "precipitation":0.0
+        }
+        ```
+
+- chat:
+    - role: system
+      content: You are a weather question answering agent.
+    - role: user
+      content: How is current weather displayed?
+    - role: model
+      content: |
+        Usually current weather structure is formatted as a single phrase, with weather parameters in natural order. Time and interval parameters are not use.
+        
+        Here is an example of formated current weather phrase:
+        The weather is currently mainly clear. The temperature is -1.2°C, with a wind speed of 14.7 km/h and a relative humidity of 58.0%. There is no precipitation.
+
+- chat:
+    - role: system
+      content: You are a weather question answering agent.
+    - role: user
+      content: What is a daily forecast structure?
+    - role: model
+      content: |
+        The daily forecast structure is a JSON object that contains weather information for a day. There are usually multiple structures in a function response, in JSONL format. Daily forecast structures are always displayed in a table format.
+        
+        The daily forecast structure has the following properties mapped to the table column:
+        * **date**: Date (YYYY-MM-DD)
+        * **weather_code**: Weather
+        * **temperature_2m_max**: Max Temp (°C)
+        * **temperature_2m_min**: Min Temp (°C)
+        * **apparent_temperature_max**: Apparent Max Temp (°C)
+        * **apparent_temperature_min**: Apparent Min Temp (°C)
+        * **precipitation_sum**: Precipitation (mm)
+        * **precipitation_probability_max**: Precipitation Probability (%)
+        * **wind_speed_10m_max**: Max Wind Speed (km/h)
+        
+        Here is an example of a daily forecast structure:
+        ```json
+        {
+          "date":"2025-12-31",
+          "weather_code":"Slight snow showers",
+          "temperature_2m_max":-0.6,
+          "temperature_2m_min":-3.3,
+          "apparent_temperature_max":-6.5,
+          "apparent_temperature_min":-8.1,
+          "precipitation_sum":2.1,
+          "precipitation_probability_max":48,
+          "wind_speed_10m_max":22.4
+        }
+
+- chat:
+    - role: system
+      content: You are a weather question answering agent.
+    - role: user
+      content: What is a hourly forecast structure?
+    - role: model
+      content: |
+        The hourly forecast structure is a JSON object that contains weather information about an hour interval. There are usually multiple structures in a function response, in JSONL format. Hourly forecast structures are always displayed in table format.
+        
+        The hourly forecast structure has next properties mapped on table column:
+        * **time**: Time (HH:MM)
+        * **weather_code**: Weather
+        * **temperature_2m**: Temperature (°C)
+        * **relative_humidity_2m**: Humidity (%)
+        * **precipitation_probability**: Precipitation (%)
+        * **wind_speed_10m**: Wind Speed (km/h)
+
+        Here is an example of a hourly forecast structure:
+        ```json
+        {
+          "time":"2025-12-22 00:00",
+          "weather_code":"Overcast",
+          "temperature_2m":2.3,
+          "relative_humidity_2m":97,
+          "precipitation_probability":0,
+          "wind_speed_10m":3.7
+        }
+        ```
+
+- chat:
+    - role: system
+      content: You are a weather question answering agent.
+    - role: user
+      content: How is weather 'date' parameter displayed?
+    - role: model
+      content: The weather 'date' parameter is displayed as 'Date'. It is only the day part formatted as YYYY-MM-DD.
+
+- chat:
+    - role: system
+      content: You are a weather question answering agent.
+    - role: user
+      content: How is weather 'time' parameter displayed?
+    - role: model
+      content: The weather 'time' parameter is displayed as 'Time'. It is only the hour part formatted as HH:MM.
+
+- chat:
+    - role: system
+      content: You are a weather question answering agent.
+    - role: user
+      content: How is 'weather_code' parameter displayed?
+    - role: model
+      content: The 'weather_code' parameter is displayed as 'Weather'.
+
+- chat:
+    - role: system
+      content: You are a weather question answering agent.
+    - role: user
+      content: How is the weather 'temperature_2m' parameter displayed?
+    - role: model
+      content: The 'temperature_2m' parameter is displayed as 'Temperature (°C)'.
+
+- chat:
+    - role: system
+      content: You are a weather question answering agent.
+    - role: user
+      content: How is the weather 'temperature_2m_max' parameter displayed?
+    - role: model
+      content: The 'temperature_2m_max' parameter is displayed as 'Max Temp (°C)'.
+
+- chat:
+    - role: system
+      content: You are a weather question answering agent.
+    - role: user
+      content: How is the weather 'temperature_2m_min' parameter displayed?
+    - role: model
+      content: The 'temperature_2m_min' parameter is displayed as 'Min Temp (°C)'.
+
+- chat:
+    - role: system
+      content: You are a weather question answering agent.
+    - role: user
+      content: How is the weather 'apparent_temperature_max' parameter displayed?
+    - role: model
+      content: The 'apparent_temperature_max' parameter is displayed as 'Apparent Max Temp (°C)'.
+
+- chat:
+    - role: system
+      content: You are a weather question answering agent.
+    - role: user
+      content: How is the weather 'apparent_temperature_min' parameter displayed?
+    - role: model
+      content: The 'apparent_temperature_min' parameter is displayed as 'Apparent Min Temp (°C)'.
+
+- chat:
+    - role: system
+      content: You are a weather question answering agent.
+    - role: user
+      content: How is the weather 'relative_humidity_2m' parameter displayed?
+    - role: model
+      content: The 'relative_humidity_2m' parameter is displayed as 'Humidity (%)'.
+
+- chat:
+    - role: system
+      content: You are a weather question answering agent.
+    - role: user
+      content: How is the weather 'precipitation_probability' parameter displayed?
+    - role: model
+      content: The 'precipitation_probability' parameter is displayed as 'Precipitation Probability (%)'.
+
+- chat:
+    - role: system
+      content: You are a weather question answering agent.
+    - role: user
+      content: How is the weather 'precipitation_probability_max' parameter displayed?
+    - role: model
+      content: The 'precipitation_probability_max' parameter is displayed as 'Max Precipitation Probability (%)'.
+
+- chat:
+    - role: system
+      content: You are a weather question answering agent.
+    - role: user
+      content: How is the weather 'precipitation_sum' parameter displayed?
+    - role: model
+      content: The 'precipitation_sum' parameter is displayed as 'Precipitation (mm)'.
+
+- chat:
+    - role: system
+      content: You are a weather question answering agent.
+    - role: user
+      content: How is the weather 'wind_speed_10m' parameter displayed?
+    - role: model
+      content: The 'wind_speed_10m' parameter is displayed as 'Wind Speed (km/h)'.
+
+- chat:
+    - role: system
+      content: You are a weather question answering agent.
+    - role: user
+      content: How is the weather 'wind_speed_10m_max' parameter displayed?
+    - role: model
+      content: The 'wind_speed_10m_max' parameter is displayed as 'Max Wind Speed (km/h)'.

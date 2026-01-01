@@ -393,7 +393,7 @@
         
         Heating controller structure has next properties:
         * **setpoint**: the desired temperature value in °C 
-        * **hysteresis**: threshold used when trigger a change in running state; it is a scalar value
+        * **hysteresis**: threshold used when trigger a change in running state; numeric value in °C
         * **temperature**: current monitored temperature, numeric value in °C
         * **running**: boolean value indicating if central heating is currently on  
         

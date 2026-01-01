@@ -7,28 +7,279 @@
     - role: user
       content: |
         Function response is a list of health measurement structures: 
-        {"timestamp":"2025-12-17 08:47:02","person":"Iulian Rotaru","measurement":"systolic_pressure","value":124}
-        {"timestamp":"2025-12-17 08:47:02","person":"Iulian Rotaru","measurement":"diastolic_pressure","value":81}
-        {"timestamp":"2025-12-17 08:47:02","person":"Iulian Rotaru","measurement":"pulse_pressure","value":43}
-        {"timestamp":"2025-12-17 08:47:02","person":"Iulian Rotaru","measurement":"heart_rate","value":72}
-        {"timestamp":"2025-12-17 08:48:58","person":"Iulian Rotaru","measurement":"body_temperature","value":35.400001525878906}
-        {"timestamp":"2025-12-17 08:49:26","person":"Iulian Rotaru","measurement":"body_weight","value":89.5}
-        {"timestamp":"2025-12-17 08:49:26","person":"Iulian Rotaru","measurement":"body_height","value":176}
-        {"timestamp":"2025-12-17 08:49:26","person":"Iulian Rotaru","measurement":"body_mass_index","value":28.89333724975586}
-        
-        User Prompt: list today health measurements
+        {"timestamp":"2026-01-01 12:20:36","person":"Iulian Rotaru","measurement":"systolic_pressure","value":115}
+        {"timestamp":"2026-01-01 12:20:36","person":"Iulian Rotaru","measurement":"diastolic_pressure","value":67}
+        {"timestamp":"2026-01-01 12:20:36","person":"Iulian Rotaru","measurement":"pulse_pressure","value":48}
+        {"timestamp":"2026-01-01 12:20:36","person":"Iulian Rotaru","measurement":"heart_rate","value":57}
+        {"timestamp":"2026-01-01 12:22:08","person":"Iulian Rotaru","measurement":"body_temperature","value":35.099998474121094}
+        {"timestamp":"2026-01-01 12:23:27","person":"Iulian Rotaru","measurement":"body_weight","value":89.5}
+        {"timestamp":"2026-01-01 12:23:27","person":"Iulian Rotaru","measurement":"body_mass_index","value":29.224489212036133}
+ 
+        User Prompt: list my health measurements
     - role: model
       content: |
-        Here are your health measurements as of today, December 17, 2025:
+        Here are your health measurements as of today, January 1, 2026:
 
-        *   **Systolic Pressure**: 124 mmHg
-        *   **Diastolic Pressure**: 81 mmHg
-        *   **Pulse Pressure**: 43 mmHg
-        *   **Heart Rate**: 72 bpm
-        *   **Body Temperature**: 35.4 °C
+        *   **Systolic Pressure**: 115 mmHg
+        *   **Diastolic Pressure**: 67 mmHg
+        *   **Pulse Pressure**: 48 mmHg
+        *   **Heart Rate**: 57 bpm
+        *   **Body Temperature**: 35.10 °C
         *   **Body Weight**: 89.5 kg
-        *   **Body Height**: 176 cm
-        *   **Body Mass Index (BMI)**: 28.89
+        *   **Body Mass Index (BMI)**: 29.22
+        
+        Would you like to create a medical report?
+
+- chat:
+    - role: system
+      content: You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
+    - role: user
+      content: |
+        Function response is a list of health measurement structures: 
+        {"timestamp":"2026-01-01 12:20:36","person":"Iulian Rotaru","measurement":"systolic_pressure","value":115}
+        {"timestamp":"2026-01-01 12:20:36","person":"Iulian Rotaru","measurement":"diastolic_pressure","value":67}
+        {"timestamp":"2026-01-01 12:20:36","person":"Iulian Rotaru","measurement":"pulse_pressure","value":48}
+        {"timestamp":"2026-01-01 12:20:36","person":"Iulian Rotaru","measurement":"heart_rate","value":57}
+        {"timestamp":"2026-01-01 12:22:08","person":"Iulian Rotaru","measurement":"body_temperature","value":35.099998474121094}
+        {"timestamp":"2026-01-01 12:23:27","person":"Iulian Rotaru","measurement":"body_weight","value":89.5}
+        {"timestamp":"2026-01-01 12:23:27","person":"Iulian Rotaru","measurement":"body_mass_index","value":29.224489212036133}
+ 
+        User Prompt: list my health measurements, in table format
+    - role: model
+      content: |
+        Here are your health measurements as of today, January 1, 2026:
+
+        | Time | Measurement | Value |
+        |---|---|---|
+        | 10:23:27 | Systolic Pressure | 115 mmHg |
+        | 10:23:27 | Diastolic Pressure | 67 mmHg |
+        | 10:23:27 | Pulse Pressure | 48 mmHg |
+        | 10:23:27 | Heart Rate | 57 bpm |
+        | 10:24:54 | Body Temperature | 35.20 °C |
+        | 10:25:46 | Body Weight | 89.5 kg |
+        | 10:25:46 | Body Mass Index | 29.22 |
+        
+        Would you like to create a medical report?
+
+- chat:
+    - role: system
+      content: You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
+    - role: user
+      content: |
+        Function response is a list of health measurement structures: 
+        {"timestamp":"2026-01-01 12:20:36","person":"Iulian Rotaru","measurement":"systolic_pressure","value":115}
+        {"timestamp":"2026-01-01 12:20:36","person":"Iulian Rotaru","measurement":"diastolic_pressure","value":67}
+        {"timestamp":"2026-01-01 12:20:36","person":"Iulian Rotaru","measurement":"pulse_pressure","value":48}
+        {"timestamp":"2026-01-01 12:20:36","person":"Iulian Rotaru","measurement":"heart_rate","value":57}
+        {"timestamp":"2026-01-01 12:22:08","person":"Iulian Rotaru","measurement":"body_temperature","value":35.099998474121094}
+        {"timestamp":"2026-01-01 12:23:27","person":"Iulian Rotaru","measurement":"body_weight","value":89.5}
+        {"timestamp":"2026-01-01 12:23:27","person":"Iulian Rotaru","measurement":"body_mass_index","value":29.224489212036133}
+ 
+        User Prompt: list my health measurements, in json format
+    - role: model
+      content: |
+        ```json
+        [
+            {
+                "timestamp": "2026-01-01 12:20:36",
+                "person": "Iulian Rotaru",
+                "measurement": "systolic_pressure",
+                "value": 115
+            },
+            {
+                "timestamp": "2026-01-01 12:20:36",
+                "person": "Iulian Rotaru",
+                "measurement": "diastolic_pressure",
+                "value": 67
+            },
+            {
+                "timestamp": "2026-01-01 12:20:36",
+                "person": "Iulian Rotaru",
+                "measurement": "pulse_pressure",
+                "value": 48
+            },
+            {
+                "timestamp": "2026-01-01 12:20:36",
+                "person": "Iulian Rotaru",
+                "measurement": "heart_rate",
+                "value": 57
+            },
+            {
+                "timestamp": "2026-01-01 12:22:08",
+                "person": "Iulian Rotaru",
+                "measurement": "body_temperature",
+                "value": 35.1
+            },
+            {
+                "timestamp": "2026-01-01 12:23:27",
+                "person": "Iulian Rotaru",
+                "measurement": "body_weight",
+                "value": 89.5
+            },
+            {
+                "timestamp": "2026-01-01 12:23:27",
+                "person": "Iulian Rotaru",
+                "measurement": "body_mass_index",
+                "value": 29.22
+            }
+        ]        
+        ```
+
+- chat:
+    - role: system
+      content: You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
+    - role: user
+      content: |
+        Function response is a list of health measurement structures: 
+        {"timestamp":"2026-01-01 12:20:36","person":"Iulian Rotaru","measurement":"systolic_pressure","value":115}
+        {"timestamp":"2026-01-01 12:20:36","person":"Iulian Rotaru","measurement":"diastolic_pressure","value":67}
+        {"timestamp":"2026-01-01 12:20:36","person":"Iulian Rotaru","measurement":"pulse_pressure","value":48}
+        {"timestamp":"2026-01-01 12:20:36","person":"Iulian Rotaru","measurement":"heart_rate","value":57}
+        {"timestamp":"2026-01-01 12:22:08","person":"Iulian Rotaru","measurement":"body_temperature","value":35.099998474121094}
+        {"timestamp":"2026-01-01 12:23:27","person":"Iulian Rotaru","measurement":"body_weight","value":89.5}
+        {"timestamp":"2026-01-01 12:23:27","person":"Iulian Rotaru","measurement":"body_mass_index","value":29.224489212036133}
+ 
+        User Prompt: list my health measurements, in jsonl format
+    - role: model
+      content: |
+        ```jsonl
+        {"timestamp":"2026-01-01 12:20:36","person":"Iulian Rotaru","measurement":"systolic_pressure","value":115}
+        {"timestamp":"2026-01-01 12:20:36","person":"Iulian Rotaru","measurement":"diastolic_pressure","value":67}
+        {"timestamp":"2026-01-01 12:20:36","person":"Iulian Rotaru","measurement":"pulse_pressure","value":48}
+        {"timestamp":"2026-01-01 12:20:36","person":"Iulian Rotaru","measurement":"heart_rate","value":57}
+        {"timestamp":"2026-01-01 12:22:08","person":"Iulian Rotaru","measurement":"body_temperature","value":35.10}
+        {"timestamp":"2026-01-01 12:23:27","person":"Iulian Rotaru","measurement":"body_weight","value":89.5}
+        {"timestamp":"2026-01-01 12:23:27","person":"Iulian Rotaru","measurement":"body_mass_index","value":29.22}
+        ```
+
+- chat:
+    - role: system
+      content: You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
+    - role: user
+      content: |
+        Function response is a list of health measurement structures: 
+        {"timestamp":"2026-01-01 12:20:36","person":"Iulian Rotaru","measurement":"systolic_pressure","value":115}
+        {"timestamp":"2026-01-01 12:20:36","person":"Iulian Rotaru","measurement":"diastolic_pressure","value":67}
+        {"timestamp":"2026-01-01 12:20:36","person":"Iulian Rotaru","measurement":"pulse_pressure","value":48}
+        {"timestamp":"2026-01-01 12:20:36","person":"Iulian Rotaru","measurement":"heart_rate","value":57}
+        {"timestamp":"2026-01-01 12:22:08","person":"Iulian Rotaru","measurement":"body_temperature","value":35.099998474121094}
+        {"timestamp":"2026-01-01 12:23:27","person":"Iulian Rotaru","measurement":"body_weight","value":89.5}
+        {"timestamp":"2026-01-01 12:23:27","person":"Iulian Rotaru","measurement":"body_mass_index","value":29.224489212036133}
+ 
+        User Prompt: list my health measurements, in xml format
+    - role: model
+      content: |
+        ```xml
+        <measurements>
+          <measurement>
+            <timestamp>2026-01-01 12:20:36</timestamp>
+            <person>Iulian Rotaru</person>
+            <measurement_type>systolic_pressure</measurement_type>
+            <value>115</value>
+          </measurement>
+          <measurement>
+            <timestamp>2026-01-01 12:20:36</timestamp>
+            <person>Iulian Rotaru</person>
+            <measurement_type>diastolic_pressure</measurement_type>
+            <value>67</value>
+          </measurement>
+          <measurement>
+            <timestamp>2026-01-01 12:20:36</timestamp>
+            <person>Iulian Rotaru</person>
+            <measurement_type>pulse_pressure</measurement_type>
+            <value>48</value>
+          </measurement>
+          <measurement>
+            <timestamp>2026-01-01 12:20:36</timestamp>
+            <person>Iulian Rotaru</person>
+            <measurement_type>heart_rate</measurement_type>
+            <value>57</value>
+          </measurement>
+          <measurement>
+            <timestamp>2026-01-01 12:22:08</timestamp>
+            <person>Iulian Rotaru</person>
+            <measurement_type>body_temperature</measurement_type>
+            <value>35.10</value>
+          </measurement>
+          <measurement>
+            <timestamp>2026-01-01 12:23:27</timestamp>
+            <person>Iulian Rotaru</person>
+            <measurement_type>body_weight</measurement_type>
+            <value>89.5</value>
+          </measurement>
+          <measurement>
+            <timestamp>2026-01-01 12:23:27</timestamp>
+            <person>Iulian Rotaru</person>
+            <measurement_type>body_mass_index</measurement_type>
+            <value>29.22</value>
+          </measurement>
+        </measurements>
+        ```
+
+- chat:
+    - role: system
+      content: You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
+    - role: user
+      content: |
+        Function response is a list of health measurement structures: 
+        {"timestamp":"2026-01-01 12:20:36","person":"Iulian Rotaru","measurement":"systolic_pressure","value":115}
+        {"timestamp":"2026-01-01 12:20:36","person":"Iulian Rotaru","measurement":"diastolic_pressure","value":67}
+        {"timestamp":"2026-01-01 12:20:36","person":"Iulian Rotaru","measurement":"pulse_pressure","value":48}
+        {"timestamp":"2026-01-01 12:20:36","person":"Iulian Rotaru","measurement":"heart_rate","value":57}
+        {"timestamp":"2026-01-01 12:22:08","person":"Iulian Rotaru","measurement":"body_temperature","value":35.099998474121094}
+        {"timestamp":"2026-01-01 12:23:27","person":"Iulian Rotaru","measurement":"body_weight","value":89.5}
+        {"timestamp":"2026-01-01 12:23:27","person":"Iulian Rotaru","measurement":"body_mass_index","value":29.224489212036133}
+ 
+        User Prompt: list my health measurements, in html format
+    - role: model
+      content: |
+        ```html
+        <!DOCTYPE html>
+        <html>
+        <head>
+        <title>Health Measurements</title>
+        </head>
+        <body>
+          <h1>Health Measurements</h1>
+          <ul>
+            <li><b>Systolic Pressure:</b> 115 mmHg</li>
+            <li><b>Diastolic Pressure:</b> 67 mmHg</li>
+            <li><b>Pulse Pressure:</b> 48 mmHg</li>
+            <li><b>Heart Rate:</b> 57 bpm</li>
+            <li><b>Body Temperature:</b> 35.10 °C</li>
+            <li><b>Body Weight:</b> 89.5 kg</li>
+            <li><b>Body Mass Index (BMI):</b> 29.22</li>
+          </ul>
+        </body>
+        </html>
+        ```
+
+- chat:
+    - role: system
+      content: You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
+    - role: user
+      content: |
+        Function response is a list of health measurement structures: 
+        {"timestamp":"2026-01-01 12:20:36","person":"Iulian Rotaru","measurement":"systolic_pressure","value":115}
+        {"timestamp":"2026-01-01 12:20:36","person":"Iulian Rotaru","measurement":"diastolic_pressure","value":67}
+        {"timestamp":"2026-01-01 12:20:36","person":"Iulian Rotaru","measurement":"pulse_pressure","value":48}
+        {"timestamp":"2026-01-01 12:20:36","person":"Iulian Rotaru","measurement":"heart_rate","value":57}
+        {"timestamp":"2026-01-01 12:22:08","person":"Iulian Rotaru","measurement":"body_temperature","value":35.099998474121094}
+        {"timestamp":"2026-01-01 12:23:27","person":"Iulian Rotaru","measurement":"body_weight","value":89.5}
+        {"timestamp":"2026-01-01 12:23:27","person":"Iulian Rotaru","measurement":"body_mass_index","value":29.224489212036133}
+ 
+        User Prompt: list my health measurements, in plain text format
+    - role: model
+      content: |
+        Here are your health measurements as of today, January 1, 2026:
+
+        - Systolic Pressure: 115 mmHg
+        - Diastolic Pressure: 67 mmHg
+        - Pulse Pressure: 48 mmHg
+        - Heart Rate: 57 bpm
+        - Body Temperature: 35.10 °C
+        - Body Weight: 89.5 kg
+        - Body Mass Index (BMI): 29.22
         
         Would you like to create a medical report?
 
@@ -48,10 +299,10 @@
         {"timestamp":"2025-12-17 08:49:26","person":"Iulian Rotaru","measurement":"body_mass_index","value":28.89333724975586}
         {"timestamp":"2025-12-17 08:48:58","person":"Iulian Rotaru","measurement":"body_temperature","value":35.400001525878906}
 
-        User Prompt: please list today health measurements
+        User Prompt: please list today health readings for Iulian Rotaru
     - role: model
       content: |
-        Here are your health measurements as of today, December 17, 2025:
+        Here are the health readings for Iulian Rotaru as of today, December 17, 2025:
 
         *   **Systolic Pressure**: 124 mmHg
         *   **Diastolic Pressure**: 81 mmHg
@@ -64,6 +315,191 @@
         *   **Body Temperature**: 35.4 °C
         
         Would you like to create a medical report?
+
+- chat:
+    - role: system
+      content: You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
+    - role: user
+      content: |
+        Function response is a list of health measurement structures: 
+        {"timestamp":"2025-12-28 10:23:27","person":"Iulian Rotaru","measurement":"systolic_pressure","value":120}
+        {"timestamp":"2025-12-28 10:23:27","person":"Iulian Rotaru","measurement":"diastolic_pressure","value":75}
+        {"timestamp":"2025-12-28 10:23:27","person":"Iulian Rotaru","measurement":"pulse_pressure","value":45}
+        {"timestamp":"2025-12-28 10:23:27","person":"Iulian Rotaru","measurement":"heart_rate","value":62}
+        {"timestamp":"2025-12-28 10:24:54","person":"Iulian Rotaru","measurement":"body_temperature","value":35.20000076293945}
+        {"timestamp":"2025-12-28 10:25:46","person":"Iulian Rotaru","measurement":"body_weight","value":89.5}
+        {"timestamp":"2025-12-28 10:25:46","person":"Iulian Rotaru","measurement":"body_mass_index","value":28.89333724975586}
+        {"timestamp":"2025-12-28 11:24:49","person":"Iulian Rotaru","measurement":"glucose_level","value":130.0}
+        {"timestamp":"2025-12-28 16:23:20","person":"Iulian Rotaru","measurement":"systolic_pressure","value":114}
+        {"timestamp":"2025-12-28 16:23:20","person":"Iulian Rotaru","measurement":"diastolic_pressure","value":73}
+        {"timestamp":"2025-12-28 16:23:20","person":"Iulian Rotaru","measurement":"pulse_pressure","value":41}
+        {"timestamp":"2025-12-28 16:23:20","person":"Iulian Rotaru","measurement":"heart_rate","value":72}
+        {"timestamp":"2025-12-28 16:24:01","person":"Iulian Rotaru","measurement":"body_weight","value":89.0}
+        {"timestamp":"2025-12-28 16:24:01","person":"Iulian Rotaru","measurement":"body_mass_index","value":28.731922149658203}
+        {"timestamp":"2025-12-28 16:25:49","person":"Iulian Rotaru","measurement":"glucose_level","value":117.0}
+
+        User Prompt: please list my medical readings from last december 28, in table format
+    - role: model
+      content: |
+        Here are your medical readings from December 28th, 2025:
+
+        | Time | Measurement | Value |
+        |---|---|---|
+        | 10:23:27 | Systolic Pressure | 120 mmHg |
+        | 10:23:27 | Diastolic Pressure | 75 mmHg |
+        | 10:23:27 | Pulse Pressure | 45 mmHg |
+        | 10:23:27 | Heart Rate | 62 bpm |
+        | 10:24:54 | Body Temperature | 35.2 °C |
+        | 10:25:46 | Body Weight | 89.50 kg |
+        | 10:25:46 | Body Mass Index (BMI) | 28.89 |
+        | 11:24:49 | Glucose Level | 130 mg/dL |
+        | 16:23:20 | Systolic Pressure | 114 mmHg |
+        | 16:23:20 | Diastolic Pressure | 73 mmHg |
+        | 16:23:20 | Pulse Pressure | 41 mmHg |
+        | 16:23:20 | Heart Rate | 72 bpm |
+        | 16:24:01 | Body Weight | 89.00 kg |
+        | 16:24:01 | Body Mass Index (BMI) | 28.73 |
+        | 16:25:49 | Glucose Level | 117.00 |
+
+        Would you like to create a medical report?
+
+- chat:
+    - role: system
+      content: You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
+    - role: user
+      content: |
+        Function response is a list of health measurement structures: 
+        {"timestamp":"2025-12-28 10:23:27","person":"Iulian Rotaru","measurement":"systolic_pressure","value":120}
+        {"timestamp":"2025-12-28 10:23:27","person":"Iulian Rotaru","measurement":"diastolic_pressure","value":75}
+        {"timestamp":"2025-12-28 10:23:27","person":"Iulian Rotaru","measurement":"pulse_pressure","value":45}
+        {"timestamp":"2025-12-28 10:23:27","person":"Iulian Rotaru","measurement":"heart_rate","value":62}
+        {"timestamp":"2025-12-28 10:24:54","person":"Iulian Rotaru","measurement":"body_temperature","value":35.20000076293945}
+        {"timestamp":"2025-12-28 10:25:46","person":"Iulian Rotaru","measurement":"body_weight","value":89.5}
+        {"timestamp":"2025-12-28 10:25:46","person":"Iulian Rotaru","measurement":"body_mass_index","value":28.89333724975586}
+        {"timestamp":"2025-12-28 11:24:49","person":"Iulian Rotaru","measurement":"glucose_level","value":130.0}
+        {"timestamp":"2025-12-28 16:23:20","person":"Iulian Rotaru","measurement":"systolic_pressure","value":114}
+        {"timestamp":"2025-12-28 16:23:20","person":"Iulian Rotaru","measurement":"diastolic_pressure","value":73}
+        {"timestamp":"2025-12-28 16:23:20","person":"Iulian Rotaru","measurement":"pulse_pressure","value":41}
+        {"timestamp":"2025-12-28 16:23:20","person":"Iulian Rotaru","measurement":"heart_rate","value":72}
+        {"timestamp":"2025-12-28 16:24:01","person":"Iulian Rotaru","measurement":"body_weight","value":89.0}
+        {"timestamp":"2025-12-28 16:24:01","person":"Iulian Rotaru","measurement":"body_mass_index","value":28.731922149658203}
+        {"timestamp":"2025-12-28 16:25:49","person":"Iulian Rotaru","measurement":"glucose_level","value":117.0}
+
+        User Prompt: display my medical readings from last december 28, in table format
+    - role: model
+      content: |
+        Here are Iulian Rotaru's medical readings from December 28th, 2025:
+        
+        | Time | Measurement | Value |
+        |---|---|---|
+        | 10:23:27 | Systolic Pressure | 120 |
+        | 10:23:27 | Diastolic Pressure | 75 |
+        | 10:23:27 | Pulse Pressure | 45 |
+        | 10:23:27 | Heart Rate | 62 |
+        | 10:24:54 | Body Temperature | 35.20 |
+        | 10:25:46 | Body Weight | 89.5 |
+        | 10:25:46 | Body Mass Index | 28.89 |
+        | 11:24:49 | Glucose Level | 130.0 |
+        | 16:23:20 | Systolic Pressure | 114 |
+        | 16:23:20 | Diastolic Pressure | 73 |
+        | 16:23:20 | Pulse Pressure | 41 |
+        | 16:23:20 | Heart Rate | 72 |
+        | 16:24:01 | Body Weight | 89.0 |
+        | 16:24:01 | Body Mass Index | 28.73 |
+        | 16:25:49 | Glucose Level | 117.0 |
+
+        Would you like to create a medical report?
+
+- chat:
+    - role: system
+      content: You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
+    - role: user
+      content: |
+        Function response is a list of health measurement structures: 
+        {"timestamp":"2025-12-28 10:23:27","person":"Iulian Rotaru","measurement":"systolic_pressure","value":120}
+        {"timestamp":"2025-12-28 10:23:27","person":"Iulian Rotaru","measurement":"diastolic_pressure","value":75}
+        {"timestamp":"2025-12-28 10:23:27","person":"Iulian Rotaru","measurement":"pulse_pressure","value":45}
+        {"timestamp":"2025-12-28 10:23:27","person":"Iulian Rotaru","measurement":"heart_rate","value":62}
+        {"timestamp":"2025-12-28 10:24:54","person":"Iulian Rotaru","measurement":"body_temperature","value":35.20000076293945}
+        {"timestamp":"2025-12-28 10:25:46","person":"Iulian Rotaru","measurement":"body_weight","value":89.5}
+        {"timestamp":"2025-12-28 10:25:46","person":"Iulian Rotaru","measurement":"body_mass_index","value":28.89333724975586}
+        {"timestamp":"2025-12-28 11:24:49","person":"Iulian Rotaru","measurement":"glucose_level","value":130.0}
+        {"timestamp":"2025-12-28 16:23:20","person":"Iulian Rotaru","measurement":"systolic_pressure","value":114}
+        {"timestamp":"2025-12-28 16:23:20","person":"Iulian Rotaru","measurement":"diastolic_pressure","value":73}
+        {"timestamp":"2025-12-28 16:23:20","person":"Iulian Rotaru","measurement":"pulse_pressure","value":41}
+        {"timestamp":"2025-12-28 16:23:20","person":"Iulian Rotaru","measurement":"heart_rate","value":72}
+        {"timestamp":"2025-12-28 16:24:01","person":"Iulian Rotaru","measurement":"body_weight","value":89.0}
+        {"timestamp":"2025-12-28 16:24:01","person":"Iulian Rotaru","measurement":"body_mass_index","value":28.731922149658203}
+        {"timestamp":"2025-12-28 16:25:49","person":"Iulian Rotaru","measurement":"glucose_level","value":117.0}
+
+        User Prompt: print my medical readings from last december 28, in xml format
+    - role: model
+      content: |
+        ```xml
+        <readings date="2025-12-28">
+          <person>Iulian Rotaru</person>
+          <reading timestamp="10:23:27">
+            <measurement>systolic_pressure</measurement>
+            <value>120</value>
+          </reading>
+          <reading timestamp="10:23:27">
+            <measurement>diastolic_pressure</measurement>
+            <value>75</value>
+          </reading>
+          <reading timestamp="10:23:27">
+            <measurement>pulse_pressure</measurement>
+            <value>45</value>
+          </reading>
+          <reading timestamp="10:23:27">
+            <measurement>heart_rate</measurement>
+            <value>62</value>
+          </reading>
+          <reading timestamp="10:24:54">
+            <measurement>body_temperature</measurement>
+            <value>35.20000076293945</value>
+          </reading>
+          <reading timestamp="10:25:46">
+            <measurement>body_weight</measurement>
+            <value>89.5</value>
+          </reading>
+          <reading timestamp="10:25:46">
+            <measurement>body_mass_index</measurement>
+            <value>28.89333724975586</value>
+          </reading>
+          <reading timestamp="11:24:49">
+            <measurement>glucose_level</measurement>
+            <value>130.0</value>
+          </reading>
+          <reading timestamp="16:23:20">
+            <measurement>systolic_pressure</measurement>
+            <value>114</value>
+          </reading>
+          <reading timestamp="16:23:20">
+            <measurement>diastolic_pressure</measurement>
+            <value>73</value>
+          </reading>
+          <reading timestamp="16:23:20">
+            <measurement>pulse_pressure</measurement>
+            <value>41</value>
+          </reading>
+          <reading timestamp="16:23:20">
+            <measurement>heart_rate</measurement>
+            <value>72</value>
+          </reading>
+          <reading timestamp="16:24:01">
+            <measurement>body_weight</measurement>
+            <value>89.0</value>
+          </reading>
+          <reading timestamp="16:24:01">
+            <measurement>body_mass_index</measurement>
+            <value>28.731922149658203</value>
+          </reading>
+          <reading timestamp="16:25:49">
+            <measurement>glucose_level</measurement>
+            <value>117.0</value>
+          </reading>
+        </readings>
+        ```
 
 - chat:
     - role: system
@@ -297,7 +733,7 @@
         Here are your heart measurements as of February 13, 2021:
 
         | Time | Measurement | Value |
-        | :--- | :--- | :--- |
+        |---|---|---|
         | 08:47:02 | Systolic Pressure | 115 mmHg |
         | 08:47:03 | Diastolic Pressure | 75 mmHg |
         | 08:47:04 | Pulse Pressure | 40 mmHg |
@@ -326,7 +762,7 @@
         Here's are your health measurements for today, December 21, 2025:
 
         | Time | Measurement | Value | Status |
-        | :--- | :--- | :--- | :--- |
+        |---|---|---|---|
         | 08:47:02 | Systolic Pressure | 132 mmHg | High |
         | 08:47:03 | Diastolic Pressure | 85 mmHg | High |
         | 08:47:04 | Pulse Pressure | 47 mmHg | High |
@@ -382,7 +818,7 @@
         Here are your health measurements as of yesterday, January 20, 2026:
 
         | Time | Measurement | Value |
-        | :--- | :--- | :--- |
+        |---|---|---|
         | 12:15:22 | Systolic Pressure | 124 mmHg |
         | 12:15:23 | Diastolic Pressure | 81 mmHg |
         | 12:15:24 | Pulse Pressure | 43 mmHg |
@@ -952,7 +1388,7 @@
 
         User Prompt: please tell me the status of the central heating
     - role: model
-      content: The central heating is currently off. The setpoint is 10.0 °C, with a hysteresis of 0.00, and the current room temperature is 21.13 °C.
+      content: The central heating is currently off. The setpoint is 10.0 °C, with a hysteresis of 0.00 °C, and the current room temperature is 21.13 °C.
 
 - chat:
     - role: system
@@ -964,7 +1400,7 @@
         
         User Prompt: get central heating status
     - role: model
-      content: The central heating is currently on. The setpoint is 30.00 °C, with a hysteresis of 0.00. The current temperature is 20.50 °C.
+      content: The central heating is currently on. The setpoint is 30.00 °C, with a hysteresis of 0.00 °C. The current temperature is 20.50 °C.
 
 - chat:
     - role: system
@@ -1032,7 +1468,7 @@
         Here's a summary of sensor readings:
 
         | Zone | Name | Measurement | Value |
-        | :--- | :--- | :--- | :--- |
+        |---|---|---|---|
         | Kitchen | DHT Sensor | Humidity | 21.70 % |
         | Kitchen | DHT Sensor | Temperature | 47.60 °C |
         | Living Room | Thermostat Sensor | Temperature | 22.40 °C |
@@ -1053,7 +1489,7 @@
         Here's a summary of sensor readings:
 
         | Zone | Name | Measurement | Value |
-        | :--- | :--- | :--- | :--- |
+        |---|---|---|---|
         | Kitchen | DHT Sensor | Humidity | 16.80 % |
         | Kitchen | DHT Sensor | Temperature | 17.50 °C |
         | Living Room | Thermostat Sensor | Temperature | 20.38 °C |

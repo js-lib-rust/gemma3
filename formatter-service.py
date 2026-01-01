@@ -1,23 +1,20 @@
+import json
+import re
+import signal
+import time
+from http.server import BaseHTTPRequestHandler, HTTPServer
 from threading import Event
+
+import torch
 from transformers import (
     AutoModelForCausalLM,
     AutoTokenizer,
     TextStreamer,
-    DynamicCache,
-    BitsAndBytesConfig
+    DynamicCache
 )
-import torch
-import signal
-import time
-from http.server import BaseHTTPRequestHandler, HTTPServer
-import json
-import re
-import subprocess
-import os
 
 base_model = "formatter-270m"
 device = 'cuda:0'
-history = []
 
 tokenizer = AutoTokenizer.from_pretrained(base_model)
 terminators = [tokenizer.eos_token_id]
@@ -142,10 +139,6 @@ class RequestHandler(BaseHTTPRequestHandler):  # type: ignore
         chat = []
         if system_content:
             chat.append({"role": "system", "content": "\n\n".join(system_content)})
-        if use_history and not context:
-            for conversation in history:
-                chat.append({"role": "user", "content": conversation[0]})
-                chat.append({"role": "assistant", "content": conversation[1]})
         chat.append({"role": "user", "content": prompt})
         text = tokenizer.apply_chat_template(chat, tokenize=False, add_generation_prompt=True, enable_thinking=False)
         print(f"text: {text}")
@@ -169,8 +162,6 @@ class RequestHandler(BaseHTTPRequestHandler):  # type: ignore
         print("generate_config: ", generate_config)
         _ = model.generate(**model_inputs, **generate_config)
 
-        if use_history:
-            history.append((prompt, streamer.response))
         print(f"Request processing time: {time.time() - request_start_time}")
 
 

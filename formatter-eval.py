@@ -19,11 +19,13 @@ parser.add_argument("--verbose", action="store_true")
 parser.add_argument("--list", action="store_true")
 parser.add_argument("--use-base-model", action="store_true")
 parser.add_argument("--files", type=util.split_by_comma, action="store")
+parser.add_argument("--max-new-tokens", type=int, action="store", default="2000")
 parser.add_argument("tests", type=int, nargs='*', help="tests number to execute")
 args = parser.parse_args()
 
 model_path = BASE_MODEL if args.use_base_model else EVAL_MODEL
 print(f"Use model `{model_path}`.")
+print(f"Use max new tokens {args.max_new_tokens}.")
 
 data_files = args.files if args.files else [DATA_FILE]
 dataset = []
@@ -51,7 +53,7 @@ eval_model = AutoModelForCausalLM.from_pretrained(model_path, dtype=torch.bfloat
 eval_model.eval()
 
 config = {
-    'max_new_tokens': 500,
+    'max_new_tokens': args.max_new_tokens,
     'do_sample': False,
     'pad_token_id': eval_tokenizer.eos_token_id,
 }

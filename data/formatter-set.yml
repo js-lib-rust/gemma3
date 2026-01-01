@@ -436,68 +436,97 @@
     - role: model
       content: |
         ```xml
-        <readings date="2025-12-28">
-          <person>Iulian Rotaru</person>
-          <reading timestamp="10:23:27">
-            <measurement>systolic_pressure</measurement>
-            <value>120</value>
-          </reading>
-          <reading timestamp="10:23:27">
-            <measurement>diastolic_pressure</measurement>
-            <value>75</value>
-          </reading>
-          <reading timestamp="10:23:27">
-            <measurement>pulse_pressure</measurement>
-            <value>45</value>
-          </reading>
-          <reading timestamp="10:23:27">
-            <measurement>heart_rate</measurement>
-            <value>62</value>
-          </reading>
-          <reading timestamp="10:24:54">
-            <measurement>body_temperature</measurement>
-            <value>35.20000076293945</value>
-          </reading>
-          <reading timestamp="10:25:46">
-            <measurement>body_weight</measurement>
-            <value>89.5</value>
-          </reading>
-          <reading timestamp="10:25:46">
-            <measurement>body_mass_index</measurement>
-            <value>28.89333724975586</value>
-          </reading>
-          <reading timestamp="11:24:49">
-            <measurement>glucose_level</measurement>
-            <value>130.0</value>
-          </reading>
-          <reading timestamp="16:23:20">
-            <measurement>systolic_pressure</measurement>
-            <value>114</value>
-          </reading>
-          <reading timestamp="16:23:20">
-            <measurement>diastolic_pressure</measurement>
-            <value>73</value>
-          </reading>
-          <reading timestamp="16:23:20">
-            <measurement>pulse_pressure</measurement>
-            <value>41</value>
-          </reading>
-          <reading timestamp="16:23:20">
-            <measurement>heart_rate</measurement>
-            <value>72</value>
-          </reading>
-          <reading timestamp="16:24:01">
-            <measurement>body_weight</measurement>
-            <value>89.0</value>
-          </reading>
-          <reading timestamp="16:24:01">
-            <measurement>body_mass_index</measurement>
-            <value>28.731922149658203</value>
-          </reading>
-          <reading timestamp="16:25:49">
-            <measurement>glucose_level</measurement>
-            <value>117.0</value>
-          </reading>
+        <readings>
+            <reading>
+                <timestamp>2025-12-28 10:23:27</timestamp>
+                <person>Iulian Rotaru</person>
+                <measurement>systolic_pressure</measurement>
+                <value>120</value>
+            </reading>
+            <reading>
+                <timestamp>2025-12-28 10:23:27</timestamp>
+                <person>Iulian Rotaru</person>
+                <measurement>diastolic_pressure</measurement>
+                <value>75</value>
+            </reading>
+            <reading>
+                <timestamp>2025-12-28 10:23:27</timestamp>
+                <person>Iulian Rotaru</person>
+                <measurement>pulse_pressure</measurement>
+                <value>45</value>
+            </reading>
+            <reading>
+                <timestamp>2025-12-28 10:23:27</timestamp>
+                <person>Iulian Rotaru</person>
+                <measurement>heart_rate</measurement>
+                <value>62</value>
+            </reading>
+            <reading>
+                <timestamp>2025-12-28 10:24:54</timestamp>
+                <person>Iulian Rotaru</person>
+                <measurement>body_temperature</measurement>
+                <value>35.20000076293945</value>
+            </reading>
+            <reading>
+                <timestamp>2025-12-28 10:25:46</timestamp>
+                <person>Iulian Rotaru</person>
+                <measurement>body_weight</measurement>
+                <value>89.5</value>
+            </reading>
+            <reading>
+                <timestamp>2025-12-28 10:25:46</timestamp>
+                <person>Iulian Rotaru</person>
+                <measurement>body_mass_index</measurement>
+                <value>28.89333724975586</value>
+            </reading>
+            <reading>
+                <timestamp>2025-12-28 11:24:49</timestamp>
+                <person>Iulian Rotaru</person>
+                <measurement>glucose_level</measurement>
+                <value>130.0</value>
+            </reading>
+            <reading>
+                <timestamp>2025-12-28 16:23:20</timestamp>
+                <person>Iulian Rotaru</person>
+                <measurement>systolic_pressure</measurement>
+                <value>114</value>
+            </reading>
+            <reading>
+                <timestamp>2025-12-28 16:23:20</timestamp>
+                <person>Iulian Rotaru</person>
+                <measurement>diastolic_pressure</measurement>
+                <value>73</value>
+            </reading>
+            <reading>
+                <timestamp>2025-12-28 16:23:20</timestamp>
+                <person>Iulian Rotaru</person>
+                <measurement>pulse_pressure</measurement>
+                <value>41</value>
+            </reading>
+            <reading>
+                <timestamp>2025-12-28 16:23:20</timestamp>
+                <person>Iulian Rotaru</person>
+                <measurement>heart_rate</measurement>
+                <value>72</value>
+            </reading>
+            <reading>
+                <timestamp>2025-12-28 16:24:01</timestamp>
+                <person>Iulian Rotaru</person>
+                <measurement>body_weight</measurement>
+                <value>89.0</value>
+            </reading>
+            <reading>
+                <timestamp>2025-12-28 16:24:01</timestamp>
+                <person>Iulian Rotaru</person>
+                <measurement>body_mass_index</measurement>
+                <value>28.731922149658203</value>
+            </reading>
+            <reading>
+                <timestamp>2025-12-28 16:25:49</timestamp>
+                <person>Iulian Rotaru</person>
+                <measurement>glucose_level</measurement>
+                <value>117.0</value>
+            </reading>
         </readings>
         ```
 
@@ -1439,6 +1468,145 @@
     - role: user
       content: |
         Function response is a single sensor reading structure: 
+        {"zone":"kitchen","name":"DHT Sensor","measurement":"humidity","value":16.7}
+        {"zone":"kitchen","name":"DHT Sensor","measurement":"temperature","value":17.5}
+        {"zone":"living room","name":"Thermostat Sensor","measurement":"temperature","value":20.38}
+
+        User Prompt: print all sensors, in json format
+    - role: model
+      content: |
+        ```json
+        [
+            {
+                "zone": "kitchen",
+                "name": "DHT Sensor",
+                "measurement": "humidity",
+                "value": 16.7
+            },
+            {
+                "zone": "kitchen",
+                "name": "DHT Sensor",
+                "measurement": "temperature",
+                "value": 17.5
+            },
+            {
+                "zone": "living room",
+                "name": "Thermostat Sensor",
+                "measurement": "temperature",
+                "value": 20.38
+            }
+        ]
+        ```
+
+- chat:
+    - role: system
+      content: You are a home automation question answering agent. Generate responses using the user prompt and JSON data from the function response.
+    - role: user
+      content: |
+        Function response is a single sensor reading structure: 
+        {"zone":"kitchen","name":"DHT Sensor","measurement":"humidity","value":16.7}
+        {"zone":"kitchen","name":"DHT Sensor","measurement":"temperature","value":17.5}
+        {"zone":"living room","name":"Thermostat Sensor","measurement":"temperature","value":20.38}
+
+        User Prompt: print all sensors, in jsonl format
+    - role: model
+      content: |
+        ```jsonl
+        {"zone":"kitchen","name":"DHT Sensor","measurement":"humidity","value":16.7}
+        {"zone":"kitchen","name":"DHT Sensor","measurement":"temperature","value":17.5}
+        {"zone":"living room","name":"Thermostat Sensor","measurement":"temperature","value":20.38}
+        ```
+
+- chat:
+    - role: system
+      content: You are a home automation question answering agent. Generate responses using the user prompt and JSON data from the function response.
+    - role: user
+      content: |
+        Function response is a single sensor reading structure: 
+        {"zone":"kitchen","name":"DHT Sensor","measurement":"humidity","value":16.7}
+        {"zone":"kitchen","name":"DHT Sensor","measurement":"temperature","value":17.5}
+        {"zone":"living room","name":"Thermostat Sensor","measurement":"temperature","value":20.38}
+
+        User Prompt: print all sensors, in xml format
+    - role: model
+      content: |
+        ```jsonl
+        <sensors>
+            <sensor>
+                <zone>kitchen</zone>
+                <name>DHT Sensor</name>
+                <measurement>humidity</measurement>
+                <value>16.7</value>
+            </sensor>
+            <sensor>
+                <zone>kitchen</zone>
+                <name>DHT Sensor</name>
+                <measurement>temperature</measurement>
+                <value>17.5</value>
+            </sensor>
+            <sensor>
+                <zone>living room</zone>
+                <name>Thermostat Sensor</name>
+                <measurement>temperature</measurement>
+                <value>20.38</value>
+            </sensor>
+        </sensors>
+        ```
+
+- chat:
+    - role: system
+      content: You are a home automation question answering agent. Generate responses using the user prompt and JSON data from the function response.
+    - role: user
+      content: |
+        Function response is a single sensor reading structure: 
+        {"zone":"kitchen","name":"DHT Sensor","measurement":"humidity","value":16.7}
+        {"zone":"kitchen","name":"DHT Sensor","measurement":"temperature","value":17.5}
+        {"zone":"living room","name":"Thermostat Sensor","measurement":"temperature","value":20.38}
+
+        User Prompt: print all sensors, in html format
+    - role: model
+      content: |
+        ```html
+        <!DOCTYPE html>
+        <html>
+        <head>
+        <title>Sensors</title>
+        </head>
+        <body>
+          <h1>Sensors</h1>
+          <ul>
+            <li><b>Kitchen: DHT Sensor:</b> 16.70 %</li>
+            <li><b>Kitchen: DHT Sensor:</b> 17.50 °C</li>
+            <li><b>Living Room: Thermostat Sensor:</b> 20.38 °C</li>
+          </body>
+        </html>
+        ```
+
+- chat:
+    - role: system
+      content: You are a home automation question answering agent. Generate responses using the user prompt and JSON data from the function response.
+    - role: user
+      content: |
+        Function response is a list of sensor reading structures: 
+        {"zone":"kitchen","name":"DHT Sensor","measurement":"humidity","value":15.70}
+        {"zone":"kitchen","name":"DHT Sensor","measurement":"temperature","value":17.80}
+        {"zone":"living room","name":"Thermostat Sensor","measurement":"temperature","value":20.50}
+
+        User Prompt: print all sensors, in plain text format
+    - role: model
+      content: |
+        Here's a summary of sensor readings:
+
+        - Kitchen - DHT Sensor: Temperature: 17.80 %
+        - Kitchen - DHT Sensor: Humidity: 15.70 °C
+        - Living Room - Thermostat Sensor: Temperature: 20.50 °C
+
+- chat:
+    - role: system
+      content: You are a home automation question answering agent. Generate responses using the user prompt and JSON data from the function response.
+    - role: user
+      content: |
+        Function response is a single sensor reading structure: 
         {"zone":"kitchen","name":"DHT Sensor","measurement":"humidity","value":16.70}
         {"zone":"kitchen","name":"DHT Sensor","measurement":"temperature","value":17.50}
         {"zone":"living room","name":"Thermostat Sensor","measurement":"temperature","value":20.38}
@@ -1451,6 +1619,42 @@
         *   **Kitchen - DHT Sensor**: Humidity 16.70 %
         *   **Kitchen - DHT Sensor**: Temperature 17.50 °C
         *   **Living Room - Thermostat Sensor**: Temperature 20.38 °C
+
+- chat:
+    - role: system
+      content: You are a home automation question answering agent. Generate responses using the user prompt and JSON data from the function response.
+    - role: user
+      content: |
+        Function response is a single sensor reading structure: 
+        {"zone":"kitchen","name":"DHT Sensor","measurement":"humidity","value":16.7}
+        {"zone":"kitchen","name":"DHT Sensor","measurement":"temperature","value":17.5}
+        {"zone":"living room","name":"Thermostat Sensor","measurement":"temperature","value":20.38}
+
+        User Prompt: read all sensors in the house, in json format
+    - role: model
+      content: |
+        ```json
+        [
+            {
+                "zone": "kitchen",
+                "name": "DHT Sensor",
+                "measurement": "humidity",
+                "value": 16.7
+            },
+            {
+                "zone": "kitchen",
+                "name": "DHT Sensor",
+                "measurement": "temperature",
+                "value": 17.5
+            },
+            {
+                "zone": "living room",
+                "name": "Thermostat Sensor",
+                "measurement": "temperature",
+                "value": 20.38
+            }
+        ]
+        ```
 
 - chat:
     - role: system

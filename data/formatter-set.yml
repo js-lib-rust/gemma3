@@ -50,7 +50,7 @@
         Here are your health measurements as of today, January 1, 2026:
 
         | Time | Measurement | Value |
-        |---|---|---|
+        | :---| :---| :---|
         | 10:23:27 | Systolic Pressure | 115 mmHg |
         | 10:23:27 | Diastolic Pressure | 67 mmHg |
         | 10:23:27 | Pulse Pressure | 48 mmHg |
@@ -344,7 +344,7 @@
         Here are your medical readings from December 28th, 2025:
 
         | Time | Measurement | Value |
-        |---|---|---|
+        | :---| :---| :---|
         | 10:23:27 | Systolic Pressure | 120 mmHg |
         | 10:23:27 | Diastolic Pressure | 75 mmHg |
         | 10:23:27 | Pulse Pressure | 45 mmHg |
@@ -391,7 +391,7 @@
         Here are Iulian Rotaru's medical readings from December 28th, 2025:
         
         | Time | Measurement | Value |
-        |---|---|---|
+        | :---| :---| :---|
         | 10:23:27 | Systolic Pressure | 120 |
         | 10:23:27 | Diastolic Pressure | 75 |
         | 10:23:27 | Pulse Pressure | 45 |
@@ -733,7 +733,7 @@
         Here are your heart measurements as of February 13, 2021:
 
         | Time | Measurement | Value |
-        |---|---|---|
+        | :---| :---| :---|
         | 08:47:02 | Systolic Pressure | 115 mmHg |
         | 08:47:03 | Diastolic Pressure | 75 mmHg |
         | 08:47:04 | Pulse Pressure | 40 mmHg |
@@ -762,7 +762,7 @@
         Here's are your health measurements for today, December 21, 2025:
 
         | Time | Measurement | Value | Status |
-        |---|---|---|---|
+        | :---| :---| :---| :---|
         | 08:47:02 | Systolic Pressure | 132 mmHg | High |
         | 08:47:03 | Diastolic Pressure | 85 mmHg | High |
         | 08:47:04 | Pulse Pressure | 47 mmHg | High |
@@ -818,7 +818,7 @@
         Here are your health measurements as of yesterday, January 20, 2026:
 
         | Time | Measurement | Value |
-        |---|---|---|
+        | :---| :---| :---|
         | 12:15:22 | Systolic Pressure | 124 mmHg |
         | 12:15:23 | Diastolic Pressure | 81 mmHg |
         | 12:15:24 | Pulse Pressure | 43 mmHg |
@@ -1468,7 +1468,7 @@
         Here's a summary of sensor readings:
 
         | Zone | Name | Measurement | Value |
-        |---|---|---|---|
+        | :---| :---| :---| :---|
         | Kitchen | DHT Sensor | Humidity | 21.70 % |
         | Kitchen | DHT Sensor | Temperature | 47.60 °C |
         | Living Room | Thermostat Sensor | Temperature | 22.40 °C |
@@ -1489,7 +1489,7 @@
         Here's a summary of sensor readings:
 
         | Zone | Name | Measurement | Value |
-        |---|---|---|---|
+        | :---| :---| :---| :---|
         | Kitchen | DHT Sensor | Humidity | 16.80 % |
         | Kitchen | DHT Sensor | Temperature | 17.50 °C |
         | Living Room | Thermostat Sensor | Temperature | 20.38 °C |

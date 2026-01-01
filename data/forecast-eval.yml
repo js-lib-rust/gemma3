@@ -24,7 +24,7 @@
     Here is the weather forecast for the next two weeks:
   
     | Date | Weather | Max Temp (°C) | Min Temp (°C) | Apparent Max Temp (°C) | Apparent Min Temp (°C) | Precipitation (mm) | Max Precipitation Probability (%) | Max Wind Speed (km/h) |
-    | :---| :---| :---| :---| :---| :---| :---| :---| :---|
+    | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
     | 2025-12-31 | Slight snow showers | -0.6 | -3.3 | -6.5 | -8.1 | 2.1 | 48 | 22.4 |
     | 2026-01-01 | Overcast | 0.2 | -4.6 | -3.3 | -8.7 | 0.0 | 8 | 7.1 |
     | 2026-01-02 | Overcast | 3.8 | -2.2 | 0.1 | -6.3 | 0.0 | 0 | 10.0 |
@@ -78,7 +78,7 @@
     Here's the hourly weather forecast for today, December 30, 2025:
     
     | Time | Weather | Temperature (°C) | Humidity (%) | Precipitation Probability (%) | Wind Speed (km/h) |
-    | :---| :---| :---| :---| :---| :---|
+    | :--- | :--- | :--- | :--- | :--- | :--- |
     | 00:00 | Overcast | -0.6 | 74 | 0 | 2.3 |
     | 01:00 | Overcast | -0.5 | 73 | 0 | 2.5 |
     | 02:00 | Overcast | 0.1 | 63 | 0 | 5.6 |

@@ -145,7 +145,7 @@
       content: What is a health measurement structure?
     - role: model
       content: |
-        Health measurement structure is a JSON object that contains measurement type an its numeric value. There can be one or multiple structures in a function response, in JSONL format. Health measurements are stored in the medical database.
+        The 'health measurement' structure is a JSON object that contains measurement type an its numeric value. There can be one or multiple structures in a function response, in JSONL format. Health measurements are stored in the medical database.
         
         It has next properties:
         * **timestamp**: date string with format YYYY-MM-DD HH:MM:SS
@@ -389,7 +389,7 @@
       content: What is a heating controller structure?
     - role: model
       content: |
-        Heating controller structure is a JSON object that contains current status of the central heating.
+        The 'heating controller' structure is a JSON object that contains current status of the central heating.
         
         Heating controller structure has next properties:
         * **setpoint**: the desired temperature value in °C 
@@ -411,23 +411,23 @@
     - role: system
       content: You are a home automation question answering agent.
     - role: user
-      content: What is a sensor reading structure?
+      content: What is a sensor value structure?
     - role: model
       content: |
-        The sensor reading structure is a JSON object containing a sensor real-time value.
+        The 'sensor value' structure is a JSON object containing a sensor real-time value.
         
         The sensor reading structure has next properties:
         * **zone**: zone from home automation system where sensor is deployed 
         * **name**: sensor name, unique in its zone
-        * **measurement**: sensor measurement type, like temperature or humidity
+        * **value_type**: sensor value type, like temperature or humidity
         * **value**: sensor current value; it has mixed type: can be string, number or boolean
         
         Here is an example of a sensor reading structure:
         ```json
         {
-          "zone":"kitchen",
+          "zone":"Kitchen",
           "name":"DHT Sensor",
-          "measurement":"temperature",
+          "value_type":"Temperature",
           "value":17.50
         }
         ```
@@ -439,7 +439,7 @@
       content: What is a device diagnose structure?
     - role: model
       content: |
-        The device diagnose structure is a JSON object containing a comprehensive data about device state.
+        The 'device diagnose' structure is a JSON object containing a comprehensive data about device state.
         
         The device diagnose structure has next properties:
         * **device_id**: globally unique device ID 
@@ -449,20 +449,20 @@
         * **ipv4_addr**: IP address version 4 
         * **diagnose_port**: port used by device for diagnose API
         * **connection_state**: device connection state
-        * **measurement**: optional sensor measurement type, like temperature or humidity
+        * **value_type**: optional sensor value type, like temperature or humidity
         * **value**: optional sensor current value; it has mixed type: can be string, number or boolean
         
         Here is an example of a device diagnose structure:
         ```json
         {
           "device_id":"dht-sensor",
-          "device_zone":"kitchen",
+          "device_zone":"Kitchen",
           "device_name":"DHT Sensor",
           "hostname":"dht-sensor.local",
           "ipv4_addr":"192.168.0.73",
           "diagnose_port":80,
           "connection_state":"Active",
-          "measurement":"humidity",
+          "value_type":"Humidity",
           "value":13.5
         }
         ```

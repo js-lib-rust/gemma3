@@ -6,7 +6,7 @@
       content: You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function response is a list of health measurement structures: 
+        Function response is a list of 'health measurement' structures: 
         {"timestamp":"2026-01-01 12:20:36","person":"Iulian Rotaru","measurement":"systolic_pressure","value":115}
         {"timestamp":"2026-01-01 12:20:36","person":"Iulian Rotaru","measurement":"diastolic_pressure","value":67}
         {"timestamp":"2026-01-01 12:20:36","person":"Iulian Rotaru","measurement":"pulse_pressure","value":48}
@@ -35,7 +35,7 @@
       content: You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function response is a list of health measurement structures: 
+        Function response is a list of 'health measurement' structures: 
         {"timestamp":"2026-01-01 12:20:36","person":"Iulian Rotaru","measurement":"systolic_pressure","value":115}
         {"timestamp":"2026-01-01 12:20:36","person":"Iulian Rotaru","measurement":"diastolic_pressure","value":67}
         {"timestamp":"2026-01-01 12:20:36","person":"Iulian Rotaru","measurement":"pulse_pressure","value":48}
@@ -66,7 +66,7 @@
       content: You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function response is a list of health measurement structures: 
+        Function response is a list of 'health measurement' structures: 
         {"timestamp":"2026-01-01 12:20:36","person":"Iulian Rotaru","measurement":"systolic_pressure","value":115}
         {"timestamp":"2026-01-01 12:20:36","person":"Iulian Rotaru","measurement":"diastolic_pressure","value":67}
         {"timestamp":"2026-01-01 12:20:36","person":"Iulian Rotaru","measurement":"pulse_pressure","value":48}
@@ -80,48 +80,48 @@
       content: |
         ```json
         [
-            {
-                "timestamp": "2026-01-01 12:20:36",
-                "person": "Iulian Rotaru",
-                "measurement": "systolic_pressure",
-                "value": 115
-            },
-            {
-                "timestamp": "2026-01-01 12:20:36",
-                "person": "Iulian Rotaru",
-                "measurement": "diastolic_pressure",
-                "value": 67
-            },
-            {
-                "timestamp": "2026-01-01 12:20:36",
-                "person": "Iulian Rotaru",
-                "measurement": "pulse_pressure",
-                "value": 48
-            },
-            {
-                "timestamp": "2026-01-01 12:20:36",
-                "person": "Iulian Rotaru",
-                "measurement": "heart_rate",
-                "value": 57
-            },
-            {
-                "timestamp": "2026-01-01 12:22:08",
-                "person": "Iulian Rotaru",
-                "measurement": "body_temperature",
-                "value": 35.1
-            },
-            {
-                "timestamp": "2026-01-01 12:23:27",
-                "person": "Iulian Rotaru",
-                "measurement": "body_weight",
-                "value": 89.5
-            },
-            {
-                "timestamp": "2026-01-01 12:23:27",
-                "person": "Iulian Rotaru",
-                "measurement": "body_mass_index",
-                "value": 29.22
-            }
+          {
+            "timestamp": "2026-01-01 12:20:36",
+            "person": "Iulian Rotaru",
+            "measurement": "systolic_pressure",
+            "value": 115
+          },
+          {
+            "timestamp": "2026-01-01 12:20:36",
+            "person": "Iulian Rotaru",
+            "measurement": "diastolic_pressure",
+            "value": 67
+          },
+          {
+            "timestamp": "2026-01-01 12:20:36",
+            "person": "Iulian Rotaru",
+            "measurement": "pulse_pressure",
+            "value": 48
+          },
+          {
+            "timestamp": "2026-01-01 12:20:36",
+            "person": "Iulian Rotaru",
+            "measurement": "heart_rate",
+            "value": 57
+          },
+          {
+            "timestamp": "2026-01-01 12:22:08",
+            "person": "Iulian Rotaru",
+            "measurement": "body_temperature",
+            "value": 35.1
+          },
+          {
+            "timestamp": "2026-01-01 12:23:27",
+            "person": "Iulian Rotaru",
+            "measurement": "body_weight",
+            "value": 89.5
+          },
+          {
+            "timestamp": "2026-01-01 12:23:27",
+            "person": "Iulian Rotaru",
+            "measurement": "body_mass_index",
+            "value": 29.22
+          }
         ]        
         ```
 
@@ -130,7 +130,7 @@
       content: You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function response is a list of health measurement structures: 
+        Function response is a list of 'health measurement' structures: 
         {"timestamp":"2026-01-01 12:20:36","person":"Iulian Rotaru","measurement":"systolic_pressure","value":115}
         {"timestamp":"2026-01-01 12:20:36","person":"Iulian Rotaru","measurement":"diastolic_pressure","value":67}
         {"timestamp":"2026-01-01 12:20:36","person":"Iulian Rotaru","measurement":"pulse_pressure","value":48}
@@ -157,7 +157,7 @@
       content: You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function response is a list of health measurement structures: 
+        Function response is a list of 'health measurement' structures: 
         {"timestamp":"2026-01-01 12:20:36","person":"Iulian Rotaru","measurement":"systolic_pressure","value":115}
         {"timestamp":"2026-01-01 12:20:36","person":"Iulian Rotaru","measurement":"diastolic_pressure","value":67}
         {"timestamp":"2026-01-01 12:20:36","person":"Iulian Rotaru","measurement":"pulse_pressure","value":48}
@@ -221,7 +221,7 @@
       content: You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function response is a list of health measurement structures: 
+        Function response is a list of 'health measurement' structures: 
         {"timestamp":"2026-01-01 12:20:36","person":"Iulian Rotaru","measurement":"systolic_pressure","value":115}
         {"timestamp":"2026-01-01 12:20:36","person":"Iulian Rotaru","measurement":"diastolic_pressure","value":67}
         {"timestamp":"2026-01-01 12:20:36","person":"Iulian Rotaru","measurement":"pulse_pressure","value":48}
@@ -259,7 +259,7 @@
       content: You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function response is a list of health measurement structures: 
+        Function response is a list of 'health measurement' structures: 
         {"timestamp":"2026-01-01 12:20:36","person":"Iulian Rotaru","measurement":"systolic_pressure","value":115}
         {"timestamp":"2026-01-01 12:20:36","person":"Iulian Rotaru","measurement":"diastolic_pressure","value":67}
         {"timestamp":"2026-01-01 12:20:36","person":"Iulian Rotaru","measurement":"pulse_pressure","value":48}
@@ -288,7 +288,7 @@
       content: You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function response is a list of health measurement structures: 
+        Function response is a list of 'health measurement' structures: 
         {"timestamp":"2025-12-17 08:47:02","person":"Iulian Rotaru","measurement":"systolic_pressure","value":124}
         {"timestamp":"2025-12-17 08:47:02","person":"Iulian Rotaru","measurement":"diastolic_pressure","value":81}
         {"timestamp":"2025-12-17 08:47:02","person":"Iulian Rotaru","measurement":"pulse_pressure","value":43}
@@ -321,7 +321,7 @@
       content: You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function response is a list of health measurement structures: 
+        Function response is a list of 'health measurement' structures: 
         {"timestamp":"2025-12-28 10:23:27","person":"Iulian Rotaru","measurement":"systolic_pressure","value":120}
         {"timestamp":"2025-12-28 10:23:27","person":"Iulian Rotaru","measurement":"diastolic_pressure","value":75}
         {"timestamp":"2025-12-28 10:23:27","person":"Iulian Rotaru","measurement":"pulse_pressure","value":45}
@@ -368,7 +368,7 @@
       content: You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function response is a list of health measurement structures: 
+        Function response is a list of 'health measurement' structures: 
         {"timestamp":"2025-12-28 10:23:27","person":"Iulian Rotaru","measurement":"systolic_pressure","value":120}
         {"timestamp":"2025-12-28 10:23:27","person":"Iulian Rotaru","measurement":"diastolic_pressure","value":75}
         {"timestamp":"2025-12-28 10:23:27","person":"Iulian Rotaru","measurement":"pulse_pressure","value":45}
@@ -415,7 +415,7 @@
       content: You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function response is a list of health measurement structures: 
+        Function response is a list of 'health measurement' structures: 
         {"timestamp":"2025-12-28 10:23:27","person":"Iulian Rotaru","measurement":"systolic_pressure","value":120}
         {"timestamp":"2025-12-28 10:23:27","person":"Iulian Rotaru","measurement":"diastolic_pressure","value":75}
         {"timestamp":"2025-12-28 10:23:27","person":"Iulian Rotaru","measurement":"pulse_pressure","value":45}
@@ -437,96 +437,96 @@
       content: |
         ```xml
         <readings>
-            <reading>
-                <timestamp>2025-12-28 10:23:27</timestamp>
-                <person>Iulian Rotaru</person>
-                <measurement>systolic_pressure</measurement>
-                <value>120</value>
-            </reading>
-            <reading>
-                <timestamp>2025-12-28 10:23:27</timestamp>
-                <person>Iulian Rotaru</person>
-                <measurement>diastolic_pressure</measurement>
-                <value>75</value>
-            </reading>
-            <reading>
-                <timestamp>2025-12-28 10:23:27</timestamp>
-                <person>Iulian Rotaru</person>
-                <measurement>pulse_pressure</measurement>
-                <value>45</value>
-            </reading>
-            <reading>
-                <timestamp>2025-12-28 10:23:27</timestamp>
-                <person>Iulian Rotaru</person>
-                <measurement>heart_rate</measurement>
-                <value>62</value>
-            </reading>
-            <reading>
-                <timestamp>2025-12-28 10:24:54</timestamp>
-                <person>Iulian Rotaru</person>
-                <measurement>body_temperature</measurement>
-                <value>35.20000076293945</value>
-            </reading>
-            <reading>
-                <timestamp>2025-12-28 10:25:46</timestamp>
-                <person>Iulian Rotaru</person>
-                <measurement>body_weight</measurement>
-                <value>89.5</value>
-            </reading>
-            <reading>
-                <timestamp>2025-12-28 10:25:46</timestamp>
-                <person>Iulian Rotaru</person>
-                <measurement>body_mass_index</measurement>
-                <value>28.89333724975586</value>
-            </reading>
-            <reading>
-                <timestamp>2025-12-28 11:24:49</timestamp>
-                <person>Iulian Rotaru</person>
-                <measurement>glucose_level</measurement>
-                <value>130.0</value>
-            </reading>
-            <reading>
-                <timestamp>2025-12-28 16:23:20</timestamp>
-                <person>Iulian Rotaru</person>
-                <measurement>systolic_pressure</measurement>
-                <value>114</value>
-            </reading>
-            <reading>
-                <timestamp>2025-12-28 16:23:20</timestamp>
-                <person>Iulian Rotaru</person>
-                <measurement>diastolic_pressure</measurement>
-                <value>73</value>
-            </reading>
-            <reading>
-                <timestamp>2025-12-28 16:23:20</timestamp>
-                <person>Iulian Rotaru</person>
-                <measurement>pulse_pressure</measurement>
-                <value>41</value>
-            </reading>
-            <reading>
-                <timestamp>2025-12-28 16:23:20</timestamp>
-                <person>Iulian Rotaru</person>
-                <measurement>heart_rate</measurement>
-                <value>72</value>
-            </reading>
-            <reading>
-                <timestamp>2025-12-28 16:24:01</timestamp>
-                <person>Iulian Rotaru</person>
-                <measurement>body_weight</measurement>
-                <value>89.0</value>
-            </reading>
-            <reading>
-                <timestamp>2025-12-28 16:24:01</timestamp>
-                <person>Iulian Rotaru</person>
-                <measurement>body_mass_index</measurement>
-                <value>28.731922149658203</value>
-            </reading>
-            <reading>
-                <timestamp>2025-12-28 16:25:49</timestamp>
-                <person>Iulian Rotaru</person>
-                <measurement>glucose_level</measurement>
-                <value>117.0</value>
-            </reading>
+          <reading>
+            <timestamp>2025-12-28 10:23:27</timestamp>
+            <person>Iulian Rotaru</person>
+            <measurement>systolic_pressure</measurement>
+            <value>120</value>
+          </reading>
+          <reading>
+            <timestamp>2025-12-28 10:23:27</timestamp>
+            <person>Iulian Rotaru</person>
+            <measurement>diastolic_pressure</measurement>
+            <value>75</value>
+          </reading>
+          <reading>
+            <timestamp>2025-12-28 10:23:27</timestamp>
+            <person>Iulian Rotaru</person>
+            <measurement>pulse_pressure</measurement>
+            <value>45</value>
+          </reading>
+          <reading>
+            <timestamp>2025-12-28 10:23:27</timestamp>
+            <person>Iulian Rotaru</person>
+            <measurement>heart_rate</measurement>
+            <value>62</value>
+          </reading>
+          <reading>
+            <timestamp>2025-12-28 10:24:54</timestamp>
+            <person>Iulian Rotaru</person>
+            <measurement>body_temperature</measurement>
+            <value>35.20000076293945</value>
+          </reading>
+          <reading>
+            <timestamp>2025-12-28 10:25:46</timestamp>
+            <person>Iulian Rotaru</person>
+            <measurement>body_weight</measurement>
+            <value>89.5</value>
+          </reading>
+          <reading>
+            <timestamp>2025-12-28 10:25:46</timestamp>
+            <person>Iulian Rotaru</person>
+            <measurement>body_mass_index</measurement>
+            <value>28.89333724975586</value>
+          </reading>
+          <reading>
+            <timestamp>2025-12-28 11:24:49</timestamp>
+            <person>Iulian Rotaru</person>
+            <measurement>glucose_level</measurement>
+            <value>130.0</value>
+          </reading>
+          <reading>
+            <timestamp>2025-12-28 16:23:20</timestamp>
+            <person>Iulian Rotaru</person>
+            <measurement>systolic_pressure</measurement>
+            <value>114</value>
+          </reading>
+          <reading>
+            <timestamp>2025-12-28 16:23:20</timestamp>
+            <person>Iulian Rotaru</person>
+            <measurement>diastolic_pressure</measurement>
+            <value>73</value>
+          </reading>
+          <reading>
+            <timestamp>2025-12-28 16:23:20</timestamp>
+            <person>Iulian Rotaru</person>
+            <measurement>pulse_pressure</measurement>
+            <value>41</value>
+          </reading>
+          <reading>
+            <timestamp>2025-12-28 16:23:20</timestamp>
+            <person>Iulian Rotaru</person>
+            <measurement>heart_rate</measurement>
+            <value>72</value>
+          </reading>
+          <reading>
+            <timestamp>2025-12-28 16:24:01</timestamp>
+            <person>Iulian Rotaru</person>
+            <measurement>body_weight</measurement>
+            <value>89.0</value>
+          </reading>
+          <reading>
+            <timestamp>2025-12-28 16:24:01</timestamp>
+            <person>Iulian Rotaru</person>
+            <measurement>body_mass_index</measurement>
+            <value>28.731922149658203</value>
+          </reading>
+          <reading>
+            <timestamp>2025-12-28 16:25:49</timestamp>
+            <person>Iulian Rotaru</person>
+            <measurement>glucose_level</measurement>
+            <value>117.0</value>
+          </reading>
         </readings>
         ```
 
@@ -535,7 +535,7 @@
       content: You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function response is a list of health measurement structures: 
+        Function response is a list of 'health measurement' structures: 
         {"timestamp":"2018-04-01 08:17:43","person":"Iulian Rotaru","measurement":"glucose_level","value":130}
         {"timestamp":"2018-04-01 08:21:22","person":"Iulian Rotaru","measurement":"oxygen_saturation","value":0.95}
         {"timestamp":"2018-04-01 08:47:02","person":"Iulian Rotaru","measurement":"systolic_pressure","value":124}
@@ -582,7 +582,7 @@
       content: You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function response is a list of health measurement structures: 
+        Function response is a list of 'health measurement' structures: 
         {"timestamp":"2025-10-18 08:49:26","person":"Iulian Rotaru","measurement":"body_weight","value":89.5}
         {"timestamp":"2025-10-18 08:49:26","person":"Iulian Rotaru","measurement":"body_height","value":176}
         {"timestamp":"2025-10-18 08:49:26","person":"Iulian Rotaru","measurement":"body_mass_index","value":28.89333724975586}
@@ -605,7 +605,7 @@
       content: You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function response is a list of health measurement structures:  
+        Function response is a list of 'health measurement' structures:  
         {"timestamp":"2024-11-23 08:47:02","person":"Iulian Rotaru","measurement":"systolic_pressure","value":124}
         {"timestamp":"2024-11-23 08:47:02","person":"Iulian Rotaru","measurement":"diastolic_pressure","value":81}
         {"timestamp":"2024-11-23 08:47:02","person":"Iulian Rotaru","measurement":"pulse_pressure","value":43}
@@ -628,7 +628,7 @@
       content: You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function response is a list of health measurement structures: 
+        Function response is a list of 'health measurement' structures: 
         {"timestamp":"2024-11-23 08:47:02","person":"Iulian Rotaru","measurement":"systolic_pressure","value":124}
         {"timestamp":"2024-11-23 08:47:02","person":"Iulian Rotaru","measurement":"diastolic_pressure","value":81}
         {"timestamp":"2024-11-23 08:47:02","person":"Iulian Rotaru","measurement":"pulse_pressure","value":43}
@@ -651,7 +651,7 @@
       content: You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function response is a list of health measurement structures: 
+        Function response is a list of 'health measurement' structures: 
         {"timestamp":"2024-11-23 08:47:02","person":"Iulian Rotaru","measurement":"glucose_level","value":120}
         {"timestamp":"2024-11-23 08:51:22","person":"Iulian Rotaru","measurement":"oxygen_saturation","value":0.98}
 
@@ -670,7 +670,7 @@
       content: You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function response is a list of health measurement structures: 
+        Function response is a list of 'health measurement' structures: 
         {"timestamp":"2024-11-23 08:51:22","person":"Iulian Rotaru","measurement":"oxygen_saturation","value":0.98}
         {"timestamp":"2024-11-23 08:47:02","person":"Iulian Rotaru","measurement":"glucose_level","value":120}
 
@@ -689,7 +689,7 @@
       content: You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function response is a list of health measurement structures: 
+        Function response is a list of 'health measurement' structures: 
         {"timestamp":"2017-08-14 10:31:22","person":"Iulian Rotaru","measurement":"oxygen_saturation","value":0.97}
         {"timestamp":"2017-08-14 10:47:02","person":"Iulian Rotaru","measurement":"glucose_level","value":105}
 
@@ -708,7 +708,7 @@
       content: You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function response is a single health measurement structure: 
+        Function response is an 'health measurement' structure: 
         {"timestamp":"2024-10-12 08:47:02","person":"Iulian Rotaru","measurement":"intelligence_quotient","value":120}
 
         User Prompt: show my neural measurements from yesterday
@@ -725,7 +725,7 @@
       content: You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function response is a list of health measurement structures: 
+        Function response is a list of 'health measurement' structures: 
         {"timestamp":"2024-11-23 08:47:02","person":"Iulian Rotaru","measurement":"systolic_pressure","value":124}
         {"timestamp":"2024-11-23 08:47:02","person":"Iulian Rotaru","measurement":"diastolic_pressure","value":81}
         {"timestamp":"2024-11-23 08:47:02","person":"Iulian Rotaru","measurement":"pulse_pressure","value":43}
@@ -750,7 +750,7 @@
       content: You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function response is a list of health measurement structures: 
+        Function response is a list of 'health measurement' structures: 
         {"timestamp":"2021-02-13 08:47:02","person":"Iulian Rotaru","measurement":"systolic_pressure","value":115}
         {"timestamp":"2021-02-13 08:47:03","person":"Iulian Rotaru","measurement":"diastolic_pressure","value":75}
         {"timestamp":"2021-02-13 08:47:04","person":"Iulian Rotaru","measurement":"pulse_pressure","value":40}
@@ -775,7 +775,7 @@
       content: You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function response is a list of health measurement structures: 
+        Function response is a list of 'health measurement' structures: 
         {"time":"08:47:02","measurement":"systolic_pressure","value":132,"status":"high"}
         {"time":"08:47:03","measurement":"diastolic_pressure","value":85,"status":"high"}
         {"time":"08:47:04","measurement":"pulse_pressure","value":47,"status":"high"}
@@ -808,7 +808,7 @@
       content: You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function response is a list of health measurement structures: 
+        Function response is a list of 'health measurement' structures: 
         {"time":"12:15:20","measurement":"systolic_pressure","value":124}
         {"time":"12:15:20","measurement":"diastolic_pressure","value":81}
         {"time":"12:15:20","measurement":"pulse_pressure","value":43}
@@ -833,7 +833,7 @@
       content: You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function response is a list of health measurement structures: 
+        Function response is a list of 'health measurement' structures: 
         {"timestamp":"2026-01-20 12:15:22","person":"Iulian Rotaru","measurement":"systolic_pressure","value":124}
         {"timestamp":"2026-01-20 12:15:23","person":"Iulian Rotaru","measurement":"diastolic_pressure","value":81}
         {"timestamp":"2026-01-20 12:15:24","person":"Iulian Rotaru","measurement":"pulse_pressure","value":43}
@@ -862,12 +862,24 @@
       content: You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function response is a single health measurement structure: 
+        Function response is an 'health measurement' structure: 
         {"timestamp":"2026-01-20 12:15:49","person":"Iulian Rotaru","measurement":"body_temperature","value":36.50}
         
         User Prompt: what is my body temperature?
     - role: model
       content: Your body temperature is 36.50 °C.
+
+- chat:
+    - role: system
+      content: You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
+    - role: user
+      content: |
+        Function response is an 'health measurement' structure: 
+        {"timestamp":"2026-01-20 12:15:49","person":"Iulian Rotaru","measurement":"body_temperature","value":36.50}
+        
+        User Prompt: get my body temperature value
+    - role: model
+      content: 36.50
 
 - chat:
     - role: system
@@ -898,7 +910,7 @@
       content: You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function response is a single health measurement structure: 
+        Function response is an 'health measurement' structure: 
         {"timestamp":"2001-01-01 12:00:00","person":"Bruce Lee","measurement":"height","value":171}
         
         User Prompt: what was the height of Bruce Lee?
@@ -922,7 +934,7 @@
       content: You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function response is a list of health measurement structures: 
+        Function response is a list of 'health measurement' structures: 
         {"timestamp":"2025-12-17 08:48:58","person":"Iulian Rotaru","measurement":"body_temperature","value":35.400001525878906}
 
         User Prompt: print my body temperature from yesterday
@@ -934,7 +946,7 @@
       content: You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function response is a list of health measurement structures: 
+        Function response is a list of 'health measurement' structures: 
         {"timestamp":"1971-09-10 08:17:06","person":"Iulian Rotaru","measurement":"pulse_pressure","value":43}
 
         User Prompt: what is the pulse pressure value from my today readings?
@@ -946,7 +958,7 @@
       content: You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function response is a single health measurement structure: 
+        Function response is an 'health measurement' structure: 
         {"timestamp":"2021-04:13 21:25:10","person":"Rotaru Ilie","measurement":"pulse_pressure","value":47}
 
         User Prompt: what is my pulse pressure?
@@ -958,7 +970,7 @@
       content: You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function response is a list of health measurement structures: 
+        Function response is a list of 'health measurement' structures: 
         {"timestamp":"1995-07-04 10:00:00","person":"Iulian Rotaru","measurement":"body_temperature","value":36.5}
         
         User Prompt: get body temperature from 2025-12-17 for iulian rotaru
@@ -970,7 +982,7 @@
       content: You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function response is a list of health measurement structures: 
+        Function response is a list of 'health measurement' structures: 
         {"timestamp":"2011-08-26 08:30:00","measurement":"systolic_pressure","value":118}
         {"timestamp":"2011-08-26 08:30:00","measurement":"diastolic_pressure","value":76}
         {"timestamp":"2011-08-26 21:10:00","measurement":"systolic_pressure","value":121}
@@ -994,7 +1006,7 @@
       content: You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function response is a single health measurement structure: 
+        Function response is an 'health measurement' structure: 
         {"timestamp":"2025-12-17 08:48:58","person":"Iulian Rotaru","measurement":"body_temperature","value":35.400001525878906}
         
         User Prompt: show my temperature
@@ -1006,7 +1018,7 @@
       content: You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function response is a list of health measurement structures: 
+        Function response is a list of 'health measurement' structures: 
         {"timestamp":"2012-12-12 16:20:10","person":"Fântânaru Ciprian","measurement":"systolic_pressure","value":119}
         {"timestamp":"2012-12-12 16:20:10","person":"Fântânaru Ciprian","measurement":"diastolic_pressure","value":72}
         {"timestamp":"2012-12-12 16:20:10","person":"Fântânaru Ciprian","measurement":"pulse_pressure","value":47}
@@ -1022,7 +1034,7 @@
       content: You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function response is a list of health measurement structures: 
+        Function response is a list of 'health measurement' structures: 
         {"timestamp":"2011-11-11 09:28:44","person":"Rotaru Ștefan","measurement":"systolic_pressure","value":123}
         {"timestamp":"2011-11-11 09:28:44","person":"Rotaru Ștefan","measurement":"diastolic_pressure","value":73}
         {"timestamp":"2011-11-11 09:28:44","person":"Rotaru Ștefan","measurement":"pulse_pressure","value":50}
@@ -1038,7 +1050,7 @@
       content: You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function response is a list of health measurement structures: 
+        Function response is a list of 'health measurement' structures: 
         {"timestamp":"2010-03-11 18:38:41","person":"Lontkowschi George","measurement":"systolic_pressure","value":133}
         {"timestamp":"2010-03-11 18:38:41","person":"Lontkowschi George","measurement":"diastolic_pressure","value":86}
         {"timestamp":"2010-03-11 18:38:41","person":"Lontkowschi George","measurement":"pulse_pressure","value":47}
@@ -1054,7 +1066,7 @@
       content: You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function response is a list of health measurement structures: 
+        Function response is a list of 'health measurement' structures: 
         {"timestamp":"2019-04-21 16:18:31","person":"John Doe","measurement":"systolic_pressure","value":133}
         {"timestamp":"2019-04-21 16:18:31","person":"John Doe","measurement":"diastolic_pressure","value":76}
         {"timestamp":"2019-04-21 16:18:31","person":"John Doe","measurement":"pulse_pressure","value":57}
@@ -1082,7 +1094,7 @@
       content: You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function response is a single health measurement structure: 
+        Function response is an 'health measurement' structure: 
         {"timestamp":"2005-07-13 16:20:10","person":"Rotaru Iulian","measurement":"body_temperature","value":35.4}
 
         User Prompt: save my temperature 35.4
@@ -1094,7 +1106,7 @@
       content: You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function response is a single health measurement structure: 
+        Function response is an 'health measurement' structure: 
         {"timestamp":"2011-06-04 06:30:15","person":"Rotaru Ilie","measurement":"temperature","value":37.2}
 
         User Prompt: record my body temperature of 37.2 to medical database
@@ -1106,7 +1118,7 @@
       content: You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function response is a single health measurement structure: 
+        Function response is an 'health measurement' structure: 
         {"timestamp":"2003-09-20 09:06:53","person":"Jane Doe","measurement":"temperature","value":35.6}
         
         User Prompt: saves body temperature of 35.6 for Jane Doe in personal health archive
@@ -1118,7 +1130,7 @@
       content: You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function response is a single health measurement structure: 
+        Function response is an 'health measurement' structure: 
         {"timestamp":"2018-06-12 18:10:20","person":"Rotaru Ionuț Ciprian","measurement":"oxygen_saturation","value":0.95}
         
         User Prompt: save my spo2 0.95
@@ -1130,7 +1142,7 @@
       content: You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function response is a single health measurement structure: 
+        Function response is an 'health measurement' structure: 
         {"timestamp":"2021-05-23 18:10:20","person":"Lontkowschi Mirela Petronela","measurement":"oxygen_saturation","value":0.98}
         
         User Prompt: Log my oxygen saturation of 0.98 to medical database
@@ -1154,7 +1166,7 @@
       content: You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function response is a single health measurement structure: 
+        Function response is an 'health measurement' structure: 
         {"timestamp":"2024-03-24 18:30:15","person":"Iulian Rotaru","measurement":"oxygen_saturation","value":0.99}
         
         User Prompt: what is my oxygen saturation?
@@ -1166,46 +1178,46 @@
       content: You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function response is a list of health measurement structures: 
+        Function response is a list of 'health measurement' structures: 
         {"timestamp":"2014-03-24 18:30:15","person":"Hans Murakami Sena","measurement":"body_weight","value":99.0}
         {"timestamp":"2014-03-24 18:30:15","person":"Hans Murakami Sena","measurement":"body_mass_index","value":30.757693}
         
         User Prompt: Save body weight of 99 kg for Hans Murakami Sena in his medical database.
     - role: model
-      content: Weight of 99.0 kg, with a corresponding BMI of 30.75, were recorded for Hans Murakami Sena on March 24, 2014 at 18:30:15.
+      content: Body weight of 99.0 kg, with a corresponding BMI of 30.75, were recorded for Hans Murakami Sena on March 24, 2014 at 18:30:15.
 
 - chat:
     - role: system
       content: You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function response is a list of health measurement structures: 
+        Function response is a list of 'health measurement' structures: 
         {"timestamp":"1995-01-24 16:20:10","person":"Iulian Rotaru","measurement":"weight","value":90.0}
         {"timestamp":"1995-01-24 16:20:10","person":"Iulian Rotaru","measurement":"body_mass_index","value":29.054752}
         
         User Prompt: save my weight 90
     - role: model
-      content: Weight of 90.0 kg, with a corresponding BMI of 29.05, were recorded for Iulian Rotaru on January 24, 1995 at 16:20:10.
+      content: Body weight of 90.0 kg, with a corresponding BMI of 29.05, were recorded for Iulian Rotaru on January 24, 1995 at 16:20:10.
 
 - chat:
     - role: system
       content: You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function response is a list of health measurement structures:
+        Function response is a list of 'health measurement' structures:
         {"timestamp":"2025-04-14 14:20:10","person":"Iulian Rotaru","measurement":"weight","value":90.0}
         {"timestamp":"2025-04-14 14:20:10","person":"Iulian Rotaru","measurement":"body_mass_index","value":29.054752}
 
         User Prompt: write my body weight of 90 kg to archive
     - role: model
-      content: Weight of 90.0 kg, with a corresponding BMI of 29.05, were recorded for Iulian Rotaru on May 14, 2025 at 14:20:10.
+      content: Body weight of 90.0 kg, with a corresponding BMI of 29.05, were recorded for Iulian Rotaru on May 14, 2025 at 14:20:10.
 
 - chat:
     - role: system
       content: You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function response is a single health measurement structure:
+        Function response is an 'health measurement' structure:
         {"timestamp":"2014-02-28 13:53:55","person":"Mioara Gogălniceanu","measurement":"glucose_level","value":101}
         
         User Prompt: record my glucose level of 101 to medical database
@@ -1217,7 +1229,7 @@
       content: You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function response is a single health measurement structure:
+        Function response is an 'health measurement' structure:
         {"timestamp":"2025-10-10 13:53:55","person":"Fântânaru Eugenia","measurement":"glucose_level","value":130}
         
         User Prompt: save glucose 130
@@ -1241,7 +1253,7 @@
       content: You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function response is a single health measurement structure:
+        Function response is an 'health measurement' structure:
         {"timestamp":"2002-08-14 12:23:45","person":"Păduraru Mihaela","measurement":"body_height","value":165}
         
         User Prompt: log my height to medical archive
@@ -1292,7 +1304,7 @@
       content: You are a home automation question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function response is a single heating controller structure:
+        Function response is an 'heating controller' structure:
         {"setpoint":30.00,"hysteresis":0.00,"temperature":21.13,"running":true}
 
         User Prompt: turn on central heating
@@ -1316,7 +1328,7 @@
       content: You are a home automation question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function response is a single heating controller structure:
+        Function response is an 'heating controller' structure:
         {"setpoint":30.00,"hysteresis":0.00,"temperature":21.25,"running":true}
 
         User Prompt: is central heating running?
@@ -1340,7 +1352,7 @@
       content: You are a home automation question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function response is a single heating controller structure:
+        Function response is an 'heating controller' structure:
         {"setpoint":30.00,"hysteresis":0.00,"temperature":21.25,"running":false}
 
         User Prompt: is central heating currently running?
@@ -1352,7 +1364,7 @@
       content: You are a home automation question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function response is a single heating controller structure:
+        Function response is an 'heating controller' structure:
         {"setpoint":10.00,"hysteresis":0.00,"temperature":21.25,"running":false}
 
         User Prompt: is the central heating started?
@@ -1364,7 +1376,7 @@
       content: You are a home automation question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function response is a single heating controller structure:
+        Function response is an 'heating controller' structure:
         {"setpoint":22.00,"hysteresis":0.00,"temperature":21.25,"running":true}
 
         User Prompt: is heater active?
@@ -1376,7 +1388,7 @@
       content: You are a home automation question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function response is a single heating controller structure:
+        Function response is an 'heating controller' structure:
         {"setpoint":10.00,"hysteresis":0.00,"temperature":21.63,"running":false}
         
         User Prompt: stop heating
@@ -1400,7 +1412,7 @@
       content: You are a home automation question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function response is a single heating controller structure:
+        Function response is an 'heating controller' structure:
         {"setpoint":10.00,"hysteresis":0.00,"temperature":21.75,"running":false}
 
         User Prompt: how is the central heating?
@@ -1412,7 +1424,7 @@
       content: You are a home automation question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function response is a single heating controller structure:
+        Function response is an 'heating controller' structure:
         {"setpoint":10.00,"hysteresis":0.00,"temperature":21.13,"running":false}
 
         User Prompt: please tell me the status of the central heating
@@ -1424,7 +1436,7 @@
       content: You are a home automation question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function response is a single heating controller structure:
+        Function response is an 'heating controller' structure:
         {"setpoint":30.00,"hysteresis":0.00,"temperature":20.50,"running":true}
         
         User Prompt: get central heating status
@@ -1436,8 +1448,8 @@
       content: You are a home automation question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function response is a single device diagnose structure: 
-        {"device_id":"dht-sensor","device_zone":"kitchen","device_name":"DHT Sensor","hostname":"dht-sensor.local","ipv4_addr":"192.168.0.73","diagnose_port":80,"connection_state":"Active","measurement":"humidity","value":95.0}
+        Function response is a 'device diagnose' structure: 
+        {"device_id":"dht-sensor","device_zone":"kitchen","device_name":"DHT Sensor","hostname":"dht-sensor.local","ipv4_addr":"192.168.0.73","diagnose_port":80,"connection_state":"Active","value_type":"Humidity","value":95.0}
         
         User Prompt: run device diagnose on DHT sensor
     - role: model
@@ -1448,10 +1460,10 @@
       content: You are a home automation question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function response is a list of sensor reading structures: 
-        {"zone":"kitchen","name":"DHT Sensor","measurement":"humidity","value":15.70}
-        {"zone":"kitchen","name":"DHT Sensor","measurement":"temperature","value":17.80}
-        {"zone":"living room","name":"Thermostat Sensor","measurement":"temperature","value":20.50}
+        Function response is a list of 'sensor value' structures: 
+        {"zone":"Kitchen","name":"DHT Sensor","value_type":"Humidity","value":15.70}
+        {"zone":"Kitchen","name":"DHT Sensor","value_type":"Temperature","value":17.80}
+        {"zone":"Living Room","name":"Thermostat Sensor","value_type":"Temperature","value":20.50}
 
         User Prompt: read all sensors
     - role: model
@@ -1467,34 +1479,34 @@
       content: You are a home automation question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function response is a single sensor reading structure: 
-        {"zone":"kitchen","name":"DHT Sensor","measurement":"humidity","value":16.7}
-        {"zone":"kitchen","name":"DHT Sensor","measurement":"temperature","value":17.5}
-        {"zone":"living room","name":"Thermostat Sensor","measurement":"temperature","value":20.38}
+        Function response is a list of 'sensor value' structures: 
+        {"zone":"Kitchen","name":"DHT Sensor","value_type":"Humidity","value":16.7}
+        {"zone":"Kitchen","name":"DHT Sensor","value_type":"Temperature","value":17.5}
+        {"zone":"Living Room","name":"Thermostat Sensor","value_type":"Temperature","value":20.38}
 
         User Prompt: print all sensors, in json format
     - role: model
       content: |
         ```json
         [
-            {
-                "zone": "kitchen",
-                "name": "DHT Sensor",
-                "measurement": "humidity",
-                "value": 16.7
-            },
-            {
-                "zone": "kitchen",
-                "name": "DHT Sensor",
-                "measurement": "temperature",
-                "value": 17.5
-            },
-            {
-                "zone": "living room",
-                "name": "Thermostat Sensor",
-                "measurement": "temperature",
-                "value": 20.38
-            }
+          {
+            "zone": "kitchen",
+            "name": "DHT Sensor",
+            "measurement": "humidity",
+            "value": 16.7
+          },
+          {
+            "zone": "kitchen",
+            "name": "DHT Sensor",
+            "measurement": "temperature",
+            "value": 17.5
+          },
+          {
+            "zone": "living room",
+            "name": "Thermostat Sensor",
+            "measurement": "temperature",
+            "value": 20.38
+          }
         ]
         ```
 
@@ -1503,18 +1515,18 @@
       content: You are a home automation question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function response is a single sensor reading structure: 
-        {"zone":"kitchen","name":"DHT Sensor","measurement":"humidity","value":16.7}
-        {"zone":"kitchen","name":"DHT Sensor","measurement":"temperature","value":17.5}
-        {"zone":"living room","name":"Thermostat Sensor","measurement":"temperature","value":20.38}
+        Function response is a list of 'sensor value' structures: 
+        {"zone":"Kitchen","name":"DHT Sensor","value_type":"Humidity","value":16.7}
+        {"zone":"Kitchen","name":"DHT Sensor","value_type":"Temperature","value":17.5}
+        {"zone":"Living Room","name":"Thermostat Sensor","value_type":"Temperature","value":20.38}
 
         User Prompt: print all sensors, in jsonl format
     - role: model
       content: |
         ```jsonl
-        {"zone":"kitchen","name":"DHT Sensor","measurement":"humidity","value":16.7}
-        {"zone":"kitchen","name":"DHT Sensor","measurement":"temperature","value":17.5}
-        {"zone":"living room","name":"Thermostat Sensor","measurement":"temperature","value":20.38}
+        {"zone":"Kitchen","name":"DHT Sensor","value_type":"Humidity","value":16.7}
+        {"zone":"Kitchen","name":"DHT Sensor","value_type":"Temperature","value":17.5}
+        {"zone":"Living Room","name":"Thermostat Sensor","value_type":"Temperature","value":20.38}
         ```
 
 - chat:
@@ -1522,34 +1534,34 @@
       content: You are a home automation question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function response is a single sensor reading structure: 
-        {"zone":"kitchen","name":"DHT Sensor","measurement":"humidity","value":16.7}
-        {"zone":"kitchen","name":"DHT Sensor","measurement":"temperature","value":17.5}
-        {"zone":"living room","name":"Thermostat Sensor","measurement":"temperature","value":20.38}
+        Function response is a list of 'sensor value' structures: 
+        {"zone":"Kitchen","name":"DHT Sensor","value_type":"Humidity","value":16.7}
+        {"zone":"Kitchen","name":"DHT Sensor","value_type":"Temperature","value":17.5}
+        {"zone":"Living Room","name":"Thermostat Sensor","value_type":"Temperature","value":20.38}
 
         User Prompt: print all sensors, in xml format
     - role: model
       content: |
-        ```jsonl
+        ```xml
         <sensors>
-            <sensor>
-                <zone>kitchen</zone>
-                <name>DHT Sensor</name>
-                <measurement>humidity</measurement>
-                <value>16.7</value>
-            </sensor>
-            <sensor>
-                <zone>kitchen</zone>
-                <name>DHT Sensor</name>
-                <measurement>temperature</measurement>
-                <value>17.5</value>
-            </sensor>
-            <sensor>
-                <zone>living room</zone>
-                <name>Thermostat Sensor</name>
-                <measurement>temperature</measurement>
-                <value>20.38</value>
-            </sensor>
+          <sensor>
+            <zone>kitchen</zone>
+            <name>DHT Sensor</name>
+            <measurement>humidity</measurement>
+            <value>16.7</value>
+          </sensor>
+          <sensor>
+            <zone>kitchen</zone>
+            <name>DHT Sensor</name>
+            <measurement>temperature</measurement>
+            <value>17.5</value>
+          </sensor>
+          <sensor>
+            <zone>living room</zone>
+            <name>Thermostat Sensor</name>
+            <measurement>temperature</measurement>
+            <value>20.38</value>
+          </sensor>
         </sensors>
         ```
 
@@ -1558,10 +1570,10 @@
       content: You are a home automation question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function response is a single sensor reading structure: 
-        {"zone":"kitchen","name":"DHT Sensor","measurement":"humidity","value":16.7}
-        {"zone":"kitchen","name":"DHT Sensor","measurement":"temperature","value":17.5}
-        {"zone":"living room","name":"Thermostat Sensor","measurement":"temperature","value":20.38}
+        Function response is a list of 'sensor value' structures: 
+        {"zone":"Kitchen","name":"DHT Sensor","value_type":"Humidity","value":16.7}
+        {"zone":"Kitchen","name":"DHT Sensor","value_type":"Temperature","value":17.5}
+        {"zone":"Living Room","name":"Thermostat Sensor","value_type":"Temperature","value":20.38}
 
         User Prompt: print all sensors, in html format
     - role: model
@@ -1587,10 +1599,10 @@
       content: You are a home automation question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function response is a list of sensor reading structures: 
-        {"zone":"kitchen","name":"DHT Sensor","measurement":"humidity","value":15.70}
-        {"zone":"kitchen","name":"DHT Sensor","measurement":"temperature","value":17.80}
-        {"zone":"living room","name":"Thermostat Sensor","measurement":"temperature","value":20.50}
+        Function response is a list of 'sensor value' structures: 
+        {"zone":"Kitchen","name":"DHT Sensor","value_type":"Humidity","value":15.70}
+        {"zone":"Kitchen","name":"DHT Sensor","value_type":"Temperature","value":17.80}
+        {"zone":"Living Room","name":"Thermostat Sensor","value_type":"Temperature","value":20.50}
 
         User Prompt: print all sensors, in plain text format
     - role: model
@@ -1606,10 +1618,10 @@
       content: You are a home automation question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function response is a single sensor reading structure: 
-        {"zone":"kitchen","name":"DHT Sensor","measurement":"humidity","value":16.70}
-        {"zone":"kitchen","name":"DHT Sensor","measurement":"temperature","value":17.50}
-        {"zone":"living room","name":"Thermostat Sensor","measurement":"temperature","value":20.38}
+        Function response is a list of 'sensor value' structures: 
+        {"zone":"Kitchen","name":"DHT Sensor","value_type":"Humidity","value":16.70}
+        {"zone":"Kitchen","name":"DHT Sensor","value_type":"Temperature","value":17.50}
+        {"zone":"Living Room","name":"Thermostat Sensor","value_type":"Temperature","value":20.38}
 
         User Prompt: read all sensors in the house
     - role: model
@@ -1625,34 +1637,34 @@
       content: You are a home automation question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function response is a single sensor reading structure: 
-        {"zone":"kitchen","name":"DHT Sensor","measurement":"humidity","value":16.7}
-        {"zone":"kitchen","name":"DHT Sensor","measurement":"temperature","value":17.5}
-        {"zone":"living room","name":"Thermostat Sensor","measurement":"temperature","value":20.38}
+        Function response is a list of 'sensor value' structures: 
+        {"zone":"Kitchen","name":"DHT Sensor","value_type":"Humidity","value":16.7}
+        {"zone":"Kitchen","name":"DHT Sensor","value_type":"Temperature","value":17.5}
+        {"zone":"Living Room","name":"Thermostat Sensor","value_type":"Temperature","value":20.38}
 
         User Prompt: read all sensors in the house, in json format
     - role: model
       content: |
         ```json
         [
-            {
-                "zone": "kitchen",
-                "name": "DHT Sensor",
-                "measurement": "humidity",
-                "value": 16.7
-            },
-            {
-                "zone": "kitchen",
-                "name": "DHT Sensor",
-                "measurement": "temperature",
-                "value": 17.5
-            },
-            {
-                "zone": "living room",
-                "name": "Thermostat Sensor",
-                "measurement": "temperature",
-                "value": 20.38
-            }
+          {
+            "zone": "kitchen",
+            "name": "DHT Sensor",
+            "measurement": "humidity",
+            "value": 16.7
+          },
+          {
+            "zone": "kitchen",
+            "name": "DHT Sensor",
+            "measurement": "temperature",
+            "value": 17.5
+          },
+          {
+            "zone": "living room",
+            "name": "Thermostat Sensor",
+            "measurement": "temperature",
+            "value": 20.38
+          }
         ]
         ```
 
@@ -1661,10 +1673,10 @@
       content: You are a home automation question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function response is a single sensor reading structure: 
-        {"zone":"kitchen","name":"DHT Sensor","measurement":"humidity","value":21.70}
-        {"zone":"kitchen","name":"DHT Sensor","measurement":"temperature","value":47.60}
-        {"zone":"living room","name":"Thermostat Sensor","measurement":"temperature","value":22.40}
+        Function response is a list of 'sensor value' structures: 
+        {"zone":"Kitchen","name":"DHT Sensor","value_type":"Humidity","value":21.70}
+        {"zone":"Kitchen","name":"DHT Sensor","value_type":"Temperature","value":47.60}
+        {"zone":"Living Room","name":"Thermostat Sensor","value_type":"Temperature","value":22.40}
 
         User Prompt: create a table with the readings of the sensors in the house
     - role: model
@@ -1682,10 +1694,10 @@
       content: You are a home automation question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function response is a list of sensor reading structures: 
-        {"zone":"kitchen","name":"DHT Sensor","measurement":"humidity","value":16.80}
-        {"zone":"kitchen","name":"DHT Sensor","measurement":"temperature","value":17.50}
-        {"zone":"living room","name":"Thermostat Sensor","measurement":"temperature","value":20.38}
+        Function response is a list of 'sensor value' structures: 
+        {"zone":"Kitchen","name":"DHT Sensor","value_type":"Humidity","value":16.80}
+        {"zone":"Kitchen","name":"DHT Sensor","value_type":"Temperature","value":17.50}
+        {"zone":"Living Room","name":"Thermostat Sensor","value_type":"Temperature","value":20.38}
 
         User Prompt: read hera sensors in a table format
     - role: model
@@ -1703,8 +1715,8 @@
       content: You are a home automation question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function response is a single sensor reading structure: 
-        {"zone":"living room","name":"Thermostat Sensor","measurement":"temperature","value":21.15}
+        Function response is a 'sensor value' structure: 
+        {"zone":"Living Room","name":"Thermostat Sensor","value_type":"Temperature","value":21.15}
         
         User Prompt: get living room temperature
     - role: model
@@ -1715,10 +1727,22 @@
       content: You are a home automation question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
+        Function response is a 'sensor value' structure: 
+        {"zone":"Living Room","name":"Thermostat Sensor","value_type":"Temperature","value":21.15}
+        
+        User Prompt: get living room temperature value
+    - role: model
+      content: 21.15
+
+- chat:
+    - role: system
+      content: You are a home automation question answering agent. Generate responses using the user prompt and JSON data from the function response.
+    - role: user
+      content: |
         Function response is an error message: 
         {"error":"device is currently unresponsive"}
         
-        User Prompt: get living room temperature
+        User Prompt: show living temperature
     - role: model
       content: The living room temperature sensor is not responding. Would you like me to run a device diagnostic?
 
@@ -1727,8 +1751,75 @@
       content: You are a home automation question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function response is a single sensor reading structure: 
-        {"zone":"bedroom","name":"Temperature Sensor","measurement":"temperature","value":32.15}
+        Function response is a 'sensor value' structure: 
+        {"zone":"Living Room","name":"Thermostat Sensor","value_type":"Temperature","value":20.38}
+        
+        User Prompt: print living temp as json
+    - role: model
+      content: |
+        ```json
+        {
+          "zone": "Living Room",
+          "name": "Thermostat Sensor",
+          "value_type": "Temperature",
+          "value": 20.38
+        }
+        ```
+
+- chat:
+    - role: system
+      content: You are a home automation question answering agent. Generate responses using the user prompt and JSON data from the function response.
+    - role: user
+      content: |
+        Function response is a 'sensor value' structure: 
+        {"zone":"Living Room","name":"Thermostat Sensor","value_type":"Temperature","value":20.38}
+        
+        User Prompt: print living temp value
+    - role: model
+      content: 20.38
+
+- chat:
+    - role: system
+      content: You are a home automation question answering agent. Generate responses using the user prompt and JSON data from the function response.
+    - role: user
+      content: |
+        Function response is a 'sensor value' structure: 
+        {"zone":"Living Room","name":"Thermostat Sensor","value_type":"Temperature","value":20.38}
+        
+        User Prompt: print living temp as jsonl
+    - role: model
+      content: |
+        ```jsonl
+        {"zone":"Living Room","name":"Thermostat Sensor","value_type":"Temperature","value":20.38}
+        ```
+
+- chat:
+    - role: system
+      content: You are a home automation question answering agent. Generate responses using the user prompt and JSON data from the function response.
+    - role: user
+      content: |
+        Function response is a 'sensor value' structure: 
+        {"zone":"Living Room","name":"Thermostat Sensor","value_type":"Temperature","value":20.38}
+        
+        User Prompt: print living temp as xml
+    - role: model
+      content: |
+        ```xml
+        <sensor>
+          <zone>Living Room</zone>
+          <name>Thermostat Sensor</name>
+          <value_type>Temperature</value_type>
+          <value>20.38</value>
+        </sensor>
+        ```
+
+- chat:
+    - role: system
+      content: You are a home automation question answering agent. Generate responses using the user prompt and JSON data from the function response.
+    - role: user
+      content: |
+        Function response is a 'sensor value' structure: 
+        {"zone":"bedroom","name":"Temperature Sensor","value_type":"Temperature","value":32.15}
         
         User Prompt: what about the temperature in the bedroom?
     - role: model
@@ -1751,8 +1842,8 @@
       content: You are a home automation question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function response is a single sensor reading structure: 
-        {"zone":"kitchen","name":"DHT Sensor","measurement":"temperature","value":17.50}
+        Function response is a 'sensor value' structure: 
+        {"zone":"Kitchen","name":"DHT Sensor","value_type":"Temperature","value":17.50}
         
         User Prompt: what is the temperature in the kitchen
     - role: model
@@ -1763,12 +1854,79 @@
       content: You are a home automation question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function response is a single sensor reading structure: 
-        {"zone":"kitchen","name":"DHT Sensor","measurement":"humidity","value":36.7012}
+        Function response is a 'sensor value' structure: 
+        {"zone":"Kitchen","name":"DHT Sensor","value_type":"Humidity","value":36.7012}
         
         User Prompt: print kitchen humidity
     - role: model
       content: The humidity in the kitchen is 36.70 %.
+
+- chat:
+    - role: system
+      content: You are a home automation question answering agent. Generate responses using the user prompt and JSON data from the function response.
+    - role: user
+      content: |
+        Function response is a 'sensor value' structure: 
+        {"zone":"Kitchen","name":"DHT Sensor","value_type":"Humidity","value":45.2087}
+        
+        User Prompt: print kitchen humidity as json
+    - role: model
+      content: |
+        ```json
+        {
+          "zone":"Kitchen",
+          "name":"DHT Sensor",
+          "value_type":"Humidity",
+          "value":45.2087
+        }
+        ```
+
+- chat:
+    - role: system
+      content: You are a home automation question answering agent. Generate responses using the user prompt and JSON data from the function response.
+    - role: user
+      content: |
+        Function response is a 'sensor value' structure: 
+        {"zone":"Kitchen","name":"DHT Sensor","value_type":"Humidity","value":45.2087}
+        
+        User Prompt: print kitchen humidity value
+    - role: model
+      content: 45.2087
+
+- chat:
+    - role: system
+      content: You are a home automation question answering agent. Generate responses using the user prompt and JSON data from the function response.
+    - role: user
+      content: |
+        Function response is a 'sensor value' structure: 
+        {"zone":"Kitchen","name":"DHT Sensor","value_type":"Humidity","value":36.7012}
+        
+        User Prompt: print kitchen humidity as jsonl
+    - role: model
+      content: |
+        ```jsonl
+        {"zone":"Kitchen","name":"DHT Sensor","value_type":"Humidity","value":36.7012}
+        ```
+
+- chat:
+    - role: system
+      content: You are a home automation question answering agent. Generate responses using the user prompt and JSON data from the function response.
+    - role: user
+      content: |
+        Function response is a 'sensor value' structure: 
+        {"zone":"Kitchen","name":"DHT Sensor","value_type":"Humidity","value":36.7012}
+        
+        User Prompt: print kitchen humidity as xml
+    - role: model
+      content: |
+        ```xml
+        <sensor>
+          <zone>Kitchen</zone>
+          <name>DHT Sensor</name>
+          <value_type>Humidity</value_type>
+          <value>30.70</value>
+        </sensor>
+        ```
 
 - chat:
     - role: system
@@ -1790,7 +1948,7 @@
       content: You are an weather question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function response is a single current weather structure: 
+        Function response is a 'current weather' structure: 
         {"time":"2025-12-30 19:30","interval":900,"weather_code":"Mainly clear","temperature_2m":-1.2,"wind_speed_10m":14.7,"relative_humidity_2m":58.0,"precipitation":0.0}
 
         User Prompt: how is the weather like?
@@ -1802,7 +1960,7 @@
       content: You are an weather question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function response is a single current weather structure: 
+        Function response is a 'current weather' structure: 
         {"time":"2025-12-30 19:30","interval":900,"weather_code":"Mainly clear","temperature_2m":-1.2,"wind_speed_10m":14.7,"relative_humidity_2m":58.0,"precipitation":0.0}
         
         User Prompt: how is outside
@@ -1814,7 +1972,7 @@
       content: You are an weather question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function response is a single current weather structure: 
+        Function response is a 'current weather' structure: 
         {"time":"2025-12-30 20:30","interval":900,"weather_code":"Mainly clear","temperature_2m":-2.3,"wind_speed_10m":12.2,"relative_humidity_2m":61.0,"precipitation":0.0}
 
         User Prompt: how strong is the wind?
@@ -1826,7 +1984,7 @@
       content: You are an weather question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function response is a single current weather structure: 
+        Function response is a 'current weather' structure: 
         {"time":"2025-12-30 20:30","interval":900,"weather_code":"Mainly clear","temperature_2m":-2.3,"wind_speed_10m":12.2,"relative_humidity_2m":61.0,"precipitation":0.0}
 
         User Prompt: what is outside temperature?

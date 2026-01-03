@@ -879,7 +879,7 @@
         
         User Prompt: get my body temperature value
     - role: model
-      content: 36.50
+      content: '36.50'
 
 - chat:
     - role: system
@@ -1732,7 +1732,7 @@
         
         User Prompt: get living room temperature value
     - role: model
-      content: 21.15
+      content: '21.15'
 
 - chat:
     - role: system
@@ -1776,7 +1776,7 @@
         
         User Prompt: print living temp value
     - role: model
-      content: 20.38
+      content: '20.38'
 
 - chat:
     - role: system
@@ -1891,7 +1891,7 @@
         
         User Prompt: print kitchen humidity value
     - role: model
-      content: 45.2087
+      content: '45.2087'
 
 - chat:
     - role: system

@@ -1461,7 +1461,7 @@
     - role: user
       content: |
         Function response is a 'device diagnose' structure: 
-        {"device_id":"dht-sensor","device_zone":"kitchen","device_name":"DHT Sensor","hostname":"dht-sensor.local","ipv4_addr":"192.168.0.73","diagnose_port":80,"connection_state":"Active","value_type":"Humidity","value":95.0}
+        {"device_id":"dht-sensor","device_zone":"Kitchen","device_name":"DHT Sensor","hostname":"dht-sensor.local","ipv4_addr":"192.168.0.73","diagnose_port":80,"connection_state":"Active","value_type":"Humidity","value":95.0}
         
         User Prompt: run device diagnose on DHT sensor
     - role: model
@@ -1504,19 +1504,19 @@
           {
             "zone": "kitchen",
             "name": "DHT Sensor",
-            "measurement": "humidity",
+            "data_type": "Humidity",
             "value": 16.7
           },
           {
             "zone": "kitchen",
             "name": "DHT Sensor",
-            "measurement": "temperature",
+            "data_type": "Temperature",
             "value": 17.5
           },
           {
             "zone": "living room",
             "name": "Thermostat Sensor",
-            "measurement": "temperature",
+            "data_type": "Temperature",
             "value": 20.38
           }
         ]
@@ -1662,19 +1662,19 @@
           {
             "zone": "kitchen",
             "name": "DHT Sensor",
-            "measurement": "humidity",
+            "data_type": "Humidity",
             "value": 16.7
           },
           {
             "zone": "kitchen",
             "name": "DHT Sensor",
-            "measurement": "temperature",
+            "data_type": "Temperature",
             "value": 17.5
           },
           {
             "zone": "living room",
             "name": "Thermostat Sensor",
-            "measurement": "temperature",
+            "data_type": "Temperature",
             "value": 20.38
           }
         ]

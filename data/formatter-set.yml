@@ -1646,11 +1646,11 @@
     - role: user
       content: |
         Function response is a 'current weather' structure: 
-        {"time":"2025-12-30 19:30","interval":900,"weather_code":"Mainly clear","temperature_2m":-1.2,"wind_speed_10m":14.7,"relative_humidity_2m":58.0,"precipitation":0.0}
+        {"weather":"Overcast","temperature":10.4,"wind":4.5,"precipitation":45.5}
 
         User Prompt: how is the weather like?
     - role: model
-      content: The weather is currently mainly clear. The temperature is -1.2°C, with a wind speed of 14.7 km/h and a relative humidity of 58.0%. There is no precipitation.
+      content: The weather is currently overcast. The temperature is 10.4°C, with a wind speed of 4.5 km/h and a precipitation probability of 45.5 %.
 
 - chat:
     - role: system
@@ -1658,11 +1658,11 @@
     - role: user
       content: |
         Function response is a 'current weather' structure: 
-        {"time":"2025-12-30 19:30","interval":900,"weather_code":"Mainly clear","temperature_2m":-1.2,"wind_speed_10m":14.7,"relative_humidity_2m":58.0,"precipitation":0.0}
+        {"weather":"Mainly clear","temperature":-1.2,"wind":14.7,"precipitation":0.0}
         
         User Prompt: how is outside
     - role: model
-      content: The weather is currently mainly clear. The temperature is -1.2°C, with a wind speed of 14.7 km/h and a relative humidity of 58.0%. There is no precipitation.
+      content: The weather is currently mainly clear. The temperature is -1.2°C, with a wind speed of 14.7 km/h and no precipitation probability.
 
 - chat:
     - role: system
@@ -1670,7 +1670,7 @@
     - role: user
       content: |
         Function response is a 'current weather' structure: 
-        {"time":"2025-12-30 20:30","interval":900,"weather_code":"Mainly clear","temperature_2m":-2.3,"wind_speed_10m":12.2,"relative_humidity_2m":61.0,"precipitation":0.0}
+        {"weather":"Mainly clear","temperature":-2.3,"wind":12.2,"precipitation":0.0}
 
         User Prompt: how strong is the wind?
     - role: model
@@ -1682,7 +1682,7 @@
     - role: user
       content: |
         Function response is a 'current weather' structure: 
-        {"time":"2025-12-30 20:30","interval":900,"weather_code":"Mainly clear","temperature_2m":-2.3,"wind_speed_10m":12.2,"relative_humidity_2m":61.0,"precipitation":0.0}
+        {"weather":"Mainly clear","temperature":-2.3,"wind":12.2,"precipitation":0.0}
 
         User Prompt: what is outside temperature?
     - role: model
@@ -1694,7 +1694,7 @@
     - role: user
       content: |
         Function response is a 'current weather' structure: 
-        {"time":"2025-12-30 20:30","interval":900,"weather_code":"Mainly clear","temperature_2m":-2.3,"wind_speed_10m":12.2,"relative_humidity_2m":61.0,"precipitation":0.0}
+        {"weather":"Mainly clear","temperature":-2.3,"wind":12.2,"precipitation":0.0}
 
         User Prompt: what is wind speed?
     - role: model
@@ -1706,7 +1706,7 @@
     - role: user
       content: |
         Function response is a 'current weather' structure: 
-        {"time":"2025-12-30 20:30","interval":900,"weather_code":"Mainly clear","temperature_2m":-2.3,"wind_speed_10m":12.2,"relative_humidity_2m":61.0,"precipitation":0.0}
+        {"weather":"Mainly clear","temperature":-2.3,"wind":12.2,"precipitation":0.0}
 
         User Prompt: what is wind speed as raw value?
     - role: model
@@ -1718,19 +1718,16 @@
     - role: user
       content: |
         Function response is a 'current weather' structure: 
-        {"time":"2025-12-30 20:30","interval":900,"weather_code":"Mainly clear","temperature_2m":-2.3,"wind_speed_10m":12.2,"relative_humidity_2m":61.0,"precipitation":0.0}
+        {"weather":"Mainly clear","temperature":-2.3,"wind":12.2,"precipitation":0.0}
 
         User Prompt: display current weather as json
     - role: model
       content: |
         ```json
         {
-          "time":"2025-12-30 20:30",
-          "interval":900,
-          "weather_code":"Mainly clear",
-          "temperature_2m":-2.3,
-          "wind_speed_10m":12.2,
-          "relative_humidity_2m":61.0,
+          "weather":"Mainly clear",
+          "temperature":-2.3,
+          "wind":12.2,
           "precipitation":0.0
         }
         ```
@@ -1741,13 +1738,13 @@
     - role: user
       content: |
         Function response is a 'current weather' structure: 
-        {"time":"2025-12-30 20:30","interval":900,"weather_code":"Mainly clear","temperature_2m":-2.3,"wind_speed_10m":12.2,"relative_humidity_2m":61.0,"precipitation":0.0}
+        {"weather":"Mainly clear","temperature":-2.3,"wind":12.2,"precipitation":0.0}
 
         User Prompt: print current weather as jsonl
     - role: model
       content: |
         ```jsonl
-        {"time":"2025-12-30 20:30","interval":900,"weather_code":"Mainly clear","temperature_2m":-2.3,"wind_speed_10m":12.2,"relative_humidity_2m":61.0,"precipitation":0.0}
+        {"weather":"Mainly clear","temperature":-2.3,"wind":12.2,"precipitation":0.0}
         ```
 
 # ---------------------------------------------------------

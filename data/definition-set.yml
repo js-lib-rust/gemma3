@@ -378,26 +378,18 @@
     - role: system
       content: You are a home automation question answering agent.
     - role: user
-      content: What means heater?
-    - role: model
-      content: Heater is a shorthand for the central heating controller.
-
-- chat:
-    - role: system
-      content: You are a home automation question answering agent.
-    - role: user
-      content: What is a heating controller structure?
+      content: What is an 'heating controller' structure?
     - role: model
       content: |
-        The 'heating controller' structure is a JSON object that contains current status of the central heating.
+        The 'heating controller' structure is a JSON object that contains current status of the heating system.
         
-        Heating controller structure has next properties:
+        The 'heating controller' structure has next properties:
         * **setpoint**: the desired temperature value in °C 
         * **hysteresis**: threshold used when trigger a change in running state; numeric value in °C
         * **temperature**: current monitored temperature, numeric value in °C
-        * **running**: boolean value indicating if central heating is currently on  
+        * **running**: boolean value indicating if the heating system is currently on, aka running  
         
-        Here is an example of a health measurement structure:
+        Here is an example of an 'heating controller' object:
         ```json
         {
           "setpoint":30.00,
@@ -411,18 +403,18 @@
     - role: system
       content: You are a home automation question answering agent.
     - role: user
-      content: What is a sensor value structure?
+      content: What is a 'sensor value' structure?
     - role: model
       content: |
         The 'sensor value' structure is a JSON object containing a sensor real-time value.
         
-        The sensor reading structure has next properties:
+        The 'sensor value' structure has next properties:
         * **zone**: zone from home automation system where sensor is deployed 
         * **name**: sensor name, unique in its zone
         * **value_type**: sensor value type, like temperature or humidity
         * **value**: sensor current value; it has mixed type: can be string, number or boolean
         
-        Here is an example of a sensor reading structure:
+        Here is an example of a 'sensor value' object:
         ```json
         {
           "zone":"Kitchen",
@@ -436,12 +428,12 @@
     - role: system
       content: You are a home automation question answering agent.
     - role: user
-      content: What is a device diagnose structure?
+      content: What is a 'device diagnose' structure?
     - role: model
       content: |
         The 'device diagnose' structure is a JSON object containing a comprehensive data about device state.
         
-        The device diagnose structure has next properties:
+        The 'device diagnose' structure has next properties:
         * **device_id**: globally unique device ID 
         * **device_zone**: zone from home automation system where device is deployed 
         * **device_name**: device name, unique in its zone
@@ -452,7 +444,7 @@
         * **value_type**: optional sensor value type, like temperature or humidity
         * **value**: optional sensor current value; it has mixed type: can be string, number or boolean
         
-        Here is an example of a device diagnose structure:
+        Here is an example of a 'device diagnose' object:
         ```json
         {
           "device_id":"dht-sensor",
@@ -474,29 +466,23 @@
     - role: system
       content: You are a weather question answering agent.
     - role: user
-      content: What is a current weather structure?
+      content: What is a 'current weather' structure?
     - role: model
       content: |
-        The current weather structure is a JSON object containing real-time weather information.
+        The 'current weather' structure is a JSON object containing real-time weather information observed for 15 minutes interval.
         
-        The current weather structure has next properties:
-        * **time**: the time current weather data was updated, string with format 'YYYY-MM-DD HH:MM' 
-        * **interval**: refresh interval, in seconds, for weather data updates
-        * **weather_code**: short, normalized description of the perceived weather status
-        * **temperature_2m**: current temperature, numeric value (°C)
-        * **wind_speed_10m**: current wind speed, numeric value (km/h)  
-        * **relative_humidity_2m**: air relative humidity, numeric value (%)  
-        * **precipitation**: precipitation level, numeric value (mm)  
+        The 'current weather' structure has next properties:
+        * **weather**: short description of the perceived weather status
+        * **temperature**: current temperature, numeric value (°C)
+        * **wind**: current wind speed, numeric value (km/h)  
+        * **precipitation**: precipitation probability expressed as percent (%)  
         
-        Here is an example of a current weather structure:
+        Here is an example of a 'current weather' object:
         ```json
         {
-          "time":"2025-12-30 19:30",
-          "interval":900,
-          "weather_code":"Mainly clear",
-          "temperature_2m":-1.2,
-          "wind_speed_10m":14.7,
-          "relative_humidity_2m":58.0,
+          "weather":"Mainly clear",
+          "temperature":-1.2,
+          "wind":14.7,
           "precipitation":0.0
         }
         ```
@@ -508,43 +494,37 @@
       content: How is current weather displayed?
     - role: model
       content: |
-        Usually current weather structure is formatted as a single phrase, with weather parameters in natural order. Time and interval parameters are not use.
+        Usually current weather structure is formatted as a single phrase, with weather parameters in natural order.
         
         Here is an example of formated current weather phrase:
-        The weather is currently mainly clear. The temperature is -1.2°C, with a wind speed of 14.7 km/h and a relative humidity of 58.0%. There is no precipitation.
+        The weather is currently mainly clear. The temperature is -1.2°C, with a wind speed of 14.7 km/h and no precipitation.
 
 - chat:
     - role: system
       content: You are a weather question answering agent.
     - role: user
-      content: What is a daily forecast structure?
+      content: What is a 'daily forecast' structure?
     - role: model
       content: |
-        The daily forecast structure is a JSON object that contains weather information for a day. There are usually multiple structures in a function response, in JSONL format. Daily forecast structures are always displayed in a table format.
+        The 'daily forecast' structure is a JSON object that contains weather information for a day. There are usually multiple structures in a function response, in JSONL format. Daily forecast structures are always displayed in a table format.
         
-        The daily forecast structure has the following properties mapped to the table column:
-        * **date**: Date (YYYY-MM-DD)
-        * **weather_code**: Weather
-        * **temperature_2m_max**: Max Temp (°C)
-        * **temperature_2m_min**: Min Temp (°C)
-        * **apparent_temperature_max**: Apparent Max Temp (°C)
-        * **apparent_temperature_min**: Apparent Min Temp (°C)
-        * **precipitation_sum**: Precipitation (mm)
-        * **precipitation_probability_max**: Precipitation Probability (%)
-        * **wind_speed_10m_max**: Max Wind Speed (km/h)
+        The 'daily forecast' structure has the following properties mapped to the table column:
+        * **date**: Date: day for which forecast is computed, string with format YYYY-MM-DD
+        * **weather**: Weather: short description of the perceived weather status
+        * **temperature_max**: Max Temp: estimated maximum temperature, numeric value (°C)
+        * **temperature_min**: Min Temp: estimated minimum temperature, numeric value (°C)
+        * **precipitation**: Precipitation (%): maximum precipitation probability expressed as percent (%)
+        * **wind**: Wind (km/h): estimated maximum wind speed, numeric value (km/h)
         
         Here is an example of a daily forecast structure:
         ```json
         {
           "date":"2025-12-31",
           "weather_code":"Slight snow showers",
-          "temperature_2m_max":-0.6,
-          "temperature_2m_min":-3.3,
-          "apparent_temperature_max":-6.5,
-          "apparent_temperature_min":-8.1,
-          "precipitation_sum":2.1,
-          "precipitation_probability_max":48,
-          "wind_speed_10m_max":22.4
+          "temperature_max":-0.6,
+          "temperature_min":-3.3,
+          "precipitation":48,
+          "wind":22.4
         }
 
 - chat:
@@ -557,22 +537,20 @@
         The hourly forecast structure is a JSON object that contains weather information about an hour interval. There are usually multiple structures in a function response, in JSONL format. Hourly forecast structures are always displayed in table format.
         
         The hourly forecast structure has next properties mapped on table column:
-        * **time**: Time (HH:MM)
-        * **weather_code**: Weather
-        * **temperature_2m**: Temperature (°C)
-        * **relative_humidity_2m**: Humidity (%)
-        * **precipitation_probability**: Precipitation (%)
-        * **wind_speed_10m**: Wind Speed (km/h)
+        * **time**: Time: hour for which forecast is computed, string with format HH:MM
+        * **weather**: Weather: short description of the perceived weather status
+        * **temperature**: Temperature: estimated average temperature, numeric value (°C)
+        * **precipitation**: Precipitation (%): maximum precipitation probability expressed as percent (%)
+        * **wind**: Wind (km/h): estimated maximum wind speed, numeric value (km/h)
 
         Here is an example of a hourly forecast structure:
         ```json
         {
           "time":"2025-12-22 00:00",
-          "weather_code":"Overcast",
-          "temperature_2m":2.3,
-          "relative_humidity_2m":97,
-          "precipitation_probability":0,
-          "wind_speed_10m":3.7
+          "weather":"Overcast",
+          "temperature":2.3,
+          "precipitation":0,
+          "wind":3.7
         }
         ```
 
@@ -582,7 +560,7 @@
     - role: user
       content: How is weather 'date' parameter displayed?
     - role: model
-      content: The weather 'date' parameter is displayed as 'Date'. It is only the day part formatted as YYYY-MM-DD.
+      content: The weather 'date' parameter is displayed as 'Date'. It is only the day part, formatted as YYYY-MM-DD.
 
 - chat:
     - role: system
@@ -590,100 +568,36 @@
     - role: user
       content: How is weather 'time' parameter displayed?
     - role: model
-      content: The weather 'time' parameter is displayed as 'Time'. It is only the hour part formatted as HH:MM.
+      content: The weather 'time' parameter is displayed as 'Time'. It is only the time part, formatted as HH:MM.
 
 - chat:
     - role: system
       content: You are a weather question answering agent.
     - role: user
-      content: How is 'weather_code' parameter displayed?
+      content: How is 'weather' parameter displayed?
     - role: model
-      content: The 'weather_code' parameter is displayed as 'Weather'.
+      content: The 'weather' parameter is displayed as 'Weather'.
 
 - chat:
     - role: system
       content: You are a weather question answering agent.
     - role: user
-      content: How is the weather 'temperature_2m' parameter displayed?
+      content: How is the weather 'temperature' parameter displayed?
     - role: model
-      content: The 'temperature_2m' parameter is displayed as 'Temperature (°C)'.
+      content: The 'temperature' parameter is displayed as 'Temperature (°C)'.
 
 - chat:
     - role: system
       content: You are a weather question answering agent.
     - role: user
-      content: How is the weather 'temperature_2m_max' parameter displayed?
+      content: How is the weather 'precipitation' parameter displayed?
     - role: model
-      content: The 'temperature_2m_max' parameter is displayed as 'Max Temp (°C)'.
+      content: The 'precipitation' parameter is displayed as 'Precipitation (%)'.
 
 - chat:
     - role: system
       content: You are a weather question answering agent.
     - role: user
-      content: How is the weather 'temperature_2m_min' parameter displayed?
+      content: How is the weather 'wind' parameter displayed?
     - role: model
-      content: The 'temperature_2m_min' parameter is displayed as 'Min Temp (°C)'.
-
-- chat:
-    - role: system
-      content: You are a weather question answering agent.
-    - role: user
-      content: How is the weather 'apparent_temperature_max' parameter displayed?
-    - role: model
-      content: The 'apparent_temperature_max' parameter is displayed as 'Apparent Max Temp (°C)'.
-
-- chat:
-    - role: system
-      content: You are a weather question answering agent.
-    - role: user
-      content: How is the weather 'apparent_temperature_min' parameter displayed?
-    - role: model
-      content: The 'apparent_temperature_min' parameter is displayed as 'Apparent Min Temp (°C)'.
-
-- chat:
-    - role: system
-      content: You are a weather question answering agent.
-    - role: user
-      content: How is the weather 'relative_humidity_2m' parameter displayed?
-    - role: model
-      content: The 'relative_humidity_2m' parameter is displayed as 'Humidity (%)'.
-
-- chat:
-    - role: system
-      content: You are a weather question answering agent.
-    - role: user
-      content: How is the weather 'precipitation_probability' parameter displayed?
-    - role: model
-      content: The 'precipitation_probability' parameter is displayed as 'Precipitation Probability (%)'.
-
-- chat:
-    - role: system
-      content: You are a weather question answering agent.
-    - role: user
-      content: How is the weather 'precipitation_probability_max' parameter displayed?
-    - role: model
-      content: The 'precipitation_probability_max' parameter is displayed as 'Max Precipitation Probability (%)'.
-
-- chat:
-    - role: system
-      content: You are a weather question answering agent.
-    - role: user
-      content: How is the weather 'precipitation_sum' parameter displayed?
-    - role: model
-      content: The 'precipitation_sum' parameter is displayed as 'Precipitation (mm)'.
-
-- chat:
-    - role: system
-      content: You are a weather question answering agent.
-    - role: user
-      content: How is the weather 'wind_speed_10m' parameter displayed?
-    - role: model
-      content: The 'wind_speed_10m' parameter is displayed as 'Wind Speed (km/h)'.
-
-- chat:
-    - role: system
-      content: You are a weather question answering agent.
-    - role: user
-      content: How is the weather 'wind_speed_10m_max' parameter displayed?
-    - role: model
-      content: The 'wind_speed_10m_max' parameter is displayed as 'Max Wind Speed (km/h)'.
+      content: The 'wind' parameter is displayed as 'Wind (km/h)'.

@@ -574,7 +574,7 @@
     - role: user
       content: |
         Function response is a 'current weather' structure: 
-        {"time":"2025-12-30 19:30","interval":900,"weather_code":"Mainly clear","temperature_2m":-1.2,"wind_speed_10m":14.7,"relative_humidity_2m":58.0,"precipitation":0.0}
+        {"weather":"Mainly clear","temperature":-1.2,"wind":14.7,"precipitation":0.0}
         
         User Prompt: How is outside?
-  ground_truth: The weather is currently mainly clear. The temperature is -1.2°C, with a wind speed of 14.7 km/h and a relative humidity of 58.0%. There is no precipitation.
+  ground_truth: The weather is currently mainly clear. The temperature is -1.2°C, with a wind speed of 14.7 km/h and no precipitation.

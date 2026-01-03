@@ -166,108 +166,6 @@
         {"timestamp":"2026-01-01 12:23:27","person":"Iulian Rotaru","measurement":"body_weight","value":89.5}
         {"timestamp":"2026-01-01 12:23:27","person":"Iulian Rotaru","measurement":"body_mass_index","value":29.224489212036133}
  
-        User Prompt: list my health measurements, in xml format
-    - role: model
-      content: |
-        ```xml
-        <measurements>
-          <measurement>
-            <timestamp>2026-01-01 12:20:36</timestamp>
-            <person>Iulian Rotaru</person>
-            <measurement_type>systolic_pressure</measurement_type>
-            <value>115</value>
-          </measurement>
-          <measurement>
-            <timestamp>2026-01-01 12:20:36</timestamp>
-            <person>Iulian Rotaru</person>
-            <measurement_type>diastolic_pressure</measurement_type>
-            <value>67</value>
-          </measurement>
-          <measurement>
-            <timestamp>2026-01-01 12:20:36</timestamp>
-            <person>Iulian Rotaru</person>
-            <measurement_type>pulse_pressure</measurement_type>
-            <value>48</value>
-          </measurement>
-          <measurement>
-            <timestamp>2026-01-01 12:20:36</timestamp>
-            <person>Iulian Rotaru</person>
-            <measurement_type>heart_rate</measurement_type>
-            <value>57</value>
-          </measurement>
-          <measurement>
-            <timestamp>2026-01-01 12:22:08</timestamp>
-            <person>Iulian Rotaru</person>
-            <measurement_type>body_temperature</measurement_type>
-            <value>35.10</value>
-          </measurement>
-          <measurement>
-            <timestamp>2026-01-01 12:23:27</timestamp>
-            <person>Iulian Rotaru</person>
-            <measurement_type>body_weight</measurement_type>
-            <value>89.5</value>
-          </measurement>
-          <measurement>
-            <timestamp>2026-01-01 12:23:27</timestamp>
-            <person>Iulian Rotaru</person>
-            <measurement_type>body_mass_index</measurement_type>
-            <value>29.22</value>
-          </measurement>
-        </measurements>
-        ```
-
-- chat:
-    - role: system
-      content: You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
-    - role: user
-      content: |
-        Function response is a list of 'health measurement' structures: 
-        {"timestamp":"2026-01-01 12:20:36","person":"Iulian Rotaru","measurement":"systolic_pressure","value":115}
-        {"timestamp":"2026-01-01 12:20:36","person":"Iulian Rotaru","measurement":"diastolic_pressure","value":67}
-        {"timestamp":"2026-01-01 12:20:36","person":"Iulian Rotaru","measurement":"pulse_pressure","value":48}
-        {"timestamp":"2026-01-01 12:20:36","person":"Iulian Rotaru","measurement":"heart_rate","value":57}
-        {"timestamp":"2026-01-01 12:22:08","person":"Iulian Rotaru","measurement":"body_temperature","value":35.099998474121094}
-        {"timestamp":"2026-01-01 12:23:27","person":"Iulian Rotaru","measurement":"body_weight","value":89.5}
-        {"timestamp":"2026-01-01 12:23:27","person":"Iulian Rotaru","measurement":"body_mass_index","value":29.224489212036133}
- 
-        User Prompt: list my health measurements, in html format
-    - role: model
-      content: |
-        ```html
-        <!DOCTYPE html>
-        <html>
-        <head>
-        <title>Health Measurements</title>
-        </head>
-        <body>
-          <h1>Health Measurements</h1>
-          <ul>
-            <li><b>Systolic Pressure:</b> 115 mmHg</li>
-            <li><b>Diastolic Pressure:</b> 67 mmHg</li>
-            <li><b>Pulse Pressure:</b> 48 mmHg</li>
-            <li><b>Heart Rate:</b> 57 bpm</li>
-            <li><b>Body Temperature:</b> 35.10 °C</li>
-            <li><b>Body Weight:</b> 89.5 kg</li>
-            <li><b>Body Mass Index (BMI):</b> 29.22</li>
-          </ul>
-        </body>
-        </html>
-        ```
-
-- chat:
-    - role: system
-      content: You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
-    - role: user
-      content: |
-        Function response is a list of 'health measurement' structures: 
-        {"timestamp":"2026-01-01 12:20:36","person":"Iulian Rotaru","measurement":"systolic_pressure","value":115}
-        {"timestamp":"2026-01-01 12:20:36","person":"Iulian Rotaru","measurement":"diastolic_pressure","value":67}
-        {"timestamp":"2026-01-01 12:20:36","person":"Iulian Rotaru","measurement":"pulse_pressure","value":48}
-        {"timestamp":"2026-01-01 12:20:36","person":"Iulian Rotaru","measurement":"heart_rate","value":57}
-        {"timestamp":"2026-01-01 12:22:08","person":"Iulian Rotaru","measurement":"body_temperature","value":35.099998474121094}
-        {"timestamp":"2026-01-01 12:23:27","person":"Iulian Rotaru","measurement":"body_weight","value":89.5}
-        {"timestamp":"2026-01-01 12:23:27","person":"Iulian Rotaru","measurement":"body_mass_index","value":29.224489212036133}
- 
         User Prompt: list my health measurements, in plain text format
     - role: model
       content: |
@@ -409,126 +307,6 @@
         | 16:25:49 | Glucose Level | 117.0 |
 
         Would you like to create a medical report?
-
-- chat:
-    - role: system
-      content: You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
-    - role: user
-      content: |
-        Function response is a list of 'health measurement' structures: 
-        {"timestamp":"2025-12-28 10:23:27","person":"Iulian Rotaru","measurement":"systolic_pressure","value":120}
-        {"timestamp":"2025-12-28 10:23:27","person":"Iulian Rotaru","measurement":"diastolic_pressure","value":75}
-        {"timestamp":"2025-12-28 10:23:27","person":"Iulian Rotaru","measurement":"pulse_pressure","value":45}
-        {"timestamp":"2025-12-28 10:23:27","person":"Iulian Rotaru","measurement":"heart_rate","value":62}
-        {"timestamp":"2025-12-28 10:24:54","person":"Iulian Rotaru","measurement":"body_temperature","value":35.20000076293945}
-        {"timestamp":"2025-12-28 10:25:46","person":"Iulian Rotaru","measurement":"body_weight","value":89.5}
-        {"timestamp":"2025-12-28 10:25:46","person":"Iulian Rotaru","measurement":"body_mass_index","value":28.89333724975586}
-        {"timestamp":"2025-12-28 11:24:49","person":"Iulian Rotaru","measurement":"glucose_level","value":130.0}
-        {"timestamp":"2025-12-28 16:23:20","person":"Iulian Rotaru","measurement":"systolic_pressure","value":114}
-        {"timestamp":"2025-12-28 16:23:20","person":"Iulian Rotaru","measurement":"diastolic_pressure","value":73}
-        {"timestamp":"2025-12-28 16:23:20","person":"Iulian Rotaru","measurement":"pulse_pressure","value":41}
-        {"timestamp":"2025-12-28 16:23:20","person":"Iulian Rotaru","measurement":"heart_rate","value":72}
-        {"timestamp":"2025-12-28 16:24:01","person":"Iulian Rotaru","measurement":"body_weight","value":89.0}
-        {"timestamp":"2025-12-28 16:24:01","person":"Iulian Rotaru","measurement":"body_mass_index","value":28.731922149658203}
-        {"timestamp":"2025-12-28 16:25:49","person":"Iulian Rotaru","measurement":"glucose_level","value":117.0}
-
-        User Prompt: print my medical readings from last december 28, in xml format
-    - role: model
-      content: |
-        ```xml
-        <readings>
-          <reading>
-            <timestamp>2025-12-28 10:23:27</timestamp>
-            <person>Iulian Rotaru</person>
-            <measurement>systolic_pressure</measurement>
-            <value>120</value>
-          </reading>
-          <reading>
-            <timestamp>2025-12-28 10:23:27</timestamp>
-            <person>Iulian Rotaru</person>
-            <measurement>diastolic_pressure</measurement>
-            <value>75</value>
-          </reading>
-          <reading>
-            <timestamp>2025-12-28 10:23:27</timestamp>
-            <person>Iulian Rotaru</person>
-            <measurement>pulse_pressure</measurement>
-            <value>45</value>
-          </reading>
-          <reading>
-            <timestamp>2025-12-28 10:23:27</timestamp>
-            <person>Iulian Rotaru</person>
-            <measurement>heart_rate</measurement>
-            <value>62</value>
-          </reading>
-          <reading>
-            <timestamp>2025-12-28 10:24:54</timestamp>
-            <person>Iulian Rotaru</person>
-            <measurement>body_temperature</measurement>
-            <value>35.20000076293945</value>
-          </reading>
-          <reading>
-            <timestamp>2025-12-28 10:25:46</timestamp>
-            <person>Iulian Rotaru</person>
-            <measurement>body_weight</measurement>
-            <value>89.5</value>
-          </reading>
-          <reading>
-            <timestamp>2025-12-28 10:25:46</timestamp>
-            <person>Iulian Rotaru</person>
-            <measurement>body_mass_index</measurement>
-            <value>28.89333724975586</value>
-          </reading>
-          <reading>
-            <timestamp>2025-12-28 11:24:49</timestamp>
-            <person>Iulian Rotaru</person>
-            <measurement>glucose_level</measurement>
-            <value>130.0</value>
-          </reading>
-          <reading>
-            <timestamp>2025-12-28 16:23:20</timestamp>
-            <person>Iulian Rotaru</person>
-            <measurement>systolic_pressure</measurement>
-            <value>114</value>
-          </reading>
-          <reading>
-            <timestamp>2025-12-28 16:23:20</timestamp>
-            <person>Iulian Rotaru</person>
-            <measurement>diastolic_pressure</measurement>
-            <value>73</value>
-          </reading>
-          <reading>
-            <timestamp>2025-12-28 16:23:20</timestamp>
-            <person>Iulian Rotaru</person>
-            <measurement>pulse_pressure</measurement>
-            <value>41</value>
-          </reading>
-          <reading>
-            <timestamp>2025-12-28 16:23:20</timestamp>
-            <person>Iulian Rotaru</person>
-            <measurement>heart_rate</measurement>
-            <value>72</value>
-          </reading>
-          <reading>
-            <timestamp>2025-12-28 16:24:01</timestamp>
-            <person>Iulian Rotaru</person>
-            <measurement>body_weight</measurement>
-            <value>89.0</value>
-          </reading>
-          <reading>
-            <timestamp>2025-12-28 16:24:01</timestamp>
-            <person>Iulian Rotaru</person>
-            <measurement>body_mass_index</measurement>
-            <value>28.731922149658203</value>
-          </reading>
-          <reading>
-            <timestamp>2025-12-28 16:25:49</timestamp>
-            <person>Iulian Rotaru</person>
-            <measurement>glucose_level</measurement>
-            <value>117.0</value>
-          </reading>
-        </readings>
-        ```
 
 - chat:
     - role: system
@@ -886,18 +664,6 @@
       content: You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function response is an 'health measurement' structure: 
-        {"timestamp":"2026-01-20 12:15:49","person":"Iulian Rotaru","measurement":"body_temperature","value":36.50}
-        
-        User Prompt: show my body temperature as plain text
-    - role: model
-      content: '36.50'
-
-- chat:
-    - role: system
-      content: You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
-    - role: user
-      content: |
         Function response is an error message: 
         {"error":"database is currently unresponsive"}
 
@@ -976,6 +742,18 @@
         User Prompt: what is my pulse pressure?
     - role: model
       content: Your pulse pressure is 47 mmHg.
+
+- chat:
+    - role: system
+      content: You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
+    - role: user
+      content: |
+        Function response is an 'health measurement' structure: 
+        {"timestamp":"2021-04:13 21:25:10","person":"Rotaru Ilie","measurement":"pulse_pressure","value":47}
+
+        User Prompt: get my pulse pressure as raw value
+    - role: model
+      content: '47'
 
 - chat:
     - role: system
@@ -1547,71 +1325,6 @@
     - role: user
       content: |
         Function response is a list of 'sensor value' structures: 
-        {"zone":"Kitchen","name":"DHT Sensor","value_type":"Humidity","value":16.7}
-        {"zone":"Kitchen","name":"DHT Sensor","value_type":"Temperature","value":17.5}
-        {"zone":"Living Room","name":"Thermostat Sensor","value_type":"Temperature","value":20.38}
-
-        User Prompt: print all sensors, in xml format
-    - role: model
-      content: |
-        ```xml
-        <sensors>
-          <sensor>
-            <zone>kitchen</zone>
-            <name>DHT Sensor</name>
-            <measurement>humidity</measurement>
-            <value>16.7</value>
-          </sensor>
-          <sensor>
-            <zone>kitchen</zone>
-            <name>DHT Sensor</name>
-            <measurement>temperature</measurement>
-            <value>17.5</value>
-          </sensor>
-          <sensor>
-            <zone>living room</zone>
-            <name>Thermostat Sensor</name>
-            <measurement>temperature</measurement>
-            <value>20.38</value>
-          </sensor>
-        </sensors>
-        ```
-
-- chat:
-    - role: system
-      content: You are a home automation question answering agent. Generate responses using the user prompt and JSON data from the function response.
-    - role: user
-      content: |
-        Function response is a list of 'sensor value' structures: 
-        {"zone":"Kitchen","name":"DHT Sensor","value_type":"Humidity","value":16.7}
-        {"zone":"Kitchen","name":"DHT Sensor","value_type":"Temperature","value":17.5}
-        {"zone":"Living Room","name":"Thermostat Sensor","value_type":"Temperature","value":20.38}
-
-        User Prompt: print all sensors, in html format
-    - role: model
-      content: |
-        ```html
-        <!DOCTYPE html>
-        <html>
-        <head>
-        <title>Sensors</title>
-        </head>
-        <body>
-          <h1>Sensors</h1>
-          <ul>
-            <li><b>Kitchen: DHT Sensor:</b> 16.70 %</li>
-            <li><b>Kitchen: DHT Sensor:</b> 17.50 °C</li>
-            <li><b>Living Room: Thermostat Sensor:</b> 20.38 °C</li>
-          </body>
-        </html>
-        ```
-
-- chat:
-    - role: system
-      content: You are a home automation question answering agent. Generate responses using the user prompt and JSON data from the function response.
-    - role: user
-      content: |
-        Function response is a list of 'sensor value' structures: 
         {"zone":"Kitchen","name":"DHT Sensor","value_type":"Humidity","value":15.70}
         {"zone":"Kitchen","name":"DHT Sensor","value_type":"Temperature","value":17.80}
         {"zone":"Living Room","name":"Thermostat Sensor","value_type":"Temperature","value":20.50}
@@ -1823,26 +1536,6 @@
     - role: user
       content: |
         Function response is a 'sensor value' structure: 
-        {"zone":"Living Room","name":"Thermostat Sensor","value_type":"Temperature","value":20.38}
-        
-        User Prompt: print living temp as xml
-    - role: model
-      content: |
-        ```xml
-        <sensor>
-          <zone>Living Room</zone>
-          <name>Thermostat Sensor</name>
-          <value_type>Temperature</value_type>
-          <value>20.38</value>
-        </sensor>
-        ```
-
-- chat:
-    - role: system
-      content: You are a home automation question answering agent. Generate responses using the user prompt and JSON data from the function response.
-    - role: user
-      content: |
-        Function response is a 'sensor value' structure: 
         {"zone":"bedroom","name":"Temperature Sensor","value_type":"Temperature","value":32.15}
         
         User Prompt: what about the temperature in the bedroom?
@@ -1923,18 +1616,6 @@
     - role: user
       content: |
         Function response is a 'sensor value' structure: 
-        {"zone":"Kitchen","name":"DHT Sensor","value_type":"Humidity","value":45.2087}
-        
-        User Prompt: display kitchen humidity as plain text
-    - role: model
-      content: '45.2087'
-
-- chat:
-    - role: system
-      content: You are a home automation question answering agent. Generate responses using the user prompt and JSON data from the function response.
-    - role: user
-      content: |
-        Function response is a 'sensor value' structure: 
         {"zone":"Kitchen","name":"DHT Sensor","value_type":"Humidity","value":36.7012}
         
         User Prompt: print kitchen humidity as jsonl
@@ -1942,26 +1623,6 @@
       content: |
         ```jsonl
         {"zone":"Kitchen","name":"DHT Sensor","value_type":"Humidity","value":36.7012}
-        ```
-
-- chat:
-    - role: system
-      content: You are a home automation question answering agent. Generate responses using the user prompt and JSON data from the function response.
-    - role: user
-      content: |
-        Function response is a 'sensor value' structure: 
-        {"zone":"Kitchen","name":"DHT Sensor","value_type":"Humidity","value":36.7012}
-        
-        User Prompt: print kitchen humidity as xml
-    - role: model
-      content: |
-        ```xml
-        <sensor>
-          <zone>Kitchen</zone>
-          <name>DHT Sensor</name>
-          <value_type>Humidity</value_type>
-          <value>30.70</value>
-        </sensor>
         ```
 
 - chat:
@@ -2026,18 +1687,6 @@
         User Prompt: what is outside temperature?
     - role: model
       content: The current outside temperature is -2.3 °C.
-
-- chat:
-    - role: system
-      content: You are an weather question answering agent. Generate responses using the user prompt and JSON data from the function response.
-    - role: user
-      content: |
-        Function response is a 'current weather' structure: 
-        {"time":"2025-12-30 20:30","interval":900,"weather_code":"Mainly clear","temperature_2m":-2.3,"wind_speed_10m":12.2,"relative_humidity_2m":61.0,"precipitation":0.0}
-
-        User Prompt: what is outside temperature? please as plain text
-    - role: model
-      content: '-2.3'
 
 - chat:
     - role: system

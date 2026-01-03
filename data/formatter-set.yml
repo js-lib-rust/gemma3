@@ -879,7 +879,7 @@
         
         User Prompt: get my body temperature as raw value
     - role: model
-      content: '36.50'
+      content: 36.50
 
 - chat:
     - role: system
@@ -1744,7 +1744,19 @@
         
         User Prompt: get living room temperature as raw value
     - role: model
-      content: '21.15'
+      content: 21.15
+
+- chat:
+    - role: system
+      content: You are a home automation question answering agent. Generate responses using the user prompt and JSON data from the function response.
+    - role: user
+      content: |
+        Function response is a 'sensor value' structure: 
+        {"zone":"Living Room","name":"Thermostat Sensor","value_type":"Temperature","value":21.15}
+        
+        User Prompt: get raw value of the living room temperature
+    - role: model
+      content: 21.15
 
 - chat:
     - role: system
@@ -1788,7 +1800,7 @@
         
         User Prompt: print living temp as raw value
     - role: model
-      content: '20.38'
+      content: 20.38
 
 - chat:
     - role: system
@@ -1903,7 +1915,7 @@
         
         User Prompt: print kitchen humidity as raw value
     - role: model
-      content: '45.2087'
+      content: 45.2087
 
 - chat:
     - role: system
@@ -2014,6 +2026,80 @@
         User Prompt: what is outside temperature?
     - role: model
       content: The current outside temperature is -2.3 °C.
+
+- chat:
+    - role: system
+      content: You are an weather question answering agent. Generate responses using the user prompt and JSON data from the function response.
+    - role: user
+      content: |
+        Function response is a 'current weather' structure: 
+        {"time":"2025-12-30 20:30","interval":900,"weather_code":"Mainly clear","temperature_2m":-2.3,"wind_speed_10m":12.2,"relative_humidity_2m":61.0,"precipitation":0.0}
+
+        User Prompt: what is outside temperature? please as plain text
+    - role: model
+      content: '-2.3'
+
+- chat:
+    - role: system
+      content: You are an weather question answering agent. Generate responses using the user prompt and JSON data from the function response.
+    - role: user
+      content: |
+        Function response is a 'current weather' structure: 
+        {"time":"2025-12-30 20:30","interval":900,"weather_code":"Mainly clear","temperature_2m":-2.3,"wind_speed_10m":12.2,"relative_humidity_2m":61.0,"precipitation":0.0}
+
+        User Prompt: what is wind speed?
+    - role: model
+      content: The wind speed is 12.2 km/h.
+
+- chat:
+    - role: system
+      content: You are an weather question answering agent. Generate responses using the user prompt and JSON data from the function response.
+    - role: user
+      content: |
+        Function response is a 'current weather' structure: 
+        {"time":"2025-12-30 20:30","interval":900,"weather_code":"Mainly clear","temperature_2m":-2.3,"wind_speed_10m":12.2,"relative_humidity_2m":61.0,"precipitation":0.0}
+
+        User Prompt: what is wind speed as raw value?
+    - role: model
+      content: -2.3
+
+- chat:
+    - role: system
+      content: You are an weather question answering agent. Generate responses using the user prompt and JSON data from the function response.
+    - role: user
+      content: |
+        Function response is a 'current weather' structure: 
+        {"time":"2025-12-30 20:30","interval":900,"weather_code":"Mainly clear","temperature_2m":-2.3,"wind_speed_10m":12.2,"relative_humidity_2m":61.0,"precipitation":0.0}
+
+        User Prompt: display current weather as json
+    - role: model
+      content: |
+        ```json
+        {
+          "time":"2025-12-30 20:30",
+          "interval":900,
+          "weather_code":"Mainly clear",
+          "temperature_2m":-2.3,
+          "wind_speed_10m":12.2,
+          "relative_humidity_2m":61.0,
+          "precipitation":0.0
+        }
+        ```
+
+- chat:
+    - role: system
+      content: You are an weather question answering agent. Generate responses using the user prompt and JSON data from the function response.
+    - role: user
+      content: |
+        Function response is a 'current weather' structure: 
+        {"time":"2025-12-30 20:30","interval":900,"weather_code":"Mainly clear","temperature_2m":-2.3,"wind_speed_10m":12.2,"relative_humidity_2m":61.0,"precipitation":0.0}
+
+        User Prompt: print current weather as jsonl
+    - role: model
+      content: |
+        ```jsonl
+        {"time":"2025-12-30 20:30","interval":900,"weather_code":"Mainly clear","temperature_2m":-2.3,"wind_speed_10m":12.2,"relative_humidity_2m":61.0,"precipitation":0.0}
+        ```
 
 # ---------------------------------------------------------
 # JARVIS SERVER

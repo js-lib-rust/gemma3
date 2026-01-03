@@ -1280,19 +1280,19 @@
         ```json
         [
           {
-            "zone": "kitchen",
+            "zone": "Kitchen",
             "name": "DHT Sensor",
             "data_type": "Humidity",
             "value": 16.7
           },
           {
-            "zone": "kitchen",
+            "zone": "Kitchen",
             "name": "DHT Sensor",
             "data_type": "Temperature",
             "value": 17.5
           },
           {
-            "zone": "living room",
+            "zone": "Living Room",
             "name": "Thermostat Sensor",
             "data_type": "Temperature",
             "value": 20.38
@@ -1373,19 +1373,19 @@
         ```json
         [
           {
-            "zone": "kitchen",
+            "zone": "Kitchen",
             "name": "DHT Sensor",
             "data_type": "Humidity",
             "value": 16.7
           },
           {
-            "zone": "kitchen",
+            "zone": "Kitchen",
             "name": "DHT Sensor",
             "data_type": "Temperature",
             "value": 17.5
           },
           {
-            "zone": "living room",
+            "zone": "Living Room",
             "name": "Thermostat Sensor",
             "data_type": "Temperature",
             "value": 20.38
@@ -1491,7 +1491,7 @@
         Function response is a 'sensor value' structure: 
         {"zone":"Living Room","name":"Thermostat Sensor","value_type":"Temperature","value":20.38}
         
-        User Prompt: print living temp as json
+        User Prompt: print living room temperature as json
     - role: model
       content: |
         ```json
@@ -1511,7 +1511,7 @@
         Function response is a 'sensor value' structure: 
         {"zone":"Living Room","name":"Thermostat Sensor","value_type":"Temperature","value":20.38}
         
-        User Prompt: print living temp as raw value
+        User Prompt: print living room temperature as raw value
     - role: model
       content: '20.38'
 
@@ -1523,7 +1523,7 @@
         Function response is a 'sensor value' structure: 
         {"zone":"Living Room","name":"Thermostat Sensor","value_type":"Temperature","value":20.38}
         
-        User Prompt: print living temp as jsonl
+        User Prompt: print living room temperature as jsonl
     - role: model
       content: |
         ```jsonl

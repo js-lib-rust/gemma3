@@ -879,7 +879,7 @@
         
         User Prompt: get my body temperature as raw value
     - role: model
-      content: 36.50
+      content: '36.50'
 
 - chat:
     - role: system
@@ -1744,7 +1744,7 @@
         
         User Prompt: get living room temperature as raw value
     - role: model
-      content: 21.15
+      content: '21.15'
 
 - chat:
     - role: system
@@ -1756,7 +1756,7 @@
         
         User Prompt: get raw value of the living room temperature
     - role: model
-      content: 21.15
+      content: '21.15'
 
 - chat:
     - role: system
@@ -1800,7 +1800,7 @@
         
         User Prompt: print living temp as raw value
     - role: model
-      content: 20.38
+      content: '20.38'
 
 - chat:
     - role: system
@@ -1915,7 +1915,7 @@
         
         User Prompt: print kitchen humidity as raw value
     - role: model
-      content: 45.2087
+      content: '45.2087'
 
 - chat:
     - role: system
@@ -2061,7 +2061,7 @@
 
         User Prompt: what is wind speed as raw value?
     - role: model
-      content: -2.3
+      content: '-2.3'
 
 - chat:
     - role: system

@@ -511,10 +511,10 @@
         The 'daily forecast' structure has the following properties mapped to the table column:
         * **date**: Date: day for which forecast is computed, string with format YYYY-MM-DD
         * **weather**: Weather: short description of the perceived weather status
-        * **temperature_max**: Max Temp: estimated maximum temperature, numeric value (°C)
-        * **temperature_min**: Min Temp: estimated minimum temperature, numeric value (°C)
-        * **precipitation**: Precipitation (%): maximum precipitation probability expressed as percent (%)
-        * **wind**: Wind (km/h): estimated maximum wind speed, numeric value (km/h)
+        * **temperature_max**: Max Temp (°C): estimated maximum temperature, numeric value in Celsius degrees
+        * **temperature_min**: Min Temp (°C): estimated minimum temperature, numeric value in Celsius degrees
+        * **precipitation**: Precipitation (%): maximum precipitation probability expressed as percent
+        * **wind**: Wind (km/h): estimated maximum wind speed, numeric value in kilometers per hour
         
         Here is an example of a daily forecast structure:
         ```json
@@ -539,9 +539,9 @@
         The hourly forecast structure has next properties mapped on table column:
         * **time**: Time: hour for which forecast is computed, string with format HH:MM
         * **weather**: Weather: short description of the perceived weather status
-        * **temperature**: Temperature: estimated average temperature, numeric value (°C)
-        * **precipitation**: Precipitation (%): maximum precipitation probability expressed as percent (%)
-        * **wind**: Wind (km/h): estimated maximum wind speed, numeric value (km/h)
+        * **temperature**: Temperature (°C): estimated average temperature, numeric value in Celsius degrees
+        * **precipitation**: Precipitation (%): maximum precipitation probability expressed as percent
+        * **wind**: Wind (km/h): estimated maximum wind speed, numeric value in kilometers per hour
 
         Here is an example of a hourly forecast structure:
         ```json

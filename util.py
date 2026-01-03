@@ -20,6 +20,8 @@ def get_chat_prompt(chat_arg):
 
 
 def get_similarity_score(prediction_arg, ground_truth_arg):
+    if not isinstance(ground_truth_arg, str):
+        ground_truth_arg = str(ground_truth_arg)
     prediction_embedding = SCORE_MODEL.encode(prediction_arg, convert_to_tensor=True)
     ground_truth_embedding = SCORE_MODEL.encode(ground_truth_arg, convert_to_tensor=True)
     return util.cos_sim(prediction_embedding, ground_truth_embedding).item()

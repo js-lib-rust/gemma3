@@ -877,7 +877,19 @@
         Function response is an 'health measurement' structure: 
         {"timestamp":"2026-01-20 12:15:49","person":"Iulian Rotaru","measurement":"body_temperature","value":36.50}
         
-        User Prompt: get my body temperature value
+        User Prompt: get my body temperature as raw value
+    - role: model
+      content: '36.50'
+
+- chat:
+    - role: system
+      content: You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
+    - role: user
+      content: |
+        Function response is an 'health measurement' structure: 
+        {"timestamp":"2026-01-20 12:15:49","person":"Iulian Rotaru","measurement":"body_temperature","value":36.50}
+        
+        User Prompt: show my body temperature as plain text
     - role: model
       content: '36.50'
 
@@ -1730,7 +1742,7 @@
         Function response is a 'sensor value' structure: 
         {"zone":"Living Room","name":"Thermostat Sensor","value_type":"Temperature","value":21.15}
         
-        User Prompt: get living room temperature value
+        User Prompt: get living room temperature as raw value
     - role: model
       content: '21.15'
 
@@ -1774,7 +1786,7 @@
         Function response is a 'sensor value' structure: 
         {"zone":"Living Room","name":"Thermostat Sensor","value_type":"Temperature","value":20.38}
         
-        User Prompt: print living temp value
+        User Prompt: print living temp as raw value
     - role: model
       content: '20.38'
 
@@ -1889,7 +1901,19 @@
         Function response is a 'sensor value' structure: 
         {"zone":"Kitchen","name":"DHT Sensor","value_type":"Humidity","value":45.2087}
         
-        User Prompt: print kitchen humidity value
+        User Prompt: print kitchen humidity as raw value
+    - role: model
+      content: '45.2087'
+
+- chat:
+    - role: system
+      content: You are a home automation question answering agent. Generate responses using the user prompt and JSON data from the function response.
+    - role: user
+      content: |
+        Function response is a 'sensor value' structure: 
+        {"zone":"Kitchen","name":"DHT Sensor","value_type":"Humidity","value":45.2087}
+        
+        User Prompt: display kitchen humidity as plain text
     - role: model
       content: '45.2087'
 

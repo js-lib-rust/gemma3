@@ -532,6 +532,17 @@
       Function response is a 'sensor value' structure: 
       {"zone":"Living Room","name":"Thermostat Sensor","value_type":"Temperature","value":21.15}
       
+      User Prompt: print living temp as text
+  ground_truth: 21.15
+
+- chat:
+  - role: system
+    content: You are a home automation question answering agent. Generate responses using the user prompt and JSON data from the function response.
+  - role: user
+    content: |
+      Function response is a 'sensor value' structure: 
+      {"zone":"Living Room","name":"Thermostat Sensor","value_type":"Temperature","value":21.15}
+      
       User Prompt: print living temp as json
   ground_truth: |
     ```json

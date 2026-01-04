@@ -443,18 +443,6 @@
 
 - chat:
     - role: system
-      content: |
-        You are a home automation question answering agent. Generate responses using the user prompt and JSON data from the function response.
-    - role: user
-      content: |
-        Function response is an 'heating controller' structure:
-        {"setpoint":22.00,"hysteresis":0.00,"temperature":21.25,"running":true}
-        
-        User Prompt: Is heater active?
-  ground_truth: Yes, the heater is active.
-
-- chat:
-    - role: system
       content: You are a home automation question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |

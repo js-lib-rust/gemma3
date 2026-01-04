@@ -1094,12 +1094,12 @@
       content: You are a home automation question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function response is an 'heating controller' structure:
+        Function response is a 'heating controller' structure:
         {"setpoint":30.00,"hysteresis":0.00,"temperature":21.13,"running":true}
 
-        User Prompt: turn on central heating
+        User Prompt: start central heating
     - role: model
-      content: Central heating has been turned on. The setpoint is 30.00 °C, and the current temperature is 21.13 °C.
+      content: The central heating has been turned on. The setpoint is 30.00 °C and the current temperature is 21.13 °C.
 
 - chat:
     - role: system
@@ -1118,7 +1118,7 @@
       content: You are a home automation question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function response is an 'heating controller' structure:
+        Function response is a 'heating controller' structure:
         {"setpoint":30.00,"hysteresis":0.00,"temperature":21.25,"running":true}
 
         User Prompt: is central heating running?
@@ -1130,20 +1130,8 @@
       content: You are a home automation question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function response is an error message: 
-        {"error":"device is currently unresponsive"}
-        
-        User Prompt: is heater currently running?
-    - role: model
-      content: The central heating controller is not responding. Would you like me to run a device diagnostic?
-
-- chat:
-    - role: system
-      content: You are a home automation question answering agent. Generate responses using the user prompt and JSON data from the function response.
-    - role: user
-      content: |
-        Function response is an 'heating controller' structure:
-        {"setpoint":30.00,"hysteresis":0.00,"temperature":21.25,"running":false}
+        Function response is a 'heating controller' structure:
+        {"setpoint":10.00,"hysteresis":0.00,"temperature":21.25,"running":false}
 
         User Prompt: is central heating currently running?
     - role: model
@@ -1154,84 +1142,24 @@
       content: You are a home automation question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function response is an 'heating controller' structure:
-        {"setpoint":10.00,"hysteresis":0.00,"temperature":21.25,"running":false}
-
-        User Prompt: is the central heating started?
-    - role: model
-      content: No, the central heating is not running.
-
-- chat:
-    - role: system
-      content: You are a home automation question answering agent. Generate responses using the user prompt and JSON data from the function response.
-    - role: user
-      content: |
-        Function response is an 'heating controller' structure:
-        {"setpoint":22.00,"hysteresis":0.00,"temperature":21.25,"running":true}
-
-        User Prompt: is heater active?
-    - role: model
-      content: Yes, the heater is active.
-
-- chat:
-    - role: system
-      content: You are a home automation question answering agent. Generate responses using the user prompt and JSON data from the function response.
-    - role: user
-      content: |
-        Function response is an 'heating controller' structure:
+        Function response is a 'heating controller' structure:
         {"setpoint":10.00,"hysteresis":0.00,"temperature":21.63,"running":false}
         
         User Prompt: stop heating
     - role: model
-      content: Heating has been stopped. The setpoint is now 10.00 °C, and the current temperature is 21.63 °C.
+      content: The central heating has been stopped. The setpoint is 10.00 °C and the current temperature is 21.63 °C.
 
 - chat:
     - role: system
       content: You are a home automation question answering agent. Generate responses using the user prompt and JSON data from the function response.
     - role: user
       content: |
-        Function response is an error message: 
-        {"error":"device is currently unresponsive"}
-        
-        User Prompt: turn on the central heating
-    - role: model
-      content: The central heating controller is currently not responding. Would you like me to run a device diagnostic?
-
-- chat:
-    - role: system
-      content: You are a home automation question answering agent. Generate responses using the user prompt and JSON data from the function response.
-    - role: user
-      content: |
-        Function response is an 'heating controller' structure:
-        {"setpoint":10.00,"hysteresis":0.00,"temperature":21.75,"running":false}
-
-        User Prompt: how is the central heating?
-    - role: model
-      content: The central heating is turned off.
-
-- chat:
-    - role: system
-      content: You are a home automation question answering agent. Generate responses using the user prompt and JSON data from the function response.
-    - role: user
-      content: |
-        Function response is an 'heating controller' structure:
-        {"setpoint":10.00,"hysteresis":0.00,"temperature":21.13,"running":false}
-
-        User Prompt: please tell me the status of the central heating
-    - role: model
-      content: The central heating is currently off. The setpoint is 10.0 °C, with a hysteresis of 0.00 °C, and the current room temperature is 21.13 °C.
-
-- chat:
-    - role: system
-      content: You are a home automation question answering agent. Generate responses using the user prompt and JSON data from the function response.
-    - role: user
-      content: |
-        Function response is an 'heating controller' structure:
+        Function response is a 'heating controller' structure:
         {"setpoint":30.00,"hysteresis":0.00,"temperature":20.50,"running":true}
         
         User Prompt: get central heating status
     - role: model
-      content: The central heating is currently on. The setpoint is 30.00 °C, with a hysteresis of 0.00 °C. The current temperature is 20.50 °C.
+      content: The central heating is currently on. The setpoint is 30.00 °C and the current temperature is 20.50 °C.
 
 - chat:
     - role: system

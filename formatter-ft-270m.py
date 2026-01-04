@@ -44,6 +44,7 @@ parser.add_argument("--max-length", type=int, action="store", default="800")
 parser.add_argument("--epochs", type=int, action="store", default="4")
 parser.add_argument("--train-batch", type=int, action="store", default="2")
 parser.add_argument("--learning-rate", type=float, action="store", default="5e-6")
+parser.add_argument("--weight-decay", type=float, action="store", default="0.01")
 parser.add_argument("--wakeup", type=float, action="store", default="0.05")
 parser.add_argument("--use-mixed-precision", action="store_true")
 args = parser.parse_args()
@@ -131,6 +132,7 @@ training_args = TrainingArguments(
     warmup_ratio=args.wakeup,
     learning_rate=args.learning_rate,
     lr_scheduler_type="cosine",
+    weight_decay=args.weight_decay,
     logging_steps=5,
     save_steps=20,
     eval_steps=10,

@@ -22,6 +22,7 @@ def tokenize_function(examples):
 parser = argparse.ArgumentParser()
 parser.add_argument("--use-tuned-model", action="store_true")
 parser.add_argument("--files", type=util.split_by_comma, action="store")
+parser.add_argument("--output-dir", type=str, action="store", default="domain-270m")
 parser.add_argument("--max-length", type=int, action="store", default="500")
 parser.add_argument("--epochs", type=int, action="store", default="2")
 parser.add_argument("--train-batch", type=int, action="store", default="2")
@@ -36,15 +37,16 @@ print(args.prompt)
 
 MODEL_DIR = os.environ.get("AI_MODEL_DIR")
 MODEL_NAME = MODEL_DIR + "/hugging-face/model/gemma-3-270m-it"
-OUTPUT_DIR = "./domain-270m"
 DATA_FILE = "data/model.md"
 DTYPE = torch.float32
 print()
 
 device = "cuda:0" if torch.cuda.is_available() else "cpu"
-model_path = OUTPUT_DIR if args.use_tuned_model else MODEL_NAME
+output_dir = f"./{args.output_dir}"
+model_path = output_dir if args.use_tuned_model else MODEL_NAME
 print(f"Use device {device}")
 print(f"Use model {model_path}")
+print(f"Use output dir {output_dir}")
 print(f"Use max length {args.max_length}")
 print(f"Use epochs {args.epochs}")
 print(f"Use train batch size {args.train_batch}")
@@ -66,7 +68,7 @@ model = AutoModelForCausalLM.from_pretrained(model_path)
 data_collator = DataCollatorForLanguageModeling(tokenizer=tokenizer, mlm=False)
 
 training_args = TrainingArguments(
-    output_dir=OUTPUT_DIR,
+    output_dir=output_dir,
     num_train_epochs=args.epochs,
     per_device_train_batch_size=args.train_batch,
     gradient_accumulation_steps=1,
@@ -90,6 +92,6 @@ trainer = Trainer(
 )
 trainer.train()
 
-trainer.save_model(OUTPUT_DIR)
-tokenizer.save_pretrained(OUTPUT_DIR)
-print(f"Domain pre-training complete! Model saved to {OUTPUT_DIR}")
+trainer.save_model(output_dir)
+tokenizer.save_pretrained(output_dir)
+print(f"Domain pre-training complete! Model saved to {output_dir}")

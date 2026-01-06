@@ -8,7 +8,19 @@
         
         User Prompt: run device diagnose on living room sensor
     - role: model
-      content: The connection with the living room sensor is active. Its hostname is thermostat-sensor.local, IPv4 address is 192.168.0.90, the diagnose port is 80, and the current temperature reading is 21.13 °C.
+      content: The living room thermostat sensor is active with a temperature of 21.13°C. Its hostname is thermostat-sensor.local and its IP address is 192.168.0.90 on port 80.
+
+- chat:
+    - role: system
+      content: You are a home automation agent. Generate responses using JSON data from the function response, and the user prompt.
+    - role: user
+      content: |
+        Function response is a 'device diagnose' structure: 
+        {"device_id":"dht-sensor","device_zone":"Kitchen","device_name":"DHT Sensor","hostname":"dht-sensor.local","ipv4_addr":"192.168.0.73","diagnose_port":80,"connection_state":"Active","value_type":"Humidity","value":95.0}
+        
+        User Prompt: run device diagnose on DHT sensor
+    - role: model
+      content: The kitchen DHT sensor is active with a humidity of 95.0%. Its hostname is dht-sensor.local and its IPv4 address is 192.168.0.73 on port 80.
 
 - chat:
     - role: system
@@ -32,7 +44,7 @@
 
         User Prompt: start heating
     - role: model
-      content: The heating has been started. The setpoint is 30.00 °C and the current temperature is 21.13 °C.
+      content: The heating system has been started.
 
 - chat:
     - role: system
@@ -44,7 +56,7 @@
         
         User Prompt: stop heating
     - role: model
-      content: Okay, I've stopped the heating. The current setpoint is 10.00°C, and the current temperature is 21.50°C. The system is no longer running.
+      content: The heating system has been stopped.
 
 - chat:
     - role: system
@@ -56,7 +68,7 @@
 
         User Prompt: please start the heating
     - role: model
-      content: The heating controller is not responding. Would you like me to run a device diagnostic?
+      content: The heating system is not responding. Would you like me to run a device diagnostic?
 
 - chat:
     - role: system
@@ -68,7 +80,7 @@
 
         User Prompt: is heating running?
     - role: model
-      content: Yes, heating is running.
+      content: Yes, heating system is running.
 
 - chat:
     - role: system
@@ -80,7 +92,7 @@
 
         User Prompt: is heating currently running?
     - role: model
-      content: No, the heating is not running.
+      content: No, the heating system is not running.
 
 - chat:
     - role: system
@@ -92,19 +104,7 @@
         
         User Prompt: get heating status
     - role: model
-      content: The heating is currently running. The setpoint is 30.00 °C and the current temperature is 20.50 °C.
-
-- chat:
-    - role: system
-      content: You are a home automation agent. Generate responses using JSON data from the function response, and the user prompt.
-    - role: user
-      content: |
-        Function response is a 'device diagnose' structure: 
-        {"device_id":"dht-sensor","device_zone":"Kitchen","device_name":"DHT Sensor","hostname":"dht-sensor.local","ipv4_addr":"192.168.0.73","diagnose_port":80,"connection_state":"Active","value_type":"Humidity","value":95.0}
-        
-        User Prompt: run device diagnose on DHT sensor
-    - role: model
-      content: The DHT Sensor in the kitchen is active. Its hostname is dht-sensor.local, and its IPv4 address is 192.168.0.73. It's currently reporting a humidity of 95.0%.
+      content: The heating system is currently running. The setpoint is 30.00 °C and the current temperature is 20.50 °C.
 
 - chat:
     - role: system

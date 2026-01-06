@@ -7,7 +7,7 @@
         {"device_id":"dht-sensor","device_zone":"kitchen","device_name":"DHT Sensor","hostname":"dht-sensor.local","ipv4_addr":192.168.0.73,"diagnose_port":80,"connection_state":"Active","measurement":"humidity","value":95.0}
         
         User Prompt: Run full device diagnose on kitchen humidity sensor.
-  ground_truth: The DHT Sensor in the kitchen is active. Its hostname is dht-sensor.local, and its IPv4 address is 192.168.0.73. It's currently reporting a humidity of 95.0%.
+  ground_truth: The kitchen DHT sensor is active with a humidity of 95.0%. Its hostname is dht-sensor.local and its IPv4 address is 192.168.0.73 on port 80.
 
 - chat:
     - role: system

@@ -7,12 +7,6 @@ import os
 import util
 
 
-def prepare_dataset(file_path):
-    with open(file_path, "r", encoding="utf-8") as f:
-        lines = [line.strip() for line in f]  # Remove leading/trailing whitespace
-    return lines
-
-
 def tokenize_function(examples):
     return tokenizer(examples["text"], truncation=True, padding="max_length", max_length=args.max_length)
 
@@ -37,15 +31,17 @@ print(args.prompt)
 
 MODEL_DIR = os.environ.get("AI_MODEL_DIR")
 MODEL_NAME = MODEL_DIR + "/hugging-face/model/gemma-3-270m-it"
-DATA_FILE = "data/medical.md"
+DATA_SET = ["medical", "hera", "weather"]
 DTYPE = torch.float32
 print()
 
 device = "cuda:0" if torch.cuda.is_available() else "cpu"
+data_files = args.files if args.files else DATA_SET
 output_dir = f"./{args.output_dir}"
 model_path = output_dir if args.use_tuned_model else MODEL_NAME
 print(f"Use device {device}")
 print(f"Use model {model_path}")
+print(f"Use data files {data_files}")
 print(f"Use output dir {output_dir}")
 print(f"Use max length {args.max_length}")
 print(f"Use epochs {args.epochs}")
@@ -56,7 +52,14 @@ print(f"Use wakeup ratio {args.wakeup}")
 print(f"Use mixed precision {args.use_mixed_precision}")
 print()
 
-domain_data = prepare_dataset(DATA_FILE)
+domain_data = []
+for data_file in data_files:
+    data_file = f"data/{data_file}.md"
+    with open(data_file, 'r', encoding='UTF-8') as file:
+        lines = [line.strip() for line in file]
+        print(f"Loaded {len(lines)} lines from the file `{os.path.abspath(data_file)}`.")
+        domain_data += lines
+
 dataset = Dataset.from_dict({"text": domain_data})
 
 tokenizer = AutoTokenizer.from_pretrained(model_path)

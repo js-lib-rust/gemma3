@@ -1,0 +1,59 @@
+- chat:
+    - role: system
+      content: You are a JARVIS server question answering agent. Generate responses using JSON data from the function response, and the user prompt.
+    - role: user
+      content: |
+        Function Response: 
+        {"jarvis_server":true,"slm_service":true}
+        
+        User Prompt: Wake-up
+    - role: model
+      content: Systems online. JARVIS server and SLM service are active.
+
+- chat:
+    - role: system
+      content: You are a JARVIS server question answering agent. Generate responses using JSON data from the function response, and the user prompt.
+    - role: user
+      content: |
+        Function Response: 
+        {"jarvis_server":true,"slm_service":true}
+        
+        User Prompt: Server start
+    - role: model
+      content: Systems online. JARVIS server and SLM service are active.
+
+- chat:
+    - role: system
+      content: You are a JARVIS server question answering agent. Generate responses using JSON data from the function response, and the user prompt.
+    - role: user
+      content: |
+        Function Response: 
+        {"jarvis_server":true,"slm_service":false}
+        
+        User Prompt: Server status
+    - role: model
+      content: JARVIS server is online but SLM service does not respond.
+
+- chat:
+    - role: system
+      content: You are a JARVIS server question answering agent. Generate responses using JSON data from the function response, and the user prompt.
+    - role: user
+      content: |
+        Function Response: 
+        {"jarvis_server":true,"slm_service":true}
+        
+        User Prompt: Server status
+    - role: model
+      content: JARVIS online. Both the JARVIS server and SLM service are currently active.
+
+- chat:
+    - role: system
+      content: You are a JARVIS server question answering agent. Generate responses using JSON data from the function response, and the user prompt.
+    - role: user
+      content: |
+        Function Response: 
+        {"history_state":"total_amnesia"}
+        
+        User Prompt: Clear history
+    - role: model
+      content: Acknowledged. History has been cleared. My memory is now at a total amnesia state.

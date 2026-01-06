@@ -1,0 +1,111 @@
+- chat:
+    - role: system
+      content: |
+        You are a lookup tool. Given JSON objects and an user prompt, return only the matching ID or "none".
+    - role: user
+      content: |
+        {"id":"dht-sensor","device_type":"Sensor","zone":"kitchen","name":"DHT Sensor","description":"Sensor for temperature and humidity"}
+        {"id":"thermostat","device_type":"Actuator","zone":"kitchen","name":"Thermostat","description":"Central heating controller"}
+        {"id":"thermostat-sensor","device_type":"Sensor","zone":"living room","name":"Thermostat Sensor","description":"Temperature sensor for central heating"}
+        {"id":"hera","device_type":"Computer","zone":"living room","name":"Mini PC","description":"Mini computer used as server for home automation system"}
+        
+        User Prompt: find kitchen humidity sensor
+  ground_truth: dht-sensor
+
+- chat:
+    - role: system
+      content: |
+        You are a lookup tool. Given JSON objects and an user prompt, return only the matching ID or "none".
+    - role: user
+      content: |
+        {"id":"dht-sensor","device_type":"Sensor","zone":"kitchen","name":"DHT Sensor","description":"Sensor for temperature and humidity"}
+        {"id":"thermostat","device_type":"Actuator","zone":"kitchen","name":"Thermostat","description":"Central heating controller"}
+        {"id":"thermostat-sensor","device_type":"Sensor","zone":"living room","name":"Thermostat Sensor","description":"Temperature sensor for central heating"}
+        {"id":"hera","device_type":"Computer","zone":"living room","name":"Mini PC","description":"Mini computer used as server for home automation system"}
+        
+        User Prompt: find living temperature sensor
+  ground_truth: thermostat-sensor
+
+- chat:
+    - role: system
+      content: |
+        You are a lookup tool. Given JSON objects and an user prompt, return only the matching ID or "none".
+    - role: user
+      content: |
+        {"id":"dht-sensor","device_type":"Sensor","zone":"kitchen","name":"DHT Sensor","description":"Sensor for temperature and humidity"}
+        {"id":"thermostat","device_type":"Actuator","zone":"kitchen","name":"Thermostat","description":"Central heating controller"}
+        {"id":"thermostat-sensor","device_type":"Sensor","zone":"living room","name":"Thermostat Sensor","description":"Temperature sensor for central heating"}
+        {"id":"hera","device_type":"Computer","zone":"living room","name":"Mini PC","description":"Mini computer used as server for home automation system"}
+        
+        User Prompt: find device used by heater to read current temperature
+  ground_truth: thermostat-sensor
+
+- chat:
+    - role: system
+      content: |
+        You are a lookup tool. Given JSON objects and an user prompt, return only the matching ID or "none".
+    - role: user
+      content: |
+        {"id":"dht-sensor","device_type":"Sensor","zone":"kitchen","name":"DHT Sensor","description":"Sensor for temperature and humidity"}
+        {"id":"thermostat","device_type":"Actuator","zone":"kitchen","name":"Thermostat","description":"Central heating controller"}
+        {"id":"thermostat-sensor","device_type":"Sensor","zone":"living room","name":"Thermostat Sensor","description":"Temperature sensor for central heating"}
+        {"id":"hera","device_type":"Computer","zone":"living room","name":"Mini PC","description":"Mini computer used as server for home automation system"}
+        
+        User Prompt: find sensor used by central heating
+  ground_truth: thermostat-sensor
+
+- chat:
+    - role: system
+      content: |
+        You are a lookup tool. Given JSON objects and an user prompt, return only the matching ID or "none".
+    - role: user
+      content: |
+        {"id":"dht-sensor","device_type":"Sensor","zone":"kitchen","name":"DHT Sensor","description":"Sensor for temperature and humidity"}
+        {"id":"thermostat","device_type":"Actuator","zone":"kitchen","name":"Thermostat","description":"Central heating controller"}
+        {"id":"thermostat-sensor","device_type":"Sensor","zone":"living room","name":"Thermostat Sensor","description":"Temperature sensor for central heating"}
+        {"id":"hera","device_type":"Computer","zone":"living room","name":"Mini PC","description":"Mini computer used as server for home automation system"}
+        
+        User Prompt: find heater sensor
+  ground_truth: thermostat-sensor
+
+- chat:
+    - role: system
+      content: |
+        You are a lookup tool. Given JSON objects and an user prompt, return only the matching ID or "none".
+    - role: user
+      content: |
+        {"id":"dht-sensor","device_type":"Sensor","zone":"kitchen","name":"DHT Sensor","description":"Sensor for temperature and humidity"}
+        {"id":"thermostat","device_type":"Actuator","zone":"kitchen","name":"Thermostat","description":"Central heating controller"}
+        {"id":"thermostat-sensor","device_type":"Sensor","zone":"living room","name":"Thermostat Sensor","description":"Temperature sensor for central heating"}
+        {"id":"hera","device_type":"Computer","zone":"living room","name":"Mini PC","description":"Mini computer used as server for home automation system"}
+        
+        User Prompt: Find Mini PC.
+  ground_truth: hera
+
+- chat:
+    - role: system
+      content: |
+        You are a lookup tool. Given JSON objects and an user prompt, return only the matching ID or "none".
+    - role: user
+      content: |
+        {"id":"dht-sensor","device_type":"Sensor","zone":"kitchen","name":"DHT Sensor","description":"Sensor for temperature and humidity"}
+        {"id":"thermostat","device_type":"Actuator","zone":"kitchen","name":"Thermostat","description":"Central heating controller"}
+        {"id":"thermostat-sensor","device_type":"Sensor","zone":"living room","name":"Thermostat Sensor","description":"Temperature sensor for central heating"}
+        {"id":"hera","device_type":"Computer","zone":"living room","name":"Mini PC","description":"Mini computer used as server for home automation system"}
+        
+        User Prompt: find optical sensor
+  ground_truth: none
+
+- chat:
+    - role: system
+      content: |
+        You are a lookup tool. Given JSON objects and an user prompt, return only the matching ID or "none".
+    - role: user
+      content: |
+        {"id":"dht-sensor","device_type":"Sensor","zone":"kitchen","name":"DHT Sensor","description":"Sensor for temperature and humidity"}
+        {"id":"thermostat","device_type":"Actuator","zone":"kitchen","name":"Thermostat","description":"Central heating controller"}
+        {"id":"thermostat-sensor","device_type":"Sensor","zone":"living room","name":"Thermostat Sensor","description":"Temperature sensor for central heating"}
+        {"id":"hera","device_type":"Computer","zone":"living room","name":"Mini PC","description":"Mini computer used as server for home automation system"}
+        
+        User Prompt: Find luminosity sensor.
+  ground_truth: none

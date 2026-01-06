@@ -1,0 +1,526 @@
+- chat:
+    - role: system
+      content: You are a home automation agent. Generate responses using JSON data from the function response, and the user prompt.
+    - role: user
+      content: |
+        Function Response: 
+        {"device_id":"thermostat-sensor","device_name":"Thermostat Sensor","device_zone":"Living Room","hostname":"thermostat-sensor.local","ipv4_addr":192.168.0.90,"diagnose_port":80,"connection_state":"Active","value":21.13}
+        
+        User Prompt: run device diagnose on living room sensor
+    - role: model
+      content: The connection with the living room sensor is active. Its hostname is thermostat-sensor.local, IPv4 address is 192.168.0.90, the diagnose port is 80, and the current temperature reading is 21.13 °C.
+
+- chat:
+    - role: system
+      content: You are a home automation agent. Generate responses using JSON data from the function response, and the user prompt.
+    - role: user
+      content: |
+        Function Response: 
+        {"device_id":"bathroom-sensor","device_name":"Bathroom Temperature","device_zone":"Bathroom","hostname":"bathroom-sensor.local","ipv4_addr":192.168.0.95,"diagnose_port":80,"connection_state":"Active","value":22.45}
+        
+        User Prompt: execute a diagnose on bathroom sensor
+    - role: model
+      content: The connection with the bathroom sensor is active. Its hostname is bathroom-sensor.local, IPv4 address is 192.168.0.95, the diagnose port is 80, and the current temperature reading is 22.45 °C.
+
+- chat:
+    - role: system
+      content: You are a home automation agent. Generate responses using JSON data from the function response, and the user prompt.
+    - role: user
+      content: |
+        Function response is a 'heating controller' structure:
+        {"setpoint":30.00,"hysteresis":0.00,"temperature":21.13,"running":true}
+
+        User Prompt: start heating
+    - role: model
+      content: The heating has been started. The setpoint is 30.00 °C and the current temperature is 21.13 °C.
+
+- chat:
+    - role: system
+      content: You are a home automation agent. Generate responses using JSON data from the function response, and the user prompt.
+    - role: user
+      content: |
+        Function response is a 'heating controller' structure:
+        {"setpoint":10.00,"hysteresis":0.00,"temperature":21.63,"running":false}
+        
+        User Prompt: stop heating
+    - role: model
+      content: Okay, I've stopped the heating. The current setpoint is 10.00°C, and the current temperature is 21.50°C. The system is no longer running.
+
+- chat:
+    - role: system
+      content: You are a home automation agent. Generate responses using JSON data from the function response, and the user prompt.
+    - role: user
+      content: |
+        Function response is an error message: 
+        {"error":"device is currently unresponsive"}
+
+        User Prompt: please start the heating
+    - role: model
+      content: The heating controller is not responding. Would you like me to run a device diagnostic?
+
+- chat:
+    - role: system
+      content: You are a home automation agent. Generate responses using JSON data from the function response, and the user prompt.
+    - role: user
+      content: |
+        Function response is a 'heating controller' structure:
+        {"setpoint":30.00,"hysteresis":0.00,"temperature":21.25,"running":true}
+
+        User Prompt: is heating running?
+    - role: model
+      content: Yes, heating is running.
+
+- chat:
+    - role: system
+      content: You are a home automation agent. Generate responses using JSON data from the function response, and the user prompt.
+    - role: user
+      content: |
+        Function response is a 'heating controller' structure:
+        {"setpoint":10.00,"hysteresis":0.00,"temperature":21.25,"running":false}
+
+        User Prompt: is heating currently running?
+    - role: model
+      content: No, the heating is not running.
+
+- chat:
+    - role: system
+      content: You are a home automation agent. Generate responses using JSON data from the function response, and the user prompt.
+    - role: user
+      content: |
+        Function response is a 'heating controller' structure:
+        {"setpoint":30.00,"hysteresis":0.00,"temperature":20.50,"running":true}
+        
+        User Prompt: get heating status
+    - role: model
+      content: The heating is currently running. The setpoint is 30.00 °C and the current temperature is 20.50 °C.
+
+- chat:
+    - role: system
+      content: You are a home automation agent. Generate responses using JSON data from the function response, and the user prompt.
+    - role: user
+      content: |
+        Function response is a 'device diagnose' structure: 
+        {"device_id":"dht-sensor","device_zone":"Kitchen","device_name":"DHT Sensor","hostname":"dht-sensor.local","ipv4_addr":"192.168.0.73","diagnose_port":80,"connection_state":"Active","value_type":"Humidity","value":95.0}
+        
+        User Prompt: run device diagnose on DHT sensor
+    - role: model
+      content: The DHT Sensor in the kitchen is active. Its hostname is dht-sensor.local, and its IPv4 address is 192.168.0.73. It's currently reporting a humidity of 95.0%.
+
+- chat:
+    - role: system
+      content: You are a home automation agent. Generate responses using JSON data from the function response, and the user prompt.
+    - role: user
+      content: |
+        Function response is a list of 'sensor value' structures: 
+        {"zone":"Kitchen","name":"DHT Sensor","value_type":"Humidity","value":15.70}
+        {"zone":"Kitchen","name":"DHT Sensor","value_type":"Temperature","value":17.80}
+        {"zone":"Living Room","name":"Thermostat Sensor","value_type":"Temperature","value":20.50}
+
+        User Prompt: read all sensors
+    - role: model
+      content: |
+        Here's a summary of sensor readings:
+
+        *   **Kitchen - DHT Sensor**: Temperature: 17.80%
+        *   **Kitchen - DHT Sensor**: Humidity: 15.70 °C
+        *   **Living Room - Thermostat Sensor**: Temperature: 20.50 °C
+
+- chat:
+    - role: system
+      content: You are a home automation agent. Generate responses using JSON data from the function response, and the user prompt.
+    - role: user
+      content: |
+        Function response is a list of 'sensor value' structures: 
+        {"zone":"Kitchen","name":"DHT Sensor","value_type":"Humidity","value":15.70}
+        {"zone":"Kitchen","name":"DHT Sensor","value_type":"Temperature","value":17.80}
+        {"zone":"Living Room","name":"Thermostat Sensor","value_type":"Temperature","value":20.50}
+
+        User Prompt: read all sensors and create a report
+    - role: model
+      content: |
+        **Sensor Data Report**  
+        
+        | Zone | Name | Type | Value  |
+        | :--- | :--- | :--- | :--- |
+        | Kitchen | DHT Sensor | Humidity | 15.70 |
+        | Kitchen | DHT Sensor | Temperature| 17.80 |
+        | Living Room | Thermostat Sensor | Temperature| 20.50 |
+        
+        **Summary:**  
+        - The **Kitchen** currently has a humidity level of 15.70% and a temperature of 17.80 °C.  
+        - The **Living Room** temperature is 21.50 °C.  
+        
+        **Note:** No other sensor data was provided in the system.
+
+- chat:
+    - role: system
+      content: You are a home automation agent. Generate responses using JSON data from the function response, and the user prompt.
+    - role: user
+      content: |
+        Function response is a list of 'sensor value' structures: 
+        {"zone":"Kitchen","name":"DHT Sensor","value_type":"Humidity","value":16.7}
+        {"zone":"Kitchen","name":"DHT Sensor","value_type":"Temperature","value":17.5}
+        {"zone":"Living Room","name":"Thermostat Sensor","value_type":"Temperature","value":20.38}
+
+        User Prompt: print all sensors, in json format
+    - role: model
+      content: |
+        ```json
+        [
+          {
+            "zone": "Kitchen",
+            "name": "DHT Sensor",
+            "data_type": "Humidity",
+            "value": 16.7
+          },
+          {
+            "zone": "Kitchen",
+            "name": "DHT Sensor",
+            "data_type": "Temperature",
+            "value": 17.5
+          },
+          {
+            "zone": "Living Room",
+            "name": "Thermostat Sensor",
+            "data_type": "Temperature",
+            "value": 20.38
+          }
+        ]
+        ```
+
+- chat:
+    - role: system
+      content: You are a home automation agent. Generate responses using JSON data from the function response, and the user prompt.
+    - role: user
+      content: |
+        Function response is a list of 'sensor value' structures: 
+        {"zone":"Kitchen","name":"DHT Sensor","value_type":"Humidity","value":16.7}
+        {"zone":"Kitchen","name":"DHT Sensor","value_type":"Temperature","value":17.5}
+        {"zone":"Living Room","name":"Thermostat Sensor","value_type":"Temperature","value":20.38}
+
+        User Prompt: print all sensors, in jsonl format
+    - role: model
+      content: |
+        ```jsonl
+        {"zone":"Kitchen","name":"DHT Sensor","value_type":"Humidity","value":16.7}
+        {"zone":"Kitchen","name":"DHT Sensor","value_type":"Temperature","value":17.5}
+        {"zone":"Living Room","name":"Thermostat Sensor","value_type":"Temperature","value":20.38}
+        ```
+
+- chat:
+    - role: system
+      content: You are a home automation agent. Generate responses using JSON data from the function response, and the user prompt.
+    - role: user
+      content: |
+        Function response is a list of 'sensor value' structures: 
+        {"zone":"Kitchen","name":"DHT Sensor","value_type":"Humidity","value":15.70}
+        {"zone":"Kitchen","name":"DHT Sensor","value_type":"Temperature","value":17.80}
+        {"zone":"Living Room","name":"Thermostat Sensor","value_type":"Temperature","value":20.50}
+
+        User Prompt: print all sensors, in plain text format
+    - role: model
+      content: |
+        Here's a summary of sensor readings:
+
+        - Kitchen - DHT Sensor: Temperature: 17.80%
+        - Kitchen - DHT Sensor: Humidity: 15.70 °C
+        - Living Room - Thermostat Sensor: Temperature: 20.50 °C
+
+- chat:
+    - role: system
+      content: You are a home automation agent. Generate responses using JSON data from the function response, and the user prompt.
+    - role: user
+      content: |
+        Function response is a list of 'sensor value' structures: 
+        {"zone":"Kitchen","name":"DHT Sensor","value_type":"Humidity","value":16.70}
+        {"zone":"Kitchen","name":"DHT Sensor","value_type":"Temperature","value":17.50}
+        {"zone":"Living Room","name":"Thermostat Sensor","value_type":"Temperature","value":20.38}
+
+        User Prompt: read all sensors in the house
+    - role: model
+      content: |
+        Here's a summary of sensor readings:
+
+        *   **Kitchen - DHT Sensor**: Humidity 16.70%
+        *   **Kitchen - DHT Sensor**: Temperature 17.50 °C
+        *   **Living Room - Thermostat Sensor**: Temperature 20.38 °C
+
+- chat:
+    - role: system
+      content: You are a home automation agent. Generate responses using JSON data from the function response, and the user prompt.
+    - role: user
+      content: |
+        Function response is a list of 'sensor value' structures: 
+        {"zone":"Kitchen","name":"DHT Sensor","value_type":"Humidity","value":16.7}
+        {"zone":"Kitchen","name":"DHT Sensor","value_type":"Temperature","value":17.5}
+        {"zone":"Living Room","name":"Thermostat Sensor","value_type":"Temperature","value":20.38}
+
+        User Prompt: read all sensors in the house, in json format
+    - role: model
+      content: |
+        ```json
+        [
+          {
+            "zone": "Kitchen",
+            "name": "DHT Sensor",
+            "data_type": "Humidity",
+            "value": 16.7
+          },
+          {
+            "zone": "Kitchen",
+            "name": "DHT Sensor",
+            "data_type": "Temperature",
+            "value": 17.5
+          },
+          {
+            "zone": "Living Room",
+            "name": "Thermostat Sensor",
+            "data_type": "Temperature",
+            "value": 20.38
+          }
+        ]
+        ```
+
+- chat:
+    - role: system
+      content: You are a home automation agent. Generate responses using JSON data from the function response, and the user prompt.
+    - role: user
+      content: |
+        Function response is a list of 'sensor value' structures: 
+        {"zone":"Kitchen","name":"DHT Sensor","value_type":"Humidity","value":21.70}
+        {"zone":"Kitchen","name":"DHT Sensor","value_type":"Temperature","value":47.60}
+        {"zone":"Living Room","name":"Thermostat Sensor","value_type":"Temperature","value":22.40}
+
+        User Prompt: create a table with the readings of the sensors in the house
+    - role: model
+      content: |
+        Here's a summary of sensor readings:
+
+        | Zone | Name | Measurement | Value |
+        | :--- | :--- | :--- | :--- |
+        | Kitchen | DHT Sensor | Humidity | 21.70% |
+        | Kitchen | DHT Sensor | Temperature | 47.60 °C |
+        | Living Room | Thermostat Sensor | Temperature | 22.40 °C |
+
+- chat:
+    - role: system
+      content: You are a home automation agent. Generate responses using JSON data from the function response, and the user prompt.
+    - role: user
+      content: |
+        Function response is a list of 'sensor value' structures: 
+        {"zone":"Kitchen","name":"DHT Sensor","value_type":"Humidity","value":16.80}
+        {"zone":"Kitchen","name":"DHT Sensor","value_type":"Temperature","value":17.50}
+        {"zone":"Living Room","name":"Thermostat Sensor","value_type":"Temperature","value":20.38}
+
+        User Prompt: read hera sensors in a table format
+    - role: model
+      content: |
+        Here's a summary of sensor readings:
+
+        | Zone | Name | Measurement | Value |
+        | :--- | :--- | :--- | :--- |
+        | Kitchen | DHT Sensor | Humidity | 16.80% |
+        | Kitchen | DHT Sensor | Temperature | 17.50 °C |
+        | Living Room | Thermostat Sensor | Temperature | 20.38 °C |
+
+- chat:
+    - role: system
+      content: You are a home automation agent. Generate responses using JSON data from the function response, and the user prompt.
+    - role: user
+      content: |
+        Function response is a 'sensor value' structure: 
+        {"zone":"Living Room","name":"Thermostat Sensor","value_type":"Temperature","value":21.15}
+        
+        User Prompt: get living room temperature
+    - role: model
+      content: The temperature in the living room is 21.15 °C.
+
+- chat:
+    - role: system
+      content: You are a home automation agent. Generate responses using JSON data from the function response, and the user prompt.
+    - role: user
+      content: |
+        Function response is a 'sensor value' structure: 
+        {"zone":"Living Room","name":"Thermostat Sensor","value_type":"Temperature","value":21.15}
+        
+        User Prompt: get living room temperature as raw value
+    - role: model
+      content: '21.15'
+
+- chat:
+    - role: system
+      content: You are a home automation agent. Generate responses using JSON data from the function response, and the user prompt.
+    - role: user
+      content: |
+        Function response is a 'sensor value' structure: 
+        {"zone":"Living Room","name":"Thermostat Sensor","value_type":"Temperature","value":21.15}
+        
+        User Prompt: get raw value of the living room temperature
+    - role: model
+      content: '21.15'
+
+- chat:
+    - role: system
+      content: You are a home automation agent. Generate responses using JSON data from the function response, and the user prompt.
+    - role: user
+      content: |
+        Function response is an error message: 
+        {"error":"device is currently unresponsive"}
+        
+        User Prompt: show living temperature
+    - role: model
+      content: The living room temperature sensor is not responding. Would you like me to run a device diagnostic?
+
+- chat:
+    - role: system
+      content: You are a home automation agent. Generate responses using JSON data from the function response, and the user prompt.
+    - role: user
+      content: |
+        Function response is a 'sensor value' structure: 
+        {"zone":"Living Room","name":"Thermostat Sensor","value_type":"Temperature","value":20.38}
+        
+        User Prompt: print living room temperature as json
+    - role: model
+      content: |
+        ```json
+        {
+          "zone": "Living Room",
+          "name": "Thermostat Sensor",
+          "value_type": "Temperature",
+          "value": 20.38
+        }
+        ```
+
+- chat:
+    - role: system
+      content: You are a home automation agent. Generate responses using JSON data from the function response, and the user prompt.
+    - role: user
+      content: |
+        Function response is a 'sensor value' structure: 
+        {"zone":"Living Room","name":"Thermostat Sensor","value_type":"Temperature","value":20.38}
+        
+        User Prompt: print living room temperature as raw value
+    - role: model
+      content: '20.38'
+
+- chat:
+    - role: system
+      content: You are a home automation agent. Generate responses using JSON data from the function response, and the user prompt.
+    - role: user
+      content: |
+        Function response is a 'sensor value' structure: 
+        {"zone":"Living Room","name":"Thermostat Sensor","value_type":"Temperature","value":20.38}
+        
+        User Prompt: print living room temperature as jsonl
+    - role: model
+      content: |
+        ```jsonl
+        {"zone":"Living Room","name":"Thermostat Sensor","value_type":"Temperature","value":20.38}
+        ```
+
+- chat:
+    - role: system
+      content: You are a home automation agent. Generate responses using JSON data from the function response, and the user prompt.
+    - role: user
+      content: |
+        Function response is a 'sensor value' structure: 
+        {"zone":"bedroom","name":"Temperature Sensor","value_type":"Temperature","value":32.15}
+        
+        User Prompt: what about the temperature in the bedroom?
+    - role: model
+      content: The current temperature in the bedroom is 32.15 °C.
+
+- chat:
+    - role: system
+      content: You are a home automation agent. Generate responses using JSON data from the function response, and the user prompt.
+    - role: user
+      content: |
+        Function response is an error message: 
+        {"error":"device is currently unresponsive"}
+        
+        User Prompt: what is temperature in the living?
+    - role: model
+      content: The living room temperature sensor is not responding. Would you like me to run a device diagnostic?
+
+- chat:
+    - role: system
+      content: You are a home automation agent. Generate responses using JSON data from the function response, and the user prompt.
+    - role: user
+      content: |
+        Function response is a 'sensor value' structure: 
+        {"zone":"Kitchen","name":"DHT Sensor","value_type":"Temperature","value":17.50}
+        
+        User Prompt: what is the temperature in the kitchen
+    - role: model
+      content: The temperature in the kitchen is 17.50 °C.
+
+- chat:
+    - role: system
+      content: You are a home automation agent. Generate responses using JSON data from the function response, and the user prompt.
+    - role: user
+      content: |
+        Function response is a 'sensor value' structure: 
+        {"zone":"Kitchen","name":"DHT Sensor","value_type":"Humidity","value":36.7012}
+        
+        User Prompt: print kitchen humidity
+    - role: model
+      content: The humidity in the kitchen is 36.70%.
+
+- chat:
+    - role: system
+      content: You are a home automation agent. Generate responses using JSON data from the function response, and the user prompt.
+    - role: user
+      content: |
+        Function response is a 'sensor value' structure: 
+        {"zone":"Kitchen","name":"DHT Sensor","value_type":"Humidity","value":45.2087}
+        
+        User Prompt: print kitchen humidity as json
+    - role: model
+      content: |
+        ```json
+        {
+          "zone":"Kitchen",
+          "name":"DHT Sensor",
+          "value_type":"Humidity",
+          "value":45.2087
+        }
+        ```
+
+- chat:
+    - role: system
+      content: You are a home automation agent. Generate responses using JSON data from the function response, and the user prompt.
+    - role: user
+      content: |
+        Function response is a 'sensor value' structure: 
+        {"zone":"Kitchen","name":"DHT Sensor","value_type":"Humidity","value":45.2087}
+        
+        User Prompt: print kitchen humidity as raw value
+    - role: model
+      content: '45.2087'
+
+- chat:
+    - role: system
+      content: You are a home automation agent. Generate responses using JSON data from the function response, and the user prompt.
+    - role: user
+      content: |
+        Function response is a 'sensor value' structure: 
+        {"zone":"Kitchen","name":"DHT Sensor","value_type":"Humidity","value":36.7012}
+        
+        User Prompt: print kitchen humidity as jsonl
+    - role: model
+      content: |
+        ```jsonl
+        {"zone":"Kitchen","name":"DHT Sensor","value_type":"Humidity","value":36.7012}
+        ```
+
+- chat:
+    - role: system
+      content: You are a home automation agent. Generate responses using JSON data from the function response, and the user prompt.
+    - role: user
+      content: |
+        Function response is an error message: 
+        {"error":"device is currently unresponsive"}
+
+        User Prompt: print kitchen humidity
+    - role: model
+      content: The kitchen humidity sensor is not responding. Would you like me to run a device diagnostic?

@@ -14,7 +14,7 @@ import os
 MODEL_DIR = os.environ.get("AI_MODEL_DIR")
 MODEL_NAME = MODEL_DIR + "/hugging-face/model/gemma-3-1b-it"
 OUTPUT_DIR = "./formatter-1b"
-YAML_FILE = "data/formatter-set.yml"
+YAML_FILE = "data/weather-set.yml"
 
 DTYPE = torch.bfloat16
 MAX_LENGTH = 1024

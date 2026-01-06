@@ -37,7 +37,7 @@ print(args.prompt)
 
 MODEL_DIR = os.environ.get("AI_MODEL_DIR")
 MODEL_NAME = MODEL_DIR + "/hugging-face/model/gemma-3-270m-it"
-DATA_FILE = "data/model.md"
+DATA_FILE = "data/medical.md"
 DTYPE = torch.float32
 print()
 

@@ -52,7 +52,7 @@ args = parser.parse_args()
 MODEL_DIR = os.environ.get("AI_MODEL_DIR")
 MODEL_NAME = MODEL_DIR + "/hugging-face/model/gemma-3-270m-it"
 OUTPUT_DIR = "./formatter-270m"
-DATA_SET = "formatter-set"
+DATA_SET = ["medical-response-set", "hera-response-set", "weather-response-set"]
 DTYPE = torch.float32
 print()
 
@@ -69,7 +69,7 @@ print(f"Use mixed precision {args.use_mixed_precision}")
 print()
 
 print(f"Loading model {model_path}...")
-model = AutoModelForCausalLM.from_pretrained(model_path, dtype=DTYPE, device_map=device)
+model = AutoModelForCausalLM.from_pretrained(model_path, dtype=DTYPE, device_map=device, attn_implementation="eager")
 print(f"Model loaded on {device}")
 print(f"Model parameters: {model.num_parameters():,}")
 
@@ -88,7 +88,7 @@ if hasattr(model, 'generation_config'):
     model.generation_config.bos_token_id = tokenizer.bos_token_id
 model.resize_token_embeddings(len(tokenizer))
 
-data_files = args.files if args.files else [DATA_SET]
+data_files = args.files if args.files else DATA_SET
 data_examples = []
 for data_file in data_files:
     data_file = f"data/{data_file}.yml"

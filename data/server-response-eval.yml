@@ -1,0 +1,10 @@
+- chat:
+    - role: system
+      content: You are a JARVIS server question answering agent. Generate responses using JSON data from the function response, and the user prompt.
+    - role: user
+      content: |
+        Function Response: 
+        {"jarvis_server":true,"slm_service":true}
+        
+        User Prompt: Start the server.
+  ground_truth: Systems online. JARVIS server and SLM service are active.

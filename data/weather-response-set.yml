@@ -1,6 +1,113 @@
 - chat:
     - role: system
-      content: You are a weather question answering agent. Generate responses using the user prompt and JSON data from the function response.
+      content: You are an weather question answering agent. Generate responses using JSON data from the function response, and the user prompt.
+    - role: user
+      content: |
+        Function response is a 'current weather' structure: 
+        {"weather":"Overcast","temperature":10.4,"wind":4.5,"precipitation":45.5}
+
+        User Prompt: how is the weather like?
+    - role: model
+      content: The weather is currently overcast. The temperature is 10.4°C, with a wind speed of 4.5 km/h and a precipitation probability of 45.5%.
+
+- chat:
+    - role: system
+      content: You are an weather question answering agent. Generate responses using JSON data from the function response, and the user prompt.
+    - role: user
+      content: |
+        Function response is a 'current weather' structure: 
+        {"weather":"Mainly clear","temperature":-1.2,"wind":14.7,"precipitation":0.0}
+        
+        User Prompt: how is outside
+    - role: model
+      content: The weather is currently mainly clear. The temperature is -1.2°C, with a wind speed of 14.7 km/h and no precipitation probability.
+
+- chat:
+    - role: system
+      content: You are an weather question answering agent. Generate responses using JSON data from the function response, and the user prompt.
+    - role: user
+      content: |
+        Function response is a 'current weather' structure: 
+        {"weather":"Mainly clear","temperature":-2.3,"wind":12.2,"precipitation":0.0}
+
+        User Prompt: how strong is the wind?
+    - role: model
+      content: The current wind speed is 12.2 km/h.
+
+- chat:
+    - role: system
+      content: You are an weather question answering agent. Generate responses using JSON data from the function response, and the user prompt.
+    - role: user
+      content: |
+        Function response is a 'current weather' structure: 
+        {"weather":"Mainly clear","temperature":-2.3,"wind":12.2,"precipitation":0.0}
+
+        User Prompt: what is outside temperature?
+    - role: model
+      content: The current outside temperature is -2.3 °C.
+
+- chat:
+    - role: system
+      content: You are an weather question answering agent. Generate responses using JSON data from the function response, and the user prompt.
+    - role: user
+      content: |
+        Function response is a 'current weather' structure: 
+        {"weather":"Mainly clear","temperature":-2.3,"wind":12.2,"precipitation":0.0}
+
+        User Prompt: what is wind speed?
+    - role: model
+      content: The wind speed is 12.2 km/h.
+
+- chat:
+    - role: system
+      content: You are an weather question answering agent. Generate responses using JSON data from the function response, and the user prompt.
+    - role: user
+      content: |
+        Function response is a 'current weather' structure: 
+        {"weather":"Mainly clear","temperature":-2.3,"wind":12.2,"precipitation":0.0}
+
+        User Prompt: what is wind speed as raw value?
+    - role: model
+      content: '-2.3'
+
+- chat:
+    - role: system
+      content: You are an weather question answering agent. Generate responses using JSON data from the function response, and the user prompt.
+    - role: user
+      content: |
+        Function response is a 'current weather' structure: 
+        {"weather":"Mainly clear","temperature":-2.3,"wind":12.2,"precipitation":0.0}
+
+        User Prompt: display current weather as json
+    - role: model
+      content: |
+        ```json
+        {
+          "weather":"Mainly clear",
+          "temperature":-2.3,
+          "wind":12.2,
+          "precipitation":0.0
+        }
+        ```
+
+- chat:
+    - role: system
+      content: You are an weather question answering agent. Generate responses using JSON data from the function response, and the user prompt.
+    - role: user
+      content: |
+        Function response is a 'current weather' structure: 
+        {"weather":"Mainly clear","temperature":-2.3,"wind":12.2,"precipitation":0.0}
+
+        User Prompt: print current weather as jsonl
+    - role: model
+      content: |
+        ```jsonl
+        {"weather":"Mainly clear","temperature":-2.3,"wind":12.2,"precipitation":0.0}
+        ```
+
+- chat:
+    - role: system
+      content: You are a weather question answering agent. Generate responses using JSON data from the function response, and the user prompt.
     - role: user
       content: |
         Function response is a list daily forecast structures:  
@@ -31,7 +138,34 @@
 
 - chat:
     - role: system
-      content: You are a weather question answering agent. Generate responses using the user prompt and JSON data from the function response.
+      content: You are a weather question answering agent. Generate responses using JSON data from the function response, and the user prompt.
+    - role: user
+      content: |
+        Function response is a list daily forecast structures:  
+        {"date":"2025-12-31","weather":"Slight snow showers","temperature_max":-0.6,"temperature_min":-3.3,"wind":22.4,"precipitation":48}
+        {"date":"2026-01-01","weather":"Overcast","temperature_max":0.2,"temperature_min":-4.6,"wind":7.1,"precipitation":8}
+        {"date":"2026-01-02","weather":"Overcast","temperature_max":3.8,"temperature_min":-2.2,"wind":10.0,"precipitation":0}
+        {"date":"2026-01-03","weather":"Slight snow fall","temperature_max":7.9,"temperature_min":1.1,"wind":13.7,"precipitation":5}
+        {"date":"2026-01-04","weather":"Overcast","temperature_max":11.6,"temperature_min":7.3,"wind":13.7,"precipitation":6}
+        {"date":"2026-01-05","weather":"Overcast","temperature_max":12.6,"temperature_min":8.2,"wind":19.1,"precipitation":5}
+        {"date":"2026-01-06","weather":"Moderate snow fall","temperature_max":6.3,"temperature_min":-6.4,"wind":14.9,"precipitation":19}
+
+        User Prompt: get weather forecast for the next week as table
+    - role: model
+      content: |
+        | Date | Weather | Max Temp (°C) | Min Temp (°C) | Wind (km/h) | Precipitation (%) |
+        | :--- | :--- | :--- | :--- | :--- | :--- |
+        | 2025-12-31 | Slight snow showers | -0.6 | -3.3 | 22.4 | 48 |
+        | 2026-01-01 | Overcast | 0.2 | -4.6 | 7.1 | 8 |
+        | 2026-01-02 | Overcast | 3.8 | -2.2 | 10.0 | 0 |
+        | 2026-01-03 | Slight snow fall | 7.9 | 1.1 | 13.7 | 5 |
+        | 2026-01-04 | Overcast | 11.6 | 7.3 | 13.7 | 6 |
+        | 2026-01-05 | Overcast | 12.6 | 8.2 | 19.1 | 5 |
+        | 2026-01-06 | Moderate snow fall | 6.3 | -6.4 | 14.9 | 19 |
+
+- chat:
+    - role: system
+      content: You are a weather question answering agent. Generate responses using JSON data from the function response, and the user prompt.
     - role: user
       content: |
         Function response is a list of daily forecast structures: 
@@ -56,7 +190,7 @@
 
 - chat:
     - role: system
-      content: You are a weather question answering agent. Generate responses using the user prompt and JSON data from the function response.
+      content: You are a weather question answering agent. Generate responses using JSON data from the function response, and the user prompt.
     - role: user
       content: |
         Function response is a list of daily forecast structures: 
@@ -79,7 +213,7 @@
 
 - chat:
     - role: system
-      content: You are a weather question answering agent. Generate responses using the user prompt and JSON data from the function response.
+      content: You are a weather question answering agent. Generate responses using JSON data from the function response, and the user prompt.
     - role: user
       content: |
         Function response is a list of daily forecast structures: 
@@ -102,7 +236,7 @@
 
 - chat:
     - role: system
-      content: You are a weather question answering agent. Generate responses using the user prompt and JSON data from the function response.
+      content: You are a weather question answering agent. Generate responses using JSON data from the function response, and the user prompt.
     - role: user
       content: |
         Function response is a list of daily forecast structures: 
@@ -137,7 +271,7 @@
 
 - chat:
     - role: system
-      content: You are a weather question answering agent. Generate responses using the user prompt and JSON data from the function response.
+      content: You are a weather question answering agent. Generate responses using JSON data from the function response, and the user prompt.
     - role: user
       content: |
         Function response is a list of hourly forecast structures: 
@@ -180,7 +314,7 @@
 
 - chat:
     - role: system
-      content: You are a weather question answering agent. Generate responses using the user prompt and JSON data from the function response.
+      content: You are a weather question answering agent. Generate responses using JSON data from the function response, and the user prompt.
     - role: user
       content: |
         Function response is a list of hourly forecast structures: 
@@ -203,7 +337,7 @@
 
 - chat:
     - role: system
-      content: You are a weather question answering agent. Generate responses using the user prompt and JSON data from the function response.
+      content: You are a weather question answering agent. Generate responses using JSON data from the function response, and the user prompt.
     - role: user
       content: |
         Function response is a single hourly forecast structure: 
@@ -222,7 +356,7 @@
 
 - chat:
     - role: system
-      content: You are a weather question answering agent. Generate responses using the user prompt and JSON data from the function response.
+      content: You are a weather question answering agent. Generate responses using JSON data from the function response, and the user prompt.
     - role: user
       content: |
         Function response is a list of hourly forecast structures: 

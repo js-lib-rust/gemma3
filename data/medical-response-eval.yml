@@ -1,6 +1,6 @@
 - chat:
     - role: system
-      content: You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
+      content: You are a medical question answering agent. Generate responses using JSON data from the function response, and the user prompt.
     - role: user
       content: |
         Function response is a list of 'health measurement' structures: 
@@ -36,7 +36,7 @@
 
 - chat:
     - role: system
-      content: You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
+      content: You are a medical question answering agent. Generate responses using JSON data from the function response, and the user prompt.
     - role: user
       content: |
         Function response is a list of 'health measurement' structures: 
@@ -56,7 +56,7 @@
     Here are your health readings as of yesterday, May 1, 2018:
     
     *   **Glucose Level**: 130 mg/dL
-    *   **Oxygen Saturation Level (SpO2)**: 95 %
+    *   **Oxygen Saturation Level (SpO2)**: 95%
     *   **Systolic Pressure**: 124 mmHg
     *   **Diastolic Pressure**: 81 mmHg
     *   **Pulse Pressure**: 43 mmHg
@@ -70,7 +70,7 @@
 
 - chat:
     - role: system
-      content: You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
+      content: You are a medical question answering agent. Generate responses using JSON data from the function response, and the user prompt.
     - role: user
       content: |
         Function response is a list of 'health measurement' structures: 
@@ -92,7 +92,7 @@
 
 - chat:
     - role: system
-      content: You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
+      content: You are a medical question answering agent. Generate responses using JSON data from the function response, and the user prompt.
     - role: user
       content: |
         Function response is a list of 'health measurement' structures: 
@@ -114,7 +114,7 @@
 
 - chat:
     - role: system
-      content: You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
+      content: You are a medical question answering agent. Generate responses using JSON data from the function response, and the user prompt.
     - role: user
       content: |
         Function response is a list of 'health measurement' structures: 
@@ -136,7 +136,7 @@
 
 - chat:
     - role: system
-      content: You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
+      content: You are a medical question answering agent. Generate responses using JSON data from the function response, and the user prompt.
     - role: user
       content: |
         Function response is a list of 'health measurement' structures: 
@@ -158,7 +158,7 @@
 
 - chat:
     - role: system
-      content: You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
+      content: You are a medical question answering agent. Generate responses using JSON data from the function response, and the user prompt.
     - role: user
       content: |
         Function response is a list of 'health measurement' structures: 
@@ -176,8 +176,7 @@
 
 - chat:
     - role: system
-      content: |
-        You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
+      content: You are a medical question answering agent. Generate responses using JSON data from the function response, and the user prompt.
     - role: user
       content: |
         Function response is a list of 'health measurement' structures: 
@@ -203,7 +202,7 @@
 
 - chat:
     - role: system
-      content: You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
+      content: You are a medical question answering agent. Generate responses using JSON data from the function response, and the user prompt.
     - role: user
       content: |
         Function response is a list of 'health measurement' structures: 
@@ -239,7 +238,7 @@
 
 - chat:
     - role: system
-      content: You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
+      content: You are a medical question answering agent. Generate responses using JSON data from the function response, and the user prompt.
     - role: user
       content: |
         Function response is a list of 'health measurement' structures: 
@@ -254,7 +253,7 @@
 
 - chat:
     - role: system
-      content: You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
+      content: You are a medical question answering agent. Generate responses using JSON data from the function response, and the user prompt.
     - role: user
       content: |
         Function response is an error message: 
@@ -265,7 +264,7 @@
 
 - chat:
     - role: system
-      content: You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
+      content: You are a medical question answering agent. Generate responses using JSON data from the function response, and the user prompt.
     - role: user
       content: |
         Function response is an 'health measurement' structure: 
@@ -276,7 +275,7 @@
 
 - chat:
     - role: system
-      content: You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
+      content: You are a medical question answering agent. Generate responses using JSON data from the function response, and the user prompt.
     - role: user
       content: |
         Function response is an 'health measurement' structure: 
@@ -287,7 +286,7 @@
 
 - chat:
     - role: system
-      content: You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
+      content: You are a medical question answering agent. Generate responses using JSON data from the function response, and the user prompt.
     - role: user
       content: |
         Function response is an 'health measurement' structure: 
@@ -298,18 +297,18 @@
 
 - chat:
     - role: system
-      content: You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
+      content: You are a medical question answering agent. Generate responses using JSON data from the function response, and the user prompt.
     - role: user
       content: |
         Function response is an 'health measurement' structure: 
         {"timestamp":"2013-08-23 23:12:45","person":"Iulian Rotaru","measurement":"oxygen_saturation","value":0.96}
         
         User Prompt: save my spo2 0.96
-  ground_truth: Oxygen saturation level (SpO2) of 96 % was recorded for Iulian Rotaru on August 23, 2013 at 23:12:45.
+  ground_truth: Oxygen saturation level (SpO2) of 96% was recorded for Iulian Rotaru on August 23, 2013 at 23:12:45.
 
 - chat:
     - role: system
-      content: You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
+      content: You are a medical question answering agent. Generate responses using JSON data from the function response, and the user prompt.
     - role: user
       content: |
         Function response is an error message: 
@@ -320,18 +319,18 @@
 
 - chat:
     - role: system
-      content: You are a question answering agent. Generate responses using the user prompt and JSON data from the function response.
+      content: You are a medical question answering agent. Generate responses using JSON data from the function response, and the user prompt.
     - role: user
       content: |
         Function response is an 'health measurement' structure: 
         {"timestamp":"2013-08-23 23:12:45","person":"Iulian Rotaru","measurement":"oxygen_saturation","value":0.97}
         
         User Prompt: Save my SpO2 of 0.97 to medical database.
-  ground_truth: Oxygen saturation level (SpO2) of 97 % was recorded for Iulian Rotaru on August 23, 2013 at 23:12:45.
+  ground_truth: Oxygen saturation level (SpO2) of 97% was recorded for Iulian Rotaru on August 23, 2013 at 23:12:45.
 
 - chat:
     - role: system
-      content: You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
+      content: You are a medical question answering agent. Generate responses using JSON data from the function response, and the user prompt.
     - role: user
       content: |
         Function response is an 'health measurement' structure: 
@@ -342,7 +341,7 @@
 
 - chat:
     - role: system
-      content: You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
+      content: You are a medical question answering agent. Generate responses using JSON data from the function response, and the user prompt.
     - role: user
       content: |
         Function response is an 'health measurement' structure: 
@@ -353,7 +352,7 @@
 
 - chat:
     - role: system
-      content: You are a medical question answering agent. Generate responses using the user prompt and JSON data from the function response.
+      content: You are a medical question answering agent. Generate responses using JSON data from the function response, and the user prompt.
     - role: user
       content: |
         Function response is an error message: 
@@ -361,208 +360,3 @@
         
         User Prompt: What is my body temperature?
   ground_truth: I cannot retrieve your body temperature due to database unresponsiveness. Would you like me to run a database diagnostic?
-
-- chat:
-    - role: system
-      content: You are a JARVIS server question answering agent. Generate responses using the user prompt and JSON data from the function response.
-    - role: user
-      content: |
-        Function Response: 
-        {"jarvis_server":true,"slm_service":true}
-        
-        User Prompt: Start the server.
-  ground_truth: Systems online. JARVIS server and SLM service are active.
-
-- chat:
-    - role: system
-      content: You are a home automation question answering agent. Generate responses using the user prompt and JSON data from the function response.
-    - role: user
-      content: |
-        Function response is a 'device diagnose' structure: 
-        {"device_id":"dht-sensor","device_zone":"kitchen","device_name":"DHT Sensor","hostname":"dht-sensor.local","ipv4_addr":192.168.0.73,"diagnose_port":80,"connection_state":"Active","measurement":"humidity","value":95.0}
-        
-        User Prompt: Run full device diagnose on kitchen humidity sensor.
-  ground_truth: The DHT Sensor in the kitchen is active. Its hostname is dht-sensor.local, and its IPv4 address is 192.168.0.73. It's currently reporting a humidity of 95.0 %.
-
-- chat:
-    - role: system
-      content: You are a home automation question answering agent. Generate responses using the user prompt and JSON data from the function response.
-    - role: user
-      content: |
-        Function response is an 'heating controller' structure:
-        {"setpoint":30.00,"hysteresis":0.00,"temperature":21.13,"running":true}
-        
-        User Prompt: Turn on the central heating.
-  ground_truth: Central heating has been turned on. The setpoint is 30.00 °C, and the current temperature is 21.13 °C.
-
-- chat:
-    - role: system
-      content: You are a home automation question answering agent. Generate responses using the user prompt and JSON data from the function response.
-    - role: user
-      content: |
-        Function response is an error message: 
-        {"error":"device is currently unresponsive"}
-        
-        User Prompt: Please start the heater.
-  ground_truth: The central heating controller is currently not responding. Would you like me to run a device diagnostic?
-
-- chat:
-    - role: system
-      content: |
-        You are a home automation question answering agent. Generate responses using the user prompt and JSON data from the function response.
-    - role: user
-      content: |
-        Function response is an 'heating controller' structure:
-        {"setpoint":30.00,"hysteresis":0.00,"temperature":21.25,"running":true}
-        
-        User Prompt: Is central heating running?
-  ground_truth: Yes, central heating is running.
-
-- chat:
-    - role: system
-      content: You are a home automation question answering agent. Generate responses using the user prompt and JSON data from the function response.
-    - role: user
-      content: |
-        Function response is an error message: 
-        {"error":"device is currently unresponsive"}
-        
-        User Prompt: Is heater currently running?
-  ground_truth: The central heating controller is currently not responding. Would you like me to run a device diagnostic?
-
-- chat:
-    - role: system
-      content: |
-        You are a home automation question answering agent. Generate responses using the user prompt and JSON data from the function response.
-    - role: user
-      content: |
-        Function response is an 'heating controller' structure:
-        {"setpoint":10.00,"hysteresis":0.00,"temperature":21.25,"running":false}
-        
-        User Prompt: Is the central heating started?
-  ground_truth: No, the central heating is not running.
-
-- chat:
-    - role: system
-      content: You are a home automation question answering agent. Generate responses using the user prompt and JSON data from the function response.
-    - role: user
-      content: |
-        Function response is a list of 'sensor value' structures: 
-        {"zone":"Kitchen","name":"DHT Sensor","value_type":"Humidity","value":16.70}
-        {"zone":"Kitchen","name":"DHT Sensor","value_type":"Temperature","value":17.50}
-        {"zone":"Living Room","name":"Thermostat Sensor","value_type":"Temperature","value":20.38}
-        
-        User Prompt: Read all sensors in the house.
-  ground_truth: |
-    Here's a summary of sensor readings:
-    
-    *   **Kitchen - DHT Sensor**: Humidity 16.70 %
-    *   **Kitchen - DHT Sensor**: Temperature 17.50 °C
-    *   **Living Room - Thermostat Sensor**: Temperature 20.38 °C
-
-- chat:
-    - role: system
-      content: You are a home automation question answering agent. Generate responses using the user prompt and JSON data from the function response.
-    - role: user
-      content: |
-        Function response is a list of 'sensor value' structures: 
-        {"zone":"Kitchen","name":"DHT Sensor","value_type":"Humidity","value":21.70}
-        {"zone":"Kitchen","name":"DHT Sensor","value_type":"Temperature","value":47.60}
-        {"zone":"Living Room","name":"Thermostat Sensor","value_type":"Temperature","value":22.40}
-        
-        User Prompt: Create a table with current house sensor values.
-  ground_truth: |
-    Here's a summary of sensor readings:
-    
-    | Zone | Name | Measurement | Value |
-    | :--- | :--- | :--- | :--- |
-    | Kitchen | DHT Sensor | Humidity | 21.70 % |
-    | Kitchen | DHT Sensor | Temperature | 47.60 °C |
-    | Living Room | Thermostat Sensor | Temperature | 22.40 °C |
-
-- chat:
-    - role: system
-      content: You are a home automation question answering agent. Generate responses using the user prompt and JSON data from the function response.
-    - role: user
-      content: |
-        Function response is a 'sensor value' structure: 
-        {"zone":"Living Room","name":"Thermostat Sensor","value_type":"Temperature","value":21.15}
-        
-        User Prompt: Get living room temperature.
-  ground_truth: The temperature in the living room is 21.15 °C.
-
-- chat:
-    - role: system
-      content: You are a home automation question answering agent. Generate responses using the user prompt and JSON data from the function response.
-    - role: user
-      content: |
-        Function response is a 'sensor value' structure: 
-        {"zone":"Living Room","name":"Thermostat Sensor","value_type":"Temperature","value":21.15}
-        
-        User Prompt: print living temp
-  ground_truth: The temperature in the living room is 21.15 °C.
-
-- chat:
-    - role: system
-      content: You are a home automation question answering agent. Generate responses using the user prompt and JSON data from the function response.
-    - role: user
-      content: |
-        Function response is a 'sensor value' structure: 
-        {"zone":"Living Room","name":"Thermostat Sensor","value_type":"Temperature","value":21.15}
-        
-        User Prompt: print living temp value
-  ground_truth: The temperature in the living room is 21.15 °C.
-
-- chat:
-    - role: system
-      content: You are a home automation question answering agent. Generate responses using the user prompt and JSON data from the function response.
-    - role: user
-      content: |
-        Function response is a 'sensor value' structure: 
-        {"zone":"Living Room","name":"Thermostat Sensor","value_type":"Temperature","value":21.15}
-        
-        User Prompt: print living temp as raw value
-  ground_truth: 21.15
-
-- chat:
-    - role: system
-      content: You are a home automation question answering agent. Generate responses using the user prompt and JSON data from the function response.
-    - role: user
-      content: |
-        Function response is a 'sensor value' structure: 
-        {"zone":"Living Room","name":"Thermostat Sensor","value_type":"Temperature","value":21.15}
-        
-        User Prompt: print living temp as json
-  ground_truth: |
-    ```json
-    {
-      "zone": "Living Room",
-      "name": "Thermostat Sensor",
-      "value_type": "Temperature",
-      "value": 21.15
-    }
-    ```
-
-- chat:
-    - role: system
-      content: You are a home automation question answering agent. Generate responses using the user prompt and JSON data from the function response.
-    - role: user
-      content: |
-        Function response is a 'sensor value' structure: 
-        {"zone":"Living Room","name":"Thermostat Sensor","value_type":"Temperature","value":21.15}
-        
-        User Prompt: get living temperature as jsonl
-  ground_truth: |
-    ```jsonl
-    {"zone":"Living Room","name":"Thermostat Sensor","value_type":"Temperature","value":21.15}
-    ```
-
-- chat:
-    - role: system
-      content: You are a weather question answering agent. Generate responses using the user prompt and JSON data from the function response.
-    - role: user
-      content: |
-        Function response is a 'current weather' structure: 
-        {"weather":"Mainly clear","temperature":-1.2,"wind":14.7,"precipitation":0.0}
-        
-        User Prompt: How is outside?
-  ground_truth: The weather is currently mainly clear. The temperature is -1.2°C, with a wind speed of 14.7 km/h and no precipitation.

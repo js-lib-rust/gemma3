@@ -10,7 +10,7 @@ import util
 
 BASE_MODEL = util.get_model_path("gemma-3-270m-it")
 EVAL_MODEL = "formatter-270m"
-DATA_FILE = "formatter-eval"
+DATA_FILE = ["medical-response-eval", "hera-response-eval", "weather-response-eval"]
 ROUGE = evaluate.load("rouge")
 BERT = evaluate.load("bertscore")
 
@@ -27,7 +27,7 @@ model_path = BASE_MODEL if args.use_base_model else EVAL_MODEL
 print(f"Use model `{model_path}`.")
 print(f"Use max new tokens {args.max_new_tokens}.")
 
-data_files = args.files if args.files else [DATA_FILE]
+data_files = args.files if args.files else DATA_FILE
 dataset = []
 for data_file in data_files:
     data_file = f"data/{data_file}.yml"

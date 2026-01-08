@@ -24,10 +24,7 @@ parser.add_argument("--learning-rate", type=float, action="store", default="5e-6
 parser.add_argument("--weight-decay", type=float, action="store", default="0.01")
 parser.add_argument("--wakeup", type=float, action="store", default="0.05")
 parser.add_argument("--use-mixed-precision", action="store_true")
-parser.add_argument("prompt", nargs="*", default=[])
 args = parser.parse_args()
-
-print(args.prompt)
 
 MODEL_DIR = os.environ.get("AI_MODEL_DIR")
 MODEL_NAME = MODEL_DIR + "/hugging-face/model/gemma-3-270m-it"
@@ -80,8 +77,8 @@ training_args = TrainingArguments(
     logging_dir="./logs",
     logging_steps=10,
     save_strategy="epoch",
-    fp16=args.use_mixed_precision,
-    bf16=False,
+    fp16=False,
+    bf16=args.use_mixed_precision,
     optim="adamw_torch",
     report_to="none"
 )

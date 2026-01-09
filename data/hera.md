@@ -1,19 +1,34 @@
 # HERA Agent
 
-HERA (Home Automation Regulated Automatically) is a distributed home automation system comprised of interconnected devices deployed across defined zones within a residential environment.
+HERA (Home Automation Regulated Automatically) is a distributed home automation system built on interconnected devices deployed throughout defined zones in a residential setting. A key component managed by HERA is the central heating system, controlled via a thermostat that enables start/stop functionality and state monitoring.
+
+## Device Types Description
+
+The `device_type` field in the Device Descriptor Structure categorizes devices based on their primary function. This allows for consistent handling and appropriate actions to be taken by the home automation system. Here's a breakdown of common device types:
+
+| Device Type | Description | Example Use Cases |
+| :--- | :--- | :--- |
+| **Sensor** | Collects data about the environment or device state. | Temperature sensors, humidity sensors, motion detectors, light level sensors, door/window contact sensors. |
+| **Actuator** | Performs an action based on commands received from the system. | Smart plugs, lights, thermostats, valves, robotic vacuum cleaners. |
+| **Computer** | A general-purpose computing device capable of running complex logic and applications. | Home hub, media server, security camera processor. |
+| **Light** | Controls illumination levels and color. | Smart bulbs, dimmable switches, LED strips. |
+| **Thermostat** | Regulates temperature within a zone. | Heating and cooling control, smart climate management. |
+| **Security Camera** | Captures video and audio for surveillance purposes. | Motion detection, remote viewing, recording events. |
+| **Door/Window Contact** | Detects the open or closed state of doors and windows. | Security system integration, automation triggers (e.g., turning on lights when a door opens). |
+| **Valve** | Controls the flow of liquids or gases. | Water shut-off valves, gas regulators. |
 
 ## Heating Controller Structure
 
-The 'heating controller' structure is a JSON object that contains the current status of the heating system.
+The 'heating controller' structure is a JSON object that contains the current state of the central heating system.
 
 The 'heating controller' structure has the following properties:
 
 * **setpoint**: The desired temperature value in °C.
 * **hysteresis**: Threshold used to trigger a change in running state; numeric value in °C.
 * **temperature**: Current monitored temperature, numeric value in °C.
-* **running**: Boolean value indicating if the heating system is currently on (i.e., running).
+* **running**: Boolean value indicating if the central heating system is currently on (i.e., running).
 
-Here is an example of a 'heating controller' object:
+Here is an example of a 'heating controller' structure:
 
 ```json
 {
@@ -35,7 +50,7 @@ The 'sensor value' structure has the following properties:
 * **value_type**: The sensor value type (e.g., temperature or humidity).
 * **value**: The sensor’s current value; it can be a string, number, or boolean.
 
-Here is an example of a 'sensor value' object:
+Here is an example of a 'sensor value' structure:
 
 ```json
 {
@@ -43,6 +58,30 @@ Here is an example of a 'sensor value' object:
   "name": "DHT Sensor",
   "value_type": "Temperature",
   "value": 17.50
+}
+```
+
+## Device Descriptor Structure
+
+This structure defines a JSON object used to represent a device within the home automation system. It provides essential metadata about each device, enabling identification, categorization, and location tracking.
+
+The 'device descriptor' contains the following properties:
+
+* **id**: A unique identifier for the device across the entire home automation system. *String.*
+* **device_type**: Categorizes the device functionality (e.g., "Sensor", "Actuator", "Computer", "Light").  *String.*
+* **zone**: Specifies the physical location of the device within the home (e.g., "Kitchen", "Living Room", "Bedroom"). *String.*
+* **name**: A human-readable name for the device, unique within its assigned zone. *String.*
+* **description**: A more detailed explanation of the device's purpose and functionality. *String.*
+
+Here is an example of a 'device descriptor' structure:
+
+```json
+{
+  "id":"dht-sensor",
+  "device_type":"Sensor",
+  "zone":"Kitchen",
+  "name":"DHT Sensor",
+  "description":"Temperature and humidity sensor for the kitchen."
 }
 ```
 
@@ -57,12 +96,12 @@ The 'device diagnose' structure has the following properties:
 * **device_name**: The device name, unique within its zone.
 * **hostname**: The device’s host name.
 * **ipv4_addr**: IP address version 4.
-* **diagnose_port**: Port used by the device for the diagnose API.
+* **diagnose_port**: Port used by the device for the diagnosis API.
 * **connection_state**: Device connection state (e.g., "Active", "Inactive").
 * **value_type**: *Optional* sensor value type, like temperature or humidity.  Present if the device reports a sensor reading.
 * **value**: *Optional* sensor current value; it can be a string, number, or boolean. Present if the device reports a sensor reading.
 
-Here is an example of a 'device diagnose' object:
+Here is an example of a 'device diagnose' structure:
 
 ```json
 {

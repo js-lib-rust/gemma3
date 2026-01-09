@@ -4,11 +4,11 @@
     - role: user
       content: |
         Function response is a 'current weather' structure: 
-        {"weather":"Overcast","temperature":10.4,"wind":4.5,"precipitation":45.5}
+        {"locality":"Valea Lupului","condition":"Overcast","feeling":"cool","temperature":10.4,"wind":4.5,"precipitation":45.5}
 
-        User Prompt: how is the weather like?
+        User Prompt: How is the weather like in my location?
     - role: model
-      content: The weather is currently overcast. The temperature is 10.4°C, with a wind speed of 4.5 km/h and a precipitation probability of 45.5%.
+      content: The weather in Valea Lupului is currently overcast and it feels cool. The temperature is 10.4 °C, with a wind speed of 4.5 km/h and a precipitation probability of 45%.
 
 - chat:
     - role: system
@@ -16,11 +16,47 @@
     - role: user
       content: |
         Function response is a 'current weather' structure: 
-        {"weather":"Mainly clear","temperature":-1.2,"wind":14.7,"precipitation":0.0}
+        {"locality":"Iași","condition":"Snow grains","feeling":"cold","temperature":0.3,"wind":6.9,"precipitation":0.0}
+
+        User Prompt: How is the weather in Iași?
+    - role: model
+      content: The weather in Iași is currently snow grains and it feels cold. The temperature is 0.3 °C, with a wind speed of 6.9 km/h and no chance of precipitation.
+
+- chat:
+    - role: system
+      content: You are an weather question answering agent. Generate responses using JSON data from the function response, and the user prompt.
+    - role: user
+      content: |
+        Function response is a 'current weather' structure: 
+        {"locality":"Iași","condition":"Overcast","feeling":"cold","temperature":9.4,"wind":4.5,"precipitation":45.5}
+
+        User Prompt: It is cold outside?
+    - role: model
+      content: Yes, current temperature in Iași is 9.4 °C and it is cold.
+
+- chat:
+    - role: system
+      content: You are an weather question answering agent. Generate responses using JSON data from the function response, and the user prompt.
+    - role: user
+      content: |
+        Function response is a 'current weather' structure: 
+        {"locality":"București","condition":"Overcast","feeling":"cold","temperature":9.4,"wind":4.5,"precipitation":45.5}
+
+        User Prompt: Is it hot in Bucharest?
+    - role: model
+      content: No, the current temperature in Bucharest is 9.4 °C and it is cold.
+
+- chat:
+    - role: system
+      content: You are an weather question answering agent. Generate responses using JSON data from the function response, and the user prompt.
+    - role: user
+      content: |
+        Function response is a 'current weather' structure: 
+        {"locality":"Valea Lupului","condition":"Partly cloudy","feeling":"freezing","temperature":-6.2,"wind":14.7,"precipitation":23.45}
         
-        User Prompt: how is outside
+        User Prompt: How is the weather outside?
     - role: model
-      content: The weather is currently mainly clear. The temperature is -1.2°C, with a wind speed of 14.7 km/h and no precipitation probability.
+      content: The weather in Valea Lupului is currently partly cloudy and it feels freezing. The temperature is -6.2 °C, with a wind speed of 14.7 km/h and there is 23% chance of precipitation.
 
 - chat:
     - role: system
@@ -28,11 +64,11 @@
     - role: user
       content: |
         Function response is a 'current weather' structure: 
-        {"weather":"Mainly clear","temperature":-2.3,"wind":12.2,"precipitation":0.0}
+        {"locality":"Vaslui","condition":"Mainly clear","feeling":"scorching","temperature":32.3,"wind":2.2,"precipitation":0.0}
 
-        User Prompt: how strong is the wind?
+        User Prompt: What is outside temperature?
     - role: model
-      content: The current wind speed is 12.2 km/h.
+      content: The current temperature in Vaslui is 32.3 °C and it feels scorching.
 
 - chat:
     - role: system
@@ -40,11 +76,11 @@
     - role: user
       content: |
         Function response is a 'current weather' structure: 
-        {"weather":"Mainly clear","temperature":-2.3,"wind":12.2,"precipitation":0.0}
+        {"locality":"Cluj","condition":"Mainly clear","feeling":"scorching","temperature":32.3,"wind":2.2,"precipitation":0.0}
 
-        User Prompt: what is outside temperature?
+        User Prompt: How warm is it outdoors?
     - role: model
-      content: The current outside temperature is -2.3 °C.
+      content: The current temperature in Cluj is 32.3 °C and it feels scorching.
 
 - chat:
     - role: system
@@ -52,11 +88,11 @@
     - role: user
       content: |
         Function response is a 'current weather' structure: 
-        {"weather":"Mainly clear","temperature":-2.3,"wind":12.2,"precipitation":0.0}
+        {"locality":"Alba Iulia","condition":"Overcast","feeling":"scorching","temperature":37.4,"wind":1.2,"precipitation":0.0}
 
-        User Prompt: what is wind speed?
+        User Prompt: How cold is it outdoors?
     - role: model
-      content: The wind speed is 12.2 km/h.
+      content: The current temperature in Cluj is 37.3 °C and is not really cold, is actually rather scorching out there.
 
 - chat:
     - role: system
@@ -64,11 +100,11 @@
     - role: user
       content: |
         Function response is a 'current weather' structure: 
-        {"weather":"Mainly clear","temperature":-2.3,"wind":12.2,"precipitation":0.0}
+        {"locality":"Timișoara","condition":"Mainly clear","feeling":"cold","temperature":7.1,"wind":11.2,"precipitation":0.0}
 
-        User Prompt: what is wind speed as raw value?
+        User Prompt: How warm is it outside?
     - role: model
-      content: '-2.3'
+      content: The current temperature in Timișoara is 7.1 °C and is not really warm, is actually rather cold out there.
 
 - chat:
     - role: system
@@ -76,16 +112,30 @@
     - role: user
       content: |
         Function response is a 'current weather' structure: 
-        {"weather":"Mainly clear","temperature":-2.3,"wind":12.2,"precipitation":0.0}
+        {"locality":"Piatra Neamț","condition":"Mainly clear","feeling":"mild","temperature":24.3,"wind":3.6,"precipitation":0.0}
 
-        User Prompt: display current weather as json
+        User Prompt: What is the wind speed in my area?
+    - role: model
+      content: The wind speed in Piatra Neamț is 12.2 km/h.
+
+- chat:
+    - role: system
+      content: You are an weather question answering agent. Generate responses using JSON data from the function response, and the user prompt.
+    - role: user
+      content: |
+        Function response is a 'current weather' structure: 
+        {"locality":"Piatra Neamț","condition":"Mainly clear","feeling":"mild","temperature":24.3,"wind":3.6,"precipitation":0.0}
+
+        User Prompt: Display current weather as JSON.
     - role: model
       content: |
         ```json
         {
-          "weather":"Mainly clear",
-          "temperature":-2.3,
-          "wind":12.2,
+          "locality":"Piatra Neamț",
+          "condition":"Mainly clear",
+          "feeling":"mild",
+          "temperature":24.3,
+          "wind":3.6,
           "precipitation":0.0
         }
         ```
@@ -96,13 +146,13 @@
     - role: user
       content: |
         Function response is a 'current weather' structure: 
-        {"weather":"Mainly clear","temperature":-2.3,"wind":12.2,"precipitation":0.0}
+        {"locality":"Suceava","condition":"Mainly clear","feeling":"scorching","temperature":34.3,"wind":12.2,"precipitation":0.0}
 
-        User Prompt: print current weather as jsonl
+        User Prompt: Print current weather as JSONL.
     - role: model
       content: |
         ```jsonl
-        {"weather":"Mainly clear","temperature":-2.3,"wind":12.2,"precipitation":0.0}
+        {"locality":"Suceava","condition":"Mainly clear","feeling":"scorching","temperature":34.3,"wind":12.2,"precipitation":0.0}
         ```
 
 - chat:
@@ -110,16 +160,16 @@
       content: You are a weather question answering agent. Generate responses using JSON data from the function response, and the user prompt.
     - role: user
       content: |
-        Function response is a list daily forecast structures:  
-        {"date":"2025-12-31","weather":"Slight snow showers","temperature_max":-0.6,"temperature_min":-3.3,"wind":22.4,"precipitation":48}
-        {"date":"2026-01-01","weather":"Overcast","temperature_max":0.2,"temperature_min":-4.6,"wind":7.1,"precipitation":8}
-        {"date":"2026-01-02","weather":"Overcast","temperature_max":3.8,"temperature_min":-2.2,"wind":10.0,"precipitation":0}
-        {"date":"2026-01-03","weather":"Slight snow fall","temperature_max":7.9,"temperature_min":1.1,"wind":13.7,"precipitation":5}
-        {"date":"2026-01-04","weather":"Overcast","temperature_max":11.6,"temperature_min":7.3,"wind":13.7,"precipitation":6}
-        {"date":"2026-01-05","weather":"Overcast","temperature_max":12.6,"temperature_min":8.2,"wind":19.1,"precipitation":5}
-        {"date":"2026-01-06","weather":"Moderate snow fall","temperature_max":6.3,"temperature_min":-6.4,"wind":14.9,"precipitation":19}
+        Function response is a list 'daily forecast' structures:  
+        {"date":"2025-12-31","condition":"Slight snow showers","temperature_max":-0.6,"temperature_min":-3.3,"wind":22.4,"precipitation":48}
+        {"date":"2026-01-01","condition":"Overcast","temperature_max":0.2,"temperature_min":-4.6,"wind":7.1,"precipitation":8}
+        {"date":"2026-01-02","condition":"Overcast","temperature_max":3.8,"temperature_min":-2.2,"wind":10.0,"precipitation":0}
+        {"date":"2026-01-03","condition":"Slight snow fall","temperature_max":7.9,"temperature_min":1.1,"wind":13.7,"precipitation":5}
+        {"date":"2026-01-04","condition":"Overcast","temperature_max":11.6,"temperature_min":7.3,"wind":13.7,"precipitation":6}
+        {"date":"2026-01-05","condition":"Overcast","temperature_max":12.6,"temperature_min":8.2,"wind":19.1,"precipitation":5}
+        {"date":"2026-01-06","condition":"Moderate snow fall","temperature_max":6.3,"temperature_min":-6.4,"wind":14.9,"precipitation":19}
 
-        User Prompt: get weather forecast for the next week
+        User Prompt: Get the weather forecast for the next week.
     - role: model
       content: |
         Here is the weather forecast for the next week:
@@ -141,40 +191,13 @@
       content: You are a weather question answering agent. Generate responses using JSON data from the function response, and the user prompt.
     - role: user
       content: |
-        Function response is a list daily forecast structures:  
-        {"date":"2025-12-31","weather":"Slight snow showers","temperature_max":-0.6,"temperature_min":-3.3,"wind":22.4,"precipitation":48}
-        {"date":"2026-01-01","weather":"Overcast","temperature_max":0.2,"temperature_min":-4.6,"wind":7.1,"precipitation":8}
-        {"date":"2026-01-02","weather":"Overcast","temperature_max":3.8,"temperature_min":-2.2,"wind":10.0,"precipitation":0}
-        {"date":"2026-01-03","weather":"Slight snow fall","temperature_max":7.9,"temperature_min":1.1,"wind":13.7,"precipitation":5}
-        {"date":"2026-01-04","weather":"Overcast","temperature_max":11.6,"temperature_min":7.3,"wind":13.7,"precipitation":6}
-        {"date":"2026-01-05","weather":"Overcast","temperature_max":12.6,"temperature_min":8.2,"wind":19.1,"precipitation":5}
-        {"date":"2026-01-06","weather":"Moderate snow fall","temperature_max":6.3,"temperature_min":-6.4,"wind":14.9,"precipitation":19}
+        Function response is a list of 'daily forecast' structures: 
+        {"date":"2026-01-01","condition":"Overcast","temperature_max":0.2,"temperature_min":-4.6,"wind":7.1,"precipitation":8}
+        {"date":"2026-01-02","condition":"Overcast","temperature_max":3.8,"temperature_min":-2.2,"wind":10.0,"precipitation":0}
+        {"date":"2026-01-03","condition":"Slight snow fall","temperature_max":7.9,"temperature_min":1.1,"wind":13.7,"precipitation":5}
+        {"date":"2026-01-04","condition":"Overcast","temperature_max":11.6,"temperature_min":7.3,"wind":13.7,"precipitation":6}
 
-        User Prompt: get weather forecast for the next week as table
-    - role: model
-      content: |
-        | Date | Weather | Max Temp (°C) | Min Temp (°C) | Wind (km/h) | Precipitation (%) |
-        | :--- | :--- | :--- | :--- | :--- | :--- |
-        | 2025-12-31 | Slight snow showers | -0.6 | -3.3 | 22.4 | 48 |
-        | 2026-01-01 | Overcast | 0.2 | -4.6 | 7.1 | 8 |
-        | 2026-01-02 | Overcast | 3.8 | -2.2 | 10.0 | 0 |
-        | 2026-01-03 | Slight snow fall | 7.9 | 1.1 | 13.7 | 5 |
-        | 2026-01-04 | Overcast | 11.6 | 7.3 | 13.7 | 6 |
-        | 2026-01-05 | Overcast | 12.6 | 8.2 | 19.1 | 5 |
-        | 2026-01-06 | Moderate snow fall | 6.3 | -6.4 | 14.9 | 19 |
-
-- chat:
-    - role: system
-      content: You are a weather question answering agent. Generate responses using JSON data from the function response, and the user prompt.
-    - role: user
-      content: |
-        Function response is a list of daily forecast structures: 
-        {"date":"2026-01-01","weather":"Overcast","temperature_max":0.2,"temperature_min":-4.6,"wind":7.1,"precipitation":8}
-        {"date":"2026-01-02","weather":"Overcast","temperature_max":3.8,"temperature_min":-2.2,"wind":10.0,"precipitation":0}
-        {"date":"2026-01-03","weather":"Slight snow fall","temperature_max":7.9,"temperature_min":1.1,"wind":13.7,"precipitation":5}
-        {"date":"2026-01-04","weather":"Overcast","temperature_max":11.6,"temperature_min":7.3,"wind":13.7,"precipitation":6}
-
-        User Prompt: show forecast for the next month begin
+        User Prompt: Show me the weather forecast for the next month begin.
     - role: model
       content: |
         Here is the weather forecast for the next month begin:
@@ -193,12 +216,12 @@
       content: You are a weather question answering agent. Generate responses using JSON data from the function response, and the user prompt.
     - role: user
       content: |
-        Function response is a list of daily forecast structures: 
-        {"date":"2026-01-02","weather":"Overcast","temperature_max":3.8,"temperature_min":-2.2,"wind":10.0,"precipitation":0}
-        {"date":"2026-01-03","weather":"Slight snow fall","temperature_max":7.9,"temperature_min":1.1,"wind":13.7,"precipitation":5}
-        {"date":"2026-01-04","weather":"Overcast","temperature_max":11.6,"temperature_min":7.3,"wind":13.2,"precipitation":6}
+        Function response is a list of 'daily forecast' structures: 
+        {"date":"2026-01-02","condition":"Overcast","temperature_max":3.8,"temperature_min":-2.2,"wind":10.0,"precipitation":0}
+        {"date":"2026-01-03","condition":"Slight snow fall","temperature_max":7.9,"temperature_min":1.1,"wind":13.7,"precipitation":5}
+        {"date":"2026-01-04","condition":"Overcast","temperature_max":11.6,"temperature_min":7.3,"wind":13.2,"precipitation":6}
 
-        User Prompt: what's the weather forecast for this weekend
+        User Prompt: What is the weather forecast for this weekend.
     - role: model
       content: |
         Here is the weather forecast for this weekend:
@@ -216,12 +239,12 @@
       content: You are a weather question answering agent. Generate responses using JSON data from the function response, and the user prompt.
     - role: user
       content: |
-        Function response is a list of daily forecast structures: 
-        {"date":"2025-12-31","weather":"Slight snow showers","temperature_max":-0.6,"temperature_min":-3.3,"wind":22.4,"precipitation":48}
-        {"date":"2026-01-01","weather":"Overcast","temperature_max":0.2,"temperature_min":-4.6,"wind":7.1,"precipitation":8}
-        {"date":"2026-01-02","weather":"Overcast","temperature_max":3.8,"temperature_min":-2.2,"wind":10.0,"precipitation":0}
+        Function response is a list of 'daily forecast' structures: 
+        {"date":"2025-12-31","condition":"Slight snow showers","temperature_max":-0.6,"temperature_min":-3.3,"wind":22.4,"precipitation":48}
+        {"date":"2026-01-01","condition":"Overcast","temperature_max":0.2,"temperature_min":-4.6,"wind":7.1,"precipitation":8}
+        {"date":"2026-01-02","condition":"Overcast","temperature_max":3.8,"temperature_min":-2.2,"wind":10.0,"precipitation":0}
 
-        User Prompt: create forecast for 3 days
+        User Prompt: Create an weather forecast for 3 days.
     - role: model
       content: |
         Here is the weather forecast for the next three days:
@@ -239,18 +262,18 @@
       content: You are a weather question answering agent. Generate responses using JSON data from the function response, and the user prompt.
     - role: user
       content: |
-        Function response is a list of daily forecast structures: 
-        {"date":"2026-01-04","weather":"Slight snow fall","temperature_max":0.6,"temperature_min":-2.4,"wind":10.7,"precipitation":65}
-        {"date":"2026-01-05","weather":"Slight snow fall","temperature_max":-0.2,"temperature_min":-1.3,"wind":5.4,"precipitation":65}
-        {"date":"2026-01-06","weather":"Snow grains","temperature_max":0.8,"temperature_min":-0.4,"wind":12.5,"precipitation":66}
-        {"date":"2026-01-07","weather":"Moderate snow fall","temperature_max":0.1,"temperature_min":-2.6,"wind":14.7,"precipitation":53}
-        {"date":"2026-01-08","weather":"Moderate snow fall","temperature_max":-2.8,"temperature_min":-6.5,"wind":22.2,"precipitation":55}
-        {"date":"2026-01-09","weather":"Slight snow fall","temperature_max":-6.2,"temperature_min":-9.2,"wind":26.4,"precipitation":47}
-        {"date":"2026-01-10","weather":"Overcast","temperature_max":-6.2,"temperature_min":-13.7,"wind":8.7,"precipitation":24}
-        {"date":"2026-01-11","weather":"Light drizzle","temperature_max":-4.1,"temperature_min":-8.9,"wind":18.1,"precipitation":29}
-        {"date":"2026-01-12","weather":"Overcast","temperature_max":-4.5,"temperature_min":-9.2,"wind":18.6,"precipitation":24}
+        Function response is a list of 'daily forecast' structures: 
+        {"date":"2026-01-04","condition":"Slight snow fall","temperature_max":0.6,"temperature_min":-2.4,"wind":10.7,"precipitation":65}
+        {"date":"2026-01-05","condition":"Slight snow fall","temperature_max":-0.2,"temperature_min":-1.3,"wind":5.4,"precipitation":65}
+        {"date":"2026-01-06","condition":"Snow grains","temperature_max":0.8,"temperature_min":-0.4,"wind":12.5,"precipitation":66}
+        {"date":"2026-01-07","condition":"Moderate snow fall","temperature_max":0.1,"temperature_min":-2.6,"wind":14.7,"precipitation":53}
+        {"date":"2026-01-08","condition":"Moderate snow fall","temperature_max":-2.8,"temperature_min":-6.5,"wind":22.2,"precipitation":55}
+        {"date":"2026-01-09","condition":"Slight snow fall","temperature_max":-6.2,"temperature_min":-9.2,"wind":26.4,"precipitation":47}
+        {"date":"2026-01-10","condition":"Overcast","temperature_max":-6.2,"temperature_min":-13.7,"wind":8.7,"precipitation":24}
+        {"date":"2026-01-11","condition":"Light drizzle","temperature_max":-4.1,"temperature_min":-8.9,"wind":18.1,"precipitation":29}
+        {"date":"2026-01-12","condition":"Overcast","temperature_max":-4.5,"temperature_min":-9.2,"wind":18.6,"precipitation":24}
 
-        User Prompt: list weather forecast for next 9 days
+        User Prompt: List the weather forecast for next 9 days.
     - role: model
       content: |
         Here is the weather forecast for the next 9 days:
@@ -274,22 +297,22 @@
       content: You are a weather question answering agent. Generate responses using JSON data from the function response, and the user prompt.
     - role: user
       content: |
-        Function response is a list of hourly forecast structures: 
-        {"time":"2025-12-22T00:00","weather":"Overcast","temperature":2.3,"wind":3.7,"precipitation":0}
-        {"time":"2025-12-22T01:00","weather":"Fog","temperature":2.3,"wind":2.9,"precipitation":0}
-        {"time":"2025-12-22T02:00","weather":"Fog","temperature":2.3,"wind":2.4,"precipitation":0}
-        {"time":"2025-12-22T03:00","weather":"Fog","temperature":2.3,"wind":1.4,"precipitation":0}
-        {"time":"2025-12-22T04:00","weather":"Fog","temperature":2.3,"wind":1.5,"precipitation":0}
-        {"time":"2025-12-22T05:00","weather":"Fog","temperature":2.2,"wind":1.9,"precipitation":0}
-        {"time":"2025-12-22T06:00","weather":"Fog","temperature":2.3,"wind":1.8,"precipitation":0}
-        {"time":"2025-12-22T07:00","weather":"Fog","temperature":2.4,"wind":1.8,"precipitation":0}
-        {"time":"2025-12-22T08:00","weather":"Fog","temperature":2.4,"wind":1.3,"precipitation":0}
-        {"time":"2025-12-22T09:00","weather":"Fog","temperature":2.5,"wind":1.5,"precipitation":0}
-        {"time":"2025-12-22T10:00","weather":"Fog","temperature":2.9,"wind":1.3,"precipitation":0}
-        {"time":"2025-12-22T11:00","weather":"Fog","temperature":3.3,"wind":2.9,"precipitation":0}
-        {"time":"2025-12-22T12:00","weather":"Overcast","temperature":3.6,"wind":1.9,"precipitation":0}
+        Function response is a list of 'hourly forecast' structures: 
+        {"time":"2025-12-22T00:00","condition":"Overcast","temperature":2.3,"wind":3.7,"precipitation":0}
+        {"time":"2025-12-22T01:00","condition":"Fog","temperature":2.3,"wind":2.9,"precipitation":0}
+        {"time":"2025-12-22T02:00","condition":"Fog","temperature":2.3,"wind":2.4,"precipitation":0}
+        {"time":"2025-12-22T03:00","condition":"Fog","temperature":2.3,"wind":1.4,"precipitation":0}
+        {"time":"2025-12-22T04:00","condition":"Fog","temperature":2.3,"wind":1.5,"precipitation":0}
+        {"time":"2025-12-22T05:00","condition":"Fog","temperature":2.2,"wind":1.9,"precipitation":0}
+        {"time":"2025-12-22T06:00","condition":"Fog","temperature":2.3,"wind":1.8,"precipitation":0}
+        {"time":"2025-12-22T07:00","condition":"Fog","temperature":2.4,"wind":1.8,"precipitation":0}
+        {"time":"2025-12-22T08:00","condition":"Fog","temperature":2.4,"wind":1.3,"precipitation":0}
+        {"time":"2025-12-22T09:00","condition":"Fog","temperature":2.5,"wind":1.5,"precipitation":0}
+        {"time":"2025-12-22T10:00","condition":"Fog","temperature":2.9,"wind":1.3,"precipitation":0}
+        {"time":"2025-12-22T11:00","condition":"Fog","temperature":3.3,"wind":2.9,"precipitation":0}
+        {"time":"2025-12-22T12:00","condition":"Overcast","temperature":3.6,"wind":1.9,"precipitation":0}
 
-        User Prompt: list today forecast in a table by hour
+        User Prompt: What is the weather forecast for today?
     - role: model
       content: |
         Here is the weather forecast for today, December 22, 2025:
@@ -317,12 +340,12 @@
       content: You are a weather question answering agent. Generate responses using JSON data from the function response, and the user prompt.
     - role: user
       content: |
-        Function response is a list of hourly forecast structures: 
-        {"time":"2025-12-30T11:00","weather":"Mainly Clear","temperature":0.2,"wind":12.1,"precipitation":18}
-        {"time":"2025-12-30T12:00","weather":"Overcast","temperature":0.6,"wind":19.9,"precipitation":5}
-        {"time":"2025-12-30T13:00","weather":"Overcast","temperature":0.3,"wind":18.9,"precipitation":3}
+        Function response is a list of 'hourly forecast' structures: 
+        {"time":"2025-12-30T11:00","condition":"Mainly Clear","temperature":0.2,"wind":12.1,"precipitation":18}
+        {"time":"2025-12-30T12:00","condition":"Overcast","temperature":0.6,"wind":19.9,"precipitation":5}
+        {"time":"2025-12-30T13:00","condition":"Overcast","temperature":0.3,"wind":18.9,"precipitation":3}
 
-        User Prompt: what is the weather forecast for today, around noon
+        User Prompt: What is the weather forecast for today, around noon.
     - role: model
       content: |
         Here is the weather forecast for today, December 30, 2025 around noon:
@@ -340,10 +363,10 @@
       content: You are a weather question answering agent. Generate responses using JSON data from the function response, and the user prompt.
     - role: user
       content: |
-        Function response is a single hourly forecast structure: 
-        {"time":"2025-12-30T12:00","weather":"Overcast","temperature":0.6,"wind":19.9,"precipitation":5}
+        Function response is a single 'hourly forecast' structure: 
+        {"time":"2025-12-30T12:00","condition":"Overcast","temperature":0.6,"wind":19.9,"precipitation":5}
 
-        User Prompt: show me forecast for today at noon
+        User Prompt: Show me the weather forecast for today at noon.
     - role: model
       content: |
         Here is the weather forecast for today, December 30, 2025 at noon:
@@ -359,20 +382,20 @@
       content: You are a weather question answering agent. Generate responses using JSON data from the function response, and the user prompt.
     - role: user
       content: |
-        Function response is a list of hourly forecast structures: 
-        {"time":"2025-12-30T07:00","weather":"Overcast","temperature":0.2,"wind":5.1,"precipitation":0}
-        {"time":"2025-12-30T08:00","weather":"Slight snow fall","temperature":-0.4,"wind":5.2,"precipitation":13}
-        {"time":"2025-12-30T09:00","weather":"Slight snow fall","temperature":-0.7,"wind":5.2,"precipitation":48}
-        {"time":"2025-12-30T10:00","weather":"Slight snow fall","temperature":-0.6,"wind":10.5,"precipitation":55}
-        {"time":"2025-12-30T11:00","weather":"Overcast","temperature":0.2,"wind":12.1,"precipitation":18}
-        {"time":"2025-12-30T12:00","weather":"Overcast","temperature":0.6,"wind":19.9,"precipitation":5}
-        {"time":"2025-12-30T13:00","weather":"Overcast","temperature":0.3,"wind":18.9,"precipitation":3}
-        {"time":"2025-12-30T14:00","weather":"Overcast","temperature":-0.2,"wind":17.6,"precipitation":3}
-        {"time":"2025-12-30T15:00","weather":"Overcast","temperature":-0.3,"wind":11.4,"precipitation":0}
-        {"time":"2025-12-30T16:00","weather":"Partly cloudy","temperature":-0.2,"wind":14.6,"precipitation":3}
-        {"time":"2025-12-30T17:00","weather":"Clear sky","temperature":-0.8,"wind":9.7,"precipitation":0}
+        Function response is a list of 'hourly forecast' structures: 
+        {"time":"2025-12-30T07:00","condition":"Overcast","temperature":0.2,"wind":5.1,"precipitation":0}
+        {"time":"2025-12-30T08:00","condition":"Slight snow fall","temperature":-0.4,"wind":5.2,"precipitation":13}
+        {"time":"2025-12-30T09:00","condition":"Slight snow fall","temperature":-0.7,"wind":5.2,"precipitation":48}
+        {"time":"2025-12-30T10:00","condition":"Slight snow fall","temperature":-0.6,"wind":10.5,"precipitation":55}
+        {"time":"2025-12-30T11:00","condition":"Overcast","temperature":0.2,"wind":12.1,"precipitation":18}
+        {"time":"2025-12-30T12:00","condition":"Overcast","temperature":0.6,"wind":19.9,"precipitation":5}
+        {"time":"2025-12-30T13:00","condition":"Overcast","temperature":0.3,"wind":18.9,"precipitation":3}
+        {"time":"2025-12-30T14:00","condition":"Overcast","temperature":-0.2,"wind":17.6,"precipitation":3}
+        {"time":"2025-12-30T15:00","condition":"Overcast","temperature":-0.3,"wind":11.4,"precipitation":0}
+        {"time":"2025-12-30T16:00","condition":"Partly cloudy","temperature":-0.2,"wind":14.6,"precipitation":3}
+        {"time":"2025-12-30T17:00","condition":"Clear sky","temperature":-0.8,"wind":9.7,"precipitation":0}
 
-        User Prompt: display forecast for today, daylight
+        User Prompt: Display the weather forecast for today, daylight.
     - role: model
       content: |
         Here is the weather forecast for today, December 30, 2025, daylight:
@@ -392,3 +415,16 @@
         | 17:00 | Clear sky | -0.8 | 9.7 | 0 |
         
         Weather conditions can change, so please stay updated.
+
+- chat:
+    - role: system
+      content: You are a weather question answering agent. Generate responses using JSON data from the function response, and the user prompt.
+    - role: user
+      content: |
+        Function response is a 'daily forecast' structure: 
+        {"date":"2026-01-08","condition":"Snow grains","temperature_max":-0.3,"temperature_min":-4.6,"wind":30.8,"precipitation":83}
+        {"date":"2026-01-09","condition":"Overcast","temperature_max":0.4,"temperature_min":-4.3,"wind":16.3,"precipitation":35}
+
+        User Prompt: What is the projected weather for the coming weekend?
+    - role: model
+      content: The projected weather for the coming weekend is snow grains followed by overcast, with a temperature maximum of 0.4°C and a minimum of -4.3°C.

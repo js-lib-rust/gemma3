@@ -18,7 +18,7 @@
         * **Thermostat** (Kitchen): The controller for the central heating system.
         * **Thermostat Sensor** (Living Room): Temperature sensor for the central heating system.
         * **Mini PC** (Living Room): Mini computer used as server for the home automation system.
-        
+
 - chat:
     - role: system
       content: You are a home automation agent. Generate responses using JSON data from the function response, and the user prompt.
@@ -185,11 +185,11 @@
     - role: user
       content: |
         Function response is a 'heating controller' structure:
-        {"setpoint":30.00,"hysteresis":0.00,"temperature":21.13,"running":true}
+        {"setpoint":22.00,"hysteresis":0.50,"temperature":21.13,"running":true}
 
         User Prompt: Start the central heating.
     - role: model
-      content: The central heating has been started.
+      content: The central heating has been started. The thermostat temperature sensor is at 21.13 °C and the setpoint is 22.00 °C.
 
 - chat:
     - role: system
@@ -197,11 +197,23 @@
     - role: user
       content: |
         Function response is a 'heating controller' structure:
-        {"setpoint":30.00,"hysteresis":0.00,"temperature":21.13,"running":true}
+        {"setpoint":22.00,"hysteresis":0.50,"temperature":21.00,"running":true}
 
         User Prompt: Turn on the central heating.
     - role: model
-      content: The central heating has been started.
+      content: The central heating has been started. The thermostat temperature sensor is at 21.00 °C and the setpoint is 22.00 °C.
+
+- chat:
+    - role: system
+      content: You are a home automation agent. Generate responses using JSON data from the function response, and the user prompt.
+    - role: user
+      content: |
+        Function response is a 'heating controller' structure:
+        {"setpoint":22.50,"hysteresis":0.50,"temperature":21.50,"running":true}
+
+        User Prompt: Engage the central heating.
+    - role: model
+      content: The central heating has been started. The thermostat temperature sensor is at 21.50 °C and the setpoint is 22.50 °C.
 
 - chat:
     - role: system
@@ -213,7 +225,7 @@
         
         User Prompt: Stop the central heating.
     - role: model
-      content: The central heating has been stopped.
+      content: The central heating has been stopped. The thermostat temperature sensor is at 21.63 °C and the setpoint is 10.00 °C.
 
 - chat:
     - role: system
@@ -225,7 +237,19 @@
         
         User Prompt: Turn off the central heating.
     - role: model
-      content: The central heating has been stopped.
+      content: The central heating has been stopped. The thermostat temperature sensor is at 22.30 °C and the setpoint is 10.00 °C.
+
+- chat:
+    - role: system
+      content: You are a home automation agent. Generate responses using JSON data from the function response, and the user prompt.
+    - role: user
+      content: |
+        Function response is a 'heating controller' structure:
+        {"setpoint":10.00,"hysteresis":0.00,"temperature":22.30,"running":false}
+        
+        User Prompt: Disengage the central heating.
+    - role: model
+      content: The central heating has been stopped. The thermostat temperature sensor is at 22.30 °C and the setpoint is 10.00 °C.
 
 - chat:
     - role: system
@@ -244,12 +268,24 @@
       content: You are a home automation agent. Generate responses using JSON data from the function response, and the user prompt.
     - role: user
       content: |
+        Function response is an error message: 
+        {"error":"device is currently unresponsive"}
+
+        User Prompt: Stop the central heating.
+    - role: model
+      content: The central heating is not responding. Would you like me to run a device diagnostic?
+
+- chat:
+    - role: system
+      content: You are a home automation agent. Generate responses using JSON data from the function response, and the user prompt.
+    - role: user
+      content: |
         Function response is a 'heating controller' structure:
         {"setpoint":30.00,"hysteresis":0.00,"temperature":21.25,"running":true}
 
         User Prompt: Is the central heating running?
     - role: model
-      content: Yes, the central heating is running.
+      content: Yes, the central heating is running. The thermostat temperature sensor is at 21.25 °C and the setpoint is 30.00 °C.
 
 - chat:
     - role: system
@@ -261,7 +297,7 @@
 
         User Prompt: Is the central heating running?
     - role: model
-      content: No, the central heating is not running.
+      content: No, the central heating is not running. The thermostat temperature sensor is at 21.25 °C and the setpoint is 10.00 °C.
 
 - chat:
     - role: system
@@ -269,11 +305,11 @@
     - role: user
       content: |
         Function response is a 'heating controller' structure:
-        {"setpoint":30.00,"hysteresis":0.00,"temperature":20.50,"running":true}
+        {"setpoint":21.50,"hysteresis":0.20,"temperature":20.50,"running":true}
         
         User Prompt: Get the central heating status.
     - role: model
-      content: The central heating is currently running. The setpoint is 30.00 °C and the current temperature is 20.50 °C.
+      content: The central heating is currently running. The thermostat temperature sensor is at 20.50 °C and the setpoint is 21.50 °C.
 
 - chat:
     - role: system
@@ -281,11 +317,11 @@
     - role: user
       content: |
         Function response is a 'heating controller' structure:
-        {"setpoint":10.00,"hysteresis":0.00,"temperature":20.50,"running":false}
+        {"setpoint":21.50,"hysteresis":0.20,"temperature":21.70,"running":false}
         
         User Prompt: Get the central heating status.
     - role: model
-      content: The central heating is currently not running. The setpoint is 10.00 °C and the current temperature is 20.50 °C.
+      content: The central heating is currently not running. The thermostat temperature sensor is at 21.70 °C and the setpoint is 21.50 °C.
 
 - chat:
     - role: system

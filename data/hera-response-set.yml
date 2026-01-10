@@ -14,10 +14,10 @@
       content: |
         Here's a list of all the devices in the house:
         
-        * **DHT Sensor** (Kitchen): A sensor for temperature and humidity.
-        * **Thermostat** (Kitchen): The controller for the central heating system.
-        * **Thermostat Sensor** (Living Room): Temperature sensor for the central heating system.
-        * **Mini PC** (Living Room): Mini computer used as server for the home automation system.
+        *   *DHT Sensor** (Kitchen): A sensor for temperature and humidity.
+        *   *Thermostat** (Kitchen): The controller for the central heating system.
+        *   *Thermostat Sensor** (Living Room): Temperature sensor for the central heating system.
+        *   *Mini PC** (Living Room): Mini computer used as server for the home automation system.
 
 - chat:
     - role: system
@@ -158,13 +158,13 @@
         User Prompt: List actions for DHT Sensor.
     - role: model
       content: |
-        Here's the list of actions supported by DHT Sensor:
+        Here are the available actions for the DHT Sensor:
         
-        * **getHumidity**: Get the current humidity level.
-        * **getTemperature**: Get the current temperature value.
-        * **getHeatIndex**: Get the computed heat index.
-        * **getValue**: Get the sensor raw value.
-        * **getState**: Get device internal state.
+        *   *getHumidity**: Get the current humidity level.
+        *   *getTemperature**: Get the current temperature value.
+        *   *getHeatIndex**: Get the computed heat index.
+        *   *getValue**: Get the sensor raw value.
+        *   *getState**: Get device internal state.
 
 - chat:
     - role: system
@@ -181,7 +181,7 @@
         User Prompt: List actions for DHT Sensor as plain text.
     - role: model
       content: |
-        Here's the list of actions supported by DHT Sensor:
+        Here are the available actions for the DHT Sensor:
         
         - getHumidity: Get the current humidity level.
         - getTemperature: Get the current temperature value.
@@ -204,7 +204,7 @@
         User Prompt: List actions for DHT Sensor as table.
     - role: model
       content: |
-        Here's the list of actions supported by DHT Sensor:
+        Here are the available actions for the DHT Sensor:
         
         | Action | Description |
         | :--- | :--- |
@@ -294,11 +294,11 @@
       content: |
         Here's the list of actions supported by DHT Sensor:
         
-        * **getHumidity**: Get the current humidity level.
-        * **getTemperature**: Get the current temperature value.
-        * **getHeatIndex**: Get the computed heat index.
-        * **getValue**: Get the sensor raw value.
-        * **getState**: Get device internal state.
+        *   *getHumidity**: Get the current humidity level.
+        *   *getTemperature**: Get the current temperature value.
+        *   *getHeatIndex**: Get the computed heat index.
+        *   *getValue**: Get the sensor raw value.
+        *   *getState**: Get device internal state.
 
 - chat:
     - role: system
@@ -319,13 +319,13 @@
       content: |
         Here's the list of actions supported by Thermostat:
         
-        * **updateSetpoint**: Get the current humidity level.
-        * **setSetpoint**: Get setpoint value.
-        * **getSetpoint**: Get setpoint value.
-        * **setTemperature**: Set the current temperature value.
-        * **getTemperature**: Get the current temperature value.
-        * **update**: Update running state based on setpoint and current temperature.
-        * **getState**: Get device internal state.
+        *   *updateSetpoint**: Get the current humidity level.
+        *   *setSetpoint**: Get setpoint value.
+        *   *getSetpoint**: Get setpoint value.
+        *   *setTemperature**: Set the current temperature value.
+        *   *getTemperature**: Get the current temperature value.
+        *   *update**: Update running state based on setpoint and current temperature.
+        *   *getState**: Get device internal state.
 
 - chat:
     - role: system

@@ -57,12 +57,12 @@ The 'current weather' structure is a JSON object containing real-time weather in
 
 This structure has the following properties:
 
-* **locality**: The location for which this weather data is reported. 
-* **condition**: A brief description of the current weather status (e.g., "Mainly clear", "Light rain"). String value.
-* **feeling**: A subjective category describing how the temperature feels (e.g., "Freezing", "Scorching"). 
-* **temperature**: The current temperature, expressed as a numeric value in degrees Celsius (°C).
-* **wind**: The current wind speed, expressed as a numeric value in kilometers per hour (km/h).
-* **precipitation**: The probability of precipitation occurring within the interval, expressed as a percentage (%).
+*   *locality**: The location for which this weather data is reported. 
+*   *condition**: A brief description of the current weather status (e.g., "Mainly clear", "Light rain"). String value.
+*   *feeling**: A subjective category describing how the temperature feels (e.g., "Freezing", "Scorching"). 
+*   *temperature**: The current temperature, expressed as a numeric value in degrees Celsius (°C).
+*   *wind**: The current wind speed, expressed as a numeric value in kilometers per hour (km/h).
+*   *precipitation**: The probability of precipitation occurring within the interval, expressed as a percentage (%).
 
 Here is an example of a 'current weather' structure:
 
@@ -83,13 +83,13 @@ The 'daily forecast' structure is a JSON object containing weather information f
 
 This structure has the following properties:
 
-* **locality**: The location for which this weather data is reported. 
-* **date**: The date for which the forecast applies, represented as a string with the YYYY-MM-DD format.
-* **condition**: A brief description of the expected weather status for the day (e.g., "Slight snow showers", "Partly cloudy"). String value.
-* **temperature_max**: The estimated maximum temperature for the day, expressed as a numeric value in degrees Celsius (°C).
-* **temperature_min**: The estimated minimum temperature for the day, expressed as a numeric value in degrees Celsius (°C).
-* **wind**: The estimated maximum wind speed for the day, expressed as a numeric value in kilometers per hour (km/h).
-* **precipitation**: The maximum probability of precipitation occurring during the day, expressed as a percentage (%).
+*   *locality**: The location for which this weather data is reported. 
+*   *date**: The date for which the forecast applies, represented as a string with the YYYY-MM-DD format.
+*   *condition**: A brief description of the expected weather status for the day (e.g., "Slight snow showers", "Partly cloudy"). String value.
+*   *temperature_max**: The estimated maximum temperature for the day, expressed as a numeric value in degrees Celsius (°C).
+*   *temperature_min**: The estimated minimum temperature for the day, expressed as a numeric value in degrees Celsius (°C).
+*   *wind**: The estimated maximum wind speed for the day, expressed as a numeric value in kilometers per hour (km/h).
+*   *precipitation**: The maximum probability of precipitation occurring during the day, expressed as a percentage (%).
 
 Here is an example of a daily forecast structure:
 
@@ -111,12 +111,12 @@ The hourly forecast structure is a JSON object containing weather information fo
 
 This structure has the following properties:
 
-* **locality**: The location for which this weather data is reported. 
-* **time**: The hour for which the forecast applies, represented as a string with the HH:MM format.
-* **condition**: A short description of the expected weather status during that hour (e.g., "Overcast", "Light drizzle"). String value.
-* **temperature**: The estimated average temperature for the hour, expressed as a numeric value in degrees Celsius (°C).
-* **wind**: The estimated maximum wind speed for the hour, expressed as a numeric value in kilometers per hour (km/h).
-* **precipitation**: The maximum probability of precipitation occurring during the hour, expressed as a percentage (%).
+*   *locality**: The location for which this weather data is reported. 
+*   *time**: The hour for which the forecast applies, represented as a string with the HH:MM format.
+*   *condition**: A short description of the expected weather status during that hour (e.g., "Overcast", "Light drizzle"). String value.
+*   *temperature**: The estimated average temperature for the hour, expressed as a numeric value in degrees Celsius (°C).
+*   *wind**: The estimated maximum wind speed for the hour, expressed as a numeric value in kilometers per hour (km/h).
+*   *precipitation**: The maximum probability of precipitation occurring during the hour, expressed as a percentage (%).
 
 Here is an example of an hourly forecast structure:
 

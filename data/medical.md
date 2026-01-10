@@ -10,47 +10,47 @@ Beyond simply listing data, the Medical Agent provides advanced analytical capab
 
 The Medical Agent supports a comprehensive range of health measurement groups, categorized as follows:
 
-* **Anthropometric Data:** This category encompasses fundamental body measurements crucial for overall health assessment. It includes metrics such as height, weight, body temperature, and Body Mass Index (BMI). These provide baseline indicators of physical status and growth trends.
-* **Cardiovascular Metrics:** Focusing on the circulatory system, this group tracks vital signs related to heart function and arterial health. Examples include blood pressure readings (systolic & diastolic), heart rate (resting & active) and pulse pressure.
-* **Biochemical Data:** This category covers measurements analyzing bodily fluids, primarily blood, to assess internal health conditions. It includes glucose levels and oxygen saturation (SpO2).
-* **Cognitive Assessments:**  This group focuses on monitoring brain health and cognitive performance over time. It encompasses measurements from IQ tests, memory assessments, reaction time evaluations, sleep pattern analysis, etc. These help identify potential changes or declines in cognitive function.
+*   *Anthropometric Data:** This category encompasses fundamental body measurements crucial for overall health assessment. It includes metrics such as height, weight, body temperature, and Body Mass Index (BMI). These provide baseline indicators of physical status and growth trends.
+*   *Cardiovascular Metrics:** Focusing on the circulatory system, this group tracks vital signs related to heart function and arterial health. Examples include blood pressure readings (systolic & diastolic), heart rate (resting & active) and pulse pressure.
+*   *Biochemical Data:** This category covers measurements analyzing bodily fluids, primarily blood, to assess internal health conditions. It includes glucose levels and oxygen saturation (SpO2).
+*   *Cognitive Assessments:**  This group focuses on monitoring brain health and cognitive performance over time. It encompasses measurements from IQ tests, memory assessments, reaction time evaluations, sleep pattern analysis, etc. These help identify potential changes or declines in cognitive function.
 
 ### Anthropometric Data
 
 This category encompasses fundamental body measurements crucial for overall health assessment. Here are the types supported:
 
-* **Body Height:** The vertical distance from the floor to the top of the head while standing erect on a flat surface. Measured in centimeters (cm).
-* **Body Weight:** The total mass of the body, comprising muscle, bone, fat, water, and organs. Measured in kilograms (kg).
-* **Body Mass Index (BMI):** A screening tool calculated using height and weight to estimate body fat percentage. Represented as a scalar value without units.
-* **Body Temperature:**  A measure of the body's internal heat, indicating health status and metabolic function. Measured in degrees Celsius (°C).
+*   *Body Height:** The vertical distance from the floor to the top of the head while standing erect on a flat surface. Measured in centimeters (cm).
+*   *Body Weight:** The total mass of the body, comprising muscle, bone, fat, water, and organs. Measured in kilograms (kg).
+*   *Body Mass Index (BMI):** A screening tool calculated using height and weight to estimate body fat percentage. Represented as a scalar value without units.
+*   *Body Temperature:**  A measure of the body's internal heat, indicating health status and metabolic function. Measured in degrees Celsius (°C).
 
 ### Cardiovascular Metrics
 
 This group tracks vital signs related to heart function and arterial health. Here are the types supported:
 
-* **Systolic Pressure:** The higher value in a blood pressure reading, representing the pressure in arteries during ventricular contraction (heartbeat). Measured in millimeters of mercury (mmHg).
-* **Diastolic Pressure:** The lower value in a blood pressure reading, representing the pressure in arteries during ventricular relaxation (between heartbeats). Measured in millimeters of mercury (mmHg).
-* **Pulse Pressure (PP):**  The difference between systolic and diastolic blood pressure values, indicating arterial stiffness. Measured in millimeters of mercury (mmHg).
-* **Heart Rate (Pulse):** The number of times the heart beats per minute (bpm), reflecting cardiac workload. Measured in beats per minute (bpm).
+*   *Systolic Pressure:** The higher value in a blood pressure reading, representing the pressure in arteries during ventricular contraction (heartbeat). Measured in millimeters of mercury (mmHg).
+*   *Diastolic Pressure:** The lower value in a blood pressure reading, representing the pressure in arteries during ventricular relaxation (between heartbeats). Measured in millimeters of mercury (mmHg).
+*   *Pulse Pressure (PP):**  The difference between systolic and diastolic blood pressure values, indicating arterial stiffness. Measured in millimeters of mercury (mmHg).
+*   *Heart Rate (Pulse):** The number of times the heart beats per minute (bpm), reflecting cardiac workload. Measured in beats per minute (bpm).
 
 ### Biochemical Data
 
 This category covers measurements analyzing bodily fluids, primarily blood, to assess internal health conditions. Here are the types supported:
 
-* **Glucose Level (Blood Sugar):** Measures the concentration of glucose in the blood, representing the body's primary energy source. Measured in milligrams per deciliter (mg/dL).
-* **Oxygen Saturation Level (SpO2):**  Indicates the percentage of hemoglobin carrying oxygen in the blood, reflecting oxygen transport efficiency. Expressed as a percentage (%).
+*   *Glucose Level (Blood Sugar):** Measures the concentration of glucose in the blood, representing the body's primary energy source. Measured in milligrams per deciliter (mg/dL).
+*   *Oxygen Saturation Level (SpO2):**  Indicates the percentage of hemoglobin carrying oxygen in the blood, reflecting oxygen transport efficiency. Expressed as a percentage (%).
 
 ### Cognitive Assessments
 
 This group focuses on monitoring brain health and cognitive performance over time. It encompasses measurements from standardized tests, assessments of daily function, and increasingly, data from engaging quiz-based activities designed to track changes in specific cognitive domains. Here are the types supported:
 
-* **Intelligence Quotient (IQ):** A standardized score derived from comprehensive tests assessing a broad range of cognitive abilities such as reasoning, problem-solving, memory, and verbal comprehension. Represented as a scalar value without units.
-* **Sleep Duration:**  A record of the length of sleep intervals, whether nocturnal or diurnal. Measured in hours.
-* **Quiz Game Scores – Verbal Reasoning:** Tracks performance on quizzes testing vocabulary, analogies, sentence completion, and logical deduction. Recorded as a score (e.g., 0-100).
-* **Quiz Game Scores – Spatial Reasoning:**  Tracks performance on quizzes involving mental rotation, pattern recognition, and visual problem-solving. Recorded as a score (e.g., 0-100).
-* **Quiz Game Scores – Memory Recall:** Tracks performance on quizzes testing short-term and long-term memory retention of facts, lists, or sequences. Recorded as a score (e.g., 0-100).
-* **Quiz Game Scores – Reaction Time:** Measures the speed of response to visual or auditory stimuli in interactive games. Recorded in milliseconds (ms).
-* **Quiz Game Scores - Numerical Reasoning:** Tracks performance on quizzes testing mathematical problem solving, data interpretation and logical thinking with numbers. Recorded as a score (e.g., 0-100).
+*   *Intelligence Quotient (IQ):** A standardized score derived from comprehensive tests assessing a broad range of cognitive abilities such as reasoning, problem-solving, memory, and verbal comprehension. Represented as a scalar value without units.
+*   *Sleep Duration:**  A record of the length of sleep intervals, whether nocturnal or diurnal. Measured in hours.
+*   *Quiz Game Scores – Verbal Reasoning:** Tracks performance on quizzes testing vocabulary, analogies, sentence completion, and logical deduction. Recorded as a score (e.g., 0-100).
+*   *Quiz Game Scores – Spatial Reasoning:**  Tracks performance on quizzes involving mental rotation, pattern recognition, and visual problem-solving. Recorded as a score (e.g., 0-100).
+*   *Quiz Game Scores – Memory Recall:** Tracks performance on quizzes testing short-term and long-term memory retention of facts, lists, or sequences. Recorded as a score (e.g., 0-100).
+*   *Quiz Game Scores – Reaction Time:** Measures the speed of response to visual or auditory stimuli in interactive games. Recorded in milliseconds (ms).
+*   *Quiz Game Scores - Numerical Reasoning:** Tracks performance on quizzes testing mathematical problem solving, data interpretation and logical thinking with numbers. Recorded as a score (e.g., 0-100).
 
 This diverse range of assessments allows for a more nuanced understanding of cognitive function and potential changes over time, providing valuable insights into brain health evolution.
 
@@ -60,10 +60,10 @@ The 'health measurement' is represented as a JSON object containing the type of 
 
 It comprises the following properties:
 
-* **timestamp**: A date string representing when the measurement was taken, adhering to the YYYY-MM-DD HH:MM:SS format.
-* **person**: The name of the individual associated with the measurement; a string value.
-* **measurement**:  The specific type of health measurement recorded; a string value (e.g., "body_height", "glucose_level").
-* **value**: The numeric value representing the measurement result.
+*   *timestamp**: A date string representing when the measurement was taken, adhering to the YYYY-MM-DD HH:MM:SS format.
+*   *person**: The name of the individual associated with the measurement; a string value.
+*   *measurement**:  The specific type of health measurement recorded; a string value (e.g., "body_height", "glucose_level").
+*   *value**: The numeric value representing the measurement result.
 
 Here is an example of a health measurement object:
 
@@ -100,10 +100,10 @@ A normal blood oxygen saturation (SpO2) for a healthy person is 95% to 100%.
 ## How body mass index is classified?
 BMI Categories (Adults)
 
-* **Underweight**: below 18.5
-* **Normal Weight**: 18.5 – 24.9
-* **Overweight**: 25.0 – 29.9
-* **Obese**: 30.0 or higher
+*   *Underweight**: below 18.5
+*   *Normal Weight**: 18.5 – 24.9
+*   *Overweight**: 25.0 – 29.9
+*   *Obese**: 30.0 or higher
 
 ## What is normal range for body temperature?
 While 37°C is a classic average for body temperature, a normal range for adults is generally considered 36.1°C to 37.2°C, with fluctuations common.

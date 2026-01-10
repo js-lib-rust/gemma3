@@ -16,6 +16,7 @@ BERT = evaluate.load("bertscore")
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--verbose", action="store_true")
+parser.add_argument("--model", action="store")
 parser.add_argument("--list", action="store_true")
 parser.add_argument("--use-base-model", action="store_true")
 parser.add_argument("--files", type=util.split_by_comma, action="store")
@@ -23,7 +24,8 @@ parser.add_argument("--max-new-tokens", type=int, action="store", default="2000"
 parser.add_argument("tests", type=int, nargs='*', help="tests number to execute")
 args = parser.parse_args()
 
-model_path = BASE_MODEL if args.use_base_model else EVAL_MODEL
+model_name = args.model if args.model else EVAL_MODEL
+model_path = BASE_MODEL if args.use_base_model else model_name
 print(f"Use model `{model_path}`.")
 print(f"Use max new tokens {args.max_new_tokens}.")
 

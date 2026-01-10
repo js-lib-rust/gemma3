@@ -39,6 +39,7 @@ def prepare_dataset(examples):
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--use-tuned-model", action="store_true")
+parser.add_argument("--model", action="store")
 parser.add_argument("--files", type=util.split_by_comma, action="store")
 parser.add_argument("--output-dir", type=str, action="store", default="formatter-270m")
 parser.add_argument("--max-length", type=int, action="store", default="800")
@@ -59,7 +60,8 @@ print()
 device = "cuda:0" if torch.cuda.is_available() else "cpu"
 output_dir = f"./{args.output_dir}"
 data_files = args.files if args.files else DATA_SET
-model_path = output_dir if args.use_tuned_model else MODEL_NAME
+model_name = args.model if args.model else MODEL_NAME
+model_path = output_dir if args.use_tuned_model else model_name
 print(f"Use device {device}")
 print(f"Use model {model_path}")
 print(f"Use data files {data_files}")

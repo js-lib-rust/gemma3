@@ -196,9 +196,33 @@
     - role: user
       content: |
         Function response is a 'heating controller' structure:
+        {"setpoint":30.00,"hysteresis":0.00,"temperature":21.13,"running":true}
+
+        User Prompt: Turn on the central heating.
+    - role: model
+      content: The central heating has been started.
+
+- chat:
+    - role: system
+      content: You are a home automation agent. Generate responses using JSON data from the function response, and the user prompt.
+    - role: user
+      content: |
+        Function response is a 'heating controller' structure:
         {"setpoint":10.00,"hysteresis":0.00,"temperature":21.63,"running":false}
         
         User Prompt: Stop the central heating.
+    - role: model
+      content: The central heating has been stopped.
+
+- chat:
+    - role: system
+      content: You are a home automation agent. Generate responses using JSON data from the function response, and the user prompt.
+    - role: user
+      content: |
+        Function response is a 'heating controller' structure:
+        {"setpoint":10.00,"hysteresis":0.00,"temperature":22.30,"running":false}
+        
+        User Prompt: Turn off the central heating.
     - role: model
       content: The central heating has been stopped.
 

@@ -1,0 +1,195 @@
+- chat:
+    - role: system
+      content: |
+        **You select the best agent(s) to handle user requests.** You receive a user prompt and output only a JSON list of `agents`. Do not generate any other text.
+        **Available Agents**:
+        *   **hera-agent**: Home automation commands for central heating system and home devices as sensors, actuators and computers.
+        *   **weather-agent**: Collect data from the open weather server for real-time weather information, hourly forecast for the current day, and daily weather forecast for a specified number of days in the future.
+        *   **health-agent**: Store health-related measurements in a medical database and use these records for inspection, statistics and reporting.
+        *   **wikipedia-agent**: Load wikipedia article and used it for questions answering, to extract facts, and write stories and essays.
+    - role: user
+      content: start central heating
+  ground_truth: |
+        {"agents": ["hera-agent"]}
+
+- chat:
+    - role: system
+      content: |
+        **You select the best agent(s) to handle user requests.** You receive a user prompt and output only a JSON list of `agents`. Do not generate any other text.
+        **Available Agents**:
+        *   **hera-agent**: Home automation commands for central heating system and home devices as sensors, actuators and computers.
+        *   **weather-agent**: Collect data from the open weather server for real-time weather information, hourly forecast for the current day, and daily weather forecast for a specified number of days in the future.
+        *   **health-agent**: Store health-related measurements in a medical database and use these records for inspection, statistics and reporting.
+        *   **wikipedia-agent**: Load wikipedia article and used it for questions answering, to extract facts, and write stories and essays.
+    - role: user
+      content: turn on living room light
+  ground_truth: |
+        {"agents": ["hera-agent"]}
+
+- chat:
+    - role: system
+      content: |
+        **You select the best agent(s) to handle user requests.** You receive a user prompt and output only a JSON list of `agents`. Do not generate any other text.
+        **Available Agents**:
+        *   **hera-agent**: Home automation commands for central heating system and home devices as sensors, actuators and computers.
+        *   **weather-agent**: Collect data from the open weather server for real-time weather information, hourly forecast for the current day, and daily weather forecast for a specified number of days in the future.
+        *   **health-agent**: Store health-related measurements in a medical database and use these records for inspection, statistics and reporting.
+        *   **wikipedia-agent**: Load wikipedia article and used it for questions answering, to extract facts, and write stories and essays.
+    - role: user
+      content: start heater
+  ground_truth: |
+        {"agents": ["hera-agent"]}
+
+- chat:
+    - role: system
+      content: |
+        **You select the best agent(s) to handle user requests.** You receive a user prompt and output only a JSON list of `agents`. Do not generate any other text.
+        **Available Agents**:
+        *   **hera-agent**: Home automation commands for central heating system and home devices as sensors, actuators and computers.
+        *   **weather-agent**: Collect data from the open weather server for real-time weather information, hourly forecast for the current day, and daily weather forecast for a specified number of days in the future.
+        *   **health-agent**: Store health-related measurements in a medical database and use these records for inspection, statistics and reporting.
+        *   **wikipedia-agent**: Load wikipedia article and used it for questions answering, to extract facts, and write stories and essays.
+    - role: user
+      content: what is indoor temperature
+  ground_truth: |
+        {"agents": ["hera-agent"]}
+
+- chat:
+    - role: system
+      content: |
+        **You select the best agent(s) to handle user requests.** You receive a user prompt and output only a JSON list of `agents`. Do not generate any other text.
+        **Available Agents**:
+        *   **hera-agent**: Home automation commands for central heating system and home devices as sensors, actuators and computers.
+        *   **weather-agent**: Collect data from the open weather server for real-time weather information, hourly forecast for the current day, and daily weather forecast for a specified number of days in the future.
+        *   **health-agent**: Store health-related measurements in a medical database and use these records for inspection, statistics and reporting.
+        *   **wikipedia-agent**: Load wikipedia article and used it for questions answering, to extract facts, and write stories and essays.
+    - role: user
+      content: get my body temperature
+  ground_truth: |
+        {"agents": ["health-agent"]}
+
+- chat:
+    - role: system
+      content: |
+        **You select the best agent(s) to handle user requests.** You receive a user prompt and output only a JSON list of `agents`. Do not generate any other text.
+        **Available Agents**:
+        *   **hera-agent**: Home automation commands for central heating system and home devices as sensors, actuators and computers.
+        *   **weather-agent**: Collect data from the open weather server for real-time weather information, hourly forecast for the current day, and daily weather forecast for a specified number of days in the future.
+        *   **health-agent**: Store health-related measurements in a medical database and use these records for inspection, statistics and reporting.
+        *   **wikipedia-agent**: Load wikipedia article and used it for questions answering, to extract facts, and write stories and essays.
+    - role: user
+      content: save my body temperature of 35.7
+  ground_truth: |
+        {"agents": ["health-agent"]}
+
+- chat:
+    - role: system
+      content: |
+        **You select the best agent(s) to handle user requests.** You receive a user prompt and output only a JSON list of `agents`. Do not generate any other text.
+        **Available Agents**:
+        *   **hera-agent**: Home automation commands for central heating system and home devices as sensors, actuators and computers.
+        *   **weather-agent**: Collect data from the open weather server for real-time weather information, hourly forecast for the current day, and daily weather forecast for a specified number of days in the future.
+        *   **health-agent**: Store health-related measurements in a medical database and use these records for inspection, statistics and reporting.
+        *   **wikipedia-agent**: Load wikipedia article and used it for questions answering, to extract facts, and write stories and essays.
+    - role: user
+      content: get my pulse pressure from yesterday readings
+  ground_truth: |
+        {"agents": ["health-agent"]}
+
+- chat:
+    - role: system
+      content: |
+        **You select the best agent(s) to handle user requests.** You receive a user prompt and output only a JSON list of `agents`. Do not generate any other text.
+        **Available Agents**:
+        *   **hera-agent**: Home automation commands for central heating system and home devices as sensors, actuators and computers.
+        *   **weather-agent**: Collect data from the open weather server for real-time weather information, hourly forecast for the current day, and daily weather forecast for a specified number of days in the future.
+        *   **health-agent**: Store health-related measurements in a medical database and use these records for inspection, statistics and reporting.
+        *   **wikipedia-agent**: Load wikipedia article and used it for questions answering, to extract facts, and write stories and essays.
+    - role: user
+      content: forecast for today
+  ground_truth: |
+        {"agents": ["weather-agent"]}
+
+- chat:
+    - role: system
+      content: |
+        **You select the best agent(s) to handle user requests.** You receive a user prompt and output only a JSON list of `agents`. Do not generate any other text.
+        **Available Agents**:
+        *   **hera-agent**: Home automation commands for central heating system and home devices as sensors, actuators and computers.
+        *   **weather-agent**: Collect data from the open weather server for real-time weather information, hourly forecast for the current day, and daily weather forecast for a specified number of days in the future.
+        *   **health-agent**: Store health-related measurements in a medical database and use these records for inspection, statistics and reporting.
+        *   **wikipedia-agent**: Load wikipedia article and used it for questions answering, to extract facts, and write stories and essays.
+    - role: user
+      content: how is outside?
+  ground_truth: |
+        {"agents": ["weather-agent"]}
+
+- chat:
+    - role: system
+      content: |
+        **You select the best agent(s) to handle user requests.** You receive a user prompt and output only a JSON list of `agents`. Do not generate any other text.
+        **Available Agents**:
+        *   **hera-agent**: Home automation commands for central heating system and home devices as sensors, actuators and computers.
+        *   **weather-agent**: Collect data from the open weather server for real-time weather information, hourly forecast for the current day, and daily weather forecast for a specified number of days in the future.
+        *   **health-agent**: Store health-related measurements in a medical database and use these records for inspection, statistics and reporting.
+        *   **wikipedia-agent**: Load wikipedia article and used it for questions answering, to extract facts, and write stories and essays.
+    - role: user
+      content: what is outdoor temperature?
+  ground_truth: |
+        {"agents": ["weather-agent"]}
+
+- chat:
+    - role: system
+      content: |
+        **You select the best agent(s) to handle user requests.** You receive a user prompt and output only a JSON list of `agents`. Do not generate any other text.
+        **Available Agents**:
+        *   **hera-agent**: Home automation commands for central heating system and home devices as sensors, actuators and computers.
+        *   **weather-agent**: Collect data from the open weather server for real-time weather information, hourly forecast for the current day, and daily weather forecast for a specified number of days in the future.
+        *   **health-agent**: Store health-related measurements in a medical database and use these records for inspection, statistics and reporting.
+        *   **wikipedia-agent**: Load wikipedia article and used it for questions answering, to extract facts, and write stories and essays.
+    - role: user
+      content: how warm is out there?
+  ground_truth: |
+        {"agents": ["weather-agent"]}
+
+- chat:
+    - role: system
+      content: |
+        **You select the best agent(s) to handle user requests.** You receive a user prompt and output only a JSON list of `agents`. Do not generate any other text.
+        **Available Agents**:
+        *   **hera-agent**: Home automation commands for central heating system and home devices as sensors, actuators and computers.
+        *   **weather-agent**: Collect data from the open weather server for real-time weather information, hourly forecast for the current day, and daily weather forecast for a specified number of days in the future.
+        *   **health-agent**: Store health-related measurements in a medical database and use these records for inspection, statistics and reporting.
+        *   **wikipedia-agent**: Load wikipedia article and used it for questions answering, to extract facts, and write stories and essays.
+    - role: user
+      content: temp outside
+  ground_truth: |
+        {"agents": ["weather-agent"]}
+
+- chat:
+    - role: system
+      content: |
+        **You select the best agent(s) to handle user requests.** You receive a user prompt and output only a JSON list of `agents`. Do not generate any other text.
+        **Available Agents**:
+        *   **hera-agent**: Home automation commands for central heating system and home devices as sensors, actuators and computers.
+        *   **weather-agent**: Collect data from the open weather server for real-time weather information, hourly forecast for the current day, and daily weather forecast for a specified number of days in the future.
+        *   **health-agent**: Store health-related measurements in a medical database and use these records for inspection, statistics and reporting.
+        *   **wikipedia-agent**: Load wikipedia article and used it for questions answering, to extract facts, and write stories and essays.
+    - role: user
+      content: create an essay about ion creanga
+  ground_truth: |
+        {"agents": ["wikipedia-agent"]}
+
+- chat:
+    - role: system
+      content: |
+        **You select the best agent(s) to handle user requests.** You receive a user prompt and output only a JSON list of `agents`. Do not generate any other text.
+        **Available Agents**:
+        *   **hera-agent**: Home automation commands for central heating system and home devices as sensors, actuators and computers.
+        *   **weather-agent**: Collect data from the open weather server for real-time weather information, hourly forecast for the current day, and daily weather forecast for a specified number of days in the future.
+        *   **health-agent**: Store health-related measurements in a medical database and use these records for inspection, statistics and reporting.
+        *   **wikipedia-agent**: Load wikipedia article and used it for questions answering, to extract facts, and write stories and essays.
+    - role: user
+      content: what is capital of romania
+  ground_truth: |
+        {"agents": ["wikipedia-agent"]}

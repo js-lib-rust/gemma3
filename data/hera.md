@@ -23,10 +23,10 @@ The 'heating controller' structure is a JSON object that contains the current st
 
 The 'heating controller' structure has the following properties:
 
-*   *setpoint**: The desired temperature value in °C.
-*   *hysteresis**: Threshold used to trigger a change in running state; numeric value in °C.
-*   *temperature**: Current monitored temperature, numeric value in °C.
-*   *running**: Boolean value indicating if the central heating system is currently on (i.e., running).
+*   **setpoint**: The desired temperature value in °C.
+*   **hysteresis**: Threshold used to trigger a change in running state; numeric value in °C.
+*   **temperature**: Current monitored temperature, numeric value in °C.
+*   **running**: Boolean value indicating if the central heating system is currently on (i.e., running).
 
 Here is an example of a 'heating controller' structure:
 
@@ -45,8 +45,8 @@ The 'device action' structure represents a single, executable action on a device
 
 The 'device action' structure contains the following properties:
 
-*   *action**: A unique identifier for this action *on the specific device*. This name should be distinct from other actions offered by the same or different devices.
-*   *description**: A human-readable description of what the action performs.
+*   **action**: A unique identifier for this action *on the specific device*. This name should be distinct from other actions offered by the same or different devices.
+*   **description**: A human-readable description of what the action performs.
 
 Here's an example illustrating a 'device action' structure:
 
@@ -63,10 +63,10 @@ The 'sensor value' structure is a JSON object containing a sensor’s real-time 
 
 The 'sensor value' structure has the following properties:
 
-*   *zone**: The zone from the home automation system where the sensor is deployed.
-*   *name**: The sensor name, unique within its zone.
-*   *value_type**: The sensor value type (e.g., temperature or humidity).
-*   *value**: The sensor’s current value; it can be a string, number, or boolean.
+*   **zone**: The zone from the home automation system where the sensor is deployed.
+*   **name**: The sensor name, unique within its zone.
+*   **value_type**: The sensor value type (e.g., temperature or humidity).
+*   **value**: The sensor’s current value; it can be a string, number, or boolean.
 
 Here is an example of a 'sensor value' structure:
 
@@ -85,11 +85,11 @@ This structure defines a JSON object used to represent a device within the home 
 
 The 'device descriptor' contains the following properties:
 
-*   *id**: A unique identifier for the device across the entire home automation system. *String.*
-*   *device_type**: Categorizes the device functionality (e.g., "Sensor", "Actuator", "Computer", "Light").  *String.*
-*   *zone**: Specifies the physical location of the device within the home (e.g., "Kitchen", "Living Room", "Bedroom"). *String.*
-*   *name**: A human-readable name for the device, unique within its assigned zone. *String.*
-*   *description**: A more detailed explanation of the device's purpose and functionality. *String.*
+*   **id**: A unique identifier for the device across the entire home automation system. *String.*
+*   **device_type**: Categorizes the device functionality (e.g., "Sensor", "Actuator", "Computer", "Light").  *String.*
+*   **zone**: Specifies the physical location of the device within the home (e.g., "Kitchen", "Living Room", "Bedroom"). *String.*
+*   **name**: A human-readable name for the device, unique within its assigned zone. *String.*
+*   **description**: A more detailed explanation of the device's purpose and functionality. *String.*
 
 Here is an example of a 'device descriptor' structure:
 
@@ -109,15 +109,15 @@ The 'device diagnose' structure is a JSON object containing comprehensive data a
 
 The 'device diagnose' structure has the following properties:
 
-*   *device_id**: Globally unique device ID.
-*   *device_zone**: The zone from the home automation system where the device is deployed.
-*   *device_name**: The device name, unique within its zone.
-*   *hostname**: The device’s host name.
-*   *ipv4_addr**: IP address version 4.
-*   *diagnose_port**: Port used by the device for the diagnosis API.
-*   *connection_state**: Device connection state (e.g., "Active", "Inactive").
-*   *value_type**: *Optional* sensor value type, like temperature or humidity.  Present if the device reports a sensor reading.
-*   *value**: *Optional* sensor current value; it can be a string, number, or boolean. Present if the device reports a sensor reading.
+*   **device_id**: Globally unique device ID.
+*   **device_zone**: The zone from the home automation system where the device is deployed.
+*   **device_name**: The device name, unique within its zone.
+*   **hostname**: The device’s host name.
+*   **ipv4_addr**: IP address version 4.
+*   **diagnose_port**: Port used by the device for the diagnosis API.
+*   **connection_state**: Device connection state (e.g., "Active", "Inactive").
+*   **value_type**: *Optional* sensor value type, like temperature or humidity.  Present if the device reports a sensor reading.
+*   **value**: *Optional* sensor current value; it can be a string, number, or boolean. Present if the device reports a sensor reading.
 
 Here is an example of a 'device diagnose' structure:
 

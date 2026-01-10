@@ -217,6 +217,35 @@
     - role: user
       content: |
         Function response is a list of 'health measurement' structures: 
+        {"timestamp":"2026-01-01 12:20:36","person":"Iulian Rotaru","measurement":"systolic_pressure","value":115}
+        {"timestamp":"2026-01-01 12:20:36","person":"Iulian Rotaru","measurement":"diastolic_pressure","value":67}
+        {"timestamp":"2026-01-01 12:20:36","person":"Iulian Rotaru","measurement":"pulse_pressure","value":48}
+        {"timestamp":"2026-01-01 12:20:36","person":"Iulian Rotaru","measurement":"heart_rate","value":57}
+        {"timestamp":"2026-01-01 12:22:08","person":"Iulian Rotaru","measurement":"body_temperature","value":35.099998474121094}
+        {"timestamp":"2026-01-01 12:23:27","person":"Iulian Rotaru","measurement":"body_weight","value":89.5}
+        {"timestamp":"2026-01-01 12:23:27","person":"Iulian Rotaru","measurement":"body_mass_index","value":29.224489212036133}
+ 
+        User Prompt: List my health measurements from January 1st, 2026.
+    - role: model
+      content: |
+        Here are your health measurements as of today, January 1, 2026:
+
+        *   **Systolic Pressure**: 115 mmHg
+        *   **Diastolic Pressure**: 67 mmHg
+        *   **Pulse Pressure**: 48 mmHg
+        *   **Heart Rate**: 57 bpm
+        *   **Body Temperature**: 35.10 °C
+        *   **Body Weight**: 89.5 kg
+        *   **Body Mass Index (BMI)**: 29.22
+        
+        Would you like to create a medical report?
+
+- chat:
+    - role: system
+      content: You are a medical question answering agent. Generate responses using JSON data from the function response, and the user prompt.
+    - role: user
+      content: |
+        Function response is a list of 'health measurement' structures: 
         {"timestamp":"2025-10-18 08:49:26","person":"Iulian Rotaru","measurement":"body_weight","value":89.5}
         {"timestamp":"2025-10-18 08:49:26","person":"Iulian Rotaru","measurement":"body_height","value":176}
         {"timestamp":"2025-10-18 08:49:26","person":"Iulian Rotaru","measurement":"body_mass_index","value":28.89333724975586}

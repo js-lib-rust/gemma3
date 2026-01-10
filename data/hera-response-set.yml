@@ -18,6 +18,7 @@
         * **Thermostat** (Kitchen): The controller for the central heating system.
         * **Thermostat Sensor** (Living Room): Temperature sensor for the central heating system.
         * **Mini PC** (Living Room): Mini computer used as server for the home automation system.
+        
 - chat:
     - role: system
       content: You are a home automation agent. Generate responses using JSON data from the function response, and the user prompt.
@@ -296,7 +297,7 @@
         {"zone":"Kitchen","name":"DHT Sensor","value_type":"Temperature","value":17.80}
         {"zone":"Living Room","name":"Thermostat Sensor","value_type":"Temperature","value":20.50}
 
-        User Prompt: Read all sensors from home.
+        User Prompt: Read sensors.
     - role: model
       content: |
         Here's a summary of sensor readings:
@@ -315,7 +316,26 @@
         {"zone":"Kitchen","name":"DHT Sensor","value_type":"Temperature","value":17.80}
         {"zone":"Living Room","name":"Thermostat Sensor","value_type":"Temperature","value":20.50}
 
-        User Prompt: Read all sensors from home as plain text.
+        User Prompt: Reads all sensors in the house.
+    - role: model
+      content: |
+        Here's a summary of sensor readings:
+
+        *   **Kitchen - DHT Sensor**: Humidity: 15.70 °C
+        *   **Kitchen - DHT Sensor**: Temperature: 17.80%
+        *   **Living Room - Thermostat Sensor**: Temperature: 20.50 °C
+
+- chat:
+    - role: system
+      content: You are a home automation agent. Generate responses using JSON data from the function response, and the user prompt.
+    - role: user
+      content: |
+        Function response is a list of 'sensor value' structures: 
+        {"zone":"Kitchen","name":"DHT Sensor","value_type":"Humidity","value":15.70}
+        {"zone":"Kitchen","name":"DHT Sensor","value_type":"Temperature","value":17.80}
+        {"zone":"Living Room","name":"Thermostat Sensor","value_type":"Temperature","value":20.50}
+
+        User Prompt: Reads all sensors in the house as plain text.
     - role: model
       content: |
         Here's a summary of sensor readings:
@@ -334,7 +354,7 @@
         {"zone":"Kitchen","name":"DHT Sensor","value_type":"Temperature","value":47.60}
         {"zone":"Living Room","name":"Thermostat Sensor","value_type":"Temperature","value":22.40}
 
-        User Prompt: Read all sensors from home as table.
+        User Prompt: Reads all sensors in the house as table.
     - role: model
       content: |
         Here's a summary of sensor readings:
@@ -355,7 +375,7 @@
         {"zone":"Kitchen","name":"DHT Sensor","value_type":"Temperature","value":17.5}
         {"zone":"Living Room","name":"Thermostat Sensor","value_type":"Temperature","value":20.38}
 
-        User Prompt: Read all sensors from home as JSON.
+        User Prompt: Reads all sensors in the house as JSON.
     - role: model
       content: |
         ```json
@@ -391,7 +411,7 @@
         {"zone":"Kitchen","name":"DHT Sensor","value_type":"Temperature","value":17.5}
         {"zone":"Living Room","name":"Thermostat Sensor","value_type":"Temperature","value":20.38}
 
-        User Prompt: Read all sensors from home as JSONL.
+        User Prompt: Reads all sensors in the house as JSONL.
     - role: model
       content: |
         ```jsonl

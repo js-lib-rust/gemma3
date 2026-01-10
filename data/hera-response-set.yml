@@ -3,7 +3,7 @@
       content: You are a home automation agent. Generate responses using JSON data from the function response, and the user prompt.
     - role: user
       content: |
-        Function response is a 'device descriptor' structure: 
+        Function response is a list of 'device descriptor' structures: 
         {"id":"dht-sensor","device_type":"Sensor","zone":"Kitchen","name":"DHT Sensor","description":"Sensor for temperature and humidity"}
         {"id":"thermostat","device_type":"Actuator","zone":"Kitchen","name":"Thermostat","description":"The controller for the central heating system"}
         {"id":"thermostat-sensor","device_type":"Sensor","zone":"Living Room","name":"Thermostat Sensor","description":"Temperature sensor for the central heating system"}
@@ -24,7 +24,7 @@
       content: You are a home automation agent. Generate responses using JSON data from the function response, and the user prompt.
     - role: user
       content: |
-        Function response is a 'device descriptor' structure: 
+        Function response is a list of 'device descriptor' structures:
         {"id":"dht-sensor","device_type":"Sensor","zone":"Kitchen","name":"DHT Sensor","description":"Sensor for temperature and humidity"}
         {"id":"thermostat","device_type":"Actuator","zone":"Kitchen","name":"Thermostat","description":"The controller for the central heating system"}
         {"id":"thermostat-sensor","device_type":"Sensor","zone":"Living Room","name":"Thermostat Sensor","description":"Temperature sensor for the central heating system"}
@@ -45,7 +45,7 @@
       content: You are a home automation agent. Generate responses using JSON data from the function response, and the user prompt.
     - role: user
       content: |
-        Function response is a 'device descriptor' structure: 
+        Function response is a list of 'device descriptor' structures: 
         {"id":"dht-sensor","device_type":"Sensor","zone":"Kitchen","name":"DHT Sensor","description":"Sensor for temperature and humidity"}
         {"id":"thermostat","device_type":"Actuator","zone":"Kitchen","name":"Thermostat","description":"The controller for the central heating system"}
         {"id":"thermostat-sensor","device_type":"Sensor","zone":"Living Room","name":"Thermostat Sensor","description":"Temperature sensor for the central heating system"}
@@ -68,7 +68,7 @@
       content: You are a home automation agent. Generate responses using JSON data from the function response, and the user prompt.
     - role: user
       content: |
-        Function response is a 'device descriptor' structure: 
+        Function response is a list of 'device descriptor' structures: 
         {"id":"dht-sensor","device_type":"Sensor","zone":"Kitchen","name":"DHT Sensor","description":"Sensor for temperature and humidity"}
         {"id":"thermostat","device_type":"Actuator","zone":"Kitchen","name":"Thermostat","description":"The controller for the central heating system"}
         {"id":"thermostat-sensor","device_type":"Sensor","zone":"Living Room","name":"Thermostat Sensor","description":"Temperature sensor for the central heating system"}
@@ -115,7 +115,7 @@
       content: You are a home automation agent. Generate responses using JSON data from the function response, and the user prompt.
     - role: user
       content: |
-        Function response is a 'device descriptor' structure: 
+        Function response is a list of 'device descriptor' structures:
         {"id":"dht-sensor","device_type":"Sensor","zone":"Kitchen","name":"DHT Sensor","description":"Sensor for temperature and humidity"}
         {"id":"thermostat","device_type":"Actuator","zone":"Kitchen","name":"Thermostat","description":"The controller for the central heating system"}
         {"id":"thermostat-sensor","device_type":"Sensor","zone":"Living Room","name":"Thermostat Sensor","description":"Temperature sensor for the central heating system"}
@@ -142,6 +142,56 @@
         User Prompt: List all the devices in the house.
     - role: model
       content: The server is not responding. Would you like me to run a device diagnostic?
+
+- chat:
+    - role: system
+      content: You are a home automation agent. Generate responses using JSON data from the function response, and the user prompt.
+    - role: user
+      content: |
+        Function response is a list of 'device action' structures:
+        {"action":"getHumidity","description":"Get the current humidity level."}
+        {"action":"getTemperature","description":"Get the current temperature value."}
+        {"action":"getHeatIndex","description":"Get the computed heat index."}
+        {"action":"getValue","description":"Get the sensor raw value."}
+        {"action":"getState","description":"Get device internal state."}
+        
+        User Prompt: List actions supported by the DHT Sensor.
+    - role: model
+      content: |
+        Here's the list of actions supported by DHT Sensor:
+        
+        * **getHumidity**: Get the current humidity level.
+        * **getTemperature**: Get the current temperature value.
+        * **getHeatIndex**: Get the computed heat index.
+        * **getValue**: Get the sensor raw value.
+        * **getState**: Get device internal state.
+
+- chat:
+    - role: system
+      content: You are a home automation agent. Generate responses using JSON data from the function response, and the user prompt.
+    - role: user
+      content: |
+        Function response is a list of 'device action' structures:
+        {"action":"updateSetpoint","description":"Get the current humidity level."}
+        {"action":"setSetpoint","description":"Set setpoint value."}
+        {"action":"getSetpoint","description":"Get setpoint value."}
+        {"action":"setTemperature","description":"Set the current temperature value."}
+        {"action":"getTemperature","description":"Get the current temperature value."}
+        {"action":"update","description":"Update running state based on setpoint and current temperature."}
+        {"action":"getState","description":"Get device internal state."}
+        
+        User Prompt: List the thermostat's actions.
+    - role: model
+      content: |
+        Here's a list of actions supported by Thermostat device:
+        
+        * **updateSetpoint**: Get the current humidity level.
+        * **setSetpoint**: Get setpoint value.
+        * **getSetpoint**: Get setpoint value.
+        * **setTemperature**: Set the current temperature value.
+        * **getTemperature**: Get the current temperature value.
+        * **update**: Update running state based on setpoint and current temperature.
+        * **getState**: Get device internal state.
 
 - chat:
     - role: system

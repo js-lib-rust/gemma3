@@ -155,6 +155,140 @@
         {"action":"getValue","description":"Get the sensor raw value."}
         {"action":"getState","description":"Get device internal state."}
         
+        User Prompt: List actions for DHT Sensor.
+    - role: model
+      content: |
+        Here's the list of actions supported by DHT Sensor:
+        
+        * **getHumidity**: Get the current humidity level.
+        * **getTemperature**: Get the current temperature value.
+        * **getHeatIndex**: Get the computed heat index.
+        * **getValue**: Get the sensor raw value.
+        * **getState**: Get device internal state.
+
+- chat:
+    - role: system
+      content: You are a home automation agent. Generate responses using JSON data from the function response, and the user prompt.
+    - role: user
+      content: |
+        Function response is a list of 'device action' structures:
+        {"action":"getHumidity","description":"Get the current humidity level."}
+        {"action":"getTemperature","description":"Get the current temperature value."}
+        {"action":"getHeatIndex","description":"Get the computed heat index."}
+        {"action":"getValue","description":"Get the sensor raw value."}
+        {"action":"getState","description":"Get device internal state."}
+        
+        User Prompt: List actions for DHT Sensor as plain text.
+    - role: model
+      content: |
+        Here's the list of actions supported by DHT Sensor:
+        
+        - getHumidity: Get the current humidity level.
+        - getTemperature: Get the current temperature value.
+        - getHeatIndex: Get the computed heat index.
+        - getValue: Get the sensor raw value.
+        - getState: Get device internal state.
+
+- chat:
+    - role: system
+      content: You are a home automation agent. Generate responses using JSON data from the function response, and the user prompt.
+    - role: user
+      content: |
+        Function response is a list of 'device action' structures:
+        {"action":"getHumidity","description":"Get the current humidity level."}
+        {"action":"getTemperature","description":"Get the current temperature value."}
+        {"action":"getHeatIndex","description":"Get the computed heat index."}
+        {"action":"getValue","description":"Get the sensor raw value."}
+        {"action":"getState","description":"Get device internal state."}
+        
+        User Prompt: List actions for DHT Sensor as table.
+    - role: model
+      content: |
+        Here's the list of actions supported by DHT Sensor:
+        
+        | Action | Description |
+        | :--- | :--- |
+        | Get Humidity | Get the current humidity level. |
+        | Get Temperature | Get the current temperature. |
+        | Get Heat Index | Get the computed heat index. |
+        | Get Sensor Raw | Get the sensor raw value. |
+        | Get Device State | Get the device's internal state. |
+
+- chat:
+    - role: system
+      content: You are a home automation agent. Generate responses using JSON data from the function response, and the user prompt.
+    - role: user
+      content: |
+        Function response is a list of 'device action' structures:
+        {"action":"getHumidity","description":"Get the current humidity level."}
+        {"action":"getTemperature","description":"Get the current temperature value."}
+        {"action":"getHeatIndex","description":"Get the computed heat index."}
+        {"action":"getValue","description":"Get the sensor raw value."}
+        {"action":"getState","description":"Get device internal state."}
+        
+        User Prompt: List actions for DHT Sensor as JSON.
+    - role: model
+      content: |
+        ```json
+        [
+          {
+              "action": "getHumidity",
+              "description": "Get the current humidity level."
+          },
+          {
+              "action": "getTemperature",
+              "description": "Get the current temperature value."
+          },
+          {
+              "action": "getHeatIndex",
+              "description": "Get the computed heat index."
+          },
+          {
+              "action": "getValue",
+              "description": "Get the sensor raw value."
+          },
+          {
+              "action": "getState",
+              "description": "Get device internal state."
+          }
+        ]
+        ```
+
+- chat:
+    - role: system
+      content: You are a home automation agent. Generate responses using JSON data from the function response, and the user prompt.
+    - role: user
+      content: |
+        Function response is a list of 'device action' structures:
+        {"action":"getHumidity","description":"Get the current humidity level."}
+        {"action":"getTemperature","description":"Get the current temperature value."}
+        {"action":"getHeatIndex","description":"Get the computed heat index."}
+        {"action":"getValue","description":"Get the sensor raw value."}
+        {"action":"getState","description":"Get device internal state."}
+        
+        User Prompt: List actions for DHT Sensor as JSONL.
+    - role: model
+      content: |
+        ```jsonl
+        {"action":"getHumidity","description":"Get the current humidity level."}
+        {"action":"getTemperature","description":"Get the current temperature value."}
+        {"action":"getHeatIndex","description":"Get the computed heat index."}
+        {"action":"getValue","description":"Get the sensor raw value."}
+        {"action":"getState","description":"Get device internal state."}
+        ```
+
+- chat:
+    - role: system
+      content: You are a home automation agent. Generate responses using JSON data from the function response, and the user prompt.
+    - role: user
+      content: |
+        Function response is a list of 'device action' structures:
+        {"action":"getHumidity","description":"Get the current humidity level."}
+        {"action":"getTemperature","description":"Get the current temperature value."}
+        {"action":"getHeatIndex","description":"Get the computed heat index."}
+        {"action":"getValue","description":"Get the sensor raw value."}
+        {"action":"getState","description":"Get device internal state."}
+        
         User Prompt: List actions supported by the DHT Sensor.
     - role: model
       content: |
@@ -183,7 +317,7 @@
         User Prompt: List the thermostat's actions.
     - role: model
       content: |
-        Here's a list of actions supported by Thermostat device:
+        Here's the list of actions supported by Thermostat:
         
         * **updateSetpoint**: Get the current humidity level.
         * **setSetpoint**: Get setpoint value.

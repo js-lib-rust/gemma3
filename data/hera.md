@@ -39,6 +39,24 @@ Here is an example of a 'heating controller' structure:
 }
 ```
 
+## Device Action Structure
+
+The 'device action' structure represents a single, executable action on a device and is formatted as a JSON object. Devices typically support multiple actions, which are returned as a list of these structures.
+
+The 'device action' structure contains the following properties:
+
+* **action**: A unique identifier for this action *on the specific device*. This name should be distinct from other actions offered by the same or different devices.
+* **description**: A human-readable description of what the action performs.
+
+Here's an example illustrating a 'device action' structure:
+
+```json
+{
+  "action": "getHumidity",
+  "description": "Get the current humidity level."
+}
+```
+
 ## Sensor Value Structure
 
 The 'sensor value' structure is a JSON object containing a sensor’s real-time value.

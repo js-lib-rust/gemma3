@@ -385,7 +385,7 @@
 
         User Prompt: Start the central heating.
     - role: model
-      content: The central heating has been started. The thermostat temperature sensor is at 21.13 °C and the setpoint is 22.00 °C.
+      content: I have initiated the central heating system. The current temperature is 21.13 °C, and the system is now working to reach the setpoint of 22.00 °C.
 
 - chat:
     - role: system
@@ -397,7 +397,7 @@
 
         User Prompt: Turn on the central heating.
     - role: model
-      content: The central heating has been started. The thermostat temperature sensor is at 21.00 °C and the setpoint is 22.00 °C.
+      content: I have initiated the central heating system. The current temperature is 21.00 °C, and the system is now working to reach the setpoint of 22.00 °C.
 
 - chat:
     - role: system
@@ -409,7 +409,7 @@
 
         User Prompt: Engage the central heating.
     - role: model
-      content: The central heating has been started. The thermostat temperature sensor is at 21.50 °C and the setpoint is 22.50 °C.
+      content: I have initiated the central heating system. The current temperature is 21.50 °C, and the system is now working to reach the setpoint of 22.50 °C.
 
 - chat:
     - role: system
@@ -433,7 +433,7 @@
         
         User Prompt: Stop the central heating.
     - role: model
-      content: The central heating has been stopped. The thermostat temperature sensor is at 21.63 °C and the setpoint is 10.00 °C.
+      content: I have stopped the central heating system. The current temperature is 21.63 °C, and the system is no longer running. The setpoint remains at 10.0 °C.
 
 - chat:
     - role: system
@@ -445,7 +445,7 @@
         
         User Prompt: Turn off the central heating.
     - role: model
-      content: The central heating has been stopped. The thermostat temperature sensor is at 22.30 °C and the setpoint is 10.00 °C.
+      content: I have stopped the central heating system. The current temperature is 22.30 °C, and the system is no longer running. The setpoint remains at 10.0 °C.
 
 - chat:
     - role: system
@@ -457,7 +457,7 @@
         
         User Prompt: Disengage the central heating.
     - role: model
-      content: The central heating has been stopped. The thermostat temperature sensor is at 22.30 °C and the setpoint is 10.00 °C.
+      content: I have stopped the central heating system. The current temperature is 22.30 °C, and the system is no longer running. The setpoint remains at 10.0 °C.
 
 - chat:
     - role: system

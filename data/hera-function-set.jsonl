@@ -43,4 +43,9 @@
 {"prompt":"Investigate the living room blinders.","function":"hera_run_device_diagnose","arguments":"{\"device\":\"living room blinders\"}"}
 {"prompt":"TV remote control seems not working. Please analyse.","function":"hera_run_device_diagnose","arguments":"{\"device\":\"TV remote control\"}"}
 {"prompt":"Run the garden moisture detector diagnosis.","function":"hera_run_device_diagnose","arguments":"{\"device\":\"garden moisture detector\"}"}
-{"prompt":"Execute full system diagnosis.","function":"hera_run_system_diagnose","arguments":"{}"}
+{"prompt":"Execute home systems diagnosis.","function":"hera_run_system_diagnose","arguments":"{}"}
+{"prompt":"Initiate a comprehensive diagnostic scan of the entire home automation system.","function":"hera_run_system_diagnose","arguments":"{}"}
+{"prompt":"Perform a system health check for the entire apartment. Report any issues or anomalies detected.","function":"hera_run_system_diagnose","arguments":"{}"}
+{"prompt":"Could you please perform a complete diagnostic of the entire condominium automation systems?","function":"hera_run_system_diagnose","arguments":"{}"}
+{"prompt":"Please diagnose any issues with the automation systems from our dwelling house.","function":"hera_run_system_diagnose","arguments":"{}"}
+{"prompt":"Scan for unresponsive home devices and connectivity issues.","function":"hera_run_system_diagnose","arguments":"{}"}

@@ -226,7 +226,32 @@
   ],
   [
     {"role": "system", "content": "You are a model that can do function calling with the following functions"},
-    {"role": "user", "content": "Execute full system diagnosis."},
+    {"role": "user", "content": "Execute home systems diagnosis."},
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_run_system_diagnose", "arguments": {}}}]}
+  ],
+  [
+    {"role": "system", "content": "You are a model that can do function calling with the following functions"},
+    {"role": "user", "content": "Initiate a comprehensive diagnostic scan of the entire home automation system."},
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_run_system_diagnose", "arguments": {}}}]}
+  ],
+  [
+    {"role": "system", "content": "You are a model that can do function calling with the following functions"},
+    {"role": "user", "content": "Perform a system health check for the entire apartment. Report any issues or anomalies detected."},
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_run_system_diagnose", "arguments": {}}}]}
+  ],
+  [
+    {"role": "system", "content": "You are a model that can do function calling with the following functions"},
+    {"role": "user", "content": "Could you please perform a complete diagnostic of the entire condominium automation systems?"},
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_run_system_diagnose", "arguments": {}}}]}
+  ],
+  [
+    {"role": "system", "content": "You are a model that can do function calling with the following functions"},
+    {"role": "user", "content": "Please diagnose any issues with the automation systems from our dwelling house."},
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_run_system_diagnose", "arguments": {}}}]}
+  ],
+  [
+    {"role": "system", "content": "You are a model that can do function calling with the following functions"},
+    {"role": "user", "content": "Scan for unresponsive home devices and connectivity issues."},
     {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_run_system_diagnose", "arguments": {}}}]}
   ]
 ]

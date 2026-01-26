@@ -80,7 +80,7 @@ start_time = time.time()
 for index, datapoint in enumerate(dataset):
     if args.inject_tools:
         util.inject_tools(tools, datapoint)
-    ground_truth = datapoint.pop()
+    ground_truth = datapoint.pop()['content']
     conversation = datapoint
     prompt = util.get_chat_prompt(conversation)
 

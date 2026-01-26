@@ -91,6 +91,11 @@
   ],
   [
     {"role": "system", "content": "You are a model that can do function calling with the following functions"},
+    {"role": "user", "content": "Bedroom temperature."},
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_read_temperature", "arguments": {"zone":"bedroom"}}}]}
+  ],
+  [
+    {"role": "system", "content": "You are a model that can do function calling with the following functions"},
     {"role": "user", "content": "How many Celsius degrees are in the kitchen?"},
     {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_read_temperature", "arguments": {"zone":"kitchen"}}}]}
   ],
@@ -113,6 +118,11 @@
     {"role": "system", "content": "You are a model that can do function calling with the following functions"},
     {"role": "user", "content": "Show me the humidity percent in the cellar."},
     {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_read_humidity", "arguments": {"zone":"cellar"}}}]}
+  ],
+  [
+    {"role": "system", "content": "You are a model that can do function calling with the following functions"},
+    {"role": "user", "content": "Bathroom humidity."},
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_read_humidity", "arguments": {"zone":"bathroom"}}}]}
   ],
   [
     {"role": "system", "content": "You are a model that can do function calling with the following functions"},

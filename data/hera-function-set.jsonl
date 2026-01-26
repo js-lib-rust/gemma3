@@ -16,11 +16,13 @@
 {"prompt":"What is the living room temperature?","function":"hera_read_temperature","arguments":"{\"zone\":\"living room\"}"}
 {"prompt":"Is it too hot in the cellar?","function":"hera_read_temperature","arguments":"{\"zone\":\"cellar\"}"}
 {"prompt":"Get bathroom temperature.","function":"hera_read_temperature","arguments":"{\"zone\":\"bathroom\"}"}
+{"prompt":"Bedroom temperature.","function":"hera_read_temperature","arguments":"{\"zone\":\"bedroom\"}"}
 {"prompt":"How many Celsius degrees are in the kitchen?","function":"hera_read_temperature","arguments":"{\"zone\":\"kitchen\"}"}
 {"prompt":"Get kitchen humidity percent.","function":"hera_read_humidity","arguments":"{\"zone\":\"kitchen\"}"}
 {"prompt":"What is humidity level in the bathroom?","function":"hera_read_humidity","arguments":"{\"zone\":\"bathroom\"}"}
 {"prompt":"Read humidity sensor from greenhouse.","function":"hera_read_humidity","arguments":"{\"zone\":\"greenhouse\"}"}
 {"prompt":"Show me the humidity percent in the cellar.","function":"hera_read_humidity","arguments":"{\"zone\":\"cellar\"}"}
+{"prompt":"Bathroom humidity.","function":"hera_read_humidity","arguments":"{\"zone\":\"bathroom\"}"}
 {"prompt":"Read all sensor values.","function":"hera_read_all_sensors","arguments":"{}"}
 {"prompt":"Read all sensors.","function":"hera_read_all_sensors","arguments":"{}"}
 {"prompt":"Displays the values of all sensors in the house.","function":"hera_read_all_sensors","arguments":"{}"}

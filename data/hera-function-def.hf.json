@@ -1,0 +1,221 @@
+[
+  {
+    "type": "function",
+    "function": {
+      "name": "hera_list_devices",
+      "description": "List all devices registered to home automation server",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": []
+      },
+      "return": {
+        "type": "string"
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "hera_describe_device",
+      "description": "Create a description for the requested device, including supported actions list",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "device": {
+            "type": "string",
+            "description": "The unique ID or name of the device to be described"
+          }
+        },
+        "required": [
+          "device"
+        ]
+      },
+      "return": {
+        "type": "string"
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "hera_read_temperature",
+      "description": "Reads the current temperature value for the requested zone",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "zone": {
+            "type": "string",
+            "description": "Name of the zone for which the temperature value is checked",
+            "enum": [
+              "living room",
+              "kitchen",
+              "bathroom",
+              "lobby",
+              "balcony"
+            ]
+          }
+        },
+        "required": [
+          "zone"
+        ]
+      },
+      "return": {
+        "type": "string"
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "hera_read_humidity",
+      "description": "Reads the current humidity value for the requested zone",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "zone": {
+            "type": "string",
+            "description": "Name of the zone for which the humidity value is checked",
+            "enum": [
+              "living room",
+              "kitchen",
+              "bathroom"
+            ]
+          }
+        },
+        "required": [
+          "zone"
+        ]
+      },
+      "return": {
+        "type": "string"
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "hera_read_all_sensors",
+      "description": "Get the current readings from all sensors registered with the home automation system",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": []
+      },
+      "return": {
+        "type": "string"
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "hera_read_sensors_from_zone",
+      "description": "Get the current readings from sensors from requested zone",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "zone": {
+            "type": "string",
+            "description": "The name of the zone to retrieve sensors data from",
+            "enum": [
+              "living room",
+              "kitchen",
+              "bathroom",
+              "lobby",
+              "balcony"
+            ]
+          }
+        },
+        "required": [
+          "zone"
+        ]
+      },
+      "return": {
+        "type": "string"
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "hera_start_heating",
+      "description": "Activates the central heating system to begin warming the home",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": []
+      },
+      "return": {
+        "type": "string"
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "hera_stop_heating",
+      "description": "Completely disables the central heating system, halting all heating operations",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": []
+      },
+      "return": {
+        "type": "string"
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "hera_get_heating_state",
+      "description": "Retrieves the current state of the central heating system",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": []
+      },
+      "return": {
+        "type": "string"
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "hera_run_device_diagnose",
+      "description": "Check that a device is online and running properly, and return a diagnose report",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "device": {
+            "type": "string",
+            "description": "The unique ID or name of the device to be diagnosed"
+          }
+        },
+        "required": [
+          "device"
+        ]
+      },
+      "return": {
+        "type": "string"
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "hera_run_system_diagnose",
+      "description": "Check home automation system by running a system diagnosis on all components and return a status report",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": []
+      },
+      "return": {
+        "type": "string"
+      }
+    }
+  }
+]

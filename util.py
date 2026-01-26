@@ -1,4 +1,5 @@
 import os
+import json
 
 from sentence_transformers import util, SentenceTransformer
 
@@ -30,3 +31,16 @@ def get_similarity_score(prediction_arg, ground_truth_arg):
 def split_by_comma(text_arg):
     values = text_arg.split(',')
     return [v.strip() for v in values]
+
+
+def inject_tools(tools, conversation):
+    system_turn = [turn for turn in conversation if turn['role'] == "system"][0]
+    functions = "\n".join([json.dumps(function) for function in tools])
+    system_turn['content'] += f"\n\n{functions}"
+
+    user_turn = [turn for turn in conversation if turn['role'] == "user"][0]
+    user_turn['content'] = f"User Prompt: {user_turn['content']}"
+
+    model_turn = [turn for turn in conversation if turn['role'] == "model"][0]
+    model_turn['content'] = json.dumps(model_turn['tool_calls'][0]['function'])
+    del model_turn['tool_calls']

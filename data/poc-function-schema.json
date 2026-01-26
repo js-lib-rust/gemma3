@@ -1,0 +1,46 @@
+[
+  {
+    "function": {
+      "description": "Search internal company documents, policies and project data.",
+      "name": "search_knowledge_base",
+      "parameters": {
+        "properties": {
+          "query": {
+            "description": "query string",
+            "type": "string"
+          }
+        },
+        "required": [
+          "query"
+        ],
+        "type": "object"
+      },
+      "return": {
+        "type": "string"
+      }
+    },
+    "type": "function"
+  },
+  {
+    "function": {
+      "description": "Search public information.",
+      "name": "search_google",
+      "parameters": {
+        "properties": {
+          "query": {
+            "description": "query string",
+            "type": "string"
+          }
+        },
+        "required": [
+          "query"
+        ],
+        "type": "object"
+      },
+      "return": {
+        "type": "string"
+      }
+    },
+    "type": "function"
+  }
+]

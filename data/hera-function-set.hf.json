@@ -1,0 +1,192 @@
+[
+  [
+    {"role": "system", "content": "You are a model that can do function calling with the following functions"},
+    {"role": "user", "content": "List all the devices in the house."},
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_list_devices", "arguments": {}}}]}
+  ],
+  [
+    {"role": "system", "content": "You are a model that can do function calling with the following functions"},
+    {"role": "user", "content": "Describe flood detection sensor."},
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_describe_device", "arguments": {"device":"flood detection sensor"}}}]}
+  ],
+  [
+    {"role": "system", "content": "You are a model that can do function calling with the following functions"},
+    {"role": "user", "content": "List actions of proximity sensor."},
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_describe_device", "arguments": {"device":"proximity sensor"}}}]}
+  ],
+  [
+    {"role": "system", "content": "You are a model that can do function calling with the following functions"},
+    {"role": "user", "content": "Describe the actions of the garage door actuator."},
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_describe_device", "arguments": {"device":"garage door actuator"}}}]}
+  ],
+  [
+    {"role": "system", "content": "You are a model that can do function calling with the following functions"},
+    {"role": "user", "content": "Tell me about the capabilities of my garage door sensor."},
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_describe_device", "arguments": {"device":"garage door sensor"}}}]}
+  ],
+  [
+    {"role": "system", "content": "You are a model that can do function calling with the following functions"},
+    {"role": "user", "content": "Show me the actions supported by the window contact sensors."},
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_describe_device", "arguments": {"device":"window contact sensors"}}}]}
+  ],
+  [
+    {"role": "system", "content": "You are a model that can do function calling with the following functions"},
+    {"role": "user", "content": "Please list the actions supported by luminosity sensor from balcony."},
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_describe_device", "arguments": {"device":"luminosity sensor from balcony"}}}]}
+  ],
+  [
+    {"role": "system", "content": "You are a model that can do function calling with the following functions"},
+    {"role": "user", "content": "What actions are supported by motion detection sensor."},
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_describe_device", "arguments": {"device":"motion detection sensor"}}}]}
+  ],
+  [
+    {"role": "system", "content": "You are a model that can do function calling with the following functions"},
+    {"role": "user", "content": "Please get a definition of the speed sensor."},
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_describe_device", "arguments": {"device":"speed sensor"}}}]}
+  ],
+  [
+    {"role": "system", "content": "You are a model that can do function calling with the following functions"},
+    {"role": "user", "content": "Create a comprehensive description of the garden moisture sensor."},
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_describe_device", "arguments": {"device":"garden moisture sensor"}}}]}
+  ],
+  [
+    {"role": "system", "content": "You are a model that can do function calling with the following functions"},
+    {"role": "user", "content": "What do you know about motion detection device from garage."},
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_describe_device", "arguments": {"device":"motion detection device from garage"}}}]}
+  ],
+  [
+    {"role": "system", "content": "You are a model that can do function calling with the following functions"},
+    {"role": "user", "content": "What is the living room temperature?"},
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_read_temperature", "arguments": {"zone":"living room"}}}]}
+  ],
+  [
+    {"role": "system", "content": "You are a model that can do function calling with the following functions"},
+    {"role": "user", "content": "Is it warm in the living room?"},
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_read_temperature", "arguments": {"zone":"living room"}}}]}
+  ],
+  [
+    {"role": "system", "content": "You are a model that can do function calling with the following functions"},
+    {"role": "user", "content": "Get living room temperature."},
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_read_temperature", "arguments": {"zone":"living room"}}}]}
+  ],
+  [
+    {"role": "system", "content": "You are a model that can do function calling with the following functions"},
+    {"role": "user", "content": "Get kitchen humidity."},
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_read_humidity", "arguments": {"zone":"kitchen"}}}]}
+  ],
+  [
+    {"role": "system", "content": "You are a model that can do function calling with the following functions"},
+    {"role": "user", "content": "What is humidity level in the bathroom?"},
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_read_humidity", "arguments": {"zone":"bathroom"}}}]}
+  ],
+  [
+    {"role": "system", "content": "You are a model that can do function calling with the following functions"},
+    {"role": "user", "content": "Read all sensor values."},
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_read_all_sensors", "arguments": {}}}]}
+  ],
+  [
+    {"role": "system", "content": "You are a model that can do function calling with the following functions"},
+    {"role": "user", "content": "Read all sensors."},
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_read_all_sensors", "arguments": {}}}]}
+  ],
+  [
+    {"role": "system", "content": "You are a model that can do function calling with the following functions"},
+    {"role": "user", "content": "Displays the values of all sensors in the house."},
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_read_all_sensors", "arguments": {}}}]}
+  ],
+  [
+    {"role": "system", "content": "You are a model that can do function calling with the following functions"},
+    {"role": "user", "content": "Read sensors from kitchen."},
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_read_senors_from_zone", "arguments": {"zone":"kitchen"}}}]}
+  ],
+  [
+    {"role": "system", "content": "You are a model that can do function calling with the following functions"},
+    {"role": "user", "content": "Read sensors on the living room."},
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_read_senors_from_zone", "arguments": {"zone":"living room"}}}]}
+  ],
+  [
+    {"role": "system", "content": "You are a model that can do function calling with the following functions"},
+    {"role": "user", "content": "Turn central heating on."},
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_start_heating", "arguments": {}}}]}
+  ],
+  [
+    {"role": "system", "content": "You are a model that can do function calling with the following functions"},
+    {"role": "user", "content": "Start the central heating system."},
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_start_heating", "arguments": {}}}]}
+  ],
+  [
+    {"role": "system", "content": "You are a model that can do function calling with the following functions"},
+    {"role": "user", "content": "Engage the central heating."},
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_start_heating", "arguments": {}}}]}
+  ],
+  [
+    {"role": "system", "content": "You are a model that can do function calling with the following functions"},
+    {"role": "user", "content": "Turn central heating off."},
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_stop_heating", "arguments": {}}}]}
+  ],
+  [
+    {"role": "system", "content": "You are a model that can do function calling with the following functions"},
+    {"role": "user", "content": "Turn off the central heating system."},
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_stop_heating", "arguments": {}}}]}
+  ],
+  [
+    {"role": "system", "content": "You are a model that can do function calling with the following functions"},
+    {"role": "user", "content": "Disengage the central heating system."},
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_stop_heating", "arguments": {}}}]}
+  ],
+  [
+    {"role": "system", "content": "You are a model that can do function calling with the following functions"},
+    {"role": "user", "content": "What is the status of the central heating system."},
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_get_heating_state", "arguments": {}}}]}
+  ],
+  [
+    {"role": "system", "content": "You are a model that can do function calling with the following functions"},
+    {"role": "user", "content": "Is central heating running?"},
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_get_heating_state", "arguments": {}}}]}
+  ],
+  [
+    {"role": "system", "content": "You are a model that can do function calling with the following functions"},
+    {"role": "user", "content": "Run device diagnose on kitchen DHT sensor."},
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_run_device_diagnose", "arguments": {"device":"kitchen DHT sensor"}}}]}
+  ],
+  [
+    {"role": "system", "content": "You are a model that can do function calling with the following functions"},
+    {"role": "user", "content": "Execute a flood sensor diagnosis."},
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_run_device_diagnose", "arguments": {"device":"flood sensor"}}}]}
+  ],
+  [
+    {"role": "system", "content": "You are a model that can do function calling with the following functions"},
+    {"role": "user", "content": "Check the motion detection sensor."},
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_run_device_diagnose", "arguments": {"device":"motion detection sensor"}}}]}
+  ],
+  [
+    {"role": "system", "content": "You are a model that can do function calling with the following functions"},
+    {"role": "user", "content": "Is the front door lock working properly?"},
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_run_device_diagnose", "arguments": {"device":"front door lock"}}}]}
+  ],
+  [
+    {"role": "system", "content": "You are a model that can do function calling with the following functions"},
+    {"role": "user", "content": "Perform a device diagnosis on proximity sensor."},
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_run_device_diagnose", "arguments": {"device":"proximity sensor"}}}]}
+  ],
+  [
+    {"role": "system", "content": "You are a model that can do function calling with the following functions"},
+    {"role": "user", "content": "Investigate the living room blinders."},
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_run_device_diagnose", "arguments": {"device":"living room blinders"}}}]}
+  ],
+  [
+    {"role": "system", "content": "You are a model that can do function calling with the following functions"},
+    {"role": "user", "content": "TV remote control seems not working. Please analyse."},
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_run_device_diagnose", "arguments": {"device":"TV remote control"}}}]}
+  ],
+  [
+    {"role": "system", "content": "You are a model that can do function calling with the following functions"},
+    {"role": "user", "content": "Run the garden moisture detector diagnosis."},
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_run_device_diagnose", "arguments": {"device":"garden moisture detector"}}}]}
+  ],
+  [
+    {"role": "system", "content": "You are a model that can do function calling with the following functions"},
+    {"role": "user", "content": "Execute full system diagnosis."},
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_run_system_diagnose", "arguments": {}}}]}
+  ]
+]

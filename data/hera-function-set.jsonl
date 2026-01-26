@@ -1,0 +1,38 @@
+{"prompt":"List all the devices in the house.","function":"hera_list_devices","arguments":"{}"}
+{"prompt":"Describe flood detection sensor.","function":"hera_describe_device","arguments":"{\"device\":\"flood detection sensor\"}"}
+{"prompt":"List actions of proximity sensor.","function":"hera_describe_device","arguments":"{\"device\":\"proximity sensor\"}"}
+{"prompt":"Describe the actions of the garage door actuator.","function":"hera_describe_device","arguments":"{\"device\":\"garage door actuator\"}"}
+{"prompt":"Tell me about the capabilities of my garage door sensor.","function":"hera_describe_device","arguments":"{\"device\":\"garage door sensor\"}"}
+{"prompt":"Show me the actions supported by the window contact sensors.","function":"hera_describe_device","arguments":"{\"device\":\"window contact sensors\"}"}
+{"prompt":"Please list the actions supported by luminosity sensor from balcony.","function":"hera_describe_device","arguments":"{\"device\":\"luminosity sensor from balcony\"}"}
+{"prompt":"What actions are supported by motion detection sensor.","function":"hera_describe_device","arguments":"{\"device\":\"motion detection sensor\"}"}
+{"prompt":"Please get a definition of the speed sensor.","function":"hera_describe_device","arguments":"{\"device\":\"speed sensor\"}"}
+{"prompt":"Create a comprehensive description of the garden moisture sensor.","function":"hera_describe_device","arguments":"{\"device\":\"garden moisture sensor\"}"}
+{"prompt":"What do you know about motion detection device from garage.","function":"hera_describe_device","arguments":"{\"device\":\"motion detection device from garage\"}"}
+{"prompt":"What is the living room temperature?","function":"hera_read_temperature","arguments":"{\"zone\":\"living room\"}"}
+{"prompt":"Is it warm in the living room?","function":"hera_read_temperature","arguments":"{\"zone\":\"living room\"}"}
+{"prompt":"Get living room temperature.","function":"hera_read_temperature","arguments":"{\"zone\":\"living room\"}"}
+{"prompt":"Get kitchen humidity.","function":"hera_read_humidity","arguments":"{\"zone\":\"kitchen\"}"}
+{"prompt":"What is humidity level in the bathroom?","function":"hera_read_humidity","arguments":"{\"zone\":\"bathroom\"}"}
+{"prompt":"Read all sensor values.","function":"hera_read_all_sensors","arguments":"{}"}
+{"prompt":"Read all sensors.","function":"hera_read_all_sensors","arguments":"{}"}
+{"prompt":"Displays the values of all sensors in the house.","function":"hera_read_all_sensors","arguments":"{}"}
+{"prompt":"Read sensors from kitchen.","function":"hera_read_senors_from_zone","arguments":"{\"zone\":\"kitchen\"}"}
+{"prompt":"Read sensors on the living room.","function":"hera_read_senors_from_zone","arguments":"{\"zone\":\"living room\"}"}
+{"prompt":"Turn central heating on.","function":"hera_start_heating","arguments":"{}"}
+{"prompt":"Start the central heating system.","function":"hera_start_heating","arguments":"{}"}
+{"prompt":"Engage the central heating.","function":"hera_start_heating","arguments":"{}"}
+{"prompt":"Turn central heating off.","function":"hera_stop_heating","arguments":"{}"}
+{"prompt":"Turn off the central heating system.","function":"hera_stop_heating","arguments":"{}"}
+{"prompt":"Disengage the central heating system.","function":"hera_stop_heating","arguments":"{}"}
+{"prompt":"What is the status of the central heating system.","function":"hera_get_heating_state","arguments":"{}"}
+{"prompt":"Is central heating running?","function":"hera_get_heating_state","arguments":"{}"}
+{"prompt":"Run device diagnose on kitchen DHT sensor.","function":"hera_run_device_diagnose","arguments":"{\"device\":\"kitchen DHT sensor\"}"}
+{"prompt":"Execute a flood sensor diagnosis.","function":"hera_run_device_diagnose","arguments":"{\"device\":\"flood sensor\"}"}
+{"prompt":"Check the motion detection sensor.","function":"hera_run_device_diagnose","arguments":"{\"device\":\"motion detection sensor\"}"}
+{"prompt":"Is the front door lock working properly?","function":"hera_run_device_diagnose","arguments":"{\"device\":\"front door lock\"}"}
+{"prompt":"Perform a device diagnosis on proximity sensor.","function":"hera_run_device_diagnose","arguments":"{\"device\":\"proximity sensor\"}"}
+{"prompt":"Investigate the living room blinders.","function":"hera_run_device_diagnose","arguments":"{\"device\":\"living room blinders\"}"}
+{"prompt":"TV remote control seems not working. Please analyse.","function":"hera_run_device_diagnose","arguments":"{\"device\":\"TV remote control\"}"}
+{"prompt":"Run the garden moisture detector diagnosis.","function":"hera_run_device_diagnose","arguments":"{\"device\":\"garden moisture detector\"}"}
+{"prompt":"Execute full system diagnosis.","function":"hera_run_system_diagnose","arguments":"{}"}

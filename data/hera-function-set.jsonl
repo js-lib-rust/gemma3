@@ -19,14 +19,22 @@
 {"prompt":"Displays the values of all sensors in the house.","function":"hera_read_all_sensors","arguments":"{}"}
 {"prompt":"Read sensors from kitchen.","function":"hera_read_sensors_from_zone","arguments":"{\"zone\":\"kitchen\"}"}
 {"prompt":"Read sensors on the living room.","function":"hera_read_sensors_from_zone","arguments":"{\"zone\":\"living room\"}"}
-{"prompt":"Turn central heating on.","function":"hera_start_heating","arguments":"{}"}
+{"prompt":"Turn heating on.","function":"hera_start_heating","arguments":"{}"}
+{"prompt":"Turn the central heating on.","function":"hera_start_heating","arguments":"{}"}
 {"prompt":"Start the central heating system.","function":"hera_start_heating","arguments":"{}"}
+{"prompt":"Start heating.","function":"hera_start_heating","arguments":"{}"}
 {"prompt":"Engage the central heating.","function":"hera_start_heating","arguments":"{}"}
-{"prompt":"Turn central heating off.","function":"hera_stop_heating","arguments":"{}"}
+{"prompt":"Turn heating off.","function":"hera_stop_heating","arguments":"{}"}
+{"prompt":"Turn the central heating off.","function":"hera_stop_heating","arguments":"{}"}
 {"prompt":"Turn off the central heating system.","function":"hera_stop_heating","arguments":"{}"}
 {"prompt":"Disengage the central heating system.","function":"hera_stop_heating","arguments":"{}"}
+{"prompt":"Disengage heating.","function":"hera_stop_heating","arguments":"{}"}
 {"prompt":"What is the status of the central heating system.","function":"hera_get_heating_state","arguments":"{}"}
 {"prompt":"Is central heating running?","function":"hera_get_heating_state","arguments":"{}"}
+{"prompt":"Is heating on?","function":"hera_get_heating_state","arguments":"{}"}
+{"prompt":"Heating status?","function":"hera_get_heating_state","arguments":"{}"}
+{"prompt":"I'm a bit chilly. Is the heating on?","function":"hera_get_heating_state","arguments":"{}"}
+{"prompt":"Can you check if the heating system is currently active?","function":"hera_get_heating_state","arguments":"{}"}
 {"prompt":"Run device diagnose on kitchen DHT sensor.","function":"hera_run_device_diagnose","arguments":"{\"device\":\"kitchen DHT sensor\"}"}
 {"prompt":"Execute a flood sensor diagnosis.","function":"hera_run_device_diagnose","arguments":"{\"device\":\"flood sensor\"}"}
 {"prompt":"Check the motion detection sensor.","function":"hera_run_device_diagnose","arguments":"{\"device\":\"motion detection sensor\"}"}

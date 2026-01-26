@@ -106,7 +106,12 @@
   ],
   [
     {"role": "system", "content": "You are a model that can do function calling with the following functions"},
-    {"role": "user", "content": "Turn central heating on."},
+    {"role": "user", "content": "Turn heating on."},
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_start_heating", "arguments": {}}}]}
+  ],
+  [
+    {"role": "system", "content": "You are a model that can do function calling with the following functions"},
+    {"role": "user", "content": "Turn the central heating on."},
     {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_start_heating", "arguments": {}}}]}
   ],
   [
@@ -116,12 +121,22 @@
   ],
   [
     {"role": "system", "content": "You are a model that can do function calling with the following functions"},
+    {"role": "user", "content": "Start heating."},
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_start_heating", "arguments": {}}}]}
+  ],
+  [
+    {"role": "system", "content": "You are a model that can do function calling with the following functions"},
     {"role": "user", "content": "Engage the central heating."},
     {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_start_heating", "arguments": {}}}]}
   ],
   [
     {"role": "system", "content": "You are a model that can do function calling with the following functions"},
-    {"role": "user", "content": "Turn central heating off."},
+    {"role": "user", "content": "Turn heating off."},
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_stop_heating", "arguments": {}}}]}
+  ],
+  [
+    {"role": "system", "content": "You are a model that can do function calling with the following functions"},
+    {"role": "user", "content": "Turn the central heating off."},
     {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_stop_heating", "arguments": {}}}]}
   ],
   [
@@ -136,12 +151,37 @@
   ],
   [
     {"role": "system", "content": "You are a model that can do function calling with the following functions"},
+    {"role": "user", "content": "Disengage heating."},
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_stop_heating", "arguments": {}}}]}
+  ],
+  [
+    {"role": "system", "content": "You are a model that can do function calling with the following functions"},
     {"role": "user", "content": "What is the status of the central heating system."},
     {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_get_heating_state", "arguments": {}}}]}
   ],
   [
     {"role": "system", "content": "You are a model that can do function calling with the following functions"},
     {"role": "user", "content": "Is central heating running?"},
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_get_heating_state", "arguments": {}}}]}
+  ],
+  [
+    {"role": "system", "content": "You are a model that can do function calling with the following functions"},
+    {"role": "user", "content": "Is heating on?"},
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_get_heating_state", "arguments": {}}}]}
+  ],
+  [
+    {"role": "system", "content": "You are a model that can do function calling with the following functions"},
+    {"role": "user", "content": "Heating status?"},
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_get_heating_state", "arguments": {}}}]}
+  ],
+  [
+    {"role": "system", "content": "You are a model that can do function calling with the following functions"},
+    {"role": "user", "content": "I'm a bit chilly. Is the heating on?"},
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_get_heating_state", "arguments": {}}}]}
+  ],
+  [
+    {"role": "system", "content": "You are a model that can do function calling with the following functions"},
+    {"role": "user", "content": "Can you check if the heating system is currently active?"},
     {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_get_heating_state", "arguments": {}}}]}
   ],
   [

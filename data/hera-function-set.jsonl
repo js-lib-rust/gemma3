@@ -17,8 +17,8 @@
 {"prompt":"Read all sensor values.","function":"hera_read_all_sensors","arguments":"{}"}
 {"prompt":"Read all sensors.","function":"hera_read_all_sensors","arguments":"{}"}
 {"prompt":"Displays the values of all sensors in the house.","function":"hera_read_all_sensors","arguments":"{}"}
-{"prompt":"Read sensors from kitchen.","function":"hera_read_senors_from_zone","arguments":"{\"zone\":\"kitchen\"}"}
-{"prompt":"Read sensors on the living room.","function":"hera_read_senors_from_zone","arguments":"{\"zone\":\"living room\"}"}
+{"prompt":"Read sensors from kitchen.","function":"hera_read_sensors_from_zone","arguments":"{\"zone\":\"kitchen\"}"}
+{"prompt":"Read sensors on the living room.","function":"hera_read_sensors_from_zone","arguments":"{\"zone\":\"living room\"}"}
 {"prompt":"Turn central heating on.","function":"hera_start_heating","arguments":"{}"}
 {"prompt":"Start the central heating system.","function":"hera_start_heating","arguments":"{}"}
 {"prompt":"Engage the central heating.","function":"hera_start_heating","arguments":"{}"}

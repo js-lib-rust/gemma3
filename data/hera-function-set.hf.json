@@ -97,12 +97,12 @@
   [
     {"role": "system", "content": "You are a model that can do function calling with the following functions"},
     {"role": "user", "content": "Read sensors from kitchen."},
-    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_read_senors_from_zone", "arguments": {"zone":"kitchen"}}}]}
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_read_sensors_from_zone", "arguments": {"zone":"kitchen"}}}]}
   ],
   [
     {"role": "system", "content": "You are a model that can do function calling with the following functions"},
     {"role": "user", "content": "Read sensors on the living room."},
-    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_read_senors_from_zone", "arguments": {"zone":"living room"}}}]}
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_read_sensors_from_zone", "arguments": {"zone":"living room"}}}]}
   ],
   [
     {"role": "system", "content": "You are a model that can do function calling with the following functions"},

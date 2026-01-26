@@ -1,4 +1,8 @@
 {"prompt":"List all the devices in the house.","function":"hera_list_devices","arguments":"{}"}
+{"prompt":"List all devices with their current state (on/off, locked, temperature).","function":"hera_list_devices","arguments":"{}"}
+{"prompt":"Show me the device topology, including child devices.","function":"hera_list_devices","arguments":"{}"}
+{"prompt":"Display a table of all entities by zone and device type.","function":"hera_list_devices","arguments":"{}"}
+{"prompt":"Can you list everything that is connected to the smart home?","function":"hera_list_devices","arguments":"{}"}
 {"prompt":"Describe flood detection sensor.","function":"hera_describe_device","arguments":"{\"device\":\"flood detection sensor\"}"}
 {"prompt":"List actions of proximity sensor.","function":"hera_describe_device","arguments":"{\"device\":\"proximity sensor\"}"}
 {"prompt":"Describe the actions of the garage door actuator.","function":"hera_describe_device","arguments":"{\"device\":\"garage door actuator\"}"}
@@ -49,3 +53,4 @@
 {"prompt":"Could you please perform a complete diagnostic of the entire condominium automation systems?","function":"hera_run_system_diagnose","arguments":"{}"}
 {"prompt":"Please diagnose any issues with the automation systems from our dwelling house.","function":"hera_run_system_diagnose","arguments":"{}"}
 {"prompt":"Scan for unresponsive home devices and connectivity issues.","function":"hera_run_system_diagnose","arguments":"{}"}
+{"prompt":"What devices are currently offline or unresponsive?","function":"hera_run_system_diagnose","arguments":"{}"}

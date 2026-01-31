@@ -1,0 +1,7 @@
+[
+  [
+    {"role": "system", "content": "You are a model that can do function calling with the following functions"},
+    {"role": "user", "content": "Describe flood detection sensor."},
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_describe_device", "arguments": {"device":"flood detection sensor"}}}]}
+  ]
+]

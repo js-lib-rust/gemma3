@@ -1,0 +1,24 @@
+[
+  {
+    "type": "function",
+    "function": {
+      "name": "hera_describe_device",
+      "description": "Create a description for the requested device, including supported actions list",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "device": {
+            "type": "string",
+            "description": "The unique ID or name of the device to be described"
+          }
+        },
+        "required": [
+          "device"
+        ]
+      },
+      "return": {
+        "type": "string"
+      }
+    }
+  }
+]

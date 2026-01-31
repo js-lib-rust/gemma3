@@ -1,0 +1,22 @@
+[
+  [
+    {"role": "system", "content": "You are a model that can do function calling with the following functions"},
+    {"role": "user", "content": "show me temperature sensor description"},
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_describe_device", "arguments": {"device":"temperature sensor"}}}]}
+  ],
+  [
+    {"role": "system", "content": "You are a model that can do function calling with the following functions"},
+    {"role": "user", "content": "describe flood sensor"},
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_describe_device", "arguments": {"device":"flood sensor"}}}]}
+  ],
+  [
+    {"role": "system", "content": "You are a model that can do function calling with the following functions"},
+    {"role": "user", "content": "list actions of proximity sensor"},
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_describe_device", "arguments": {"device":"proximity sensor"}}}]}
+  ],
+  [
+    {"role": "system", "content": "You are a model that can do function calling with the following functions"},
+    {"role": "user", "content": "what actions are supported by humidity sensor"},
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_describe_device", "arguments": {"device":"humidity sensor"}}}]}
+  ]
+]

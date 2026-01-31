@@ -5,41 +5,39 @@ import numpy as np
 import torch
 import json
 from transformers import AutoTokenizer, AutoModelForCausalLM
+from huggingface_hub import login
+from collections import OrderedDict
 import util
 
-BASE_MODEL = util.get_model_path("gemma-3-270m-it")
-EVAL_MODEL = "formatter-270m"
-DATA_FILE = ["medical-response-eval", "hera-response-eval", "weather-response-eval"]
-
 parser = argparse.ArgumentParser()
-parser.add_argument("--verbose", action="store_true")
-parser.add_argument("--trace", action="store_true")
 parser.add_argument("--model", action="store")
+parser.add_argument("--family", action="store")
 parser.add_argument("--list", action="store_true")
-parser.add_argument("--use-base-model", action="store_true")
 parser.add_argument("--files", action="store", type=util.split_by_comma)
 parser.add_argument("--tools", action="store", type=util.split_by_comma)
-parser.add_argument("--inject-tools", action="store_true")
 parser.add_argument("--max-new-tokens", action="store", type=int, default="2000")
-parser.add_argument("tests", nargs='*', type=int, help="tests number to execute")
+parser.add_argument("--login", action="store")
+parser.add_argument("--verbose", action="store_true")
+parser.add_argument("--trace", action="store_true")
+parser.add_argument("tests", nargs='*', type=int, help="space separated list of test ids")
 args = parser.parse_args()
 
-model_name = args.model if args.model else EVAL_MODEL
-model_path = BASE_MODEL if args.use_base_model else model_name
-print(f"Use verbose {args.verbose}")
-print(f"Use trace {args.trace}")
+model_path = util.get_model_path(args.model) if args.model.startswith('/') else args.model
 print(f"Use model `{model_path}`.")
+print(f"Use family {args.family}")
 print(f"Use files {args.files}")
 print(f"Use tools {args.tools}")
-print(f"Use inject tools {args.inject_tools}")
 print(f"Use max new tokens {args.max_new_tokens}.")
+print(f"Use login {args.login}")
+print(f"Use verbose {args.verbose}")
+print(f"Use trace {args.trace}")
 
-data_files = args.files if args.files else DATA_FILE
+data_files = args.files
 dataset = []
 for data_file in data_files:
     data_file = f"data/{data_file}"
     with open(data_file, 'r', encoding='UTF-8') as file:
-        fileset = json.load(file)
+        fileset = json.load(file, object_hook=OrderedDict)
         print(f"Loaded {len(fileset)} tests from the file `{os.path.abspath(data_file)}`.")
         dataset += fileset
 
@@ -61,9 +59,14 @@ if args.tools:
 else:
     tools = None
 
+if args.login:
+    login(args.login)
+
 device = "cuda" if torch.cuda.is_available() else "cpu"
 tokenizer = AutoTokenizer.from_pretrained(model_path)
 tokenizer.pad_token = tokenizer.eos_token
+tools_support = util.has_tools_support(tokenizer)
+
 model = AutoModelForCausalLM.from_pretrained(model_path, dtype=torch.bfloat16, device_map=device)
 model.resize_token_embeddings(len(tokenizer))
 model.eval()
@@ -78,9 +81,13 @@ similarity_scores = []
 dataset_size = len(dataset)
 start_time = time.time()
 for index, datapoint in enumerate(dataset):
-    if args.inject_tools:
+    if not tools_support:
         util.inject_tools(tools, datapoint)
-    ground_truth = datapoint.pop()['content']
+
+    ground_truth = util.parse_function_call(args.family, datapoint.pop()['tool_calls'][0]['function'])
+    if args.trace:
+        print(f"ground_truth: {ground_truth}")
+
     conversation = datapoint
     prompt = util.get_chat_prompt(conversation)
 

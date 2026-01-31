@@ -30,16 +30,18 @@ def tokenizer_function(examples):
 def prepare_dataset(examples):
     processed_examples = []
     for example in examples:
-        if args.inject_tools:
-            util.inject_tools(tools, example)
+        if not tools_support:
+            util.inject_tools(tools, example, True)
         if args.trace:
             print(f"example: {example}")
+            print()
 
-        tools_arg = tools if not args.inject_tools else None
+        tools_arg = tools if tools_support else None
         text = tokenizer.apply_chat_template(example, tools=tools_arg, tokenize=False)
 
         if args.trace:
             print(f"text: {text}")
+            print()
         processed_examples.append({"text": text})
     return processed_examples
 
@@ -47,13 +49,11 @@ def prepare_dataset(examples):
 # ---------------------------------------------------------
 
 parser = argparse.ArgumentParser()
-parser.add_argument("--model", action="store")
-parser.add_argument("--use-tuned-model", action="store_true")
+parser.add_argument("--model", action="store", type=str)
 parser.add_argument("--use-peft-lora", action="store_true")
 parser.add_argument("--files", action="store", type=util.split_by_comma)
 parser.add_argument("--tools", action="store", type=util.split_by_comma)
-parser.add_argument("--inject-tools", action="store_true")
-parser.add_argument("--output-dir", action="store", type=str, default="formatter-270m")
+parser.add_argument("--output-dir", action="store", type=str)
 parser.add_argument("--max-length", action="store", type=int, default="1000")
 parser.add_argument("--epochs", action="store", type=int, default="4")
 parser.add_argument("--train-batch", action="store", type=int, default="2")
@@ -65,31 +65,24 @@ parser.add_argument("--use-resize-embeddings", action="store_true")
 parser.add_argument("--trace", action="store_true")
 args = parser.parse_args()
 
-MODEL_DIR = os.environ.get("AI_MODEL_DIR")
-MODEL_NAME = MODEL_DIR + "/hugging-face/model/gemma-3-1b-it"
-# MODEL_NAME = MODEL_DIR + "/hugging-face/model/functiongemma-270m-it"
-DATA_SET = ["medical-response-set", "hera-response-set", "weather-response-set"]
 print()
 
 device = "cuda:0" if torch.cuda.is_available() else "cpu"
 output_dir = f"./{args.output_dir}"
-data_files = args.files if args.files else DATA_SET
-model_name = args.model if args.model else MODEL_NAME
-model_path = output_dir if args.use_tuned_model else model_name
+model_path = util.get_model_path(args.model) if args.model.startswith('/') else args.model
 dtype = torch.bfloat16 if args.use_peft_lora else torch.float32
 print(f"Use device {device}")
 print(f"Use model {model_path}")
-print(f"Use dtype {dtype}")
-print(f"Use tuned model {args.use_tuned_model}")
 print(f"Use PEFT LORA {args.use_peft_lora}")
-print(f"Use data files {data_files}")
+print(f"Use dtype {dtype}")
+print(f"Use files {args.files}")
 print(f"Use tools {args.tools}")
-print(f"Use inject tools {args.inject_tools}")
 print(f"Use output dir {output_dir}")
 print(f"Use max length {args.max_length}")
 print(f"Use epochs {args.epochs}")
 print(f"Use train batch size {args.train_batch}")
 print(f"Use learning rate {args.learning_rate}")
+print(f"Use weight decay {args.weight_decay}")
 print(f"Use wakeup ratio {args.wakeup}")
 print(f"Use mixed precision {args.use_mixed_precision}")
 print(f"Use resize embeddings {args.use_resize_embeddings}")
@@ -103,6 +96,7 @@ if args.tools:
             tools += json.load(file)
     if args.trace:
         print(f"tools: {tools}")
+        print()
 else:
     tools = None
 
@@ -128,12 +122,12 @@ if args.use_peft_lora:
 
 print(f"Loading tokenizer from: {model_path}")
 tokenizer = AutoTokenizer.from_pretrained(model_path)
-if args.trace:
-    print(f"Tokenizer chat template: {tokenizer.chat_template}")
 if tokenizer.pad_token is None:
     tokenizer.pad_token = tokenizer.eos_token
 tokenizer.padding_side = "right"
 tokenizer.truncation_side = "right"
+tools_support = util.has_tools_support(tokenizer)
+print(f"Model tools {'not ' if not tools_support else ''}supported")
 
 model.config.pad_token_id = tokenizer.pad_token_id
 model.config.bos_token_id = tokenizer.bos_token_id
@@ -144,8 +138,9 @@ if hasattr(model, 'generation_config'):
 if args.use_resize_embeddings:
     model.resize_token_embeddings(len(tokenizer))
 
+print()
 data_examples = []
-for data_file in data_files:
+for data_file in args.files:
     data_file = f"data/{data_file}"
     with open(data_file, 'r', encoding='UTF-8') as file_name:
         file_examples = yaml.safe_load(file_name)

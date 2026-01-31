@@ -77,17 +77,17 @@
   [
     {"role": "system", "content": "You are a model that can do function calling with the following functions"},
     {"role": "user", "content": "read all sensors"},
-    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_read_all_sensors", "arguments": {}}}]}
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_read_sensors", "arguments": {"zone":"system"}}}]}
   ],
   [
     {"role": "system", "content": "You are a model that can do function calling with the following functions"},
     {"role": "user", "content": "read sensors from the lobby"},
-    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_read_sensors_from_zone", "arguments": {"zone":"lobby"}}}]}
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_read_sensors", "arguments": {"zone":"lobby"}}}]}
   ],
   [
     {"role": "system", "content": "You are a model that can do function calling with the following functions"},
     {"role": "user", "content": "read sensors on kitchen"},
-    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_read_sensors_from_zone", "arguments": {"zone":"kitchen"}}}]}
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_read_sensors", "arguments": {"zone":"kitchen"}}}]}
   ],
   [
     {"role": "system", "content": "You are a model that can do function calling with the following functions"},

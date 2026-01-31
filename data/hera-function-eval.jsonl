@@ -13,8 +13,8 @@
 {"prompt":"stop heating","function":"hera_stop_heating","arguments":"{}"}
 {"prompt":"disengage heating","function":"hera_stop_heating","arguments":"{}"}
 {"prompt":"turn heating off","function":"hera_stop_heating","arguments":"{}"}
-{"prompt":"read all sensors","function":"hera_read_all_sensors","arguments":"{}"}
-{"prompt":"read sensors from the lobby","function":"hera_read_sensors_from_zone","arguments":"{\"zone\":\"lobby\"}"}
-{"prompt":"read sensors on kitchen","function":"hera_read_sensors_from_zone","arguments":"{\"zone\":\"kitchen\"}"}
+{"prompt":"read all sensors","function":"hera_read_sensors","arguments":"{\"zone\":\"system\"}"}
+{"prompt":"read sensors from the lobby","function":"hera_read_sensors","arguments":"{\"zone\":\"lobby\"}"}
+{"prompt":"read sensors on kitchen","function":"hera_read_sensors","arguments":"{\"zone\":\"kitchen\"}"}
 {"prompt":"execute diagnose on luminosity-sensor","function":"hera_run_device_diagnose","arguments":"{\"device\":\"luminosity-sensor\"}"}
 {"prompt":"run full system diagnose","function":"hera_run_system_diagnose","arguments":"{}"}

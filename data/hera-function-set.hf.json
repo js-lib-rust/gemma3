@@ -127,42 +127,42 @@
   [
     {"role": "system", "content": "You are a model that can do function calling with the following functions"},
     {"role": "user", "content": "Read all sensor values."},
-    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_read_all_sensors", "arguments": {}}}]}
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_read_sensors", "arguments": {"zone":"system"}}}]}
   ],
   [
     {"role": "system", "content": "You are a model that can do function calling with the following functions"},
     {"role": "user", "content": "Read all sensors."},
-    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_read_all_sensors", "arguments": {}}}]}
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_read_sensors", "arguments": {"zone":"system"}}}]}
   ],
   [
     {"role": "system", "content": "You are a model that can do function calling with the following functions"},
     {"role": "user", "content": "Displays the values of all sensors in the house."},
-    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_read_all_sensors", "arguments": {}}}]}
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_read_sensors", "arguments": {"zone":"system"}}}]}
   ],
   [
     {"role": "system", "content": "You are a model that can do function calling with the following functions"},
     {"role": "user", "content": "Create a table of all sensors' readings from the house."},
-    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_read_all_sensors", "arguments": {}}}]}
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_read_sensors", "arguments": {"zone":"system"}}}]}
   ],
   [
     {"role": "system", "content": "You are a model that can do function calling with the following functions"},
     {"role": "user", "content": "Read sensors from kitchen."},
-    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_read_sensors_from_zone", "arguments": {"zone":"kitchen"}}}]}
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_read_sensors", "arguments": {"zone":"kitchen"}}}]}
   ],
   [
     {"role": "system", "content": "You are a model that can do function calling with the following functions"},
     {"role": "user", "content": "List readings from the sensors in the living room."},
-    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_read_sensors_from_zone", "arguments": {"zone":"living room"}}}]}
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_read_sensors", "arguments": {"zone":"living room"}}}]}
   ],
   [
     {"role": "system", "content": "You are a model that can do function calling with the following functions"},
     {"role": "user", "content": "Retrieve and list the values of all sensors from the greenhouse."},
-    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_read_sensors_from_zone", "arguments": {"zone":"greenhouse"}}}]}
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_read_sensors", "arguments": {"zone":"greenhouse"}}}]}
   ],
   [
     {"role": "system", "content": "You are a model that can do function calling with the following functions"},
-    {"role": "user", "content": "Get current readings of sensors from balcony."},
-    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_read_sensors_from_zone", "arguments": {"zone":"balcony"}}}]}
+    {"role": "user", "content": "Get current readings of sensors deployed in the balcony."},
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_read_sensors", "arguments": {"zone":"balcony"}}}]}
   ],
   [
     {"role": "system", "content": "You are a model that can do function calling with the following functions"},

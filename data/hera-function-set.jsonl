@@ -23,14 +23,14 @@
 {"prompt":"Read humidity sensor from greenhouse.","function":"hera_read_humidity","arguments":"{\"zone\":\"greenhouse\"}"}
 {"prompt":"Show me the humidity percent in the cellar.","function":"hera_read_humidity","arguments":"{\"zone\":\"cellar\"}"}
 {"prompt":"Bathroom humidity.","function":"hera_read_humidity","arguments":"{\"zone\":\"bathroom\"}"}
-{"prompt":"Read all sensor values.","function":"hera_read_all_sensors","arguments":"{}"}
-{"prompt":"Read all sensors.","function":"hera_read_all_sensors","arguments":"{}"}
-{"prompt":"Displays the values of all sensors in the house.","function":"hera_read_all_sensors","arguments":"{}"}
-{"prompt":"Create a table of all sensors' readings from the house.","function":"hera_read_all_sensors","arguments":"{}"}
-{"prompt":"Read sensors from kitchen.","function":"hera_read_sensors_from_zone","arguments":"{\"zone\":\"kitchen\"}"}
-{"prompt":"List readings from the sensors in the living room.","function":"hera_read_sensors_from_zone","arguments":"{\"zone\":\"living room\"}"}
-{"prompt":"Retrieve and list the values of all sensors from the greenhouse.","function":"hera_read_sensors_from_zone","arguments":"{\"zone\":\"greenhouse\"}"}
-{"prompt":"Get current readings of sensors from balcony.","function":"hera_read_sensors_from_zone","arguments":"{\"zone\":\"balcony\"}"}
+{"prompt":"Read all sensor values.","function":"hera_read_sensors","arguments":"{\"zone\":\"system\"}"}
+{"prompt":"Read all sensors.","function":"hera_read_sensors","arguments":"{\"zone\":\"system\"}"}
+{"prompt":"Displays the values of all sensors in the house.","function":"hera_read_sensors","arguments":"{\"zone\":\"system\"}"}
+{"prompt":"Create a table of all sensors' readings from the house.","function":"hera_read_sensors","arguments":"{\"zone\":\"system\"}"}
+{"prompt":"Read sensors from kitchen.","function":"hera_read_sensors","arguments":"{\"zone\":\"kitchen\"}"}
+{"prompt":"List readings from the sensors in the living room.","function":"hera_read_sensors","arguments":"{\"zone\":\"living room\"}"}
+{"prompt":"Retrieve and list the values of all sensors from the greenhouse.","function":"hera_read_sensors","arguments":"{\"zone\":\"greenhouse\"}"}
+{"prompt":"Get current readings of sensors deployed in the balcony.","function":"hera_read_sensors","arguments":"{\"zone\":\"balcony\"}"}
 {"prompt":"Turn heating on.","function":"hera_start_heating","arguments":"{}"}
 {"prompt":"Heating on.","function":"hera_start_heating","arguments":"{}"}
 {"prompt":"Turn the central heating on.","function":"hera_start_heating","arguments":"{}"}

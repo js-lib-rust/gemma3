@@ -70,25 +70,14 @@
   {
     "type": "function",
     "function": {
-      "name": "hera_read_all_sensors",
-      "description": "Get the current readings from all sensors registered with the home automation system",
-      "parameters": {
-        "type": "OBJECT",
-        "properties": {}
-      }
-    }
-  },
-  {
-    "type": "function",
-    "function": {
-      "name": "hera_read_sensors_from_zone",
-      "description": "Get the current readings from sensors from requested zone",
+      "name": "hera_read_sensors",
+      "description": "Get readings from all sensors in the requested zone or the entire system if the zone is not specified",
       "parameters": {
         "type": "OBJECT",
         "properties": {
           "zone": {
             "type": "STRING",
-            "description": "The name of the zone to retrieve sensors data from"
+            "description": "The name of the zone to retrieve sensors data from; if user prompt does not provide the zone use 'system'"
           }
         },
         "required": [

@@ -92,11 +92,11 @@
   [
     {"role": "system", "content": "You are a model that can do function calling with the following functions"},
     {"role": "user", "content": "execute diagnose on luminosity-sensor"},
-    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_run_device_diagnose", "arguments": {"device":"luminosity-sensor"}}}]}
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_run_diagnose", "arguments": {"device":"luminosity-sensor"}}}]}
   ],
   [
     {"role": "system", "content": "You are a model that can do function calling with the following functions"},
     {"role": "user", "content": "run full system diagnose"},
-    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_run_system_diagnose", "arguments": {}}}]}
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_run_diagnose", "arguments": {"device":"system"}}}]}
   ]
 ]

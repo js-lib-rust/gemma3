@@ -77,7 +77,7 @@
         "properties": {
           "zone": {
             "type": "STRING",
-            "description": "The name of the zone to retrieve sensors data from; if user prompt does not provide the zone use 'system'"
+            "description": "The name of the zone from which the sensors data will be retrieved; if the user request does not provide the zone, 'system' is used"
           }
         },
         "required": [
@@ -122,30 +122,19 @@
   {
     "type": "function",
     "function": {
-      "name": "hera_run_device_diagnose",
-      "description": "Check that a device is online and running properly, and return a diagnose report",
+      "name": "hera_run_diagnose",
+      "description": "Verify that the requested device is online and working properly, and create a diagnostic report; diagnose the entire system if a device is not provided by the user request",
       "parameters": {
         "type": "OBJECT",
         "properties": {
           "device": {
             "type": "STRING",
-            "description": "The unique ID or name of the device to be diagnosed"
+            "description": "The unique ID or name of the device to be diagnosed; use 'system' if the device is not provided by the user request"
           }
         },
         "required": [
           "device"
         ]
-      }
-    }
-  },
-  {
-    "type": "function",
-    "function": {
-      "name": "hera_run_system_diagnose",
-      "description": "Check home automation system by running a system diagnosis on all components and return a status report",
-      "parameters": {
-        "type": "OBJECT",
-        "properties": {}
       }
     }
   }

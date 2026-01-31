@@ -257,76 +257,76 @@
   [
     {"role": "system", "content": "You are a model that can do function calling with the following functions"},
     {"role": "user", "content": "Run device diagnose on kitchen DHT sensor."},
-    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_run_device_diagnose", "arguments": {"device":"kitchen DHT sensor"}}}]}
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_run_diagnose", "arguments": {"device":"kitchen DHT sensor"}}}]}
   ],
   [
     {"role": "system", "content": "You are a model that can do function calling with the following functions"},
     {"role": "user", "content": "Execute a flood sensor diagnosis."},
-    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_run_device_diagnose", "arguments": {"device":"flood sensor"}}}]}
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_run_diagnose", "arguments": {"device":"flood sensor"}}}]}
   ],
   [
     {"role": "system", "content": "You are a model that can do function calling with the following functions"},
     {"role": "user", "content": "Check the motion detection sensor."},
-    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_run_device_diagnose", "arguments": {"device":"motion detection sensor"}}}]}
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_run_diagnose", "arguments": {"device":"motion detection sensor"}}}]}
   ],
   [
     {"role": "system", "content": "You are a model that can do function calling with the following functions"},
     {"role": "user", "content": "Is the front door lock working properly?"},
-    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_run_device_diagnose", "arguments": {"device":"front door lock"}}}]}
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_run_diagnose", "arguments": {"device":"front door lock"}}}]}
   ],
   [
     {"role": "system", "content": "You are a model that can do function calling with the following functions"},
     {"role": "user", "content": "Perform a device diagnosis on proximity sensor."},
-    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_run_device_diagnose", "arguments": {"device":"proximity sensor"}}}]}
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_run_diagnose", "arguments": {"device":"proximity sensor"}}}]}
   ],
   [
     {"role": "system", "content": "You are a model that can do function calling with the following functions"},
     {"role": "user", "content": "Investigate the living room blinders."},
-    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_run_device_diagnose", "arguments": {"device":"living room blinders"}}}]}
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_run_diagnose", "arguments": {"device":"living room blinders"}}}]}
   ],
   [
     {"role": "system", "content": "You are a model that can do function calling with the following functions"},
     {"role": "user", "content": "TV remote control seems not working. Please analyse."},
-    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_run_device_diagnose", "arguments": {"device":"TV remote control"}}}]}
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_run_diagnose", "arguments": {"device":"TV remote control"}}}]}
   ],
   [
     {"role": "system", "content": "You are a model that can do function calling with the following functions"},
     {"role": "user", "content": "Run the garden moisture detector diagnosis."},
-    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_run_device_diagnose", "arguments": {"device":"garden moisture detector"}}}]}
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_run_diagnose", "arguments": {"device":"garden moisture detector"}}}]}
   ],
   [
     {"role": "system", "content": "You are a model that can do function calling with the following functions"},
     {"role": "user", "content": "Execute home systems diagnosis."},
-    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_run_system_diagnose", "arguments": {}}}]}
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_run_diagnose", "arguments": {"device":"system"}}}]}
   ],
   [
     {"role": "system", "content": "You are a model that can do function calling with the following functions"},
     {"role": "user", "content": "Initiate a comprehensive diagnostic scan of the entire home automation system."},
-    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_run_system_diagnose", "arguments": {}}}]}
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_run_diagnose", "arguments": {"device":"system"}}}]}
   ],
   [
     {"role": "system", "content": "You are a model that can do function calling with the following functions"},
     {"role": "user", "content": "Perform a system health check for the entire apartment. Report any issues or anomalies detected."},
-    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_run_system_diagnose", "arguments": {}}}]}
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_run_diagnose", "arguments": {"device":"system"}}}]}
   ],
   [
     {"role": "system", "content": "You are a model that can do function calling with the following functions"},
     {"role": "user", "content": "Could you please perform a complete diagnostic of the entire condominium automation systems?"},
-    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_run_system_diagnose", "arguments": {}}}]}
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_run_diagnose", "arguments": {"device":"system"}}}]}
   ],
   [
     {"role": "system", "content": "You are a model that can do function calling with the following functions"},
     {"role": "user", "content": "Please diagnose any issues with the automation systems from our dwelling house."},
-    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_run_system_diagnose", "arguments": {}}}]}
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_run_diagnose", "arguments": {"device":"system"}}}]}
   ],
   [
     {"role": "system", "content": "You are a model that can do function calling with the following functions"},
     {"role": "user", "content": "Scan for unresponsive home devices and connectivity issues."},
-    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_run_system_diagnose", "arguments": {}}}]}
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_run_diagnose", "arguments": {"device":"system"}}}]}
   ],
   [
     {"role": "system", "content": "You are a model that can do function calling with the following functions"},
     {"role": "user", "content": "What devices are currently offline or unresponsive?"},
-    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_run_system_diagnose", "arguments": {}}}]}
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_run_diagnose", "arguments": {"device":"system"}}}]}
   ]
 ]

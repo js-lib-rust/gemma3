@@ -49,18 +49,18 @@
 {"prompt":"Heating status?","function":"hera_get_heating_state","arguments":"{}"}
 {"prompt":"I'm a bit chilly. Is the heating on?","function":"hera_get_heating_state","arguments":"{}"}
 {"prompt":"Can you check if the heating system is currently active?","function":"hera_get_heating_state","arguments":"{}"}
-{"prompt":"Run device diagnose on kitchen DHT sensor.","function":"hera_run_device_diagnose","arguments":"{\"device\":\"kitchen DHT sensor\"}"}
-{"prompt":"Execute a flood sensor diagnosis.","function":"hera_run_device_diagnose","arguments":"{\"device\":\"flood sensor\"}"}
-{"prompt":"Check the motion detection sensor.","function":"hera_run_device_diagnose","arguments":"{\"device\":\"motion detection sensor\"}"}
-{"prompt":"Is the front door lock working properly?","function":"hera_run_device_diagnose","arguments":"{\"device\":\"front door lock\"}"}
-{"prompt":"Perform a device diagnosis on proximity sensor.","function":"hera_run_device_diagnose","arguments":"{\"device\":\"proximity sensor\"}"}
-{"prompt":"Investigate the living room blinders.","function":"hera_run_device_diagnose","arguments":"{\"device\":\"living room blinders\"}"}
-{"prompt":"TV remote control seems not working. Please analyse.","function":"hera_run_device_diagnose","arguments":"{\"device\":\"TV remote control\"}"}
-{"prompt":"Run the garden moisture detector diagnosis.","function":"hera_run_device_diagnose","arguments":"{\"device\":\"garden moisture detector\"}"}
-{"prompt":"Execute home systems diagnosis.","function":"hera_run_system_diagnose","arguments":"{}"}
-{"prompt":"Initiate a comprehensive diagnostic scan of the entire home automation system.","function":"hera_run_system_diagnose","arguments":"{}"}
-{"prompt":"Perform a system health check for the entire apartment. Report any issues or anomalies detected.","function":"hera_run_system_diagnose","arguments":"{}"}
-{"prompt":"Could you please perform a complete diagnostic of the entire condominium automation systems?","function":"hera_run_system_diagnose","arguments":"{}"}
-{"prompt":"Please diagnose any issues with the automation systems from our dwelling house.","function":"hera_run_system_diagnose","arguments":"{}"}
-{"prompt":"Scan for unresponsive home devices and connectivity issues.","function":"hera_run_system_diagnose","arguments":"{}"}
-{"prompt":"What devices are currently offline or unresponsive?","function":"hera_run_system_diagnose","arguments":"{}"}
+{"prompt":"Run device diagnose on kitchen DHT sensor.","function":"hera_run_diagnose","arguments":"{\"device\":\"kitchen DHT sensor\"}"}
+{"prompt":"Execute a flood sensor diagnosis.","function":"hera_run_diagnose","arguments":"{\"device\":\"flood sensor\"}"}
+{"prompt":"Check the motion detection sensor.","function":"hera_run_diagnose","arguments":"{\"device\":\"motion detection sensor\"}"}
+{"prompt":"Is the front door lock working properly?","function":"hera_run_diagnose","arguments":"{\"device\":\"front door lock\"}"}
+{"prompt":"Perform a device diagnosis on proximity sensor.","function":"hera_run_diagnose","arguments":"{\"device\":\"proximity sensor\"}"}
+{"prompt":"Investigate the living room blinders.","function":"hera_run_diagnose","arguments":"{\"device\":\"living room blinders\"}"}
+{"prompt":"TV remote control seems not working. Please analyse.","function":"hera_run_diagnose","arguments":"{\"device\":\"TV remote control\"}"}
+{"prompt":"Run the garden moisture detector diagnosis.","function":"hera_run_diagnose","arguments":"{\"device\":\"garden moisture detector\"}"}
+{"prompt":"Execute home systems diagnosis.","function":"hera_run_diagnose","arguments":"{\"device\":\"system\"}"}
+{"prompt":"Initiate a comprehensive diagnostic scan of the entire home automation system.","function":"hera_run_diagnose","arguments":"{\"device\":\"system\"}"}
+{"prompt":"Perform a system health check for the entire apartment. Report any issues or anomalies detected.","function":"hera_run_diagnose","arguments":"{\"device\":\"system\"}"}
+{"prompt":"Could you please perform a complete diagnostic of the entire condominium automation systems?","function":"hera_run_diagnose","arguments":"{\"device\":\"system\"}"}
+{"prompt":"Please diagnose any issues with the automation systems from our dwelling house.","function":"hera_run_diagnose","arguments":"{\"device\":\"system\"}"}
+{"prompt":"Scan for unresponsive home devices and connectivity issues.","function":"hera_run_diagnose","arguments":"{\"device\":\"system\"}"}
+{"prompt":"What devices are currently offline or unresponsive?","function":"hera_run_diagnose","arguments":"{\"device\":\"system\"}"}

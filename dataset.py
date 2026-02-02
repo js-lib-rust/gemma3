@@ -62,6 +62,23 @@ def hf_function_set():
     print(f"[\n{sample_separator.join(hf_dataset)}\n]")
 
 
+def hf_rewrite_set():
+    file_path = f"data/{args.file}"
+    with open(file_path, 'r', encoding='UTF-8') as file:
+        dataset = [json.loads(line) for line in file if line.strip()]
+
+    hf_dataset = []
+    for sample in dataset:
+        hf_sample = f"""  [
+    {{"role": "system", "content": "Classify and rewrite next user prompt"}},
+    {{"role": "user", "content": "{sample["user"]}"}},
+    {{"role": "model", "content": "{sample['agent'].lower()}: {sample['prompt']}"}}
+  ]"""
+        hf_dataset.append(hf_sample)
+    sample_separator = ",\n"
+    print(f"[\n{sample_separator.join(hf_dataset)}\n]")
+
+
 module = __import__(__name__)
 function = getattr(module, args.task)
 function()

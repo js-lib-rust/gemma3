@@ -1,0 +1,58 @@
+{"user":"start heater","agent":"HERA","prompt":"Start the central heating."}
+{"user":"open heater","agent":"HERA","prompt":"Start the central heating."}
+{"user":"turn heater on","agent":"HERA","prompt":"Start the central heating."}
+{"user":"turn climate on","agent":"HERA","prompt":"Start the central heating."}
+{"user":"turn on the climate","agent":"HERA","prompt":"Start the central heating."}
+
+{"user":"stop heater","agent":"HERA","prompt":"Stop the central heating."}
+{"user":"close heater","agent":"HERA","prompt":"Stop the central heating."}
+{"user":"turn heater off","agent":"HERA","prompt":"Stop the central heating."}
+{"user":"turn climate off","agent":"HERA","prompt":"Stop the central heating."}
+{"user":"turn off the climate","agent":"HERA","prompt":"Stop the central heating."}
+
+{"user":"living temp","agent":"HERA","prompt":"What is the living room temperature?"}
+{"user":"kitchen humidity","agent":"HERA","prompt":"What is the kitchen humidity?"}
+
+{"user":"moisture sensors from greenhouse","agent":"HERA","prompt":"Read moisture sensors from greenhouse."}
+
+{"user":"save blood 125 85 70","agent":"health","prompt":"Save my blood pressure measurement of 125/85 mmHg and heart rate of 70 bmp."}
+{"user":"save my blood 125 85 70","agent":"health","prompt":"Save my blood pressure measurement of 125/85 mmHg and heart rate of 70 bmp."}
+{"user":"record blood measurements: 125 85 70","agent":"health","prompt":"Save my blood pressure measurement of 125/85 mmHg and heart rate of 70 bmp."}
+{"user":"save temperature 35.1","agent":"health","prompt":"Save my body temperature of 35.1 Celsius degrees."}
+{"user":"save my temperature 35.1","agent":"health","prompt":"Save my body temperature of 35.1 Celsius degrees."}
+{"user":"save weight 90","agent":"health","prompt":"Save my body weight of 90 kg."}
+{"user":"save my weight 90","agent":"health","prompt":"Save my body weight of 90 kg."}
+{"user":"health measurements","agent":"health","prompt":"List today health readings in table format."}
+{"user":"display health readings","agent":"health","prompt":"List today health readings in table format."}
+{"user":"list today medical readings","agent":"health","prompt":"List today health readings in table format."}
+{"user":"yesterday health measurements","agent":"health","prompt":"List yesterday health readings in table format."}
+{"user":"medical report","agent":"health","prompt":"Create a medical report from today readings."}
+{"user":"today medical report","agent":"health","prompt":"Create a medical report from today readings."}
+{"user":"medical report for today","agent":"health","prompt":"Create a medical report from today readings."}
+{"user":"yesterday medical report","agent":"health","prompt":"Create a medical report from yesterday readings."}
+{"user":"medical report from yesterday measurements","agent":"health","prompt":"Create a medical report from yesterday readings."}
+{"user":"medical report for january 12","agent":"health","prompt":"Create a medical report from January 12, 2026 readings."}
+
+{"user":"how is weather","agent":"weather","prompt":"What is the current weather in my location?"}
+{"user":"how is outside","agent":"weather","prompt":"What is the current weather in my location?"}
+{"user":"how cold is out there","agent":"weather","prompt":"What is the current weather in my location?"}
+{"user":"today forecast","agent":"weather","prompt":"What is today hourly weather forecast, in table format?"}
+{"user":"hourly forecast for today","agent":"weather","prompt":"What is today hourly weather forecast, in table format?"}
+{"user":"list forecast for today","agent":"weather","prompt":"What is today hourly weather forecast, in table format?"}
+{"user":"display today forecast","agent":"weather","prompt":"What is today hourly weather forecast, in table format?"}
+{"user":"next week forecast","agent":"weather","prompt":"What is the weather forecast for the next week, in table format?"}
+{"user":"get forecast for next two weeks","agent":"weather","prompt":"What is the weather forecast for the next two weeks, in table format?"}
+{"user":"next 3 days forecast","agent":"weather","prompt":"What is the weather forecast for the next 3 days, in table format?"}
+{"user":"forecast for 5 days","agent":"weather","prompt":"What is the weather forecast for the next 5 days, in table format?"}
+{"user":"list 10 days forecast","agent":"weather","prompt":"What is the weather forecast for the next 10 days, in table format?"}
+
+{"user":"essay about ion creanga life and works","agent":"wikipedia","prompt":"Create a comprehensive and detailed essay about Ion Creanga life and works."}
+{"user":"generate an essay on aurel vlaicu death","agent":"wikipedia","prompt":"Create a comprehensive and detailed essay about Aurel Vlaicu death."}
+{"user":"detailed story of leo tolstoy childhood","agent":"wikipedia","prompt":"Create a comprehensive and detailed essay about Leo Tolstoy childhood."}
+{"user":"create a paper about joan of arc","agent":"wikipedia","prompt":"Create a comprehensive and detailed essay about Joan of Arc."}
+{"user":"describe the eiffel tower in an essay","agent":"wikipedia","prompt":"Create a comprehensive and detailed essay about Eiffel Tower."}
+{"user":"write an essay about roman empire","agent":"wikipedia","prompt":"Create a comprehensive and detailed essay about Roman Empire."}
+{"user":"compose an essay about romania early history","agent":"wikipedia","prompt":"Create a comprehensive and detailed essay about Romania early history."}
+{"user":"load wiki article about oscar wild and create an essay about his work","agent":"wikipedia","prompt":"Create a comprehensive and detailed essay about Oscar Wild work."}
+{"user":"compose an essay on apollo 11 mission based on wikipedia article","agent":"wikipedia","prompt":"Create a comprehensive and detailed essay about Apollo 11 mission."}
+{"user":"generate an essay about american civil war","agent":"wikipedia","prompt":"Create a comprehensive and detailed essay about American Civil War."}

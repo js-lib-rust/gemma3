@@ -1,0 +1,232 @@
+[
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "start heater"},
+    {"role": "model", "content": "hera: Start the central heating."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "turn heater on"},
+    {"role": "model", "content": "hera: Start the central heating."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "turn climate on"},
+    {"role": "model", "content": "hera: Start the central heating."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "turn on the climate"},
+    {"role": "model", "content": "hera: Start the central heating."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "stop heater"},
+    {"role": "model", "content": "hera: Stop the central heating."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "turn heater off"},
+    {"role": "model", "content": "hera: Stop the central heating."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "turn climate off"},
+    {"role": "model", "content": "hera: Stop the central heating."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "turn off the climate"},
+    {"role": "model", "content": "hera: Stop the central heating."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "living temp"},
+    {"role": "model", "content": "hera: What is the living room temperature?"}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "kitchen humidity"},
+    {"role": "model", "content": "hera: What is the kitchen humidity?"}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "save blood 125 85 70"},
+    {"role": "model", "content": "health: Save my blood pressure measurement of 125/85 mmHg and heart rate of 70 bmp."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "save my blood 125 85 70"},
+    {"role": "model", "content": "health: Save my blood pressure measurement of 125/85 mmHg and heart rate of 70 bmp."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "record blood measurements: 125 85 70"},
+    {"role": "model", "content": "health: Save my blood pressure measurement of 125/85 mmHg and heart rate of 70 bmp."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "save temperature 35.1"},
+    {"role": "model", "content": "health: Save my body temperature of 35.1 Celsius degrees."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "save my temperature 35.1"},
+    {"role": "model", "content": "health: Save my body temperature of 35.1 Celsius degrees."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "save weight 90"},
+    {"role": "model", "content": "health: Save my body weight of 90 kg."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "save my weight 90"},
+    {"role": "model", "content": "health: Save my body weight of 90 kg."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "health measurements"},
+    {"role": "model", "content": "health: List today health readings in table format."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "display health readings"},
+    {"role": "model", "content": "health: List today health readings in table format."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "list today medical readings"},
+    {"role": "model", "content": "health: List today health readings in table format."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "yesterday health measurements"},
+    {"role": "model", "content": "health: List yesterday health readings in table format."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "medical report"},
+    {"role": "model", "content": "health: Create a medical report from today readings."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "today medical report"},
+    {"role": "model", "content": "health: Create a medical report from today readings."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "medical report for today"},
+    {"role": "model", "content": "health: Create a medical report from today readings."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "yesterday medical report"},
+    {"role": "model", "content": "health: Create a medical report from yesterday readings."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "medical report from yesterday measurements"},
+    {"role": "model", "content": "health: Create a medical report from yesterday readings."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "medical report for january 12"},
+    {"role": "model", "content": "health: Create a medical report from January 12, 2026 readings."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "how is weather"},
+    {"role": "model", "content": "weather: What is the current weather in my location?"}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "how is outside"},
+    {"role": "model", "content": "weather: What is the current weather in my location?"}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "how cold is out there"},
+    {"role": "model", "content": "weather: What is the current weather in my location?"}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "today forecast"},
+    {"role": "model", "content": "weather: What is today hourly weather forecast, in table format?"}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "hourly forecast for today"},
+    {"role": "model", "content": "weather: What is today hourly weather forecast, in table format?"}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "list forecast for today"},
+    {"role": "model", "content": "weather: What is today hourly weather forecast, in table format?"}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "display today forecast"},
+    {"role": "model", "content": "weather: What is today hourly weather forecast, in table format?"}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "next week forecast"},
+    {"role": "model", "content": "weather: What is the weather forecast for the next week, in table format?"}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "get forecast for next two weeks"},
+    {"role": "model", "content": "weather: What is the weather forecast for the next two weeks, in table format?"}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "next 3 days forecast"},
+    {"role": "model", "content": "weather: What is the weather forecast for the next 3 days, in table format?"}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "forecast for 5 days"},
+    {"role": "model", "content": "weather: What is the weather forecast for the next 5 days, in table format?"}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "list 10 days forecast"},
+    {"role": "model", "content": "weather: What is the weather forecast for the next 10 days, in table format?"}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "essay about ion creanga life and works"},
+    {"role": "model", "content": "wikipedia: Create a comprehensive and detailed essay about Ion Creanga life and works."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "generate an essay on aurel vlaicu death"},
+    {"role": "model", "content": "wikipedia: Create a comprehensive and detailed essay about Aurel Vlaicu death."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "detailed story of leo tolstoy childhood"},
+    {"role": "model", "content": "wikipedia: Create a comprehensive and detailed essay about Leo Tolstoy childhood."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "create a paper about joan of arc"},
+    {"role": "model", "content": "wikipedia: Create a comprehensive and detailed essay about Joan of Arc."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "describe the eiffel tower in an essay"},
+    {"role": "model", "content": "wikipedia: Create a comprehensive and detailed essay about Eiffel Tower."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "write an essay about roman empire"},
+    {"role": "model", "content": "wikipedia: Create a comprehensive and detailed essay about Roman Empire."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "compose an essay about romania early history"},
+    {"role": "model", "content": "wikipedia: Create a comprehensive and detailed essay about Romania early history."}
+  ]
+]

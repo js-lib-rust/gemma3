@@ -30,7 +30,7 @@ def tokenizer_function(examples):
 def prepare_dataset(examples):
     processed_examples = []
     for example in examples:
-        if not tools_support:
+        if not tools_support and tools:
             util.inject_tools(tools, example, True)
         if args.trace:
             print(f"example: {example}")

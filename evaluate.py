@@ -81,10 +81,14 @@ similarity_scores = []
 dataset_size = len(dataset)
 start_time = time.time()
 for index, datapoint in enumerate(dataset):
-    if not tools_support:
+    if not tools_support and tools:
         util.inject_tools(tools, datapoint)
 
-    ground_truth = util.parse_function_call(args.family, datapoint.pop()['tool_calls'][0]['function'])
+    ground_truth_turn = datapoint.pop()
+    if 'tool_calls' in ground_truth_turn:
+        ground_truth = util.parse_function_call(args.family, datapoint.pop()['tool_calls'][0]['function'])
+    else:
+        ground_truth = ground_truth_turn['content']
     if args.trace:
         print(f"ground_truth: {ground_truth}")
 

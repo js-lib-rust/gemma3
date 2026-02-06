@@ -1,10 +1,14 @@
 import os
 import json
 
+import torch
 from sentence_transformers import util, SentenceTransformer
+from torch import bfloat16
 
 
 def get_model_path(model_name):
+    if model_name.startswith('/'):
+        model_name = model_name[1:]
     return os.environ.get("AI_MODEL_DIR") + "/hugging-face/model/" + model_name
 
 
@@ -32,6 +36,11 @@ def split_by_comma(text_arg):
     values = text_arg.split(',')
     return [v.strip() for v in values]
 
+
+def dtype(dtype_arg):
+    if dtype_arg == 'bfloat16':
+        return torch.bfloat16
+    return torch.float32
 
 def inject_tools(tools, conversation, model_training=False):
     system_turn = [turn for turn in conversation if turn['role'] == "system"][0]

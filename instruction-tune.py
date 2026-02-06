@@ -51,6 +51,7 @@ def prepare_dataset(examples):
 parser = argparse.ArgumentParser()
 parser.add_argument("--model", action="store", type=str)
 parser.add_argument("--use-peft-lora", action="store_true")
+parser.add_argument("--dtype", action="store", type=util.dtype, default="float32")
 parser.add_argument("--files", action="store", type=util.split_by_comma)
 parser.add_argument("--tools", action="store", type=util.split_by_comma)
 parser.add_argument("--output-dir", action="store", type=str)
@@ -70,7 +71,9 @@ print()
 device = "cuda:0" if torch.cuda.is_available() else "cpu"
 output_dir = f"./{args.output_dir}"
 model_path = util.get_model_path(args.model) if args.model.startswith('/') else args.model
-dtype = torch.bfloat16 if args.use_peft_lora else torch.float32
+dtype = args.dtype
+if args.use_peft_lora:
+    dtype = torch.bfloat16
 print(f"Use device {device}")
 print(f"Use model {model_path}")
 print(f"Use PEFT LORA {args.use_peft_lora}")

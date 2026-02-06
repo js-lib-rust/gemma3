@@ -110,10 +110,11 @@ for index, datapoint in enumerate(dataset):
     prediction = tokenizer.decode(outputs[0][input_length:], skip_special_tokens=True)
     similarity_score = util.get_similarity_score(prediction, ground_truth)
     similarity_scores.append(similarity_score)
-    
-    if similarity_score != 1:
+
+    error = similarity_score < 0.9999
+    if error:
         errors_count += 1
-    if not args.errors_only or similarity_score != 1:
+    if not args.errors_only or error:
         print(f"{index + 1:>3} / {dataset_size}: {time.time() - start_time:>4.2f} sec: {similarity_score:>7.4f}: {prompt}")
         if args.verbose:
             print(prediction)

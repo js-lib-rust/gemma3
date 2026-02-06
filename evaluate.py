@@ -19,6 +19,7 @@ parser.add_argument("--max-new-tokens", action="store", type=int, default="2000"
 parser.add_argument("--login", action="store")
 parser.add_argument("--verbose", action="store_true")
 parser.add_argument("--trace", action="store_true")
+parser.add_argument("--errors-only", action="store_true")
 parser.add_argument("tests", nargs='*', type=int, help="space separated list of test ids")
 args = parser.parse_args()
 
@@ -31,6 +32,7 @@ print(f"Use max new tokens {args.max_new_tokens}.")
 print(f"Use login {args.login}")
 print(f"Use verbose {args.verbose}")
 print(f"Use trace {args.trace}")
+print(f"Use errors only {args.errors_only}")
 
 data_files = args.files
 dataset = []
@@ -78,6 +80,7 @@ config = {
 }
 
 similarity_scores = []
+errors_count = 0
 dataset_size = len(dataset)
 start_time = time.time()
 for index, datapoint in enumerate(dataset):
@@ -107,10 +110,17 @@ for index, datapoint in enumerate(dataset):
     prediction = tokenizer.decode(outputs[0][input_length:], skip_special_tokens=True)
     similarity_score = util.get_similarity_score(prediction, ground_truth)
     similarity_scores.append(similarity_score)
-    print(f"{index + 1:>3} / {dataset_size}: {time.time() - start_time:>4.2f} sec: {similarity_score:>7.4f}: {prompt}")
+    
+    if similarity_score != 1:
+        errors_count += 1
+    if not args.errors_only or similarity_score != 1:
+        print(f"{index + 1:>3} / {dataset_size}: {time.time() - start_time:>4.2f} sec: {similarity_score:>7.4f}: {prompt}")
+        if args.verbose:
+            print(prediction)
 
-    if args.verbose:
-        print(prediction)
+print()
+print(f"Total Tests: {len(similarity_scores)}")
+print(f"Total Errors: {errors_count}")
 
 print()
 mean_score = np.mean(similarity_scores)

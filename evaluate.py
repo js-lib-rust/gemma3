@@ -119,8 +119,12 @@ for index, datapoint in enumerate(dataset):
         if args.verbose:
             print(prediction)
 
+tests_count = len(similarity_scores)
+elapsed_time = time.time() - start_time
+text_generation_mean_time =  elapsed_time / tests_count
+
 print()
-print(f"Total Tests: {len(similarity_scores)}")
+print(f"Total Tests: {tests_count}")
 print(f"Total Errors: {errors_count}")
 
 print()
@@ -146,5 +150,5 @@ print(f"25th Percentile: {percentile_25:.4f}")
 print(f"75th Percentile: {percentile_75:.4f}")
 
 print()
-elapsed_time = time.time() - start_time
 print(f"Elapsed time: {elapsed_time:.4f} seconds")
+print(f"Text generation mean time: {text_generation_mean_time:.4f} seconds")

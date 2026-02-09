@@ -1,9 +1,8 @@
-import os
 import json
+import os
 
 import torch
 from sentence_transformers import util, SentenceTransformer
-from torch import bfloat16
 
 
 def get_model_path(model_name):
@@ -41,6 +40,7 @@ def dtype(dtype_arg):
     if dtype_arg == 'bfloat16':
         return torch.bfloat16
     return torch.float32
+
 
 def inject_tools(tools, conversation, model_training=False):
     system_turn = [turn for turn in conversation if turn['role'] == "system"][0]
@@ -83,3 +83,11 @@ def has_tools_support(tokenizer):
         if tools_keyword in tokenizer.chat_template.lower():
             return True
     return False
+
+
+def template(file_name, variables):
+    with open(f"data/template/{file_name}.txt", 'r', encoding='UTF-8') as file:
+        text = file.read()
+    for key, value in variables.items():
+        text = text.replace('{' + key + '}', value)
+    return text

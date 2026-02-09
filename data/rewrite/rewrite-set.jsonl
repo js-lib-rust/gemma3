@@ -1,58 +1,307 @@
-{"user":"start heater","agent":"HERA","prompt":"Start the central heating."}
-{"user":"open heater","agent":"HERA","prompt":"Start the central heating."}
-{"user":"turn heater on","agent":"HERA","prompt":"Start the central heating."}
-{"user":"turn climate on","agent":"HERA","prompt":"Start the central heating."}
-{"user":"turn on the climate","agent":"HERA","prompt":"Start the central heating."}
+{"user":"start heater","agent":"home","prompt":"Turn on the central heating."}
+{"user":"activate heater","agent":"home","prompt":"Turn on the central heating."}
+{"user":"open heater","agent":"home","prompt":"Turn on the central heating."}
+{"user":"turn heater on","agent":"home","prompt":"Turn on the central heating."}
+{"user":"engage heater","agent":"home","prompt":"Turn on the central heating."}
+{"user":"turn climate on","agent":"home","prompt":"Turn on the central heating."}
+{"user":"turn on the climate","agent":"home","prompt":"Turn on the central heating."}
+{"user":"engage the climate","agent":"home","prompt":"Turn on the central heating."}
 
-{"user":"stop heater","agent":"HERA","prompt":"Stop the central heating."}
-{"user":"close heater","agent":"HERA","prompt":"Stop the central heating."}
-{"user":"turn heater off","agent":"HERA","prompt":"Stop the central heating."}
-{"user":"turn climate off","agent":"HERA","prompt":"Stop the central heating."}
-{"user":"turn off the climate","agent":"HERA","prompt":"Stop the central heating."}
+{"user":"stop heater","agent":"home","prompt":"Turn off the central heating."}
+{"user":"deactivate heater","agent":"home","prompt":"Turn off the central heating."}
+{"user":"close heater","agent":"home","prompt":"Turn off the central heating."}
+{"user":"turn heater off","agent":"home","prompt":"Turn off the central heating."}
+{"user":"disengage heater","agent":"home","prompt":"Turn off the central heating."}
+{"user":"turn climate off","agent":"home","prompt":"Turn off the central heating."}
+{"user":"turn off the climate","agent":"home","prompt":"Turn off the central heating."}
+{"user":"disengage the climate","agent":"home","prompt":"Turn off the central heating."}
 
-{"user":"living temp","agent":"HERA","prompt":"What is the living room temperature?"}
-{"user":"kitchen humidity","agent":"HERA","prompt":"What is the kitchen humidity?"}
+{"user":"what's living room temp","agent":"home","prompt":"Read the temperature sensor in the living room."}
+{"user":"living temp","agent":"home","prompt":"Read the temperature sensor in the living room."}
+{"user":"living room temperature","agent":"home","prompt":"Read the temperature sensor in the living room."}
+{"user":"living humidity","agent":"home","prompt":"Read the humidity sensor in the living room."}
+{"user":"living room brightness","agent":"home","prompt":"Read the luminosity sensor in the living room."}
+{"user":"living air has a strong smell","agent":"home","prompt":"Read the air quality sensor in the living room."}
+{"user":"co2 in living room","agent":"home","prompt":"Read the carbon dioxide sensor in the living room."}
 
-{"user":"moisture sensors from greenhouse","agent":"HERA","prompt":"Read moisture sensors from greenhouse."}
+{"user":"humidity in the bedroom","agent":"home","prompt":"Read the humidity sensor in the bedroom."}
+{"user":"get temperature in the sleeping porch","agent":"home","prompt":"Read the temperature sensor in the sleeping porch."}
+{"user":"how sunny is the sleeping porch?","agent":"home","prompt":"Read the luminosity sensor in the sleeping porch."}
+{"user":"is window opened in the bedroom","agent":"home","prompt":"Read the window sensor in the bedroom."}
+{"user":"is flood alarm in bedroom?","agent":"home","prompt":"Read the flood sensor in the bedroom."}
+{"user":"air quality in bedroom","agent":"home","prompt":"Read the air quality sensor in the bedroom."}
 
-{"user":"save blood 125 85 70","agent":"health","prompt":"Save my blood pressure measurement of 125/85 mmHg and heart rate of 70 bmp."}
-{"user":"save my blood 125 85 70","agent":"health","prompt":"Save my blood pressure measurement of 125/85 mmHg and heart rate of 70 bmp."}
-{"user":"record blood measurements: 125 85 70","agent":"health","prompt":"Save my blood pressure measurement of 125/85 mmHg and heart rate of 70 bmp."}
-{"user":"save temperature 35.1","agent":"health","prompt":"Save my body temperature of 35.1 Celsius degrees."}
-{"user":"save my temperature 35.1","agent":"health","prompt":"Save my body temperature of 35.1 Celsius degrees."}
-{"user":"save weight 90","agent":"health","prompt":"Save my body weight of 90 kg."}
-{"user":"save my weight 90","agent":"health","prompt":"Save my body weight of 90 kg."}
+{"user":"what's temperature in children room","agent":"home","prompt":"Read the temperature sensor in the children's room."}
+{"user":"air quality in children's room","agent":"home","prompt":"Read the air quality sensor in the children's room."}
+{"user":"children room co2 level","agent":"home","prompt":"Read the carbon dioxide sensor in the children's room."}
+{"user":"is window opened in children room","agent":"home","prompt":"Read the window sensor in the children's room."}
+{"user":"how bright is in the children room?","agent":"home","prompt":"Read the luminosity sensor in the children's room."}
+
+{"user":"get lobby motion detection sensor","agent":"home","prompt":"Read the motion detection sensor in the lobby."}
+{"user":"lobby's luminosity","agent":"home","prompt":"Read the luminosity sensor in the lobby."}
+{"user":"is front door unlocked?","agent":"home","prompt":"Read the lock sensor in the front door."}
+{"user":"is latch off on front door?","agent":"home","prompt":"Read the lock sensor in the front door."}
+{"user":"temperature in hallway","agent":"home","prompt":"Read the temperature sensor in the hallway."}
+{"user":"co2 level in hallway","agent":"home","prompt":"Read the carbon dioxide sensor in the hallway."}
+{"user":"entrance hall air quality","agent":"home","prompt":"Read the air quality sensor in the entrance hall."}
+{"user":"do you detect some motion on entrance hall?","agent":"home","prompt":"Read the motion detection sensor in the entrance hall."}
+{"user":"do you notice movement in hallway?","agent":"home","prompt":"Read the motion detection sensor in the hallway."}
+{"user":"living water leaks","agent":"home","prompt":"Read the water leak sensor in the living room."}
+
+{"user":"kitchen humidity","agent":"home","prompt":"Read the humidity sensor in the kitchen."}
+{"user":"display kitchen humidity","agent":"home","prompt":"Read the humidity sensor in the kitchen."}
+{"user":"kitchen fire alarm","agent":"home","prompt":"Read the fire alarm sensor in the kitchen."}
+{"user":"is there smoke in kitchen?","agent":"home","prompt":"Read the smoke sensor in the kitchen."}
+{"user":"have we water leaks in kitchen?","agent":"home","prompt":"Read the water leak sensor in the kitchen."}
+{"user":"kitchen flood detector","agent":"home","prompt":"Read the flood sensor in the kitchen."}
+{"user":"is flood in kitchen?","agent":"home","prompt":"Read the flood sensor in the kitchen."}
+{"user":"carbon level in the kitchen","agent":"home","prompt":"Read the carbon dioxide sensor in the kitchen."}
+{"user":"kitchen air monitor","agent":"home","prompt":"Read the air quality sensor in the kitchen."}
+{"user":"is kitchen door shut?","agent":"home","prompt":"Read the door sensor in the kitchen."}
+{"user":"kitchen gas detector","agent":"home","prompt":"Read the gas sensor in the kitchen."}
+{"user":"what is the gas concentration in the kitchen","agent":"home","prompt":"Read the gas sensor in the kitchen."}
+{"user":"is gas alarm in the kitchen?","agent":"home","prompt":"Read the gas sensor in the kitchen."}
+{"user":"do we have gas leaks in the kitchen?","agent":"home","prompt":"Read the gas sensor in the kitchen."}
+
+{"user":"humidity in bathroom","agent":"home","prompt":"Read the humidity sensor in the bathroom."}
+{"user":"is there flood alarm in the bathroom","agent":"home","prompt":"Read the flood sensor in the bathroom."}
+{"user":"is bathroom window opened?","agent":"home","prompt":"Read the window sensor in the bathroom."}
+{"user":"is the bath door closed?","agent":"home","prompt":"Read the door sensor in the bathroom."}
+{"user":"is bathroom not shut?","agent":"home","prompt":"Read the door sensor in the bathroom."}
+{"user":"what is temperature in the bath?","agent":"home","prompt":"Read the temperature sensor in the bathroom."}
+
+{"user":"temperature in balcony","agent":"home","prompt":"Read the temperature sensor in the balcony."}
+{"user":"luminosity in balcony","agent":"home","prompt":"Read the luminosity sensor in the balcony."}
+{"user":"is there lot of water in the balcony?","agent":"home","prompt":"Read the flood sensor in the balcony."}
+{"user":"is the balcony door not closed properly?","agent":"home","prompt":"Read the door sensor in the balcony."}
+{"user":"is there water accumulating on the veranda","agent":"home","prompt":"Read the flood sensor in the veranda."}
+{"user":"how is veranda door?","agent":"home","prompt":"Read the door sensor in the veranda."}
+{"user":"what's the porch temperature?","agent":"home","prompt":"Read the temperature sensor in the porch."}
+{"user":"porch temperature","agent":"home","prompt":"Read the temperature sensor in the porch."}
+{"user":"is the porch door properly fastened?","agent":"home","prompt":"Read the door sensor in the porch."}
+{"user":"gallery light level","agent":"home","prompt":"Read the luminosity sensor in the gallery."}
+{"user":"are there suspicious movements in the porch?","agent":"home","prompt":"Read the motion detection sensor in the porch."}
+
+{"user":"what's humidity from cellar","agent":"home","prompt":"Read the humidity sensor in the cellar."}
+{"user":"cellar intruders?","agent":"home","prompt":"Read the motion detection sensor in the cellar."}
+{"user":"is cellar door opened?","agent":"home","prompt":"Read the door sensor in the cellar."}
+{"user":"do you detect suspicious movements in the cellar?","agent":"home","prompt":"Read the motion detection sensor in the cellar."}
+{"user":"is pantry not locked?","agent":"home","prompt":"Read the lock sensor in the pantry door."}
+{"user":"what is pantry humidity","agent":"home","prompt":"Read the humidity sensor in the pantry."}
+{"user":"still room humidity","agent":"home","prompt":"Read the humidity sensor in the stillroom."}
+{"user":"what's the temperature in the stillroom?","agent":"home","prompt":"Read the temperature sensor in the stillroom."}
+{"user":"what is humidity in the store room","agent":"home","prompt":"Read the humidity sensor in the storeroom."}
+{"user":"temperature in store room","agent":"home","prompt":"Read the temperature sensor in the storeroom."}
+{"user":"is fire alarm in store room","agent":"home","prompt":"Read the fire alarm sensor in the storeroom."}
+{"user":"is there smoke in the storeroom?","agent":"home","prompt":"Read the smoke sensor in the storeroom."}
+{"user":"do we have intruder alarm in the storeroom?","agent":"home","prompt":"Read the motion detection sensor in the storeroom."}
+{"user":"is stillroom locked?","agent":"home","prompt":"Read the lock sensor in the stillroom door."}
+
+{"user":"tv set sound level","agent":"home","prompt":"Read the sound level from the TV set."}
+{"user":"music player audio level","agent":"home","prompt":"Read the sound level from the music player."}
+{"user":"digital music player loudness","agent":"home","prompt":"Read the sound level from the music player."}
+{"user":"how loud is media player","agent":"home","prompt":"Read the sound level from the media player."}
+{"user":"speaker level","agent":"home","prompt":"Read the sound level from the media player."}
+{"user":"what is the speakers level","agent":"home","prompt":"Read the sound level from the media player."}
+{"user":"how loud are speakers","agent":"home","prompt":"Read the sound level from the media player."}
+{"user":"how noisy is that bloody speaker?","agent":"home","prompt":"Read the sound level from the media player."}
+{"user":"front bell loudness","agent":"home","prompt":"Read the sound level from the doorbell."}
+{"user":"door bell level","agent":"home","prompt":"Read the sound level from the doorbell."}
+{"user":"entrance door audio level","agent":"home","prompt":"Read the sound level from the doorbell."}
+{"user":"front door buzzer level","agent":"home","prompt":"Read the sound level from the doorbell."}
+{"user":"level of apartment buzzer","agent":"home","prompt":"Read the sound level from the doorbell."}
+{"user":"what is the front door chime's level?","agent":"home","prompt":"Read the sound level from the doorbell."}
+{"user":"how loud is the doorbell from entrance","agent":"home","prompt":"Read the sound level from the doorbell."}
+{"user":"how noisy is that doorbell?","agent":"home","prompt":"Read the sound level from the doorbell."}
+
+{"user":"moisture sensors from greenhouse","agent":"home","prompt":"Read the soil moisture sensors in the greenhouse."}
+{"user":"read moisture sensors from greenhouse","agent":"home","prompt":"Read the soil moisture sensors in the greenhouse."}
+{"user":"greenhouse moisture sensors","agent":"home","prompt":"Read the soil moisture sensors in the greenhouse."}
+{"user":"flowers moisture sensors","agent":"home","prompt":"Read the soil moisture sensors in the flowers pots."}
+{"user":"what is the soil moisture in the flowers pots?","agent":"home","prompt":"Read the soil moisture sensors in the flowers pots."}
+{"user":"moisture on tomatoes pots","agent":"home","prompt":"Read the soil moisture sensors in the tomatoes pots."}
+{"user":"nutrients level in potatoes seedlings","agent":"home","prompt":"Read the nutrients sensors in the potatoes seedlings."}
+{"user":"ph in balcony planter","agent":"home","prompt":"Read the soil pH sensors in the balcony planter."}
+{"user":"ph in bedroom flowerpot","agent":"home","prompt":"Read the soil pH sensors in the bedroom flowerpot."}
+{"user":"moisture in bedroom flowerpot","agent":"home","prompt":"Read the soil moisture sensors in the bedroom flowerpot."}
+{"user":"nutrients concentration in flowers container","agent":"home","prompt":"Read the nutrients sensors in the flowers container."}
+{"user":"concentration of nutrients in aquaponic container","agent":"home","prompt":"Read the nutrients sensors in the aquaponic container."}
+{"user":"is water clean in aquaponic container?","agent":"home","prompt":"Read the water quality sensors in the aquaponic container."}
+{"user":"get fire alarm from greenhouse","agent":"home","prompt":"Read the fire alarm sensor in the greenhouse."}
+{"user":"co2 level in greenhouse","agent":"home","prompt":"Read the carbon dioxide sensor in the greenhouse."}
+{"user":"is greenhouse door secured?","agent":"home","prompt":"Read the lock sensor in the greenhouse door."}
+{"user":"did i forget to lock the greenhouse?","agent":"home","prompt":"Read the lock sensor in the greenhouse door."}
+{"user":"do we have flood alarm in the greenhouse?","agent":"home","prompt":"Read the flood sensor in the greenhouse."}
+{"user":"any intruders in greenhouse?","agent":"home","prompt":"Read the motion detection sensor in the greenhouse."}
+
+{"user":"read sensors from home","agent":"home","prompt":"Read all the sensors in the house."}
+{"user":"read all sensors","agent":"home","prompt":"Read all the sensors in the house."}
+{"user":"sensors values","agent":"home","prompt":"Read all the sensors in the house."}
+{"user":"read sensors from apartment","agent":"home","prompt":"Read all the sensors in the house."}
+{"user":"readings of the apartment's sensors","agent":"home","prompt":"Read all the sensors in the house."}
+{"user":"print sensor values","agent":"home","prompt":"Read all the sensors in the house."}
+{"user":"read temperature sensors","agent":"home","prompt":"Read all the temperature sensors in the house."}
+{"user":"get current readings from humidity sensors","agent":"home","prompt":"Read all the humidity sensors in the house."}
+{"user":"motion detection sensor values","agent":"home","prompt":"Read all the motion detection sensors in the house."}
+{"user":"is there any intruder alarms?","agent":"home","prompt":"Read all the motion detection sensors in the house."}
+{"user":"is there any flood alarm?","agent":"home","prompt":"Read all the flood sensors in the house."}
+{"user":"is there any fire alarm in the house?","agent":"home","prompt":"Read all the fire alarm sensors in the house."}
+{"user":"is there smoke somewhere in apartment?","agent":"home","prompt":"Read all the smoke sensors in the house."}
+{"user":"is there some water leaks anywhere?","agent":"home","prompt":"Read all the water leak sensors in the house."}
+{"user":"are there any not locked doors?","agent":"home","prompt":"Read all the lock sensors in the house."}
+{"user":"are there any opened windows?","agent":"home","prompt":"Read all the window sensors in the house."}
+{"user":"is there an open window?","agent":"home","prompt":"Read all the window sensors in the house."}
+
+{"user":"save blood 125 85 70","agent":"health","prompt":"Save my blood pressure measurement of 125/85 mmHg and heart rate of 70 bpm."}
+{"user":"save my blood 128 81 55","agent":"health","prompt":"Save my blood pressure measurement of 128/81 mmHg and heart rate of 55 bpm."}
+{"user":"save blood 115 75 60 to Gavriliu Mihaela","agent":"health","prompt":"Save the blood pressure measurement of 115/75 mmHg and heart rate of 60 bpm for Gavriliu Mihaela."}
+{"user":"save blood readings: 130 82 85","agent":"health","prompt":"Save my blood pressure measurement of 130/82 mmHg and heart rate of 85 bpm."}
+{"user":"save rotaru lucian blood readings: 112 65 78","agent":"health","prompt":"Save the blood pressure measurement of 112/65 mmHg and heart rate of 78 bpm for Rotaru Lucian."}
+{"user":"record blood measurements: 110 66 84","agent":"health","prompt":"Save my blood pressure measurement of 110/66 mmHg and heart rate of 84 bpm."}
+{"user":"logs blood readings: 133 92 87", "agent":"health","prompt":"Save my blood pressure measurement of 133/92 mmHg and heart rate of 87 bpm."}
+{"user":"logs my blood readings: 136 90 82", "agent":"health","prompt":"Save my blood pressure measurement of 136/90 mmHg and heart rate of 82 bpm."}
+{"user":"logs blood readings: 133 92 87 for miron elena daniela", "agent":"health","prompt":"Save the blood pressure measurement of 133/92 mmHg and heart rate of 87 bpm for Miron Elena Daniela."}
+{"user":"write blood readings: 119 with 81 and 93","agent":"health","prompt":"Save my blood pressure measurement of 119/81 mmHg and heart rate of 93 bpm."}
+{"user":"write my blood readings: 120 with 84 and 76","agent":"health","prompt":"Save my blood pressure measurement of 120/84 mmHg and heart rate of 76 bpm."}
+{"user":"write blood readings: 125 with 83 and 73 for rotaru iulian","agent":"health","prompt":"Save the blood pressure measurement of 125/83 mmHg and heart rate of 73 bpm for Rotaru Iulian."}
+
+{"user":"save temperature 34.3","agent":"health","prompt":"Save my body temperature of 34.30 °C."}
+{"user":"save temperature 35.6 for gogălniceanu ștefan","agent":"health","prompt":"Save the body temperature of 35.60 °C for Gogălniceanu Ștefan."}
+{"user":"logs body temperature 35.9","agent":"health","prompt":"Save my body temperature of 35.90 °C."}
+{"user":"logs body temperature 36.2 to lontkowschi george","agent":"health","prompt":"Save the body temperature of 36.20 °C for Lontkowschi George."}
+{"user":"write temperature 34.8","agent":"health","prompt":"Save my body temperature of 34.80 °C."}
+{"user":"write my temperature 35.2","agent":"health","prompt":"Save my body temperature of 35.20 °C."}
+{"user":"write temperature 34.1 for teodorescu tiberiu dinu","agent":"health","prompt":"Save the body temperature of 34.10 °C for Teodorescu Tiberiu Dinu."}
+{"user":"record my temperature: 37.1","agent":"health","prompt":"Save my body temperature of 37.10 °C."}
+{"user":"record dorneanu deliana temperature: 36.7","agent":"health","prompt":"Save the body temperature of 36.70 °C for Dorneanu Deliana."}
+
+{"user":"save weight 87.5","agent":"health","prompt":"Save my body weight of 87.50 kg."}
+{"user":"save weight of 88.5 kg to preda marin","agent":"health","prompt":"Save the body weight of 88.50 kg for Preda Marin."}
+{"user":"register my weight of 94","agent":"health","prompt":"Save my body weight of 94.00 kg."}
+{"user":"write weight 74 to Jipa Bogdan","agent":"health","prompt":"Save the body weight of 74.00 kg for Jipa Bogdan."}
+{"user":"record weight 76.5 for rotaru mihai","agent":"health","prompt":"Save the body weight of 76.50 kg for Rotaru Mihai."}
+{"user":"save my weight 88","agent":"health","prompt":"Save my body weight of 88.00 kg."}
+{"user":"save dorneanu sorana ioana weight 22.5","agent":"health","prompt":"Save the body weight of 22.50 kg for Dorneanu Sorana Ioana."}
+{"user":"logs weight of 103.5 for rotaru stefan","agent":"health","prompt":"Save the body weight of 103.50 kg for Rotaru Ștefan."}
+{"user":"record my weight 62 to medical database","agent":"health","prompt":"Save my body weight of 62.00 kg."}
+{"user":"record adam nicolae weight 66.5","agent":"health","prompt":"Save the body weight of 66.50 kg for Adam Nicolae."}
+{"user":"write marton csaba weight of 77 kg","agent":"health","prompt":"Save the body weight of 77.00 kg for Marton Csaba."}
+
+{"user":"list health measurements","agent":"health","prompt":"List today health readings in table format."}
+{"user":"print health measurements","agent":"health","prompt":"List today health readings in table format."}
+{"user":"show my health measurements","agent":"health","prompt":"List today health readings in table format."}
 {"user":"health measurements","agent":"health","prompt":"List today health readings in table format."}
+{"user":"health records","agent":"health","prompt":"List today health readings in table format."}
+{"user":"medical readings","agent":"health","prompt":"List today health readings in table format."}
 {"user":"display health readings","agent":"health","prompt":"List today health readings in table format."}
+{"user":"print medical records","agent":"health","prompt":"List today health readings in table format."}
 {"user":"list today medical readings","agent":"health","prompt":"List today health readings in table format."}
 {"user":"yesterday health measurements","agent":"health","prompt":"List yesterday health readings in table format."}
+{"user":"yesterday medical readings","agent":"health","prompt":"List yesterday health readings in table format."}
+{"user":"yesterday medical records","agent":"health","prompt":"List yesterday health readings in table format."}
+{"user":"medical readings from january 22","agent":"health","prompt":"List the health readings from January 22, 2026 in table format."}
+{"user":"health records from february 2","agent":"health","prompt":"List the health readings from February 2, 2026 in table format."}
+{"user":"health measurement in 2026-01-13","agent":"health","prompt":"List the health readings from January 13, 2026 in table format."}
+{"user":"list health measurement in 2026-02-04","agent":"health","prompt":"List the health readings from February 4, 2026 in table format."}
+
 {"user":"medical report","agent":"health","prompt":"Create a medical report from today readings."}
 {"user":"today medical report","agent":"health","prompt":"Create a medical report from today readings."}
 {"user":"medical report for today","agent":"health","prompt":"Create a medical report from today readings."}
 {"user":"yesterday medical report","agent":"health","prompt":"Create a medical report from yesterday readings."}
-{"user":"medical report from yesterday measurements","agent":"health","prompt":"Create a medical report from yesterday readings."}
-{"user":"medical report for january 12","agent":"health","prompt":"Create a medical report from January 12, 2026 readings."}
+{"user":"health report from yesterday measurements","agent":"health","prompt":"Create a medical report from yesterday readings."}
+{"user":"medical report for january 12","agent":"health","prompt":"Create a medical report from readings from January 12, 2026."}
+{"user":"print health report for 2025-12-01","agent":"health","prompt":"Create a medical report from readings from December 1, 2025."}
+{"user":"health status report for 2025-11-12","agent":"health","prompt":"Create a medical report from readings from November 12, 2025."}
 
-{"user":"how is weather","agent":"weather","prompt":"What is the current weather in my location?"}
-{"user":"how is outside","agent":"weather","prompt":"What is the current weather in my location?"}
-{"user":"how cold is out there","agent":"weather","prompt":"What is the current weather in my location?"}
-{"user":"today forecast","agent":"weather","prompt":"What is today hourly weather forecast, in table format?"}
-{"user":"hourly forecast for today","agent":"weather","prompt":"What is today hourly weather forecast, in table format?"}
-{"user":"list forecast for today","agent":"weather","prompt":"What is today hourly weather forecast, in table format?"}
-{"user":"display today forecast","agent":"weather","prompt":"What is today hourly weather forecast, in table format?"}
-{"user":"next week forecast","agent":"weather","prompt":"What is the weather forecast for the next week, in table format?"}
-{"user":"get forecast for next two weeks","agent":"weather","prompt":"What is the weather forecast for the next two weeks, in table format?"}
-{"user":"next 3 days forecast","agent":"weather","prompt":"What is the weather forecast for the next 3 days, in table format?"}
-{"user":"forecast for 5 days","agent":"weather","prompt":"What is the weather forecast for the next 5 days, in table format?"}
-{"user":"list 10 days forecast","agent":"weather","prompt":"What is the weather forecast for the next 10 days, in table format?"}
+{"user":"wind speed from meteo station","agent":"weather","prompt":"Read the wind speed from local weather station."}
+{"user":"what's wind speed on my station?","agent":"weather","prompt":"Read the wind speed from local weather station."}
+{"user":"weather station temperature","agent":"weather","prompt":"Read the temperature from local weather station."}
+{"user":"read temperature from local weather station","agent":"weather","prompt":"Read the temperature from local weather station."}
+{"user":"humidity on weather station","agent":"weather","prompt":"Read  the humidity from local weather station."}
+{"user":"air quality from weather station","agent":"weather","prompt":"Read the air quality from local weather station."}
+{"user":"read air quality on my weather station","agent":"weather","prompt":"Read the air quality from local weather station."}
+{"user":"weather status from meteo station","agent":"weather","prompt":"Read weather data from local weather station."}
+{"user":"data from local weather station","agent":"weather","prompt":"Read weather data from local weather station."}
+{"user":"my meteo station data","agent":"weather","prompt":"Read weather data from local weather station."}
+{"user":"local weather station data","agent":"weather","prompt":"Read weather data from local weather station."}
+
+{"user":"how is weather","agent":"weather","prompt":"What is the weather like in my location right now?"}
+{"user":"is it raining right now in tomești, romania","agent":"weather","prompt":"What is the weather like in Tomești, Romania right now?"}
+{"user":"is it sunny right now in siliștea, gumești, romania","agent":"weather","prompt":"What is the weather like in Siliștea, Gumești, Romania right now?"}
+{"user":"check weather","agent":"weather","prompt":"What is the weather like in my location right now?"}
+{"user":"how weather info","agent":"weather","prompt":"What is the weather like in my location right now?"}
+{"user":"tell me the weather in iasi, romania","agent":"weather","prompt":"What is the weather like in Iași, Romania right now?"}
+{"user":"how is outdoor?","agent":"weather","prompt":"What is the weather like in my location right now?"}
+{"user":"how is weather in bucharest","agent":"weather","prompt":"What is the weather like in Bucharest, Romania right now?"}
+{"user":"how's outside","agent":"weather","prompt":"What is the weather like in my location right now?"}
+{"user":"how cold is out there","agent":"weather","prompt":"What is the weather like in my location right now?"}
+{"user":"how warm is outside","agent":"weather","prompt":"What is the weather like in my location right now?"}
+{"user":"how cold is in piatra-neamț, romania","agent":"weather","prompt":"What is the weather like in Piatra-Neamț, Romania right now?"}
+{"user":"i wish to know the weather for cluj napoca, romania","agent":"weather","prompt":"What is the weather like in Cluj-Napoca, Romania right now?"}
+{"user":"how is current weather on california","agent":"weather","prompt":"What is the weather like in California right now?"}
+
+{"user":"today weather forecast","agent":"weather","prompt":"What is the hourly weather forecast for today in my location, in tabular form?"}
+{"user":"today weather forecast in paris","agent":"weather","prompt":"What is the hourly weather forecast for today in Paris, France, in tabular form?"}
+{"user":"today weather forecast for bucharest","agent":"weather","prompt":"What is the hourly weather forecast for today in Bucharest, Romania, in tabular form?"}
+{"user":"today forecast","agent":"weather","prompt":"What is the hourly weather forecast for today in my location, in tabular form?"}
+{"user":"how will be weather today?","agent":"weather","prompt":"What is the hourly weather forecast for today in my location, in tabular form?"}
+{"user":"how will be weather today on deprecen, slovakia?","agent":"weather","prompt":"What is the hourly weather forecast for today in Deprecen, Slovakia, in tabular form?"}
+{"user":"what will weather be like today?","agent":"weather","prompt":"What is the hourly weather forecast for today in my location, in tabular form?"}
+{"user":"will be hot today?","agent":"weather","prompt":"What is the hourly weather forecast for today in my location, in tabular form?"}
+{"user":"will be cold today in valea lupului, romania?","agent":"weather","prompt":"What is the hourly weather forecast for today in Valea Lupului, Romania, in tabular form?"}
+{"user":"hourly forecast for today","agent":"weather","prompt":"What is the hourly weather forecast for today in my location, in tabular form?"}
+{"user":"hourly forecast for today on sculeni, iași, românia","agent":"weather","prompt":"What is the hourly weather forecast for today in Sculeni, Iași, România, in tabular form?"}
+{"user":"list forecast for today","agent":"weather","prompt":"What is the hourly weather forecast for today in my location, in tabular form?"}
+{"user":"display today forecast","agent":"weather","prompt":"What is the hourly weather forecast for today in my location, in tabular form?"}
+{"user":"display today forecast in chicirea, iasi, romania","agent":"weather","prompt":"What is the hourly weather forecast for today in Chicirea, Iași, Romania, in tabular form?"}
+
+{"user":"weather forecast","agent":"weather","prompt":"What is the weather forecast for the next two weeks in my location, in tabular form?"}
+{"user":"weather forecast in alba-iulia, romania","agent":"weather","prompt":"What is the weather forecast for the next two weeks in Alba-Iulia, Romania, in tabular form?"}
+{"user":"daily weather forecast","agent":"weather","prompt":"What is the weather forecast for the next two weeks in my location, in tabular form?"}
+{"user":"print daily forecast","agent":"weather","prompt":"What is the weather forecast for the next two weeks in my location, in tabular form?"}
+{"user":"next week forecast","agent":"weather","prompt":"What is the weather forecast for next week in my location, in tabular form?"}
+{"user":"weather forecast for this week","agent":"weather","prompt":"What is the weather forecast for this week in my location, in tabular form?"}
+{"user":"this week forecast","agent":"weather","prompt":"What is the weather forecast for this week, in my location in tabular form?"}
+{"user":"this week forecast on botosani, romania","agent":"weather","prompt":"What is the weather forecast for this week in Botosani, Romania, in tabular form?"}
+{"user":"this week forecast for suceava, romania","agent":"weather","prompt":"What is the weather forecast for this week in Suceava, Romania, in tabular form?"}
+{"user":"give weather stats for this week","agent":"weather","prompt":"What is the weather forecast for this week in my location, in tabular form?"}
+{"user":"what are chances of hail this week","agent":"weather","prompt":"What is the weather forecast for this week in my location, in tabular form?"}
+{"user":"get forecast for next two weeks","agent":"weather","prompt":"What is the weather forecast for the next two weeks in my location, in tabular form?"}
+{"user":"get forecast for next two weeks in vălenii de jos, timiș, românia","agent":"weather","prompt":"What is the weather forecast for the next two weeks in Vălenii de jos, Timiș, România, in tabular form?"}
+{"user":"next 3 days forecast","agent":"weather","prompt":"What is the weather forecast for the next 3 days in my location, in tabular form?"}
+{"user":"forecast for 5 days","agent":"weather","prompt":"What is the weather forecast for the next 5 days in my location, in tabular form?"}
+{"user":"forecast for 5 days in vaslui, romania","agent":"weather","prompt":"What is the weather forecast for the next 5 days in Vaslui, Romania, in tabular form?"}
+{"user":"4 days forecast","agent":"weather","prompt":"What is the weather forecast for the next 4 days in my location, in tabular form?"}
+{"user":"4 days forecast for oradea, romania","agent":"weather","prompt":"What is the weather forecast for the next 4 days in Oradea, Romania, in tabular form?"}
+{"user":"list 10 days forecast","agent":"weather","prompt":"What is the weather forecast for the next 10 days in my location, in tabular form?"}
+{"user":"list 10 days forecast for negrești, vaslui, romania","agent":"weather","prompt":"What is the weather forecast for the next 10 days in Negrești, Vaslui, Romania, in tabular form?"}
 
 {"user":"essay about ion creanga life and works","agent":"wikipedia","prompt":"Create a comprehensive and detailed essay about Ion Creanga life and works."}
 {"user":"generate an essay on aurel vlaicu death","agent":"wikipedia","prompt":"Create a comprehensive and detailed essay about Aurel Vlaicu death."}
-{"user":"detailed story of leo tolstoy childhood","agent":"wikipedia","prompt":"Create a comprehensive and detailed essay about Leo Tolstoy childhood."}
+{"user":"detailed description of leo tolstoy childhood","agent":"wikipedia","prompt":"Create a comprehensive and detailed essay about Leo Tolstoy childhood."}
 {"user":"create a paper about joan of arc","agent":"wikipedia","prompt":"Create a comprehensive and detailed essay about Joan of Arc."}
-{"user":"describe the eiffel tower in an essay","agent":"wikipedia","prompt":"Create a comprehensive and detailed essay about Eiffel Tower."}
+{"user":"describe the eiffel tower in an essay","agent":"wikipedia","prompt":"Create a comprehensive and detailed essay about the Eiffel Tower."}
 {"user":"write an essay about roman empire","agent":"wikipedia","prompt":"Create a comprehensive and detailed essay about Roman Empire."}
-{"user":"compose an essay about romania early history","agent":"wikipedia","prompt":"Create a comprehensive and detailed essay about Romania early history."}
-{"user":"load wiki article about oscar wild and create an essay about his work","agent":"wikipedia","prompt":"Create a comprehensive and detailed essay about Oscar Wild work."}
+{"user":"compose an essay about romania early history","agent":"wikipedia","prompt":"Create a comprehensive and detailed essay about Romania's early history."}
+{"user":"load wiki article about oscar wild and create an essay about his work","agent":"wikipedia","prompt":"Create a comprehensive and detailed essay about Oscar Wild's work."}
 {"user":"compose an essay on apollo 11 mission based on wikipedia article","agent":"wikipedia","prompt":"Create a comprehensive and detailed essay about Apollo 11 mission."}
-{"user":"generate an essay about american civil war","agent":"wikipedia","prompt":"Create a comprehensive and detailed essay about American Civil War."}
+{"user":"generate an essay about american civil war","agent":"wikipedia","prompt":"Create a comprehensive and detailed essay about the American Civil War."}
+{"user":"create a exhaustive survey of thomas edison inventions","agent":"wikipedia","prompt":"Create a comprehensive and detailed essay about Thomas Edison's inventions."}
+{"user":"historical account about stephen the great conflicts with poland","agent":"wikipedia","prompt":"Create a comprehensive and detailed essay about Stephen the Great conflicts with Poland."}
+{"user":"detailed account about wright flyer first flight","agent":"wikipedia","prompt":"Create a comprehensive and detailed essay about Wright Flyer's first flight."}
+{"user":"historical account of the panama canal","agent":"wikipedia","prompt":"Create a comprehensive and detailed essay about the history of the Panama Canal."}
+{"user":"write a detailed study of danube river","agent":"wikipedia","prompt":"Create a comprehensive and detailed essay about Danube river."}
+{"user":"comprehensive history of the french revolution","agent":"wikipedia","prompt":"Create a comprehensive and detailed essay about French Revolution."}
+{"user":"create a complete examination of the computer architecture","agent":"wikipedia","prompt":"Create a comprehensive and detailed essay about the computer architecture."}
+{"user":"create a broad examination of lunar lander","agent":"wikipedia","prompt":"Create a comprehensive and detailed essay about the lunar lander."}
+{"user":"generate a detailed study of electric vehicles","agent":"wikipedia","prompt":"Create a comprehensive and detailed essay about electric vehicles."}
+{"user":"write a exhaustive study of serengeti ecosystem","agent":"wikipedia","prompt":"Create a comprehensive and detailed essay about Serengeti ecosystem."}
+
+{"user":"write story about a day from a lions pride","agent":"wikipedia","prompt":"Create a story in a narrative style about a day from a lions pride."}
+{"user":"story about aurel vlaicu attempt to cross mountains","agent":"wikipedia","prompt":"Create a story in a narrative style about Aurel Vlaicu attempt to cross the mountains."}
+{"user":"create a story for marie curie discovery of radioactivity","agent":"wikipedia","prompt":"Create a story in a narrative style about Marie Curie's discovery of radioactivity."}
+{"user":"story primitive humans hunting","agent":"wikipedia","prompt":"Create a story in a narrative style about primitive humans hunting."}
+{"user":"create a story about oscar wilde time in prison","agent":"wikipedia","prompt":"Create a story in a narrative style about Oscar Wilde's time in prison."}
+{"user":"write a story of thomas edison inventing electric light","agent":"wikipedia","prompt":"Create a story in a narrative style about Thomas Edison inventing the electric light."}
+{"user":"story about america discovery by christopher columbus","agent":"wikipedia","prompt":"Create a story in a narrative style about the America's discovery by Christopher Columbus."}
+{"user":"create a story about jack london participation in gold rush","agent":"wikipedia","prompt":"Create a story in a narrative style about Jack London's participation in the gold rush."}

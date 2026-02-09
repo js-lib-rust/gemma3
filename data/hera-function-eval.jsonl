@@ -1,9 +1,9 @@
-{"prompt":"what devices are in the house?","function":"hera_list_devices","arguments":"{}"}
-{"prompt":"list all devices","function":"hera_list_devices","arguments":"{}"}
-{"prompt":"show me temperature sensor description","function":"hera_describe_device","arguments":"{\"device\":\"temperature sensor\"}"}
-{"prompt":"describe flood sensor","function":"hera_describe_device","arguments":"{\"device\":\"flood sensor\"}"}
-{"prompt":"list actions of proximity sensor","function":"hera_describe_device","arguments":"{\"device\":\"proximity sensor\"}"}
-{"prompt":"what actions are supported by humidity sensor","function":"hera_describe_device","arguments":"{\"device\":\"humidity sensor\"}"}
+{"prompt":"what devices are in the house?","function":"hera_get_system_summary","arguments":"{}"}
+{"prompt":"list all devices","function":"hera_get_system_summary","arguments":"{}"}
+{"prompt":"show me temperature sensor description","function":"hera_get_device_description","arguments":"{\"device\":\"temperature sensor\"}"}
+{"prompt":"describe flood sensor","function":"hera_get_device_description","arguments":"{\"device\":\"flood sensor\"}"}
+{"prompt":"list actions of proximity sensor","function":"hera_get_device_description","arguments":"{\"device\":\"proximity sensor\"}"}
+{"prompt":"what actions are supported by humidity sensor","function":"hera_get_device_description","arguments":"{\"device\":\"humidity sensor\"}"}
 {"prompt":"print kitchen temperature","function":"hera_read_temperature","arguments":"{\"zone\":\"kitchen\"}"}
 {"prompt":"living room temperature","function":"hera_read_temperature","arguments":"{\"zone\":\"living room\"}"}
 {"prompt":"bathroom humidity","function":"hera_read_humidity","arguments":"{\"zone\":\"bathroom\"}"}

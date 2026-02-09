@@ -2,77 +2,77 @@
   [
     {"role": "system", "content": "You are a model that can do function calling with the following functions"},
     {"role": "user", "content": "List all the devices in the house."},
-    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_list_devices", "arguments": {}}}]}
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_get_system_summary", "arguments": {}}}]}
   ],
   [
     {"role": "system", "content": "You are a model that can do function calling with the following functions"},
     {"role": "user", "content": "List all devices with their current state (on/off, locked, temperature)."},
-    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_list_devices", "arguments": {}}}]}
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_get_system_summary", "arguments": {}}}]}
   ],
   [
     {"role": "system", "content": "You are a model that can do function calling with the following functions"},
     {"role": "user", "content": "Show me the device topology, including child devices."},
-    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_list_devices", "arguments": {}}}]}
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_get_system_summary", "arguments": {}}}]}
   ],
   [
     {"role": "system", "content": "You are a model that can do function calling with the following functions"},
     {"role": "user", "content": "Display a table of all entities by zone and device type."},
-    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_list_devices", "arguments": {}}}]}
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_get_system_summary", "arguments": {}}}]}
   ],
   [
     {"role": "system", "content": "You are a model that can do function calling with the following functions"},
     {"role": "user", "content": "Can you list everything that is connected to the smart home?"},
-    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_list_devices", "arguments": {}}}]}
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_get_system_summary", "arguments": {}}}]}
   ],
   [
     {"role": "system", "content": "You are a model that can do function calling with the following functions"},
     {"role": "user", "content": "Describe flood detection sensor."},
-    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_describe_device", "arguments": {"device":"flood detection sensor"}}}]}
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_get_device_description", "arguments": {"device":"flood detection sensor"}}}]}
   ],
   [
     {"role": "system", "content": "You are a model that can do function calling with the following functions"},
     {"role": "user", "content": "List actions of proximity sensor."},
-    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_describe_device", "arguments": {"device":"proximity sensor"}}}]}
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_get_device_description", "arguments": {"device":"proximity sensor"}}}]}
   ],
   [
     {"role": "system", "content": "You are a model that can do function calling with the following functions"},
-    {"role": "user", "content": "Describe the actions of the garage door actuator."},
-    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_describe_device", "arguments": {"device":"garage door actuator"}}}]}
+    {"role": "user", "content": "Describe the operations of the garage door actuator."},
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_get_device_description", "arguments": {"device":"garage door actuator"}}}]}
   ],
   [
     {"role": "system", "content": "You are a model that can do function calling with the following functions"},
     {"role": "user", "content": "Tell me about the capabilities of my garage door sensor."},
-    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_describe_device", "arguments": {"device":"garage door sensor"}}}]}
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_get_device_description", "arguments": {"device":"garage door sensor"}}}]}
   ],
   [
     {"role": "system", "content": "You are a model that can do function calling with the following functions"},
     {"role": "user", "content": "Show me the actions supported by the window contact sensors."},
-    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_describe_device", "arguments": {"device":"window contact sensors"}}}]}
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_get_device_description", "arguments": {"device":"window contact sensors"}}}]}
   ],
   [
     {"role": "system", "content": "You are a model that can do function calling with the following functions"},
     {"role": "user", "content": "Please list the actions supported by luminosity sensor from balcony."},
-    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_describe_device", "arguments": {"device":"luminosity sensor from balcony"}}}]}
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_get_device_description", "arguments": {"device":"luminosity sensor from balcony"}}}]}
   ],
   [
     {"role": "system", "content": "You are a model that can do function calling with the following functions"},
     {"role": "user", "content": "Actions supported by humidity sensor?"},
-    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_describe_device", "arguments": {"device":"humidity sensor"}}}]}
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_get_device_description", "arguments": {"device":"humidity sensor"}}}]}
   ],
   [
     {"role": "system", "content": "You are a model that can do function calling with the following functions"},
     {"role": "user", "content": "Please get a definition of the speed sensor."},
-    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_describe_device", "arguments": {"device":"speed sensor"}}}]}
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_get_device_description", "arguments": {"device":"speed sensor"}}}]}
   ],
   [
     {"role": "system", "content": "You are a model that can do function calling with the following functions"},
     {"role": "user", "content": "Create a comprehensive description of the garden moisture sensor."},
-    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_describe_device", "arguments": {"device":"garden moisture sensor"}}}]}
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_get_device_description", "arguments": {"device":"garden moisture sensor"}}}]}
   ],
   [
     {"role": "system", "content": "You are a model that can do function calling with the following functions"},
     {"role": "user", "content": "What do you know about motion detection device from garage."},
-    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_describe_device", "arguments": {"device":"motion detection device from garage"}}}]}
+    {"role": "model", "tool_calls": [{"type": "function", "function": {"name": "hera_get_device_description", "arguments": {"device":"motion detection device from garage"}}}]}
   ],
   [
     {"role": "system", "content": "You are a model that can do function calling with the following functions"},

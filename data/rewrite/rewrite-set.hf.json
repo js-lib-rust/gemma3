@@ -2,87 +2,882 @@
   [
     {"role": "system", "content": "Classify and rewrite next user prompt"},
     {"role": "user", "content": "start heater"},
-    {"role": "model", "content": "hera: Start the central heating."}
+    {"role": "model", "content": "home: Turn on the central heating."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "activate heater"},
+    {"role": "model", "content": "home: Turn on the central heating."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "open heater"},
+    {"role": "model", "content": "home: Turn on the central heating."}
   ],
   [
     {"role": "system", "content": "Classify and rewrite next user prompt"},
     {"role": "user", "content": "turn heater on"},
-    {"role": "model", "content": "hera: Start the central heating."}
+    {"role": "model", "content": "home: Turn on the central heating."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "engage heater"},
+    {"role": "model", "content": "home: Turn on the central heating."}
   ],
   [
     {"role": "system", "content": "Classify and rewrite next user prompt"},
     {"role": "user", "content": "turn climate on"},
-    {"role": "model", "content": "hera: Start the central heating."}
+    {"role": "model", "content": "home: Turn on the central heating."}
   ],
   [
     {"role": "system", "content": "Classify and rewrite next user prompt"},
     {"role": "user", "content": "turn on the climate"},
-    {"role": "model", "content": "hera: Start the central heating."}
+    {"role": "model", "content": "home: Turn on the central heating."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "engage the climate"},
+    {"role": "model", "content": "home: Turn on the central heating."}
   ],
   [
     {"role": "system", "content": "Classify and rewrite next user prompt"},
     {"role": "user", "content": "stop heater"},
-    {"role": "model", "content": "hera: Stop the central heating."}
+    {"role": "model", "content": "home: Turn off the central heating."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "deactivate heater"},
+    {"role": "model", "content": "home: Turn off the central heating."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "close heater"},
+    {"role": "model", "content": "home: Turn off the central heating."}
   ],
   [
     {"role": "system", "content": "Classify and rewrite next user prompt"},
     {"role": "user", "content": "turn heater off"},
-    {"role": "model", "content": "hera: Stop the central heating."}
+    {"role": "model", "content": "home: Turn off the central heating."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "disengage heater"},
+    {"role": "model", "content": "home: Turn off the central heating."}
   ],
   [
     {"role": "system", "content": "Classify and rewrite next user prompt"},
     {"role": "user", "content": "turn climate off"},
-    {"role": "model", "content": "hera: Stop the central heating."}
+    {"role": "model", "content": "home: Turn off the central heating."}
   ],
   [
     {"role": "system", "content": "Classify and rewrite next user prompt"},
     {"role": "user", "content": "turn off the climate"},
-    {"role": "model", "content": "hera: Stop the central heating."}
+    {"role": "model", "content": "home: Turn off the central heating."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "disengage the climate"},
+    {"role": "model", "content": "home: Turn off the central heating."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "what's living room temp"},
+    {"role": "model", "content": "home: Read the temperature sensor in the living room."}
   ],
   [
     {"role": "system", "content": "Classify and rewrite next user prompt"},
     {"role": "user", "content": "living temp"},
-    {"role": "model", "content": "hera: What is the living room temperature?"}
+    {"role": "model", "content": "home: Read the temperature sensor in the living room."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "living room temperature"},
+    {"role": "model", "content": "home: Read the temperature sensor in the living room."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "living humidity"},
+    {"role": "model", "content": "home: Read the humidity sensor in the living room."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "living room brightness"},
+    {"role": "model", "content": "home: Read the luminosity sensor in the living room."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "living air has a strong smell"},
+    {"role": "model", "content": "home: Read the air quality sensor in the living room."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "co2 in living room"},
+    {"role": "model", "content": "home: Read the carbon dioxide sensor in the living room."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "humidity in the bedroom"},
+    {"role": "model", "content": "home: Read the humidity sensor in the bedroom."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "get temperature in the sleeping porch"},
+    {"role": "model", "content": "home: Read the temperature sensor in the sleeping porch."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "how sunny is the sleeping porch?"},
+    {"role": "model", "content": "home: Read the luminosity sensor in the sleeping porch."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "is window opened in the bedroom"},
+    {"role": "model", "content": "home: Read the window sensor in the bedroom."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "is flood alarm in bedroom?"},
+    {"role": "model", "content": "home: Read the flood sensor in the bedroom."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "air quality in bedroom"},
+    {"role": "model", "content": "home: Read the air quality sensor in the bedroom."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "what's temperature in children room"},
+    {"role": "model", "content": "home: Read the temperature sensor in the children's room."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "air quality in children's room"},
+    {"role": "model", "content": "home: Read the air quality sensor in the children's room."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "children room co2 level"},
+    {"role": "model", "content": "home: Read the carbon dioxide sensor in the children's room."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "is window opened in children room"},
+    {"role": "model", "content": "home: Read the window sensor in the children's room."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "how bright is in the children room?"},
+    {"role": "model", "content": "home: Read the luminosity sensor in the children's room."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "get lobby motion detection sensor"},
+    {"role": "model", "content": "home: Read the motion detection sensor in the lobby."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "lobby's luminosity"},
+    {"role": "model", "content": "home: Read the luminosity sensor in the lobby."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "is front door unlocked?"},
+    {"role": "model", "content": "home: Read the lock sensor in the front door."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "is latch off on front door?"},
+    {"role": "model", "content": "home: Read the lock sensor in the front door."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "temperature in hallway"},
+    {"role": "model", "content": "home: Read the temperature sensor in the hallway."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "co2 level in hallway"},
+    {"role": "model", "content": "home: Read the carbon dioxide sensor in the hallway."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "entrance hall air quality"},
+    {"role": "model", "content": "home: Read the air quality sensor in the entrance hall."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "do you detect some motion on entrance hall?"},
+    {"role": "model", "content": "home: Read the motion detection sensor in the entrance hall."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "do you notice movement in hallway?"},
+    {"role": "model", "content": "home: Read the motion detection sensor in the hallway."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "living water leaks"},
+    {"role": "model", "content": "home: Read the water leak sensor in the living room."}
   ],
   [
     {"role": "system", "content": "Classify and rewrite next user prompt"},
     {"role": "user", "content": "kitchen humidity"},
-    {"role": "model", "content": "hera: What is the kitchen humidity?"}
+    {"role": "model", "content": "home: Read the humidity sensor in the kitchen."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "display kitchen humidity"},
+    {"role": "model", "content": "home: Read the humidity sensor in the kitchen."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "kitchen fire alarm"},
+    {"role": "model", "content": "home: Read the fire alarm sensor in the kitchen."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "is there smoke in kitchen?"},
+    {"role": "model", "content": "home: Read the smoke sensor in the kitchen."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "have we water leaks in kitchen?"},
+    {"role": "model", "content": "home: Read the water leak sensor in the kitchen."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "kitchen flood detector"},
+    {"role": "model", "content": "home: Read the flood sensor in the kitchen."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "is flood in kitchen?"},
+    {"role": "model", "content": "home: Read the flood sensor in the kitchen."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "carbon level in the kitchen"},
+    {"role": "model", "content": "home: Read the carbon dioxide sensor in the kitchen."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "kitchen air monitor"},
+    {"role": "model", "content": "home: Read the air quality sensor in the kitchen."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "is kitchen door shut?"},
+    {"role": "model", "content": "home: Read the door sensor in the kitchen."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "kitchen gas detector"},
+    {"role": "model", "content": "home: Read the gas sensor in the kitchen."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "what is the gas concentration in the kitchen"},
+    {"role": "model", "content": "home: Read the gas sensor in the kitchen."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "is gas alarm in the kitchen?"},
+    {"role": "model", "content": "home: Read the gas sensor in the kitchen."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "do we have gas leaks in the kitchen?"},
+    {"role": "model", "content": "home: Read the gas sensor in the kitchen."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "humidity in bathroom"},
+    {"role": "model", "content": "home: Read the humidity sensor in the bathroom."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "is there flood alarm in the bathroom"},
+    {"role": "model", "content": "home: Read the flood sensor in the bathroom."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "is bathroom window opened?"},
+    {"role": "model", "content": "home: Read the window sensor in the bathroom."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "is the bath door closed?"},
+    {"role": "model", "content": "home: Read the door sensor in the bathroom."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "is bathroom not shut?"},
+    {"role": "model", "content": "home: Read the door sensor in the bathroom."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "what is temperature in the bath?"},
+    {"role": "model", "content": "home: Read the temperature sensor in the bathroom."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "temperature in balcony"},
+    {"role": "model", "content": "home: Read the temperature sensor in the balcony."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "luminosity in balcony"},
+    {"role": "model", "content": "home: Read the luminosity sensor in the balcony."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "is there lot of water in the balcony?"},
+    {"role": "model", "content": "home: Read the flood sensor in the balcony."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "is the balcony door not closed properly?"},
+    {"role": "model", "content": "home: Read the door sensor in the balcony."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "is there water accumulating on the veranda"},
+    {"role": "model", "content": "home: Read the flood sensor in the veranda."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "how is veranda door?"},
+    {"role": "model", "content": "home: Read the door sensor in the veranda."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "what's the porch temperature?"},
+    {"role": "model", "content": "home: Read the temperature sensor in the porch."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "porch temperature"},
+    {"role": "model", "content": "home: Read the temperature sensor in the porch."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "is the porch door properly fastened?"},
+    {"role": "model", "content": "home: Read the door sensor in the porch."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "gallery light level"},
+    {"role": "model", "content": "home: Read the luminosity sensor in the gallery."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "are there suspicious movements in the porch?"},
+    {"role": "model", "content": "home: Read the motion detection sensor in the porch."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "what's humidity from cellar"},
+    {"role": "model", "content": "home: Read the humidity sensor in the cellar."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "cellar intruders?"},
+    {"role": "model", "content": "home: Read the motion detection sensor in the cellar."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "is cellar door opened?"},
+    {"role": "model", "content": "home: Read the door sensor in the cellar."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "do you detect suspicious movements in the cellar?"},
+    {"role": "model", "content": "home: Read the motion detection sensor in the cellar."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "is pantry not locked?"},
+    {"role": "model", "content": "home: Read the lock sensor in the pantry door."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "what is pantry humidity"},
+    {"role": "model", "content": "home: Read the humidity sensor in the pantry."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "still room humidity"},
+    {"role": "model", "content": "home: Read the humidity sensor in the stillroom."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "what's the temperature in the stillroom?"},
+    {"role": "model", "content": "home: Read the temperature sensor in the stillroom."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "what is humidity in the store room"},
+    {"role": "model", "content": "home: Read the humidity sensor in the storeroom."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "temperature in store room"},
+    {"role": "model", "content": "home: Read the temperature sensor in the storeroom."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "is fire alarm in store room"},
+    {"role": "model", "content": "home: Read the fire alarm sensor in the storeroom."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "is there smoke in the storeroom?"},
+    {"role": "model", "content": "home: Read the smoke sensor in the storeroom."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "do we have intruder alarm in the storeroom?"},
+    {"role": "model", "content": "home: Read the motion detection sensor in the storeroom."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "is stillroom locked?"},
+    {"role": "model", "content": "home: Read the lock sensor in the stillroom door."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "tv set sound level"},
+    {"role": "model", "content": "home: Read the sound level from the TV set."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "music player audio level"},
+    {"role": "model", "content": "home: Read the sound level from the music player."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "digital music player loudness"},
+    {"role": "model", "content": "home: Read the sound level from the music player."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "how loud is media player"},
+    {"role": "model", "content": "home: Read the sound level from the media player."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "speaker level"},
+    {"role": "model", "content": "home: Read the sound level from the media player."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "what is the speakers level"},
+    {"role": "model", "content": "home: Read the sound level from the media player."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "how loud are speakers"},
+    {"role": "model", "content": "home: Read the sound level from the media player."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "how noisy is that bloody speaker?"},
+    {"role": "model", "content": "home: Read the sound level from the media player."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "front bell loudness"},
+    {"role": "model", "content": "home: Read the sound level from the doorbell."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "door bell level"},
+    {"role": "model", "content": "home: Read the sound level from the doorbell."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "entrance door audio level"},
+    {"role": "model", "content": "home: Read the sound level from the doorbell."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "front door buzzer level"},
+    {"role": "model", "content": "home: Read the sound level from the doorbell."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "level of apartment buzzer"},
+    {"role": "model", "content": "home: Read the sound level from the doorbell."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "what is the front door chime's level?"},
+    {"role": "model", "content": "home: Read the sound level from the doorbell."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "how loud is the doorbell from entrance"},
+    {"role": "model", "content": "home: Read the sound level from the doorbell."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "how noisy is that doorbell?"},
+    {"role": "model", "content": "home: Read the sound level from the doorbell."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "moisture sensors from greenhouse"},
+    {"role": "model", "content": "home: Read the soil moisture sensors in the greenhouse."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "read moisture sensors from greenhouse"},
+    {"role": "model", "content": "home: Read the soil moisture sensors in the greenhouse."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "greenhouse moisture sensors"},
+    {"role": "model", "content": "home: Read the soil moisture sensors in the greenhouse."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "flowers moisture sensors"},
+    {"role": "model", "content": "home: Read the soil moisture sensors in the flowers pots."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "what is the soil moisture in the flowers pots?"},
+    {"role": "model", "content": "home: Read the soil moisture sensors in the flowers pots."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "moisture on tomatoes pots"},
+    {"role": "model", "content": "home: Read the soil moisture sensors in the tomatoes pots."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "nutrients level in potatoes seedlings"},
+    {"role": "model", "content": "home: Read the nutrients sensors in the potatoes seedlings."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "ph in balcony planter"},
+    {"role": "model", "content": "home: Read the soil pH sensors in the balcony planter."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "ph in bedroom flowerpot"},
+    {"role": "model", "content": "home: Read the soil pH sensors in the bedroom flowerpot."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "moisture in bedroom flowerpot"},
+    {"role": "model", "content": "home: Read the soil moisture sensors in the bedroom flowerpot."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "nutrients concentration in flowers container"},
+    {"role": "model", "content": "home: Read the nutrients sensors in the flowers container."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "concentration of nutrients in aquaponic container"},
+    {"role": "model", "content": "home: Read the nutrients sensors in the aquaponic container."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "is water clean in aquaponic container?"},
+    {"role": "model", "content": "home: Read the water quality sensors in the aquaponic container."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "get fire alarm from greenhouse"},
+    {"role": "model", "content": "home: Read the fire alarm sensor in the greenhouse."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "co2 level in greenhouse"},
+    {"role": "model", "content": "home: Read the carbon dioxide sensor in the greenhouse."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "is greenhouse door secured?"},
+    {"role": "model", "content": "home: Read the lock sensor in the greenhouse door."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "did i forget to lock the greenhouse?"},
+    {"role": "model", "content": "home: Read the lock sensor in the greenhouse door."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "do we have flood alarm in the greenhouse?"},
+    {"role": "model", "content": "home: Read the flood sensor in the greenhouse."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "any intruders in greenhouse?"},
+    {"role": "model", "content": "home: Read the motion detection sensor in the greenhouse."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "read sensors from home"},
+    {"role": "model", "content": "home: Read all the sensors in the house."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "read all sensors"},
+    {"role": "model", "content": "home: Read all the sensors in the house."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "sensors values"},
+    {"role": "model", "content": "home: Read all the sensors in the house."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "read sensors from apartment"},
+    {"role": "model", "content": "home: Read all the sensors in the house."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "readings of the apartment's sensors"},
+    {"role": "model", "content": "home: Read all the sensors in the house."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "print sensor values"},
+    {"role": "model", "content": "home: Read all the sensors in the house."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "read temperature sensors"},
+    {"role": "model", "content": "home: Read all the temperature sensors in the house."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "get current readings from humidity sensors"},
+    {"role": "model", "content": "home: Read all the humidity sensors in the house."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "motion detection sensor values"},
+    {"role": "model", "content": "home: Read all the motion detection sensors in the house."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "is there any intruder alarms?"},
+    {"role": "model", "content": "home: Read all the motion detection sensors in the house."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "is there any flood alarm?"},
+    {"role": "model", "content": "home: Read all the flood sensors in the house."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "is there any fire alarm in the house?"},
+    {"role": "model", "content": "home: Read all the fire alarm sensors in the house."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "is there smoke somewhere in apartment?"},
+    {"role": "model", "content": "home: Read all the smoke sensors in the house."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "is there some water leaks anywhere?"},
+    {"role": "model", "content": "home: Read all the water leak sensors in the house."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "are there any not locked doors?"},
+    {"role": "model", "content": "home: Read all the lock sensors in the house."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "are there any opened windows?"},
+    {"role": "model", "content": "home: Read all the window sensors in the house."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "is there an open window?"},
+    {"role": "model", "content": "home: Read all the window sensors in the house."}
   ],
   [
     {"role": "system", "content": "Classify and rewrite next user prompt"},
     {"role": "user", "content": "save blood 125 85 70"},
-    {"role": "model", "content": "health: Save my blood pressure measurement of 125/85 mmHg and heart rate of 70 bmp."}
+    {"role": "model", "content": "health: Save my blood pressure measurement of 125/85 mmHg and heart rate of 70 bpm."}
   ],
   [
     {"role": "system", "content": "Classify and rewrite next user prompt"},
-    {"role": "user", "content": "save my blood 125 85 70"},
-    {"role": "model", "content": "health: Save my blood pressure measurement of 125/85 mmHg and heart rate of 70 bmp."}
+    {"role": "user", "content": "save my blood 128 81 55"},
+    {"role": "model", "content": "health: Save my blood pressure measurement of 128/81 mmHg and heart rate of 55 bpm."}
   ],
   [
     {"role": "system", "content": "Classify and rewrite next user prompt"},
-    {"role": "user", "content": "record blood measurements: 125 85 70"},
-    {"role": "model", "content": "health: Save my blood pressure measurement of 125/85 mmHg and heart rate of 70 bmp."}
+    {"role": "user", "content": "save blood 115 75 60 to Gavriliu Mihaela"},
+    {"role": "model", "content": "health: Save the blood pressure measurement of 115/75 mmHg and heart rate of 60 bpm for Gavriliu Mihaela."}
   ],
   [
     {"role": "system", "content": "Classify and rewrite next user prompt"},
-    {"role": "user", "content": "save temperature 35.1"},
-    {"role": "model", "content": "health: Save my body temperature of 35.1 Celsius degrees."}
+    {"role": "user", "content": "save blood readings: 130 82 85"},
+    {"role": "model", "content": "health: Save my blood pressure measurement of 130/82 mmHg and heart rate of 85 bpm."}
   ],
   [
     {"role": "system", "content": "Classify and rewrite next user prompt"},
-    {"role": "user", "content": "save my temperature 35.1"},
-    {"role": "model", "content": "health: Save my body temperature of 35.1 Celsius degrees."}
+    {"role": "user", "content": "save rotaru lucian blood readings: 112 65 78"},
+    {"role": "model", "content": "health: Save the blood pressure measurement of 112/65 mmHg and heart rate of 78 bpm for Rotaru Lucian."}
   ],
   [
     {"role": "system", "content": "Classify and rewrite next user prompt"},
-    {"role": "user", "content": "save weight 90"},
-    {"role": "model", "content": "health: Save my body weight of 90 kg."}
+    {"role": "user", "content": "record blood measurements: 110 66 84"},
+    {"role": "model", "content": "health: Save my blood pressure measurement of 110/66 mmHg and heart rate of 84 bpm."}
   ],
   [
     {"role": "system", "content": "Classify and rewrite next user prompt"},
-    {"role": "user", "content": "save my weight 90"},
-    {"role": "model", "content": "health: Save my body weight of 90 kg."}
+    {"role": "user", "content": "logs blood readings: 133 92 87"},
+    {"role": "model", "content": "health: Save my blood pressure measurement of 133/92 mmHg and heart rate of 87 bpm."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "logs my blood readings: 136 90 82"},
+    {"role": "model", "content": "health: Save my blood pressure measurement of 136/90 mmHg and heart rate of 82 bpm."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "logs blood readings: 133 92 87 for miron elena daniela"},
+    {"role": "model", "content": "health: Save the blood pressure measurement of 133/92 mmHg and heart rate of 87 bpm for Miron Elena Daniela."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "write blood readings: 119 with 81 and 93"},
+    {"role": "model", "content": "health: Save my blood pressure measurement of 119/81 mmHg and heart rate of 93 bpm."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "write my blood readings: 120 with 84 and 76"},
+    {"role": "model", "content": "health: Save my blood pressure measurement of 120/84 mmHg and heart rate of 76 bpm."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "write blood readings: 125 with 83 and 73 for rotaru iulian"},
+    {"role": "model", "content": "health: Save the blood pressure measurement of 125/83 mmHg and heart rate of 73 bpm for Rotaru Iulian."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "save temperature 34.3"},
+    {"role": "model", "content": "health: Save my body temperature of 34.30 °C."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "save temperature 35.6 for gogălniceanu ștefan"},
+    {"role": "model", "content": "health: Save the body temperature of 35.60 °C for Gogălniceanu Ștefan."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "logs body temperature 35.9"},
+    {"role": "model", "content": "health: Save my body temperature of 35.90 °C."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "logs body temperature 36.2 to lontkowschi george"},
+    {"role": "model", "content": "health: Save the body temperature of 36.20 °C for Lontkowschi George."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "write temperature 34.8"},
+    {"role": "model", "content": "health: Save my body temperature of 34.80 °C."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "write my temperature 35.2"},
+    {"role": "model", "content": "health: Save my body temperature of 35.20 °C."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "write temperature 34.1 for teodorescu tiberiu dinu"},
+    {"role": "model", "content": "health: Save the body temperature of 34.10 °C for Teodorescu Tiberiu Dinu."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "record my temperature: 37.1"},
+    {"role": "model", "content": "health: Save my body temperature of 37.10 °C."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "record dorneanu deliana temperature: 36.7"},
+    {"role": "model", "content": "health: Save the body temperature of 36.70 °C for Dorneanu Deliana."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "save weight 87.5"},
+    {"role": "model", "content": "health: Save my body weight of 87.50 kg."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "save weight of 88.5 kg to preda marin"},
+    {"role": "model", "content": "health: Save the body weight of 88.50 kg for Preda Marin."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "register my weight of 94"},
+    {"role": "model", "content": "health: Save my body weight of 94.00 kg."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "write weight 74 to Jipa Bogdan"},
+    {"role": "model", "content": "health: Save the body weight of 74.00 kg for Jipa Bogdan."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "record weight 76.5 for rotaru mihai"},
+    {"role": "model", "content": "health: Save the body weight of 76.50 kg for Rotaru Mihai."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "save my weight 88"},
+    {"role": "model", "content": "health: Save my body weight of 88.00 kg."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "save dorneanu sorana ioana weight 22.5"},
+    {"role": "model", "content": "health: Save the body weight of 22.50 kg for Dorneanu Sorana Ioana."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "logs weight of 103.5 for rotaru stefan"},
+    {"role": "model", "content": "health: Save the body weight of 103.50 kg for Rotaru Ștefan."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "record my weight 62 to medical database"},
+    {"role": "model", "content": "health: Save my body weight of 62.00 kg."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "record adam nicolae weight 66.5"},
+    {"role": "model", "content": "health: Save the body weight of 66.50 kg for Adam Nicolae."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "write marton csaba weight of 77 kg"},
+    {"role": "model", "content": "health: Save the body weight of 77.00 kg for Marton Csaba."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "list health measurements"},
+    {"role": "model", "content": "health: List today health readings in table format."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "print health measurements"},
+    {"role": "model", "content": "health: List today health readings in table format."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "show my health measurements"},
+    {"role": "model", "content": "health: List today health readings in table format."}
   ],
   [
     {"role": "system", "content": "Classify and rewrite next user prompt"},
@@ -91,7 +886,22 @@
   ],
   [
     {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "health records"},
+    {"role": "model", "content": "health: List today health readings in table format."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "medical readings"},
+    {"role": "model", "content": "health: List today health readings in table format."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
     {"role": "user", "content": "display health readings"},
+    {"role": "model", "content": "health: List today health readings in table format."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "print medical records"},
     {"role": "model", "content": "health: List today health readings in table format."}
   ],
   [
@@ -103,6 +913,36 @@
     {"role": "system", "content": "Classify and rewrite next user prompt"},
     {"role": "user", "content": "yesterday health measurements"},
     {"role": "model", "content": "health: List yesterday health readings in table format."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "yesterday medical readings"},
+    {"role": "model", "content": "health: List yesterday health readings in table format."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "yesterday medical records"},
+    {"role": "model", "content": "health: List yesterday health readings in table format."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "medical readings from january 22"},
+    {"role": "model", "content": "health: List the health readings from January 22, 2026 in table format."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "health records from february 2"},
+    {"role": "model", "content": "health: List the health readings from February 2, 2026 in table format."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "health measurement in 2026-01-13"},
+    {"role": "model", "content": "health: List the health readings from January 13, 2026 in table format."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "list health measurement in 2026-02-04"},
+    {"role": "model", "content": "health: List the health readings from February 4, 2026 in table format."}
   ],
   [
     {"role": "system", "content": "Classify and rewrite next user prompt"},
@@ -126,73 +966,318 @@
   ],
   [
     {"role": "system", "content": "Classify and rewrite next user prompt"},
-    {"role": "user", "content": "medical report from yesterday measurements"},
+    {"role": "user", "content": "health report from yesterday measurements"},
     {"role": "model", "content": "health: Create a medical report from yesterday readings."}
   ],
   [
     {"role": "system", "content": "Classify and rewrite next user prompt"},
     {"role": "user", "content": "medical report for january 12"},
-    {"role": "model", "content": "health: Create a medical report from January 12, 2026 readings."}
+    {"role": "model", "content": "health: Create a medical report from readings from January 12, 2026."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "print health report for 2025-12-01"},
+    {"role": "model", "content": "health: Create a medical report from readings from December 1, 2025."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "health status report for 2025-11-12"},
+    {"role": "model", "content": "health: Create a medical report from readings from November 12, 2025."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "wind speed from meteo station"},
+    {"role": "model", "content": "weather: Read the wind speed from local weather station."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "what's wind speed on my station?"},
+    {"role": "model", "content": "weather: Read the wind speed from local weather station."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "weather station temperature"},
+    {"role": "model", "content": "weather: Read the temperature from local weather station."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "read temperature from local weather station"},
+    {"role": "model", "content": "weather: Read the temperature from local weather station."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "humidity on weather station"},
+    {"role": "model", "content": "weather: Read  the humidity from local weather station."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "air quality from weather station"},
+    {"role": "model", "content": "weather: Read the air quality from local weather station."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "read air quality on my weather station"},
+    {"role": "model", "content": "weather: Read the air quality from local weather station."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "weather status from meteo station"},
+    {"role": "model", "content": "weather: Read weather data from local weather station."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "data from local weather station"},
+    {"role": "model", "content": "weather: Read weather data from local weather station."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "my meteo station data"},
+    {"role": "model", "content": "weather: Read weather data from local weather station."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "local weather station data"},
+    {"role": "model", "content": "weather: Read weather data from local weather station."}
   ],
   [
     {"role": "system", "content": "Classify and rewrite next user prompt"},
     {"role": "user", "content": "how is weather"},
-    {"role": "model", "content": "weather: What is the current weather in my location?"}
+    {"role": "model", "content": "weather: What is the weather like in my location right now?"}
   ],
   [
     {"role": "system", "content": "Classify and rewrite next user prompt"},
-    {"role": "user", "content": "how is outside"},
-    {"role": "model", "content": "weather: What is the current weather in my location?"}
+    {"role": "user", "content": "is it raining right now in tomești, romania"},
+    {"role": "model", "content": "weather: What is the weather like in Tomești, Romania right now?"}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "is it sunny right now in siliștea, gumești, romania"},
+    {"role": "model", "content": "weather: What is the weather like in Siliștea, Gumești, Romania right now?"}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "check weather"},
+    {"role": "model", "content": "weather: What is the weather like in my location right now?"}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "how weather info"},
+    {"role": "model", "content": "weather: What is the weather like in my location right now?"}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "tell me the weather in iasi, romania"},
+    {"role": "model", "content": "weather: What is the weather like in Iași, Romania right now?"}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "how is outdoor?"},
+    {"role": "model", "content": "weather: What is the weather like in my location right now?"}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "how is weather in bucharest"},
+    {"role": "model", "content": "weather: What is the weather like in Bucharest, Romania right now?"}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "how's outside"},
+    {"role": "model", "content": "weather: What is the weather like in my location right now?"}
   ],
   [
     {"role": "system", "content": "Classify and rewrite next user prompt"},
     {"role": "user", "content": "how cold is out there"},
-    {"role": "model", "content": "weather: What is the current weather in my location?"}
+    {"role": "model", "content": "weather: What is the weather like in my location right now?"}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "how warm is outside"},
+    {"role": "model", "content": "weather: What is the weather like in my location right now?"}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "how cold is in piatra-neamț, romania"},
+    {"role": "model", "content": "weather: What is the weather like in Piatra-Neamț, Romania right now?"}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "i wish to know the weather for cluj napoca, romania"},
+    {"role": "model", "content": "weather: What is the weather like in Cluj-Napoca, Romania right now?"}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "how is current weather on california"},
+    {"role": "model", "content": "weather: What is the weather like in California right now?"}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "today weather forecast"},
+    {"role": "model", "content": "weather: What is the hourly weather forecast for today in my location, in tabular form?"}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "today weather forecast in paris"},
+    {"role": "model", "content": "weather: What is the hourly weather forecast for today in Paris, France, in tabular form?"}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "today weather forecast for bucharest"},
+    {"role": "model", "content": "weather: What is the hourly weather forecast for today in Bucharest, Romania, in tabular form?"}
   ],
   [
     {"role": "system", "content": "Classify and rewrite next user prompt"},
     {"role": "user", "content": "today forecast"},
-    {"role": "model", "content": "weather: What is today hourly weather forecast, in table format?"}
+    {"role": "model", "content": "weather: What is the hourly weather forecast for today in my location, in tabular form?"}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "how will be weather today?"},
+    {"role": "model", "content": "weather: What is the hourly weather forecast for today in my location, in tabular form?"}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "how will be weather today on deprecen, slovakia?"},
+    {"role": "model", "content": "weather: What is the hourly weather forecast for today in Deprecen, Slovakia, in tabular form?"}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "what will weather be like today?"},
+    {"role": "model", "content": "weather: What is the hourly weather forecast for today in my location, in tabular form?"}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "will be hot today?"},
+    {"role": "model", "content": "weather: What is the hourly weather forecast for today in my location, in tabular form?"}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "will be cold today in valea lupului, romania?"},
+    {"role": "model", "content": "weather: What is the hourly weather forecast for today in Valea Lupului, Romania, in tabular form?"}
   ],
   [
     {"role": "system", "content": "Classify and rewrite next user prompt"},
     {"role": "user", "content": "hourly forecast for today"},
-    {"role": "model", "content": "weather: What is today hourly weather forecast, in table format?"}
+    {"role": "model", "content": "weather: What is the hourly weather forecast for today in my location, in tabular form?"}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "hourly forecast for today on sculeni, iași, românia"},
+    {"role": "model", "content": "weather: What is the hourly weather forecast for today in Sculeni, Iași, România, in tabular form?"}
   ],
   [
     {"role": "system", "content": "Classify and rewrite next user prompt"},
     {"role": "user", "content": "list forecast for today"},
-    {"role": "model", "content": "weather: What is today hourly weather forecast, in table format?"}
+    {"role": "model", "content": "weather: What is the hourly weather forecast for today in my location, in tabular form?"}
   ],
   [
     {"role": "system", "content": "Classify and rewrite next user prompt"},
     {"role": "user", "content": "display today forecast"},
-    {"role": "model", "content": "weather: What is today hourly weather forecast, in table format?"}
+    {"role": "model", "content": "weather: What is the hourly weather forecast for today in my location, in tabular form?"}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "display today forecast in chicirea, iasi, romania"},
+    {"role": "model", "content": "weather: What is the hourly weather forecast for today in Chicirea, Iași, Romania, in tabular form?"}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "weather forecast"},
+    {"role": "model", "content": "weather: What is the weather forecast for the next two weeks in my location, in tabular form?"}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "weather forecast in alba-iulia, romania"},
+    {"role": "model", "content": "weather: What is the weather forecast for the next two weeks in Alba-Iulia, Romania, in tabular form?"}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "daily weather forecast"},
+    {"role": "model", "content": "weather: What is the weather forecast for the next two weeks in my location, in tabular form?"}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "print daily forecast"},
+    {"role": "model", "content": "weather: What is the weather forecast for the next two weeks in my location, in tabular form?"}
   ],
   [
     {"role": "system", "content": "Classify and rewrite next user prompt"},
     {"role": "user", "content": "next week forecast"},
-    {"role": "model", "content": "weather: What is the weather forecast for the next week, in table format?"}
+    {"role": "model", "content": "weather: What is the weather forecast for next week in my location, in tabular form?"}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "weather forecast for this week"},
+    {"role": "model", "content": "weather: What is the weather forecast for this week in my location, in tabular form?"}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "this week forecast"},
+    {"role": "model", "content": "weather: What is the weather forecast for this week, in my location in tabular form?"}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "this week forecast on botosani, romania"},
+    {"role": "model", "content": "weather: What is the weather forecast for this week in Botosani, Romania, in tabular form?"}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "this week forecast for suceava, romania"},
+    {"role": "model", "content": "weather: What is the weather forecast for this week in Suceava, Romania, in tabular form?"}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "give weather stats for this week"},
+    {"role": "model", "content": "weather: What is the weather forecast for this week in my location, in tabular form?"}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "what are chances of hail this week"},
+    {"role": "model", "content": "weather: What is the weather forecast for this week in my location, in tabular form?"}
   ],
   [
     {"role": "system", "content": "Classify and rewrite next user prompt"},
     {"role": "user", "content": "get forecast for next two weeks"},
-    {"role": "model", "content": "weather: What is the weather forecast for the next two weeks, in table format?"}
+    {"role": "model", "content": "weather: What is the weather forecast for the next two weeks in my location, in tabular form?"}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "get forecast for next two weeks in vălenii de jos, timiș, românia"},
+    {"role": "model", "content": "weather: What is the weather forecast for the next two weeks in Vălenii de jos, Timiș, România, in tabular form?"}
   ],
   [
     {"role": "system", "content": "Classify and rewrite next user prompt"},
     {"role": "user", "content": "next 3 days forecast"},
-    {"role": "model", "content": "weather: What is the weather forecast for the next 3 days, in table format?"}
+    {"role": "model", "content": "weather: What is the weather forecast for the next 3 days in my location, in tabular form?"}
   ],
   [
     {"role": "system", "content": "Classify and rewrite next user prompt"},
     {"role": "user", "content": "forecast for 5 days"},
-    {"role": "model", "content": "weather: What is the weather forecast for the next 5 days, in table format?"}
+    {"role": "model", "content": "weather: What is the weather forecast for the next 5 days in my location, in tabular form?"}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "forecast for 5 days in vaslui, romania"},
+    {"role": "model", "content": "weather: What is the weather forecast for the next 5 days in Vaslui, Romania, in tabular form?"}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "4 days forecast"},
+    {"role": "model", "content": "weather: What is the weather forecast for the next 4 days in my location, in tabular form?"}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "4 days forecast for oradea, romania"},
+    {"role": "model", "content": "weather: What is the weather forecast for the next 4 days in Oradea, Romania, in tabular form?"}
   ],
   [
     {"role": "system", "content": "Classify and rewrite next user prompt"},
     {"role": "user", "content": "list 10 days forecast"},
-    {"role": "model", "content": "weather: What is the weather forecast for the next 10 days, in table format?"}
+    {"role": "model", "content": "weather: What is the weather forecast for the next 10 days in my location, in tabular form?"}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "list 10 days forecast for negrești, vaslui, romania"},
+    {"role": "model", "content": "weather: What is the weather forecast for the next 10 days in Negrești, Vaslui, Romania, in tabular form?"}
   ],
   [
     {"role": "system", "content": "Classify and rewrite next user prompt"},
@@ -206,7 +1291,7 @@
   ],
   [
     {"role": "system", "content": "Classify and rewrite next user prompt"},
-    {"role": "user", "content": "detailed story of leo tolstoy childhood"},
+    {"role": "user", "content": "detailed description of leo tolstoy childhood"},
     {"role": "model", "content": "wikipedia: Create a comprehensive and detailed essay about Leo Tolstoy childhood."}
   ],
   [
@@ -217,7 +1302,7 @@
   [
     {"role": "system", "content": "Classify and rewrite next user prompt"},
     {"role": "user", "content": "describe the eiffel tower in an essay"},
-    {"role": "model", "content": "wikipedia: Create a comprehensive and detailed essay about Eiffel Tower."}
+    {"role": "model", "content": "wikipedia: Create a comprehensive and detailed essay about the Eiffel Tower."}
   ],
   [
     {"role": "system", "content": "Classify and rewrite next user prompt"},
@@ -227,6 +1312,111 @@
   [
     {"role": "system", "content": "Classify and rewrite next user prompt"},
     {"role": "user", "content": "compose an essay about romania early history"},
-    {"role": "model", "content": "wikipedia: Create a comprehensive and detailed essay about Romania early history."}
+    {"role": "model", "content": "wikipedia: Create a comprehensive and detailed essay about Romania's early history."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "load wiki article about oscar wild and create an essay about his work"},
+    {"role": "model", "content": "wikipedia: Create a comprehensive and detailed essay about Oscar Wild's work."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "compose an essay on apollo 11 mission based on wikipedia article"},
+    {"role": "model", "content": "wikipedia: Create a comprehensive and detailed essay about Apollo 11 mission."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "generate an essay about american civil war"},
+    {"role": "model", "content": "wikipedia: Create a comprehensive and detailed essay about the American Civil War."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "create a exhaustive survey of thomas edison inventions"},
+    {"role": "model", "content": "wikipedia: Create a comprehensive and detailed essay about Thomas Edison's inventions."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "historical account about stephen the great conflicts with poland"},
+    {"role": "model", "content": "wikipedia: Create a comprehensive and detailed essay about Stephen the Great conflicts with Poland."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "detailed account about wright flyer first flight"},
+    {"role": "model", "content": "wikipedia: Create a comprehensive and detailed essay about Wright Flyer's first flight."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "historical account of the panama canal"},
+    {"role": "model", "content": "wikipedia: Create a comprehensive and detailed essay about the history of the Panama Canal."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "write a detailed study of danube river"},
+    {"role": "model", "content": "wikipedia: Create a comprehensive and detailed essay about Danube river."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "comprehensive history of the french revolution"},
+    {"role": "model", "content": "wikipedia: Create a comprehensive and detailed essay about French Revolution."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "create a complete examination of the computer architecture"},
+    {"role": "model", "content": "wikipedia: Create a comprehensive and detailed essay about the computer architecture."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "create a broad examination of lunar lander"},
+    {"role": "model", "content": "wikipedia: Create a comprehensive and detailed essay about the lunar lander."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "generate a detailed study of electric vehicles"},
+    {"role": "model", "content": "wikipedia: Create a comprehensive and detailed essay about electric vehicles."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "write a exhaustive study of serengeti ecosystem"},
+    {"role": "model", "content": "wikipedia: Create a comprehensive and detailed essay about Serengeti ecosystem."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "write story about a day from a lions pride"},
+    {"role": "model", "content": "wikipedia: Create a story in a narrative style about a day from a lions pride."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "story about aurel vlaicu attempt to cross mountains"},
+    {"role": "model", "content": "wikipedia: Create a story in a narrative style about Aurel Vlaicu attempt to cross the mountains."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "create a story for marie curie discovery of radioactivity"},
+    {"role": "model", "content": "wikipedia: Create a story in a narrative style about Marie Curie's discovery of radioactivity."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "story primitive humans hunting"},
+    {"role": "model", "content": "wikipedia: Create a story in a narrative style about primitive humans hunting."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "create a story about oscar wilde time in prison"},
+    {"role": "model", "content": "wikipedia: Create a story in a narrative style about Oscar Wilde's time in prison."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "write a story of thomas edison inventing electric light"},
+    {"role": "model", "content": "wikipedia: Create a story in a narrative style about Thomas Edison inventing the electric light."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "story about america discovery by christopher columbus"},
+    {"role": "model", "content": "wikipedia: Create a story in a narrative style about the America's discovery by Christopher Columbus."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "create a story about jack london participation in gold rush"},
+    {"role": "model", "content": "wikipedia: Create a story in a narrative style about Jack London's participation in the gold rush."}
   ]
 ]

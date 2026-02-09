@@ -1,18 +1,18 @@
-{"prompt":"List all the devices in the house.","function":"hera_list_devices","arguments":"{}"}
-{"prompt":"List all devices with their current state (on/off, locked, temperature).","function":"hera_list_devices","arguments":"{}"}
-{"prompt":"Show me the device topology, including child devices.","function":"hera_list_devices","arguments":"{}"}
-{"prompt":"Display a table of all entities by zone and device type.","function":"hera_list_devices","arguments":"{}"}
-{"prompt":"Can you list everything that is connected to the smart home?","function":"hera_list_devices","arguments":"{}"}
-{"prompt":"Describe flood detection sensor.","function":"hera_describe_device","arguments":"{\"device\":\"flood detection sensor\"}"}
-{"prompt":"List actions of proximity sensor.","function":"hera_describe_device","arguments":"{\"device\":\"proximity sensor\"}"}
-{"prompt":"Describe the actions of the garage door actuator.","function":"hera_describe_device","arguments":"{\"device\":\"garage door actuator\"}"}
-{"prompt":"Tell me about the capabilities of my garage door sensor.","function":"hera_describe_device","arguments":"{\"device\":\"garage door sensor\"}"}
-{"prompt":"Show me the actions supported by the window contact sensors.","function":"hera_describe_device","arguments":"{\"device\":\"window contact sensors\"}"}
-{"prompt":"Please list the actions supported by luminosity sensor from balcony.","function":"hera_describe_device","arguments":"{\"device\":\"luminosity sensor from balcony\"}"}
-{"prompt":"Actions supported by humidity sensor?","function":"hera_describe_device","arguments":"{\"device\":\"humidity sensor\"}"}
-{"prompt":"Please get a definition of the speed sensor.","function":"hera_describe_device","arguments":"{\"device\":\"speed sensor\"}"}
-{"prompt":"Create a comprehensive description of the garden moisture sensor.","function":"hera_describe_device","arguments":"{\"device\":\"garden moisture sensor\"}"}
-{"prompt":"What do you know about motion detection device from garage.","function":"hera_describe_device","arguments":"{\"device\":\"motion detection device from garage\"}"}
+{"prompt":"List all the devices in the house.","function":"hera_get_system_summary","arguments":"{}"}
+{"prompt":"List all devices with their current state (on/off, locked, temperature).","function":"hera_get_system_summary","arguments":"{}"}
+{"prompt":"Show me the device topology, including child devices.","function":"hera_get_system_summary","arguments":"{}"}
+{"prompt":"Display a table of all entities by zone and device type.","function":"hera_get_system_summary","arguments":"{}"}
+{"prompt":"Can you list everything that is connected to the smart home?","function":"hera_get_system_summary","arguments":"{}"}
+{"prompt":"Describe flood detection sensor.","function":"hera_get_device_description","arguments":"{\"device\":\"flood detection sensor\"}"}
+{"prompt":"List actions of proximity sensor.","function":"hera_get_device_description","arguments":"{\"device\":\"proximity sensor\"}"}
+{"prompt":"Describe the operations of the garage door actuator.","function":"hera_get_device_description","arguments":"{\"device\":\"garage door actuator\"}"}
+{"prompt":"Tell me about the capabilities of my garage door sensor.","function":"hera_get_device_description","arguments":"{\"device\":\"garage door sensor\"}"}
+{"prompt":"Show me the actions supported by the window contact sensors.","function":"hera_get_device_description","arguments":"{\"device\":\"window contact sensors\"}"}
+{"prompt":"Please list the actions supported by luminosity sensor from balcony.","function":"hera_get_device_description","arguments":"{\"device\":\"luminosity sensor from balcony\"}"}
+{"prompt":"Actions supported by humidity sensor?","function":"hera_get_device_description","arguments":"{\"device\":\"humidity sensor\"}"}
+{"prompt":"Please get a definition of the speed sensor.","function":"hera_get_device_description","arguments":"{\"device\":\"speed sensor\"}"}
+{"prompt":"Create a comprehensive description of the garden moisture sensor.","function":"hera_get_device_description","arguments":"{\"device\":\"garden moisture sensor\"}"}
+{"prompt":"What do you know about motion detection device from garage.","function":"hera_get_device_description","arguments":"{\"device\":\"motion detection device from garage\"}"}
 {"prompt":"What is the living room temperature?","function":"hera_read_temperature","arguments":"{\"zone\":\"living room\"}"}
 {"prompt":"Is it too hot in the cellar?","function":"hera_read_temperature","arguments":"{\"zone\":\"cellar\"}"}
 {"prompt":"Get bathroom temperature.","function":"hera_read_temperature","arguments":"{\"zone\":\"bathroom\"}"}

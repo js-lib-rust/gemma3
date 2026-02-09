@@ -2,8 +2,27 @@
   {
     "type": "function",
     "function": {
-      "name": "hera_list_devices",
-      "description": "List all devices registered to home automation server",
+      "name": "hera_get_device_id",
+      "description": "Retrieve the system ID for a device using its common name or descriptive reference",
+      "parameters": {
+        "type": "OBJECT",
+        "properties": {
+          "device_reference": {
+            "type": "STRING",
+            "description": "How the device is commonly referred to (name, location, or descriptive phrase)"
+          }
+        },
+        "required": [
+          "device_reference"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "hera_get_system_summary",
+      "description": "Get a summary of all devices registered to this home automation system",
       "parameters": {
         "type": "OBJECT",
         "properties": {}
@@ -13,18 +32,18 @@
   {
     "type": "function",
     "function": {
-      "name": "hera_describe_device",
-      "description": "Create a description for the requested device, including supported actions list",
+      "name": "hera_get_device_description",
+      "description": "Get a human-readable description of a device, including its capabilities, states, and available actions",
       "parameters": {
         "type": "OBJECT",
         "properties": {
-          "device": {
+          "device_id": {
             "type": "STRING",
-            "description": "The unique ID or name of the device to be described"
+            "description": "The unique system ID of the device to be described"
           }
         },
         "required": [
-          "device"
+          "device_id"
         ]
       }
     }
@@ -37,13 +56,13 @@
       "parameters": {
         "type": "OBJECT",
         "properties": {
-          "zone": {
+          "zone_name": {
             "type": "STRING",
             "description": "Name of the zone for which the temperature value is checked"
           }
         },
         "required": [
-          "zone"
+          "zone_name"
         ]
       }
     }
@@ -56,13 +75,13 @@
       "parameters": {
         "type": "OBJECT",
         "properties": {
-          "zone": {
+          "zone_name": {
             "type": "STRING",
             "description": "Name of the zone for which the humidity value is checked"
           }
         },
         "required": [
-          "zone"
+          "zone_name"
         ]
       }
     }
@@ -75,13 +94,13 @@
       "parameters": {
         "type": "OBJECT",
         "properties": {
-          "zone": {
+          "zone_name": {
             "type": "STRING",
             "description": "The name of the zone from which the sensors data will be retrieved; if the user request does not provide the zone, 'system' is used"
           }
         },
         "required": [
-          "zone"
+          "zone_name"
         ]
       }
     }
@@ -127,13 +146,13 @@
       "parameters": {
         "type": "OBJECT",
         "properties": {
-          "device": {
+          "device_id": {
             "type": "STRING",
-            "description": "The unique ID or name of the device to be diagnosed; use 'system' if the device is not provided by the user request"
+            "description": "The unique ID of the device to be diagnosed; use 'system' if the device is not provided by the user request"
           }
         },
         "required": [
-          "device"
+          "device_id"
         ]
       }
     }

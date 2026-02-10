@@ -1,4 +1,5 @@
 import re
+import time
 
 import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM, TextStreamer
@@ -13,6 +14,7 @@ parser.add_argument("--max-new-tokens", action="store", type=int, default="1000"
 parser.add_argument("--do-sample", action="store_true")
 parser.add_argument("--num-beams", action="store", type=int, default="1")
 parser.add_argument("--template", action="store")
+parser.add_argument("--processing-time", action="store_true")
 parser.add_argument("--verbose", action="store_true")
 parser.add_argument("prompt", nargs="*", default=[])
 args = parser.parse_args()
@@ -30,6 +32,7 @@ if args.verbose:
     print(f"Use do sample {args.do_sample}")
     print(f"Use num beams {args.num_beams}")
     print(f"Use template {args.template}")
+    print(f"Use processing time {args.processing_time}")
     print()
 
 tokenizer = AutoTokenizer.from_pretrained(model_path)
@@ -75,9 +78,11 @@ if prompt:
 
 else:
     config_set_pattern = re.compile(r"^\s*set\s+num_beams\s+(\d)\s*$")
+    time_processing_pattern = re.compile(r"^\s*(enable|disable)\s+processing\s+time\s*$")
 
     print(f"REPL for text generation on model {model_path}")
 
+    processing_time = False
     while True:
         print()
         line = input("- ")
@@ -94,6 +99,15 @@ else:
             print(f"Config num_beams set to {num_beams}")
             continue
 
+        match = time_processing_pattern.fullmatch(line)
+        if match:
+            processing_time = match.group(1) == "enable"
+            print(f"Processing time {'enabled' if processing_time else 'disabled'}")
+            continue
+
+        start = time.time()
         generate(line)
+        if processing_time:
+            print(f"Processing time {time.time() - start} sec.")
 
 print()

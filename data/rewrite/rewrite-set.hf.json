@@ -1,6 +1,26 @@
 [
   [
     {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "get system status"},
+    {"role": "model", "content": "system: What is the system status?"}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "system status"},
+    {"role": "model", "content": "system: What is the system status?"}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "shutdown"},
+    {"role": "model", "content": "system: Shutdown the system."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "system shutdown"},
+    {"role": "model", "content": "system: Shutdown the system."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
     {"role": "user", "content": "start heater"},
     {"role": "model", "content": "home: Turn on the central heating."}
   ],
@@ -193,6 +213,11 @@
     {"role": "system", "content": "Classify and rewrite next user prompt"},
     {"role": "user", "content": "temperature in hallway"},
     {"role": "model", "content": "home: Read the temperature sensor in the hallway."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "brightness in hallway"},
+    {"role": "model", "content": "home: Read the luminosity sensor in the hallway."}
   ],
   [
     {"role": "system", "content": "Classify and rewrite next user prompt"},
@@ -396,8 +421,18 @@
   ],
   [
     {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "how dark is in cellar?"},
+    {"role": "model", "content": "home: Read the luminosity sensor in the cellar."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
     {"role": "user", "content": "is pantry not locked?"},
     {"role": "model", "content": "home: Read the lock sensor in the pantry door."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "pantry darkness"},
+    {"role": "model", "content": "home: Read the luminosity sensor in the pantry."}
   ],
   [
     {"role": "system", "content": "Classify and rewrite next user prompt"},
@@ -1131,6 +1166,26 @@
   ],
   [
     {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "today's prognosis"},
+    {"role": "model", "content": "weather: What is the hourly weather forecast for today in my location, in tabular form?"}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "today's weather prognosis"},
+    {"role": "model", "content": "weather: What is the hourly weather forecast for today in my location, in tabular form?"}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "today's weather prediction"},
+    {"role": "model", "content": "weather: What is the hourly weather forecast for today in my location, in tabular form?"}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "today's weather prognostication"},
+    {"role": "model", "content": "weather: What is the hourly weather forecast for today in my location, in tabular form?"}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
     {"role": "user", "content": "how will be weather today?"},
     {"role": "model", "content": "weather: What is the hourly weather forecast for today in my location, in tabular form?"}
   ],
@@ -1182,102 +1237,117 @@
   [
     {"role": "system", "content": "Classify and rewrite next user prompt"},
     {"role": "user", "content": "weather forecast"},
-    {"role": "model", "content": "weather: What is the weather forecast for the next two weeks in my location, in tabular form?"}
+    {"role": "model", "content": "weather: What is the daily weather forecast for the next two weeks in my location, in tabular form?"}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "weather prognosis"},
+    {"role": "model", "content": "weather: What is the daily weather forecast for the next two weeks in my location, in tabular form?"}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "weather prediction"},
+    {"role": "model", "content": "weather: What is the daily weather forecast for the next two weeks in my location, in tabular form?"}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "weather prognostication"},
+    {"role": "model", "content": "weather: What is the daily weather forecast for the next two weeks in my location, in tabular form?"}
   ],
   [
     {"role": "system", "content": "Classify and rewrite next user prompt"},
     {"role": "user", "content": "weather forecast in alba-iulia, romania"},
-    {"role": "model", "content": "weather: What is the weather forecast for the next two weeks in Alba-Iulia, Romania, in tabular form?"}
+    {"role": "model", "content": "weather: What is the daily weather forecast for the next two weeks in Alba-Iulia, Romania, in tabular form?"}
   ],
   [
     {"role": "system", "content": "Classify and rewrite next user prompt"},
     {"role": "user", "content": "daily weather forecast"},
-    {"role": "model", "content": "weather: What is the weather forecast for the next two weeks in my location, in tabular form?"}
+    {"role": "model", "content": "weather: What is the daily weather forecast for the next two weeks in my location, in tabular form?"}
   ],
   [
     {"role": "system", "content": "Classify and rewrite next user prompt"},
     {"role": "user", "content": "print daily forecast"},
-    {"role": "model", "content": "weather: What is the weather forecast for the next two weeks in my location, in tabular form?"}
+    {"role": "model", "content": "weather: What is the daily weather forecast for the next two weeks in my location, in tabular form?"}
   ],
   [
     {"role": "system", "content": "Classify and rewrite next user prompt"},
     {"role": "user", "content": "next week forecast"},
-    {"role": "model", "content": "weather: What is the weather forecast for next week in my location, in tabular form?"}
+    {"role": "model", "content": "weather: What is the daily weather forecast for next week in my location, in tabular form?"}
   ],
   [
     {"role": "system", "content": "Classify and rewrite next user prompt"},
     {"role": "user", "content": "weather forecast for this week"},
-    {"role": "model", "content": "weather: What is the weather forecast for this week in my location, in tabular form?"}
+    {"role": "model", "content": "weather: What is the daily weather forecast for this week in my location, in tabular form?"}
   ],
   [
     {"role": "system", "content": "Classify and rewrite next user prompt"},
     {"role": "user", "content": "this week forecast"},
-    {"role": "model", "content": "weather: What is the weather forecast for this week, in my location in tabular form?"}
+    {"role": "model", "content": "weather: What is the daily weather forecast for this week, in my location in tabular form?"}
   ],
   [
     {"role": "system", "content": "Classify and rewrite next user prompt"},
     {"role": "user", "content": "this week forecast on botosani, romania"},
-    {"role": "model", "content": "weather: What is the weather forecast for this week in Botosani, Romania, in tabular form?"}
+    {"role": "model", "content": "weather: What is the daily weather forecast for this week in Botosani, Romania, in tabular form?"}
   ],
   [
     {"role": "system", "content": "Classify and rewrite next user prompt"},
     {"role": "user", "content": "this week forecast for suceava, romania"},
-    {"role": "model", "content": "weather: What is the weather forecast for this week in Suceava, Romania, in tabular form?"}
+    {"role": "model", "content": "weather: What is the daily weather forecast for this week in Suceava, Romania, in tabular form?"}
   ],
   [
     {"role": "system", "content": "Classify and rewrite next user prompt"},
     {"role": "user", "content": "give weather stats for this week"},
-    {"role": "model", "content": "weather: What is the weather forecast for this week in my location, in tabular form?"}
+    {"role": "model", "content": "weather: What is the daily weather forecast for this week in my location, in tabular form?"}
   ],
   [
     {"role": "system", "content": "Classify and rewrite next user prompt"},
     {"role": "user", "content": "what are chances of hail this week"},
-    {"role": "model", "content": "weather: What is the weather forecast for this week in my location, in tabular form?"}
+    {"role": "model", "content": "weather: What is the daily weather forecast for this week in my location, in tabular form?"}
   ],
   [
     {"role": "system", "content": "Classify and rewrite next user prompt"},
     {"role": "user", "content": "get forecast for next two weeks"},
-    {"role": "model", "content": "weather: What is the weather forecast for the next two weeks in my location, in tabular form?"}
+    {"role": "model", "content": "weather: What is the daily weather forecast for the next two weeks in my location, in tabular form?"}
   ],
   [
     {"role": "system", "content": "Classify and rewrite next user prompt"},
     {"role": "user", "content": "get forecast for next two weeks in vălenii de jos, timiș, românia"},
-    {"role": "model", "content": "weather: What is the weather forecast for the next two weeks in Vălenii de jos, Timiș, România, in tabular form?"}
+    {"role": "model", "content": "weather: What is the daily weather forecast for the next two weeks in Vălenii de jos, Timiș, România, in tabular form?"}
   ],
   [
     {"role": "system", "content": "Classify and rewrite next user prompt"},
     {"role": "user", "content": "next 3 days forecast"},
-    {"role": "model", "content": "weather: What is the weather forecast for the next 3 days in my location, in tabular form?"}
+    {"role": "model", "content": "weather: What is the daily weather forecast for the next 3 days in my location, in tabular form?"}
   ],
   [
     {"role": "system", "content": "Classify and rewrite next user prompt"},
     {"role": "user", "content": "forecast for 5 days"},
-    {"role": "model", "content": "weather: What is the weather forecast for the next 5 days in my location, in tabular form?"}
+    {"role": "model", "content": "weather: What is the daily weather forecast for the next 5 days in my location, in tabular form?"}
   ],
   [
     {"role": "system", "content": "Classify and rewrite next user prompt"},
     {"role": "user", "content": "forecast for 5 days in vaslui, romania"},
-    {"role": "model", "content": "weather: What is the weather forecast for the next 5 days in Vaslui, Romania, in tabular form?"}
+    {"role": "model", "content": "weather: What is the daily weather forecast for the next 5 days in Vaslui, Romania, in tabular form?"}
   ],
   [
     {"role": "system", "content": "Classify and rewrite next user prompt"},
     {"role": "user", "content": "4 days forecast"},
-    {"role": "model", "content": "weather: What is the weather forecast for the next 4 days in my location, in tabular form?"}
+    {"role": "model", "content": "weather: What is the daily weather forecast for the next 4 days in my location, in tabular form?"}
   ],
   [
     {"role": "system", "content": "Classify and rewrite next user prompt"},
     {"role": "user", "content": "4 days forecast for oradea, romania"},
-    {"role": "model", "content": "weather: What is the weather forecast for the next 4 days in Oradea, Romania, in tabular form?"}
+    {"role": "model", "content": "weather: What is the daily weather forecast for the next 4 days in Oradea, Romania, in tabular form?"}
   ],
   [
     {"role": "system", "content": "Classify and rewrite next user prompt"},
     {"role": "user", "content": "list 10 days forecast"},
-    {"role": "model", "content": "weather: What is the weather forecast for the next 10 days in my location, in tabular form?"}
+    {"role": "model", "content": "weather: What is the daily weather forecast for the next 10 days in my location, in tabular form?"}
   ],
   [
     {"role": "system", "content": "Classify and rewrite next user prompt"},
     {"role": "user", "content": "list 10 days forecast for negrești, vaslui, romania"},
-    {"role": "model", "content": "weather: What is the weather forecast for the next 10 days in Negrești, Vaslui, Romania, in tabular form?"}
+    {"role": "model", "content": "weather: What is the daily weather forecast for the next 10 days in Negrești, Vaslui, Romania, in tabular form?"}
   ],
   [
     {"role": "system", "content": "Classify and rewrite next user prompt"},
@@ -1418,5 +1488,20 @@
     {"role": "system", "content": "Classify and rewrite next user prompt"},
     {"role": "user", "content": "create a story about jack london participation in gold rush"},
     {"role": "model", "content": "wikipedia: Create a story in a narrative style about Jack London's participation in the gold rush."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "what are the relevant works of jack london"},
+    {"role": "model", "content": "wikipedia: List the works of Jack London."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "list mihail sadoveanu works"},
+    {"role": "model", "content": "wikipedia: List the works of Mihail Sadoveanu."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "what are most known works of pablo picasso"},
+    {"role": "model", "content": "wikipedia: List the works of Pablo Picasso."}
   ]
 ]

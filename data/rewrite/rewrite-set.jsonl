@@ -1,3 +1,8 @@
+{"user":"get system status","agent":"system","prompt":"What is the system status?"}
+{"user":"system status","agent":"system","prompt":"What is the system status?"}
+{"user":"shutdown","agent":"system","prompt":"Shutdown the system."}
+{"user":"system shutdown","agent":"system","prompt":"Shutdown the system."}
+
 {"user":"start heater","agent":"home","prompt":"Turn on the central heating."}
 {"user":"activate heater","agent":"home","prompt":"Turn on the central heating."}
 {"user":"open heater","agent":"home","prompt":"Turn on the central heating."}
@@ -42,6 +47,7 @@
 {"user":"is front door unlocked?","agent":"home","prompt":"Read the lock sensor in the front door."}
 {"user":"is latch off on front door?","agent":"home","prompt":"Read the lock sensor in the front door."}
 {"user":"temperature in hallway","agent":"home","prompt":"Read the temperature sensor in the hallway."}
+{"user":"brightness in hallway","agent":"home","prompt":"Read the luminosity sensor in the hallway."}
 {"user":"co2 level in hallway","agent":"home","prompt":"Read the carbon dioxide sensor in the hallway."}
 {"user":"entrance hall air quality","agent":"home","prompt":"Read the air quality sensor in the entrance hall."}
 {"user":"do you detect some motion on entrance hall?","agent":"home","prompt":"Read the motion detection sensor in the entrance hall."}
@@ -86,7 +92,9 @@
 {"user":"cellar intruders?","agent":"home","prompt":"Read the motion detection sensor in the cellar."}
 {"user":"is cellar door opened?","agent":"home","prompt":"Read the door sensor in the cellar."}
 {"user":"do you detect suspicious movements in the cellar?","agent":"home","prompt":"Read the motion detection sensor in the cellar."}
+{"user":"how dark is in cellar?","agent":"home","prompt":"Read the luminosity sensor in the cellar."}
 {"user":"is pantry not locked?","agent":"home","prompt":"Read the lock sensor in the pantry door."}
+{"user":"pantry darkness","agent":"home","prompt":"Read the luminosity sensor in the pantry."}
 {"user":"what is pantry humidity","agent":"home","prompt":"Read the humidity sensor in the pantry."}
 {"user":"still room humidity","agent":"home","prompt":"Read the humidity sensor in the stillroom."}
 {"user":"what's the temperature in the stillroom?","agent":"home","prompt":"Read the temperature sensor in the stillroom."}
@@ -244,6 +252,10 @@
 {"user":"today weather forecast in paris","agent":"weather","prompt":"What is the hourly weather forecast for today in Paris, France, in tabular form?"}
 {"user":"today weather forecast for bucharest","agent":"weather","prompt":"What is the hourly weather forecast for today in Bucharest, Romania, in tabular form?"}
 {"user":"today forecast","agent":"weather","prompt":"What is the hourly weather forecast for today in my location, in tabular form?"}
+{"user":"today's prognosis","agent":"weather","prompt":"What is the hourly weather forecast for today in my location, in tabular form?"}
+{"user":"today's weather prognosis","agent":"weather","prompt":"What is the hourly weather forecast for today in my location, in tabular form?"}
+{"user":"today's weather prediction","agent":"weather","prompt":"What is the hourly weather forecast for today in my location, in tabular form?"}
+{"user":"today's weather prognostication","agent":"weather","prompt":"What is the hourly weather forecast for today in my location, in tabular form?"}
 {"user":"how will be weather today?","agent":"weather","prompt":"What is the hourly weather forecast for today in my location, in tabular form?"}
 {"user":"how will be weather today on deprecen, slovakia?","agent":"weather","prompt":"What is the hourly weather forecast for today in Deprecen, Slovakia, in tabular form?"}
 {"user":"what will weather be like today?","agent":"weather","prompt":"What is the hourly weather forecast for today in my location, in tabular form?"}
@@ -255,26 +267,29 @@
 {"user":"display today forecast","agent":"weather","prompt":"What is the hourly weather forecast for today in my location, in tabular form?"}
 {"user":"display today forecast in chicirea, iasi, romania","agent":"weather","prompt":"What is the hourly weather forecast for today in Chicirea, Iași, Romania, in tabular form?"}
 
-{"user":"weather forecast","agent":"weather","prompt":"What is the weather forecast for the next two weeks in my location, in tabular form?"}
-{"user":"weather forecast in alba-iulia, romania","agent":"weather","prompt":"What is the weather forecast for the next two weeks in Alba-Iulia, Romania, in tabular form?"}
-{"user":"daily weather forecast","agent":"weather","prompt":"What is the weather forecast for the next two weeks in my location, in tabular form?"}
-{"user":"print daily forecast","agent":"weather","prompt":"What is the weather forecast for the next two weeks in my location, in tabular form?"}
-{"user":"next week forecast","agent":"weather","prompt":"What is the weather forecast for next week in my location, in tabular form?"}
-{"user":"weather forecast for this week","agent":"weather","prompt":"What is the weather forecast for this week in my location, in tabular form?"}
-{"user":"this week forecast","agent":"weather","prompt":"What is the weather forecast for this week, in my location in tabular form?"}
-{"user":"this week forecast on botosani, romania","agent":"weather","prompt":"What is the weather forecast for this week in Botosani, Romania, in tabular form?"}
-{"user":"this week forecast for suceava, romania","agent":"weather","prompt":"What is the weather forecast for this week in Suceava, Romania, in tabular form?"}
-{"user":"give weather stats for this week","agent":"weather","prompt":"What is the weather forecast for this week in my location, in tabular form?"}
-{"user":"what are chances of hail this week","agent":"weather","prompt":"What is the weather forecast for this week in my location, in tabular form?"}
-{"user":"get forecast for next two weeks","agent":"weather","prompt":"What is the weather forecast for the next two weeks in my location, in tabular form?"}
-{"user":"get forecast for next two weeks in vălenii de jos, timiș, românia","agent":"weather","prompt":"What is the weather forecast for the next two weeks in Vălenii de jos, Timiș, România, in tabular form?"}
-{"user":"next 3 days forecast","agent":"weather","prompt":"What is the weather forecast for the next 3 days in my location, in tabular form?"}
-{"user":"forecast for 5 days","agent":"weather","prompt":"What is the weather forecast for the next 5 days in my location, in tabular form?"}
-{"user":"forecast for 5 days in vaslui, romania","agent":"weather","prompt":"What is the weather forecast for the next 5 days in Vaslui, Romania, in tabular form?"}
-{"user":"4 days forecast","agent":"weather","prompt":"What is the weather forecast for the next 4 days in my location, in tabular form?"}
-{"user":"4 days forecast for oradea, romania","agent":"weather","prompt":"What is the weather forecast for the next 4 days in Oradea, Romania, in tabular form?"}
-{"user":"list 10 days forecast","agent":"weather","prompt":"What is the weather forecast for the next 10 days in my location, in tabular form?"}
-{"user":"list 10 days forecast for negrești, vaslui, romania","agent":"weather","prompt":"What is the weather forecast for the next 10 days in Negrești, Vaslui, Romania, in tabular form?"}
+{"user":"weather forecast","agent":"weather","prompt":"What is the daily weather forecast for the next two weeks in my location, in tabular form?"}
+{"user":"weather prognosis","agent":"weather","prompt":"What is the daily weather forecast for the next two weeks in my location, in tabular form?"}
+{"user":"weather prediction","agent":"weather","prompt":"What is the daily weather forecast for the next two weeks in my location, in tabular form?"}
+{"user":"weather prognostication","agent":"weather","prompt":"What is the daily weather forecast for the next two weeks in my location, in tabular form?"}
+{"user":"weather forecast in alba-iulia, romania","agent":"weather","prompt":"What is the daily weather forecast for the next two weeks in Alba-Iulia, Romania, in tabular form?"}
+{"user":"daily weather forecast","agent":"weather","prompt":"What is the daily weather forecast for the next two weeks in my location, in tabular form?"}
+{"user":"print daily forecast","agent":"weather","prompt":"What is the daily weather forecast for the next two weeks in my location, in tabular form?"}
+{"user":"next week forecast","agent":"weather","prompt":"What is the daily weather forecast for next week in my location, in tabular form?"}
+{"user":"weather forecast for this week","agent":"weather","prompt":"What is the daily weather forecast for this week in my location, in tabular form?"}
+{"user":"this week forecast","agent":"weather","prompt":"What is the daily weather forecast for this week, in my location in tabular form?"}
+{"user":"this week forecast on botosani, romania","agent":"weather","prompt":"What is the daily weather forecast for this week in Botosani, Romania, in tabular form?"}
+{"user":"this week forecast for suceava, romania","agent":"weather","prompt":"What is the daily weather forecast for this week in Suceava, Romania, in tabular form?"}
+{"user":"give weather stats for this week","agent":"weather","prompt":"What is the daily weather forecast for this week in my location, in tabular form?"}
+{"user":"what are chances of hail this week","agent":"weather","prompt":"What is the daily weather forecast for this week in my location, in tabular form?"}
+{"user":"get forecast for next two weeks","agent":"weather","prompt":"What is the daily weather forecast for the next two weeks in my location, in tabular form?"}
+{"user":"get forecast for next two weeks in vălenii de jos, timiș, românia","agent":"weather","prompt":"What is the daily weather forecast for the next two weeks in Vălenii de jos, Timiș, România, in tabular form?"}
+{"user":"next 3 days forecast","agent":"weather","prompt":"What is the daily weather forecast for the next 3 days in my location, in tabular form?"}
+{"user":"forecast for 5 days","agent":"weather","prompt":"What is the daily weather forecast for the next 5 days in my location, in tabular form?"}
+{"user":"forecast for 5 days in vaslui, romania","agent":"weather","prompt":"What is the daily weather forecast for the next 5 days in Vaslui, Romania, in tabular form?"}
+{"user":"4 days forecast","agent":"weather","prompt":"What is the daily weather forecast for the next 4 days in my location, in tabular form?"}
+{"user":"4 days forecast for oradea, romania","agent":"weather","prompt":"What is the daily weather forecast for the next 4 days in Oradea, Romania, in tabular form?"}
+{"user":"list 10 days forecast","agent":"weather","prompt":"What is the daily weather forecast for the next 10 days in my location, in tabular form?"}
+{"user":"list 10 days forecast for negrești, vaslui, romania","agent":"weather","prompt":"What is the daily weather forecast for the next 10 days in Negrești, Vaslui, Romania, in tabular form?"}
 
 {"user":"essay about ion creanga life and works","agent":"wikipedia","prompt":"Create a comprehensive and detailed essay about Ion Creanga life and works."}
 {"user":"generate an essay on aurel vlaicu death","agent":"wikipedia","prompt":"Create a comprehensive and detailed essay about Aurel Vlaicu death."}
@@ -305,3 +320,7 @@
 {"user":"write a story of thomas edison inventing electric light","agent":"wikipedia","prompt":"Create a story in a narrative style about Thomas Edison inventing the electric light."}
 {"user":"story about america discovery by christopher columbus","agent":"wikipedia","prompt":"Create a story in a narrative style about the America's discovery by Christopher Columbus."}
 {"user":"create a story about jack london participation in gold rush","agent":"wikipedia","prompt":"Create a story in a narrative style about Jack London's participation in the gold rush."}
+
+{"user":"what are the relevant works of jack london","agent":"wikipedia","prompt":"List the works of Jack London."}
+{"user":"list mihail sadoveanu works","agent":"wikipedia","prompt":"List the works of Mihail Sadoveanu."}
+{"user":"what are most known works of pablo picasso","agent":"wikipedia","prompt":"List the works of Pablo Picasso."}

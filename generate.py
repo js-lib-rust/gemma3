@@ -7,7 +7,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument("--model", action="store")
 parser.add_argument("--dtype", action="store", type=util.dtype, default="float32")
 parser.add_argument("--max-length", action="store", type=int, default="4000")
-parser.add_argument("--max-new-tokens", action="store", type=int, default="400")
+parser.add_argument("--max-new-tokens", action="store", type=int, default="1000")
 parser.add_argument("--do-sample", action="store_true")
 parser.add_argument("--num-beams", action="store", type=int, default="1")
 parser.add_argument("--template", action="store")
@@ -48,8 +48,9 @@ config = {
     'max_new_tokens': args.max_new_tokens,
     'do_sample': args.do_sample,
     'num_beams': args.num_beams,
+    'num_return_sequences': args.num_beams,
     'pad_token_id': tokenizer.eos_token_id,
-    'streamer': streamer
+    'streamer': streamer if args.num_beams == 1 else None
 }
 
 
@@ -59,20 +60,25 @@ def generate(prompt_arg):
     inputs = tokenizer(prompt_arg, return_tensors="pt", truncation=True, max_length=args.max_length)
     inputs = {k: v.to(device) for k, v in inputs.items()}
     with torch.no_grad():
-        model.generate(**inputs, **config)
+        outputs = model.generate(**inputs, **config)
+        if not config['streamer']:
+            input_length = inputs["input_ids"].shape[1]
+            for output in outputs:
+                text = tokenizer.decode(output[input_length:], skip_special_tokens=True)
+                print(text)
 
 
 if prompt:
     generate(prompt)
 
 else:
-    print(f"Generation REPL on model {model_path}")
+    print(f"REPL for text generation on model {model_path}")
     print()
 
     while True:
         line = input("- ")
         if line.lower() == "exit":
-            print("Exiting...")
+            print("Exiting REPL ...")
             break
         generate(line)
         print()

@@ -1,3 +1,5 @@
+import re
+
 import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM, TextStreamer
 import argparse
@@ -72,15 +74,26 @@ if prompt:
     generate(prompt)
 
 else:
+    config_set_pattern = re.compile(r"^\s*set\s+num_beams\s+(\d)\s*$")
+
     print(f"REPL for text generation on model {model_path}")
-    print()
 
     while True:
+        print()
         line = input("- ")
+
         if line.lower() == "exit":
             print("Exiting REPL ...")
             break
+
+        match = config_set_pattern.fullmatch(line)
+        if match:
+            num_beams = int(match.group(1))
+            config['num_beams'] = num_beams
+            config['num_return_sequences'] = num_beams
+            print(f"Config num_beams set to {num_beams}")
+            continue
+
         generate(line)
-        print()
 
 print()

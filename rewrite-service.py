@@ -4,7 +4,6 @@ import time
 from http.server import BaseHTTPRequestHandler, HTTPServer
 from threading import Event
 
-import torch
 from transformers import (
     AutoModelForCausalLM,
     AutoTokenizer
@@ -14,12 +13,11 @@ base_model = "rewrite-270m"
 device = 'cuda:0'
 
 tokenizer = AutoTokenizer.from_pretrained(base_model)
-terminators = [tokenizer.eos_token_id]
-model = AutoModelForCausalLM.from_pretrained(base_model, device_map=device, dtype=torch.float32)
+model = AutoModelForCausalLM.from_pretrained(base_model, device_map=device)
 
 
 class RequestHandler(BaseHTTPRequestHandler):  # type: ignore
-    protocol_version = 'HTTP/1.1'
+    protocol_version = 'HTTP/1.0'
 
     def do_POST(self):
         print(f'do_POST: self.path: {self.path}')
@@ -29,7 +27,7 @@ class RequestHandler(BaseHTTPRequestHandler):  # type: ignore
             self.send_error(404, "Endpoint not found")
 
     def do_SLM_request(self):
-        global tokenizer, terminators, model
+        global tokenizer, model
         request_start_time = time.time()
 
         content_length = int(self.headers.get('Content-Length', 0))

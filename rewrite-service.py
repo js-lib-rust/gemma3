@@ -1,98 +1,54 @@
-import json
-import signal
+from aiohttp import web
 import time
-from http.server import BaseHTTPRequestHandler, HTTPServer
-from threading import Event
-
 from transformers import (
     AutoModelForCausalLM,
     AutoTokenizer
 )
 
-base_model = "rewrite-270m"
-device = 'cuda:0'
+MODEL_PATH = "rewrite-270m"
+DEVICE = 'cuda:0'
 
-tokenizer = AutoTokenizer.from_pretrained(base_model)
-model = AutoModelForCausalLM.from_pretrained(base_model, device_map=device)
+tokenizer = AutoTokenizer.from_pretrained(MODEL_PATH)
+model = AutoModelForCausalLM.from_pretrained(MODEL_PATH, device_map=DEVICE)
 
 
-class RequestHandler(BaseHTTPRequestHandler):  # type: ignore
-    protocol_version = 'HTTP/1.0'
-
-    def do_POST(self):
-        print(f'do_POST: self.path: {self.path}')
-        if self.path == '/':
-            self.do_SLM_request()
-        else:
-            self.send_error(404, "Endpoint not found")
-
-    def do_SLM_request(self):
-        global tokenizer, model
+async def handle_slm_request(request):
+    try:
         request_start_time = time.time()
 
-        content_length = int(self.headers.get('Content-Length', 0))
-        body = self.rfile.read(content_length).decode()
-        request = json.loads(body)
-
+        json_request = await request.json()
         system = "Classify and rewrite next user prompt"
-        prompt = request['prompt']
+        prompt = json_request['prompt']
         print(f'prompt: {prompt}')
 
         chat = [{"role": "system", "content": system}, {"role": "user", "content": prompt}]
-        text = tokenizer.apply_chat_template(chat, tokenize=False, add_generation_prompt=True)
-        print(f"text: {text}")
-        inputs = tokenizer([text], return_tensors="pt").to(model.device)
+        chat_text = tokenizer.apply_chat_template(chat, tokenize=False, add_generation_prompt=True)
+        print(f"chat_text: {chat_text}")
+        inputs = tokenizer([chat_text], return_tensors="pt").to(model.device)
 
         config = {
-            'max_new_tokens': 200,
+            'max_new_tokens': 400,
             'do_sample': False,
+            'num_beams': 1,
             'pad_token_id': tokenizer.eos_token_id,
         }
-        print("generate_config: ", config)
+        print(f"config: {config}")
         outputs = model.generate(**inputs, **config)
         input_length = inputs["input_ids"].shape[1]
-        text = tokenizer.decode(outputs[0][input_length:], skip_special_tokens=True)
-        print(f"text: {text}")
+        output_text = tokenizer.decode(outputs[0][input_length:], skip_special_tokens=True)
+        print(f"output_text: {output_text}")
 
-        body = bytes(text, 'UTF-8')
-        self.send_response(200)
-        self.send_header('Content-Type', 'text/plain; charset=utf-8')
-        self.send_header('Content-Length', str(len(body)))
-        self.end_headers()
-
-        self.wfile.write(body)
-        self.wfile.flush()
-
+        output_parts = output_text.split(": ")
+        response = {"agent": f"{output_parts[0]}", "prompt": f"{output_parts[1]}"}
         print(f"Request processing time: {time.time() - request_start_time}")
+        return web.json_response(response, status=200)
+
+    except Exception as e:
+        return web.json_response({"error": str(e)}, status=400)
 
 
-class AppServer(HTTPServer):
-    def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
-        self.stop_serving = Event()
-
-    def serve_forever(self, poll_interval=0.5):
-        while not self.stop_serving.is_set():
-            self.handle_request()
-
-    def shutdown(self):
-        print("Shutting down server gracefully...")
-        self.stop_serving.set()
-        self.server_close()
-
-
-def signal_handler(signum, _frame, server):
-    print(f"Received signal {signum}, shutting down gracefully...")
-    server.shutdown()
-
+app = web.Application()
+app.router.add_post('/', handle_slm_request)
 
 if __name__ == '__main__':
-    port = 1966
-    server_address = ('0.0.0.0', port)
-    httpd = AppServer(server_address, RequestHandler)
-    print(f"Starting HTTP server on port {port}...")
-
-    signal.signal(signal.SIGTERM, lambda s, f: signal_handler(s, f, httpd))
-    signal.signal(signal.SIGINT, lambda s, f: signal_handler(s, f, httpd))
-
-    httpd.serve_forever()
+    web.run_app(app, host='0.0.0.0', port=1966, access_log=None)

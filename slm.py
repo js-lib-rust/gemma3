@@ -13,26 +13,46 @@ from http.server import BaseHTTPRequestHandler, HTTPServer
 import json
 import re
 import subprocess
-import os
+import argparse
+import util
 
-model_dir = os.environ.get("AI_MODEL_DIR")
-base_model = model_dir + "/hugging-face/model/gemma-3-12b-it"
-device = 'cuda:0'
+parser = argparse.ArgumentParser()
+parser.add_argument("--model", action="store", type=str, default="/gemma-3-12b-it")
+parser.add_argument("--quant-type", action="store", type=str, default="nf4")
+parser.add_argument("--dtype", action="store", type=util.dtype, default="float32")
+parser.add_argument("--max-new-tokens", action="store", type=int, default="1000")
+args = parser.parse_args()
+
+device = "cuda:0" if torch.cuda.is_available() else "cpu"
+model_path = util.get_model_path(args.model) if args.model.startswith('/') else args.model
+dtype = args.dtype
+if args.quant_type:
+    dtype = torch.bfloat16
+print(f"Use device {device}")
+print(f"Use model {model_path}")
+print(f"Use quant type {args.quant_type}")
+print(f"Use dtype {dtype}")
+print(f"Use max new tokens {args.max_new_tokens}")
+print()
+
 history = []
 
-quantization_config = BitsAndBytesConfig(
-    load_in_4bit=True,
-    bnb_4bit_quant_type="nf4",
-    bnb_4bit_use_double_quant=True,
-    bnb_4bit_compute_dtype=torch.bfloat16,
-)
+if args.quant_type != "none":
+    quantization_config = BitsAndBytesConfig(
+        load_in_4bit=True,
+        bnb_4bit_quant_type=args.quant_type,
+        bnb_4bit_use_double_quant=True,
+        bnb_4bit_compute_dtype=torch.bfloat16,
+    )
+else:
+    quantization_config = None
 
-tokenizer = AutoTokenizer.from_pretrained(base_model)
+tokenizer = AutoTokenizer.from_pretrained(model_path)
 terminators = [tokenizer.eos_token_id]
 model = AutoModelForCausalLM.from_pretrained(
-    base_model,
+    model_path,
     device_map=device,
-    dtype=torch.bfloat16,
+    dtype=dtype,
     quantization_config=quantization_config)
 
 rag_system = "You are a contextual questions answering agent that only uses provided context and formats responses \
@@ -190,7 +210,7 @@ class RequestHandler(BaseHTTPRequestHandler):  # type: ignore
         streamer = StreamerWithSpeedDisplay(tokenizer, self.wfile)
         past_key_values = DynamicCache(config=model.config)
         generate_config = {
-            'max_new_tokens': 131_072,
+            'max_new_tokens': args.max_new_tokens,
             'do_sample': False,
             'streamer': streamer,
             'use_cache': True,
@@ -231,8 +251,8 @@ class RequestHandler(BaseHTTPRequestHandler):  # type: ignore
 
 
 class AppServer(HTTPServer):
-    def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
+    def __init__(self, *server_args, **kwargs):
+        super().__init__(*server_args, **kwargs)
         self.stop_serving = Event()
 
     def serve_forever(self, poll_interval=0.5):

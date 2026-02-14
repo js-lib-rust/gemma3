@@ -3,6 +3,7 @@
 {"user":"shutdown","agent":"system","prompt":"Shutdown the system."}
 {"user":"system shutdown","agent":"system","prompt":"Shutdown the system."}
 
+{"user":"start central heating","agent":"home","prompt":"Turn on the central heating."}
 {"user":"start heater","agent":"home","prompt":"Turn on the central heating."}
 {"user":"activate heater","agent":"home","prompt":"Turn on the central heating."}
 {"user":"open heater","agent":"home","prompt":"Turn on the central heating."}
@@ -12,6 +13,7 @@
 {"user":"turn on the climate","agent":"home","prompt":"Turn on the central heating."}
 {"user":"engage the climate","agent":"home","prompt":"Turn on the central heating."}
 
+{"user":"stop central heating","agent":"home","prompt":"Turn off the central heating."}
 {"user":"stop heater","agent":"home","prompt":"Turn off the central heating."}
 {"user":"deactivate heater","agent":"home","prompt":"Turn off the central heating."}
 {"user":"close heater","agent":"home","prompt":"Turn off the central heating."}
@@ -21,13 +23,32 @@
 {"user":"turn off the climate","agent":"home","prompt":"Turn off the central heating."}
 {"user":"disengage the climate","agent":"home","prompt":"Turn off the central heating."}
 
+{"user":"get central heating status","agent":"home","prompt":"Get the status of the central heating system."}
+{"user":"what's central heating status?","agent":"home","prompt":"Get the status of the central heating system."}
+{"user":"was climate opened?","agent":"home","prompt":"Get the status of the central heating system."}
+{"user":"is the central heating running?","agent":"home","prompt":"Get the status of the central heating system."}
+{"user":"is heating active","agent":"home","prompt":"Get the status of the central heating system."}
+{"user":"is heating opened","agent":"home","prompt":"Get the status of the central heating system."}
+{"user":"is heater active","agent":"home","prompt":"Get the status of the central heating system."}
+{"user":"is heater on","agent":"home","prompt":"Get the status of the central heating system."}
+{"user":"is climate turned off","agent":"home","prompt":"Get the status of the central heating system."}
+{"user":"is climate active","agent":"home","prompt":"Get the status of the central heating system."}
+
 {"user":"what's living room temp","agent":"home","prompt":"Read the temperature sensor in the living room."}
+{"user":"what is the temperature in the sitting room?","agent":"home","prompt":"Read the temperature sensor in the living room."}
 {"user":"living temp","agent":"home","prompt":"Read the temperature sensor in the living room."}
 {"user":"living room temperature","agent":"home","prompt":"Read the temperature sensor in the living room."}
+{"user":"front room temperature","agent":"home","prompt":"Read the temperature sensor in the living room."}
+{"user":"front-room temperature","agent":"home","prompt":"Read the temperature sensor in the living room."}
+{"user":"sitting room temperature","agent":"home","prompt":"Read the temperature sensor in the living room."}
+{"user":"salon temperature","agent":"home","prompt":"Read the temperature sensor in the living room."}
 {"user":"living humidity","agent":"home","prompt":"Read the humidity sensor in the living room."}
 {"user":"living room brightness","agent":"home","prompt":"Read the luminosity sensor in the living room."}
 {"user":"living air has a strong smell","agent":"home","prompt":"Read the air quality sensor in the living room."}
 {"user":"co2 in living room","agent":"home","prompt":"Read the carbon dioxide sensor in the living room."}
+{"user":"get carbone level in front room","agent":"home","prompt":"Read the carbon dioxide sensor in the living room."}
+{"user":"living water leaks","agent":"home","prompt":"Read the water leak sensor in the living room."}
+{"user":"do we have water leaks in salon?","agent":"home","prompt":"Read the water leak sensor in the living room."}
 
 {"user":"humidity in the bedroom","agent":"home","prompt":"Read the humidity sensor in the bedroom."}
 {"user":"get temperature in the sleeping porch","agent":"home","prompt":"Read the temperature sensor in the sleeping porch."}
@@ -52,7 +73,6 @@
 {"user":"entrance hall air quality","agent":"home","prompt":"Read the air quality sensor in the entrance hall."}
 {"user":"do you detect some motion on entrance hall?","agent":"home","prompt":"Read the motion detection sensor in the entrance hall."}
 {"user":"do you notice movement in hallway?","agent":"home","prompt":"Read the motion detection sensor in the hallway."}
-{"user":"living water leaks","agent":"home","prompt":"Read the water leak sensor in the living room."}
 
 {"user":"kitchen humidity","agent":"home","prompt":"Read the humidity sensor in the kitchen."}
 {"user":"display kitchen humidity","agent":"home","prompt":"Read the humidity sensor in the kitchen."}
@@ -143,6 +163,8 @@
 {"user":"any intruders in greenhouse?","agent":"home","prompt":"Read the motion detection sensor in the greenhouse."}
 
 {"user":"read sensors from home","agent":"home","prompt":"Read all the sensors in the house."}
+{"user":"i would like to know values for all sensors from apartment","agent":"home","prompt":"Read all the sensors in the house."}
+{"user":"values for sensors in house","agent":"home","prompt":"Read all the sensors in the house."}
 {"user":"read all sensors","agent":"home","prompt":"Read all the sensors in the house."}
 {"user":"sensors values","agent":"home","prompt":"Read all the sensors in the house."}
 {"user":"read sensors from apartment","agent":"home","prompt":"Read all the sensors in the house."}
@@ -195,6 +217,10 @@
 {"user":"record adam nicolae weight 66.5","agent":"health","prompt":"Save the body weight of 66.50 kg for Adam Nicolae."}
 {"user":"write marton csaba weight of 77 kg","agent":"health","prompt":"Save the body weight of 77.00 kg for Marton Csaba."}
 
+{"user":"save glucose 118","agent":"health","prompt":"Save my blood glucose level of 118 mg/dL."}
+{"user":"save glucose level of 105 to fântânaru eugenia","agent":"health","prompt":"Save my blood glucose level of 118 mg/dL for Fântânaru Eugenia."}
+{"user":"write agavriloaiei mariana glucose level of 98","agent":"health","prompt":"Save my blood glucose level of 98 mg/dL for Agavriloaiei Mariana."}
+
 {"user":"list health measurements","agent":"health","prompt":"List today health readings in table format."}
 {"user":"print health measurements","agent":"health","prompt":"List today health readings in table format."}
 {"user":"show my health measurements","agent":"health","prompt":"List today health readings in table format."}
@@ -213,11 +239,14 @@
 {"user":"list health measurement in 2026-02-04","agent":"health","prompt":"List the health readings from February 4, 2026 in table format."}
 
 {"user":"medical report","agent":"health","prompt":"Create a medical report from today readings."}
+{"user":"create medical report","agent":"health","prompt":"Create a medical report from today readings."}
+{"user":"print health report from today records","agent":"health","prompt":"Create a medical report from today readings."}
 {"user":"today medical report","agent":"health","prompt":"Create a medical report from today readings."}
 {"user":"medical report for today","agent":"health","prompt":"Create a medical report from today readings."}
 {"user":"yesterday medical report","agent":"health","prompt":"Create a medical report from yesterday readings."}
 {"user":"health report from yesterday measurements","agent":"health","prompt":"Create a medical report from yesterday readings."}
-{"user":"medical report for january 12","agent":"health","prompt":"Create a medical report from readings from January 12, 2026."}
+{"user":"medical report for january 12, 2026","agent":"health","prompt":"Create a medical report from readings from January 12, 2026."}
+{"user":"display health report from march 15, 2025","agent":"health","prompt":"Create a medical report from readings from March 15, 2025."}
 {"user":"print health report for 2025-12-01","agent":"health","prompt":"Create a medical report from readings from December 1, 2025."}
 {"user":"health status report for 2025-11-12","agent":"health","prompt":"Create a medical report from readings from November 12, 2025."}
 
@@ -311,6 +340,8 @@
 {"user":"create a broad examination of lunar lander","agent":"wikipedia","prompt":"Create a comprehensive and detailed essay about the lunar lander."}
 {"user":"generate a detailed study of electric vehicles","agent":"wikipedia","prompt":"Create a comprehensive and detailed essay about electric vehicles."}
 {"user":"write a exhaustive study of serengeti ecosystem","agent":"wikipedia","prompt":"Create a comprehensive and detailed essay about Serengeti ecosystem."}
+{"user":"what is a fable?","agent":"wikipedia","prompt":"Create a comprehensive and detailed essay about fable."}
+{"user":"please describe dragonfly lifecycle","agent":"wikipedia","prompt":"Create a comprehensive and detailed essay about the dragonfly lifecycle."}
 
 {"user":"write story about a day from a lions pride","agent":"wikipedia","prompt":"Create a story in a narrative style about a day from a lions pride."}
 {"user":"story about aurel vlaicu attempt to cross mountains","agent":"wikipedia","prompt":"Create a story in a narrative style about Aurel Vlaicu attempt to cross the mountains."}
@@ -322,5 +353,48 @@
 {"user":"create a story about jack london participation in gold rush","agent":"wikipedia","prompt":"Create a story in a narrative style about Jack London's participation in the gold rush."}
 
 {"user":"what are the relevant works of jack london","agent":"wikipedia","prompt":"List the works of Jack London."}
-{"user":"list mihail sadoveanu works","agent":"wikipedia","prompt":"List the works of Mihail Sadoveanu."}
+{"user":"create a list of mihail sadoveanu's novels, novellas and short stories","agent":"wikipedia","prompt":"List the works of Mihail Sadoveanu."}
 {"user":"what are most known works of pablo picasso","agent":"wikipedia","prompt":"List the works of Pablo Picasso."}
+{"user":"list notable works of franz kafka","agent":"wikipedia","prompt":"List the works of Franz Kafka."}
+{"user":"print a list of the novels, novellas and stories of john steinbeck","agent":"wikipedia","prompt":"List the works of John Steinbeck."}
+{"user":"what are the books written by john steinbeck?","agent":"wikipedia","prompt":"List the works of John Steinbeck."}
+{"user":"enumerate books of camil petrescu","agent":"wikipedia","prompt":"List the works of Camil Petrescu."}
+{"user":"list alexandre dumas novels","agent":"wikipedia","prompt":"List the works of Alexandre Dumas."}
+{"user":"what books is Alexandre Dumas, son, known for?","agent":"wikipedia","prompt":"List the works of Alexandre Dumas, son."}
+{"user":"what are the most famous sculptures by constantin brâncuși?","agent":"wikipedia","prompt":"List the works of Constantin Brâncuși."}
+{"user":"list compositions of ludwig van beethoven","agent":"wikipedia","prompt":"List the works of Ludwig van Beethoven."}
+{"user":"list remarkable paints of vicent van gogh","agent":"wikipedia","prompt":"List the works of Vincent van Gogh."}
+{"user":"print george enescu musical works","agent":"wikipedia","prompt":"List the works of George Enescu."}
+
+{"user":"list all stories written by ion creanga","agent":"wikipedia","prompt":"List the stories of Ion Creanga."}
+{"user":"what are the stories written by mark twain","agent":"wikipedia","prompt":"List the stories of Mark Twain."}
+{"user":"enumerate brothers grimm well known stories","agent":"wikipedia","prompt":"List the stories of Brothers Grimm."}
+{"user":"fairy tales by hans christian andersen","agent":"wikipedia","prompt":"List the stories of Hans Christian Andersen."}
+{"user":"fairy tales and short stories for children by cezar petrescu","agent":"wikipedia","prompt":"List the stories of Cezar Petrescu."}
+{"user":"list the stories written by dr. seuss","agent":"wikipedia","prompt":"List the stories of Dr. Seuss."}
+
+{"user":"list all known fables written by aesop","agent":"wikipedia","prompt":"List the fables of Aesop."}
+{"user":"fables by jean de la fontaine","agent":"wikipedia","prompt":"List the fables of Jen de La Fontaine."}
+{"user":"list of fables writen by russian author ivan krylov","agent":"wikipedia","prompt":"List the fables of Ivan Krylov."}
+{"user":"what fables is hans christian andersen known for?","agent":"wikipedia","prompt":"List the fables of Hans Christian Andersen."}
+{"user":"enumerate john gay's fables","agent":"wikipedia","prompt":"List the fables of John Gay."}
+{"user":"polish fables by ignacy krasicki","agent":"wikipedia","prompt":"List the fables of Ignacy Krasicki."}
+{"user":"list franz kafka's fables","agent":"wikipedia","prompt":"List the fables of Franz Kafka."}
+{"user":"list of the james thurber fables","agent":"wikipedia","prompt":"List the fables of James Thurber."}
+
+{"user":"in what period did mihai eminescu live?","agent":"wikipedia","prompt":"Read article about Mihai Eminescu and respond to question: in what period did Mihai Eminescu live."}
+{"user":"what is the height of eiffel tower?","agent":"wikipedia","prompt":"Read article about Eiffel Tower and respond to question: what is the height of Eiffel Tower."}
+{"user":"what is the length of nile river?","agent":"wikipedia","prompt":"Read article about Nile and respond to question: what is the length of Nile river."}
+{"user":"what is the capital city of norway?","agent":"wikipedia","prompt":"Read article about Norway and respond to question: what is the capital city of norway."}
+{"user":"how many citizens does switzerland have?","agent":"wikipedia","prompt":"Read article about Switzerland and respond to question: how many citizens does switzerland have."}
+{"user":"what are the largest cities in romania?","agent":"wikipedia","prompt":"Read article about Romania and respond to question: what are the largest cities in romania."}
+{"user":"when did albert einstein create relativity?","agent":"wikipedia","prompt":"Read article about Albert Einstein and respond to question: when did Albert Einstein create relativity."}
+{"user":"how big is a lion?","agent":"wikipedia","prompt":"Read article about lion and respond to question: how big is a lion."}
+{"user":"what is the speed of a cheetah?","agent":"wikipedia","prompt":"Read article about cheetah and respond to question: what is the speed of a cheetah?."}
+{"user":"why the sky is blue?","agent":"wikipedia","prompt":"Read article about sky and respond to question: why the sky is blue."}
+{"user":"how far is the moon?","agent":"wikipedia","prompt":"Read article about Moon and respond to question: how far is the moon."}
+{"user":"how many moons does mars have?","agent":"wikipedia","prompt":"Read article about Mars and respond to question: how many moons does mars have."}
+{"user":"how many planets does our solar system have?","agent":"wikipedia","prompt":"Read article about solar system and respond to question: how many planets does our solar system have."}
+{"user":"what is the largest planet from solar system?","agent":"wikipedia","prompt":"Read article about solar system and respond to question: what is the largest planet from solar system."}
+{"user":"what is the speed of the international space station?","agent":"wikipedia","prompt":"Read article about international space station and respond to question: what is the speed of the international space station?."}
+{"user":"when stephen the great ruled moldavia?","agent":"wikipedia","prompt":"Read article about Stephen the Great and respond to question: when Stephen the Great ruled Moldavia."}

@@ -21,6 +21,11 @@
   ],
   [
     {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "start central heating"},
+    {"role": "model", "content": "home: Turn on the central heating."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
     {"role": "user", "content": "start heater"},
     {"role": "model", "content": "home: Turn on the central heating."}
   ],
@@ -58,6 +63,11 @@
     {"role": "system", "content": "Classify and rewrite next user prompt"},
     {"role": "user", "content": "engage the climate"},
     {"role": "model", "content": "home: Turn on the central heating."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "stop central heating"},
+    {"role": "model", "content": "home: Turn off the central heating."}
   ],
   [
     {"role": "system", "content": "Classify and rewrite next user prompt"},
@@ -101,7 +111,62 @@
   ],
   [
     {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "get central heating status"},
+    {"role": "model", "content": "home: Get the status of the central heating system."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "what's central heating status?"},
+    {"role": "model", "content": "home: Get the status of the central heating system."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "was climate opened?"},
+    {"role": "model", "content": "home: Get the status of the central heating system."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "is the central heating running?"},
+    {"role": "model", "content": "home: Get the status of the central heating system."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "is heating active"},
+    {"role": "model", "content": "home: Get the status of the central heating system."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "is heating opened"},
+    {"role": "model", "content": "home: Get the status of the central heating system."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "is heater active"},
+    {"role": "model", "content": "home: Get the status of the central heating system."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "is heater on"},
+    {"role": "model", "content": "home: Get the status of the central heating system."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "is climate turned off"},
+    {"role": "model", "content": "home: Get the status of the central heating system."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "is climate active"},
+    {"role": "model", "content": "home: Get the status of the central heating system."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
     {"role": "user", "content": "what's living room temp"},
+    {"role": "model", "content": "home: Read the temperature sensor in the living room."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "what is the temperature in the sitting room?"},
     {"role": "model", "content": "home: Read the temperature sensor in the living room."}
   ],
   [
@@ -112,6 +177,26 @@
   [
     {"role": "system", "content": "Classify and rewrite next user prompt"},
     {"role": "user", "content": "living room temperature"},
+    {"role": "model", "content": "home: Read the temperature sensor in the living room."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "front room temperature"},
+    {"role": "model", "content": "home: Read the temperature sensor in the living room."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "front-room temperature"},
+    {"role": "model", "content": "home: Read the temperature sensor in the living room."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "sitting room temperature"},
+    {"role": "model", "content": "home: Read the temperature sensor in the living room."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "salon temperature"},
     {"role": "model", "content": "home: Read the temperature sensor in the living room."}
   ],
   [
@@ -133,6 +218,21 @@
     {"role": "system", "content": "Classify and rewrite next user prompt"},
     {"role": "user", "content": "co2 in living room"},
     {"role": "model", "content": "home: Read the carbon dioxide sensor in the living room."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "get carbone level in front room"},
+    {"role": "model", "content": "home: Read the carbon dioxide sensor in the living room."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "living water leaks"},
+    {"role": "model", "content": "home: Read the water leak sensor in the living room."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "do we have water leaks in salon?"},
+    {"role": "model", "content": "home: Read the water leak sensor in the living room."}
   ],
   [
     {"role": "system", "content": "Classify and rewrite next user prompt"},
@@ -238,11 +338,6 @@
     {"role": "system", "content": "Classify and rewrite next user prompt"},
     {"role": "user", "content": "do you notice movement in hallway?"},
     {"role": "model", "content": "home: Read the motion detection sensor in the hallway."}
-  ],
-  [
-    {"role": "system", "content": "Classify and rewrite next user prompt"},
-    {"role": "user", "content": "living water leaks"},
-    {"role": "model", "content": "home: Read the water leak sensor in the living room."}
   ],
   [
     {"role": "system", "content": "Classify and rewrite next user prompt"},
@@ -661,6 +756,16 @@
   ],
   [
     {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "i would like to know values for all sensors from apartment"},
+    {"role": "model", "content": "home: Read all the sensors in the house."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "values for sensors in house"},
+    {"role": "model", "content": "home: Read all the sensors in the house."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
     {"role": "user", "content": "read all sensors"},
     {"role": "model", "content": "home: Read all the sensors in the house."}
   ],
@@ -901,6 +1006,21 @@
   ],
   [
     {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "save glucose 118"},
+    {"role": "model", "content": "health: Save my blood glucose level of 118 mg/dL."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "save glucose level of 105 to fântânaru eugenia"},
+    {"role": "model", "content": "health: Save my blood glucose level of 118 mg/dL for Fântânaru Eugenia."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "write agavriloaiei mariana glucose level of 98"},
+    {"role": "model", "content": "health: Save my blood glucose level of 98 mg/dL for Agavriloaiei Mariana."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
     {"role": "user", "content": "list health measurements"},
     {"role": "model", "content": "health: List today health readings in table format."}
   ],
@@ -986,6 +1106,16 @@
   ],
   [
     {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "create medical report"},
+    {"role": "model", "content": "health: Create a medical report from today readings."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "print health report from today records"},
+    {"role": "model", "content": "health: Create a medical report from today readings."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
     {"role": "user", "content": "today medical report"},
     {"role": "model", "content": "health: Create a medical report from today readings."}
   ],
@@ -1006,8 +1136,13 @@
   ],
   [
     {"role": "system", "content": "Classify and rewrite next user prompt"},
-    {"role": "user", "content": "medical report for january 12"},
+    {"role": "user", "content": "medical report for january 12, 2026"},
     {"role": "model", "content": "health: Create a medical report from readings from January 12, 2026."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "display health report from march 15, 2025"},
+    {"role": "model", "content": "health: Create a medical report from readings from March 15, 2025."}
   ],
   [
     {"role": "system", "content": "Classify and rewrite next user prompt"},
@@ -1451,6 +1586,16 @@
   ],
   [
     {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "what is a fable?"},
+    {"role": "model", "content": "wikipedia: Create a comprehensive and detailed essay about fable."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "please describe dragonfly lifecycle"},
+    {"role": "model", "content": "wikipedia: Create a comprehensive and detailed essay about the dragonfly lifecycle."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
     {"role": "user", "content": "write story about a day from a lions pride"},
     {"role": "model", "content": "wikipedia: Create a story in a narrative style about a day from a lions pride."}
   ],
@@ -1496,12 +1641,212 @@
   ],
   [
     {"role": "system", "content": "Classify and rewrite next user prompt"},
-    {"role": "user", "content": "list mihail sadoveanu works"},
+    {"role": "user", "content": "create a list of mihail sadoveanu's novels, novellas and short stories"},
     {"role": "model", "content": "wikipedia: List the works of Mihail Sadoveanu."}
   ],
   [
     {"role": "system", "content": "Classify and rewrite next user prompt"},
     {"role": "user", "content": "what are most known works of pablo picasso"},
     {"role": "model", "content": "wikipedia: List the works of Pablo Picasso."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "list notable works of franz kafka"},
+    {"role": "model", "content": "wikipedia: List the works of Franz Kafka."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "print a list of the novels, novellas and stories of john steinbeck"},
+    {"role": "model", "content": "wikipedia: List the works of John Steinbeck."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "what are the books written by john steinbeck?"},
+    {"role": "model", "content": "wikipedia: List the works of John Steinbeck."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "enumerate books of camil petrescu"},
+    {"role": "model", "content": "wikipedia: List the works of Camil Petrescu."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "list alexandre dumas novels"},
+    {"role": "model", "content": "wikipedia: List the works of Alexandre Dumas."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "what books is Alexandre Dumas, son, known for?"},
+    {"role": "model", "content": "wikipedia: List the works of Alexandre Dumas, son."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "what are the most famous sculptures by constantin brâncuși?"},
+    {"role": "model", "content": "wikipedia: List the works of Constantin Brâncuși."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "list compositions of ludwig van beethoven"},
+    {"role": "model", "content": "wikipedia: List the works of Ludwig van Beethoven."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "list remarkable paints of vicent van gogh"},
+    {"role": "model", "content": "wikipedia: List the works of Vincent van Gogh."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "print george enescu musical works"},
+    {"role": "model", "content": "wikipedia: List the works of George Enescu."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "list all stories written by ion creanga"},
+    {"role": "model", "content": "wikipedia: List the stories of Ion Creanga."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "what are the stories written by mark twain"},
+    {"role": "model", "content": "wikipedia: List the stories of Mark Twain."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "enumerate brothers grimm well known stories"},
+    {"role": "model", "content": "wikipedia: List the stories of Brothers Grimm."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "fairy tales by hans christian andersen"},
+    {"role": "model", "content": "wikipedia: List the stories of Hans Christian Andersen."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "fairy tales and short stories for children by cezar petrescu"},
+    {"role": "model", "content": "wikipedia: List the stories of Cezar Petrescu."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "list the stories written by dr. seuss"},
+    {"role": "model", "content": "wikipedia: List the stories of Dr. Seuss."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "list all known fables written by aesop"},
+    {"role": "model", "content": "wikipedia: List the fables of Aesop."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "fables by jean de la fontaine"},
+    {"role": "model", "content": "wikipedia: List the fables of Jen de La Fontaine."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "list of fables writen by russian author ivan krylov"},
+    {"role": "model", "content": "wikipedia: List the fables of Ivan Krylov."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "what fables is hans christian andersen known for?"},
+    {"role": "model", "content": "wikipedia: List the fables of Hans Christian Andersen."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "enumerate john gay's fables"},
+    {"role": "model", "content": "wikipedia: List the fables of John Gay."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "polish fables by ignacy krasicki"},
+    {"role": "model", "content": "wikipedia: List the fables of Ignacy Krasicki."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "list franz kafka's fables"},
+    {"role": "model", "content": "wikipedia: List the fables of Franz Kafka."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "list of the james thurber fables"},
+    {"role": "model", "content": "wikipedia: List the fables of James Thurber."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "in what period did mihai eminescu live?"},
+    {"role": "model", "content": "wikipedia: Read article about Mihai Eminescu and respond to question: in what period did Mihai Eminescu live."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "what is the height of eiffel tower?"},
+    {"role": "model", "content": "wikipedia: Read article about Eiffel Tower and respond to question: what is the height of Eiffel Tower."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "what is the length of nile river?"},
+    {"role": "model", "content": "wikipedia: Read article about Nile and respond to question: what is the length of Nile river."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "what is the capital city of norway?"},
+    {"role": "model", "content": "wikipedia: Read article about Norway and respond to question: what is the capital city of norway."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "how many citizens does switzerland have?"},
+    {"role": "model", "content": "wikipedia: Read article about Switzerland and respond to question: how many citizens does switzerland have."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "what are the largest cities in romania?"},
+    {"role": "model", "content": "wikipedia: Read article about Romania and respond to question: what are the largest cities in romania."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "when did albert einstein create relativity?"},
+    {"role": "model", "content": "wikipedia: Read article about Albert Einstein and respond to question: when did Albert Einstein create relativity."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "how big is a lion?"},
+    {"role": "model", "content": "wikipedia: Read article about lion and respond to question: how big is a lion."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "what is the speed of a cheetah?"},
+    {"role": "model", "content": "wikipedia: Read article about cheetah and respond to question: what is the speed of a cheetah?."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "why the sky is blue?"},
+    {"role": "model", "content": "wikipedia: Read article about sky and respond to question: why the sky is blue."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "how far is the moon?"},
+    {"role": "model", "content": "wikipedia: Read article about Moon and respond to question: how far is the moon."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "how many moons does mars have?"},
+    {"role": "model", "content": "wikipedia: Read article about Mars and respond to question: how many moons does mars have."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "how many planets does our solar system have?"},
+    {"role": "model", "content": "wikipedia: Read article about solar system and respond to question: how many planets does our solar system have."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "what is the largest planet from solar system?"},
+    {"role": "model", "content": "wikipedia: Read article about solar system and respond to question: what is the largest planet from solar system."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "what is the speed of the international space station?"},
+    {"role": "model", "content": "wikipedia: Read article about international space station and respond to question: what is the speed of the international space station?."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "when stephen the great ruled moldavia?"},
+    {"role": "model", "content": "wikipedia: Read article about Stephen the Great and respond to question: when Stephen the Great ruled Moldavia."}
   ]
 ]

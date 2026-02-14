@@ -47,7 +47,7 @@ async def handle_slm_request(request):
         print(f"output_text: {output_text}")
         print(f"confidence: {avg_confidence:.4f} (min: {min_confidence:.4f})")
 
-        output_parts = output_text.split(": ")
+        output_parts = output_text.split(": ", 1)
         response = {
             "agent": f"{output_parts[0]}",
             "prompt": f"{output_parts[1]}",
@@ -55,7 +55,7 @@ async def handle_slm_request(request):
             "confidence_min": min_confidence
         }
         print(f"response: {response}")
-        
+
         print(f"Request processing time: {time.time() - request_start_time}")
         return web.json_response(response, status=200)
 

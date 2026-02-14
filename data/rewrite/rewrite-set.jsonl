@@ -398,3 +398,32 @@
 {"user":"what is the largest planet from solar system?","agent":"wikipedia","prompt":"Read article about solar system and respond to question: what is the largest planet from solar system."}
 {"user":"what is the speed of the international space station?","agent":"wikipedia","prompt":"Read article about international space station and respond to question: what is the speed of the international space station?."}
 {"user":"when stephen the great ruled moldavia?","agent":"wikipedia","prompt":"Read article about Stephen the Great and respond to question: when Stephen the Great ruled Moldavia."}
+
+{"user":"how to use if condition for a python string not equal with a value","agent":"programming","prompt":"How to use if condition for a Python string not equal with a value?"}
+{"user":"how to split a python string by first colon only","agent":"programming","prompt":"How to split a Python string by first colon only?"}
+{"user":"how to reverse a python string","agent":"programming","prompt":"How to reverse a Python string?"}
+{"user":"uppercase a python string","agent":"programming","prompt":"Uppercase a Python string."}
+{"user":"demonstrate me how to read a list of names from a file in python","agent":"programming","prompt":"Demonstrate me how to read a list of names from a file, in Python?"}
+{"user":"how to calculate the area of a triangle given its base and height in python","agent":"programming","prompt":"How to calculate the area of a triangle given its base and height, in Python?"}
+{"user":"calculate in python the standard deviation of a list of numbers","agent":"programming","prompt":"Calculate in Python the standard deviation of a list of numbers."}
+{"user":"is there a built-in python function to find the common elements between two lists","agent":"programming","prompt":"Is there a built-in Python function to find the common elements between two lists?"}
+{"user":"how to use python to check that a given string is a valid email address","agent":"programming","prompt":"How to use Python to check that a given string is a valid email address?"}
+{"user":"generate in python a random password of a specified length","agent":"programming","prompt":"Generate, in Python, a random password of a specified length."}
+{"user":"python script to convert a string from one unit of measurement to another","agent":"programming","prompt":"Python script to convert a string from one unit of measurement to another."}
+{"user":"remove duplicate elements from a python list of strings","agent":"programming","prompt":"Remove duplicate elements from a Python list of strings."}
+{"user":"write python function to calculate the area of a circle given its radius","agent":"programming","prompt":"Write a Python function to calculate the area of a circle, given its radius."}
+{"user":"i need a python script to read a csv file containing sales data","agent":"programming","prompt":"I need a Python script to read a CSV file containing sales data."}
+{"user":"create a python class representing a car. add a method to calculate the fuel consumption per 100 km","agent":"programming","prompt":"Create a Python class representing a car. Add a method to calculate the fuel consumption per 100 km."}
+{"user":"generate a python program that simulates a simple dice roll","agent":"programming","prompt":"Generate a Python program that simulates a simple dice roll."}
+{"user":"i want a python function that takes a list of integers and returns the average","agent":"programming","prompt":"I want a Python function that takes a list of integers and returns the average."}
+{"user":"write a python script to check if a given string is a palindrome","agent":"programming","prompt":"Write a Python script to check if a given string is a palindrome."}
+{"user":"develop a python program that takes a temperature in celsius as input and converts it to fahrenheit","agent":"programming","prompt":"Develop a Python program that takes a temperature in Celsius as input and converts it to Fahrenheit."}
+{"user":"i need a python function to find the largest number in a list of floating-point numbers","agent":"programming","prompt":"I need a Python function to find the largest number in a list of floating-point numbers."}
+{"user":"create a python script that reads a text file and counts the number of words in it","agent":"programming","prompt":"Create a Python script that reads a text file and counts the number of words in it."}
+{"user":"write a python program to implement a simple calculator that can perform addition, subtraction, multiplication, and division","agent":"programming","prompt":"Write a Python program to implement a simple calculator that can perform addition, subtraction, multiplication, and division."}
+{"user":"generate a python function to calculate the distance between two points given their coordinates","agent":"programming","prompt":"Generate a Python function to calculate the distance between two points given their coordinates."}
+{"user":"i'm building a simple game in python. can you provide a basic structure for a function that simulates a player moving a certain number of steps","agent":"programming","prompt":"I'm building a simple game in Python.  Can you provide a basic structure for a function that simulates a player moving a certain number of steps?"}
+{"user":"write a python script to generate a sequence of random numbers between 1 and 100","agent":"programming","prompt":"Write a Python script to generate a sequence of random numbers between 1 and 100."}
+{"user":"create a python class representing a rectangle","agent":"programming","prompt":"Create a Python class representing a rectangle."}
+{"user":"write a python program to determine if a number is prime","agent":"programming","prompt":"Write a Python program to determine if a number is prime."}
+{"user":"create a python program that simulates a simple queue using a list","agent":"programming","prompt":"Create a Python program that simulates a simple queue using a list."}

@@ -1848,5 +1848,145 @@
     {"role": "system", "content": "Classify and rewrite next user prompt"},
     {"role": "user", "content": "when stephen the great ruled moldavia?"},
     {"role": "model", "content": "wikipedia: Read article about Stephen the Great and respond to question: when Stephen the Great ruled Moldavia."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "how to use if condition for a python string not equal with a value"},
+    {"role": "model", "content": "programming: How to use if condition for a Python string not equal with a value?"}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "how to split a python string by first colon only"},
+    {"role": "model", "content": "programming: How to split a Python string by first colon only?"}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "how to reverse a python string"},
+    {"role": "model", "content": "programming: How to reverse a Python string?"}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "uppercase a python string"},
+    {"role": "model", "content": "programming: Uppercase a Python string."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "demonstrate me how to read a list of names from a file in python"},
+    {"role": "model", "content": "programming: Demonstrate me how to read a list of names from a file, in Python?"}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "how to calculate the area of a triangle given its base and height in python"},
+    {"role": "model", "content": "programming: How to calculate the area of a triangle given its base and height, in Python?"}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "calculate in python the standard deviation of a list of numbers"},
+    {"role": "model", "content": "programming: Calculate in Python the standard deviation of a list of numbers."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "is there a built-in python function to find the common elements between two lists"},
+    {"role": "model", "content": "programming: Is there a built-in Python function to find the common elements between two lists?"}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "how to use python to check that a given string is a valid email address"},
+    {"role": "model", "content": "programming: How to use Python to check that a given string is a valid email address?"}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "generate in python a random password of a specified length"},
+    {"role": "model", "content": "programming: Generate, in Python, a random password of a specified length."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "python script to convert a string from one unit of measurement to another"},
+    {"role": "model", "content": "programming: Python script to convert a string from one unit of measurement to another."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "remove duplicate elements from a python list of strings"},
+    {"role": "model", "content": "programming: Remove duplicate elements from a Python list of strings."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "write python function to calculate the area of a circle given its radius"},
+    {"role": "model", "content": "programming: Write a Python function to calculate the area of a circle, given its radius."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "i need a python script to read a csv file containing sales data"},
+    {"role": "model", "content": "programming: I need a Python script to read a CSV file containing sales data."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "create a python class representing a car. add a method to calculate the fuel consumption per 100 km"},
+    {"role": "model", "content": "programming: Create a Python class representing a car. Add a method to calculate the fuel consumption per 100 km."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "generate a python program that simulates a simple dice roll"},
+    {"role": "model", "content": "programming: Generate a Python program that simulates a simple dice roll."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "i want a python function that takes a list of integers and returns the average"},
+    {"role": "model", "content": "programming: I want a Python function that takes a list of integers and returns the average."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "write a python script to check if a given string is a palindrome"},
+    {"role": "model", "content": "programming: Write a Python script to check if a given string is a palindrome."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "develop a python program that takes a temperature in celsius as input and converts it to fahrenheit"},
+    {"role": "model", "content": "programming: Develop a Python program that takes a temperature in Celsius as input and converts it to Fahrenheit."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "i need a python function to find the largest number in a list of floating-point numbers"},
+    {"role": "model", "content": "programming: I need a Python function to find the largest number in a list of floating-point numbers."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "create a python script that reads a text file and counts the number of words in it"},
+    {"role": "model", "content": "programming: Create a Python script that reads a text file and counts the number of words in it."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "write a python program to implement a simple calculator that can perform addition, subtraction, multiplication, and division"},
+    {"role": "model", "content": "programming: Write a Python program to implement a simple calculator that can perform addition, subtraction, multiplication, and division."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "generate a python function to calculate the distance between two points given their coordinates"},
+    {"role": "model", "content": "programming: Generate a Python function to calculate the distance between two points given their coordinates."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "i'm building a simple game in python. can you provide a basic structure for a function that simulates a player moving a certain number of steps"},
+    {"role": "model", "content": "programming: I'm building a simple game in Python.  Can you provide a basic structure for a function that simulates a player moving a certain number of steps?"}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "write a python script to generate a sequence of random numbers between 1 and 100"},
+    {"role": "model", "content": "programming: Write a Python script to generate a sequence of random numbers between 1 and 100."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "create a python class representing a rectangle"},
+    {"role": "model", "content": "programming: Create a Python class representing a rectangle."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "write a python program to determine if a number is prime"},
+    {"role": "model", "content": "programming: Write a Python program to determine if a number is prime."}
+  ],
+  [
+    {"role": "system", "content": "Classify and rewrite next user prompt"},
+    {"role": "user", "content": "create a python program that simulates a simple queue using a list"},
+    {"role": "model", "content": "programming: Create a Python program that simulates a simple queue using a list."}
   ]
 ]

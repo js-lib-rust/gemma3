@@ -63,6 +63,9 @@ parser.add_argument("--weight-decay", action="store", type=float, default="0.01"
 parser.add_argument("--wakeup", action="store", type=float, default="0.05")
 parser.add_argument("--use-mixed-precision", action="store_true")
 parser.add_argument("--use-resize-embeddings", action="store_true")
+parser.add_argument("--logging-steps", action="store", type=int, default="5")
+parser.add_argument("--eval-steps", action="store", type=int, default="10")
+parser.add_argument("--save-steps", action="store", type=int, default="20")
 parser.add_argument("--trace", action="store_true")
 args = parser.parse_args()
 
@@ -89,6 +92,9 @@ print(f"Use weight decay {args.weight_decay}")
 print(f"Use wakeup ratio {args.wakeup}")
 print(f"Use mixed precision {args.use_mixed_precision}")
 print(f"Use resize embeddings {args.use_resize_embeddings}")
+print(f"Use logging steps {args.logging_steps}")
+print(f"Use evaluation steps {args.eval_steps}")
+print(f"Use save steps {args.save_steps}")
 print(f"Use trace {args.trace}")
 print()
 
@@ -186,10 +192,10 @@ training_args = TrainingArguments(
     learning_rate=args.learning_rate,
     lr_scheduler_type="cosine",
     weight_decay=args.weight_decay,
-    logging_steps=5,
-    save_steps=20,
-    eval_steps=10,
     eval_strategy="steps",
+    logging_steps=args.logging_steps,
+    eval_steps=args.eval_steps,
+    save_steps=args.save_steps,
     fp16=args.use_mixed_precision,
     gradient_checkpointing=False,
     optim="adamw_torch",

@@ -20,6 +20,7 @@ parser.add_argument("--login", action="store")
 parser.add_argument("--verbose", action="store_true")
 parser.add_argument("--trace", action="store_true")
 parser.add_argument("--errors-only", action="store_true")
+parser.add_argument("--error-threshold", action="store", type=float, default="0.9999")
 parser.add_argument("tests", nargs='*', type=int, help="space separated list of test ids")
 args = parser.parse_args()
 
@@ -33,6 +34,7 @@ print(f"Use login {args.login}")
 print(f"Use verbose {args.verbose}")
 print(f"Use trace {args.trace}")
 print(f"Use errors only {args.errors_only}")
+print(f"Use error threshold {args.error_threshold}")
 
 data_files = args.files
 dataset = []
@@ -111,7 +113,7 @@ for index, datapoint in enumerate(dataset):
     similarity_score = util.get_similarity_score(prediction, ground_truth)
     similarity_scores.append(similarity_score)
 
-    error = similarity_score < 0.9999
+    error = similarity_score < args.error_threshold
     if error:
         errors_count += 1
     if not args.errors_only or error:

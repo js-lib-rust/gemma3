@@ -47,10 +47,14 @@ async def handle_slm_request(request):
         print(f"output_text: {output_text}")
         print(f"confidence: {avg_confidence:.4f} (min: {min_confidence:.4f})")
 
-        output_parts = output_text.split(": ", 1)
+        # agent1:prompt1\nagent2:prompt2\nagent3:prompt3
+        actions = []
+        for line in output_text.split("\n"):
+            line_parts = line.split(":", 1)
+            actions.append({"agent": f"{line_parts[0]}", "prompt": f"{line_parts[1]}"})
+
         response = {
-            "agent": f"{output_parts[0]}",
-            "prompt": f"{output_parts[1]}",
+            "actions": actions,
             "confidence": avg_confidence,
             "confidence_min": min_confidence
         }

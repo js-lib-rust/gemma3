@@ -17,6 +17,11 @@ import util
 
 
 def tokenizer_function(examples):
+    if args.assert_max_length:
+        tokenized = tokenizer(examples['text'], truncation=False, padding=False, return_tensors=None)
+        for tokens in tokenized['input_ids']:
+            assert len(tokens) < args.max_length, f"max length exceeded: {len(tokens) + 1}"
+
     tokenized = tokenizer(
         examples['text'],
         max_length=args.max_length,
@@ -56,6 +61,7 @@ parser.add_argument("--files", action="store", type=util.split_by_comma)
 parser.add_argument("--tools", action="store", type=util.split_by_comma)
 parser.add_argument("--output-dir", action="store", type=str)
 parser.add_argument("--max-length", action="store", type=int, default="1000")
+parser.add_argument("--assert-max-length", action="store_true")
 parser.add_argument("--epochs", action="store", type=int, default="4")
 parser.add_argument("--train-batch", action="store", type=int, default="2")
 parser.add_argument("--learning-rate", action="store", type=float, default="5e-6")
@@ -85,6 +91,7 @@ print(f"Use files {args.files}")
 print(f"Use tools {args.tools}")
 print(f"Use output dir {output_dir}")
 print(f"Use max length {args.max_length}")
+print(f"Use assert max length {args.assert_max_length}")
 print(f"Use epochs {args.epochs}")
 print(f"Use train batch size {args.train_batch}")
 print(f"Use learning rate {args.learning_rate}")

@@ -17,7 +17,7 @@ async def handle_slm_request(request):
         request_start_time = time.time()
 
         json_request = await request.json()
-        system = "Classify and rewrite next user prompt"
+        system = "Rewrite and route the next user prompt"
         prompt = json_request['prompt']
         print(f'prompt: {prompt}')
 

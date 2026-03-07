@@ -56,8 +56,8 @@ def prepare_dataset(examples):
 parser = argparse.ArgumentParser()
 parser.add_argument("--model", action="store", type=str)
 parser.add_argument("--peft", action="store", type=str, choices=["LoRA", "QLoRA"])
-parser.add_argument("--lora-targets", action="store", type=util.split_by_comma,
-                    choices=["embedding", "attention", "MLP"], default=["attention", "MLP"])
+parser.add_argument("--lora-targets", action="store", type=str,
+                    choices=["attention", "attention+MLP", "attention+MLP+embedding"], default=["attention"])
 parser.add_argument("--dtype", action="store", type=util.dtype, default="float32")
 parser.add_argument("--attention", action="store", type=str,
                     choices=["eager", "flash_attention_2", "sdpa"], default="eager")
@@ -143,19 +143,18 @@ print(f"Model loaded on {device}")
 print(f"Model parameters: {model.num_parameters():,}")
 if args.peft:
     target_modules = []
-    for modules in args.lora_targets:
-        if modules == "embedding":
-            target_modules.append("embed_tokens")
-            target_modules.append("lm_head")
-        elif modules == "attention":
-            target_modules.append("q_proj")
-            target_modules.append("k_proj")
-            target_modules.append("v_proj")
-            target_modules.append("o_proj")
-        elif modules == "MLP":
-            target_modules.append("gate_proj")
-            target_modules.append("up_proj")
-            target_modules.append("down_proj")
+    if "embedding" in args.lora_targets:
+        target_modules.append("embed_tokens")
+        target_modules.append("lm_head")
+    elif "attention" in args.lora_targets:
+        target_modules.append("q_proj")
+        target_modules.append("k_proj")
+        target_modules.append("v_proj")
+        target_modules.append("o_proj")
+    elif "MLP" in args.lora_targets:
+        target_modules.append("gate_proj")
+        target_modules.append("up_proj")
+        target_modules.append("down_proj")
 
     lora_config = LoraConfig(
         r=16,

@@ -57,7 +57,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument("--model", action="store", type=str)
 parser.add_argument("--peft", action="store", type=str, choices=["LoRA", "QLoRA"])
 parser.add_argument("--lora-targets", action="store", type=str,
-                    choices=["attention", "attention+MLP", "attention+MLP+embedding"], default=["attention+MLP"])
+                    choices=["attention", "attention+MLP", "attention+MLP+embedding"], default="attention+MLP")
 parser.add_argument("--lora-save-embeddings", action="store_true")
 parser.add_argument("--dtype", action="store", type=util.dtype, default="float32")
 parser.add_argument("--attention", action="store", type=str,

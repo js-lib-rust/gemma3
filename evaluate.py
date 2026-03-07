@@ -14,6 +14,7 @@ parser.add_argument("--model", action="store")
 parser.add_argument("--family", action="store")
 parser.add_argument("--list", action="store_true")
 parser.add_argument("--files", action="store", type=util.split_by_comma)
+parser.add_argument("--domains", action="store", type=util.split_by_comma)
 parser.add_argument("--tools", action="store", type=util.split_by_comma)
 parser.add_argument("--max-new-tokens", action="store", type=int, default="2000")
 parser.add_argument("--login", action="store")
@@ -28,6 +29,7 @@ model_path = util.get_model_path(args.model) if args.model.startswith('/') else 
 print(f"Use model `{model_path}`.")
 print(f"Use family {args.family}")
 print(f"Use files {args.files}")
+print(f"Use domains {args.domains}")
 print(f"Use tools {args.tools}")
 print(f"Use max new tokens {args.max_new_tokens}.")
 print(f"Use login {args.login}")
@@ -94,6 +96,14 @@ for index, datapoint in enumerate(dataset):
         ground_truth = util.parse_function_call(args.family, datapoint.pop()['tool_calls'][0]['function'])
     else:
         ground_truth = ground_truth_turn['content']
+        if args.domains:
+            domain_accepted = False
+            for action in ground_truth.split('\n'):
+                if action.split(':', 1)[0] in args.domains:
+                    domain_accepted = True
+                    break
+            if not domain_accepted:
+                continue
     if args.trace:
         print(f"ground_truth: {ground_truth}")
 

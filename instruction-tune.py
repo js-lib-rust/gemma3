@@ -57,7 +57,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument("--model", action="store", type=str)
 parser.add_argument("--peft", action="store", type=str, choices=["LoRA", "QLoRA"])
 parser.add_argument("--lora-targets", action="store", type=str,
-                    choices=["attention", "attention+MLP", "attention+MLP+embedding"], default=["attention"])
+                    choices=["attention", "attention+MLP", "attention+MLP+embedding"], default=["attention+MLP"])
 parser.add_argument("--lora-save-embeddings", action="store_true")
 parser.add_argument("--dtype", action="store", type=util.dtype, default="float32")
 parser.add_argument("--attention", action="store", type=str,
@@ -232,8 +232,6 @@ validation_tokens = validation_tokens.map(lambda examples: {"labels": examples["
 print(f"Tokenized train size: {len(train_tokens)}")
 print(f"Tokenized validation size: {len(validation_tokens)}")
 
-data_collator = DataCollatorForLanguageModeling(tokenizer=tokenizer, mlm=False)
-
 training_args = TrainingArguments(
     output_dir=output_dir,
     num_train_epochs=args.epochs,
@@ -261,7 +259,9 @@ training_args = TrainingArguments(
     dataloader_pin_memory=False,
     remove_unused_columns=True,
 )
+print(f"Training arguments: {training_args}")
 
+data_collator = DataCollatorForLanguageModeling(tokenizer=tokenizer, mlm=False)
 trainer = Trainer(
     model=model,
     args=training_args,

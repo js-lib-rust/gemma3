@@ -58,6 +58,7 @@ parser.add_argument("--model", action="store", type=str)
 parser.add_argument("--peft", action="store", type=str, choices=["LoRA", "QLoRA"])
 parser.add_argument("--lora-targets", action="store", type=str,
                     choices=["attention", "attention+MLP", "attention+MLP+embedding"], default=["attention"])
+parser.add_argument("--lora-save-embeddings", action="store_true")
 parser.add_argument("--dtype", action="store", type=util.dtype, default="float32")
 parser.add_argument("--attention", action="store", type=str,
                     choices=["eager", "flash_attention_2", "sdpa"], default="eager")
@@ -92,6 +93,7 @@ print(f"Use device {device}")
 print(f"Use model {model_path}")
 print(f"Use PEFT {args.peft}")
 print(f"Use LoRA target modules {args.lora_targets}")
+print(f"Use LoRA save embedding modules {args.lora_save_embeddings}")
 print(f"Use dtype {dtype}")
 print(f"Use attention implementation {args.attention}")
 print(f"Use files {args.files}")
@@ -142,24 +144,34 @@ if args.peft == "QLoRA":
 print(f"Model loaded on {device}")
 print(f"Model parameters: {model.num_parameters():,}")
 if args.peft:
+    ensure_weight_tying = False
     target_modules = []
+    modules_to_save = None
+
     if "embedding" in args.lora_targets:
+        model.config.tie_word_embeddings = False
         target_modules.append("embed_tokens")
         target_modules.append("lm_head")
-    elif "attention" in args.lora_targets:
+    if "attention" in args.lora_targets:
         target_modules.append("q_proj")
         target_modules.append("k_proj")
         target_modules.append("v_proj")
         target_modules.append("o_proj")
-    elif "MLP" in args.lora_targets:
+    if "MLP" in args.lora_targets:
         target_modules.append("gate_proj")
         target_modules.append("up_proj")
         target_modules.append("down_proj")
+
+    if args.lora_save_embeddings:
+        modules_to_save = ["embed_tokens", "lm_heads"]
+        ensure_weight_tying = True
 
     lora_config = LoraConfig(
         r=16,
         lora_alpha=32,
         target_modules=target_modules,
+        modules_to_save=modules_to_save,
+        ensure_weight_tying=ensure_weight_tying,
         lora_dropout=0.05,
         bias="none",
         task_type="CAUSAL_LM"

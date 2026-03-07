@@ -56,8 +56,11 @@ def prepare_dataset(examples):
 parser = argparse.ArgumentParser()
 parser.add_argument("--model", action="store", type=str)
 parser.add_argument("--peft", action="store", type=str, choices=["LoRA", "QLoRA"])
+parser.add_argument("--lora-targets", action="store", type=util.split_by_comma,
+                    choices=["embedding", "attention", "MLP"], default=["attention", "MLP"])
 parser.add_argument("--dtype", action="store", type=util.dtype, default="float32")
-parser.add_argument("--attention", action="store", type=str, default="flash_attention_2")
+parser.add_argument("--attention", action="store", type=str,
+                    choices=["eager", "flash_attention_2", "sdpa"], default="eager")
 parser.add_argument("--files", action="store", type=util.split_by_comma)
 parser.add_argument("--tools", action="store", type=util.split_by_comma)
 parser.add_argument("--output-dir", action="store", type=str)
@@ -88,6 +91,7 @@ if args.peft:
 print(f"Use device {device}")
 print(f"Use model {model_path}")
 print(f"Use PEFT {args.peft}")
+print(f"Use LoRA target modules {args.lora_targets}")
 print(f"Use dtype {dtype}")
 print(f"Use attention implementation {args.attention}")
 print(f"Use files {args.files}")
@@ -138,14 +142,30 @@ if args.peft == "QLoRA":
 print(f"Model loaded on {device}")
 print(f"Model parameters: {model.num_parameters():,}")
 if args.peft:
+    target_modules = []
+    for modules in args.lora_targets:
+        if modules == "embedding":
+            target_modules.append("embed_tokens")
+            target_modules.append("lm_head")
+        elif modules == "attention":
+            target_modules.append("q_proj")
+            target_modules.append("k_proj")
+            target_modules.append("v_proj")
+            target_modules.append("o_proj")
+        elif modules == "MLP":
+            target_modules.append("gate_proj")
+            target_modules.append("up_proj")
+            target_modules.append("down_proj")
+
     lora_config = LoraConfig(
         r=16,
         lora_alpha=32,
-        target_modules=["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj"],
+        target_modules=target_modules,
         lora_dropout=0.05,
         bias="none",
         task_type="CAUSAL_LM"
     )
+    print(f"LoRA config: {lora_config}")
     print("Adapting model for PEFT")
     model = get_peft_model(model, lora_config)
     model.print_trainable_parameters()

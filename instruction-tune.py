@@ -2,7 +2,7 @@ import json
 
 import torch
 import yaml
-from peft import LoraConfig, get_peft_model
+from peft import LoraConfig, get_peft_model, prepare_model_for_kbit_training
 from transformers import (
     AutoTokenizer,
     AutoModelForCausalLM,
@@ -55,8 +55,9 @@ def prepare_dataset(examples):
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--model", action="store", type=str)
-parser.add_argument("--use-peft-lora", action="store_true")
+parser.add_argument("--peft", action="store", type=str, choices=["LoRA", "QLoRA"])
 parser.add_argument("--dtype", action="store", type=util.dtype, default="float32")
+parser.add_argument("--attention", action="store", type=str, default="flash_attention_2")
 parser.add_argument("--files", action="store", type=util.split_by_comma)
 parser.add_argument("--tools", action="store", type=util.split_by_comma)
 parser.add_argument("--output-dir", action="store", type=str)
@@ -67,8 +68,9 @@ parser.add_argument("--train-batch", action="store", type=int, default="2")
 parser.add_argument("--learning-rate", action="store", type=float, default="5e-6")
 parser.add_argument("--weight-decay", action="store", type=float, default="0.01")
 parser.add_argument("--wakeup", action="store", type=float, default="0.05")
-parser.add_argument("--use-mixed-precision", action="store_true")
-parser.add_argument("--use-resize-embeddings", action="store_true")
+parser.add_argument("--fp16", action="store_true")
+parser.add_argument("--bf16", action="store_true")
+parser.add_argument("--resize-embeddings", action="store_true")
 parser.add_argument("--logging-steps", action="store", type=int, default="5")
 parser.add_argument("--eval-steps", action="store", type=int, default="10")
 parser.add_argument("--save-steps", action="store", type=int, default="20")
@@ -81,12 +83,13 @@ device = "cuda:0" if torch.cuda.is_available() else "cpu"
 output_dir = f"./{args.output_dir}"
 model_path = util.get_model_path(args.model) if args.model.startswith('/') else args.model
 dtype = args.dtype
-if args.use_peft_lora:
+if args.peft:
     dtype = torch.bfloat16
 print(f"Use device {device}")
 print(f"Use model {model_path}")
-print(f"Use PEFT LORA {args.use_peft_lora}")
+print(f"Use PEFT {args.peft}")
 print(f"Use dtype {dtype}")
+print(f"Use attention implementation {args.attention}")
 print(f"Use files {args.files}")
 print(f"Use tools {args.tools}")
 print(f"Use output dir {output_dir}")
@@ -97,8 +100,9 @@ print(f"Use train batch size {args.train_batch}")
 print(f"Use learning rate {args.learning_rate}")
 print(f"Use weight decay {args.weight_decay}")
 print(f"Use wakeup ratio {args.wakeup}")
-print(f"Use mixed precision {args.use_mixed_precision}")
-print(f"Use resize embeddings {args.use_resize_embeddings}")
+print(f"Use fp16 {args.fp16}")
+print(f"Use bf16 {args.bf16}")
+print(f"Use resize embeddings {args.resize_embeddings}")
 print(f"Use logging steps {args.logging_steps}")
 print(f"Use evaluation steps {args.eval_steps}")
 print(f"Use save steps {args.save_steps}")
@@ -117,26 +121,36 @@ else:
     tools = None
 
 print(f"Loading model {model_path}...")
-model = AutoModelForCausalLM.from_pretrained(model_path, dtype=dtype, device_map=device, attn_implementation="eager")
+model_config = {
+    'dtype': dtype,
+    'device_map': device,
+    'attn_implementation': args.attention
+}
+if args.peft == "QLoRA":
+    print("Adding QLoRA parameters to model configuration")
+    model_config['load_in_4bit'] = True
+    model_config['bnb_4bit_compute_dtype'] = dtype
+model = AutoModelForCausalLM.from_pretrained(model_path, **model_config)
+if args.peft == "QLoRA":
+    print("Preparing model for QLoRA training")
+    model = prepare_model_for_kbit_training(model)
+
 print(f"Model loaded on {device}")
 print(f"Model parameters: {model.num_parameters():,}")
-
-if args.use_peft_lora:
+if args.peft:
     lora_config = LoraConfig(
-        r=8,
-        lora_alpha=16,
-        target_modules=["q_proj", "v_proj"],
-        lora_dropout=0.1,
+        r=16,
+        lora_alpha=32,
+        target_modules=["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj"],
+        lora_dropout=0.05,
         bias="none",
         task_type="CAUSAL_LM"
     )
+    print("Adapting model for PEFT")
     model = get_peft_model(model, lora_config)
-    # if args.use_tuned_model and os.path.exists(f"{output_dir}/adapter_model.safetensors"):
-    #     print("Loading previous PEFT adapters...")
-    #     model.load_adapter("function-1b", output_dir)
     model.print_trainable_parameters()
 
-print(f"Loading tokenizer from: {model_path}")
+print(f"Loading tokenizer from {model_path}")
 tokenizer = AutoTokenizer.from_pretrained(model_path)
 if tokenizer.pad_token is None:
     tokenizer.pad_token = tokenizer.eos_token
@@ -151,7 +165,7 @@ model.config.eos_token_id = tokenizer.eos_token_id
 if hasattr(model, 'generation_config'):
     model.generation_config.pad_token_id = tokenizer.pad_token_id
     model.generation_config.bos_token_id = tokenizer.bos_token_id
-if args.use_resize_embeddings:
+if args.resize_embeddings:
     model.resize_token_embeddings(len(tokenizer))
 
 print()
@@ -196,19 +210,20 @@ training_args = TrainingArguments(
     per_device_eval_batch_size=1,
     gradient_accumulation_steps=1,
     warmup_ratio=args.wakeup,
+    optim="adamw_torch",
     learning_rate=args.learning_rate,
     lr_scheduler_type="cosine",
     weight_decay=args.weight_decay,
+    metric_for_best_model="eval_loss",
     eval_strategy="steps",
     logging_steps=args.logging_steps,
     eval_steps=args.eval_steps,
     save_steps=args.save_steps,
-    fp16=args.use_mixed_precision,
+    fp16=args.fp16,
+    bf16=args.bf16,
     gradient_checkpointing=False,
-    optim="adamw_torch",
     save_total_limit=2,
     load_best_model_at_end=True,
-    metric_for_best_model="eval_loss",
     greater_is_better=False,
     report_to="none",
     push_to_hub=False,
@@ -231,8 +246,11 @@ train_result = trainer.train()
 
 print()
 print(f"Saving model to {output_dir}")
-trainer.save_model(output_dir)
+if args.peft:
+    print("Merging PEFT weights to base model")
+    model = model.merge_and_unload()
+
+model.save_pretrained(output_dir)
 tokenizer.save_pretrained(output_dir)
-model.config.save_pretrained(output_dir)
 
 print(f"Training completed!")

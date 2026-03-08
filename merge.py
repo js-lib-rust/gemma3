@@ -36,5 +36,5 @@ print(f"Saving merged model to {args.output_dir} ...")
 model.save_pretrained(args.output_dir)
 
 print(f"Saving base model tokenizer to {args.output_dir} ...")
-tokenizer = AutoTokenizer.from_pretrained(args.base_model_path)
+tokenizer = AutoTokenizer.from_pretrained(base_model_path)
 tokenizer.save_pretrained(args.output_dir)

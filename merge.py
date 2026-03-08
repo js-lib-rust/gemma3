@@ -1,7 +1,6 @@
 from peft import PeftModel
 from transformers import AutoModelForCausalLM, AutoTokenizer
 import argparse
-
 import util
 
 parser = argparse.ArgumentParser()
@@ -20,7 +19,8 @@ print(f"Use dtype {args.dtype}")
 print(f"Use output dir {args.output_dir}")
 
 print("Loading base model ...")
-base_model = AutoModelForCausalLM.from_pretrained(args.base_model, torch_dtype=args.dtype, device_map=args.device)
+base_model_path = util.get_model_path(args.base_model) if args.base_model.startswith('/') else args.base_model
+base_model = AutoModelForCausalLM.from_pretrained(base_model_path, torch_dtype=args.dtype, device_map=args.device)
 
 print("Loading PEFT model adapters ...")
 model = PeftModel.from_pretrained(base_model, args.peft_model)

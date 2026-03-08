@@ -59,6 +59,7 @@ parser.add_argument("--peft", action="store", type=str, choices=["LoRA", "QLoRA"
 parser.add_argument("--lora-targets", action="store", type=str,
                     choices=["attention", "attention+MLP", "attention+MLP+embedding"], default="attention+MLP")
 parser.add_argument("--lora-save-embeddings", action="store_true")
+parser.add_argument("--peft-merge", action="store_true")
 parser.add_argument("--dtype", action="store", type=util.dtype, default="float32")
 parser.add_argument("--attention", action="store", type=str,
                     choices=["eager", "flash_attention_2", "sdpa"], default="eager")
@@ -94,6 +95,7 @@ print(f"Use model {model_path}")
 print(f"Use PEFT {args.peft}")
 print(f"Use LoRA target modules {args.lora_targets}")
 print(f"Use LoRA save embedding modules {args.lora_save_embeddings}")
+print(f"Use PEFT merge {args.peft_merge}")
 print(f"Use dtype {dtype}")
 print(f"Use attention implementation {args.attention}")
 print(f"Use files {args.files}")
@@ -277,8 +279,8 @@ train_result = trainer.train()
 
 print()
 print(f"Saving model to {output_dir}")
-if args.peft:
-    print("Merging PEFT weights to base model")
+if args.peft_merge:
+    print("Merging PEFT weights into base model")
     model = model.merge_and_unload()
 
 model.save_pretrained(output_dir)

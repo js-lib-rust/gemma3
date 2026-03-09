@@ -18,8 +18,6 @@ def gemma_function_format():
         functions = json.load(file)
 
     for function_name, function_descriptor in functions.items():
-        # <start_function_declaration>declaration:hera_list_devices{description:<escape>List all devices registered to HERA<escape>,parameters:{type:<escape>OBJECT<escape>,properties:{},required:[]}}<end_function_declaration>
-
         parameters_type = function_descriptor['parameters']['type']
         properties = function_descriptor['parameters']['properties']
         required = function_descriptor['parameters']['required']
@@ -39,7 +37,8 @@ def gemma_function_format():
         parameters += ",".join([f"<escape>{item}<escape>" for item in required])
         parameters += "]}"
 
-        declaration = f"<start_function_declaration>declaration:{function_name}{{description:{description},parameters:{parameters}}}<end_function_declaration>"
+        declaration = (f"<start_function_declaration>declaration:{function_name}{{description:{description},"
+                       f"parameters:{parameters}}}<end_function_declaration>")
         print(declaration)
 
 
@@ -55,7 +54,8 @@ def hf_function_set():
         hf_sample = f"""  [
     {{"role": "{system_role}", "content": "You are a model that can do function calling with the following functions"}},
     {{"role": "user", "content": "{sample["prompt"]}"}},
-    {{"role": "{model_role}", "tool_calls": [{{"type": "function", "function": {{"name": "{sample["function"]}", "arguments": {sample["arguments"]}}}}}]}}
+    {{"role": "{model_role}", "tool_calls": [{{"type": "function", "function": {{"name": "{sample["function"]}", 
+    "arguments": {sample["arguments"]}}}}}]}}
   ]"""
         hf_dataset.append(hf_sample)
     sample_separator = ",\n"
@@ -64,19 +64,33 @@ def hf_function_set():
 
 def hf_rewrite_set():
     file_path = f"data/{args.file}"
+    dataset = []
     with open(file_path, 'r', encoding='UTF-8') as file:
-        dataset = [json.loads(line) for line in file if line.strip()]
+        for line in file:
+            line = line.strip()
+            if line:
+                # print(f"line: {line}")
+                sample = json.loads(line)
+                # print(sample)
+                dataset.append(sample)
 
     hf_dataset = []
     for sample in dataset:
-        hf_sample = f"""  [
-    {{"role": "system", "content": "Classify and rewrite next user prompt"}},
-    {{"role": "user", "content": "{sample["user"]}"}},
-    {{"role": "model", "content": "{sample['agent'].lower()}: {sample['prompt']}"}}
-  ]"""
-        hf_dataset.append(hf_sample)
-    sample_separator = ",\n"
-    print(f"[\n{sample_separator.join(hf_dataset)}\n]")
+        turns = [{"role": "system", "content": "Rewrite and route the next user prompt"}]
+        for turn in sample:
+            turns.append({"role": "user", "content": turn["user"]})
+            turns.append({"role": "model", "content": turn['model']})
+        hf_dataset.append(turns)
+    print(json.dumps(hf_dataset, indent=2))
+
+
+def escape(s):
+    s = s.replace("\\", "\\\\")
+    s = s.replace("\"", "\\\"")
+    s = s.replace("\n", "\\n")
+    s = s.replace("\r", "\\r")
+    s = s.replace("\t", "\\t")
+    return s
 
 
 module = __import__(__name__)

@@ -11,5 +11,6 @@ function-1b/
 rewrite-270m/
 rewrite-1b/
 rewrite-4b/
+rewrite-4b-peft/
 data/hass/
 .credentials

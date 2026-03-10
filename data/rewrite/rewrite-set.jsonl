@@ -602,7 +602,13 @@
 [{"user":"is there a switch / case flow control in python?","model":"programming:Is there a switch/case flow control in Python?"}]
 [{"user":"how to check a substring is part of a python string?","model":"programming:How do I check if a substring is part of a Python string?"}]
 
+[{"user":"please create a java spring rest controller with an endpoint using url parameters","model":"programming:Please create a Java Spring REST controller with an endpoint using URL parameters."}]
+
 [{"user":"there is a json list with objects with the same schema. how to deserialize in rust using serde_json","model":"programming:There is a JSON list of objects with the same schema. How to deserialize in Rust using serde_json?"}]
+
+[{"user":"how to remove a non empty directory from linux command line?","model":"linux-admin:How to remove a non-empty directory from the Linux command line?"}]
+[{"user":"how to create a reverse proxy using apache2 on linux? let's say we want to redirect entire HTTPS traffic to http://192.168.0.3:8020/","model":"linux-admin:How to create a reverse proxy using Apache2 on Linux? Let's say we want to redirect all HTTPS traffic to http://192.168.0.3:8020/"}]
+[{"user":"what apache2 modules to enable for a reverse proxy?","model":"linux-admin:Which Apache2 modules should I enable for a reverse proxy?"}]
 
 [{"user":"which expression is more appropriate: 'what is the weather like?' or 'how is the weather?'","model":"language:Which expression is more appropriate: \"What is the weather like?\" or \"How is the weather?\""}]
 [{"user":"how to properly ask if living room window is opened","model":"language:How to properly ask if living room window is opened?"}]

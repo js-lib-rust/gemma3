@@ -7902,11 +7902,67 @@
     },
     {
       "role": "user",
+      "content": "please create a java spring rest controller with an endpoint using url parameters"
+    },
+    {
+      "role": "model",
+      "content": "programming:Please create a Java Spring REST controller with an endpoint using URL parameters."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Rewrite and route the next user prompt"
+    },
+    {
+      "role": "user",
       "content": "there is a json list with objects with the same schema. how to deserialize in rust using serde_json"
     },
     {
       "role": "model",
       "content": "programming:There is a JSON list of objects with the same schema. How to deserialize in Rust using serde_json?"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Rewrite and route the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "how to remove a non empty directory from linux command line?"
+    },
+    {
+      "role": "model",
+      "content": "linux-admin:How to remove a non-empty directory from the Linux command line?"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Rewrite and route the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "how to create a reverse proxy using apache2 on linux? let's say we want to redirect entire HTTPS traffic to http://192.168.0.3:8020/"
+    },
+    {
+      "role": "model",
+      "content": "linux-admin:How to create a reverse proxy using Apache2 on Linux? Let's say we want to redirect all HTTPS traffic to http://192.168.0.3:8020/"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Rewrite and route the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "what apache2 modules to enable for a reverse proxy?"
+    },
+    {
+      "role": "model",
+      "content": "linux-admin:Which Apache2 modules should I enable for a reverse proxy?"
     }
   ],
   [

@@ -20,11 +20,11 @@ def create_conversation(sample):
     }
 
 
-with open("data/poc-function-schema.json", 'r', encoding='UTF-8') as file:
+with open("data/function/poc-function-schema.json", 'r', encoding='UTF-8') as file:
     tools = json.load(file)
 print(f"tools: {tools}")
 
-with open("data/poc-function-set.jsonl", 'r', encoding='UTF-8') as file:
+with open("data/function/poc-function-set.jsonl", 'r', encoding='UTF-8') as file:
     function_list = [json.loads(line) for line in file if line.strip()]
 dataset = Dataset.from_list(function_list)
 dataset = dataset.map(create_conversation, remove_columns=dataset.features)

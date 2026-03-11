@@ -1,5 +1,0 @@
-<start_of_turn>user
-Classify and rewrite next user prompt
-
-{prompt}<end_of_turn>
-<start_of_turn>model

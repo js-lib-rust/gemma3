@@ -62,7 +62,7 @@ def hf_function_set():
     print(f"[\n{sample_separator.join(hf_dataset)}\n]")
 
 
-def hf_rewrite_set():
+def hf_router_set():
     file_path = f"data/{args.file}"
     dataset = []
     with open(file_path, 'r', encoding='UTF-8') as file:
@@ -76,7 +76,7 @@ def hf_rewrite_set():
 
     hf_dataset = []
     for sample in dataset:
-        turns = [{"role": "system", "content": "Rewrite and route the next user prompt"}]
+        turns = [{"role": "system", "content": "Route and rewrite the next user prompt"}]
         for turn in sample:
             turns.append({"role": "user", "content": turn["user"]})
             turns.append({"role": "model", "content": turn['model']})

@@ -5,7 +5,7 @@ from transformers import (
     AutoTokenizer
 )
 
-MODEL_PATH = "rewrite-270m"
+MODEL_PATH = "router-270m"
 DEVICE = 'cuda:0'
 
 tokenizer = AutoTokenizer.from_pretrained(MODEL_PATH)

@@ -1,3 +1,6 @@
+import argparse
+
+import torch
 from aiohttp import web
 import time
 from transformers import (
@@ -5,11 +8,19 @@ from transformers import (
     AutoTokenizer
 )
 
-MODEL_PATH = "router-270m"
-DEVICE = 'cuda:0'
+import util
 
-tokenizer = AutoTokenizer.from_pretrained(MODEL_PATH)
-model = AutoModelForCausalLM.from_pretrained(MODEL_PATH, device_map=DEVICE)
+parser = argparse.ArgumentParser()
+parser.add_argument("--model", action="store", type=str, default="router-270m")
+args = parser.parse_args()
+
+device = "cuda:0" if torch.cuda.is_available() else "cpu"
+model_path = util.get_model_path(args.model) if args.model.startswith('/') else args.model
+print(f"Use device {device}")
+print(f"Use model {model_path}")
+
+tokenizer = AutoTokenizer.from_pretrained(model_path)
+model = AutoModelForCausalLM.from_pretrained(model_path, device_map=device)
 
 
 async def handle_slm_request(request):

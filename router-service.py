@@ -22,7 +22,7 @@ print(f"Use model {model_path}")
 print(f"Use dtype {args.dtype}")
 
 tokenizer = AutoTokenizer.from_pretrained(model_path)
-model = AutoModelForCausalLM.from_pretrained(model_path, dtype=args.datype, device_map=device)
+model = AutoModelForCausalLM.from_pretrained(model_path, dtype=args.dtype, device_map=device)
 
 
 async def handle_slm_request(request):

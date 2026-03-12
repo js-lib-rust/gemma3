@@ -12,15 +12,17 @@ import util
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--model", action="store", type=str, default="router-270m")
+parser.add_argument("--dtype", action="store", type=util.dtype, default="float32")
 args = parser.parse_args()
 
 device = "cuda:0" if torch.cuda.is_available() else "cpu"
 model_path = util.get_model_path(args.model) if args.model.startswith('/') else args.model
 print(f"Use device {device}")
 print(f"Use model {model_path}")
+print(f"Use dtype {args.dtype}")
 
 tokenizer = AutoTokenizer.from_pretrained(model_path)
-model = AutoModelForCausalLM.from_pretrained(model_path, device_map=device)
+model = AutoModelForCausalLM.from_pretrained(model_path, dtype=args.datype, device_map=device)
 
 
 async def handle_slm_request(request):

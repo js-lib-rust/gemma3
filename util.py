@@ -1,5 +1,6 @@
 import json
 import os
+import re
 
 import torch
 from sentence_transformers import util, SentenceTransformer
@@ -8,7 +9,10 @@ from sentence_transformers import util, SentenceTransformer
 def get_model_path(model_name):
     if model_name.startswith('/'):
         model_name = model_name[1:]
-    return os.environ.get("AI_MODEL_DIR") + "/hugging-face/model/" + model_name
+    model_path = os.environ.get("AI_MODEL_DIR").replace('\\', '/') + "/hugging-face/model/" + model_name
+    if not os.path.exists(model_path):
+        raise Exception(f"Model path {model_path} not found.")
+    return model_path
 
 
 PROMPT_TAG = "User Prompt: "
@@ -91,3 +95,22 @@ def template(file_name, variables):
     for key, value in variables.items():
         text = text.replace('{' + key + '}', value)
     return text
+
+
+def parse_gemma_function_response(text):
+    def cast(v):
+        try:
+            return int(v)
+        except:
+            try:
+                return float(v)
+            except:
+                return {'true': True, 'false': False}.get(v.lower(), v.strip("'\""))
+
+    return [{
+        "name": name,
+        "arguments": {
+            k: cast((v1 or v2).strip())
+            for k, v1, v2 in re.findall(r"(\w+):(?:<escape>(.*?)<escape>|([^,}]*))", args)
+        }
+    } for name, args in re.findall(r"<start_function_call>call:(\w+)\{(.*?)}<end_function_call>", text, re.DOTALL)]

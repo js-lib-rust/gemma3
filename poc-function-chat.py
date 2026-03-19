@@ -27,9 +27,9 @@ print(f"tools: {tools}")
 with open("data/function/poc-function-set.jsonl", 'r', encoding='UTF-8') as file:
     function_list = [json.loads(line) for line in file if line.strip()]
 dataset = Dataset.from_list(function_list)
-dataset = dataset.map(create_conversation, remove_columns=dataset.features)
+dataset = dataset.map(create_conversation)
 print(f"messages: {dataset['messages']}")
 
 tokenizer = AutoTokenizer.from_pretrained(MODEL)
-text = tokenizer.apply_chat_template(chat=dataset['messages'], tools=tools, tokenize=False)
+text = tokenizer.apply_chat_template(dataset['messages'], tools=tools, tokenize=False)
 print(text)

@@ -1,0 +1,144 @@
+[
+  {
+    "type": "function",
+    "function": {
+      "name": "hera_describe_device",
+      "description": "Create a detailed description of the requested device.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "device": {
+            "type": "string",
+            "description": "device name is a required string parameter; if is missing do not invoke any function but return error message."
+          }
+        },
+        "required": [
+          "device"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "hera_get_device_actions",
+      "description": "Retrieves the actions supported by a device.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "device": {
+            "type": "string",
+            "description": "device name is a required string parameter; if is missing do not invoke any function but return error message."
+          }
+        },
+        "required": [
+          "device"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "hera_get_heating_state",
+      "description": "Get central heating state.",
+      "parameters": {
+        "type": "object",
+        "properties": {}
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "hera_list_devices",
+      "description": "List all devices registered to HERA.",
+      "parameters": {
+        "type": "object",
+        "properties": {}
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "hera_read_humidity",
+      "description": "Read current humidity.",
+      "parameters": {
+        "type": "object",
+        "properties": {}
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "hera_read_sensors",
+      "description": "Read all registered sensors.",
+      "parameters": {
+        "type": "object",
+        "properties": {}
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "hera_read_temperature",
+      "description": "Retrieves the current temperature reading from a specified zone within the home. If zone name parameter is not present into user prompt, use living room as default.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "zone": {
+            "type": "string",
+            "description": "is the location where the devices are placed; if you cannot determine the zone from user prompt use living room as default value."
+          }
+        },
+        "required": [
+          "zone"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "hera_run_diagnose",
+      "description": "Check that a device is running properly and is reacheable and return a diagnose report.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "device": {
+            "type": "string",
+            "description": "device name is a required string parameter; if is missing do not invoke any function but return error message."
+          }
+        },
+        "required": [
+          "device"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "hera_start_heating",
+      "description": "Start central heating.",
+      "parameters": {
+        "type": "object",
+        "properties": {}
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "hera_stop_heating",
+      "description": "Stop central heating.",
+      "parameters": {
+        "type": "object",
+        "properties": {}
+      }
+    }
+  }
+]

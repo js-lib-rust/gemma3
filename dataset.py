@@ -1,14 +1,17 @@
 import argparse
 import json
+import schema
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--task", action="store", default="gemma_function_format")
 parser.add_argument("--file", action="store")
+parser.add_argument("--tool", action="store")
 parser.add_argument("--use-function-model", action="store_true")
 args = parser.parse_args()
 
 print(f"Use task {args.task}")
 print(f"Use file {args.file}")
+print(f"Use tool {args.tool}")
 print()
 
 
@@ -42,6 +45,12 @@ def gemma_function_format():
         print(declaration)
 
 
+def hf_tool_schema():
+    file_path = f"data/{args.file}"
+    with open(file_path, 'w', encoding='UTF-8') as file:
+        json.dump(schema.get(args.tool), file, indent=2)
+
+
 def hf_function_set():
     file_path = f"data/{args.file}"
     with open(file_path, 'r', encoding='UTF-8') as file:
@@ -51,15 +60,16 @@ def hf_function_set():
     model_role = "assistant" if args.use_function_model else "model"
     hf_dataset = []
     for sample in dataset:
-        hf_sample = f"""  [
-    {{"role": "{system_role}", "content": "You are a model that can do function calling with the following functions"}},
-    {{"role": "user", "content": "{sample["prompt"]}"}},
-    {{"role": "{model_role}", "tool_calls": [{{"type": "function", "function": {{"name": "{sample["function"]}", 
-    "arguments": {sample["arguments"]}}}}}]}}
-  ]"""
+        hf_sample = [
+            {"role": system_role,
+             "content": "You are a model that can do function calling with the following functions"},
+            {"role": "user", "content": sample['prompt']},
+            {"role": model_role,
+             "tool_calls": [{"type": "function", "function": {"name": sample['function'],
+                                                              "arguments": sample['arguments']}}]}
+        ]
         hf_dataset.append(hf_sample)
-    sample_separator = ",\n"
-    print(f"[\n{sample_separator.join(hf_dataset)}\n]")
+    print(json.dumps(hf_dataset, indent=2))
 
 
 def hf_router_set():

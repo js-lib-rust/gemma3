@@ -13,6 +13,7 @@ import util
 parser = argparse.ArgumentParser()
 parser.add_argument("--model", action="store", type=str, default="router-270m")
 parser.add_argument("--dtype", action="store", type=util.dtype, default="float32")
+parser.add_argument("--port", action="store", type=int, default=1966)
 args = parser.parse_args()
 
 device = "cuda:0" if torch.cuda.is_available() else "cpu"
@@ -20,6 +21,7 @@ model_path = util.get_model_path(args.model) if args.model.startswith('/') else 
 print(f"Use device {device}")
 print(f"Use model {model_path}")
 print(f"Use dtype {args.dtype}")
+print(f"Use port {args.port}")
 
 tokenizer = AutoTokenizer.from_pretrained(model_path)
 model = AutoModelForCausalLM.from_pretrained(model_path, dtype=args.dtype, device_map=device)
@@ -95,4 +97,4 @@ app = web.Application()
 app.router.add_post('/', handle_slm_request)
 
 if __name__ == '__main__':
-    web.run_app(app, host='0.0.0.0', port=1966, access_log=None)
+    web.run_app(app, host='0.0.0.0', port=args.port, access_log=None)

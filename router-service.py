@@ -1,4 +1,6 @@
 import argparse
+import json
+import os.path
 
 import torch
 from aiohttp import web
@@ -32,18 +34,35 @@ async def handle_slm_request(request):
         request_start_time = time.time()
 
         json_request = await request.json()
-        system = "Rewrite and route the next user prompt"
+        tools = json_request.get('tools', None)
+        if tools:
+            tools_path = os.path.abspath(f"data/tool/{tools}.tools.hf.json")
+            print(f"Loading tools {tools_path}")
+            with open(tools_path, 'r', encoding='UTF-8') as file:
+                tools = json.load(file)
+            system_role = "developer"
+            system = "You are a model that can do function calling with the following functions"
+        else:
+            system_role = "system"
+            system = "Rewrite and route the next user prompt"
         prompt = json_request['prompt']
-        print(f'prompt: {prompt}')
-
-        chat = [{"role": "system", "content": system}, {"role": "user", "content": prompt}]
-        chat_text = tokenizer.apply_chat_template(chat, tokenize=False, add_generation_prompt=True)
-        print(f"chat_text: {chat_text}")
-        inputs = tokenizer([chat_text], return_tensors="pt").to(model.device)
-
         max_new_tokens = int(json_request.get('max_new_tokens', "400"))
         do_sample = bool(json_request.get('do_sample'))
         num_beams = int(json_request.get('num_beams', "1"))
+
+        print(f'system_role: {system_role}')
+        print(f'system: {system}')
+        print(f'tools: {tools}')
+        print(f'prompt: {prompt}')
+        print(f'max_new_tokens: {max_new_tokens}')
+        print(f'do_sample: {do_sample}')
+        print(f'num_beams: {num_beams}')
+
+        chat = [{"role": system_role, "content": system}, {"role": "user", "content": prompt}]
+        chat_text = tokenizer.apply_chat_template(chat, tools=tools, tokenize=False, add_generation_prompt=True)
+        print(f"chat_text: {chat_text}")
+        inputs = tokenizer([chat_text], return_tensors="pt").to(model.device)
+
         config = {
             'max_new_tokens': max_new_tokens,
             'do_sample': do_sample,
@@ -73,17 +92,27 @@ async def handle_slm_request(request):
             print(f"output_text: {output_text}")
             print(f"confidence: {avg_confidence:.4f} (min: {min_confidence:.4f})")
 
-            # agent1:prompt1\nagent2:prompt2\nagent3:prompt3
-            actions = []
-            for line in output_text.split("\n"):
-                line_parts = line.split(":", 1)
-                actions.append({"agent": f"{line_parts[0]}", "prompt": f"{line_parts[1]}"})
+            if tools:
+                # <start_function_call>call:hera_read_temperature{zone:<escape>living room<escape>}<end_function_call>
+                function = util.parse_gemma_function_response(output_text)[0]
 
-            response.append({
-                "actions": actions,
-                "confidence": avg_confidence,
-                "confidence_min": min_confidence
-            })
+                response.append({
+                    "function": function,
+                    "confidence": avg_confidence,
+                    "confidence_min": min_confidence
+                })
+            else:
+                # agent1:prompt1\nagent2:prompt2\nagent3:prompt3
+                actions = []
+                for line in output_text.split("\n"):
+                    line_parts = line.split(":", 1)
+                    actions.append({"agent": f"{line_parts[0]}", "prompt": f"{line_parts[1]}"})
+
+                response.append({
+                    "actions": actions,
+                    "confidence": avg_confidence,
+                    "confidence_min": min_confidence
+                })
 
         print(f"response: {response}")
         print(f"Request processing time: {time.time() - request_start_time}")

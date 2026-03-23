@@ -8,7 +8,6 @@ from http.server import BaseHTTPRequestHandler, HTTPServer
 from threading import Event
 
 import torch
-from auto_gptq import BaseQuantizeConfig
 from transformers import (
     AutoModelForCausalLM,
     AutoTokenizer,
@@ -53,17 +52,7 @@ if args.quantization.startswith("bb-"):
 elif args.quantization.startswith("gptq-"):
     print("GPTQ quantisation on 3 bits")
     bits = int(args.quantization[len("gptq-")])
-    quantization_config = BaseQuantizeConfig(
-        bits=bits,
-        # dataset="c4",  # calibration dataset
-        # tokenizer=tokenizer,
-        group_size=128,
-        damp_percent=0.01,
-        desc_act=False,  # True can be slower but slightly more accurate
-        sym=True,  # Symmetric quantization
-        # use_cuda_fp16=True,
-        # model_seqlen=4096
-    )
+    quantization_config = None
 else:
     quantization_config = None
 

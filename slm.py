@@ -1,4 +1,14 @@
+import argparse
+import json
+import re
+import signal
+import subprocess
+import time
+from http.server import BaseHTTPRequestHandler, HTTPServer
 from threading import Event
+
+import torch
+from auto_gptq import BaseQuantizeConfig
 from transformers import (
     AutoModelForCausalLM,
     AutoTokenizer,
@@ -6,19 +16,13 @@ from transformers import (
     DynamicCache,
     BitsAndBytesConfig
 )
-import torch
-import signal
-import time
-from http.server import BaseHTTPRequestHandler, HTTPServer
-import json
-import re
-import subprocess
-import argparse
+
 import util
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--model", action="store", type=str, default="/gemma-3-12b-it")
-parser.add_argument("--quant-type", action="store", type=str, default="nf4")
+parser.add_argument("--quantization", action="store", type=str, choices=["none", "bb-nf4", "bb-fp4", "gptq-3"],
+                    default="none")
 parser.add_argument("--dtype", action="store", type=util.dtype, default="float32")
 parser.add_argument("--max-new-tokens", action="store", type=int, default="1000")
 args = parser.parse_args()
@@ -26,23 +30,39 @@ args = parser.parse_args()
 device = "cuda:0" if torch.cuda.is_available() else "cpu"
 model_path = util.get_model_path(args.model) if args.model.startswith('/') else args.model
 dtype = args.dtype
-if args.quant_type:
+if args.quantization:
     dtype = torch.bfloat16
 print(f"Use device {device}")
 print(f"Use model {model_path}")
-print(f"Use quant type {args.quant_type}")
+print(f"Use quantization {args.quantization}")
 print(f"Use dtype {dtype}")
 print(f"Use max new tokens {args.max_new_tokens}")
 print()
 
 history = []
 
-if args.quant_type != "none":
+if args.quantization.startswith("bb-"):
+    print("BitsAndBytes quantisation on 4 bits")
+    quant_type = args.quantization[len("bb-")]
     quantization_config = BitsAndBytesConfig(
         load_in_4bit=True,
-        bnb_4bit_quant_type=args.quant_type,
+        bnb_4bit_quant_type=quant_type,
         bnb_4bit_use_double_quant=True,
         bnb_4bit_compute_dtype=torch.bfloat16,
+    )
+elif args.quantization.startswith("gptq-"):
+    print("GPTQ quantisation on 3 bits")
+    bits = int(args.quantization[len("gptq-")])
+    quantization_config = BaseQuantizeConfig(
+        bits=bits,
+        # dataset="c4",  # calibration dataset
+        # tokenizer=tokenizer,
+        group_size=128,
+        damp_percent=0.01,
+        desc_act=False,  # True can be slower but slightly more accurate
+        sym=True,  # Symmetric quantization
+        # use_cuda_fp16=True,
+        # model_seqlen=4096
     )
 else:
     quantization_config = None
@@ -166,10 +186,6 @@ class RequestHandler(BaseHTTPRequestHandler):  # type: ignore
 
         system = request['system']
         print(f'system: {system}')
-        profile = request['profile']
-        print(f'profile: {profile}')
-        settings = request['settings']
-        print(f'settings: {settings}')
         context = request['context']
         print(f'context: {context}')
         prompt = request['prompt']
@@ -190,10 +206,6 @@ class RequestHandler(BaseHTTPRequestHandler):  # type: ignore
         system_content = []
         if system:
             system_content.append(system)
-        if profile:
-            system_content.append(f"User Profile:\n{profile}")
-        if settings:
-            system_content.append(f"Current Settings:\n{settings}")
 
         chat = []
         if system_content:

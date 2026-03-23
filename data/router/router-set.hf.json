@@ -272,11 +272,263 @@
     },
     {
       "role": "user",
+      "content": "get current date and time"
+    },
+    {
+      "role": "model",
+      "content": "time-service:Get current date and time."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get current date"
+    },
+    {
+      "role": "model",
+      "content": "time-service:Get current date."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get current time"
+    },
+    {
+      "role": "model",
+      "content": "time-service:Get current time."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get date for today"
+    },
+    {
+      "role": "model",
+      "content": "time-service:Get date for today."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get date for yesterday"
+    },
+    {
+      "role": "model",
+      "content": "time-service:Get date for yesterday."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get date for day before yesterday"
+    },
+    {
+      "role": "model",
+      "content": "time-service:Get date for the day before yesterday."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get my user name"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my user name."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get my personal email address"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my personal email address."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get my business email address"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my business email address."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get my height"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my height."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get my birth date"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my birth date."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get my age"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my age."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get my profession"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my profession."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get my location"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my location."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get my social security number"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my social security number."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "convert jsonl to markdown table"
+    },
+    {
+      "role": "model",
+      "content": "converter:Convert JSONL flat objects to markdown table."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "convert jsonl objects to markdown"
+    },
+    {
+      "role": "model",
+      "content": "converter:Convert JSONL flat objects to markdown table."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "convert flat objects in jsonl format to markdown table"
+    },
+    {
+      "role": "model",
+      "content": "converter:Convert JSONL flat objects to markdown table."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
       "content": "start central heating"
     },
     {
       "role": "model",
-      "content": "home-automation:Turn on the central heating."
+      "content": "home-automation:Turn on the central heating.\nquery:Start the central heating."
     }
   ],
   [
@@ -290,7 +542,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Turn on the central heating."
+      "content": "home-automation:Turn on the central heating.\nquery:Start the heater."
     }
   ],
   [
@@ -304,7 +556,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Turn on the central heating."
+      "content": "home-automation:Turn on the central heating.\nquery:Activate the heater."
     }
   ],
   [
@@ -318,7 +570,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Turn on the central heating."
+      "content": "home-automation:Turn on the central heating.\nquery:Open the heater."
     }
   ],
   [
@@ -332,7 +584,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Turn on the central heating."
+      "content": "home-automation:Turn on the central heating.\nquery:Turn the heater on."
     }
   ],
   [
@@ -346,7 +598,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Turn on the central heating."
+      "content": "home-automation:Turn on the central heating.\nquery:Engage the heater."
     }
   ],
   [
@@ -360,7 +612,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Turn on the central heating."
+      "content": "home-automation:Turn on the central heating.\nquery:Turn the climate on."
     }
   ],
   [
@@ -374,7 +626,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Turn on the central heating."
+      "content": "home-automation:Turn on the central heating.\nquery:Turn on the climate."
     }
   ],
   [
@@ -388,7 +640,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Turn on the central heating."
+      "content": "home-automation:Turn on the central heating.\nquery:Engage the climate."
     }
   ],
   [
@@ -556,7 +808,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Turn off the central heating."
+      "content": "home-automation:Turn off the central heating.\nquery:Stop the central heating."
     }
   ],
   [
@@ -570,7 +822,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Turn off the central heating."
+      "content": "home-automation:Turn off the central heating.\nquery:Shutdown the central heating."
     }
   ],
   [
@@ -584,7 +836,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Turn off the central heating."
+      "content": "home-automation:Turn off the central heating.\nquery:Stop the heater."
     }
   ],
   [
@@ -598,7 +850,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Turn off the central heating."
+      "content": "home-automation:Turn off the central heating.\nquery:Deactivate the heater."
     }
   ],
   [
@@ -612,7 +864,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Turn off the central heating."
+      "content": "home-automation:Turn off the central heating.\nquery:Close the heater."
     }
   ],
   [
@@ -626,7 +878,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Turn off the central heating."
+      "content": "home-automation:Turn off the central heating.\nquery:Shutdown the heater."
     }
   ],
   [
@@ -640,7 +892,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Turn off the central heating."
+      "content": "home-automation:Turn off the central heating.\nquery:Turn the heater off."
     }
   ],
   [
@@ -654,7 +906,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Turn off the central heating."
+      "content": "home-automation:Turn off the central heating.\nquery:Disengage the heater."
     }
   ],
   [
@@ -668,7 +920,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Turn off the central heating."
+      "content": "home-automation:Turn off the central heating.\nquery:Turn the climate off."
     }
   ],
   [
@@ -682,7 +934,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Turn off the central heating."
+      "content": "home-automation:Turn off the central heating.\nquery:Turn off the climate."
     }
   ],
   [
@@ -696,7 +948,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Turn off the central heating."
+      "content": "home-automation:Turn off the central heating.\nquery:Disengage the climate."
     }
   ],
   [
@@ -948,7 +1200,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read the status of the central heating system."
+      "content": "home-automation:Read the status of the central heating system.\nquery:Central heating status."
     }
   ],
   [
@@ -962,7 +1214,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read the status of the central heating system."
+      "content": "home-automation:Read the status of the central heating system.\nquery:Print the heating status."
     }
   ],
   [
@@ -976,7 +1228,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read the status of the central heating system."
+      "content": "home-automation:Read the status of the central heating system.\nquery:Get the status of your central heating."
     }
   ],
   [
@@ -990,7 +1242,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read the status of the central heating system."
+      "content": "home-automation:Read the status of the central heating system.\nquery:What is the status of the central heating?"
     }
   ],
   [
@@ -1004,7 +1256,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read the status of the central heating system."
+      "content": "home-automation:Read the status of the central heating system.\nquery:What is the condition of the heater?"
     }
   ],
   [
@@ -1214,7 +1466,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read the temperature sensor in the living room."
+      "content": "home-automation:Read the temperature sensor in the living room.\nquery:What is the temperature in the living room?"
     }
   ],
   [
@@ -1228,7 +1480,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read the temperature sensor in the living room."
+      "content": "home-automation:Read the temperature sensor in the living room.\nquery:What is the temperature in the living room?"
     }
   ],
   [
@@ -1242,7 +1494,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read the temperature sensor in the living room."
+      "content": "home-automation:Read the temperature sensor in the living room.\nquery:What is the temperature in the living room?"
     }
   ],
   [
@@ -1256,7 +1508,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read the temperature sensor in the living room."
+      "content": "home-automation:Read the temperature sensor in the living room.\nquery:What is the temperature in the living room?"
     }
   ],
   [
@@ -1270,7 +1522,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read the temperature sensor in the living room."
+      "content": "home-automation:Read the temperature sensor in the living room.\nquery:What is the temperature in the living room?"
     }
   ],
   [
@@ -1284,7 +1536,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read the temperature sensor in the living room."
+      "content": "home-automation:Read the temperature sensor in the living room.\nquery:What is the temperature in the living room?"
     }
   ],
   [
@@ -1298,7 +1550,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read the temperature sensor in the living room."
+      "content": "home-automation:Read the temperature sensor in the living room.\nquery:What is the temperature in the living room?"
     }
   ],
   [
@@ -1312,7 +1564,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read the temperature sensor in the living room."
+      "content": "home-automation:Read the temperature sensor in the living room.\nquery:What is the temperature in the living room?"
     }
   ],
   [
@@ -1326,7 +1578,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read the humidity sensor in the living room."
+      "content": "home-automation:Read the humidity sensor in the living room.\nquery:What is the humidity in the living room?"
     }
   ],
   [
@@ -1340,21 +1592,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read the luminosity sensor in the living room."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "living air has a strong smell"
-    },
-    {
-      "role": "model",
-      "content": "home-automation:Read the air quality sensor in the living room."
+      "content": "home-automation:Read the luminosity sensor in the living room.\nquery:What is the brightness in the living room?"
     }
   ],
   [
@@ -1368,7 +1606,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read the carbon dioxide sensor in the living room."
+      "content": "home-automation:Read the carbon dioxide sensor in the living room.\nquery:What is the carbon dioxide level in the living room?"
     }
   ],
   [
@@ -1382,7 +1620,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read the carbon dioxide sensor in the living room."
+      "content": "home-automation:Read the carbon dioxide sensor in the living room.\nquery:What is the carbon dioxide level in the living room?"
     }
   ],
   [
@@ -1396,7 +1634,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read the water leak sensor in the living room."
+      "content": "home-automation:Read the water leak sensor in the living room.\nquery:Do we have water leaks in salon?"
     }
   ],
   [
@@ -1438,7 +1676,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read the humidity sensor in the bedroom."
+      "content": "home-automation:Read the humidity sensor in the bedroom.\nquery:What is the humidity in the bedroom?"
     }
   ],
   [
@@ -1452,7 +1690,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read the temperature sensor in the sleeping porch."
+      "content": "home-automation:Read the temperature sensor in the sleeping porch.\nquery:What is the temperature in the sleeping porch?"
     }
   ],
   [
@@ -1466,7 +1704,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read the luminosity sensor in the sleeping porch."
+      "content": "home-automation:Read the luminosity sensor in the sleeping porch.\nquery:What is the brightness in the sleeping porch?"
     }
   ],
   [
@@ -1480,7 +1718,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read the air quality sensor in the bedroom."
+      "content": "home-automation:Read the air quality sensor in the bedroom.\nquery:How is the air quality in the bedroom?"
     }
   ],
   [
@@ -1522,7 +1760,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read the temperature sensor in the children's room."
+      "content": "home-automation:Read the temperature sensor in the children's room.\nquery:What is the temperature in the children's room?"
     }
   ],
   [
@@ -1536,7 +1774,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read the air quality sensor in the children's room."
+      "content": "home-automation:Read the air quality sensor in the children's room.\nquery:How is the air quality in the children's room?"
     }
   ],
   [
@@ -1550,7 +1788,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read the carbon dioxide sensor in the children's room."
+      "content": "home-automation:Read the carbon dioxide sensor in the children's room.\nquery:What is the carbon dioxide level in the children's room?"
     }
   ],
   [
@@ -1564,7 +1802,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read the luminosity sensor in the children's room."
+      "content": "home-automation:Read the luminosity sensor in the children's room.\nquery:What is the brightness in the children's room?"
     }
   ],
   [
@@ -1578,7 +1816,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read the window sensor in the children's room.\nquery:Is window opened in the children room?"
+      "content": "home-automation:Read the window sensor in the children's room.\nquery:Is window opened in the children's room?"
     }
   ],
   [
@@ -1606,7 +1844,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read the motion detection sensor in the lobby."
+      "content": "home-automation:Read the motion detection sensor in the lobby.\nquery:Is the motion detected in the lobby?"
     }
   ],
   [
@@ -1620,7 +1858,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read the luminosity sensor in the lobby."
+      "content": "home-automation:Read the luminosity sensor in the lobby.\nquery:What is the brightness in the lobby?"
     }
   ],
   [
@@ -1634,7 +1872,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read the temperature sensor in the hallway."
+      "content": "home-automation:Read the temperature sensor in the hallway.\nquery:What is the temperature in the hallway?"
     }
   ],
   [
@@ -1648,7 +1886,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read the luminosity sensor in the hallway."
+      "content": "home-automation:Read the luminosity sensor in the hallway.\nquery:What is the brightness in the hallway?"
     }
   ],
   [
@@ -1662,7 +1900,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read the carbon dioxide sensor in the hallway."
+      "content": "home-automation:Read the carbon dioxide sensor in the hallway.\nquery:What is the carbon dioxide level in the hallway?"
     }
   ],
   [
@@ -1676,7 +1914,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read the air quality sensor in the entrance hall."
+      "content": "home-automation:Read the air quality sensor in the entrance hall.\nquery:How is the air quality in the entrance hall?"
     }
   ],
   [
@@ -1760,7 +1998,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read the humidity sensor in the kitchen."
+      "content": "home-automation:Read the humidity sensor in the kitchen.\nquery:What is the humidity in the kitchen?"
     }
   ],
   [
@@ -1774,7 +2012,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read the humidity sensor in the kitchen."
+      "content": "home-automation:Read the humidity sensor in the kitchen.\nquery:What is the humidity in the kitchen?"
     }
   ],
   [
@@ -1788,7 +2026,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read the fire alarm sensor in the kitchen."
+      "content": "home-automation:Read the fire alarm sensor in the kitchen.\nquery:Is the fire alarm in the kitchen?"
     }
   ],
   [
@@ -1802,7 +2040,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read the flood sensor in the kitchen."
+      "content": "home-automation:Read the flood sensor in the kitchen.\nquery:What is flood alarm in the kitchen?"
     }
   ],
   [
@@ -1816,7 +2054,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read the flood sensor in the kitchen."
+      "content": "home-automation:Read the flood sensor in the kitchen.\nquery:What is the flood alarm in the kitchen?"
     }
   ],
   [
@@ -1830,7 +2068,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read the carbon dioxide sensor in the kitchen."
+      "content": "home-automation:Read the carbon dioxide sensor in the kitchen.\nquery:What is the carbone dioxide level in the kitchen?"
     }
   ],
   [
@@ -1844,7 +2082,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read the air quality sensor in the kitchen."
+      "content": "home-automation:Read the air quality sensor in the kitchen.\nquery:How is the air quality in the kitchen?"
     }
   ],
   [
@@ -1858,7 +2096,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read the gas sensor in the kitchen."
+      "content": "home-automation:Read the gas sensor in the kitchen.\nquery:What is the gas concentration in the kitchen?"
     }
   ],
   [
@@ -1872,7 +2110,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read the gas sensor in the kitchen."
+      "content": "home-automation:Read the gas sensor in the kitchen.\nquery:What is the gas concentration in the kitchen?"
     }
   ],
   [
@@ -1956,7 +2194,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read the humidity sensor in the bathroom."
+      "content": "home-automation:Read the humidity sensor in the bathroom.\nquery:What is the humidity in the bathroom?"
     }
   ],
   [
@@ -1970,7 +2208,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read the temperature sensor in the bathroom."
+      "content": "home-automation:Read the temperature sensor in the bathroom.\nquery:What is the temperature in the bath?"
     }
   ],
   [
@@ -2040,7 +2278,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read the temperature sensor in the balcony."
+      "content": "home-automation:Read the temperature sensor in the balcony.\nquery:What is the temperature in the balcony?"
     }
   ],
   [
@@ -2054,7 +2292,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read the luminosity sensor in the balcony."
+      "content": "home-automation:Read the luminosity sensor in the balcony.\nquery:What is the brightness in the living room?"
     }
   ],
   [
@@ -2068,7 +2306,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read the temperature sensor in the porch."
+      "content": "home-automation:Read the temperature sensor in the porch.\nquery:What is the temperature in the porch?"
     }
   ],
   [
@@ -2082,7 +2320,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read the temperature sensor in the porch."
+      "content": "home-automation:Read the temperature sensor in the porch.\nquery:What is the temperature in the porch?"
     }
   ],
   [
@@ -2096,7 +2334,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read the humidity sensor in the sleeping porch."
+      "content": "home-automation:Read the humidity sensor in the sleeping porch.\nquery:What is the humidity in the sleeping porch?"
     }
   ],
   [
@@ -2110,7 +2348,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read the luminosity sensor in the gallery."
+      "content": "home-automation:Read the luminosity sensor in the gallery.\nquery:What is the brightness in the gallery?"
     }
   ],
   [
@@ -2124,7 +2362,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read the temperature sensor in the gallery."
+      "content": "home-automation:Read the temperature sensor in the gallery.\nquery:What is the temperature in the gallery?"
     }
   ],
   [
@@ -2222,7 +2460,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read the humidity sensor in the cellar."
+      "content": "home-automation:Read the humidity sensor in the cellar.\nquery:What is the humidity in the cellar?"
     }
   ],
   [
@@ -2236,7 +2474,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read the luminosity sensor in the cellar."
+      "content": "home-automation:Read the luminosity sensor in the cellar.\nquery:What is the brightness in the cellar?"
     }
   ],
   [
@@ -2250,7 +2488,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read the luminosity sensor in the pantry."
+      "content": "home-automation:Read the luminosity sensor in the pantry.\nquery:What is the brightness in the pantry?"
     }
   ],
   [
@@ -2264,7 +2502,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read the humidity sensor in the pantry."
+      "content": "home-automation:Read the humidity sensor in the pantry.\nquery:What is the humidity in the pantry?"
     }
   ],
   [
@@ -2278,7 +2516,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read the humidity sensor in the stillroom."
+      "content": "home-automation:Read the humidity sensor in the stillroom.\nquery:What is the humidity in the stillroom?"
     }
   ],
   [
@@ -2292,7 +2530,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read the temperature sensor in the stillroom."
+      "content": "home-automation:Read the temperature sensor in the stillroom.\nquery:What is the temperature in the stillroom?"
     }
   ],
   [
@@ -2306,7 +2544,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read the humidity sensor in the storeroom."
+      "content": "home-automation:Read the humidity sensor in the storeroom.\nquery:What is the humidity in the storeroom?"
     }
   ],
   [
@@ -2320,7 +2558,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read the temperature sensor in the storeroom."
+      "content": "home-automation:Read the temperature sensor in the storeroom.\nquery:What is the temperature in the storeroom?"
     }
   ],
   [
@@ -2446,7 +2684,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read the sound level from the TV set."
+      "content": "home-automation:Read the sound level from the TV set.\nquery:What is the sound level from the TV set?"
     }
   ],
   [
@@ -2460,7 +2698,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read the sound level from the music player."
+      "content": "home-automation:Read the sound level from the music player.\nquery:What is the sound level from the music player?"
     }
   ],
   [
@@ -2474,7 +2712,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read the sound level from the music player."
+      "content": "home-automation:Read the sound level from the music player.\nquery:What is the sound level from the music player?"
     }
   ],
   [
@@ -2488,7 +2726,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read the sound level from the media player."
+      "content": "home-automation:Read the sound level from the media player.\nquery:What is the sound level from the media player?"
     }
   ],
   [
@@ -2502,7 +2740,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read the sound level from the media player."
+      "content": "home-automation:Read the sound level from the media player.\nquery:What is the sound level from the media player?"
     }
   ],
   [
@@ -2516,7 +2754,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read the sound level from the media player."
+      "content": "home-automation:Read the sound level from the media player.\nquery:What is the sound level from the media player?"
     }
   ],
   [
@@ -2530,7 +2768,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read the sound level from the media player."
+      "content": "home-automation:Read the sound level from the media player.\nquery:What is the sound level from the media player?"
     }
   ],
   [
@@ -2544,7 +2782,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read the sound level from the media player."
+      "content": "home-automation:Read the sound level from the media player.\nquery:What is the sound level from the media player?"
     }
   ],
   [
@@ -2558,7 +2796,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read the sound level from the media player."
+      "content": "home-automation:Read the sound level from the media player.\nquery:What is the sound level from the media player?"
     }
   ],
   [
@@ -2572,7 +2810,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read the sound level from the media player."
+      "content": "home-automation:Read the sound level from the media player.\nquery:What is the sound level from the media player?"
     }
   ],
   [
@@ -2586,7 +2824,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read the sound level from the media player."
+      "content": "home-automation:Read the sound level from the media player.\nquery:What is the sound level from the media player?"
     }
   ],
   [
@@ -2600,7 +2838,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read the sound level from the doorbell."
+      "content": "home-automation:Read the sound level from the doorbell.\nquery:What is the sound level of the doorbell?"
     }
   ],
   [
@@ -2614,7 +2852,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read the sound level from the doorbell."
+      "content": "home-automation:Read the sound level from the doorbell.\nquery:What is the sound level of the doorbell?"
     }
   ],
   [
@@ -2628,7 +2866,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read the sound level from the doorbell."
+      "content": "home-automation:Read the sound level from the doorbell.\nquery:What is the sound level of the doorbell?"
     }
   ],
   [
@@ -2642,7 +2880,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read the sound level from the doorbell."
+      "content": "home-automation:Read the sound level from the doorbell.\nquery:What is the sound level of the doorbell?"
     }
   ],
   [
@@ -2656,7 +2894,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read the sound level from the doorbell."
+      "content": "home-automation:Read the sound level from the doorbell.\nquery:What is the sound level of the doorbell?"
     }
   ],
   [
@@ -2670,7 +2908,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read the sound level from the doorbell."
+      "content": "home-automation:Read the sound level from the doorbell.\nquery:What is the sound level of the doorbell?"
     }
   ],
   [
@@ -2684,7 +2922,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read the sound level from the doorbell."
+      "content": "home-automation:Read the sound level from the doorbell.\nquery:What is the sound level of the doorbell?"
     }
   ],
   [
@@ -2698,7 +2936,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read the sound level from the doorbell."
+      "content": "home-automation:Read the sound level from the doorbell.\nquery:What is the sound level of the doorbell?"
     }
   ],
   [
@@ -2712,7 +2950,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read the soil moisture sensors in the greenhouse."
+      "content": "home-automation:Read the soil moisture sensors in the greenhouse.\nquery:What is the soil moisture in the greenhouse?"
     }
   ],
   [
@@ -2726,7 +2964,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read the soil moisture sensors in the greenhouse."
+      "content": "home-automation:Read the soil moisture sensors in the greenhouse.\nquery:What is the soil moisture in the greenhouse?"
     }
   ],
   [
@@ -2740,7 +2978,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read the soil moisture sensors in the greenhouse."
+      "content": "home-automation:Read the soil moisture sensors in the greenhouse.\nquery:What is the soil moisture in the greenhouse?"
     }
   ],
   [
@@ -2754,7 +2992,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read the soil moisture sensors in the flowers pots."
+      "content": "home-automation:Read the soil moisture sensors in the flowers pots.\nquery:What is the soil moisture in the flowers pots?"
     }
   ],
   [
@@ -2768,7 +3006,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read the soil moisture sensors in the flowers pots."
+      "content": "home-automation:Read the soil moisture sensors in the flowers pots.\nquery:What is the soil moisture in the flower pots?"
     }
   ],
   [
@@ -2782,7 +3020,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read the soil moisture sensors in the tomatoes pots."
+      "content": "home-automation:Read the soil moisture sensors in the tomatoes pots.\nquery:What is the soil moisture in the tomatoes pots?"
     }
   ],
   [
@@ -2796,7 +3034,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read the nutrients sensors in the potatoes seedlings."
+      "content": "home-automation:Read the nutrients sensors in the potatoes seedlings.\nquery:What is the nutrients level in the potatoes seedlings?"
     }
   ],
   [
@@ -2810,7 +3048,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read the soil pH sensors in the balcony planter."
+      "content": "home-automation:Read the soil pH sensors in the balcony planter.\nquery:What is the soil pH level in the balcony planter?"
     }
   ],
   [
@@ -2824,7 +3062,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read the soil pH sensors in the bedroom flowerpot."
+      "content": "home-automation:Read the soil pH sensors in the bedroom flowerpot.\nquery:What is the soil pH level in the bedroom flowerpot?"
     }
   ],
   [
@@ -2838,7 +3076,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read the soil moisture sensors in the bedroom flowerpot."
+      "content": "home-automation:Read the soil moisture sensors in the bedroom flowerpot.\nquery:What is the soil moisture in the bedroom flowerpot?"
     }
   ],
   [
@@ -2852,7 +3090,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read the nutrients sensors in the flowers container."
+      "content": "home-automation:Read the nutrients sensors in the flowers container.\nquery:What is the nutrients level in the flower container?"
     }
   ],
   [
@@ -2866,7 +3104,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read the nutrients sensors in the aquaponic container."
+      "content": "home-automation:Read the nutrients sensors in the aquaponic container.\nquery:What is the nutrients level in the aquaponic container?"
     }
   ],
   [
@@ -2880,7 +3118,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read the fire alarm sensor in the greenhouse."
+      "content": "home-automation:Read the fire alarm sensor in the greenhouse.\nquery:Is there fire alarm in the greenhouse?"
     }
   ],
   [
@@ -2894,7 +3132,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read the carbon dioxide sensor in the greenhouse."
+      "content": "home-automation:Read the carbon dioxide sensor in the greenhouse.\nquery:What is the carbon dioxide level in the greenhouse?"
     }
   ],
   [
@@ -2978,7 +3216,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read all the sensors in the house."
+      "content": "home-automation:Read all the sensors in the house.\nquery:Print the value of the sensors in the house."
     }
   ],
   [
@@ -2992,7 +3230,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read all the sensors in the house."
+      "content": "home-automation:Read all the sensors in the house.\nquery:I would like to know the values for all the sensors in the apartment."
     }
   ],
   [
@@ -3006,7 +3244,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read all the sensors in the house."
+      "content": "home-automation:Read all the sensors in the house.\nquery:Print the value of the sensors in the house."
     }
   ],
   [
@@ -3020,7 +3258,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read all the sensors in the house."
+      "content": "home-automation:Read all the sensors in the house.\nquery:Print the value of the sensors in the house."
     }
   ],
   [
@@ -3034,7 +3272,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read all the sensors in the house."
+      "content": "home-automation:Read all the sensors in the house.\nquery:Print the value of the sensors in the house."
     }
   ],
   [
@@ -3048,7 +3286,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read all the sensors in the house."
+      "content": "home-automation:Read all the sensors in the house.\nquery:Print the value of the sensors in the apartment."
     }
   ],
   [
@@ -3062,7 +3300,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read all the sensors in the house."
+      "content": "home-automation:Read all the sensors in the house.\nquery:Print the value of the sensors in the apartment."
     }
   ],
   [
@@ -3076,7 +3314,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read all the sensors in the house."
+      "content": "home-automation:Read all the sensors in the house.\nquery:Print the value of the sensors in the house."
     }
   ],
   [
@@ -3090,7 +3328,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read all the temperature sensors in the house."
+      "content": "home-automation:Read all the temperature sensors in the house.\nquery:Print the value of the temperature sensors in the house."
     }
   ],
   [
@@ -3104,7 +3342,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read all the humidity sensors in the house."
+      "content": "home-automation:Read all the humidity sensors in the house.\nquery:Print the value of the humidity sensors in the house."
     }
   ],
   [
@@ -3118,7 +3356,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read all the motion detection sensors in the house."
+      "content": "home-automation:Read all the motion detection sensors in the house.\nquery:Print the value of motion detection sensors in the house."
     }
   ],
   [
@@ -3132,7 +3370,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read all the window sensors in the house."
+      "content": "home-automation:Read all the window sensors in the house.\nquery:Print the value of the sensors on the windows of the house."
     }
   ],
   [
@@ -3258,35 +3496,7 @@
     },
     {
       "role": "model",
-      "content": "health:Save my blood pressure measurement of 125/85 mmHg and heart rate of 70 bpm."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "rusu florentin blood measurements are 118 82 63"
-    },
-    {
-      "role": "model",
-      "content": "health:Save Rusu Florentin's blood pressure measurement of 118/82 mmHg and heart rate of 63 bpm."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "blood measurements for p\u0103tra\u0219cu constantin are 119 81 64"
-    },
-    {
-      "role": "model",
-      "content": "health:Save P\u0103tra\u0219cu Constantin's blood pressure measurement of 119/81 mmHg and heart rate of 64 bpm."
+      "content": "user-profile:Get my user name.\nhealth:Save blood pressure measurement of 125/85 mmHg and heart rate of 70 bpm to my user name."
     }
   ],
   [
@@ -3300,7 +3510,7 @@
     },
     {
       "role": "model",
-      "content": "health:Save my blood pressure measurement of 125/85 mmHg and heart rate of 70 bpm."
+      "content": "user-profile:Get my user name.\nhealth:Save blood pressure measurement of 125/85 mmHg and heart rate of 70 bpm to my user name."
     }
   ],
   [
@@ -3314,21 +3524,7 @@
     },
     {
       "role": "model",
-      "content": "health:Save my blood pressure measurement of 128/81 mmHg and heart rate of 55 bpm."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "save blood 115 75 60 to Gavriliu Mihaela"
-    },
-    {
-      "role": "model",
-      "content": "health:Save Gavriliu Mihaela's blood pressure measurement of 115/75 mmHg and heart rate of 60 bpm."
+      "content": "user-profile:Get my user name.\nhealth:Save blood pressure measurement of 128/81 mmHg and heart rate of 55 bpm to my user name."
     }
   ],
   [
@@ -3342,21 +3538,7 @@
     },
     {
       "role": "model",
-      "content": "health:Save my blood pressure measurement of 130/82 mmHg and heart rate of 85 bpm."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "save rotaru lucian blood readings: 112 65 78"
-    },
-    {
-      "role": "model",
-      "content": "health:Save Rotaru Lucian's blood pressure measurement of 112/65 mmHg and heart rate of 78 bpm."
+      "content": "user-profile:Get my user name.\nhealth:Save blood pressure measurement of 130/82 mmHg and heart rate of 85 bpm to my user name."
     }
   ],
   [
@@ -3370,7 +3552,7 @@
     },
     {
       "role": "model",
-      "content": "health:Save my blood pressure measurement of 110/66 mmHg and heart rate of 84 bpm."
+      "content": "user-profile:Get my user name.\nhealth:Save blood pressure measurement of 110/66 mmHg and heart rate of 84 bpm to my user name."
     }
   ],
   [
@@ -3384,7 +3566,7 @@
     },
     {
       "role": "model",
-      "content": "health:Save my blood pressure measurement of 133/92 mmHg and heart rate of 87 bpm."
+      "content": "user-profile:Get my user name.\nhealth:Save blood pressure measurement of 133/92 mmHg and heart rate of 87 bpm to my user name."
     }
   ],
   [
@@ -3398,21 +3580,7 @@
     },
     {
       "role": "model",
-      "content": "health:Save my blood pressure measurement of 136/90 mmHg and heart rate of 82 bpm."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "logs blood readings: 133 92 87 for miron elena daniela"
-    },
-    {
-      "role": "model",
-      "content": "health:Save Miron Elena Daniela's blood pressure measurement of 133/92 mmHg and heart rate of 87 bpm."
+      "content": "user-profile:Get my user name.\nhealth:Save blood pressure measurement of 136/90 mmHg and heart rate of 82 bpm to my user name."
     }
   ],
   [
@@ -3426,7 +3594,7 @@
     },
     {
       "role": "model",
-      "content": "health:Save my blood pressure measurement of 119/81 mmHg and heart rate of 93 bpm."
+      "content": "user-profile:Get my user name.\nhealth:Save blood pressure measurement of 119/81 mmHg and heart rate of 93 bpm to my user name."
     }
   ],
   [
@@ -3440,7 +3608,77 @@
     },
     {
       "role": "model",
-      "content": "health:Save my blood pressure measurement of 120/84 mmHg and heart rate of 76 bpm."
+      "content": "user-profile:Get my user name.\nhealth:Save blood pressure measurement of 120/84 mmHg and heart rate of 76 bpm to my user name."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "rusu florentin blood measurements are 118 82 63"
+    },
+    {
+      "role": "model",
+      "content": "health:Save blood pressure measurement of 118/82 mmHg and heart rate of 63 bpm to Rusu Florentin."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "blood measurements for p\u0103tra\u0219cu constantin are 119 81 64"
+    },
+    {
+      "role": "model",
+      "content": "health:Save blood pressure measurement of 119/81 mmHg and heart rate of 64 bpm P\u0103tra\u0219cu Constantin."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "save blood 115 75 60 to Gavriliu Mihaela"
+    },
+    {
+      "role": "model",
+      "content": "health:Save blood pressure measurement of 115/75 mmHg and heart rate of 60 bpm to Gavriliu Mihaela."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "save rotaru lucian blood readings: 112 65 78"
+    },
+    {
+      "role": "model",
+      "content": "health:Save blood pressure measurement of 112/65 mmHg and heart rate of 78 bpm to Rotaru Lucian."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "logs blood readings: 133 92 87 for miron elena daniela"
+    },
+    {
+      "role": "model",
+      "content": "health:Save blood pressure measurement of 133/92 mmHg and heart rate of 87 bpm to Miron Elena Daniela."
     }
   ],
   [
@@ -3454,7 +3692,7 @@
     },
     {
       "role": "model",
-      "content": "health:Save Rotaru Iulian's blood pressure measurement of 125/83 mmHg and heart rate of 73 bpm."
+      "content": "health:Save blood pressure measurement of 125/83 mmHg and heart rate of 73 bpm to Rotaru Iulian."
     }
   ],
   [
@@ -3468,35 +3706,7 @@
     },
     {
       "role": "model",
-      "content": "health:Save my body temperature of 35.00 \u00b0C."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "cojocaru cristian temperature is 35.1"
-    },
-    {
-      "role": "model",
-      "content": "health:Save Cojocaru Cristian's body temperature of 35.10 \u00b0C."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "temperature for acatrinei liviu is 35.2"
-    },
-    {
-      "role": "model",
-      "content": "health:Save Acatrinei Liviu's body temperature of 35.20 \u00b0C."
+      "content": "user-profile:Get my user name.\nhealth:Save body temperature of 35.00 \u00b0C to my user name."
     }
   ],
   [
@@ -3510,21 +3720,7 @@
     },
     {
       "role": "model",
-      "content": "health:Save my body temperature of 34.30 \u00b0C."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "save temperature 35.6 for gog\u0103lniceanu \u0219tefan"
-    },
-    {
-      "role": "model",
-      "content": "health:Save Gog\u0103lniceanu \u0218tefan's body temperature of 35.60 \u00b0C."
+      "content": "user-profile:Get my user name.\nhealth:Save body temperature of 34.30 \u00b0C to my user name."
     }
   ],
   [
@@ -3538,21 +3734,7 @@
     },
     {
       "role": "model",
-      "content": "health:Save my body temperature of 35.90 \u00b0C."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "logs body temperature 36.2 to lontkowschi george"
-    },
-    {
-      "role": "model",
-      "content": "health:Save Lontkowschi George's body temperature of 36.20 \u00b0C."
+      "content": "user-profile:Get my user name.\nhealth:Save body temperature of 35.90 \u00b0C to my user name."
     }
   ],
   [
@@ -3566,7 +3748,7 @@
     },
     {
       "role": "model",
-      "content": "health:Save my body temperature of 34.80 \u00b0C."
+      "content": "user-profile:Get my user name.\nhealth:Save body temperature of 34.80 \u00b0C to my user name."
     }
   ],
   [
@@ -3580,21 +3762,7 @@
     },
     {
       "role": "model",
-      "content": "health:Save my body temperature of 35.20 \u00b0C."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "write temperature 34.1 for teodorescu tiberiu dinu"
-    },
-    {
-      "role": "model",
-      "content": "health:Save Teodorescu Tiberiu Dinu's body temperature of 34.10 \u00b0C."
+      "content": "user-profile:Get my user name.\nhealth:Save body temperature of 35.20 \u00b0C to my user name."
     }
   ],
   [
@@ -3608,7 +3776,77 @@
     },
     {
       "role": "model",
-      "content": "health:Save my body temperature of 37.10 \u00b0C."
+      "content": "user-profile:Get my user name.\nhealth:Save body temperature of 37.10 \u00b0C to my user name."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "cojocaru cristian temperature is 35.1"
+    },
+    {
+      "role": "model",
+      "content": "health:Save body temperature of 35.10 \u00b0C to Cojocaru Cristian."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "temperature for acatrinei liviu is 35.2"
+    },
+    {
+      "role": "model",
+      "content": "health:Save body temperature of 35.20 \u00b0C to Acatrinei Liviu."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "save temperature 35.6 for gog\u0103lniceanu \u0219tefan"
+    },
+    {
+      "role": "model",
+      "content": "health:Save body temperature of 35.60 \u00b0C to Gog\u0103lniceanu \u0218tefan."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "logs body temperature 36.2 to lontkowschi george"
+    },
+    {
+      "role": "model",
+      "content": "health:Save body temperature of 36.20 \u00b0C to Lontkowschi George."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "write temperature 34.1 for teodorescu tiberiu dinu"
+    },
+    {
+      "role": "model",
+      "content": "health:Save body temperature of 34.10 \u00b0C to Teodorescu Tiberiu Dinu."
     }
   ],
   [
@@ -3622,7 +3860,7 @@
     },
     {
       "role": "model",
-      "content": "health:Save Dorneanu Deliana's body temperature of 36.70 \u00b0C."
+      "content": "health:Save body temperature of 36.70 \u00b0C to Dorneanu Deliana."
     }
   ],
   [
@@ -3636,7 +3874,7 @@
     },
     {
       "role": "model",
-      "content": "health:Save my body weight of 89.00 kg."
+      "content": "user-profile:Get my user name.\nuser-profile:Get my height.\nhealth:Save body weight of 89.00 kg to my user name."
     }
   ],
   [
@@ -3646,11 +3884,11 @@
     },
     {
       "role": "user",
-      "content": "baciu vasile weight is 89.5"
+      "content": "my weight is 89"
     },
     {
       "role": "model",
-      "content": "health:Save Baciu Vasile's body weight of 89.50 kg."
+      "content": "user-profile:Get my user name.\nuser-profile:Get my height.\nhealth:Save body weight of 89.00 kg to my user name."
     }
   ],
   [
@@ -3660,11 +3898,11 @@
     },
     {
       "role": "user",
-      "content": "weight of agavriloaiei ioana is 56"
+      "content": "my body weight is 92"
     },
     {
       "role": "model",
-      "content": "health:Save Agavriloaiei Ioana's body weight of 56.00 kg."
+      "content": "user-profile:Get my user name.\nuser-profile:Get my height.\nhealth:Save my body weight of 92.00 kg to my user name."
     }
   ],
   [
@@ -3678,21 +3916,7 @@
     },
     {
       "role": "model",
-      "content": "health:Save my body weight of 87.50 kg."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "save weight of 88.5 kg to preda marin"
-    },
-    {
-      "role": "model",
-      "content": "health:Save Preda Marin's body weight of 88.50 kg."
+      "content": "user-profile:Get my user name.\nuser-profile:Get my height.\nhealth:Save body weight of 87.50 kg to my user name."
     }
   ],
   [
@@ -3706,35 +3930,7 @@
     },
     {
       "role": "model",
-      "content": "health:Save my body weight of 94.00 kg."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "write weight 74 to Jipa Bogdan"
-    },
-    {
-      "role": "model",
-      "content": "health:Save Jipa Bogdan's body weight of 74.00 kg."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "record weight 76.5 for rotaru mihai"
-    },
-    {
-      "role": "model",
-      "content": "health:Save Rotaru Mihai's body weight of 76.50 kg."
+      "content": "user-profile:Get my user name.\nuser-profile:Get my height.\nhealth:Save body weight of 94.00 kg to my user name."
     }
   ],
   [
@@ -3748,7 +3944,7 @@
     },
     {
       "role": "model",
-      "content": "health:Save my body weight of 88.00 kg."
+      "content": "user-profile:Get my user name.\nuser-profile:Get my height.\nhealth:Save body weight of 88.00 kg to my user name."
     }
   ],
   [
@@ -3758,25 +3954,11 @@
     },
     {
       "role": "user",
-      "content": "save dorneanu sorana ioana weight 22.5"
+      "content": "write body weight 75.5"
     },
     {
       "role": "model",
-      "content": "health:Save Dorneanu Sorana Ioana's body weight of 22.50 kg."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "logs weight of 103.5 for rotaru stefan"
-    },
-    {
-      "role": "model",
-      "content": "health:Save Rotaru \u0218tefan's body weight of 103.50 kg."
+      "content": "user-profile:Get my user name.\nuser-profile:Get my height.\nhealth:Save body weight of 75.50 kg to my user name."
     }
   ],
   [
@@ -3790,7 +3972,105 @@
     },
     {
       "role": "model",
-      "content": "health:Save my body weight of 62.00 kg."
+      "content": "user-profile:Get my user name.\nuser-profile:Get my height.\nhealth:Save body weight of 62.00 kg to my user name."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "baciu vasile weight is 89.5"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get the height of Baciu Vasile.\nhealth:Save body weight of 89.50 kg to Baciu Vasile."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "weight of agavriloaiei ioana is 56"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get the height of Agavriloaiei Ioana.\nhealth:Save body weight of 56.00 kg to Agavriloaiei Ioana."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "save weight of 88.5 kg to preda marin"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get the height of Preda Marin.\nhealth:Save body weight of 88.50 kg to Preda Marin."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "write weight 74 to Jipa Bogdan"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get the height of Jipa Bogdan.\nhealth:Save body weight of 74.00 kg to Jipa Bogdan."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "record weight 76.5 for rotaru mihai"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get the height of Rotaru Mihai.\nhealth:Save body weight of 76.50 kg to Rotaru Mihai."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "save dorneanu sorana ioana weight 22.5"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get the height of Dorneanu Sorana Ioana.\nhealth:Save body weight of 22.50 kg to Dorneanu Sorana Ioana."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "logs weight of 103.5 for rotaru stefan"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get the height of Rotaru \u0218tefan.\nhealth:Save body weight of 103.50 kg to Rotaru \u0218tefan."
     }
   ],
   [
@@ -3804,7 +4084,7 @@
     },
     {
       "role": "model",
-      "content": "health:Save Adam Nicolae Ioan's body weight of 66.50 kg."
+      "content": "user-profile:Get the height of Adam Nicolae Ioan.\nhealth:Save body weight of 66.50 kg to Adam Nicolae Ioan."
     }
   ],
   [
@@ -3818,7 +4098,7 @@
     },
     {
       "role": "model",
-      "content": "health:Save Marton Csaba's body weight of 77.00 kg."
+      "content": "user-profile:Get the height of Marton Csaba.\nhealth:Save body weight of 77.00 kg to Marton Csaba."
     }
   ],
   [
@@ -3828,11 +4108,53 @@
     },
     {
       "role": "user",
-      "content": "my glucose level is 107"
+      "content": "my glucose level is 103"
     },
     {
       "role": "model",
-      "content": "health:Save my blood glucose level of 107 mg/dL."
+      "content": "user-profile:Get my user name.\nhealth:Save blood glucose level of 103 mg/dL to my user name."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "my blood sugar is 107"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my user name.\nhealth:Save blood glucose level of 107 mg/dL to my user name."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "save glucose 94"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my user name.\nhealth:Save blood glucose level of 94 mg/dL to my user name."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "save my blood glucose of 118"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my user name.\nhealth:Save blood glucose level of 118 mg/dL to my user name."
     }
   ],
   [
@@ -3846,7 +4168,7 @@
     },
     {
       "role": "model",
-      "content": "health:Save Gavriliu Petronela's blood glucose level of 102 mg/dL."
+      "content": "health:Save blood glucose level of 102 mg/dL to Gavriliu Petronela."
     }
   ],
   [
@@ -3860,21 +4182,7 @@
     },
     {
       "role": "model",
-      "content": "health:Save Gavriliu Andrei's blood glucose level of 95 mg/dL."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "save glucose 118"
-    },
-    {
-      "role": "model",
-      "content": "health:Save my blood glucose level of 118 mg/dL."
+      "content": "health:Save blood glucose level of 95 mg/dL to Gavriliu Andrei."
     }
   ],
   [
@@ -3888,7 +4196,7 @@
     },
     {
       "role": "model",
-      "content": "health:Save F\u00e2nt\u00e2naru Eugenia's blood glucose level of 105 mg/dL."
+      "content": "health:Save blood glucose level of 105 mg/dL to F\u00e2nt\u00e2naru Eugenia."
     }
   ],
   [
@@ -3902,7 +4210,91 @@
     },
     {
       "role": "model",
-      "content": "health:Save Agavriloaiei Mariana's blood glucose level of 98 mg/dL."
+      "content": "health:Save blood glucose level of 98 mg/dL to Agavriloaiei Mariana."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "record glodeanu razvan blood sugar of 128"
+    },
+    {
+      "role": "model",
+      "content": "health:Save blood glucose level of 128 mg/dL to Glodeanu Razvan."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "read my medical records from today"
+    },
+    {
+      "role": "model",
+      "content": "time-service:Get date for today.\nuser-profile:Get my user name.\nhealth:Read medical records from today for my user name.\nquery:Create report from medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "read my medical records"
+    },
+    {
+      "role": "model",
+      "content": "time-service:Get date for today.\nuser-profile:Get my user name.\nhealth:Read medical records from today for my user name.\nquery:Create report from medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "read today medical records for acatrinei ingrid"
+    },
+    {
+      "role": "model",
+      "content": "time-service:Get date for today.\nhealth:Read medical records from today for Acatrinei Ingrid.\nquery:Create report from medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "read medical records from september 10 for mihalache ioan"
+    },
+    {
+      "role": "model",
+      "content": "time-service:Get date for september 10.\nhealth:Read medical records from September 10, 2025 for Mihalache Ioan.\nquery:Create report from medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "read medical records from 2022-11-13 for savulescu marcel"
+    },
+    {
+      "role": "model",
+      "content": "health:Read medical records from November 13, 2022 for Savulescu Marcel.\nquery:Create report from medical readings."
     }
   ],
   [
@@ -3916,21 +4308,7 @@
     },
     {
       "role": "model",
-      "content": "health:List the health readings for today."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "print health measurements"
-    },
-    {
-      "role": "model",
-      "content": "health:List the health readings for today."
+      "content": "time-service:Get date for today.\nuser-profile:Get my user name.\nhealth:Read medical records from today for my user name.\nquery:Create report from medical readings."
     }
   ],
   [
@@ -3944,7 +4322,7 @@
     },
     {
       "role": "model",
-      "content": "health:List the health readings for today."
+      "content": "time-service:Get date for today.\nuser-profile:Get my user name.\nhealth:Read medical records from today for my user name.\nquery:Create report from medical readings."
     }
   ],
   [
@@ -3958,7 +4336,7 @@
     },
     {
       "role": "model",
-      "content": "health:List the health readings for today."
+      "content": "time-service:Get date for today.\nuser-profile:Get my user name.\nhealth:Read medical records from today for my user name.\nquery:Create report from medical readings."
     }
   ],
   [
@@ -3972,7 +4350,21 @@
     },
     {
       "role": "model",
-      "content": "health:List the health readings for today."
+      "content": "time-service:Get date for today.\nuser-profile:Get my user name.\nhealth:Read medical records from today for my user name.\nquery:Create report from medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "health records from day before yesterday"
+    },
+    {
+      "role": "model",
+      "content": "time-service:Get date for the day before yesterday.\nuser-profile:Get my user name.\nhealth:Read medical records from the day before yesterday for my user name.\nquery:Create report from medical readings."
     }
   ],
   [
@@ -3986,7 +4378,7 @@
     },
     {
       "role": "model",
-      "content": "health:List the health readings for today."
+      "content": "time-service:Get date for today.\nuser-profile:Get my user name.\nhealth:Read medical records from today for my user name.\nquery:Create report from medical readings."
     }
   ],
   [
@@ -4000,21 +4392,7 @@
     },
     {
       "role": "model",
-      "content": "health:List the health readings for today."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "print medical records"
-    },
-    {
-      "role": "model",
-      "content": "health:List the health readings for today."
+      "content": "time-service:Get date for today.\nuser-profile:Get my user name.\nhealth:Read medical records from today for my user name.\nquery:Create report from medical readings."
     }
   ],
   [
@@ -4028,7 +4406,7 @@
     },
     {
       "role": "model",
-      "content": "health:List the health readings for today."
+      "content": "time-service:Get date for today.\nuser-profile:Get my user name.\nhealth:Read medical records from today for my user name.\nquery:Create report from medical readings."
     }
   ],
   [
@@ -4042,7 +4420,7 @@
     },
     {
       "role": "model",
-      "content": "health:List the health readings for yesterday."
+      "content": "time-service:Get date for yesterday.\nuser-profile:Get my user name.\nhealth:Read medical records from yesterday for my user name.\nquery:Create report from medical readings."
     }
   ],
   [
@@ -4056,7 +4434,7 @@
     },
     {
       "role": "model",
-      "content": "health:List the health readings for yesterday."
+      "content": "time-service:Get date for yesterday.\nuser-profile:Get my user name.\nhealth:Read medical records from yesterday for my user name.\nquery:Create report from medical readings."
     }
   ],
   [
@@ -4070,7 +4448,7 @@
     },
     {
       "role": "model",
-      "content": "health:List the health readings for yesterday."
+      "content": "time-service:Get date for yesterday.\nuser-profile:Get my user name.\nhealth:Read medical records from yesterday for my user name.\nquery:Create report from medical readings."
     }
   ],
   [
@@ -4084,7 +4462,7 @@
     },
     {
       "role": "model",
-      "content": "health:List the health readings for January 22, 2026."
+      "content": "time-service:Get date for january 22.\nuser-profile:Get my user name.\nhealth:Read medical records from January 22, 2026 for my user name.\nquery:Create report from medical readings."
     }
   ],
   [
@@ -4098,7 +4476,7 @@
     },
     {
       "role": "model",
-      "content": "health:List the health readings for February 2, 2026."
+      "content": "time-service:Get date for february 2.\nuser-profile:Get my user name.\nhealth:Read medical records from February 2, 2026 for my user name.\nquery:Create report from medical readings."
     }
   ],
   [
@@ -4112,7 +4490,7 @@
     },
     {
       "role": "model",
-      "content": "health:List the health readings for January 13, 2026."
+      "content": "user-profile:Get my user name.\nhealth:Read medical records from January 13, 2026 for my user name.\nquery:Create report from medical readings."
     }
   ],
   [
@@ -4126,7 +4504,189 @@
     },
     {
       "role": "model",
-      "content": "health:List the health readings for February 4, 2026."
+      "content": "user-profile:Get my user name.\nhealth:Read medical records from February 4, 2026 for my user name.\nquery:Create report from medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "print today medical records"
+    },
+    {
+      "role": "model",
+      "content": "time-service:Get date for today.\nuser-profile:Get my user name.\nhealth:Read medical records from today for my user name.\nquery:Print medical records."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "print today medical records for avarvarei ileana"
+    },
+    {
+      "role": "model",
+      "content": "time-service:Get date for today.\nhealth:Read medical records from today for Avarvarei Ileana.\nquery:Print medical records."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "print today medical records as markdown table"
+    },
+    {
+      "role": "model",
+      "content": "time-service:Get date for today.\nuser-profile:Get my user name.\nhealth:Read medical records from today for my user name.\nconverter:Convert JSONL flat objects to markdown table.\nquery:Print medical records as markdown table."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "print today medical records as markdown table for dorneanu simona"
+    },
+    {
+      "role": "model",
+      "content": "time-service:Get date for today.\nhealth:Read medical records from today for Dorneanu Simona.\nconverter:Convert JSONL flat objects to markdown table.\nquery:Print medical records as markdown table."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "print health measurements"
+    },
+    {
+      "role": "model",
+      "content": "time-service:Get date for today.\nuser-profile:Get my user name.\nhealth:Read medical records from today for my user name.\nquery:Print medical records."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "print medical records from this monday"
+    },
+    {
+      "role": "model",
+      "content": "time-service:Get date for this monday.\nuser-profile:Get my user name.\nhealth:Read medical records from this monday for my user name.\nquery:Print medical records."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "is there something wrong with my today medical readings?"
+    },
+    {
+      "role": "model",
+      "content": "time-service:Get date for today.\nuser-profile:Get my user name.\nhealth:Read medical records from today for my user name.\nhealth:Evaluate medical readings.\nquery:Is there something wrong with my today medical readings?"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "check my today medical readings"
+    },
+    {
+      "role": "model",
+      "content": "time-service:Get date for today.\nuser-profile:Get my user name.\nhealth:Read medical records from today for my user name.\nhealth:Evaluate medical readings.\nquery:Check my today medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "investigate today health records"
+    },
+    {
+      "role": "model",
+      "content": "time-service:Get date for today.\nuser-profile:Get my user name.\nhealth:Read medical records from today for my user name.\nhealth:Evaluate medical readings.\nquery:Investigate today health records."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "evaluate my medical records from today"
+    },
+    {
+      "role": "model",
+      "content": "time-service:Get date for today.\nuser-profile:Get my user name.\nhealth:Read medical records from today for my user name.\nhealth:Evaluate medical readings.\nquery:Evaluate my medical records from today."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "what is your opinion about my medical readings from today?"
+    },
+    {
+      "role": "model",
+      "content": "time-service:Get date for today.\nuser-profile:Get my user name.\nhealth:Read medical records from today for my user name.\nhealth:Evaluate medical readings.\nquery:What is your opinion about my medical readings from today?"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "do you see problems on today health records?"
+    },
+    {
+      "role": "model",
+      "content": "time-service:Get date for today.\nuser-profile:Get my user name.\nhealth:Read medical records from today for my user name.\nhealth:Evaluate medical readings.\nquery:Do you see problems on today health records?"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "analyze health readings from yesterday"
+    },
+    {
+      "role": "model",
+      "content": "time-service:Get date for yesterday.\nuser-profile:Get my user name.\nhealth:Read medical records from today for my user name.\nhealth:Evaluate medical readings.\nquery:Analyze health readings from today?"
     }
   ],
   [
@@ -4281,6 +4841,160 @@
     {
       "role": "model",
       "content": "health:Create a medical report based on readings from November 12, 2025."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "calculate body mass index for 88.5 kg and 172 cm"
+    },
+    {
+      "role": "model",
+      "content": "health:Calculate body mass index for a weight of 88.50 kg and a height of 172 cm."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "compute body mass index for weight of 82 kg and height of 176 cm"
+    },
+    {
+      "role": "model",
+      "content": "health:Calculate body mass index for a weight of 82.00 kg and a height of 176 cm."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "estimate bmi for 85.5 kg and 174 cm"
+    },
+    {
+      "role": "model",
+      "content": "health:Calculate body mass index for a weight of 85.50 kg and a height of 174 cm."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "figure body mass index for 81 kg and 188 cm"
+    },
+    {
+      "role": "model",
+      "content": "health:Calculate body mass index for a weight of 81.00 kg and a height of 188 cm."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "what is body mass index for height of 178 and weight of 84"
+    },
+    {
+      "role": "model",
+      "content": "health:Calculate body mass index for a weight of 84.00 kg and a height of 178 cm."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "calculate mass index for 86.5 kg and my height"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my height.\nhealth:Calculate body mass index for a weight of 86.50 kg and my height."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "compute bmi for my height and a weight of 85"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my height.\nhealth:Calculate body mass index for a weight of 85.00 kg and my height."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "figure my body mass for a weight of 92"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my height.\nhealth:Calculate body mass index for a weight of 92.00 kg and my height."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "what is my bmi for a weight of 73.5?"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my height.\nhealth:Calculate body mass index for a weight of 73.50 kg and my height.\nquery:What is my BMI for a weight of 73.5 kg?"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "what would be my BMI for a weight of 78?"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my height.\nhealth:Calculate body mass index for a weight of 78.00 kg and my height.\nquery:What would my BMI be for a weight of 78 kg?"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "what would be my body mass index if i will weight 77 kg?"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my height.\nhealth:Calculate body mass index for a weight of 77.00 kg and my height.\nquery:What would my body mass index be if I weighed 77 kg?"
     }
   ],
   [
@@ -4448,7 +5162,21 @@
     },
     {
       "role": "model",
-      "content": "context:Get my current location.\nweather:What is the weather like in my location right now?"
+      "content": "user-profile:Get my location.\nweather:Get current weather in my location.\nquery:How is the weather?"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "how is weather right now?"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my location.\nweather:Get current weather in my location.\nquery:How is the weather right now?"
     }
   ],
   [
@@ -4462,7 +5190,7 @@
     },
     {
       "role": "model",
-      "content": "context:Get my current location.\nweather:What is the weather like in my location right now?"
+      "content": "user-profile:Get my location.\nweather:Get current weather in my location.\nquery:How is the weather outside?"
     }
   ],
   [
@@ -4476,7 +5204,7 @@
     },
     {
       "role": "model",
-      "content": "weather:What is the weather like in Pa\u0219cani, Romania right now?"
+      "content": "weather:Get current weather in Pa\u0219cani, Romania.\nquery:Weather in Pa\u0219cani, Romania?"
     }
   ],
   [
@@ -4490,7 +5218,7 @@
     },
     {
       "role": "model",
-      "content": "weather:What is the weather like in Tome\u0219ti, Romania right now?"
+      "content": "weather:Get current weather in Tome\u0219ti, Romania.\nquery:Is it raining right now in Tome\u0219ti, Romania?"
     }
   ],
   [
@@ -4504,7 +5232,7 @@
     },
     {
       "role": "model",
-      "content": "weather:What is the weather like in Sili\u0219tea, Gume\u0219ti, Romania right now?"
+      "content": "weather:Get current weather in Sili\u0219tea, Gume\u0219ti, Romania.\nquery:Is it sunny right now in Sili\u0219tea, Gume\u0219ti, Romania?"
     }
   ],
   [
@@ -4518,21 +5246,7 @@
     },
     {
       "role": "model",
-      "content": "context:Get my current location.\nweather:What is the weather like in my location right now?"
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "how weather info"
-    },
-    {
-      "role": "model",
-      "content": "context:Get my current location.\nweather:What is the weather like in my location right now?"
+      "content": "user-profile:Get my location.\nweather:Get current weather in my location.\nquery:Check weather."
     }
   ],
   [
@@ -4546,7 +5260,7 @@
     },
     {
       "role": "model",
-      "content": "weather:What is the weather like in Constan\u021ba, Rom\u00e2nia right now?"
+      "content": "weather:Get current weather in Constan\u021ba, Rom\u00e2nia.\nquery:What is the weather like in Constan\u021ba, Rom\u00e2nia?"
     }
   ],
   [
@@ -4560,7 +5274,7 @@
     },
     {
       "role": "model",
-      "content": "weather:What is the weather like in Ia\u0219i, Romania right now?"
+      "content": "weather:Get current weather in Ia\u0219i, Romania.\nquery:Tell me about the weather in Ia\u0219i, Romania?"
     }
   ],
   [
@@ -4574,7 +5288,7 @@
     },
     {
       "role": "model",
-      "content": "context:Get my current location.\nweather:What is the weather like in my location right now?"
+      "content": "user-profile:Get my location.\nweather:Get current weather in my location.\nquery:How is outdoor?"
     }
   ],
   [
@@ -4588,7 +5302,21 @@
     },
     {
       "role": "model",
-      "content": "weather:What is the weather like in Bucharest, Romania right now?"
+      "content": "weather:Get current weather in Bucharest, Romania.\nquery:How is the weather in Bucharest, Romania?"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "how is weather in bra\u0219ov right now"
+    },
+    {
+      "role": "model",
+      "content": "weather:Get current weather in Bra\u0219ov, Romania.\nquery:What is the weather in Bra\u0219ov, Romania right now?"
     }
   ],
   [
@@ -4602,7 +5330,7 @@
     },
     {
       "role": "model",
-      "content": "context:Get my current location.\nweather:What is the weather like in my location right now?"
+      "content": "user-profile:Get my location.\nweather:Get current weather in my location.\nquery:How's outside?"
     }
   ],
   [
@@ -4616,7 +5344,21 @@
     },
     {
       "role": "model",
-      "content": "context:Get my current location.\nweather:What is the weather like in my location right now?"
+      "content": "user-profile:Get my location.\nweather:Get current weather in my location.\nquery:How cold is out there?"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "how cold is out there in this moment"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my location.\nweather:Get current weather in my location.\nquery:How cold is out there in this moment?"
     }
   ],
   [
@@ -4630,7 +5372,7 @@
     },
     {
       "role": "model",
-      "content": "context:Get my current location.\nweather:What is the weather like in my location right now?"
+      "content": "user-profile:Get my location.\nweather:Get current weather in my location.\nquery:How warm is outside?"
     }
   ],
   [
@@ -4644,7 +5386,21 @@
     },
     {
       "role": "model",
-      "content": "weather:What is the weather like in Piatra-Neam\u021b, Romania right now?"
+      "content": "weather:Get current weather in Piatra-Neam\u021b, Romania.\nquery:How cold is in Piatra-Neam\u021b, Romania?"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "how cold is now in t\u00e2rgu-neam\u021b, romania"
+    },
+    {
+      "role": "model",
+      "content": "weather:Get current weather in T\u00e2rgu-Neam\u021b, Romania.\nquery:How cold is now in T\u00e2rgu-Neam\u021b, Romania?"
     }
   ],
   [
@@ -4658,7 +5414,7 @@
     },
     {
       "role": "model",
-      "content": "weather:What is the weather like in Cluj-Napoca, Romania right now?"
+      "content": "weather:Get current weather in Cluj-Napoca, Romania.\nquery:I wish to know the weather in Cluj-Napoca, Romania?"
     }
   ],
   [
@@ -4672,7 +5428,7 @@
     },
     {
       "role": "model",
-      "content": "weather:What is the weather like in California right now?"
+      "content": "weather:Get current weather in California.\nquery:How is current weather in California?"
     }
   ],
   [
@@ -4686,7 +5442,7 @@
     },
     {
       "role": "model",
-      "content": "context:Get my current location.\nweather:What is the weather like in my location right now?\nquery:Is it raining? Should I take my umbrella?"
+      "content": "user-profile:Get my location.\nweather:Get current weather in my location.\nquery:Is it raining? Should I take my umbrella?"
     }
   ],
   [
@@ -4700,7 +5456,35 @@
     },
     {
       "role": "model",
-      "content": "context:Get my current location.\nweather:What is the weather like in my location right now?\nquery:Can I go for a bike ride?"
+      "content": "user-profile:Get my location.\nweather:Get current weather in my location.\nquery:Can I go for a bike ride?"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "can i go now for a bike ride"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my location.\nweather:Get current weather in my location.\nquery:Can I go for a bike ride?"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "is fine out there for a bike?"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my location.\nweather:Get current weather in my location.\nquery:Is fine out there for a bike?"
     }
   ],
   [
@@ -4714,7 +5498,35 @@
     },
     {
       "role": "model",
-      "content": "context:Get my current location.\nweather:What is the weather like in my location right now?\nquery:What do you think about a short stroll? Doable?"
+      "content": "user-profile:Get my location.\nweather:Get current weather in my location.\nquery:What do you think about a short stroll? Doable?"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "kids are playing outside. isn't too cold?"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my location.\nweather:Get current weather in my location.\nquery:The children are playing outside. Isn't it too cold?"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "is alright for kids to play outside?"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my location.\nweather:Get current weather in my location.\nquery:Is it alright for children to play outside?"
     }
   ],
   [
@@ -4728,7 +5540,7 @@
     },
     {
       "role": "model",
-      "content": "context:Get my current location.\nweather:What is the hourly weather forecast for today in my location, in tabular form?"
+      "content": "time-service:Get date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for today in my location.\nquery:Print hourly weather forecast in tabular form."
     }
   ],
   [
@@ -4742,7 +5554,7 @@
     },
     {
       "role": "model",
-      "content": "weather:What is the hourly weather forecast for today in Paris, France, in tabular form?"
+      "content": "time-service:Get date for today.\nweather:Get hourly weather forecast for today in Paris, France.\nquery:Print hourly weather forecast in tabular form."
     }
   ],
   [
@@ -4756,7 +5568,7 @@
     },
     {
       "role": "model",
-      "content": "weather:What is the hourly weather forecast for today in Bucharest, Romania, in tabular form?"
+      "content": "time-service:Get date for today.\nweather:Get hourly weather forecast for today in Bucharest, Romania.\nquery:Print hourly weather forecast in tabular form."
     }
   ],
   [
@@ -4770,7 +5582,7 @@
     },
     {
       "role": "model",
-      "content": "context:Get my current location.\nweather:What is the hourly weather forecast for today in my location, in tabular form?"
+      "content": "time-service:Get date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for today in my location.\nquery:Print hourly weather forecast in tabular form."
     }
   ],
   [
@@ -4784,7 +5596,7 @@
     },
     {
       "role": "model",
-      "content": "context:Get my current location.\nweather:What is the hourly weather forecast for today in my location, in tabular form?"
+      "content": "time-service:Get date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for today in my location.\nquery:Print hourly weather forecast in tabular form."
     }
   ],
   [
@@ -4798,7 +5610,7 @@
     },
     {
       "role": "model",
-      "content": "context:Get my current location.\nweather:What is the hourly weather forecast for today in my location, in tabular form?"
+      "content": "time-service:Get date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for today in my location.\nquery:Print hourly weather forecast in tabular form."
     }
   ],
   [
@@ -4812,7 +5624,7 @@
     },
     {
       "role": "model",
-      "content": "context:Get my current location.\nweather:What is the hourly weather forecast for today in my location, in tabular form?"
+      "content": "time-service:Get date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for today in my location.\nquery:Print hourly weather forecast in tabular form."
     }
   ],
   [
@@ -4826,7 +5638,7 @@
     },
     {
       "role": "model",
-      "content": "context:Get my current location.\nweather:What is the hourly weather forecast for today in my location, in tabular form?"
+      "content": "time-service:Get date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for today in my location.\nquery:Print hourly weather forecast in tabular form."
     }
   ],
   [
@@ -4840,7 +5652,7 @@
     },
     {
       "role": "model",
-      "content": "context:Get my current location.\nweather:What is the hourly weather forecast for today in my location, in tabular form?"
+      "content": "time-service:Get date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for today in my location.\nquery:Print hourly weather forecast in tabular form."
     }
   ],
   [
@@ -4854,7 +5666,7 @@
     },
     {
       "role": "model",
-      "content": "weather:What is the hourly weather forecast for today in Deprecen, Slovakia, in tabular form?"
+      "content": "time-service:Get date for today.\nweather:Get hourly weather forecast for today in Deprecen, Slovakia.\nquery:Print hourly weather forecast in tabular form."
     }
   ],
   [
@@ -4868,7 +5680,7 @@
     },
     {
       "role": "model",
-      "content": "context:Get my current location.\nweather:What is the hourly weather forecast for today in my location, in tabular form?"
+      "content": "time-service:Get date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for today in my location.\nquery:Print hourly weather forecast in tabular form."
     }
   ],
   [
@@ -4882,7 +5694,7 @@
     },
     {
       "role": "model",
-      "content": "context:Get my current location.\nweather:What is the hourly weather forecast for today in my location, in tabular form?"
+      "content": "time-service:Get date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for today in my location.\nquery:Print hourly weather forecast in tabular form."
     }
   ],
   [
@@ -4896,7 +5708,7 @@
     },
     {
       "role": "model",
-      "content": "weather:What is the hourly weather forecast for today in Valea Lupului, Romania, in tabular form?"
+      "content": "time-service:Get date for today.\nweather:Get hourly weather forecast for today in Valea Lupului, Romania.\nquery:Print hourly weather forecast in tabular form."
     }
   ],
   [
@@ -4910,7 +5722,7 @@
     },
     {
       "role": "model",
-      "content": "context:Get my current location.\nweather:What is the hourly weather forecast for today in my location, in tabular form?"
+      "content": "time-service:Get date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for today in my location.\nquery:Print hourly weather forecast in tabular form."
     }
   ],
   [
@@ -4924,7 +5736,7 @@
     },
     {
       "role": "model",
-      "content": "weather:What is the hourly weather forecast for today in Sculeni, Ia\u0219i, Rom\u00e2nia, in tabular form?"
+      "content": "time-service:Get date for today.\nweather:Get hourly weather forecast for today in Sculeni, Ia\u0219i, Rom\u00e2nia.\nquery:Print hourly weather forecast in tabular form."
     }
   ],
   [
@@ -4938,7 +5750,7 @@
     },
     {
       "role": "model",
-      "content": "weather:context:Get my current location.\nWhat is the hourly weather forecast for today in my location, in tabular form?"
+      "content": "time-service:Get date for today.\nweather:user-profile:Get my location.\nGet hourly weather forecast for today in my location.\nquery:Print hourly weather forecast in tabular form."
     }
   ],
   [
@@ -4952,7 +5764,7 @@
     },
     {
       "role": "model",
-      "content": "context:Get my current location.\nweather:What is the hourly weather forecast for today in my location, in tabular form?"
+      "content": "time-service:Get date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for today in my location.\nquery:Print hourly weather forecast in tabular form."
     }
   ],
   [
@@ -4966,7 +5778,7 @@
     },
     {
       "role": "model",
-      "content": "weather:What is the hourly weather forecast for today in Chicirea, Ia\u0219i, Romania, in tabular form?"
+      "content": "time-service:Get date for today.\nweather:Get hourly weather forecast for today in Chicirea, Ia\u0219i, Romania.\nquery:Print hourly weather forecast in tabular form."
     }
   ],
   [
@@ -4980,7 +5792,7 @@
     },
     {
       "role": "model",
-      "content": "context:Get my current location.\nweather:Retrieve hourly weather forecast data for today in my location, in JSON format.\nquery:Summarize weather forecast for today."
+      "content": "time-service:Get date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for today in my location.\nquery:Summarize weather forecast for today."
     }
   ],
   [
@@ -4994,7 +5806,7 @@
     },
     {
       "role": "model",
-      "content": "weather:Retrieve hourly weather forecast data for today in Sibiu, Romania, in JSON format.\nquery:Summarize weather forecast for today in Sibiu, Romania."
+      "content": "time-service:Get date for today.\nweather:Get hourly weather forecast for today in Sibiu, Romania.\nquery:Summarize weather forecast for today in Sibiu, Romania."
     }
   ],
   [
@@ -5008,7 +5820,7 @@
     },
     {
       "role": "model",
-      "content": "context:Get my current location.\nweather:Retrieve hourly weather forecast data for today in my location, in JSON format.\nquery:Create a summary of today weather."
+      "content": "time-service:Get date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for today in my location.\nquery:Create a summary of today weather."
     }
   ],
   [
@@ -5022,7 +5834,7 @@
     },
     {
       "role": "model",
-      "content": "context:Get my current location.\nweather:Retrieve hourly weather forecast data for today in my location, in JSON format.\nquery:Create a summary of today weather forecast."
+      "content": "time-service:Get date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for today in my location.\nquery:Create a summary of today weather forecast."
     }
   ],
   [
@@ -5036,7 +5848,7 @@
     },
     {
       "role": "model",
-      "content": "context:Get my current location.\nweather:Retrieve hourly weather forecast data for today in my location, in JSON format.\nquery:Today forecast summary."
+      "content": "time-service:Get date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for today in my location.\nquery:Today forecast summary."
     }
   ],
   [
@@ -5050,7 +5862,7 @@
     },
     {
       "role": "model",
-      "content": "context:Get my current location.\nweather:Retrieve hourly weather forecast data for today in my location, in JSON format.\nquery:Get today forecast summary in my location."
+      "content": "time-service:Get date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for today in my location.\nquery:Get today forecast summary in my location."
     }
   ],
   [
@@ -5064,7 +5876,7 @@
     },
     {
       "role": "model",
-      "content": "context:Get my current location.\nweather:Retrieve hourly weather forecast data for today in my location, in JSON format.\nquery:Get today weather forecast and create a summary."
+      "content": "time-service:Get date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for today in my location.\nquery:Get today weather forecast and create a summary."
     }
   ],
   [
@@ -5078,7 +5890,7 @@
     },
     {
       "role": "model",
-      "content": "weather:Retrieve hourly weather forecast data for today in Focsani, Romania, in JSON format.\nquery:Today forecast summary for Focsani, Romania."
+      "content": "time-service:Get date for today.\nweather:Get hourly weather forecast for today in Focsani, Romania.\nquery:Today forecast summary for Focsani, Romania."
     }
   ],
   [
@@ -5092,7 +5904,7 @@
     },
     {
       "role": "model",
-      "content": "context:Get my current location.\nweather:Retrieve hourly weather forecast data for today in my location, in JSON format.\nquery:Print today weather forecast in condensed format."
+      "content": "time-service:Get date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for today in my location.\nquery:Print today weather forecast in condensed format."
     }
   ],
   [
@@ -5106,7 +5918,7 @@
     },
     {
       "role": "model",
-      "content": "context:Get my current location.\nweather:Retrieve hourly weather forecast data for today in my location, in JSON format.\nquery:Write concise weather forecast for today."
+      "content": "time-service:Get date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for today in my location.\nquery:Write concise weather forecast for today."
     }
   ],
   [
@@ -5120,7 +5932,7 @@
     },
     {
       "role": "model",
-      "content": "context:Get my current location.\nweather:Retrieve hourly weather forecast data for today in my location, in JSON format.\nquery:Brief today weather forecast."
+      "content": "time-service:Get date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for today in my location.\nquery:Brief today weather forecast."
     }
   ],
   [
@@ -5134,7 +5946,7 @@
     },
     {
       "role": "model",
-      "content": "context:Get my current location.\nweather:Retrieve hourly weather forecast data for today in my location, in JSON format.\nquery:Essential aspects of today weather forecast."
+      "content": "time-service:Get date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for today in my location.\nquery:Essential aspects of today weather forecast."
     }
   ],
   [
@@ -5148,7 +5960,7 @@
     },
     {
       "role": "model",
-      "content": "context:Get my current location.\nweather:Retrieve hourly weather forecast data for today in my location, in JSON format.\nquery:Summarize hourly forecast for today."
+      "content": "time-service:Get date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for today in my location.\nquery:Summarize hourly forecast for today."
     }
   ],
   [
@@ -5162,7 +5974,7 @@
     },
     {
       "role": "model",
-      "content": "context:Get my current location.\nweather:Retrieve hourly weather forecast data for today in my location, in JSON format.\nquery:How will be weather today? Please use a summarized format."
+      "content": "time-service:Get date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for today in my location.\nquery:How will be weather today? Please use a summarized format."
     }
   ],
   [
@@ -5176,7 +5988,7 @@
     },
     {
       "role": "model",
-      "content": "context:Get my current location.\nweather:Retrieve hourly weather forecast data for today in my location, in JSON format.\nquery:Display a summary of today forecast."
+      "content": "time-service:Get date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for today in my location.\nquery:Display a summary of today forecast."
     }
   ],
   [
@@ -5190,7 +6002,7 @@
     },
     {
       "role": "model",
-      "content": "context:Get my current location.\nweather:Retrieve hourly weather forecast data for today in my location, in JSON format.\nquery:Display today forecast summary."
+      "content": "time-service:Get date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for today in my location.\nquery:Display today forecast summary."
     }
   ],
   [
@@ -5204,7 +6016,7 @@
     },
     {
       "role": "model",
-      "content": "weather:Retrieve hourly weather forecast data for today in Chicirea, Ia\u0219i, Romania, in JSON format.\nquery:Display a today summary of forecast in Chicirea, Ia\u0219i, Romania."
+      "content": "time-service:Get date for today.\nweather:Get hourly weather forecast for today in Chicirea, Ia\u0219i, Romania.\nquery:Display a today summary of forecast in Chicirea, Ia\u0219i, Romania."
     }
   ],
   [
@@ -5218,7 +6030,7 @@
     },
     {
       "role": "model",
-      "content": "context:Get my current location.\nweather:Retrieve hourly weather forecast data for today in my location, in JSON format.\nquery:Do I need a rain coat today?"
+      "content": "time-service:Get date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for today in my location.\nquery:Do I need a rain coat today?"
     }
   ],
   [
@@ -5232,7 +6044,7 @@
     },
     {
       "role": "model",
-      "content": "context:Get my current location.\nweather:Retrieve hourly weather forecast data for today in my location, in JSON format.\nquery:Will I need an umbrella today?"
+      "content": "time-service:Get date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for today in my location.\nquery:Will I need an umbrella today?"
     }
   ],
   [
@@ -5246,7 +6058,7 @@
     },
     {
       "role": "model",
-      "content": "context:Get my current location.\nweather:Retrieve hourly weather forecast data for today in my location, in JSON format.\nquery:Shall I get an umbrella this afternoon?"
+      "content": "time-service:Get date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for today in my location.\nquery:Shall I get an umbrella this afternoon?"
     }
   ],
   [
@@ -5260,7 +6072,7 @@
     },
     {
       "role": "model",
-      "content": "context:Get my current location.\nweather:Retrieve hourly weather forecast data for today in my location, in JSON format.\nquery:Do we have rainy prognosis today? To take my umbrella with me?"
+      "content": "time-service:Get date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for today in my location.\nquery:Do we have rainy prognosis today? To take my umbrella with me?"
     }
   ],
   [
@@ -5274,7 +6086,7 @@
     },
     {
       "role": "model",
-      "content": "context:Get my current location.\nweather:Retrieve hourly weather forecast data for today in my location, in JSON format.\nquery:Is there an hour today good for walking?"
+      "content": "time-service:Get date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for today in my location.\nquery:Is there an hour today good for walking?"
     }
   ],
   [
@@ -5288,7 +6100,7 @@
     },
     {
       "role": "model",
-      "content": "context:Get my current location.\nweather:Retrieve hourly weather forecast data for today in my location, in JSON format.\nquery:Will we have heavy snow today?"
+      "content": "time-service:Get date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for today in my location.\nquery:Will we have heavy snow today?"
     }
   ],
   [
@@ -5302,7 +6114,7 @@
     },
     {
       "role": "model",
-      "content": "context:Get my current location.\nweather:Retrieve hourly weather forecast data for today in my location, in JSON format.\nquery:When could I go for a short walk today?"
+      "content": "time-service:Get date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for today in my location.\nquery:When could I go for a short walk today?"
     }
   ],
   [
@@ -5316,7 +6128,7 @@
     },
     {
       "role": "model",
-      "content": "context:Get my current location.\nweather:Retrieve hourly weather forecast data for today in my location, in JSON format.\nquery:When is more appropriate for a short stroll today?"
+      "content": "time-service:Get date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for today in my location.\nquery:When is more appropriate for a short stroll today?"
     }
   ],
   [
@@ -5330,7 +6142,7 @@
     },
     {
       "role": "model",
-      "content": "context:Get my current location.\nweather:Retrieve hourly weather forecast data for today in my location, in JSON format.\nquery:When is the best time for a short walk today?"
+      "content": "time-service:Get date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for today in my location.\nquery:When is the best time for a short walk today?"
     }
   ],
   [
@@ -5344,7 +6156,7 @@
     },
     {
       "role": "model",
-      "content": "context:Get my current location.\nweather:Retrieve hourly weather forecast data for today in my location, in JSON format.\nquery:When can I ride my bike to the mall today?"
+      "content": "time-service:Get date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for today in my location.\nquery:When can I ride my bike to the mall today?"
     }
   ],
   [
@@ -5358,7 +6170,7 @@
     },
     {
       "role": "model",
-      "content": "context:Get my current location.\nweather:Retrieve hourly weather forecast data for today in my location, in JSON format.\nquery:What time can I go to the mall by bike today?"
+      "content": "time-service:Get date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for today in my location.\nquery:What time can I go to the mall by bike today?"
     }
   ],
   [
@@ -5372,7 +6184,7 @@
     },
     {
       "role": "model",
-      "content": "context:Get my current location.\nweather:Retrieve hourly weather forecast data for today in my location, in JSON format.\nquery:What's it like outside? Do I need warm clothes?"
+      "content": "time-service:Get date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for today in my location.\nquery:What's it like outside? Do I need warm clothes?"
     }
   ],
   [
@@ -5386,7 +6198,7 @@
     },
     {
       "role": "model",
-      "content": "context:Get my current location.\nweather:Retrieve hourly weather forecast data for today in my location, in JSON format.\nquery:Do I need thick clothes to go to the store?"
+      "content": "time-service:Get date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for today in my location.\nquery:Do I need thick clothes to go to the store?"
     }
   ],
   [
@@ -5400,7 +6212,7 @@
     },
     {
       "role": "model",
-      "content": "context:Get my current location.\nweather:Retrieve hourly weather forecast data for today in my location, in JSON format.\nquery:Around what times of this day can I carry out outdoor activities?"
+      "content": "time-service:Get date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for today in my location.\nquery:Around what times of this day can I carry out outdoor activities?"
     }
   ],
   [
@@ -5414,7 +6226,7 @@
     },
     {
       "role": "model",
-      "content": "context:Get my current location.\nweather:Retrieve hourly weather forecast data for today in my location, in JSON format.\nquery:I have some work to do outside today. When could I do it?"
+      "content": "time-service:Get date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for today in my location.\nquery:I have some work to do outside today. When could I do it?"
     }
   ],
   [
@@ -5428,7 +6240,7 @@
     },
     {
       "role": "model",
-      "content": "context:Get my current location.\nweather:What is the daily weather forecast for the next two weeks in my location, in tabular form?"
+      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for the next two weeks in my location.\nquery:Print daily weather forecast in tabular form."
     }
   ],
   [
@@ -5442,7 +6254,7 @@
     },
     {
       "role": "model",
-      "content": "context:Get my current location.\nweather:What is the daily weather forecast for the next two weeks in my location, in tabular form?"
+      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for the next two weeks in my location.\nquery:Print daily weather forecast in tabular form."
     }
   ],
   [
@@ -5456,7 +6268,7 @@
     },
     {
       "role": "model",
-      "content": "context:Get my current location.\nweather:What is the daily weather forecast for the next two weeks in my location, in tabular form?"
+      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for the next two weeks in my location.\nquery:Print daily weather forecast in tabular form."
     }
   ],
   [
@@ -5470,7 +6282,7 @@
     },
     {
       "role": "model",
-      "content": "context:Get my current location.\nweather:What is the daily weather forecast for the next two weeks in my location, in tabular form?"
+      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for the next two weeks in my location.\nquery:Print daily weather forecast in tabular form."
     }
   ],
   [
@@ -5484,7 +6296,7 @@
     },
     {
       "role": "model",
-      "content": "weather:What is the daily weather forecast for the next two weeks in Alba-Iulia, Romania, in tabular form?"
+      "content": "weather:Get daily weather forecast for the next two weeks in Alba-Iulia, Romania.\nquery:Print daily weather forecast in tabular form."
     }
   ],
   [
@@ -5498,7 +6310,7 @@
     },
     {
       "role": "model",
-      "content": "context:Get my current location.\nweather:What is the daily weather forecast for the next two weeks in my location, in tabular form?"
+      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for the next two weeks in my location.\nquery:Print daily weather forecast in tabular form."
     }
   ],
   [
@@ -5512,7 +6324,7 @@
     },
     {
       "role": "model",
-      "content": "context:Get my current location.\nweather:What is the daily weather forecast for the next two weeks in my location, in tabular form?"
+      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for the next two weeks in my location.\nquery:Print daily weather forecast in tabular form."
     }
   ],
   [
@@ -5526,7 +6338,7 @@
     },
     {
       "role": "model",
-      "content": "context:Get my current location.\nweather:What is the daily weather forecast for next week in my location, in tabular form?"
+      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for next week in my location.\nquery:Print daily weather forecast in tabular form."
     }
   ],
   [
@@ -5540,7 +6352,7 @@
     },
     {
       "role": "model",
-      "content": "context:Get my current location.\nweather:What is the daily weather forecast for this week in my location, in tabular form?"
+      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for this week in my location.\nquery:Print daily weather forecast in tabular form."
     }
   ],
   [
@@ -5554,7 +6366,7 @@
     },
     {
       "role": "model",
-      "content": "context:Get my current location.\nweather:What is the daily weather forecast for this week, in my location in tabular form?"
+      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for this week, in my location.\nquery:Print daily weather forecast in tabular form."
     }
   ],
   [
@@ -5568,7 +6380,7 @@
     },
     {
       "role": "model",
-      "content": "weather:What is the daily weather forecast for this week in Botosani, Romania, in tabular form?"
+      "content": "weather:Get daily weather forecast for this week in Botosani, Romania.\nquery:Print daily weather forecast in tabular form."
     }
   ],
   [
@@ -5582,7 +6394,7 @@
     },
     {
       "role": "model",
-      "content": "weather:What is the daily weather forecast for this week in Suceava, Romania, in tabular form?"
+      "content": "weather:Get daily weather forecast for this week in Suceava, Romania.\nquery:Print daily weather forecast in tabular form."
     }
   ],
   [
@@ -5596,7 +6408,7 @@
     },
     {
       "role": "model",
-      "content": "context:Get my current location.\nweather:What is the daily weather forecast for this week in my location, in tabular form?"
+      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for this week in my location.\nquery:Print daily weather forecast in tabular form."
     }
   ],
   [
@@ -5610,7 +6422,7 @@
     },
     {
       "role": "model",
-      "content": "context:Get my current location.\nweather:What is the daily weather forecast for this week in my location, in tabular form?"
+      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for this week in my location.\nquery:Print daily weather forecast in tabular form."
     }
   ],
   [
@@ -5624,7 +6436,7 @@
     },
     {
       "role": "model",
-      "content": "context:Get my current location.\nweather:What is the daily weather forecast for the next two weeks in my location, in tabular form?"
+      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for the next two weeks in my location.\nquery:Print daily weather forecast in tabular form."
     }
   ],
   [
@@ -5638,7 +6450,7 @@
     },
     {
       "role": "model",
-      "content": "weather:What is the daily weather forecast for the next two weeks in V\u0103lenii de jos, Timi\u0219, Rom\u00e2nia, in tabular form?"
+      "content": "weather:Get daily weather forecast for the next two weeks in V\u0103lenii de jos, Timi\u0219, Rom\u00e2nia.\nquery:Print daily weather forecast in tabular form."
     }
   ],
   [
@@ -5652,7 +6464,7 @@
     },
     {
       "role": "model",
-      "content": "context:Get my current location.\nweather:What is the daily weather forecast for the next 3 days in my location, in tabular form?"
+      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for the next 3 days in my location.\nquery:Print daily weather forecast in tabular form."
     }
   ],
   [
@@ -5666,7 +6478,7 @@
     },
     {
       "role": "model",
-      "content": "context:Get my current location.\nweather:What is the daily weather forecast for the next 5 days in my location, in tabular form?"
+      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for the next 5 days in my location.\nquery:Print daily weather forecast in tabular form."
     }
   ],
   [
@@ -5680,7 +6492,7 @@
     },
     {
       "role": "model",
-      "content": "context:Get my current location.\nweather:What is the daily weather forecast for the next 5 days in Vaslui, Romania, in tabular form?"
+      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for the next 5 days in Vaslui, Romania.\nquery:Print daily weather forecast in tabular form."
     }
   ],
   [
@@ -5694,7 +6506,7 @@
     },
     {
       "role": "model",
-      "content": "context:Get my current location.\nweather:What is the daily weather forecast for the next 4 days in my location, in tabular form?"
+      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for the next 4 days in my location.\nquery:Print daily weather forecast in tabular form."
     }
   ],
   [
@@ -5708,7 +6520,7 @@
     },
     {
       "role": "model",
-      "content": "weather:What is the daily weather forecast for the next 4 days in Oradea, Romania, in tabular form?"
+      "content": "weather:Get daily weather forecast for the next 4 days in Oradea, Romania.\nquery:Print daily weather forecast in tabular form."
     }
   ],
   [
@@ -5722,7 +6534,7 @@
     },
     {
       "role": "model",
-      "content": "context:Get my current location.\nweather:What is the daily weather forecast for the next 10 days in my location, in tabular form?"
+      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for the next 10 days in my location.\nquery:Print daily weather forecast in tabular form."
     }
   ],
   [
@@ -5736,7 +6548,7 @@
     },
     {
       "role": "model",
-      "content": "weather:What is the daily weather forecast for the next 10 days in Negre\u0219ti, Vaslui, Romania, in tabular form?"
+      "content": "weather:Get daily weather forecast for the next 10 days in Negre\u0219ti, Vaslui, Romania.\nquery:Print daily weather forecast in tabular form."
     }
   ],
   [
@@ -5750,7 +6562,7 @@
     },
     {
       "role": "model",
-      "content": "context:Get my current location.\nweather:What is the daily weather forecast for the next two weeks in my location?\nquery:Recommend one day in the next two weeks for some outdoor activities."
+      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for the next two weeks in my location?\nquery:Recommend one day in the next two weeks for some outdoor activities."
     }
   ],
   [
@@ -5764,7 +6576,7 @@
     },
     {
       "role": "model",
-      "content": "context:Get my current location.\nweather:What is the daily weather forecast for the next two weeks in my location?\nquery:Give me a day in the next 2 weeks when we can plant some trees."
+      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for the next two weeks in my location?\nquery:Give me a day in the next 2 weeks when we can plant some trees."
     }
   ],
   [
@@ -5778,7 +6590,7 @@
     },
     {
       "role": "model",
-      "content": "context:Get my current location.\nweather:What is the daily weather forecast for the next week in my location?\nquery:Can we go swimming this weekend?"
+      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for the next week in my location?\nquery:Can we go swimming this weekend?"
     }
   ],
   [
@@ -5792,7 +6604,7 @@
     },
     {
       "role": "model",
-      "content": "context:Get my current location.\nweather:What is the daily weather forecast for the next two weeks in my location?\nquery:I would need two full days without rain this week, to paint the fence."
+      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for the next two weeks in my location?\nquery:I would need two full days without rain this week, to paint the fence."
     }
   ],
   [
@@ -5806,7 +6618,7 @@
     },
     {
       "role": "model",
-      "content": "context:Get my current location.\nweather:What is the daily weather forecast for the next two weeks in my location?\nquery:When we might have a few good days for gardening in the coming period?"
+      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for the next two weeks in my location?\nquery:When we might have a few good days for gardening in the coming period?"
     }
   ],
   [
@@ -5820,7 +6632,7 @@
     },
     {
       "role": "model",
-      "content": "context:Get my current location.\nweather:What is the daily weather forecast for the next two weeks in my location?\nquery:I would need 3-4 days without rain to repair the roof."
+      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for the next two weeks in my location?\nquery:I would need 3-4 days without rain to repair the roof."
     }
   ],
   [
@@ -5834,7 +6646,7 @@
     },
     {
       "role": "model",
-      "content": "context:Get my current location.\nweather:What is the daily weather forecast for the next two weeks in my location?\nquery:Choose two days of good weather to fix the exterior walls."
+      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for the next two weeks in my location?\nquery:Choose two days of good weather to fix the exterior walls."
     }
   ],
   [
@@ -5848,7 +6660,7 @@
     },
     {
       "role": "model",
-      "content": "context:Get my current location.\nweather:What is the daily weather forecast for the next two weeks in my location?\nquery:Four consecutive days without rain to replace the outside plaster."
+      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for the next two weeks in my location?\nquery:Four consecutive days without rain to replace the outside plaster."
     }
   ],
   [
@@ -5862,7 +6674,7 @@
     },
     {
       "role": "model",
-      "content": "context:Get my current location.\nweather:What is the daily weather forecast for the next two weeks in my location?\nquery:I may need to upgrade the greenhouse. I've estimated a 3 day effort. When can we schedule this in the next two weeks?"
+      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for the next two weeks in my location?\nquery:I may need to upgrade the greenhouse. I've estimated a 3 day effort. When can we schedule this in the next two weeks?"
     }
   ],
   [
@@ -5876,7 +6688,7 @@
     },
     {
       "role": "model",
-      "content": "weather:What is the daily weather forecast for the next two weeks in Suceava, Romania?\nquery:What is the nearest day we could organize an outdoor sporting event in Suceava?"
+      "content": "weather:Get daily weather forecast for the next two weeks in Suceava, Romania?\nquery:What is the nearest day we could organize an outdoor sporting event in Suceava?"
     }
   ],
   [
@@ -5890,7 +6702,7 @@
     },
     {
       "role": "model",
-      "content": "weather:What is the daily weather forecast for the next two weeks in Piatra Neamt, Romania?\nquery:When would three days out of the next two weeks be good for a trip to Piatra Neamt?"
+      "content": "weather:Get daily weather forecast for the next two weeks in Piatra Neamt, Romania?\nquery:When would three days out of the next two weeks be good for a trip to Piatra Neamt?"
     }
   ],
   [
@@ -5904,7 +6716,7 @@
     },
     {
       "role": "model",
-      "content": "weather:What is the daily weather forecast for the next two weeks in Vatra Dornei, Romania?\nquery:What would be couple days for a trip to Vatra Dornei, in the next two weeks?"
+      "content": "weather:Get daily weather forecast for the next two weeks in Vatra Dornei, Romania?\nquery:What would be couple days for a trip to Vatra Dornei, in the next two weeks?"
     }
   ],
   [
@@ -5918,7 +6730,7 @@
     },
     {
       "role": "model",
-      "content": "weather:What is the daily weather forecast for the next week in Predeal, Romania?\nquery:Is this weekend good for a trip to Predeal?"
+      "content": "weather:Get daily weather forecast for the next week in Predeal, Romania?\nquery:Is this weekend good for a trip to Predeal?"
     }
   ],
   [
@@ -5932,7 +6744,7 @@
     },
     {
       "role": "model",
-      "content": "weather:What is the daily weather forecast for the next week in Constanta, Romania?\nquery:What about going to the sea at Constanta, this week? Will the weather help us?"
+      "content": "weather:Get daily weather forecast for the next week in Constanta, Romania?\nquery:What about going to the sea at Constanta, this week? Will the weather help us?"
     }
   ],
   [
@@ -6992,6 +7804,20 @@
     },
     {
       "role": "user",
+      "content": "is greenland an independent state?"
+    },
+    {
+      "role": "model",
+      "content": "wikipedia:Read article about Denmark.\nquery:Is Greenland an independent state?"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
       "content": "extract facts about tokyo city"
     },
     {
@@ -7902,6 +8728,20 @@
     },
     {
       "role": "user",
+      "content": "how to throw an exception in python?"
+    },
+    {
+      "role": "model",
+      "content": "programming:How to throw an exception in Python?"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
       "content": "please create a java spring rest controller with an endpoint using url parameters"
     },
     {
@@ -7916,11 +8756,67 @@
     },
     {
       "role": "user",
+      "content": "create a java static method to compute body mass index from given weight and height"
+    },
+    {
+      "role": "model",
+      "content": "programming:Create a static method in Java to calculate body mass index from a given weight and height."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
       "content": "there is a json list with objects with the same schema. how to deserialize in rust using serde_json"
     },
     {
       "role": "model",
       "content": "programming:There is a JSON list of objects with the same schema. How to deserialize in Rust using serde_json?"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "can this rust regex pattern r\"(?s)(^get\\s+.+\\s+user).*\" match the user prompt: Get my user name."
+    },
+    {
+      "role": "model",
+      "content": "programming:Can this Rust regex pattern r\"(?s)(^get\\s+.+\\s+user).*\" match the user prompt: Get my username."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "how to make a rust regex pattern not case sensitive?"
+    },
+    {
+      "role": "model",
+      "content": "programming:How do I make a Rust regex pattern case-insensitive?"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "how to rename field on rust serde json?"
+    },
+    {
+      "role": "model",
+      "content": "programming:How to rename field on Rust Serde JSON?"
     }
   ],
   [
@@ -7963,6 +8859,34 @@
     {
       "role": "model",
       "content": "linux-admin:Which Apache2 modules should I enable for a reverse proxy?"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "how to upgrade ubuntu version?"
+    },
+    {
+      "role": "model",
+      "content": "linux-admin:How to upgrade Ubuntu version?"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "how to enable modules in linux apache2?"
+    },
+    {
+      "role": "model",
+      "content": "linux-admin:How to enable modules in Apache2 on linux?"
     }
   ],
   [
@@ -8173,6 +9097,34 @@
     {
       "role": "model",
       "content": "language:Is it reasonable to ask in English \"is the front door not shut?\"?"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "what means cursum perficio?"
+    },
+    {
+      "role": "model",
+      "content": "language:What means cursum perficio?"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "translate to romanian: indicating a mild overweight status"
+    },
+    {
+      "role": "model",
+      "content": "translation:Translate to Romanian: \"indicating a mild overweight status\"."
     }
   ],
   [
@@ -8649,6 +9601,20 @@
     {
       "role": "model",
       "content": "child-learning:Explain to a child why the trees have leaves."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "how body mass index is calculated?"
+    },
+    {
+      "role": "model",
+      "content": "answer:Body Mass Index (BMI) is calculated by dividing an adult's weight in kilograms (kg) by their height in meters squared (m\u00b2)."
     }
   ]
 ]

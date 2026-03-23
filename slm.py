@@ -42,7 +42,8 @@ history = []
 
 if args.quantization.startswith("bb-"):
     print("BitsAndBytes quantisation on 4 bits")
-    quant_type = args.quantization[len("bb-")]
+    quant_type = args.quantization[len("bb-"):]
+    print(f"quant_type: {quant_type}")
     quantization_config = BitsAndBytesConfig(
         load_in_4bit=True,
         bnb_4bit_quant_type=quant_type,

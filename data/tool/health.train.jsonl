@@ -1,0 +1,24 @@
+-- health_save_blood
+{"prompt":"Save blood pressure measurement of 124/88 mmHg and heart rate of 75 bpm for Rotaru Iulian.","function":"health_save_blood","arguments":{"person":"Rotaru Iulian","systole":124,"diastole":88,"pulse":77}}
+{"prompt":"Save blood pressure measurement of 115/75 mmHg and heart rate of 65 bpm for Miron Daniela Elena.","function":"health_save_blood","arguments":{"person":"Miron Daniela Elena","systole":115,"diastole":75,"pulse":65}}
+{"prompt":"Save blood pressure measurement of 139/92 mmHg and heart rate of 86 bpm for Sîrghie Vasile.","function":"health_save_blood","arguments":{"person":"Sîrghie Vasile","systole":139,"diastole":92,"pulse":86}}
+
+-- health_save_temperature
+{"prompt":"Save body temperature of 35.10 °C for Lontkowschi George.","function":"health_save_temperature","arguments":{"person":"Lontkowschi George","temperature":35.10}}
+{"prompt":"Save body temperature of 36.85 °C for Adam Iosif.","function":"health_save_temperature","arguments":{"person":"Adam Iosif","temperature":36.85}}
+{"prompt":"Save body temperature of 37.45 °C for Acatrinei Liviu.","function":"health_save_temperature","arguments":{"person":"Acatrinei Liviu","temperature":37.45}}
+
+-- health_save_weight
+{"prompt":"Save body weight of 89.50 kg and height of 176 cm for Păduraru Mihaela.","function":"health_save_weight","arguments":{"person":"Păduraru Mihaela","height":176,"weight":89.50}}
+{"prompt":"Save body weight of 82.00 kg and height of 178 cm for Jipa Bogdan Laurențiu.","function":"health_save_weight","arguments":{"person":"Jipa Bogdan Laurențiu","height":178,"weight":82.00}}
+{"prompt":"Save body weight of 78.00 kg and height of 165 cm for Glodeanu Răzvan.","function":"health_save_weight","arguments":{"person":"Glodeanu Răzvan","height":165,"weight":78.00}}
+
+-- health_save_glucose
+{"prompt":"Save blood glucose level of 80 mg/dL for Dorneanu Sorana Ioana.","function":"health_save_glucose","arguments":{"person":"Dorneanu Sorana Ioana","glucose":80}}
+{"prompt":"Save blood glucose level of 99 mg/dL for Luntraru Daniela.","function":"health_save_glucose","arguments":{"person":"Luntraru Daniela","glucose":99}}
+{"prompt":"Save blood glucose level of 124 mg/dL for Cornea Sorin.","function":"health_save_glucose","arguments":{"person":"Cornea Sorin","glucose":124}}
+
+-- health_read_measurements
+{"prompt":"Read medical records from 2026-01-22 for Gogălniceanu Ștefan.","function":"health_read_measurements","arguments":{"person":"Gogălniceanu Ștefan","date":"2026-01-22"}}
+{"prompt":"Read medical records from 2024-03-15 for Baciu Vasile.","function":"health_read_measurements","arguments":{"person":"Baciu Vasile","date":"2024-03-15"}}
+{"prompt":"Read medical records from 2024-04-11 for Vaino George Viorel.","function":"health_read_measurements","arguments":{"person":"Vaino George Viorel","date":"2024-04-11"}}

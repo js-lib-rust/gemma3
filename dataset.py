@@ -53,8 +53,15 @@ def hf_tool_schema():
 
 def hf_function_set():
     file_path = f"data/{args.file}"
+    dataset = []
     with open(file_path, 'r', encoding='UTF-8') as file:
-        dataset = [json.loads(line) for line in file if line.strip()]
+        for line in file:
+            line = line.strip()
+            if line and not line.startswith('--'):
+                # print(f"line: {line}")
+                sample = json.loads(line)
+                # print(sample)
+                dataset.append(sample)
 
     system_role = "developer" if args.use_function_model else "system"
     model_role = "assistant" if args.use_function_model else "model"
@@ -69,7 +76,7 @@ def hf_function_set():
                                                               "arguments": sample['arguments']}}]}
         ]
         hf_dataset.append(hf_sample)
-    print(json.dumps(hf_dataset, indent=2))
+    print(json.dumps(hf_dataset, indent=2, ensure_ascii=False))
 
 
 def hf_router_set():

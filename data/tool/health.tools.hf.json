@@ -1,0 +1,137 @@
+[
+  {
+    "type": "function",
+    "function": {
+      "name": "health_read_measurements",
+      "description": "Read person medical records for a specified past date -- there is no reason to provide dates from the future.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "person": {
+            "type": "string",
+            "description": "human-readable person name, unique per medical database."
+          },
+          "date": {
+            "type": "string",
+            "description": "the past date we want to retrieve the medical records, in ISO 8601 format, e.g. 2026-03-24"
+          }
+        },
+        "required": [
+          "person",
+          "date"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "health_save_blood",
+      "description": "Save person blood pressure and cardiac pulse to medical database. Also compute pulse pressure as difference between systolic and diastolic pressures.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "person": {
+            "type": "string",
+            "description": "human-readable person name, unique per medical database."
+          },
+          "systole": {
+            "type": "integer",
+            "description": "systolic pressure expressed as mmHg (millimeters of mercury)."
+          },
+          "diastole": {
+            "type": "integer",
+            "description": "diastolic pressure expressed as mmHg (millimeters of mercury)."
+          },
+          "pulse": {
+            "type": "integer",
+            "description": "heart rate expressed in bpm (beats per minute)."
+          }
+        },
+        "required": [
+          "person",
+          "systole",
+          "diastole",
+          "pulse"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "health_save_glucose",
+      "description": "Save person blood glucose level to medical database.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "person": {
+            "type": "string",
+            "description": "human-readable person name, unique per medical database."
+          },
+          "glucose": {
+            "type": "integer",
+            "description": "blood glucose level expressed in mg/dL (milligrams per deciliter)."
+          }
+        },
+        "required": [
+          "person",
+          "glucose"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "health_save_temperature",
+      "description": "Save person body temperature to medical database.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "person": {
+            "type": "string",
+            "description": "human-readable person name, unique per medical database."
+          },
+          "temperature": {
+            "type": "number",
+            "description": "body temperature expressed in \u00b0C (Celsius degrees)"
+          }
+        },
+        "required": [
+          "person",
+          "temperature"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "health_save_weight",
+      "description": "Save person body weight to medical database. Also compute body mass index based on person height.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "person": {
+            "type": "string",
+            "description": "human-readable person name, unique per medical database."
+          },
+          "height": {
+            "type": "integer",
+            "description": "person height expressed in cm (centimeters)."
+          },
+          "weight": {
+            "type": "number",
+            "description": "body weight expressed in kg (kilogram)."
+          }
+        },
+        "required": [
+          "person",
+          "height",
+          "weight"
+        ]
+      }
+    }
+  }
+]

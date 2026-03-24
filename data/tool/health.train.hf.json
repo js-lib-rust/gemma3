@@ -1,0 +1,386 @@
+[
+  [
+    {
+      "role": "developer",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Save blood pressure measurement of 124/88 mmHg and heart rate of 75 bpm for Rotaru Iulian."
+    },
+    {
+      "role": "assistant",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "health_save_blood",
+            "arguments": {
+              "person": "Rotaru Iulian",
+              "systole": 124,
+              "diastole": 88,
+              "pulse": 77
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "developer",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Save blood pressure measurement of 115/75 mmHg and heart rate of 65 bpm for Miron Daniela Elena."
+    },
+    {
+      "role": "assistant",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "health_save_blood",
+            "arguments": {
+              "person": "Miron Daniela Elena",
+              "systole": 115,
+              "diastole": 75,
+              "pulse": 65
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "developer",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Save blood pressure measurement of 139/92 mmHg and heart rate of 86 bpm for Sîrghie Vasile."
+    },
+    {
+      "role": "assistant",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "health_save_blood",
+            "arguments": {
+              "person": "Sîrghie Vasile",
+              "systole": 139,
+              "diastole": 92,
+              "pulse": 86
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "developer",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Save body temperature of 35.10 °C for Lontkowschi George."
+    },
+    {
+      "role": "assistant",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "health_save_temperature",
+            "arguments": {
+              "person": "Lontkowschi George",
+              "temperature": 35.1
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "developer",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Save body temperature of 36.85 °C for Adam Iosif."
+    },
+    {
+      "role": "assistant",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "health_save_temperature",
+            "arguments": {
+              "person": "Adam Iosif",
+              "temperature": 36.85
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "developer",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Save body temperature of 37.45 °C for Acatrinei Liviu."
+    },
+    {
+      "role": "assistant",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "health_save_temperature",
+            "arguments": {
+              "person": "Acatrinei Liviu",
+              "temperature": 37.45
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "developer",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Save body weight of 89.50 kg and height of 176 cm for Păduraru Mihaela."
+    },
+    {
+      "role": "assistant",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "health_save_weight",
+            "arguments": {
+              "person": "Păduraru Mihaela",
+              "height": 176,
+              "weight": 89.5
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "developer",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Save body weight of 82.00 kg and height of 178 cm for Jipa Bogdan Laurențiu."
+    },
+    {
+      "role": "assistant",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "health_save_weight",
+            "arguments": {
+              "person": "Jipa Bogdan Laurențiu",
+              "height": 178,
+              "weight": 82.0
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "developer",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Save body weight of 78.00 kg and height of 165 cm for Glodeanu Răzvan."
+    },
+    {
+      "role": "assistant",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "health_save_weight",
+            "arguments": {
+              "person": "Glodeanu Răzvan",
+              "height": 165,
+              "weight": 78.0
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "developer",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Save blood glucose level of 80 mg/dL for Dorneanu Sorana Ioana."
+    },
+    {
+      "role": "assistant",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "health_save_glucose",
+            "arguments": {
+              "person": "Dorneanu Sorana Ioana",
+              "glucose": 80
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "developer",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Save blood glucose level of 99 mg/dL for Luntraru Daniela."
+    },
+    {
+      "role": "assistant",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "health_save_glucose",
+            "arguments": {
+              "person": "Luntraru Daniela",
+              "glucose": 99
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "developer",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Save blood glucose level of 124 mg/dL for Cornea Sorin."
+    },
+    {
+      "role": "assistant",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "health_save_glucose",
+            "arguments": {
+              "person": "Cornea Sorin",
+              "glucose": 124
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "developer",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Read medical records from 2026-01-22 for Gogălniceanu Ștefan."
+    },
+    {
+      "role": "assistant",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "health_read_measurements",
+            "arguments": {
+              "person": "Gogălniceanu Ștefan",
+              "date": "2026-01-22"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "developer",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Read medical records from 2024-03-15 for Baciu Vasile."
+    },
+    {
+      "role": "assistant",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "health_read_measurements",
+            "arguments": {
+              "person": "Baciu Vasile",
+              "date": "2024-03-15"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "developer",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Read medical records from 2024-04-11 for Vaino George Viorel."
+    },
+    {
+      "role": "assistant",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "health_read_measurements",
+            "arguments": {
+              "person": "Vaino George Viorel",
+              "date": "2024-04-11"
+            }
+          }
+        }
+      ]
+    }
+  ]
+]

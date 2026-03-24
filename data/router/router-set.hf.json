@@ -528,7 +528,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Turn on the central heating.\nquery:Start the central heating."
+      "content": "home-automation:Turn on the central heating.\nquery:Print the central heating status."
     }
   ],
   [
@@ -542,7 +542,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Turn on the central heating.\nquery:Start the heater."
+      "content": "home-automation:Turn on the central heating.\nquery:Print the central heating status."
     }
   ],
   [
@@ -556,7 +556,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Turn on the central heating.\nquery:Activate the heater."
+      "content": "home-automation:Turn on the central heating.\nquery:Print the central heating status."
     }
   ],
   [
@@ -570,7 +570,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Turn on the central heating.\nquery:Open the heater."
+      "content": "home-automation:Turn on the central heating.\nquery:Print the central heating status."
     }
   ],
   [
@@ -584,7 +584,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Turn on the central heating.\nquery:Turn the heater on."
+      "content": "home-automation:Turn on the central heating.\nquery:Print the central heating status."
     }
   ],
   [
@@ -598,7 +598,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Turn on the central heating.\nquery:Engage the heater."
+      "content": "home-automation:Turn on the central heating.\nquery:Print the central heating status."
     }
   ],
   [
@@ -612,7 +612,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Turn on the central heating.\nquery:Turn the climate on."
+      "content": "home-automation:Turn on the central heating.\nquery:Print the central heating status."
     }
   ],
   [
@@ -626,7 +626,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Turn on the central heating.\nquery:Turn on the climate."
+      "content": "home-automation:Turn on the central heating.\nquery:Print the central heating status."
     }
   ],
   [
@@ -640,7 +640,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Turn on the central heating.\nquery:Engage the climate."
+      "content": "home-automation:Turn on the central heating.\nquery:Print the central heating status."
     }
   ],
   [
@@ -808,7 +808,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Turn off the central heating.\nquery:Stop the central heating."
+      "content": "home-automation:Turn off the central heating.\nquery:Print the central heating status."
     }
   ],
   [
@@ -822,7 +822,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Turn off the central heating.\nquery:Shutdown the central heating."
+      "content": "home-automation:Turn off the central heating.\nquery:Print the central heating status."
     }
   ],
   [
@@ -836,7 +836,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Turn off the central heating.\nquery:Stop the heater."
+      "content": "home-automation:Turn off the central heating.\nquery:Print the central heating status."
     }
   ],
   [
@@ -850,7 +850,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Turn off the central heating.\nquery:Deactivate the heater."
+      "content": "home-automation:Turn off the central heating.\nquery:Print the central heating status."
     }
   ],
   [
@@ -864,7 +864,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Turn off the central heating.\nquery:Close the heater."
+      "content": "home-automation:Turn off the central heating.\nquery:Print the central heating status."
     }
   ],
   [
@@ -878,7 +878,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Turn off the central heating.\nquery:Shutdown the heater."
+      "content": "home-automation:Turn off the central heating.\nquery:Print the central heating status."
     }
   ],
   [
@@ -892,7 +892,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Turn off the central heating.\nquery:Turn the heater off."
+      "content": "home-automation:Turn off the central heating.\nquery:Print the central heating status."
     }
   ],
   [
@@ -906,7 +906,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Turn off the central heating.\nquery:Disengage the heater."
+      "content": "home-automation:Turn off the central heating.\nquery:Print the central heating status."
     }
   ],
   [
@@ -920,7 +920,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Turn off the central heating.\nquery:Turn the climate off."
+      "content": "home-automation:Turn off the central heating.\nquery:Print the central heating status."
     }
   ],
   [
@@ -934,7 +934,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Turn off the central heating.\nquery:Turn off the climate."
+      "content": "home-automation:Turn off the central heating.\nquery:Print the central heating status."
     }
   ],
   [
@@ -948,7 +948,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Turn off the central heating.\nquery:Disengage the climate."
+      "content": "home-automation:Turn off the central heating.\nquery:Print the central heating status."
     }
   ],
   [
@@ -3496,7 +3496,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my user name.\nhealth:Save blood pressure measurement of 125/85 mmHg and heart rate of 70 bpm to my user name."
+      "content": "user-profile:Get my user name.\nhealth:Save blood pressure measurement of 125/85 mmHg and heart rate of 70 bpm to my user name.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -3510,7 +3510,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my user name.\nhealth:Save blood pressure measurement of 125/85 mmHg and heart rate of 70 bpm to my user name."
+      "content": "user-profile:Get my user name.\nhealth:Save blood pressure measurement of 125/85 mmHg and heart rate of 70 bpm to my user name.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -3524,7 +3524,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my user name.\nhealth:Save blood pressure measurement of 128/81 mmHg and heart rate of 55 bpm to my user name."
+      "content": "user-profile:Get my user name.\nhealth:Save blood pressure measurement of 128/81 mmHg and heart rate of 55 bpm to my user name.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -3538,7 +3538,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my user name.\nhealth:Save blood pressure measurement of 130/82 mmHg and heart rate of 85 bpm to my user name."
+      "content": "user-profile:Get my user name.\nhealth:Save blood pressure measurement of 130/82 mmHg and heart rate of 85 bpm to my user name.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -3552,7 +3552,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my user name.\nhealth:Save blood pressure measurement of 110/66 mmHg and heart rate of 84 bpm to my user name."
+      "content": "user-profile:Get my user name.\nhealth:Save blood pressure measurement of 110/66 mmHg and heart rate of 84 bpm to my user name.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -3566,7 +3566,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my user name.\nhealth:Save blood pressure measurement of 133/92 mmHg and heart rate of 87 bpm to my user name."
+      "content": "user-profile:Get my user name.\nhealth:Save blood pressure measurement of 133/92 mmHg and heart rate of 87 bpm to my user name.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -3580,7 +3580,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my user name.\nhealth:Save blood pressure measurement of 136/90 mmHg and heart rate of 82 bpm to my user name."
+      "content": "user-profile:Get my user name.\nhealth:Save blood pressure measurement of 136/90 mmHg and heart rate of 82 bpm to my user name.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -3594,7 +3594,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my user name.\nhealth:Save blood pressure measurement of 119/81 mmHg and heart rate of 93 bpm to my user name."
+      "content": "user-profile:Get my user name.\nhealth:Save blood pressure measurement of 119/81 mmHg and heart rate of 93 bpm to my user name.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -3608,7 +3608,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my user name.\nhealth:Save blood pressure measurement of 120/84 mmHg and heart rate of 76 bpm to my user name."
+      "content": "user-profile:Get my user name.\nhealth:Save blood pressure measurement of 120/84 mmHg and heart rate of 76 bpm to my user name.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -3622,7 +3622,7 @@
     },
     {
       "role": "model",
-      "content": "health:Save blood pressure measurement of 118/82 mmHg and heart rate of 63 bpm to Rusu Florentin."
+      "content": "health:Save blood pressure measurement of 118/82 mmHg and heart rate of 63 bpm to Rusu Florentin.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -3636,7 +3636,7 @@
     },
     {
       "role": "model",
-      "content": "health:Save blood pressure measurement of 119/81 mmHg and heart rate of 64 bpm P\u0103tra\u0219cu Constantin."
+      "content": "health:Save blood pressure measurement of 119/81 mmHg and heart rate of 64 bpm P\u0103tra\u0219cu Constantin.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -3650,7 +3650,7 @@
     },
     {
       "role": "model",
-      "content": "health:Save blood pressure measurement of 115/75 mmHg and heart rate of 60 bpm to Gavriliu Mihaela."
+      "content": "health:Save blood pressure measurement of 115/75 mmHg and heart rate of 60 bpm to Gavriliu Mihaela.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -3664,7 +3664,7 @@
     },
     {
       "role": "model",
-      "content": "health:Save blood pressure measurement of 112/65 mmHg and heart rate of 78 bpm to Rotaru Lucian."
+      "content": "health:Save blood pressure measurement of 112/65 mmHg and heart rate of 78 bpm to Rotaru Lucian.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -3678,7 +3678,7 @@
     },
     {
       "role": "model",
-      "content": "health:Save blood pressure measurement of 133/92 mmHg and heart rate of 87 bpm to Miron Elena Daniela."
+      "content": "health:Save blood pressure measurement of 133/92 mmHg and heart rate of 87 bpm to Miron Elena Daniela.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -3692,7 +3692,7 @@
     },
     {
       "role": "model",
-      "content": "health:Save blood pressure measurement of 125/83 mmHg and heart rate of 73 bpm to Rotaru Iulian."
+      "content": "health:Save blood pressure measurement of 125/83 mmHg and heart rate of 73 bpm to Rotaru Iulian.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -3706,7 +3706,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my user name.\nhealth:Save body temperature of 35.00 \u00b0C to my user name."
+      "content": "user-profile:Get my user name.\nhealth:Save body temperature of 35.00 \u00b0C to my user name.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -3720,7 +3720,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my user name.\nhealth:Save body temperature of 34.30 \u00b0C to my user name."
+      "content": "user-profile:Get my user name.\nhealth:Save body temperature of 34.30 \u00b0C to my user name.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -3734,7 +3734,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my user name.\nhealth:Save body temperature of 35.90 \u00b0C to my user name."
+      "content": "user-profile:Get my user name.\nhealth:Save body temperature of 35.90 \u00b0C to my user name.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -3748,7 +3748,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my user name.\nhealth:Save body temperature of 34.80 \u00b0C to my user name."
+      "content": "user-profile:Get my user name.\nhealth:Save body temperature of 34.80 \u00b0C to my user name.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -3762,7 +3762,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my user name.\nhealth:Save body temperature of 35.20 \u00b0C to my user name."
+      "content": "user-profile:Get my user name.\nhealth:Save body temperature of 35.20 \u00b0C to my user name.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -3776,7 +3776,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my user name.\nhealth:Save body temperature of 37.10 \u00b0C to my user name."
+      "content": "user-profile:Get my user name.\nhealth:Save body temperature of 37.10 \u00b0C to my user name.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -3790,7 +3790,7 @@
     },
     {
       "role": "model",
-      "content": "health:Save body temperature of 35.10 \u00b0C to Cojocaru Cristian."
+      "content": "health:Save body temperature of 35.10 \u00b0C to Cojocaru Cristian.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -3804,7 +3804,7 @@
     },
     {
       "role": "model",
-      "content": "health:Save body temperature of 35.20 \u00b0C to Acatrinei Liviu."
+      "content": "health:Save body temperature of 35.20 \u00b0C to Acatrinei Liviu.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -3818,7 +3818,7 @@
     },
     {
       "role": "model",
-      "content": "health:Save body temperature of 35.60 \u00b0C to Gog\u0103lniceanu \u0218tefan."
+      "content": "health:Save body temperature of 35.60 \u00b0C to Gog\u0103lniceanu \u0218tefan.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -3832,7 +3832,7 @@
     },
     {
       "role": "model",
-      "content": "health:Save body temperature of 36.20 \u00b0C to Lontkowschi George."
+      "content": "health:Save body temperature of 36.20 \u00b0C to Lontkowschi George.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -3846,7 +3846,7 @@
     },
     {
       "role": "model",
-      "content": "health:Save body temperature of 34.10 \u00b0C to Teodorescu Tiberiu Dinu."
+      "content": "health:Save body temperature of 34.10 \u00b0C to Teodorescu Tiberiu Dinu.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -3860,7 +3860,7 @@
     },
     {
       "role": "model",
-      "content": "health:Save body temperature of 36.70 \u00b0C to Dorneanu Deliana."
+      "content": "health:Save body temperature of 36.70 \u00b0C to Dorneanu Deliana.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -3874,21 +3874,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my user name.\nuser-profile:Get my height.\nhealth:Save body weight of 89.00 kg to my user name."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "my weight is 89"
-    },
-    {
-      "role": "model",
-      "content": "user-profile:Get my user name.\nuser-profile:Get my height.\nhealth:Save body weight of 89.00 kg to my user name."
+      "content": "user-profile:Get my user name.\nuser-profile:Get my height.\nhealth:Save body weight of 89.00 kg to my user name.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -3902,7 +3888,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my user name.\nuser-profile:Get my height.\nhealth:Save my body weight of 92.00 kg to my user name."
+      "content": "user-profile:Get my user name.\nuser-profile:Get my height.\nhealth:Save my body weight of 92.00 kg to my user name.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -3916,7 +3902,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my user name.\nuser-profile:Get my height.\nhealth:Save body weight of 87.50 kg to my user name."
+      "content": "user-profile:Get my user name.\nuser-profile:Get my height.\nhealth:Save body weight of 87.50 kg to my user name.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -3930,7 +3916,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my user name.\nuser-profile:Get my height.\nhealth:Save body weight of 94.00 kg to my user name."
+      "content": "user-profile:Get my user name.\nuser-profile:Get my height.\nhealth:Save body weight of 94.00 kg to my user name.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -3944,7 +3930,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my user name.\nuser-profile:Get my height.\nhealth:Save body weight of 88.00 kg to my user name."
+      "content": "user-profile:Get my user name.\nuser-profile:Get my height.\nhealth:Save body weight of 88.00 kg to my user name.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -3958,7 +3944,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my user name.\nuser-profile:Get my height.\nhealth:Save body weight of 75.50 kg to my user name."
+      "content": "user-profile:Get my user name.\nuser-profile:Get my height.\nhealth:Save body weight of 75.50 kg to my user name.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -3972,7 +3958,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my user name.\nuser-profile:Get my height.\nhealth:Save body weight of 62.00 kg to my user name."
+      "content": "user-profile:Get my user name.\nuser-profile:Get my height.\nhealth:Save body weight of 62.00 kg to my user name.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -3986,7 +3972,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get the height of Baciu Vasile.\nhealth:Save body weight of 89.50 kg to Baciu Vasile."
+      "content": "user-profile:Get the height of Baciu Vasile.\nhealth:Save body weight of 89.50 kg to Baciu Vasile.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -4000,7 +3986,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get the height of Agavriloaiei Ioana.\nhealth:Save body weight of 56.00 kg to Agavriloaiei Ioana."
+      "content": "user-profile:Get the height of Agavriloaiei Ioana.\nhealth:Save body weight of 56.00 kg to Agavriloaiei Ioana.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -4014,7 +4000,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get the height of Preda Marin.\nhealth:Save body weight of 88.50 kg to Preda Marin."
+      "content": "user-profile:Get the height of Preda Marin.\nhealth:Save body weight of 88.50 kg to Preda Marin.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -4028,7 +4014,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get the height of Jipa Bogdan.\nhealth:Save body weight of 74.00 kg to Jipa Bogdan."
+      "content": "user-profile:Get the height of Jipa Bogdan.\nhealth:Save body weight of 74.00 kg to Jipa Bogdan.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -4042,7 +4028,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get the height of Rotaru Mihai.\nhealth:Save body weight of 76.50 kg to Rotaru Mihai."
+      "content": "user-profile:Get the height of Rotaru Mihai.\nhealth:Save body weight of 76.50 kg to Rotaru Mihai.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -4056,7 +4042,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get the height of Dorneanu Sorana Ioana.\nhealth:Save body weight of 22.50 kg to Dorneanu Sorana Ioana."
+      "content": "user-profile:Get the height of Dorneanu Sorana Ioana.\nhealth:Save body weight of 22.50 kg to Dorneanu Sorana Ioana.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -4070,7 +4056,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get the height of Rotaru \u0218tefan.\nhealth:Save body weight of 103.50 kg to Rotaru \u0218tefan."
+      "content": "user-profile:Get the height of Rotaru \u0218tefan.\nhealth:Save body weight of 103.50 kg to Rotaru \u0218tefan.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -4084,7 +4070,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get the height of Adam Nicolae Ioan.\nhealth:Save body weight of 66.50 kg to Adam Nicolae Ioan."
+      "content": "user-profile:Get the height of Adam Nicolae Ioan.\nhealth:Save body weight of 66.50 kg to Adam Nicolae Ioan.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -4098,7 +4084,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get the height of Marton Csaba.\nhealth:Save body weight of 77.00 kg to Marton Csaba."
+      "content": "user-profile:Get the height of Marton Csaba.\nhealth:Save body weight of 77.00 kg to Marton Csaba.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -4112,7 +4098,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my user name.\nhealth:Save blood glucose level of 103 mg/dL to my user name."
+      "content": "user-profile:Get my user name.\nhealth:Save blood glucose level of 103 mg/dL to my user name.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -4126,7 +4112,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my user name.\nhealth:Save blood glucose level of 107 mg/dL to my user name."
+      "content": "user-profile:Get my user name.\nhealth:Save blood glucose level of 107 mg/dL to my user name.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -4140,7 +4126,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my user name.\nhealth:Save blood glucose level of 94 mg/dL to my user name."
+      "content": "user-profile:Get my user name.\nhealth:Save blood glucose level of 94 mg/dL to my user name.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -4154,7 +4140,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my user name.\nhealth:Save blood glucose level of 118 mg/dL to my user name."
+      "content": "user-profile:Get my user name.\nhealth:Save blood glucose level of 118 mg/dL to my user name.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -4168,7 +4154,7 @@
     },
     {
       "role": "model",
-      "content": "health:Save blood glucose level of 102 mg/dL to Gavriliu Petronela."
+      "content": "health:Save blood glucose level of 102 mg/dL to Gavriliu Petronela.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -4182,7 +4168,7 @@
     },
     {
       "role": "model",
-      "content": "health:Save blood glucose level of 95 mg/dL to Gavriliu Andrei."
+      "content": "health:Save blood glucose level of 95 mg/dL to Gavriliu Andrei.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -4196,7 +4182,7 @@
     },
     {
       "role": "model",
-      "content": "health:Save blood glucose level of 105 mg/dL to F\u00e2nt\u00e2naru Eugenia."
+      "content": "health:Save blood glucose level of 105 mg/dL to F\u00e2nt\u00e2naru Eugenia.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -4210,7 +4196,7 @@
     },
     {
       "role": "model",
-      "content": "health:Save blood glucose level of 98 mg/dL to Agavriloaiei Mariana."
+      "content": "health:Save blood glucose level of 98 mg/dL to Agavriloaiei Mariana.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -4224,7 +4210,7 @@
     },
     {
       "role": "model",
-      "content": "health:Save blood glucose level of 128 mg/dL to Glodeanu Razvan."
+      "content": "health:Save blood glucose level of 128 mg/dL to Glodeanu Razvan.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -4238,7 +4224,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get date for today.\nuser-profile:Get my user name.\nhealth:Read medical records from today for my user name.\nquery:Create report from medical readings."
+      "content": "time-service:Get date for today.\nuser-profile:Get my user name.\nhealth:Read medical records from today for my user name.\nquery:Print the summary of the medical readings."
     }
   ],
   [
@@ -4252,7 +4238,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get date for today.\nuser-profile:Get my user name.\nhealth:Read medical records from today for my user name.\nquery:Create report from medical readings."
+      "content": "time-service:Get date for today.\nuser-profile:Get my user name.\nhealth:Read medical records from today for my user name.\nquery:Print the summary of the medical readings."
     }
   ],
   [
@@ -4266,7 +4252,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get date for today.\nhealth:Read medical records from today for Acatrinei Ingrid.\nquery:Create report from medical readings."
+      "content": "time-service:Get date for today.\nhealth:Read medical records from today for Acatrinei Ingrid.\nquery:Print the summary of the medical readings."
     }
   ],
   [
@@ -4280,7 +4266,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get date for september 10.\nhealth:Read medical records from September 10, 2025 for Mihalache Ioan.\nquery:Create report from medical readings."
+      "content": "time-service:Get date for september 10.\nhealth:Read medical records from September 10, 2025 for Mihalache Ioan.\nquery:Print the summary of the medical readings."
     }
   ],
   [
@@ -4294,7 +4280,7 @@
     },
     {
       "role": "model",
-      "content": "health:Read medical records from November 13, 2022 for Savulescu Marcel.\nquery:Create report from medical readings."
+      "content": "health:Read medical records from November 13, 2022 for Savulescu Marcel.\nquery:Print the summary of the medical readings."
     }
   ],
   [
@@ -4308,7 +4294,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get date for today.\nuser-profile:Get my user name.\nhealth:Read medical records from today for my user name.\nquery:Create report from medical readings."
+      "content": "time-service:Get date for today.\nuser-profile:Get my user name.\nhealth:Read medical records from today for my user name.\nquery:Print the summary of the medical readings."
     }
   ],
   [
@@ -4322,7 +4308,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get date for today.\nuser-profile:Get my user name.\nhealth:Read medical records from today for my user name.\nquery:Create report from medical readings."
+      "content": "time-service:Get date for today.\nuser-profile:Get my user name.\nhealth:Read medical records from today for my user name.\nquery:Print the summary of the medical readings."
     }
   ],
   [
@@ -4336,7 +4322,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get date for today.\nuser-profile:Get my user name.\nhealth:Read medical records from today for my user name.\nquery:Create report from medical readings."
+      "content": "time-service:Get date for today.\nuser-profile:Get my user name.\nhealth:Read medical records from today for my user name.\nquery:Print the summary of the medical readings."
     }
   ],
   [
@@ -4350,7 +4336,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get date for today.\nuser-profile:Get my user name.\nhealth:Read medical records from today for my user name.\nquery:Create report from medical readings."
+      "content": "time-service:Get date for today.\nuser-profile:Get my user name.\nhealth:Read medical records from today for my user name.\nquery:Print the summary of the medical readings."
     }
   ],
   [
@@ -4364,7 +4350,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get date for the day before yesterday.\nuser-profile:Get my user name.\nhealth:Read medical records from the day before yesterday for my user name.\nquery:Create report from medical readings."
+      "content": "time-service:Get date for the day before yesterday.\nuser-profile:Get my user name.\nhealth:Read medical records from the day before yesterday for my user name.\nquery:Print the summary of the medical readings."
     }
   ],
   [
@@ -4378,7 +4364,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get date for today.\nuser-profile:Get my user name.\nhealth:Read medical records from today for my user name.\nquery:Create report from medical readings."
+      "content": "time-service:Get date for today.\nuser-profile:Get my user name.\nhealth:Read medical records from today for my user name.\nquery:Print the summary of the medical readings."
     }
   ],
   [
@@ -4392,7 +4378,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get date for today.\nuser-profile:Get my user name.\nhealth:Read medical records from today for my user name.\nquery:Create report from medical readings."
+      "content": "time-service:Get date for today.\nuser-profile:Get my user name.\nhealth:Read medical records from today for my user name.\nquery:Print the summary of the medical readings."
     }
   ],
   [
@@ -4406,7 +4392,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get date for today.\nuser-profile:Get my user name.\nhealth:Read medical records from today for my user name.\nquery:Create report from medical readings."
+      "content": "time-service:Get date for today.\nuser-profile:Get my user name.\nhealth:Read medical records from today for my user name.\nquery:Print the summary of the medical readings."
     }
   ],
   [
@@ -4420,7 +4406,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get date for yesterday.\nuser-profile:Get my user name.\nhealth:Read medical records from yesterday for my user name.\nquery:Create report from medical readings."
+      "content": "time-service:Get date for yesterday.\nuser-profile:Get my user name.\nhealth:Read medical records from yesterday for my user name.\nquery:Print the summary of the medical readings."
     }
   ],
   [
@@ -4434,7 +4420,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get date for yesterday.\nuser-profile:Get my user name.\nhealth:Read medical records from yesterday for my user name.\nquery:Create report from medical readings."
+      "content": "time-service:Get date for yesterday.\nuser-profile:Get my user name.\nhealth:Read medical records from yesterday for my user name.\nquery:Print the summary of the medical readings."
     }
   ],
   [
@@ -4448,7 +4434,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get date for yesterday.\nuser-profile:Get my user name.\nhealth:Read medical records from yesterday for my user name.\nquery:Create report from medical readings."
+      "content": "time-service:Get date for yesterday.\nuser-profile:Get my user name.\nhealth:Read medical records from yesterday for my user name.\nquery:Print the summary of the medical readings."
     }
   ],
   [
@@ -4462,7 +4448,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get date for january 22.\nuser-profile:Get my user name.\nhealth:Read medical records from January 22, 2026 for my user name.\nquery:Create report from medical readings."
+      "content": "time-service:Get date for january 22.\nuser-profile:Get my user name.\nhealth:Read medical records from January 22, 2026 for my user name.\nquery:Print the summary of the medical readings."
     }
   ],
   [
@@ -4476,7 +4462,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get date for february 2.\nuser-profile:Get my user name.\nhealth:Read medical records from February 2, 2026 for my user name.\nquery:Create report from medical readings."
+      "content": "time-service:Get date for february 2.\nuser-profile:Get my user name.\nhealth:Read medical records from February 2, 2026 for my user name.\nquery:Print the summary of the medical readings."
     }
   ],
   [
@@ -4490,7 +4476,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my user name.\nhealth:Read medical records from January 13, 2026 for my user name.\nquery:Create report from medical readings."
+      "content": "user-profile:Get my user name.\nhealth:Read medical records from January 13, 2026 for my user name.\nquery:Print the summary of the medical readings."
     }
   ],
   [
@@ -4504,7 +4490,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my user name.\nhealth:Read medical records from February 4, 2026 for my user name.\nquery:Create report from medical readings."
+      "content": "user-profile:Get my user name.\nhealth:Read medical records from February 4, 2026 for my user name.\nquery:Print the summary of the medical readings."
     }
   ],
   [
@@ -4518,7 +4504,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get date for today.\nuser-profile:Get my user name.\nhealth:Read medical records from today for my user name.\nquery:Print medical records."
+      "content": "time-service:Get date for today.\nuser-profile:Get my user name.\nhealth:Read medical records from today for my user name.\nquery:Print the summary of the medical readings."
     }
   ],
   [
@@ -4532,7 +4518,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get date for today.\nhealth:Read medical records from today for Avarvarei Ileana.\nquery:Print medical records."
+      "content": "time-service:Get date for today.\nhealth:Read medical records from today for Avarvarei Ileana.\nquery:Print the summary of the medical readings."
     }
   ],
   [
@@ -4546,7 +4532,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get date for today.\nuser-profile:Get my user name.\nhealth:Read medical records from today for my user name.\nconverter:Convert JSONL flat objects to markdown table.\nquery:Print medical records as markdown table."
+      "content": "time-service:Get date for today.\nuser-profile:Get my user name.\nhealth:Read medical records from today for my user name.\nconverter:Convert JSONL flat objects to markdown table.\nquery:Print the summary of medical readings as markdown table."
     }
   ],
   [
@@ -4560,7 +4546,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get date for today.\nhealth:Read medical records from today for Dorneanu Simona.\nconverter:Convert JSONL flat objects to markdown table.\nquery:Print medical records as markdown table."
+      "content": "time-service:Get date for today.\nhealth:Read medical records from today for Dorneanu Simona.\nconverter:Convert JSONL flat objects to markdown table.\nquery:Print the summary of medical readings as markdown table."
     }
   ],
   [
@@ -4574,7 +4560,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get date for today.\nuser-profile:Get my user name.\nhealth:Read medical records from today for my user name.\nquery:Print medical records."
+      "content": "time-service:Get date for today.\nuser-profile:Get my user name.\nhealth:Read medical records from today for my user name.\nquery:Print the summary of the medical readings."
     }
   ],
   [
@@ -4588,7 +4574,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get date for this monday.\nuser-profile:Get my user name.\nhealth:Read medical records from this monday for my user name.\nquery:Print medical records."
+      "content": "time-service:Get date for this monday.\nuser-profile:Get my user name.\nhealth:Read medical records from this monday for my user name.\nquery:Print the summary of the medical readings."
     }
   ],
   [
@@ -4700,7 +4686,7 @@
     },
     {
       "role": "model",
-      "content": "health:Create a medical report based on today readings."
+      "content": "time-service:Get date for today.\nuser-profile:Get my user name.\nhealth:Read medical records from today for my user name.\nquery:Create a healthcare professional report based on the medical records."
     }
   ],
   [
@@ -4714,7 +4700,7 @@
     },
     {
       "role": "model",
-      "content": "health:Create a medical report based on today readings."
+      "content": "time-service:Get date for today.\nuser-profile:Get my user name.\nhealth:Read medical records from today for my user name.\nquery:Create a healthcare professional report based on the medical records."
     }
   ],
   [
@@ -4728,7 +4714,7 @@
     },
     {
       "role": "model",
-      "content": "health:Create a medical report based on today readings."
+      "content": "time-service:Get date for today.\nuser-profile:Get my user name.\nhealth:Read medical records from today for my user name.\nquery:Create a healthcare professional report based on the medical records."
     }
   ],
   [
@@ -4742,7 +4728,7 @@
     },
     {
       "role": "model",
-      "content": "health:Create a medical report based on today readings."
+      "content": "time-service:Get date for today.\nuser-profile:Get my user name.\nhealth:Read medical records from today for my user name.\nquery:Create a healthcare professional report based on the medical records."
     }
   ],
   [
@@ -4756,7 +4742,7 @@
     },
     {
       "role": "model",
-      "content": "health:Create a medical report based on today readings."
+      "content": "time-service:Get date for today.\nuser-profile:Get my user name.\nhealth:Read medical records from today for my user name.\nquery:Create a healthcare professional report based on the medical records."
     }
   ],
   [
@@ -4770,7 +4756,7 @@
     },
     {
       "role": "model",
-      "content": "health:Create a medical report based on yesterday readings."
+      "content": "time-service:Get date for today.\nuser-profile:Get my user name.\nhealth:Read medical records from today for my user name.\nquery:Create a healthcare professional report based on the medical records."
     }
   ],
   [
@@ -4784,7 +4770,7 @@
     },
     {
       "role": "model",
-      "content": "health:Create a medical report based on yesterday readings."
+      "content": "time-service:Get date for today.\nuser-profile:Get my user name.\nhealth:Read medical records from today for my user name.\nquery:Create a healthcare professional report based on the medical records."
     }
   ],
   [
@@ -4798,7 +4784,7 @@
     },
     {
       "role": "model",
-      "content": "health:Create a medical report based on readings from January 12, 2026."
+      "content": "user-profile:Get my user name.\nhealth:Read medical records from January 12, 2026 for my user name.\nquery:Create a healthcare professional report based on the medical records."
     }
   ],
   [
@@ -4812,7 +4798,7 @@
     },
     {
       "role": "model",
-      "content": "health:Create a medical report based on readings from March 15, 2025."
+      "content": "user-profile:Get my user name.\nhealth:Read medical records from March 15, 2025 for my user name.\nquery:Create a healthcare professional report based on the medical records."
     }
   ],
   [
@@ -4826,7 +4812,7 @@
     },
     {
       "role": "model",
-      "content": "health:Create a medical report based on readings from December 1, 2025."
+      "content": "user-profile:Get my user name.\nhealth:Read medical records from December 1, 2025 for my user name.\nquery:Create a healthcare professional report based on the medical records."
     }
   ],
   [
@@ -4836,11 +4822,11 @@
     },
     {
       "role": "user",
-      "content": "health status report for 2025-11-12"
+      "content": "health status report for 2024-11-12"
     },
     {
       "role": "model",
-      "content": "health:Create a medical report based on readings from November 12, 2025."
+      "content": "user-profile:Get my user name.\nhealth:Read medical records from November 12, 2024 for my user name.\nquery:Create a healthcare professional report based on the medical records."
     }
   ],
   [
@@ -4854,7 +4840,7 @@
     },
     {
       "role": "model",
-      "content": "health:Calculate body mass index for a weight of 88.50 kg and a height of 172 cm."
+      "content": "health:Calculate body mass index for a weight of 88.50 kg and a height of 172 cm.\nquery:Print computed body mass index."
     }
   ],
   [
@@ -4868,7 +4854,7 @@
     },
     {
       "role": "model",
-      "content": "health:Calculate body mass index for a weight of 82.00 kg and a height of 176 cm."
+      "content": "health:Calculate body mass index for a weight of 82.00 kg and a height of 176 cm.\nquery:Print computed body mass index."
     }
   ],
   [
@@ -4882,7 +4868,7 @@
     },
     {
       "role": "model",
-      "content": "health:Calculate body mass index for a weight of 85.50 kg and a height of 174 cm."
+      "content": "health:Calculate body mass index for a weight of 85.50 kg and a height of 174 cm.\nquery:Print computed body mass index."
     }
   ],
   [
@@ -4896,7 +4882,7 @@
     },
     {
       "role": "model",
-      "content": "health:Calculate body mass index for a weight of 81.00 kg and a height of 188 cm."
+      "content": "health:Calculate body mass index for a weight of 81.00 kg and a height of 188 cm.\nquery:Print computed body mass index."
     }
   ],
   [
@@ -4910,7 +4896,7 @@
     },
     {
       "role": "model",
-      "content": "health:Calculate body mass index for a weight of 84.00 kg and a height of 178 cm."
+      "content": "health:Calculate body mass index for a weight of 84.00 kg and a height of 178 cm.\nquery:Print computed body mass index."
     }
   ],
   [
@@ -4924,7 +4910,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my height.\nhealth:Calculate body mass index for a weight of 86.50 kg and my height."
+      "content": "user-profile:Get my height.\nhealth:Calculate body mass index for a weight of 86.50 kg and my height.\nquery:Print computed body mass index."
     }
   ],
   [
@@ -4938,7 +4924,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my height.\nhealth:Calculate body mass index for a weight of 85.00 kg and my height."
+      "content": "user-profile:Get my height.\nhealth:Calculate body mass index for a weight of 85.00 kg and my height.\nquery:Print computed body mass index."
     }
   ],
   [
@@ -4952,7 +4938,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my height.\nhealth:Calculate body mass index for a weight of 92.00 kg and my height."
+      "content": "user-profile:Get my height.\nhealth:Calculate body mass index for a weight of 92.00 kg and my height.\nquery:Print computed body mass index."
     }
   ],
   [
@@ -7034,6 +7020,146 @@
     },
     {
       "role": "user",
+      "content": "create a short summary of tom sawyer"
+    },
+    {
+      "role": "model",
+      "content": "wikipedia:Read article about 'The Adventures of Tom Sawyer'.\nquery:Create a short summary of the 'The Adventures of Tom Sawyer' book."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "brief me the novel david copperfield"
+    },
+    {
+      "role": "model",
+      "content": "wikipedia:Read article about 'David Copperfield'.\nquery:Create a short summary of the 'David Copperfield' book."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "create a summary of novel 'life on mississippi'"
+    },
+    {
+      "role": "model",
+      "content": "wikipedia:Read article about 'Life on the Mississippi'.\nquery:Create a summary of the 'Life on the Mississippi' book."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "write summary about huckleberry finn"
+    },
+    {
+      "role": "model",
+      "content": "wikipedia:Read article about 'Adventures of Huckleberry Finn'.\nquery:Create a summary of the 'Adventures of Huckleberry Finn' book."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "compose a summary about book an yankee at king arthur"
+    },
+    {
+      "role": "model",
+      "content": "wikipedia:Read article about 'A Connecticut Yankee in King Arthur's Court'.\nquery:Create a summary of the 'A Connecticut Yankee in King Arthur's Court' book."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "generate a summary for oliver twist book"
+    },
+    {
+      "role": "model",
+      "content": "wikipedia:Read article about 'Oliver Twist'.\nquery:Create a summary of the 'Oliver Twist' book."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "write concise summary of grapes of wrath"
+    },
+    {
+      "role": "model",
+      "content": "wikipedia:Read article about 'The Grapes of Wrath'.\nquery:Create a short summary of the 'The Grapes of Wrath' book."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "summary of battle from vaslui lead by stephen the great"
+    },
+    {
+      "role": "model",
+      "content": "wikipedia:Read article about Stephen the Great.\nquery:Create a summary of Stephen the Great's Battle of Vaslui."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "summary of barbarossa plan from ww2"
+    },
+    {
+      "role": "model",
+      "content": "wikipedia:Read article about Operation Barbarossa.\nquery:Create a summary of the Operation Barbarossa from World War II."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "create a summary of market garden plan from ww2"
+    },
+    {
+      "role": "model",
+      "content": "wikipedia:Read article about Operation Market Garden.\nquery:Create a summary of the Operation Market Garden from World War II."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
       "content": "write story about a day from a lions pride"
     },
     {
@@ -7809,6 +7935,20 @@
     {
       "role": "model",
       "content": "wikipedia:Read article about Denmark.\nquery:Is Greenland an independent state?"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "in which year christopher columbus discovered america?"
+    },
+    {
+      "role": "model",
+      "content": "wikipedia:Read article about Christopher Columbus.\nquery:In which year Christopher Columbus discovered America?"
     }
   ],
   [
@@ -8733,6 +8873,20 @@
     {
       "role": "model",
       "content": "programming:How to throw an exception in Python?"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "is possible to dynamically add a method to a class in python?"
+    },
+    {
+      "role": "model",
+      "content": "programming:Is it possible to dynamically add a method to a class in Python?"
     }
   ],
   [

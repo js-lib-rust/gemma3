@@ -1052,6 +1052,28 @@
     },
     {
       "role": "user",
+      "content": "Read the status of the central heating system."
+    },
+    {
+      "role": "assistant",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "hera_get_heating_state",
+            "arguments": {}
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "developer",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
       "content": "What is the status of the central heating system."
     },
     {

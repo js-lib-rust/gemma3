@@ -2,8 +2,8 @@
   {
     "type": "function",
     "function": {
-      "name": "health_read_measurements",
-      "description": "Read person medical records for a specified past date -- there is no reason to provide dates from the future.",
+      "name": "health_read_medical_records",
+      "description": "Read person records from the medical database for a specified date.",
       "parameters": {
         "type": "object",
         "properties": {
@@ -26,8 +26,8 @@
   {
     "type": "function",
     "function": {
-      "name": "health_save_blood",
-      "description": "Save person blood pressure and cardiac pulse to medical database. Also compute pulse pressure as difference between systolic and diastolic pressures.",
+      "name": "health_save_blood_measurement",
+      "description": "Save person blood pressure and cardiac pulse in the medical database. Also compute pulse pressure as difference between systolic and diastolic pressures.",
       "parameters": {
         "type": "object",
         "properties": {
@@ -61,7 +61,7 @@
     "type": "function",
     "function": {
       "name": "health_save_glucose",
-      "description": "Save person blood glucose level to medical database.",
+      "description": "Save person blood glucose level in the medical database.",
       "parameters": {
         "type": "object",
         "properties": {
@@ -85,7 +85,7 @@
     "type": "function",
     "function": {
       "name": "health_save_temperature",
-      "description": "Save person body temperature to medical database.",
+      "description": "Save person body temperature in the medical database.",
       "parameters": {
         "type": "object",
         "properties": {
@@ -109,7 +109,7 @@
     "type": "function",
     "function": {
       "name": "health_save_weight",
-      "description": "Save person body weight to medical database. Also compute body mass index based on person height.",
+      "description": "Save person body weight in the medical database. Also compute body mass index based on person height.",
       "parameters": {
         "type": "object",
         "properties": {
@@ -117,19 +117,19 @@
             "type": "string",
             "description": "human-readable person name, unique per medical database."
           },
-          "height": {
-            "type": "integer",
-            "description": "person height expressed in cm (centimeters)."
-          },
           "weight": {
             "type": "number",
             "description": "body weight expressed in kg (kilogram)."
+          },
+          "height": {
+            "type": "integer",
+            "description": "person height expressed in cm (centimeters)."
           }
         },
         "required": [
           "person",
-          "height",
-          "weight"
+          "weight",
+          "height"
         ]
       }
     }

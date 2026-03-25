@@ -43,6 +43,7 @@
 {"prompt":"Turn off the central heating system.","function":"hera_stop_heating","arguments":{}}
 {"prompt":"Disengage the central heating system.","function":"hera_stop_heating","arguments":{}}
 {"prompt":"Disengage heating.","function":"hera_stop_heating","arguments":{}}
+{"prompt":"Read the status of the central heating system.","function":"hera_get_heating_state","arguments":{}}
 {"prompt":"What is the status of the central heating system.","function":"hera_get_heating_state","arguments":{}}
 {"prompt":"Is central heating running?","function":"hera_get_heating_state","arguments":{}}
 {"prompt":"Is heating on?","function":"hera_get_heating_state","arguments":{}}

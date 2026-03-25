@@ -1,6 +1,7 @@
-def health_save_blood(person: str, systole: int, diastole: int, pulse: int):
+# Save blood pressure measurement of 124/88 mmHg and heart rate of 75 bpm for Rotaru Iulian.
+def health_save_blood_measurement(person: str, systole: int, diastole: int, pulse: int):
     """
-    Save person blood pressure and cardiac pulse to medical database. Also compute pulse pressure as difference between systolic and diastolic pressures.
+    Save person blood pressure and cardiac pulse in the medical database. Also compute pulse pressure as difference between systolic and diastolic pressures.
 
     Args:
         person: human-readable person name, unique per medical database.
@@ -10,9 +11,10 @@ def health_save_blood(person: str, systole: int, diastole: int, pulse: int):
     """
 
 
+# Save body temperature of 35.10 °C for Lontkowschi George.
 def health_save_temperature(person: str, temperature: float):
     """
-    Save person body temperature to medical database.
+    Save person body temperature in the medical database.
 
     Args:
         person: human-readable person name, unique per medical database.
@@ -20,20 +22,22 @@ def health_save_temperature(person: str, temperature: float):
     """
 
 
-def health_save_weight(person: str, height: int, weight: float):
+# Save body weight of 89.50 kg and height of 176 cm for Păduraru Mihaela.
+def health_save_weight(person: str, weight: float, height: int):
     """
-    Save person body weight to medical database. Also compute body mass index based on person height.
+    Save person body weight in the medical database. Also compute body mass index based on person height.
 
     Args:
         person: human-readable person name, unique per medical database.
-        height: person height expressed in cm (centimeters).
         weight: body weight expressed in kg (kilogram).
+        height: person height expressed in cm (centimeters).
     """
 
 
+# Save blood glucose level of 80 mg/dL for Dorneanu Sorana Ioana.
 def health_save_glucose(person: str, glucose: int):
     """
-    Save person blood glucose level to medical database.
+    Save person blood glucose level in the medical database.
 
     Args:
         person: human-readable person name, unique per medical database.
@@ -41,9 +45,10 @@ def health_save_glucose(person: str, glucose: int):
     """
 
 
-def health_read_measurements(person: str, date: str):
+# Read medical records from 2026-01-22 for Gogălniceanu Ștefan.
+def health_read_medical_records(person: str, date: str):
     """
-    Read person medical records for a specified past date -- there is no reason to provide dates from the future.
+    Read person records from the medical database for a specified date.
 
     Args:
         person: human-readable person name, unique per medical database.

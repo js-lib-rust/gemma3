@@ -1,0 +1,11 @@
+#!/bin/sh
+
+echo starting router service ...
+systemctl start router.service
+
+echo staring function service ...
+systemctl start function.service
+
+echo starting jarvis service ...
+systemctl start jarvis.service
+

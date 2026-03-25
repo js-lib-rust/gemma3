@@ -1,0 +1,11 @@
+#!/bin/sh
+
+echo stopping jarvis service ...
+systemctl stop jarvis.service
+
+echo stopping function service ...
+systemctl stop function.service
+
+echo stopping router service
+systemctl stop router.service
+

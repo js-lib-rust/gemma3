@@ -35,6 +35,8 @@ def tokenizer_function(examples):
 def prepare_dataset(examples):
     processed_examples = []
     for example in examples:
+        tools = tools_map.get(example['agent_name'], None)
+        example = example['example']
         if not tools_support and tools:
             util.inject_tools(tools, example, True)
         if args.trace:
@@ -117,16 +119,16 @@ print(f"Use save steps {args.save_steps}")
 print(f"Use trace {args.trace}")
 print()
 
+tools_map = {}
 if args.tools:
-    tools = []
     for file_name in args.tools:
-        with open(f"data/{file_name}", 'r', encoding='UTF-8') as file:
-            tools += json.load(file)
+        tools_file = f"data/{file_name}"
+        agent_name = os.path.basename(tools_file).split('.', 1)[0]
+        with open(tools_file, 'r', encoding='UTF-8') as file:
+            tools_map[agent_name] = json.load(file)
     if args.trace:
-        print(f"tools: {tools}")
+        print(f"tools_list: {tools_map}")
         print()
-else:
-    tools = None
 
 print(f"Loading model {model_path}...")
 model_config = {
@@ -205,10 +207,12 @@ print()
 data_examples = []
 for data_file in args.files:
     data_file = f"data/{data_file}"
+    agent_name = os.path.basename(data_file).split('.', 1)[0]
     with open(data_file, 'r', encoding='UTF-8') as file_name:
+        # yaml knows to load json
         file_examples = yaml.safe_load(file_name)
         print(f"Loaded {len(file_examples)} tests from the file `{os.path.abspath(data_file)}`.")
-        data_examples += file_examples
+        data_examples += [{'agent_name': agent_name, 'example': example} for example in file_examples]
 
 print("Preparing dataset...")
 processed_data = prepare_dataset(data_examples)

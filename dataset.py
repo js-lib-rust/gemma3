@@ -48,7 +48,7 @@ def gemma_function_format():
 def hf_tool_schema():
     file_path = f"data/{args.file}"
     with open(file_path, 'w', encoding='UTF-8') as file:
-        json.dump(schema.get(args.tool), file, indent=2)
+        json.dump(schema.get(args.tool), file, indent=2, ensure_ascii=False)
 
 
 def hf_function_set():

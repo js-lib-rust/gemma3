@@ -228,9 +228,9 @@ print(f"- Validation examples: {len(validation_dataset)}")
 
 print("Tokenizing datasets...")
 train_tokens = train_dataset.map(tokenizer_function, batched=True)
-train_tokens = train_tokens.map(lambda examples: {"labels": examples["input_ids"].copy()}, batched=True)
+# train_tokens = train_tokens.map(lambda examples: {"labels": examples["input_ids"].copy()}, batched=True)
 validation_tokens = validation_dataset.map(tokenizer_function, batched=True)
-validation_tokens = validation_tokens.map(lambda examples: {"labels": examples["input_ids"].copy()}, batched=True)
+# validation_tokens = validation_tokens.map(lambda examples: {"labels": examples["input_ids"].copy()}, batched=True)
 print(f"Tokenized train size: {len(train_tokens)}")
 print(f"Tokenized validation size: {len(validation_tokens)}")
 

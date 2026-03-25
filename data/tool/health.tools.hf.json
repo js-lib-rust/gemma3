@@ -95,7 +95,7 @@
           },
           "temperature": {
             "type": "number",
-            "description": "body temperature expressed in \u00b0C (Celsius degrees)"
+            "description": "body temperature expressed in °C (Celsius degrees)"
           }
         },
         "required": [

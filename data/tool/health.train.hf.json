@@ -505,7 +505,7 @@
     },
     {
       "role": "user",
-      "content": "Save body temperature of 36.75 °C for Trifoi Gabriela."
+      "content": "Save body temperature of 36.75 °C for Trifoi Vasile."
     },
     {
       "role": "assistant",
@@ -515,8 +515,108 @@
           "function": {
             "name": "health_save_temperature",
             "arguments": {
-              "person": "Trifoi Gabriela",
+              "person": "Trifoi Vasile",
               "temperature": 36.75
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "developer",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Save body temperature of 35.95 °C for Trofin Gabriela."
+    },
+    {
+      "role": "assistant",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "health_save_temperature",
+            "arguments": {
+              "person": "Trofin Gabriela",
+              "temperature": 35.95
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "developer",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Save body temperature of 36.15 °C for Fîntînaru Lidia."
+    },
+    {
+      "role": "assistant",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "health_save_temperature",
+            "arguments": {
+              "person": "Fîntînaru Lidia",
+              "temperature": 36.15
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "developer",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Save body temperature of 36.50 °C for Rotaru Ștefan."
+    },
+    {
+      "role": "assistant",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "health_save_temperature",
+            "arguments": {
+              "person": "Rotaru Ștefan",
+              "temperature": 36.5
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "developer",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Save body temperature of 37.25 °C for Acatrinei Ingrid."
+    },
+    {
+      "role": "assistant",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "health_save_temperature",
+            "arguments": {
+              "person": "Acatrinei Ingrid",
+              "temperature": 37.25
             }
           }
         }
@@ -764,6 +864,84 @@
     },
     {
       "role": "user",
+      "content": "Save body weight of 84.00 kg and height of 175 cm for Rotaru Gheorghe."
+    },
+    {
+      "role": "assistant",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "health_save_weight",
+            "arguments": {
+              "person": "Rotaru Gheorghe",
+              "weight": 84.0,
+              "height": 175
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "developer",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Save body weight of 85.00 kg and height of 177 cm for Rotaru Ioan."
+    },
+    {
+      "role": "assistant",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "health_save_weight",
+            "arguments": {
+              "person": "Rotaru Ioan",
+              "weight": 85.0,
+              "height": 177
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "developer",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Save body weight of 86.00 kg and height of 179 cm for Jipa Vasile."
+    },
+    {
+      "role": "assistant",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "health_save_weight",
+            "arguments": {
+              "person": "Jipa Vasile",
+              "weight": 86.0,
+              "height": 179
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "developer",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
       "content": "Save blood glucose level of 80 mg/dL for Dorneanu Sorana Ioana."
     },
     {
@@ -976,6 +1154,81 @@
             "arguments": {
               "person": "Dănilă Dan",
               "glucose": 84
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "developer",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Save blood glucose level of 100 mg/dL for Dănilă Mircea."
+    },
+    {
+      "role": "assistant",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "health_save_glucose",
+            "arguments": {
+              "person": "Dănilă Mircea",
+              "glucose": 100
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "developer",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Save blood glucose level of 98 mg/dL for Moșmondeală Petru."
+    },
+    {
+      "role": "assistant",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "health_save_glucose",
+            "arguments": {
+              "person": "Moșmondeală Petru",
+              "glucose": 98
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "developer",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Save blood glucose level of 140 mg/dL for Vaino Gheorghe."
+    },
+    {
+      "role": "assistant",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "health_save_glucose",
+            "arguments": {
+              "person": "Vaino Gheorghe",
+              "glucose": 140
             }
           }
         }

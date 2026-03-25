@@ -20,7 +20,11 @@
 {"prompt":"Save body temperature of 37.00 °C for Avarvarei Ileana.","function":"health_save_temperature","arguments":{"person":"Avarvarei Ileana","temperature":37.00}}
 {"prompt":"Save body temperature of 37.20 °C for Fântânaru Mitică.","function":"health_save_temperature","arguments":{"person":"Fântânaru Mitică","temperature":37.20}}
 {"prompt":"Save body temperature of 37.10 °C for Butnicu Dan.","function":"health_save_temperature","arguments":{"person":"Butnicu Dan","temperature":37.10}}
-{"prompt":"Save body temperature of 36.75 °C for Trifoi Gabriela.","function":"health_save_temperature","arguments":{"person":"Trifoi Gabriela","temperature":36.75}}
+{"prompt":"Save body temperature of 36.75 °C for Trifoi Vasile.","function":"health_save_temperature","arguments":{"person":"Trifoi Vasile","temperature":36.75}}
+{"prompt":"Save body temperature of 35.95 °C for Trofin Gabriela.","function":"health_save_temperature","arguments":{"person":"Trofin Gabriela","temperature":35.95}}
+{"prompt":"Save body temperature of 36.15 °C for Fîntînaru Lidia.","function":"health_save_temperature","arguments":{"person":"Fîntînaru Lidia","temperature":36.15}}
+{"prompt":"Save body temperature of 36.50 °C for Rotaru Ștefan.","function":"health_save_temperature","arguments":{"person":"Rotaru Ștefan","temperature":36.50}}
+{"prompt":"Save body temperature of 37.25 °C for Acatrinei Ingrid.","function":"health_save_temperature","arguments":{"person":"Acatrinei Ingrid","temperature":37.25}}
 
 -- health_save_weight
 {"prompt":"Save body weight of 89.50 kg and height of 176 cm for Păduraru Mihaela.","function":"health_save_weight","arguments":{"person":"Păduraru Mihaela","weight":89.50,"height":176}}
@@ -32,6 +36,9 @@
 {"prompt":"Save body weight of 66.00 kg and height of 165 cm for Lupu Mihaela.","function":"health_save_weight","arguments":{"person":"Lupu Mihaela","weight":66.00,"height":165}}
 {"prompt":"Save body weight of 92.50 kg and height of 172 cm for Rotaru Ilie.","function":"health_save_weight","arguments":{"person":"Rotaru Ilie","weight":92.50,"height":172}}
 {"prompt":"Save body weight of 68.00 kg and height of 174 cm for Ghinea Marica.","function":"health_save_weight","arguments":{"person":"Ghinea Marica","weight":68.00,"height":174}}
+{"prompt":"Save body weight of 84.00 kg and height of 175 cm for Rotaru Gheorghe.","function":"health_save_weight","arguments":{"person":"Rotaru Gheorghe","weight":84.00,"height":175}}
+{"prompt":"Save body weight of 85.00 kg and height of 177 cm for Rotaru Ioan.","function":"health_save_weight","arguments":{"person":"Rotaru Ioan","weight":85.00,"height":177}}
+{"prompt":"Save body weight of 86.00 kg and height of 179 cm for Jipa Vasile.","function":"health_save_weight","arguments":{"person":"Jipa Vasile","weight":86.00,"height":179}}
 
 -- health_save_glucose
 {"prompt":"Save blood glucose level of 80 mg/dL for Dorneanu Sorana Ioana.","function":"health_save_glucose","arguments":{"person":"Dorneanu Sorana Ioana","glucose":80}}
@@ -43,6 +50,9 @@
 {"prompt":"Save blood glucose level of 112 mg/dL for Mătăsaru Maria.","function":"health_save_glucose","arguments":{"person":"Mătăsaru Maria","glucose":122}}
 {"prompt":"Save blood glucose level of 72 mg/dL for Stoleru Cerasela.","function":"health_save_glucose","arguments":{"person":"Stoleru Cerasela","glucose":72}}
 {"prompt":"Save blood glucose level of 84 mg/dL for Dănilă Dan.","function":"health_save_glucose","arguments":{"person":"Dănilă Dan","glucose":84}}
+{"prompt":"Save blood glucose level of 100 mg/dL for Dănilă Mircea.","function":"health_save_glucose","arguments":{"person":"Dănilă Mircea","glucose":100}}
+{"prompt":"Save blood glucose level of 98 mg/dL for Moșmondeală Petru.","function":"health_save_glucose","arguments":{"person":"Moșmondeală Petru","glucose":98}}
+{"prompt":"Save blood glucose level of 140 mg/dL for Vaino Gheorghe.","function":"health_save_glucose","arguments":{"person":"Vaino Gheorghe","glucose":140}}
 
 -- health_read_medical_records
 {"prompt":"Read medical records from 2026-01-22 for Gogălniceanu Ștefan.","function":"health_read_medical_records","arguments":{"person":"Gogălniceanu Ștefan","date":"2026-01-22"}}

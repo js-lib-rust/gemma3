@@ -127,7 +127,7 @@ if args.tools:
         with open(tools_file, 'r', encoding='UTF-8') as file:
             tools_map[agent_name] = json.load(file)
     if args.trace:
-        print(f"tools_list: {tools_map}")
+        print(f"tools_map: {tools_map}")
         print()
 
 print(f"Loading model {model_path}...")
@@ -193,6 +193,9 @@ tokenizer.padding_side = "right"
 tokenizer.truncation_side = "right"
 tools_support = util.has_tools_support(tokenizer)
 print(f"Model tools {'not ' if not tools_support else ''}supported")
+if args.tools:
+    print("Monkey patch on tokenizer.apply_chat_template for tool argument order.")
+    util.patch_tokenizer(tokenizer)
 
 model.config.pad_token_id = tokenizer.pad_token_id
 model.config.bos_token_id = tokenizer.bos_token_id

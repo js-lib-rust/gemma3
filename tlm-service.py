@@ -26,6 +26,7 @@ print(f"Use dtype {args.dtype}")
 print(f"Use port {args.port}")
 
 tokenizer = AutoTokenizer.from_pretrained(model_path)
+util.patch_tokenizer(tokenizer)
 model = AutoModelForCausalLM.from_pretrained(model_path, dtype=args.dtype, device_map=device)
 
 

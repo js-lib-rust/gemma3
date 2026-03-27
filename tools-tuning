@@ -1,0 +1,24 @@
+#!/bin/sh
+
+echo Stopping services ...
+./stop-services
+
+echo Cleaning up output directory ...
+rm -rf function-270m
+
+echo Running tools tuning ...
+python instruction-tuning.py \
+--epochs 2 \
+--train-batch 1 \
+--learning-rate 1e-5 \
+--files tool/hera.train.hf.json,tool/health.train.hf.json \
+--tools tool/hera.tools.hf.json,tool/health.tools.hf.json \
+--model /functiongemma-270m-it \
+--output-dir function-270m \
+--eval-steps 50 \
+--save-steps 1000 \
+--assert-max-length
+
+echo Starting services ...
+./start-services
+

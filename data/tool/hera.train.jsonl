@@ -1,18 +1,25 @@
+/* hera_list_devices */
 {"prompt":"List all the devices in the house.","function":"hera_list_devices","arguments":{}}
 {"prompt":"List all devices with their current state (on/off, locked, temperature).","function":"hera_list_devices","arguments":{}}
 {"prompt":"Show me the device topology, including child devices.","function":"hera_list_devices","arguments":{}}
 {"prompt":"Display a table of all entities by zone and device type.","function":"hera_list_devices","arguments":{}}
 {"prompt":"Can you list everything that is connected to the smart home?","function":"hera_list_devices","arguments":{}}
+
+/* hera_describe_device */
 {"prompt":"Describe flood detection sensor.","function":"hera_describe_device","arguments":{"device":"flood detection sensor"}}
-{"prompt":"List actions of proximity sensor.","function":"hera_describe_device","arguments":{"device":"proximity sensor"}}
-{"prompt":"Describe the operations of the garage door actuator.","function":"hera_describe_device","arguments":{"device":"garage door actuator"}}
 {"prompt":"Tell me about the capabilities of my garage door sensor.","function":"hera_describe_device","arguments":{"device":"garage door sensor"}}
-{"prompt":"Show me the actions supported by the window contact sensors.","function":"hera_describe_device","arguments":{"device":"window contact sensors"}}
-{"prompt":"Please list the actions supported by luminosity sensor from balcony.","function":"hera_describe_device","arguments":{"device":"luminosity sensor from balcony"}}
-{"prompt":"Actions supported by humidity sensor?","function":"hera_describe_device","arguments":{"device":"humidity sensor"}}
 {"prompt":"Please get a definition of the speed sensor.","function":"hera_describe_device","arguments":{"device":"speed sensor"}}
 {"prompt":"Create a comprehensive description of the garden moisture sensor.","function":"hera_describe_device","arguments":{"device":"garden moisture sensor"}}
 {"prompt":"What do you know about motion detection device from garage.","function":"hera_describe_device","arguments":{"device":"motion detection device from garage"}}
+
+/* hera_get_device_actions */
+{"prompt":"List actions of proximity sensor.","function":"hera_get_device_actions","arguments":{"device":"proximity sensor"}}
+{"prompt":"Describe the operations of the garage door actuator.","function":"hera_get_device_actions","arguments":{"device":"garage door actuator"}}
+{"prompt":"Show me the actions supported by the window contact sensors.","function":"hera_get_device_actions","arguments":{"device":"window contact sensors"}}
+{"prompt":"Please list the actions supported by luminosity sensor from balcony.","function":"hera_get_device_actions","arguments":{"device":"luminosity sensor from balcony"}}
+{"prompt":"Actions supported by humidity sensor?","function":"hera_get_device_actions","arguments":{"device":"humidity sensor"}}
+
+/* hera_read_temperature */
 {"prompt":"Read the temperature sensor in the living room.","function":"hera_read_temperature","arguments":{"zone":"living room"}}
 {"prompt":"Read the temperature sensor in the kitchen.","function":"hera_read_temperature","arguments":{"zone":"kitchen"}}
 {"prompt":"What is the living room temperature?","function":"hera_read_temperature","arguments":{"zone":"living room"}}
@@ -20,12 +27,16 @@
 {"prompt":"Get bathroom temperature.","function":"hera_read_temperature","arguments":{"zone":"bathroom"}}
 {"prompt":"Bedroom temperature.","function":"hera_read_temperature","arguments":{"zone":"bedroom"}}
 {"prompt":"How many Celsius degrees are in the kitchen?","function":"hera_read_temperature","arguments":{"zone":"kitchen"}}
+
+/* hera_read_humidity */
 {"prompt":"Get kitchen humidity percent.","function":"hera_read_humidity","arguments":{"zone":"kitchen"}}
 {"prompt":"Read the humidity sensor in the cellar.","function":"hera_read_humidity","arguments":{"zone":"cellar"}}
 {"prompt":"What is humidity level in the bathroom?","function":"hera_read_humidity","arguments":{"zone":"bathroom"}}
 {"prompt":"Read humidity sensor from greenhouse.","function":"hera_read_humidity","arguments":{"zone":"greenhouse"}}
 {"prompt":"Show me the humidity percent in the cellar.","function":"hera_read_humidity","arguments":{"zone":"cellar"}}
 {"prompt":"Bathroom humidity.","function":"hera_read_humidity","arguments":{"zone":"bathroom"}}
+
+/* hera_read_sensors */
 {"prompt":"Read all sensor values.","function":"hera_read_sensors","arguments":{"zone":"system"}}
 {"prompt":"Read all sensors.","function":"hera_read_sensors","arguments":{"zone":"system"}}
 {"prompt":"Displays the values of all sensors in the house.","function":"hera_read_sensors","arguments":{"zone":"system"}}
@@ -34,18 +45,24 @@
 {"prompt":"List readings from the sensors in the living room.","function":"hera_read_sensors","arguments":{"zone":"living room"}}
 {"prompt":"Retrieve and list the values of all sensors from the greenhouse.","function":"hera_read_sensors","arguments":{"zone":"greenhouse"}}
 {"prompt":"Get current readings of sensors deployed in the balcony.","function":"hera_read_sensors","arguments":{"zone":"balcony"}}
+
+/* hera_start_heating */
 {"prompt":"Turn heating on.","function":"hera_start_heating","arguments":{}}
 {"prompt":"Heating on.","function":"hera_start_heating","arguments":{}}
 {"prompt":"Turn the central heating on.","function":"hera_start_heating","arguments":{}}
 {"prompt":"Start the central heating system.","function":"hera_start_heating","arguments":{}}
 {"prompt":"Start heating.","function":"hera_start_heating","arguments":{}}
 {"prompt":"Engage the central heating.","function":"hera_start_heating","arguments":{}}
+
+/* hera_stop_heating */
 {"prompt":"Turn heating off.","function":"hera_stop_heating","arguments":{}}
 {"prompt":"Heating off.","function":"hera_stop_heating","arguments":{}}
 {"prompt":"Turn the central heating off.","function":"hera_stop_heating","arguments":{}}
 {"prompt":"Turn off the central heating system.","function":"hera_stop_heating","arguments":{}}
 {"prompt":"Disengage the central heating system.","function":"hera_stop_heating","arguments":{}}
 {"prompt":"Disengage heating.","function":"hera_stop_heating","arguments":{}}
+
+/* hera_get_heating_state */
 {"prompt":"Read the status of the central heating system.","function":"hera_get_heating_state","arguments":{}}
 {"prompt":"What is the status of the central heating system.","function":"hera_get_heating_state","arguments":{}}
 {"prompt":"Is central heating running?","function":"hera_get_heating_state","arguments":{}}
@@ -53,6 +70,8 @@
 {"prompt":"Heating status?","function":"hera_get_heating_state","arguments":{}}
 {"prompt":"I'm a bit chilly. Is the heating on?","function":"hera_get_heating_state","arguments":{}}
 {"prompt":"Can you check if the heating system is currently active?","function":"hera_get_heating_state","arguments":{}}
+
+/* hera_run_diagnose */
 {"prompt":"Run device diagnose on kitchen DHT sensor.","function":"hera_run_diagnose","arguments":{"device":"kitchen DHT sensor"}}
 {"prompt":"Execute a flood sensor diagnosis.","function":"hera_run_diagnose","arguments":{"device":"flood sensor"}}
 {"prompt":"Check the motion detection sensor.","function":"hera_run_diagnose","arguments":{"device":"motion detection sensor"}}

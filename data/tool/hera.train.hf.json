@@ -140,54 +140,6 @@
     },
     {
       "role": "user",
-      "content": "List actions of proximity sensor."
-    },
-    {
-      "role": "assistant",
-      "tool_calls": [
-        {
-          "type": "function",
-          "function": {
-            "name": "hera_describe_device",
-            "arguments": {
-              "device": "proximity sensor"
-            }
-          }
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "role": "developer",
-      "content": "You are a model that can do function calling with the following functions"
-    },
-    {
-      "role": "user",
-      "content": "Describe the operations of the garage door actuator."
-    },
-    {
-      "role": "assistant",
-      "tool_calls": [
-        {
-          "type": "function",
-          "function": {
-            "name": "hera_describe_device",
-            "arguments": {
-              "device": "garage door actuator"
-            }
-          }
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "role": "developer",
-      "content": "You are a model that can do function calling with the following functions"
-    },
-    {
-      "role": "user",
       "content": "Tell me about the capabilities of my garage door sensor."
     },
     {
@@ -199,78 +151,6 @@
             "name": "hera_describe_device",
             "arguments": {
               "device": "garage door sensor"
-            }
-          }
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "role": "developer",
-      "content": "You are a model that can do function calling with the following functions"
-    },
-    {
-      "role": "user",
-      "content": "Show me the actions supported by the window contact sensors."
-    },
-    {
-      "role": "assistant",
-      "tool_calls": [
-        {
-          "type": "function",
-          "function": {
-            "name": "hera_describe_device",
-            "arguments": {
-              "device": "window contact sensors"
-            }
-          }
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "role": "developer",
-      "content": "You are a model that can do function calling with the following functions"
-    },
-    {
-      "role": "user",
-      "content": "Please list the actions supported by luminosity sensor from balcony."
-    },
-    {
-      "role": "assistant",
-      "tool_calls": [
-        {
-          "type": "function",
-          "function": {
-            "name": "hera_describe_device",
-            "arguments": {
-              "device": "luminosity sensor from balcony"
-            }
-          }
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "role": "developer",
-      "content": "You are a model that can do function calling with the following functions"
-    },
-    {
-      "role": "user",
-      "content": "Actions supported by humidity sensor?"
-    },
-    {
-      "role": "assistant",
-      "tool_calls": [
-        {
-          "type": "function",
-          "function": {
-            "name": "hera_describe_device",
-            "arguments": {
-              "device": "humidity sensor"
             }
           }
         }
@@ -343,6 +223,126 @@
             "name": "hera_describe_device",
             "arguments": {
               "device": "motion detection device from garage"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "developer",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "List actions of proximity sensor."
+    },
+    {
+      "role": "assistant",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "hera_get_device_actions",
+            "arguments": {
+              "device": "proximity sensor"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "developer",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Describe the operations of the garage door actuator."
+    },
+    {
+      "role": "assistant",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "hera_get_device_actions",
+            "arguments": {
+              "device": "garage door actuator"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "developer",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Show me the actions supported by the window contact sensors."
+    },
+    {
+      "role": "assistant",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "hera_get_device_actions",
+            "arguments": {
+              "device": "window contact sensors"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "developer",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Please list the actions supported by luminosity sensor from balcony."
+    },
+    {
+      "role": "assistant",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "hera_get_device_actions",
+            "arguments": {
+              "device": "luminosity sensor from balcony"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "developer",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Actions supported by humidity sensor?"
+    },
+    {
+      "role": "assistant",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "hera_get_device_actions",
+            "arguments": {
+              "device": "humidity sensor"
             }
           }
         }

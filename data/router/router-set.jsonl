@@ -18,7 +18,7 @@
 [{"user":"clear","model":"system:Clear conversation history."}]
 [{"user":"reset","model":"system:Clear conversation history."}]
 
---- time service
+/* time service */
 [{"user":"get current date and time","model":"time-service:Get current date and time."}]
 [{"user":"get current date","model":"time-service:Get current date."}]
 [{"user":"get current time","model":"time-service:Get current time."}]
@@ -26,7 +26,7 @@
 [{"user":"get date for yesterday","model":"time-service:Get date for yesterday."}]
 [{"user":"get date for day before yesterday","model":"time-service:Get date for the day before yesterday."}]
 
---- user profile
+/* user profile */
 [{"user":"get my user name","model":"user-profile:Get my user name."}]
 [{"user":"get my personal email address","model":"user-profile:Get my personal email address."}]
 [{"user":"get my business email address","model":"user-profile:Get my business email address."}]
@@ -37,12 +37,12 @@
 [{"user":"get my location","model":"user-profile:Get my location."}]
 [{"user":"get my social security number","model":"user-profile:Get my social security number."}]
 
---- format converter
+/* format converter */
 [{"user":"convert jsonl to markdown table","model":"converter:Convert JSONL flat objects to markdown table."}]
 [{"user":"convert jsonl objects to markdown","model":"converter:Convert JSONL flat objects to markdown table."}]
 [{"user":"convert flat objects in jsonl format to markdown table","model":"converter:Convert JSONL flat objects to markdown table."}]
 
---- home automation
+/* home automation */
 [{"user":"start central heating","model":"home-automation:Turn on the central heating.\nquery:Print the central heating status."}]
 [{"user":"start heater","model":"home-automation:Turn on the central heating.\nquery:Print the central heating status."}]
 [{"user":"activate heater","model":"home-automation:Turn on the central heating.\nquery:Print the central heating status."}]
@@ -272,7 +272,7 @@
 [{"user":"are there any opened windows?","model":"home-automation:Read all the window sensors in the house.\nquery:Are there any opened windows?"}]
 [{"user":"is there an open window?","model":"home-automation:Read all the window sensors in the house.\nquery:Is there an open window?"}]
 
--- health - save blood measurements
+/* health - save blood measurements */
 [{"user":"my blood measurements are 125 85 70","model":"user-profile:Get my user name.\nhealth:Save blood pressure measurement of 125/85 mmHg and heart rate of 70 bpm to my user name.\nquery:Print the summary of the saved medical readings."}]
 [{"user":"save blood 125 85 70","model":"user-profile:Get my user name.\nhealth:Save blood pressure measurement of 125/85 mmHg and heart rate of 70 bpm to my user name.\nquery:Print the summary of the saved medical readings."}]
 [{"user":"save my blood 128 81 55","model":"user-profile:Get my user name.\nhealth:Save blood pressure measurement of 128/81 mmHg and heart rate of 55 bpm to my user name.\nquery:Print the summary of the saved medical readings."}]
@@ -290,7 +290,7 @@
 [{"user":"logs blood readings: 133 92 87 for miron elena daniela", "model":"health:Save blood pressure measurement of 133/92 mmHg and heart rate of 87 bpm to Miron Elena Daniela.\nquery:Print the summary of the saved medical readings."}]
 [{"user":"write blood readings: 125 with 83 and 73 for rotaru iulian","model":"health:Save blood pressure measurement of 125/83 mmHg and heart rate of 73 bpm to Rotaru Iulian.\nquery:Print the summary of the saved medical readings."}]
 
--- health - save body temperature
+/* health - save body temperature */
 [{"user":"my temperature is 35.0","model":"user-profile:Get my user name.\nhealth:Save body temperature of 35.00 °C to my user name.\nquery:Print the summary of the saved medical readings."}]
 [{"user":"save temperature 34.3","model":"user-profile:Get my user name.\nhealth:Save body temperature of 34.30 °C to my user name.\nquery:Print the summary of the saved medical readings."}]
 [{"user":"logs body temperature 35.9","model":"user-profile:Get my user name.\nhealth:Save body temperature of 35.90 °C to my user name.\nquery:Print the summary of the saved medical readings."}]
@@ -305,7 +305,7 @@
 [{"user":"write temperature 34.1 for teodorescu tiberiu dinu","model":"health:Save body temperature of 34.10 °C to Teodorescu Tiberiu Dinu.\nquery:Print the summary of the saved medical readings."}]
 [{"user":"record dorneanu deliana temperature: 36.7","model":"health:Save body temperature of 36.70 °C to Dorneanu Deliana.\nquery:Print the summary of the saved medical readings."}]
 
--- health - save body weight
+/* health - save body weight */
 [{"user":"my weight is 89","model":"user-profile:Get my user name.\nuser-profile:Get my height.\nhealth:Save body weight of 89.00 kg to my user name.\nquery:Print the summary of the saved medical readings."}]
 [{"user":"my body weight is 92","model":"user-profile:Get my user name.\nuser-profile:Get my height.\nhealth:Save my body weight of 92.00 kg to my user name.\nquery:Print the summary of the saved medical readings."}]
 [{"user":"save weight 87.5","model":"user-profile:Get my user name.\nuser-profile:Get my height.\nhealth:Save body weight of 87.50 kg to my user name.\nquery:Print the summary of the saved medical readings."}]
@@ -324,7 +324,7 @@
 [{"user":"record adam nicolae ioan weight 66.5","model":"user-profile:Get the height of Adam Nicolae Ioan.\nhealth:Save body weight of 66.50 kg to Adam Nicolae Ioan.\nquery:Print the summary of the saved medical readings."}]
 [{"user":"write marton csaba weight of 77 kg","model":"user-profile:Get the height of Marton Csaba.\nhealth:Save body weight of 77.00 kg to Marton Csaba.\nquery:Print the summary of the saved medical readings."}]
 
--- health - save blood glucose level
+/* health - save blood glucose level */
 [{"user":"my glucose level is 103","model":"user-profile:Get my user name.\nhealth:Save blood glucose level of 103 mg/dL to my user name.\nquery:Print the summary of the saved medical readings."}]
 [{"user":"my blood sugar is 107","model":"user-profile:Get my user name.\nhealth:Save blood glucose level of 107 mg/dL to my user name.\nquery:Print the summary of the saved medical readings."}]
 [{"user":"save glucose 94","model":"user-profile:Get my user name.\nhealth:Save blood glucose level of 94 mg/dL to my user name.\nquery:Print the summary of the saved medical readings."}]
@@ -336,7 +336,7 @@
 [{"user":"write agavriloaiei mariana glucose level of 98","model":"health:Save blood glucose level of 98 mg/dL to Agavriloaiei Mariana.\nquery:Print the summary of the saved medical readings."}]
 [{"user":"record glodeanu razvan blood sugar of 128","model":"health:Save blood glucose level of 128 mg/dL to Glodeanu Razvan.\nquery:Print the summary of the saved medical readings."}]
 
--- health - read medical records
+/* health - read medical records */
 [{"user":"read my medical records from today","model":"time-service:Get date for today.\nuser-profile:Get my user name.\nhealth:Read medical records from today for my user name.\nquery:Print the summary of the medical readings."}]
 [{"user":"read my medical records","model":"time-service:Get date for today.\nuser-profile:Get my user name.\nhealth:Read medical records from today for my user name.\nquery:Print the summary of the medical readings."}]
 [{"user":"read today medical records for acatrinei ingrid","model":"time-service:Get date for today.\nhealth:Read medical records from today for Acatrinei Ingrid.\nquery:Print the summary of the medical readings."}]
@@ -364,7 +364,7 @@
 [{"user":"print health measurements","model":"time-service:Get date for today.\nuser-profile:Get my user name.\nhealth:Read medical records from today for my user name.\nquery:Print the summary of the medical readings."}]
 [{"user":"print medical records from this monday","model":"time-service:Get date for this monday.\nuser-profile:Get my user name.\nhealth:Read medical records from this monday for my user name.\nquery:Print the summary of the medical readings."}]
 
--- health - evaluate medical readings
+/* health - evaluate medical readings */
 [{"user":"is there something wrong with my today medical readings?","model":"time-service:Get date for today.\nuser-profile:Get my user name.\nhealth:Read medical records from today for my user name.\nhealth:Evaluate medical readings.\nquery:Is there something wrong with my today medical readings?"}]
 [{"user":"check my today medical readings","model":"time-service:Get date for today.\nuser-profile:Get my user name.\nhealth:Read medical records from today for my user name.\nhealth:Evaluate medical readings.\nquery:Check my today medical readings."}]
 [{"user":"investigate today health records","model":"time-service:Get date for today.\nuser-profile:Get my user name.\nhealth:Read medical records from today for my user name.\nhealth:Evaluate medical readings.\nquery:Investigate today health records."}]
@@ -373,7 +373,7 @@
 [{"user":"do you see problems on today health records?","model":"time-service:Get date for today.\nuser-profile:Get my user name.\nhealth:Read medical records from today for my user name.\nhealth:Evaluate medical readings.\nquery:Do you see problems on today health records?"}]
 [{"user":"analyze health readings from yesterday","model":"time-service:Get date for yesterday.\nuser-profile:Get my user name.\nhealth:Read medical records from today for my user name.\nhealth:Evaluate medical readings.\nquery:Analyze health readings from today?"}]
 
--- health - create medical report
+/* health - create medical report */
 [{"user":"medical report","model":"time-service:Get date for today.\nuser-profile:Get my user name.\nhealth:Read medical records from today for my user name.\nquery:Create a healthcare professional report based on the medical records."}]
 [{"user":"create medical report","model":"time-service:Get date for today.\nuser-profile:Get my user name.\nhealth:Read medical records from today for my user name.\nquery:Create a healthcare professional report based on the medical records."}]
 [{"user":"print health report from today records","model":"time-service:Get date for today.\nuser-profile:Get my user name.\nhealth:Read medical records from today for my user name.\nquery:Create a healthcare professional report based on the medical records."}]
@@ -386,7 +386,7 @@
 [{"user":"print health report for 2025-12-01","model":"user-profile:Get my user name.\nhealth:Read medical records from December 1, 2025 for my user name.\nquery:Create a healthcare professional report based on the medical records."}]
 [{"user":"health status report for 2024-11-12","model":"user-profile:Get my user name.\nhealth:Read medical records from November 12, 2024 for my user name.\nquery:Create a healthcare professional report based on the medical records."}]
 
--- health - calculate body mass index
+/* health - calculate body mass index */
 [{"user":"calculate body mass index for 88.5 kg and 172 cm","model":"health:Calculate body mass index for a weight of 88.50 kg and a height of 172 cm.\nquery:Print computed body mass index."}]
 [{"user":"compute body mass index for weight of 82 kg and height of 176 cm","model":"health:Calculate body mass index for a weight of 82.00 kg and a height of 176 cm.\nquery:Print computed body mass index."}]
 [{"user":"estimate bmi for 85.5 kg and 174 cm","model":"health:Calculate body mass index for a weight of 85.50 kg and a height of 174 cm.\nquery:Print computed body mass index."}]
@@ -399,7 +399,7 @@
 [{"user":"what would be my BMI for a weight of 78?","model":"user-profile:Get my height.\nhealth:Calculate body mass index for a weight of 78.00 kg and my height.\nquery:What would my BMI be for a weight of 78 kg?"}]
 [{"user":"what would be my body mass index if i will weight 77 kg?","model":"user-profile:Get my height.\nhealth:Calculate body mass index for a weight of 77.00 kg and my height.\nquery:What would my body mass index be if I weighed 77 kg?"}]
 
--- weather station
+/* weather station */
 [{"user":"wind speed from meteo station","model":"weather:Read the wind speed from local weather station."}]
 [{"user":"what's wind speed on my station?","model":"weather:Read the wind speed from local weather station."}]
 [{"user":"weather station temperature","model":"weather:Read the temperature from local weather station."}]
@@ -438,7 +438,7 @@
 [{"user":"is fine out there for a bike?","model":"user-profile:Get my location.\nweather:Get current weather in my location.\nquery:Is fine out there for a bike?"}]
 [{"user":"what do you think about a short stroll? doable?","model":"user-profile:Get my location.\nweather:Get current weather in my location.\nquery:What do you think about a short stroll? Doable?"}]
 
--- we can not answer this question based only on weather. e.g. kids immunity level
+/* we can not answer this question based only on weather. e.g. kids immunity level */
 [{"user":"kids are playing outside. isn't too cold?","model":"user-profile:Get my location.\nweather:Get current weather in my location.\nquery:The children are playing outside. Isn't it too cold?"}]
 [{"user":"is alright for kids to play outside?","model":"user-profile:Get my location.\nweather:Get current weather in my location.\nquery:Is it alright for children to play outside?"}]
 
@@ -533,7 +533,7 @@
 [{"user":"is this weekend good for a trip to predeal","model":"weather:Get daily weather forecast for the next week in Predeal, Romania?\nquery:Is this weekend good for a trip to Predeal?"}]
 [{"user":"what about going to the sea at constanta, this week? will the weather help us?","model":"weather:Get daily weather forecast for the next week in Constanta, Romania?\nquery:What about going to the sea at Constanta, this week? Will the weather help us?"}]
 
--- wikipedia essay
+/* wikipedia essay */
 [{"user":"essay about ion creanga life and works","model":"wikipedia:Read article about Ion Creanga.\nquery:Create a comprehensive and detailed essay about Ion Creanga life and works."}]
 [{"user":"generate an essay on aurel vlaicu death","model":"wikipedia:Read article about Aurel Vlaicu.\nquery:Create a comprehensive and detailed essay about Aurel Vlaicu death."}]
 [{"user":"detailed description of leo tolstoy childhood","model":"wikipedia:Read article about Leo Tolstoy.\nquery:Create a comprehensive and detailed essay about Leo Tolstoy childhood."}]
@@ -555,7 +555,7 @@
 [{"user":"generate a detailed study of electric vehicles","model":"wikipedia:Read article about electric vehicle.\nquery:Create a comprehensive and detailed essay about electric vehicles."}]
 [{"user":"write a exhaustive study of serengeti ecosystem","model":"wikipedia:Read article about Serengeti National Park.\nquery:Create a comprehensive and detailed essay about Serengeti ecosystem."}]
 
--- wikipedia summary
+/* wikipedia summary */
 [{"user":"create a short summary of tom sawyer","model":"wikipedia:Read article about 'The Adventures of Tom Sawyer'.\nquery:Create a short summary of the 'The Adventures of Tom Sawyer' book."}]
 [{"user":"brief me the novel david copperfield","model":"wikipedia:Read article about 'David Copperfield'.\nquery:Create a short summary of the 'David Copperfield' book."}]
 [{"user":"create a summary of novel 'life on mississippi'","model":"wikipedia:Read article about 'Life on the Mississippi'.\nquery:Create a summary of the 'Life on the Mississippi' book."}]
@@ -567,7 +567,7 @@
 [{"user":"summary of barbarossa plan from ww2","model":"wikipedia:Read article about Operation Barbarossa.\nquery:Create a summary of the Operation Barbarossa from World War II."}]
 [{"user":"create a summary of market garden plan from ww2","model":"wikipedia:Read article about Operation Market Garden.\nquery:Create a summary of the Operation Market Garden from World War II."}]
 
--- wikipedia story
+/* wikipedia story */
 [{"user":"write story about a day from a lions pride","model":"wikipedia:Read article about lion.\nquery:Create a story in a narrative style about a day from a lions pride."}]
 [{"user":"story about aurel vlaicu attempt to cross mountains","model":"wikipedia:Read article about Aurel Vlaicu.\nquery:Create a story in a narrative style about Aurel Vlaicu attempt to cross the mountains."}]
 [{"user":"create a story for marie curie discovery of radioactivity","model":"wikipedia:Read article about Marie Curie.\nquery:Create a story in a narrative style about Marie Curie's discovery of radioactivity."}]
@@ -577,7 +577,7 @@
 [{"user":"story about america discovery by christopher columbus","model":"wikipedia:Read article about Christopher Columbus.\nquery:Create a story in a narrative style about America's discovery by Christopher Columbus."}]
 [{"user":"create a story about jack london participation in gold rush","model":"wikipedia:Read article about Jack London.\nquery:Create a story in a narrative style about Jack London's participation in the gold rush."}]
 
--- wikipedia works list
+/* wikipedia works list */
 [{"user":"what are the relevant works of jack london","model":"wikipedia:Read article about Jack London\nquery:List the works of Jack London."}]
 [{"user":"create a list of mihail sadoveanu's novels, novellas and short stories","model":"wikipedia:Read article about Mihail Sadoveanu\nquery:List the works of Mihail Sadoveanu."}]
 [{"user":"what are most known works of pablo picasso","model":"wikipedia:Read article about Pablo Picasso\nquery:List the works of Pablo Picasso."}]
@@ -609,7 +609,7 @@
 [{"user":"list franz kafka's fables","model":"wikipedia:Read article about Franz Kafka.\nquery:List the fables of Franz Kafka."}]
 [{"user":"list of the james thurber fables","model":"wikipedia:Read article about James Thurber.\nquery:List the fables of James Thurber."}]
 
--- wikipedia question
+/* wikipedia question */
 [{"user":"in what period did mihai eminescu live?","model":"wikipedia:Read article about Mihai Eminescu.\nquery:In what period did Mihai Eminescu live?"}]
 [{"user":"what is the height of eiffel tower?","model":"wikipedia:Read article about Eiffel Tower.\nquery:What is the height of Eiffel Tower?"}]
 [{"user":"what is the length of nile river?","model":"wikipedia:Read article about Nile.\nquery:What is the length of Nile river?"}]
@@ -632,7 +632,7 @@
 [{"user":"is greenland an independent state?","model":"wikipedia:Read article about Denmark.\nquery:Is Greenland an independent state?"}]
 [{"user":"in which year christopher columbus discovered america?","model":"wikipedia:Read article about Christopher Columbus.\nquery:In which year Christopher Columbus discovered America?"}]
 
--- wikipedia facts
+/* wikipedia facts */
 [{"user":"extract facts about tokyo city","model":"wikipedia:Read article about Tokyo City.\nquery:Extract facts about Tokyo City."}]
 [{"user":"please show me some facts about stephen the great","model":"wikipedia:Read article about Stephen the Great.\nquery:Extract facts about Stephen the Great."}]
 [{"user":"some statistics about mangalia locality","model":"wikipedia:Read article about Mangalia.\nquery:Extract facts about Mangalia locality."}]
@@ -645,7 +645,7 @@
 [{"user":"retrieve physical properties of a ferrari car","model":"wikipedia:Read article about Ferrari.\nquery:Extract facts about the physical properties of Ferrari cars."}]
 [{"user":"get the properties of antonov an-2 plane","model":"wikipedia:Read article about Antonov AN-2.\nquery:Extract facts about Antonov AN-2 plane."}]
 
--- wikipedia brief description
+/* wikipedia brief description */
 [{"user":"describe vaslui battle of stephen the great","model":"wikipedia:Read article about Stephen the Great.\nquery:Write a brief description of Stephen the Great's Battle of Vaslui."}]
 [{"user":"short description of the charles darwin expedition with beagle ship","model":"wikipedia:Read article about Charles Darwin.\nquery:Write a brief description of Charles Darwin's expedition with Beagle ship."}]
 [{"user":"create a brief account of galapagos islands","model":"wikipedia:Read article about Galapagos.\nquery:Write a brief description of the Galapagos Islands."}]
@@ -667,7 +667,7 @@
 [{"user":"get a short description of jules verne nautilus submarine","model":"wikipedia:Read article about Nautilus.\nquery:Write a brief description of Jules Verne's Nautilus submarine."}]
 [{"user":"create a brief story of first air balloon flight","model":"wikipedia:Read article about hot air balloon.\nquery:Write a brief description of the first air balloon flight."}]
 
--- programming
+/* programming */
 [{"user":"how to use if condition for a python string not equal with a value","model":"programming:How to use if condition for a Python string not equal with a value?"}]
 [{"user":"how to split a python string by first colon only","model":"programming:How to split a Python string by first colon only?"}]
 [{"user":"how to reverse a python string","model":"programming:How to reverse a Python string?"}]

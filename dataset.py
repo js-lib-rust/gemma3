@@ -57,7 +57,7 @@ def hf_function_set():
     with open(file_path, 'r', encoding='UTF-8') as file:
         for line in file:
             line = line.strip()
-            if line and not line.startswith('--'):
+            if line and not line.startswith('/*'):
                 # print(f"line: {line}")
                 sample = json.loads(line)
                 # print(sample)
@@ -85,7 +85,7 @@ def hf_router_set():
     with open(file_path, 'r', encoding='UTF-8') as file:
         for line in file:
             line = line.strip()
-            if line and not line.startswith('--'):
+            if line and not line.startswith('/*'):
                 # print(f"line: {line}")
                 sample = json.loads(line)
                 # print(sample)

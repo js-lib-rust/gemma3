@@ -356,6 +356,54 @@
     },
     {
       "role": "user",
+      "content": "Read the temperature sensor in the living room."
+    },
+    {
+      "role": "assistant",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "hera_read_temperature",
+            "arguments": {
+              "zone": "living room"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "developer",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Read the temperature sensor in the kitchen."
+    },
+    {
+      "role": "assistant",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "hera_read_temperature",
+            "arguments": {
+              "zone": "kitchen"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "developer",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
       "content": "What is the living room temperature?"
     },
     {
@@ -487,6 +535,30 @@
             "name": "hera_read_humidity",
             "arguments": {
               "zone": "kitchen"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "developer",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Read the humidity sensor in the cellar."
+    },
+    {
+      "role": "assistant",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "hera_read_humidity",
+            "arguments": {
+              "zone": "cellar"
             }
           }
         }

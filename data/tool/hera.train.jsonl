@@ -13,12 +13,15 @@
 {"prompt":"Please get a definition of the speed sensor.","function":"hera_get_device_description","arguments":{"device":"speed sensor"}}
 {"prompt":"Create a comprehensive description of the garden moisture sensor.","function":"hera_get_device_description","arguments":{"device":"garden moisture sensor"}}
 {"prompt":"What do you know about motion detection device from garage.","function":"hera_get_device_description","arguments":{"device":"motion detection device from garage"}}
+{"prompt":"Read the temperature sensor in the living room.","function":"hera_read_temperature","arguments":{"zone":"living room"}}
+{"prompt":"Read the temperature sensor in the kitchen.","function":"hera_read_temperature","arguments":{"zone":"kitchen"}}
 {"prompt":"What is the living room temperature?","function":"hera_read_temperature","arguments":{"zone":"living room"}}
 {"prompt":"Is it too hot in the cellar?","function":"hera_read_temperature","arguments":{"zone":"cellar"}}
 {"prompt":"Get bathroom temperature.","function":"hera_read_temperature","arguments":{"zone":"bathroom"}}
 {"prompt":"Bedroom temperature.","function":"hera_read_temperature","arguments":{"zone":"bedroom"}}
 {"prompt":"How many Celsius degrees are in the kitchen?","function":"hera_read_temperature","arguments":{"zone":"kitchen"}}
 {"prompt":"Get kitchen humidity percent.","function":"hera_read_humidity","arguments":{"zone":"kitchen"}}
+{"prompt":"Read the humidity sensor in the cellar.","function":"hera_read_humidity","arguments":{"zone":"cellar"}}
 {"prompt":"What is humidity level in the bathroom?","function":"hera_read_humidity","arguments":{"zone":"bathroom"}}
 {"prompt":"Read humidity sensor from greenhouse.","function":"hera_read_humidity","arguments":{"zone":"greenhouse"}}
 {"prompt":"Show me the humidity percent in the cellar.","function":"hera_read_humidity","arguments":{"zone":"cellar"}}

@@ -1270,7 +1270,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read the status of the central heating system.\nquery:Was climate opened?"
+      "content": "home-automation:Read the status of the central heating system.\nquery:Was the climate opened?"
     }
   ],
   [
@@ -1298,7 +1298,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read the status of the central heating system.\nquery:Is heat running?"
+      "content": "home-automation:Read the status of the central heating system.\nquery:Is the heat running?"
     }
   ],
   [
@@ -1326,7 +1326,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read the status of the central heating system.\nquery:Is heating active?"
+      "content": "home-automation:Read the status of the central heating system.\nquery:Is the heating active?"
     }
   ],
   [
@@ -1340,7 +1340,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read the status of the central heating system.\nquery:Is heating opened?"
+      "content": "home-automation:Read the status of the central heating system.\nquery:Is the heating opened?"
     }
   ],
   [
@@ -1354,7 +1354,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read the status of the central heating system.\nquery:Is heater active?"
+      "content": "home-automation:Read the status of the central heating system.\nquery:Is the heater active?"
     }
   ],
   [
@@ -1368,7 +1368,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read the status of the central heating system.\nquery:Is heater on?"
+      "content": "home-automation:Read the status of the central heating system.\nquery:Is the heater on?"
     }
   ],
   [
@@ -1382,7 +1382,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Read the status of the central heating system.\nquery:Is climate turned off?"
+      "content": "home-automation:Read the status of the central heating system.\nquery:Is the climate turned off?"
     }
   ],
   [

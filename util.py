@@ -4,7 +4,7 @@ import re
 
 import torch
 from sentence_transformers import util, SentenceTransformer
-from transformers import AutoTokenizer, TokenizersBackend
+from transformers import TokenizersBackend
 
 
 def get_model_path(model_name):
@@ -81,11 +81,11 @@ FUNCTION_CALL_PARSERS = {
 TOOLS_KEYWORDS = ["tool_call", "function_call", "tools", "tool_choice", "function", "json"]
 
 
-def has_tools_support(tokenizer):
-    if not tokenizer.chat_template:
+def has_tools_support(_tokenizer):
+    if not _tokenizer.chat_template:
         return False
     for tools_keyword in TOOLS_KEYWORDS:
-        if tools_keyword in tokenizer.chat_template.lower():
+        if tools_keyword in _tokenizer.chat_template.lower():
             return True
     return False
 
@@ -102,10 +102,10 @@ def parse_gemma_function_response(text):
     def cast(v):
         try:
             return int(v)
-        except:
+        except (ValueError, TypeError):
             try:
                 return float(v)
-            except:
+            except (ValueError, TypeError):
                 return {'true': True, 'false': False}.get(v.lower(), v.strip("'\""))
 
     return [{
@@ -149,7 +149,8 @@ def encode_tools_call(tool_calls):
     for tool_call in tool_calls:
         function = tool_call['function']
         arguments = ",".join([f"{k}:{escape(v)}" for k, v in function['arguments'].items()])
-        response += f"<start_function_call>call:{function['name']}{{{arguments}}}<end_function_call>"
+        response += (f"<start_function_call>call:{function['name']}{{{arguments}}}<end_function_call>"
+                     f"<start_function_response>")
     return response
 
 
@@ -196,5 +197,9 @@ def _apply_chat_template(
             if tool_calls:
                 turn['content'] = encode_tools_call(tool_calls)
 
-    return tokenizer.__apply_chat_template__(conversation, tools, tokenize=tokenize,
+    chat = tokenizer.__apply_chat_template__(conversation, tools, tokenize=tokenize,
                                              add_generation_prompt=add_generation_prompt)
+    eot = "<end_of_turn>\n"
+    if chat.endswith(eot):
+        chat = chat.removesuffix(eot)
+    return chat

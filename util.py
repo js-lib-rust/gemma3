@@ -4,6 +4,7 @@ import re
 
 import torch
 from sentence_transformers import util, SentenceTransformer
+from transformers import AutoTokenizer, TokenizersBackend
 
 
 def get_model_path(model_name):
@@ -114,3 +115,86 @@ def parse_gemma_function_response(text):
             for k, v1, v2 in re.findall(r"(\w+):(?:<escape>(.*?)<escape>|([^,}]*))", args)
         }
     } for name, args in re.findall(r"<start_function_call>call:(\w+)\{(.*?)}<end_function_call>", text, re.DOTALL)]
+
+
+# ---------------------------------------------------------
+# Monkey patch for tokenizer.apply_chat_template for tool argument order.
+
+def escape(value):
+    return f"<escape>{value}<escape>" if isinstance(value, str) else value
+
+
+def encode_tools_schema(tools):
+    response = ""
+    for tool in tools:
+        function = tool['function']
+
+        properties = []
+        required = []
+        if 'parameters' in function and 'properties' in function['parameters']:
+            for k, v in function['parameters']['properties'].items():
+                p = f"{k}:{{description:{escape(v['description'])},type:{escape(v['type'].upper())}}}"
+                properties.append(p)
+                required.append(escape(k))
+        parameters = f"properties:{{{','.join(properties)}}},required:[{','.join(required)}],type:{escape('OBJECT')}"
+
+        declaration = f"declaration:{function['name']}"
+        body = f"description:{escape(function['description'])},parameters:{{{parameters}}}"
+        response += f"<start_function_declaration>{declaration}{{{body}}}<end_function_declaration>"
+    return response
+
+
+def encode_tools_call(tool_calls):
+    response = ""
+    for tool_call in tool_calls:
+        function = tool_call['function']
+        arguments = ",".join([f"{k}:{escape(v)}" for k, v in function['arguments'].items()])
+        response += f"<start_function_call>call:{function['name']}{{{arguments}}}<end_function_call>"
+    return response
+
+
+tokenizer: TokenizersBackend
+
+
+def patch_tokenizer(stock_tokenizer: TokenizersBackend) -> None:
+    assert hasattr(stock_tokenizer, "apply_chat_template")
+    global tokenizer
+    tokenizer = stock_tokenizer
+    setattr(tokenizer, "__apply_chat_template__", tokenizer.apply_chat_template)
+    setattr(tokenizer, "apply_chat_template", _apply_chat_template)
+
+
+def _apply_chat_template(
+        conversation: list[dict[str, str]],
+        tools: list[dict] = None,
+        tokenize: bool = False,
+        add_generation_prompt: bool = False) -> str:
+    """
+    When applying a chat template, the Transformers library does not preserve the original order of tool arguments — it
+    appears to sort them alphabetically by name.
+
+    This patch replaces only tool processing from tokenizer apply_chat_template then invoke original library method,
+    but with tools processing disabled. It actually uses library method only for instruction turns.
+
+    All arguments and return type are similar to library method.
+    :param conversation:
+    :param tools:
+    :param tokenize:
+    :param add_generation_prompt:
+    :return:
+    """
+
+    for turn in conversation:
+        if turn['role'] == "developer":
+            if tools:
+                turn['content'] += encode_tools_schema(tools)
+                tools = None
+            continue
+
+        if turn['role'] == "assistant":
+            tool_calls = turn.pop('tool_calls', None)
+            if tool_calls:
+                turn['content'] = encode_tools_call(tool_calls)
+
+    return tokenizer.__apply_chat_template__(conversation, tools, tokenize=tokenize,
+                                             add_generation_prompt=add_generation_prompt)

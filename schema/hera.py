@@ -9,7 +9,7 @@ def hera_describe_device(device: str):
     Create a detailed description of the requested device.
 
     Args:
-        device: device name is a required string parameter; if is missing do not invoke any function but return error message.
+        device: human-readable device name, unique per HERA.
     """
 
 
@@ -18,16 +18,16 @@ def hera_get_device_actions(device: str):
     Retrieves the actions supported by a device.
 
     Args:
-        device: device name is a required string parameter; if is missing do not invoke any function but return error message.
+        device: human-readable device name, unique per HERA.
     """
 
 
 def hera_read_temperature(zone: str):
     """
-    Retrieves the current temperature reading from a specified zone within the home. If zone name parameter is not present into user prompt, use living room as default.
+    Read the current temperature from devices in a specified zone.
 
     Args:
-        zone: is the location where the devices are placed; if you cannot determine the zone from user prompt use living room as default value.
+        zone: human-readable zone name of the location where the devices are placed.
     """
 
 
@@ -63,8 +63,8 @@ def hera_get_heating_state():
 
 def hera_run_diagnose(device: str):
     """
-    Check that a device is running properly and is reacheable and return a diagnose report.
+    Check that a device is reachable and running properly. Return a diagnosis report.
 
     Args:
-        device: device name is a required string parameter; if is missing do not invoke any function but return error message.
+        device: human-readable device name, unique per HERA.
     """

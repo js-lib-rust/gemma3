@@ -9,7 +9,7 @@
         "properties": {
           "device": {
             "type": "string",
-            "description": "device name is a required string parameter; if is missing do not invoke any function but return error message."
+            "description": "human-readable device name, unique per HERA."
           }
         },
         "required": [
@@ -28,7 +28,7 @@
         "properties": {
           "device": {
             "type": "string",
-            "description": "device name is a required string parameter; if is missing do not invoke any function but return error message."
+            "description": "human-readable device name, unique per HERA."
           }
         },
         "required": [
@@ -85,13 +85,13 @@
     "type": "function",
     "function": {
       "name": "hera_read_temperature",
-      "description": "Retrieves the current temperature reading from a specified zone within the home. If zone name parameter is not present into user prompt, use living room as default.",
+      "description": "Read the current temperature from devices in a specified zone.",
       "parameters": {
         "type": "object",
         "properties": {
           "zone": {
             "type": "string",
-            "description": "is the location where the devices are placed; if you cannot determine the zone from user prompt use living room as default value."
+            "description": "human-readable zone name of the location where the devices are placed."
           }
         },
         "required": [
@@ -104,13 +104,13 @@
     "type": "function",
     "function": {
       "name": "hera_run_diagnose",
-      "description": "Check that a device is running properly and is reacheable and return a diagnose report.",
+      "description": "Check that a device is reachable and running properly. Return a diagnosis report.",
       "parameters": {
         "type": "object",
         "properties": {
           "device": {
             "type": "string",
-            "description": "device name is a required string parameter; if is missing do not invoke any function but return error message."
+            "description": "human-readable device name, unique per HERA."
           }
         },
         "required": [

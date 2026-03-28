@@ -26,7 +26,7 @@ print(f"Use dtype {args.dtype}")
 print(f"Use port {args.port}")
 
 tokenizer = AutoTokenizer.from_pretrained(model_path)
-# util.patch_tokenizer(tokenizer)
+util.patch_tokenizer(tokenizer)
 model = AutoModelForCausalLM.from_pretrained(model_path, dtype=args.dtype, device_map=device)
 
 
@@ -47,10 +47,13 @@ async def handle_slm_request(request):
             system_role = "system"
             system = "Rewrite and route the next user prompt"
         prompt = json_request['prompt']
+        min_new_tokens = int(json_request.get('min_new_tokens', "1"))
         max_new_tokens = int(json_request.get('max_new_tokens', "400"))
         do_sample = bool(json_request.get('do_sample'))
         num_beams = int(json_request.get('num_beams', "1"))
         repetition_penalty = float(json_request.get('repetition_penalty', "1.0"))
+        no_repeat_ngram_size = int(json_request.get('no_repeat_ngram_size', "0"))
+        temperature = float(json_request.get('temperature', "1.0"))
 
         print(f'system_role: {system_role}')
         print(f'system: {system}')
@@ -67,17 +70,17 @@ async def handle_slm_request(request):
         inputs = tokenizer([chat_text], return_tensors="pt").to(model.device)
 
         config = {
-            'min_new_tokens': 1,
+            'min_new_tokens': min_new_tokens,
             'max_new_tokens': max_new_tokens,
             'do_sample': do_sample,
+            'temperature': temperature,
             'num_beams': num_beams,
             'num_return_sequences': num_beams,
             'pad_token_id': tokenizer.eos_token_id,
             'return_dict_in_generate': True,
             'output_scores': True,
             'repetition_penalty': repetition_penalty,
-            'no_repeat_ngram_size': 1,
-            'temperature': 1.0
+            'no_repeat_ngram_size': no_repeat_ngram_size
         }
         print(f"config: {config}")
 

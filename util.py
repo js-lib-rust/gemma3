@@ -136,7 +136,13 @@ def encode_tools_schema(tools):
                 p = f"{k}:{{description:{escape(v['description'])},type:{escape(v['type'].upper())}}}"
                 properties.append(p)
                 required.append(escape(k))
-        parameters = f"properties:{{{','.join(properties)}}},required:[{','.join(required)}],type:{escape('OBJECT')}"
+
+        parameters = ""
+        if properties:
+            parameters += f"properties:{{{','.join(properties)}}},"
+        if required:
+            parameters += f"required:[{','.join(required)}],"
+        parameters += f"type:{escape('OBJECT')}"
 
         declaration = f"declaration:{function['name']}"
         body = f"description:{escape(function['description'])},parameters:{{{parameters}}}"

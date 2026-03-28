@@ -124,23 +124,27 @@ def escape(value):
     return f"<escape>{value}<escape>" if isinstance(value, str) else value
 
 
-def encode_tools_schema(tools):
+def encode_tools_schema(tools, empty_fields: bool = False):
     response = ""
     for tool in tools:
         function = tool['function']
 
         properties = []
         required = []
-        if 'parameters' in function and 'properties' in function['parameters']:
-            for k, v in function['parameters']['properties'].items():
-                p = f"{k}:{{description:{escape(v['description'])},type:{escape(v['type'].upper())}}}"
-                properties.append(p)
-                required.append(escape(k))
+        if 'parameters' in function:
+            parameters = function['parameters']
+            if 'properties' in parameters:
+                for k, v in parameters['properties'].items():
+                    p = f"{k}:{{description:{escape(v['description'])},type:{escape(v['type'].upper())}}}"
+                    properties.append(p)
+            if 'required' in parameters:
+                for v in parameters['required']:
+                    required.append(escape(v))
 
         parameters = ""
-        if properties:
+        if properties or empty_fields:
             parameters += f"properties:{{{','.join(properties)}}},"
-        if required:
+        if required or empty_fields:
             parameters += f"required:[{','.join(required)}],"
         parameters += f"type:{escape('OBJECT')}"
 

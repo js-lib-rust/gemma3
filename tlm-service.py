@@ -26,7 +26,7 @@ print(f"Use dtype {args.dtype}")
 print(f"Use port {args.port}")
 
 tokenizer = AutoTokenizer.from_pretrained(model_path)
-util.patch_tokenizer(tokenizer)
+# util.patch_tokenizer(tokenizer)
 model = AutoModelForCausalLM.from_pretrained(model_path, dtype=args.dtype, device_map=device)
 
 
@@ -50,6 +50,7 @@ async def handle_slm_request(request):
         max_new_tokens = int(json_request.get('max_new_tokens', "400"))
         do_sample = bool(json_request.get('do_sample'))
         num_beams = int(json_request.get('num_beams', "1"))
+        repetition_penalty = float(json_request.get('repetition_penalty', "1.0"))
 
         print(f'system_role: {system_role}')
         print(f'system: {system}')
@@ -58,6 +59,7 @@ async def handle_slm_request(request):
         print(f'max_new_tokens: {max_new_tokens}')
         print(f'do_sample: {do_sample}')
         print(f'num_beams: {num_beams}')
+        print(f'repetition_penalty: {repetition_penalty}')
 
         chat = [{"role": system_role, "content": system}, {"role": "user", "content": prompt}]
         chat_text = tokenizer.apply_chat_template(chat, tools=tools, tokenize=False, add_generation_prompt=True)
@@ -65,15 +67,18 @@ async def handle_slm_request(request):
         inputs = tokenizer([chat_text], return_tensors="pt").to(model.device)
 
         config = {
+            'min_new_tokens': 1,
             'max_new_tokens': max_new_tokens,
             'do_sample': do_sample,
             'num_beams': num_beams,
+            'num_return_sequences': num_beams,
             'pad_token_id': tokenizer.eos_token_id,
             'return_dict_in_generate': True,
-            'output_scores': True
+            'output_scores': True,
+            'repetition_penalty': repetition_penalty,
+            'no_repeat_ngram_size': 1,
+            'temperature': 1.0
         }
-        if num_beams > 1:
-            config['num_return_sequences'] = num_beams
         print(f"config: {config}")
 
         outputs = model.generate(**inputs, **config)

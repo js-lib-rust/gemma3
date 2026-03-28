@@ -1,0 +1,64 @@
+[
+  {
+    "type": "function",
+    "function": {
+      "name": "weather_get_current_weather",
+      "description": "Get current weather data for a locality.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "locality": {
+            "type": "string",
+            "description": "the name of the locality for which weather data will be retrieved."
+          }
+        },
+        "required": [
+          "locality"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "weather_get_forecast",
+      "description": "Get the daily weather forecast for the next few days in the requested location.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "locality": {
+            "type": "string",
+            "description": "the name of the locality for which the daily weather forecast will be retrieved."
+          },
+          "days": {
+            "type": "integer",
+            "description": "the number of days we want the forecast for, starting from the current date, not included."
+          }
+        },
+        "required": [
+          "locality",
+          "days"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "weather_get_today_forecast",
+      "description": "Get the hourly weather forecast for today in the requested location.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "locality": {
+            "type": "string",
+            "description": "the name of the locality for which the hourly weather forecast will be retrieved."
+          }
+        },
+        "required": [
+          "locality"
+        ]
+      }
+    }
+  }
+]

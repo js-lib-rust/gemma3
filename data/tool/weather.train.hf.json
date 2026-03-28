@@ -1,0 +1,440 @@
+[
+  [
+    {
+      "role": "system",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Get current weather in Pașcani, Romania."
+    },
+    {
+      "role": "model",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "weather_get_current_weather",
+            "arguments": {
+              "locality": "Pașcani, Romania"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Get current weather in Tomești, Romania."
+    },
+    {
+      "role": "model",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "weather_get_current_weather",
+            "arguments": {
+              "locality": "Tomești, Romania"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Get current weather in Siliștea, Gumești, Romania."
+    },
+    {
+      "role": "model",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "weather_get_current_weather",
+            "arguments": {
+              "locality": "Siliștea, Gumești, Romania"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Get current weather in Constanța, România."
+    },
+    {
+      "role": "model",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "weather_get_current_weather",
+            "arguments": {
+              "locality": "Constanța, România"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Get current weather in Iași, Romania."
+    },
+    {
+      "role": "model",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "weather_get_current_weather",
+            "arguments": {
+              "locality": "Iași, Romania"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Get current weather in Valea Lupului, Iași, Romania."
+    },
+    {
+      "role": "model",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "weather_get_current_weather",
+            "arguments": {
+              "locality": "Valea Lupului, Iași, Romania"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Get hourly weather forecast for today in Paris, France."
+    },
+    {
+      "role": "model",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "weather_get_today_forecast",
+            "arguments": {
+              "locality": "Paris, France"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Get hourly weather forecast for today in Bucharest, Romania."
+    },
+    {
+      "role": "model",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "weather_get_today_forecast",
+            "arguments": {
+              "locality": "Bucharest, Romania"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Get hourly weather forecast for today in Deprecen, Slovakia."
+    },
+    {
+      "role": "model",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "weather_get_today_forecast",
+            "arguments": {
+              "locality": "Deprecen, Slovakia"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Get hourly weather forecast for today in Sculeni, Iași, România."
+    },
+    {
+      "role": "model",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "weather_get_today_forecast",
+            "arguments": {
+              "locality": "Sculeni, Iași, România"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Get hourly weather forecast for today in Chicirea, Iași, Romania."
+    },
+    {
+      "role": "model",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "weather_get_today_forecast",
+            "arguments": {
+              "locality": "Chicirea, Iași, Romania"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Get hourly weather forecast for today in Târgu-Neamț, Romania."
+    },
+    {
+      "role": "model",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "weather_get_today_forecast",
+            "arguments": {
+              "locality": "Târgu-Neamț, Romania"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Get daily weather forecast for the next 14 days in Alba-Iulia, Romania."
+    },
+    {
+      "role": "model",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "weather_get_forecast",
+            "arguments": {
+              "locality": "Alba-Iulia, Romania",
+              "days": 14
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Get daily weather forecast for the next 7 days in Mangalia, Romania."
+    },
+    {
+      "role": "model",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "weather_get_forecast",
+            "arguments": {
+              "locality": "Mangalia, Romania",
+              "days": 7
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Get daily weather forecast for the next 2 days in Sinaia, Prahova, Romania."
+    },
+    {
+      "role": "model",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "weather_get_forecast",
+            "arguments": {
+              "locality": "Sinaia, Prahova, Romania",
+              "days": 2
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Get daily weather forecast for the next 5 days in Thessaloniki, Greece."
+    },
+    {
+      "role": "model",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "weather_get_forecast",
+            "arguments": {
+              "locality": "Thessaloniki, Greece",
+              "days": 5
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Get daily weather forecast for the next 3 days in London, UK."
+    },
+    {
+      "role": "model",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "weather_get_forecast",
+            "arguments": {
+              "locality": "London, UK",
+              "days": 3
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Get daily weather forecast for the next 10 days in Băile Herculane, Caraș-Severin, Romania."
+    },
+    {
+      "role": "model",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "weather_get_forecast",
+            "arguments": {
+              "locality": "Băile Herculane, Caraș-Severin, Romania",
+              "days": 10
+            }
+          }
+        }
+      ]
+    }
+  ]
+]

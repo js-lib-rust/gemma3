@@ -1,0 +1,23 @@
+/* weather_get_current_weather */
+{"prompt":"Get current weather in Pașcani, Romania.","function":"weather_get_current_weather","arguments":{"locality":"Pașcani, Romania"}}
+{"prompt":"Get current weather in Tomești, Romania.","function":"weather_get_current_weather","arguments":{"locality":"Tomești, Romania"}}
+{"prompt":"Get current weather in Siliștea, Gumești, Romania.","function":"weather_get_current_weather","arguments":{"locality":"Siliștea, Gumești, Romania"}}
+{"prompt":"Get current weather in Constanța, România.","function":"weather_get_current_weather","arguments":{"locality":"Constanța, România"}}
+{"prompt":"Get current weather in Iași, Romania.","function":"weather_get_current_weather","arguments":{"locality":"Iași, Romania"}}
+{"prompt":"Get current weather in Valea Lupului, Iași, Romania.","function":"weather_get_current_weather","arguments":{"locality":"Valea Lupului, Iași, Romania"}}
+
+/* weather_get_today_forecast */
+{"prompt":"Get hourly weather forecast for today in Paris, France.","function":"weather_get_today_forecast","arguments":{"locality":"Paris, France"}}
+{"prompt":"Get hourly weather forecast for today in Bucharest, Romania.","function":"weather_get_today_forecast","arguments":{"locality":"Bucharest, Romania"}}
+{"prompt":"Get hourly weather forecast for today in Deprecen, Slovakia.","function":"weather_get_today_forecast","arguments":{"locality":"Deprecen, Slovakia"}}
+{"prompt":"Get hourly weather forecast for today in Sculeni, Iași, România.","function":"weather_get_today_forecast","arguments":{"locality":"Sculeni, Iași, România"}}
+{"prompt":"Get hourly weather forecast for today in Chicirea, Iași, Romania.","function":"weather_get_today_forecast","arguments":{"locality":"Chicirea, Iași, Romania"}}
+{"prompt":"Get hourly weather forecast for today in Târgu-Neamț, Romania.","function":"weather_get_today_forecast","arguments":{"locality":"Târgu-Neamț, Romania"}}
+
+/* weather_get_forecast */
+{"prompt":"Get daily weather forecast for the next 14 days in Alba-Iulia, Romania.","function":"weather_get_forecast","arguments":{"locality":"Alba-Iulia, Romania","days":14}}
+{"prompt":"Get daily weather forecast for the next 7 days in Mangalia, Romania.","function":"weather_get_forecast","arguments":{"locality":"Mangalia, Romania","days":7}}
+{"prompt":"Get daily weather forecast for the next 2 days in Sinaia, Prahova, Romania.","function":"weather_get_forecast","arguments":{"locality":"Sinaia, Prahova, Romania","days":2}}
+{"prompt":"Get daily weather forecast for the next 5 days in Thessaloniki, Greece.","function":"weather_get_forecast","arguments":{"locality":"Thessaloniki, Greece","days":5}}
+{"prompt":"Get daily weather forecast for the next 3 days in London, UK.","function":"weather_get_forecast","arguments":{"locality":"London, UK","days":3}}
+{"prompt":"Get daily weather forecast for the next 10 days in Băile Herculane, Caraș-Severin, Romania.","function":"weather_get_forecast","arguments":{"locality":"Băile Herculane, Caraș-Severin, Romania","days":10}}

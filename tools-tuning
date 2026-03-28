@@ -10,7 +10,7 @@ echo Running tools tuning ...
 python instruction-tuning.py \
 --epochs 2 \
 --train-batch 1 \
---learning-rate 1e-5 \
+--learning-rate 5e-6 \
 --files tool/hera.train.hf.json,tool/health.train.hf.json \
 --tools tool/hera.tools.hf.json,tool/health.tools.hf.json \
 --model /functiongemma-270m-it \

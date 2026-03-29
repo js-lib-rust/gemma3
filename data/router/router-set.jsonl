@@ -41,8 +41,25 @@
 [{"user":"convert jsonl to markdown table","model":"converter:Convert JSONL flat objects to markdown table."}]
 [{"user":"convert jsonl objects to markdown","model":"converter:Convert JSONL flat objects to markdown table."}]
 [{"user":"convert flat objects in jsonl format to markdown table","model":"converter:Convert JSONL flat objects to markdown table."}]
+[{"user":"convert jsonl objects to html table","model":"converter:Convert JSONL flat objects to HTML table."}]
+[{"user":"convert jsonl objects to html ordered list","model":"converter:Convert JSONL flat objects to HTML ordered list."}]
 
-/* home automation */
+/* home automation - list devices */
+[{"user":"list home devices","model":"home-automation:List all the devices in the house.\nquery:Print a list of home devices as table."}]
+[{"user":"what devices do we have in home?","model":"home-automation:List all the devices in the house.\nquery:What devices do we have at home?"}]
+[{"user":"give me a summary of all devices from home sorted by zone","model":"home-automation:List all the devices in the house.\nquery:Print a summary of all devices in the home, sorted by zone."}]
+
+/* home automation - describe devices */
+[{"user":"describe air quality sensor from bedroom","model":"home-automation:Get description of the bedroom air quality sensor.\nquery:Describe the bedroom air quality sensor."}]
+[{"user":"give a short description of kitchen humidity sensor","model":"home-automation:Get description of the kitchen humidity sensor.\nquery:Print a short description of the kitchen humidity sensor."}]
+[{"user":"what technical details do you know about temperature sensor from living room?","model":"home-automation:Get description of the living room temperature sensor.\nquery:Print technical details about the living room temperature sensor."}]
+
+/* home automation - describe devices */
+[{"user":"actions supported by co2 sensor from pantry","model":"home-automation:List actions supported by the pantry carbon dioxide sensor.\nquery:Print the actions supported by the carbon dioxide sensor in the pantry."}]
+[{"user":"list actions of gas detection from kitchen","model":"home-automation:List actions supported by the kitchen gas detection sensor.\nquery:Print the actions supported by the gas detection sensor in the kitchen."}]
+[{"user":"what actions are supported by water leaks sensor from porch","model":"home-automation:List actions supported by the porch water leaks sensor.\nquery:Print the actions supported by the water leaks sensor in the porch."}]
+
+/* home automation - turn on heating */
 [{"user":"start central heating","model":"home-automation:Turn on the central heating.\nquery:Print the central heating status."}]
 [{"user":"start heater","model":"home-automation:Turn on the central heating.\nquery:Print the central heating status."}]
 [{"user":"activate heater","model":"home-automation:Turn on the central heating.\nquery:Print the central heating status."}]
@@ -65,6 +82,7 @@
 [{"user":"this room is ice cold","model":"home-automation:Turn on the central heating."}]
 [{"user":"isn't it too cold in the room?","model":"home-automation:Turn on the central heating."}]
 
+/* home automation - turn off heating */
 [{"user":"stop central heating","model":"home-automation:Turn off the central heating.\nquery:Print the central heating status."}]
 [{"user":"shutdown central heating","model":"home-automation:Turn off the central heating.\nquery:Print the central heating status."}]
 [{"user":"stop heater","model":"home-automation:Turn off the central heating.\nquery:Print the central heating status."}]
@@ -251,6 +269,7 @@
 [{"user":"do we have flood alarm in the greenhouse?","model":"home-automation:Read the flood sensor in the greenhouse.\nquery:Do we have flood alarm in the greenhouse?"}]
 [{"user":"any intruders in greenhouse?","model":"home-automation:Read the motion detection sensor in the greenhouse.\nquery:Any intruders in greenhouse?"}]
 
+/* home automation - read all the sensors */
 [{"user":"read sensors from home","model":"home-automation:Read all the sensors in the house.\nquery:Print the value of the sensors in the house."}]
 [{"user":"i would like to know values for all sensors from apartment","model":"home-automation:Read all the sensors in the house.\nquery:I would like to know the values for all the sensors in the apartment."}]
 [{"user":"values for sensors in house","model":"home-automation:Read all the sensors in the house.\nquery:Print the value of the sensors in the house."}]
@@ -271,6 +290,26 @@
 [{"user":"are there any not locked doors?","model":"home-automation:Read all the lock sensors in the house.\nquery:Are there any not locked doors?"}]
 [{"user":"are there any opened windows?","model":"home-automation:Read all the window sensors in the house.\nquery:Are there any opened windows?"}]
 [{"user":"is there an open window?","model":"home-automation:Read all the window sensors in the house.\nquery:Is there an open window?"}]
+
+/* home automation - read all the sensors */
+[{"user":"read sensors from living room","model":"home-automation:Read all the sensors in the living room.\nquery:Print the value of the sensors in the living room."}]
+[{"user":"read all sensors in the kitchen","model":"home-automation:Read all the sensors in the kitchen.\nquery:Print the value of the sensors in the kitchen."}]
+[{"user":"sensors values from the greenhouse","model":"home-automation:Read all the sensors in the greenhouse.\nquery:Print the value of the sensors in the greenhouse."}]
+[{"user":"readings of the bedroom's sensors","model":"home-automation:Read all the sensors in the bedroom.\nquery:Print the value of the sensors in the bedroom."}]
+[{"user":"are there any opened windows in the children's bedroom?","model":"home-automation:Read all the window sensors in the children's bedroom.\nquery:Are there any opened windows in the children's bedroom?"}]
+[{"user":"is there an open window on garage?","model":"home-automation:Read all the window sensors in the garage.\nquery:Is there an open window in the garage?"}]
+[{"user":"is there any intruder alarms in the porch?","model":"home-automation:Read all the motion detection sensors in the porch.\nquery:Is there any intruder alarms in the porch?"}]
+[{"user":"motion detection sensor values from library","model":"home-automation:Read all the motion detection sensors in the library.\nquery:Print the value of motion detection sensors in the library."}]
+
+/* home automation - run diagnosis  */
+[{"user":"run full diagnose on entire home","model":"home-automation:Run a full diagnosis on the home automation system.\nquery:Create a complete diagnostic report for the home automation system."}]
+[{"user":"perform a system health check for the entire apartment. report any issues or anomalies detected","model":"home-automation:Run a full diagnosis on the home automation system.\nquery:Create a complete diagnostic report for the home automation system."}]
+[{"user":"are there malfunctioning sensors in house?","model":"home-automation:Run a full diagnosis on the home automation system.\nquery:Are there any faulty sensors in the house?"}]
+[{"user":"diagnose dht sensor from kitchen","model":"home-automation:Run device diagnosis on the kitchen DHT sensor.\nquery:Create a diagnostic report for the DHT sensor in the kitchen."}]
+[{"user":"check motion detection","model":"home-automation:Run device diagnosis on the motion detection sensor.\nquery:Create a diagnostic report for the motion detection sensor."}]
+[{"user":"sanity check on humidity sensor from bathroom","model":"home-automation:Run device diagnosis on the bathroom humidity sensor.\nquery:Create a diagnostic report for the bathroom humidity sensor."}]
+[{"user":"health status of the water leaks sensor from veranda","model":"home-automation:Run device diagnosis on the veranda water leaks sensor.\nquery:Create a diagnostic report for the veranda water leaks sensor."}]
+[{"user":"is kitchen gas detector working?","model":"home-automation:Run device diagnosis on the kitchen gas detector sensor.\nquery:Is the gas detector in the kitchen working properly?"}]
 
 /* health - save blood measurements */
 [{"user":"my blood measurements are 125 85 70","model":"user-profile:Get my user name.\nhealth:Save blood pressure measurement of 125/85 mmHg and heart rate of 70 bpm to my user name.\nquery:Print the summary of the saved medical readings."}]

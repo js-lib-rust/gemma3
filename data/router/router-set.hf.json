@@ -276,7 +276,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get current date and time."
+      "content": "time-service:Get the current date and time."
     }
   ],
   [
@@ -290,7 +290,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get current date."
+      "content": "time-service:Get the current date."
     }
   ],
   [
@@ -304,7 +304,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get current time."
+      "content": "time-service:Get the current time."
     }
   ],
   [
@@ -318,7 +318,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get date for today."
+      "content": "time-service:Get the date for today."
     }
   ],
   [
@@ -332,7 +332,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get date for yesterday."
+      "content": "time-service:Get the date for yesterday."
     }
   ],
   [
@@ -346,7 +346,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get date for the day before yesterday."
+      "content": "time-service:Get the date for the day before yesterday."
     }
   ],
   [
@@ -356,11 +356,67 @@
     },
     {
       "role": "user",
-      "content": "get my user name"
+      "content": "get date for tomorrow"
     },
     {
       "role": "model",
-      "content": "user-profile:Get my user name."
+      "content": "time-service:Get the date for tomorrow."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get date for day after tomorrow"
+    },
+    {
+      "role": "model",
+      "content": "time-service:Get the date for the day after tomorrow."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get my username"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get my personal phone number"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my personal phone number."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get my business phone number"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my business phone number."
     }
   ],
   [
@@ -473,6 +529,160 @@
     {
       "role": "model",
       "content": "user-profile:Get my social security number."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get username for rotaru iulian"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get the username of Rotaru Iulian."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get personal phone number for lontkowschi mirela petronela"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get the personal phone number of Lontkowschi Mirela Petronela."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get business phone number simeria anca"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get the business phone number of Simeria Anca."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get personal email address for gavriliu nicolaie"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get the personal email address of Gavriliu Nicolaie."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get business email address for gogalniceanu stefan"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get the business email address of Gog\u0103lniceanu \u0218tefan."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get height for rusu florentin"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get the height of Rusu Florentin."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get birth date baciu vasile"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get the birth date of Baciu Vasile."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get age of acatrinei liviu"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get the age of Acatrinei Liviu."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get profession for adam iosif"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get the profession of Adam Iosif."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get location of miron daniela elena"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get the location of Miron Daniela Elena."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get social security number for dorneanu deliana"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get the social security number of Dorneanu Deliana."
     }
   ],
   [
@@ -3874,7 +4084,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my user name.\nhealth:Save blood pressure measurement of 125/85 mmHg and heart rate of 70 bpm to my user name.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get my username.\nhealth:Save blood pressure measurement of 125/85 mmHg and heart rate of 70 bpm for ${username}.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -3888,7 +4098,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my user name.\nhealth:Save blood pressure measurement of 125/85 mmHg and heart rate of 70 bpm to my user name.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get my username.\nhealth:Save blood pressure measurement of 125/85 mmHg and heart rate of 70 bpm for ${username}.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -3902,7 +4112,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my user name.\nhealth:Save blood pressure measurement of 128/81 mmHg and heart rate of 55 bpm to my user name.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get my username.\nhealth:Save blood pressure measurement of 128/81 mmHg and heart rate of 55 bpm for ${username}.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -3916,7 +4126,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my user name.\nhealth:Save blood pressure measurement of 130/82 mmHg and heart rate of 85 bpm to my user name.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get my username.\nhealth:Save blood pressure measurement of 130/82 mmHg and heart rate of 85 bpm for ${username}.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -3930,7 +4140,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my user name.\nhealth:Save blood pressure measurement of 110/66 mmHg and heart rate of 84 bpm to my user name.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get my username.\nhealth:Save blood pressure measurement of 110/66 mmHg and heart rate of 84 bpm for ${username}.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -3944,7 +4154,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my user name.\nhealth:Save blood pressure measurement of 133/92 mmHg and heart rate of 87 bpm to my user name.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get my username.\nhealth:Save blood pressure measurement of 133/92 mmHg and heart rate of 87 bpm for ${username}.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -3958,7 +4168,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my user name.\nhealth:Save blood pressure measurement of 136/90 mmHg and heart rate of 82 bpm to my user name.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get my username.\nhealth:Save blood pressure measurement of 136/90 mmHg and heart rate of 82 bpm for ${username}.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -3972,7 +4182,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my user name.\nhealth:Save blood pressure measurement of 119/81 mmHg and heart rate of 93 bpm to my user name.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get my username.\nhealth:Save blood pressure measurement of 119/81 mmHg and heart rate of 93 bpm for ${username}.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -3986,7 +4196,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my user name.\nhealth:Save blood pressure measurement of 120/84 mmHg and heart rate of 76 bpm to my user name.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get my username.\nhealth:Save blood pressure measurement of 120/84 mmHg and heart rate of 76 bpm for ${username}.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -4000,7 +4210,7 @@
     },
     {
       "role": "model",
-      "content": "health:Save blood pressure measurement of 118/82 mmHg and heart rate of 63 bpm to Rusu Florentin.\nquery:Print the summary of the saved medical readings."
+      "content": "health:Save blood pressure measurement of 118/82 mmHg and heart rate of 63 bpm for Rusu Florentin.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -4014,7 +4224,7 @@
     },
     {
       "role": "model",
-      "content": "health:Save blood pressure measurement of 119/81 mmHg and heart rate of 64 bpm P\u0103tra\u0219cu Constantin.\nquery:Print the summary of the saved medical readings."
+      "content": "health:Save blood pressure measurement of 119/81 mmHg and heart rate of 64 bpm for P\u0103tra\u0219cu Constantin.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -4028,7 +4238,7 @@
     },
     {
       "role": "model",
-      "content": "health:Save blood pressure measurement of 115/75 mmHg and heart rate of 60 bpm to Gavriliu Mihaela.\nquery:Print the summary of the saved medical readings."
+      "content": "health:Save blood pressure measurement of 115/75 mmHg and heart rate of 60 bpm for Gavriliu Mihaela.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -4042,7 +4252,7 @@
     },
     {
       "role": "model",
-      "content": "health:Save blood pressure measurement of 112/65 mmHg and heart rate of 78 bpm to Rotaru Lucian.\nquery:Print the summary of the saved medical readings."
+      "content": "health:Save blood pressure measurement of 112/65 mmHg and heart rate of 78 bpm for Rotaru Lucian.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -4056,7 +4266,7 @@
     },
     {
       "role": "model",
-      "content": "health:Save blood pressure measurement of 133/92 mmHg and heart rate of 87 bpm to Miron Elena Daniela.\nquery:Print the summary of the saved medical readings."
+      "content": "health:Save blood pressure measurement of 133/92 mmHg and heart rate of 87 bpm for Miron Elena Daniela.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -4070,7 +4280,7 @@
     },
     {
       "role": "model",
-      "content": "health:Save blood pressure measurement of 125/83 mmHg and heart rate of 73 bpm to Rotaru Iulian.\nquery:Print the summary of the saved medical readings."
+      "content": "health:Save blood pressure measurement of 125/83 mmHg and heart rate of 73 bpm for Rotaru Iulian.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -4084,7 +4294,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my user name.\nhealth:Save body temperature of 35.00 \u00b0C to my user name.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get my username.\nhealth:Save body temperature of 35.00 \u00b0C for ${username}.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -4098,7 +4308,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my user name.\nhealth:Save body temperature of 34.30 \u00b0C to my user name.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get my username.\nhealth:Save body temperature of 34.30 \u00b0C for ${username}.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -4112,7 +4322,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my user name.\nhealth:Save body temperature of 35.90 \u00b0C to my user name.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get my username.\nhealth:Save body temperature of 35.90 \u00b0C for ${username}.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -4126,7 +4336,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my user name.\nhealth:Save body temperature of 34.80 \u00b0C to my user name.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get my username.\nhealth:Save body temperature of 34.80 \u00b0C for ${username}.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -4140,7 +4350,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my user name.\nhealth:Save body temperature of 35.20 \u00b0C to my user name.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get my username.\nhealth:Save body temperature of 35.20 \u00b0C for ${username}.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -4154,7 +4364,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my user name.\nhealth:Save body temperature of 37.10 \u00b0C to my user name.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get my username.\nhealth:Save body temperature of 37.10 \u00b0C for ${username}.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -4168,7 +4378,7 @@
     },
     {
       "role": "model",
-      "content": "health:Save body temperature of 35.10 \u00b0C to Cojocaru Cristian.\nquery:Print the summary of the saved medical readings."
+      "content": "health:Save body temperature of 35.10 \u00b0C for Cojocaru Cristian.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -4182,7 +4392,7 @@
     },
     {
       "role": "model",
-      "content": "health:Save body temperature of 35.20 \u00b0C to Acatrinei Liviu.\nquery:Print the summary of the saved medical readings."
+      "content": "health:Save body temperature of 35.20 \u00b0C for Acatrinei Liviu.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -4196,7 +4406,7 @@
     },
     {
       "role": "model",
-      "content": "health:Save body temperature of 35.60 \u00b0C to Gog\u0103lniceanu \u0218tefan.\nquery:Print the summary of the saved medical readings."
+      "content": "health:Save body temperature of 35.60 \u00b0C for Gog\u0103lniceanu \u0218tefan.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -4210,7 +4420,7 @@
     },
     {
       "role": "model",
-      "content": "health:Save body temperature of 36.20 \u00b0C to Lontkowschi George.\nquery:Print the summary of the saved medical readings."
+      "content": "health:Save body temperature of 36.20 \u00b0C for Lontkowschi George.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -4224,7 +4434,7 @@
     },
     {
       "role": "model",
-      "content": "health:Save body temperature of 34.10 \u00b0C to Teodorescu Tiberiu Dinu.\nquery:Print the summary of the saved medical readings."
+      "content": "health:Save body temperature of 34.10 \u00b0C for Teodorescu Tiberiu Dinu.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -4238,7 +4448,7 @@
     },
     {
       "role": "model",
-      "content": "health:Save body temperature of 36.70 \u00b0C to Dorneanu Deliana.\nquery:Print the summary of the saved medical readings."
+      "content": "health:Save body temperature of 36.70 \u00b0C for Dorneanu Deliana.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -4252,7 +4462,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my user name.\nuser-profile:Get my height.\nhealth:Save body weight of 89.00 kg to my user name.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get my username.\nuser-profile:Get my height.\nhealth:Save body weight of 89.00 kg and height of ${height} cm for ${username}.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -4266,7 +4476,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my user name.\nuser-profile:Get my height.\nhealth:Save my body weight of 92.00 kg to my user name.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get my username.\nuser-profile:Get my height.\nhealth:Save my body weight of 92.00 kg and height of ${height} cm for ${username}.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -4280,7 +4490,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my user name.\nuser-profile:Get my height.\nhealth:Save body weight of 87.50 kg to my user name.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get my username.\nuser-profile:Get my height.\nhealth:Save body weight of 87.50 kg and height of ${height} cm for ${username}.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -4294,7 +4504,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my user name.\nuser-profile:Get my height.\nhealth:Save body weight of 94.00 kg to my user name.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get my username.\nuser-profile:Get my height.\nhealth:Save body weight of 94.00 kg and height of ${height} cm for ${username}.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -4308,7 +4518,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my user name.\nuser-profile:Get my height.\nhealth:Save body weight of 88.00 kg to my user name.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get my username.\nuser-profile:Get my height.\nhealth:Save body weight of 88.00 kg and height of ${height} cm for ${username}.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -4322,7 +4532,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my user name.\nuser-profile:Get my height.\nhealth:Save body weight of 75.50 kg to my user name.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get my username.\nuser-profile:Get my height.\nhealth:Save body weight of 75.50 kg and height of ${height} cm for ${username}.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -4336,7 +4546,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my user name.\nuser-profile:Get my height.\nhealth:Save body weight of 62.00 kg to my user name.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get my username.\nuser-profile:Get my height.\nhealth:Save body weight of 62.00 kg and height of ${height} cm for ${username}.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -4350,7 +4560,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get the height of Baciu Vasile.\nhealth:Save body weight of 89.50 kg to Baciu Vasile.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get the height of Baciu Vasile.\nhealth:Save body weight of 89.50 kg and height of ${height} cm for Baciu Vasile.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -4364,7 +4574,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get the height of Agavriloaiei Ioana.\nhealth:Save body weight of 56.00 kg to Agavriloaiei Ioana.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get the height of Agavriloaiei Ioana.\nhealth:Save body weight of 56.00 kg and height of ${height} cm for Agavriloaiei Ioana.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -4378,7 +4588,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get the height of Preda Marin.\nhealth:Save body weight of 88.50 kg to Preda Marin.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get the height of Preda Marin.\nhealth:Save body weight of 88.50 kg and height of ${height} cm for Preda Marin.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -4392,7 +4602,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get the height of Jipa Bogdan.\nhealth:Save body weight of 74.00 kg to Jipa Bogdan.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get the height of Jipa Bogdan.\nhealth:Save body weight of 74.00 kg and height of ${height} cm for Jipa Bogdan.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -4406,7 +4616,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get the height of Rotaru Mihai.\nhealth:Save body weight of 76.50 kg to Rotaru Mihai.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get the height of Rotaru Mihai.\nhealth:Save body weight of 76.50 kg and height of ${height} cm for Rotaru Mihai.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -4420,7 +4630,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get the height of Dorneanu Sorana Ioana.\nhealth:Save body weight of 22.50 kg to Dorneanu Sorana Ioana.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get the height of Dorneanu Sorana Ioana.\nhealth:Save body weight of 22.50 kg and height of ${height} cm for Dorneanu Sorana Ioana.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -4434,7 +4644,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get the height of Rotaru \u0218tefan.\nhealth:Save body weight of 103.50 kg to Rotaru \u0218tefan.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get the height of Rotaru \u0218tefan.\nhealth:Save body weight of 103.50 kg and height of ${height} cm for Rotaru \u0218tefan.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -4448,7 +4658,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get the height of Adam Nicolae Ioan.\nhealth:Save body weight of 66.50 kg to Adam Nicolae Ioan.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get the height of Adam Nicolae Ioan.\nhealth:Save body weight of 66.50 kg and height of ${height} cm for Adam Nicolae Ioan.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -4462,7 +4672,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get the height of Marton Csaba.\nhealth:Save body weight of 77.00 kg to Marton Csaba.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get the height of Marton Csaba.\nhealth:Save body weight of 77.00 kg and height of ${height} cm for Marton Csaba.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -4476,7 +4686,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my user name.\nhealth:Save blood glucose level of 103 mg/dL to my user name.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get my username.\nhealth:Save blood glucose level of 103 mg/dL for ${username}.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -4490,7 +4700,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my user name.\nhealth:Save blood glucose level of 107 mg/dL to my user name.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get my username.\nhealth:Save blood glucose level of 107 mg/dL for ${username}.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -4504,7 +4714,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my user name.\nhealth:Save blood glucose level of 94 mg/dL to my user name.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get my username.\nhealth:Save blood glucose level of 94 mg/dL for ${username}.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -4518,7 +4728,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my user name.\nhealth:Save blood glucose level of 118 mg/dL to my user name.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get my username.\nhealth:Save blood glucose level of 118 mg/dL for ${username}.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -4532,7 +4742,7 @@
     },
     {
       "role": "model",
-      "content": "health:Save blood glucose level of 102 mg/dL to Gavriliu Petronela.\nquery:Print the summary of the saved medical readings."
+      "content": "health:Save blood glucose level of 102 mg/dL for Gavriliu Petronela.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -4546,7 +4756,7 @@
     },
     {
       "role": "model",
-      "content": "health:Save blood glucose level of 95 mg/dL to Gavriliu Andrei.\nquery:Print the summary of the saved medical readings."
+      "content": "health:Save blood glucose level of 95 mg/dL for Gavriliu Andrei.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -4560,7 +4770,7 @@
     },
     {
       "role": "model",
-      "content": "health:Save blood glucose level of 105 mg/dL to F\u00e2nt\u00e2naru Eugenia.\nquery:Print the summary of the saved medical readings."
+      "content": "health:Save blood glucose level of 105 mg/dL for F\u00e2nt\u00e2naru Eugenia.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -4574,7 +4784,7 @@
     },
     {
       "role": "model",
-      "content": "health:Save blood glucose level of 98 mg/dL to Agavriloaiei Mariana.\nquery:Print the summary of the saved medical readings."
+      "content": "health:Save blood glucose level of 98 mg/dL for Agavriloaiei Mariana.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -4588,7 +4798,7 @@
     },
     {
       "role": "model",
-      "content": "health:Save blood glucose level of 128 mg/dL to Glodeanu Razvan.\nquery:Print the summary of the saved medical readings."
+      "content": "health:Save blood glucose level of 128 mg/dL for Glodeanu Razvan.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -4602,7 +4812,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get date for today.\nuser-profile:Get my user name.\nhealth:Read medical records from today for my user name.\nquery:Print the summary of the medical readings."
+      "content": "time-service:Get the date for today.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:Print the summary of the medical readings."
     }
   ],
   [
@@ -4616,7 +4826,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get date for today.\nuser-profile:Get my user name.\nhealth:Read medical records from today for my user name.\nquery:Print the summary of the medical readings."
+      "content": "time-service:Get the date for today.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:Print the summary of the medical readings."
     }
   ],
   [
@@ -4626,53 +4836,11 @@
     },
     {
       "role": "user",
-      "content": "read today medical records for acatrinei ingrid"
+      "content": "list my health measurements"
     },
     {
       "role": "model",
-      "content": "time-service:Get date for today.\nhealth:Read medical records from today for Acatrinei Ingrid.\nquery:Print the summary of the medical readings."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "read medical records from september 10 for mihalache ioan"
-    },
-    {
-      "role": "model",
-      "content": "time-service:Get date for september 10.\nhealth:Read medical records from September 10, 2025 for Mihalache Ioan.\nquery:Print the summary of the medical readings."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "read medical records from 2022-11-13 for savulescu marcel"
-    },
-    {
-      "role": "model",
-      "content": "health:Read medical records from November 13, 2022 for Savulescu Marcel.\nquery:Print the summary of the medical readings."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "list health measurements"
-    },
-    {
-      "role": "model",
-      "content": "time-service:Get date for today.\nuser-profile:Get my user name.\nhealth:Read medical records from today for my user name.\nquery:Print the summary of the medical readings."
+      "content": "time-service:Get the date for today.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:Print the summary of the medical readings."
     }
   ],
   [
@@ -4686,7 +4854,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get date for today.\nuser-profile:Get my user name.\nhealth:Read medical records from today for my user name.\nquery:Print the summary of the medical readings."
+      "content": "time-service:Get the date for today.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:Print the summary of the medical readings."
     }
   ],
   [
@@ -4696,11 +4864,11 @@
     },
     {
       "role": "user",
-      "content": "health measurements"
+      "content": "my health measurements"
     },
     {
       "role": "model",
-      "content": "time-service:Get date for today.\nuser-profile:Get my user name.\nhealth:Read medical records from today for my user name.\nquery:Print the summary of the medical readings."
+      "content": "time-service:Get the date for today.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:Print the summary of the medical readings."
     }
   ],
   [
@@ -4710,11 +4878,11 @@
     },
     {
       "role": "user",
-      "content": "health records"
+      "content": "my health records"
     },
     {
       "role": "model",
-      "content": "time-service:Get date for today.\nuser-profile:Get my user name.\nhealth:Read medical records from today for my user name.\nquery:Print the summary of the medical readings."
+      "content": "time-service:Get the date for today.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:Print the summary of the medical readings."
     }
   ],
   [
@@ -4724,11 +4892,11 @@
     },
     {
       "role": "user",
-      "content": "health records from day before yesterday"
+      "content": "my health records from day before yesterday"
     },
     {
       "role": "model",
-      "content": "time-service:Get date for the day before yesterday.\nuser-profile:Get my user name.\nhealth:Read medical records from the day before yesterday for my user name.\nquery:Print the summary of the medical readings."
+      "content": "time-service:Get the date for the day before yesterday.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:Print the summary of the medical readings."
     }
   ],
   [
@@ -4738,11 +4906,11 @@
     },
     {
       "role": "user",
-      "content": "medical readings"
+      "content": "my medical readings"
     },
     {
       "role": "model",
-      "content": "time-service:Get date for today.\nuser-profile:Get my user name.\nhealth:Read medical records from today for my user name.\nquery:Print the summary of the medical readings."
+      "content": "time-service:Get the date for today.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:Print the summary of the medical readings."
     }
   ],
   [
@@ -4752,11 +4920,11 @@
     },
     {
       "role": "user",
-      "content": "display health readings"
+      "content": "display my health readings"
     },
     {
       "role": "model",
-      "content": "time-service:Get date for today.\nuser-profile:Get my user name.\nhealth:Read medical records from today for my user name.\nquery:Print the summary of the medical readings."
+      "content": "time-service:Get the date for today.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:Print the summary of the medical readings."
     }
   ],
   [
@@ -4766,11 +4934,11 @@
     },
     {
       "role": "user",
-      "content": "list today medical readings"
+      "content": "list my today medical readings"
     },
     {
       "role": "model",
-      "content": "time-service:Get date for today.\nuser-profile:Get my user name.\nhealth:Read medical records from today for my user name.\nquery:Print the summary of the medical readings."
+      "content": "time-service:Get the date for today.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:Print the summary of the medical readings."
     }
   ],
   [
@@ -4780,11 +4948,11 @@
     },
     {
       "role": "user",
-      "content": "yesterday health measurements"
+      "content": "my yesterday health measurements"
     },
     {
       "role": "model",
-      "content": "time-service:Get date for yesterday.\nuser-profile:Get my user name.\nhealth:Read medical records from yesterday for my user name.\nquery:Print the summary of the medical readings."
+      "content": "time-service:Get the date for yesterday.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:Print the summary of the medical readings."
     }
   ],
   [
@@ -4794,11 +4962,11 @@
     },
     {
       "role": "user",
-      "content": "yesterday medical readings"
+      "content": "my yesterday medical readings"
     },
     {
       "role": "model",
-      "content": "time-service:Get date for yesterday.\nuser-profile:Get my user name.\nhealth:Read medical records from yesterday for my user name.\nquery:Print the summary of the medical readings."
+      "content": "time-service:Get the date for yesterday.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:Print the summary of the medical readings."
     }
   ],
   [
@@ -4808,11 +4976,11 @@
     },
     {
       "role": "user",
-      "content": "yesterday medical records"
+      "content": "my yesterday medical records"
     },
     {
       "role": "model",
-      "content": "time-service:Get date for yesterday.\nuser-profile:Get my user name.\nhealth:Read medical records from yesterday for my user name.\nquery:Print the summary of the medical readings."
+      "content": "time-service:Get the date for yesterday.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:Print the summary of the medical readings."
     }
   ],
   [
@@ -4822,11 +4990,11 @@
     },
     {
       "role": "user",
-      "content": "medical readings from january 22"
+      "content": "my medical readings from january 22"
     },
     {
       "role": "model",
-      "content": "time-service:Get date for january 22.\nuser-profile:Get my user name.\nhealth:Read medical records from January 22, 2026 for my user name.\nquery:Print the summary of the medical readings."
+      "content": "time-service:Get the date for january 22.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:Print the summary of the medical readings."
     }
   ],
   [
@@ -4836,11 +5004,11 @@
     },
     {
       "role": "user",
-      "content": "health records from february 2"
+      "content": "my health records from february 2"
     },
     {
       "role": "model",
-      "content": "time-service:Get date for february 2.\nuser-profile:Get my user name.\nhealth:Read medical records from February 2, 2026 for my user name.\nquery:Print the summary of the medical readings."
+      "content": "time-service:Get the date for february 2.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:Print the summary of the medical readings."
     }
   ],
   [
@@ -4850,11 +5018,11 @@
     },
     {
       "role": "user",
-      "content": "health measurement in 2026-01-13"
+      "content": "my health measurement in 2026-01-13"
     },
     {
       "role": "model",
-      "content": "user-profile:Get my user name.\nhealth:Read medical records from January 13, 2026 for my user name.\nquery:Print the summary of the medical readings."
+      "content": "user-profile:Get my username.\nhealth:Read medical records from 2026-01-13 for ${username}.\nquery:Print the summary of the medical readings."
     }
   ],
   [
@@ -4864,11 +5032,11 @@
     },
     {
       "role": "user",
-      "content": "list health measurement in 2026-02-04"
+      "content": "list my health measurement in 2026-02-04"
     },
     {
       "role": "model",
-      "content": "user-profile:Get my user name.\nhealth:Read medical records from February 4, 2026 for my user name.\nquery:Print the summary of the medical readings."
+      "content": "user-profile:Get my username.\nhealth:Read medical records from 2026-02-04 for ${username}.\nquery:Print the summary of the medical readings."
     }
   ],
   [
@@ -4878,11 +5046,193 @@
     },
     {
       "role": "user",
-      "content": "print today medical records"
+      "content": "print my today medical records"
     },
     {
       "role": "model",
-      "content": "time-service:Get date for today.\nuser-profile:Get my user name.\nhealth:Read medical records from today for my user name.\nquery:Print the summary of the medical readings."
+      "content": "time-service:Get the date for today.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:Print the summary of the medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "read rotaru iulian medical records from today"
+    },
+    {
+      "role": "model",
+      "content": "time-service:Get the date for today.\nhealth:Read medical records from ${date} for Rotaru Iulian.\nquery:Print the summary of the medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "read medical records for gogalniceanu stefan"
+    },
+    {
+      "role": "model",
+      "content": "time-service:Get the date for today.\nhealth:Read medical records from ${date} for Gog\u0103lniceanu \u0218tefan.\nquery:Print the summary of the medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "read today medical records for acatrinei ingrid"
+    },
+    {
+      "role": "model",
+      "content": "time-service:Get the date for today.\nhealth:Read medical records from ${date} for Acatrinei Ingrid.\nquery:Print the summary of the medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "list health measurements for lontkowschi mirela petronela"
+    },
+    {
+      "role": "model",
+      "content": "time-service:Get the date for today.\nhealth:Read medical records from ${date} for Lontkowschi Mirela Petronela.\nquery:Print the summary of the medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "miron silvia health records from day before yesterday"
+    },
+    {
+      "role": "model",
+      "content": "time-service:Get the date for the day before yesterday.\nhealth:Read medical records from the ${date} for Miron Silvia.\nquery:Print the summary of the medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "readings from february 12 for cornea sorin"
+    },
+    {
+      "role": "model",
+      "content": "time-service:Get the date for february 12.\nhealth:Read medical records from ${date} for Cornea Sorin.\nquery:Print the summary of the medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "read medical records from september 10 for mihalache ioan"
+    },
+    {
+      "role": "model",
+      "content": "time-service:Get the date for september 10.\nhealth:Read medical records from ${date} for Mihalache Ioan.\nquery:Print the summary of the medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "read medical records from 2022-11-13 for savulescu marcel"
+    },
+    {
+      "role": "model",
+      "content": "health:Read medical records from 2022-11-13 for Savulescu Marcel.\nquery:Print the summary of the medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "print today medical records for gavriliu mihaela"
+    },
+    {
+      "role": "model",
+      "content": "time-service:Get the date for today.\nhealth:Read medical records from ${date} for Gavriliu Mihaela.\nquery:Print the summary of the medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "display pascaru radu health readings"
+    },
+    {
+      "role": "model",
+      "content": "time-service:Get the date for today.\nhealth:Read medical records from ${date} for Pascaru Radu.\nquery:Print the summary of the medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "yesterday medical readings of oprea lucian"
+    },
+    {
+      "role": "model",
+      "content": "time-service:Get the date for yesterday.\nhealth:Read medical records from ${date} for Oprea Lucian.\nquery:Print the summary of the medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "show health measurements of cubasa leonardo"
+    },
+    {
+      "role": "model",
+      "content": "time-service:Get the date for today.\nhealth:Read medical records from ${date} for Cubasa Leonardo.\nquery:Print the summary of the medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "list health measurement in 2026-02-04 of paduraru adrian"
+    },
+    {
+      "role": "model",
+      "content": "health:Read medical records from 2026-02-04 for Paduraru Adrian.\nquery:Print the summary of the medical readings."
     }
   ],
   [
@@ -4896,7 +5246,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get date for today.\nhealth:Read medical records from today for Avarvarei Ileana.\nquery:Print the summary of the medical readings."
+      "content": "time-service:Get the date for today.\nhealth:Read medical records from ${date} for Avarvarei Ileana.\nquery:Print the summary of the medical readings."
     }
   ],
   [
@@ -4910,7 +5260,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get date for today.\nuser-profile:Get my user name.\nhealth:Read medical records from today for my user name.\nconverter:Convert JSONL flat objects to markdown table.\nquery:Print the summary of medical readings as markdown table."
+      "content": "time-service:Get the date for today.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for my user name.\nconverter:Convert JSONL flat objects to markdown table.\nquery:Print the summary of medical readings as markdown table."
     }
   ],
   [
@@ -4924,7 +5274,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get date for today.\nhealth:Read medical records from today for Dorneanu Simona.\nconverter:Convert JSONL flat objects to markdown table.\nquery:Print the summary of medical readings as markdown table."
+      "content": "time-service:Get the date for today.\nhealth:Read medical records from ${date} for Dorneanu Simona.\nconverter:Convert JSONL flat objects to markdown table.\nquery:Print the summary of medical readings as markdown table."
     }
   ],
   [
@@ -4938,7 +5288,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get date for today.\nuser-profile:Get my user name.\nhealth:Read medical records from today for my user name.\nquery:Print the summary of the medical readings."
+      "content": "time-service:Get the date for today.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:Print the summary of the medical readings."
     }
   ],
   [
@@ -4952,7 +5302,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get date for this monday.\nuser-profile:Get my user name.\nhealth:Read medical records from this monday for my user name.\nquery:Print the summary of the medical readings."
+      "content": "time-service:Get the date for this monday.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:Print the summary of the medical readings."
     }
   ],
   [
@@ -4966,7 +5316,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get date for today.\nuser-profile:Get my user name.\nhealth:Read medical records from today for my user name.\nhealth:Evaluate medical readings.\nquery:Is there something wrong with my today medical readings?"
+      "content": "time-service:Get the date for today.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nhealth:Evaluate medical readings.\nquery:Is there something wrong with my today medical readings?"
     }
   ],
   [
@@ -4980,7 +5330,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get date for today.\nuser-profile:Get my user name.\nhealth:Read medical records from today for my user name.\nhealth:Evaluate medical readings.\nquery:Check my today medical readings."
+      "content": "time-service:Get the date for today.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nhealth:Evaluate medical readings.\nquery:Check my today medical readings."
     }
   ],
   [
@@ -4994,7 +5344,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get date for today.\nuser-profile:Get my user name.\nhealth:Read medical records from today for my user name.\nhealth:Evaluate medical readings.\nquery:Investigate today health records."
+      "content": "time-service:Get the date for today.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nhealth:Evaluate medical readings.\nquery:Investigate today health records."
     }
   ],
   [
@@ -5008,7 +5358,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get date for today.\nuser-profile:Get my user name.\nhealth:Read medical records from today for my user name.\nhealth:Evaluate medical readings.\nquery:Evaluate my medical records from today."
+      "content": "time-service:Get the date for today.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nhealth:Evaluate medical readings.\nquery:Evaluate my medical records from today."
     }
   ],
   [
@@ -5022,7 +5372,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get date for today.\nuser-profile:Get my user name.\nhealth:Read medical records from today for my user name.\nhealth:Evaluate medical readings.\nquery:What is your opinion about my medical readings from today?"
+      "content": "time-service:Get the date for today.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nhealth:Evaluate medical readings.\nquery:What is your opinion about my medical readings from today?"
     }
   ],
   [
@@ -5036,7 +5386,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get date for today.\nuser-profile:Get my user name.\nhealth:Read medical records from today for my user name.\nhealth:Evaluate medical readings.\nquery:Do you see problems on today health records?"
+      "content": "time-service:Get the date for today.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nhealth:Evaluate medical readings.\nquery:Do you see problems on today health records?"
     }
   ],
   [
@@ -5050,7 +5400,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get date for yesterday.\nuser-profile:Get my user name.\nhealth:Read medical records from today for my user name.\nhealth:Evaluate medical readings.\nquery:Analyze health readings from today?"
+      "content": "time-service:Get the date for yesterday.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nhealth:Evaluate medical readings.\nquery:Analyze health readings from today?"
     }
   ],
   [
@@ -5064,7 +5414,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get date for today.\nuser-profile:Get my user name.\nhealth:Read medical records from today for my user name.\nquery:Create a healthcare professional report based on the medical records."
+      "content": "time-service:Get the date for today.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:Create a healthcare professional report based on the medical records."
     }
   ],
   [
@@ -5078,7 +5428,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get date for today.\nuser-profile:Get my user name.\nhealth:Read medical records from today for my user name.\nquery:Create a healthcare professional report based on the medical records."
+      "content": "time-service:Get the date for today.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:Create a healthcare professional report based on the medical records."
     }
   ],
   [
@@ -5092,7 +5442,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get date for today.\nuser-profile:Get my user name.\nhealth:Read medical records from today for my user name.\nquery:Create a healthcare professional report based on the medical records."
+      "content": "time-service:Get the date for today.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:Create a healthcare professional report based on the medical records."
     }
   ],
   [
@@ -5106,7 +5456,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get date for today.\nuser-profile:Get my user name.\nhealth:Read medical records from today for my user name.\nquery:Create a healthcare professional report based on the medical records."
+      "content": "time-service:Get the date for today.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:Create a healthcare professional report based on the medical records."
     }
   ],
   [
@@ -5120,7 +5470,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get date for today.\nuser-profile:Get my user name.\nhealth:Read medical records from today for my user name.\nquery:Create a healthcare professional report based on the medical records."
+      "content": "time-service:Get the date for today.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:Create a healthcare professional report based on the medical records."
     }
   ],
   [
@@ -5134,7 +5484,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get date for today.\nuser-profile:Get my user name.\nhealth:Read medical records from today for my user name.\nquery:Create a healthcare professional report based on the medical records."
+      "content": "time-service:Get the date for today.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:Create a healthcare professional report based on the medical records."
     }
   ],
   [
@@ -5148,7 +5498,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get date for today.\nuser-profile:Get my user name.\nhealth:Read medical records from today for my user name.\nquery:Create a healthcare professional report based on the medical records."
+      "content": "time-service:Get the date for today.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:Create a healthcare professional report based on the medical records."
     }
   ],
   [
@@ -5162,7 +5512,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my user name.\nhealth:Read medical records from January 12, 2026 for my user name.\nquery:Create a healthcare professional report based on the medical records."
+      "content": "user-profile:Get my username.\nhealth:Read medical records from 2026-01-12 for ${username}.\nquery:Create a healthcare professional report based on the medical records."
     }
   ],
   [
@@ -5176,7 +5526,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my user name.\nhealth:Read medical records from March 15, 2025 for my user name.\nquery:Create a healthcare professional report based on the medical records."
+      "content": "user-profile:Get my username.\nhealth:Read medical records from 2025-03-15 for ${username}.\nquery:Create a healthcare professional report based on the medical records."
     }
   ],
   [
@@ -5190,7 +5540,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my user name.\nhealth:Read medical records from December 1, 2025 for my user name.\nquery:Create a healthcare professional report based on the medical records."
+      "content": "user-profile:Get my username.\nhealth:Read medical records from 2025-12-01 for ${username}.\nquery:Create a healthcare professional report based on the medical records."
     }
   ],
   [
@@ -5204,7 +5554,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my user name.\nhealth:Read medical records from November 12, 2024 for my user name.\nquery:Create a healthcare professional report based on the medical records."
+      "content": "user-profile:Get my username.\nhealth:Read medical records from 2024-11-12 for ${username}.\nquery:Create a healthcare professional report based on the medical records."
     }
   ],
   [
@@ -5288,7 +5638,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my height.\nhealth:Calculate body mass index for a weight of 86.50 kg and my height.\nquery:Print computed body mass index."
+      "content": "user-profile:Get my height.\nhealth:Calculate body mass index for a weight of 86.50 kg and height of ${height} cm.\nquery:Print computed body mass index."
     }
   ],
   [
@@ -5302,7 +5652,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my height.\nhealth:Calculate body mass index for a weight of 85.00 kg and my height.\nquery:Print computed body mass index."
+      "content": "user-profile:Get my height.\nhealth:Calculate body mass index for a weight of 85.00 kg and height of ${height} cm.\nquery:Print computed body mass index."
     }
   ],
   [
@@ -5316,7 +5666,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my height.\nhealth:Calculate body mass index for a weight of 92.00 kg and my height.\nquery:Print computed body mass index."
+      "content": "user-profile:Get my height.\nhealth:Calculate body mass index for a weight of 92.00 kg and height of ${height} cm.\nquery:Print computed body mass index."
     }
   ],
   [
@@ -5330,7 +5680,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my height.\nhealth:Calculate body mass index for a weight of 73.50 kg and my height.\nquery:What is my BMI for a weight of 73.5 kg?"
+      "content": "user-profile:Get my height.\nhealth:Calculate body mass index for a weight of 73.50 kg and height of ${height} cm.\nquery:What is my BMI for a weight of 73.5 kg?"
     }
   ],
   [
@@ -5344,7 +5694,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my height.\nhealth:Calculate body mass index for a weight of 78.00 kg and my height.\nquery:What would my BMI be for a weight of 78 kg?"
+      "content": "user-profile:Get my height.\nhealth:Calculate body mass index for a weight of 78.00 kg and height of ${height} cm.\nquery:What would my BMI be for a weight of 78 kg?"
     }
   ],
   [
@@ -5358,7 +5708,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my height.\nhealth:Calculate body mass index for a weight of 77.00 kg and my height.\nquery:What would my body mass index be if I weighed 77 kg?"
+      "content": "user-profile:Get my height.\nhealth:Calculate body mass index for a weight of 77.00 kg and height of ${height} cm.\nquery:What would my body mass index be if I weighed 77 kg?"
     }
   ],
   [
@@ -5526,7 +5876,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my location.\nweather:Get current weather in my location.\nquery:How is the weather?"
+      "content": "user-profile:Get my location.\nweather:Get current weather in ${location}.\nquery:How is the weather?"
     }
   ],
   [
@@ -5540,7 +5890,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my location.\nweather:Get current weather in my location.\nquery:How is the weather right now?"
+      "content": "user-profile:Get my location.\nweather:Get current weather in ${location}.\nquery:How is the weather right now?"
     }
   ],
   [
@@ -5554,7 +5904,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my location.\nweather:Get current weather in my location.\nquery:How is the weather outside?"
+      "content": "user-profile:Get my location.\nweather:Get current weather in ${location}.\nquery:How is the weather outside?"
     }
   ],
   [
@@ -5610,7 +5960,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my location.\nweather:Get current weather in my location.\nquery:Check weather."
+      "content": "user-profile:Get my location.\nweather:Get current weather in ${location}.\nquery:Check weather."
     }
   ],
   [
@@ -5652,7 +6002,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my location.\nweather:Get current weather in my location.\nquery:How is outdoor?"
+      "content": "user-profile:Get my location.\nweather:Get current weather in ${location}.\nquery:How is outdoor?"
     }
   ],
   [
@@ -5694,7 +6044,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my location.\nweather:Get current weather in my location.\nquery:How's outside?"
+      "content": "user-profile:Get my location.\nweather:Get current weather in ${location}.\nquery:How's outside?"
     }
   ],
   [
@@ -5708,7 +6058,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my location.\nweather:Get current weather in my location.\nquery:How cold is out there?"
+      "content": "user-profile:Get my location.\nweather:Get current weather in ${location}.\nquery:How cold is out there?"
     }
   ],
   [
@@ -5722,7 +6072,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my location.\nweather:Get current weather in my location.\nquery:How cold is out there in this moment?"
+      "content": "user-profile:Get my location.\nweather:Get current weather in ${location}.\nquery:How cold is out there in this moment?"
     }
   ],
   [
@@ -5736,7 +6086,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my location.\nweather:Get current weather in my location.\nquery:How warm is outside?"
+      "content": "user-profile:Get my location.\nweather:Get current weather in ${location}.\nquery:How warm is outside?"
     }
   ],
   [
@@ -5806,7 +6156,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my location.\nweather:Get current weather in my location.\nquery:Is it raining? Should I take my umbrella?"
+      "content": "user-profile:Get my location.\nweather:Get current weather in ${location}.\nquery:Is it raining? Should I take my umbrella?"
     }
   ],
   [
@@ -5820,7 +6170,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my location.\nweather:Get current weather in my location.\nquery:Can I go for a bike ride?"
+      "content": "user-profile:Get my location.\nweather:Get current weather in ${location}.\nquery:Can I go for a bike ride?"
     }
   ],
   [
@@ -5834,7 +6184,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my location.\nweather:Get current weather in my location.\nquery:Can I go for a bike ride?"
+      "content": "user-profile:Get my location.\nweather:Get current weather in ${location}.\nquery:Can I go for a bike ride?"
     }
   ],
   [
@@ -5848,7 +6198,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my location.\nweather:Get current weather in my location.\nquery:Is fine out there for a bike?"
+      "content": "user-profile:Get my location.\nweather:Get current weather in ${location}.\nquery:Is fine out there for a bike?"
     }
   ],
   [
@@ -5862,7 +6212,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my location.\nweather:Get current weather in my location.\nquery:What do you think about a short stroll? Doable?"
+      "content": "user-profile:Get my location.\nweather:Get current weather in ${location}.\nquery:What do you think about a short stroll? Doable?"
     }
   ],
   [
@@ -5904,7 +6254,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for today in my location.\nquery:Print hourly weather forecast in tabular form."
+      "content": "time-service:Get the date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Print hourly weather forecast in tabular form."
     }
   ],
   [
@@ -5918,7 +6268,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get date for today.\nweather:Get hourly weather forecast for today in Paris, France.\nquery:Print hourly weather forecast in tabular form."
+      "content": "time-service:Get the date for today.\nweather:Get hourly weather forecast for ${date} in Paris, France.\nquery:Print hourly weather forecast in tabular form."
     }
   ],
   [
@@ -5932,7 +6282,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get date for today.\nweather:Get hourly weather forecast for today in Bucharest, Romania.\nquery:Print hourly weather forecast in tabular form."
+      "content": "time-service:Get the date for today.\nweather:Get hourly weather forecast for ${date} in Bucharest, Romania.\nquery:Print hourly weather forecast in tabular form."
     }
   ],
   [
@@ -5946,7 +6296,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for today in my location.\nquery:Print hourly weather forecast in tabular form."
+      "content": "time-service:Get the date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Print hourly weather forecast in tabular form."
     }
   ],
   [
@@ -5960,7 +6310,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for today in my location.\nquery:Print hourly weather forecast in tabular form."
+      "content": "time-service:Get the date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Print hourly weather forecast in tabular form."
     }
   ],
   [
@@ -5974,7 +6324,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for today in my location.\nquery:Print hourly weather forecast in tabular form."
+      "content": "time-service:Get the date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Print hourly weather forecast in tabular form."
     }
   ],
   [
@@ -5988,7 +6338,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for today in my location.\nquery:Print hourly weather forecast in tabular form."
+      "content": "time-service:Get the date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Print hourly weather forecast in tabular form."
     }
   ],
   [
@@ -6002,7 +6352,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for today in my location.\nquery:Print hourly weather forecast in tabular form."
+      "content": "time-service:Get the date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Print hourly weather forecast in tabular form."
     }
   ],
   [
@@ -6016,7 +6366,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for today in my location.\nquery:Print hourly weather forecast in tabular form."
+      "content": "time-service:Get the date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Print hourly weather forecast in tabular form."
     }
   ],
   [
@@ -6030,7 +6380,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get date for today.\nweather:Get hourly weather forecast for today in Deprecen, Slovakia.\nquery:Print hourly weather forecast in tabular form."
+      "content": "time-service:Get the date for today.\nweather:Get hourly weather forecast for ${date} in Deprecen, Slovakia.\nquery:Print hourly weather forecast in tabular form."
     }
   ],
   [
@@ -6044,7 +6394,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for today in my location.\nquery:Print hourly weather forecast in tabular form."
+      "content": "time-service:Get the date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Print hourly weather forecast in tabular form."
     }
   ],
   [
@@ -6058,7 +6408,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for today in my location.\nquery:Print hourly weather forecast in tabular form."
+      "content": "time-service:Get the date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Print hourly weather forecast in tabular form."
     }
   ],
   [
@@ -6072,7 +6422,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get date for today.\nweather:Get hourly weather forecast for today in Valea Lupului, Romania.\nquery:Print hourly weather forecast in tabular form."
+      "content": "time-service:Get the date for today.\nweather:Get hourly weather forecast for ${date} in Valea Lupului, Romania.\nquery:Print hourly weather forecast in tabular form."
     }
   ],
   [
@@ -6086,7 +6436,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for today in my location.\nquery:Print hourly weather forecast in tabular form."
+      "content": "time-service:Get the date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Print hourly weather forecast in tabular form."
     }
   ],
   [
@@ -6100,7 +6450,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get date for today.\nweather:Get hourly weather forecast for today in Sculeni, Ia\u0219i, Rom\u00e2nia.\nquery:Print hourly weather forecast in tabular form."
+      "content": "time-service:Get the date for today.\nweather:Get hourly weather forecast for ${date} in Sculeni, Ia\u0219i, Rom\u00e2nia.\nquery:Print hourly weather forecast in tabular form."
     }
   ],
   [
@@ -6114,7 +6464,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get date for today.\nweather:user-profile:Get my location.\nGet hourly weather forecast for today in my location.\nquery:Print hourly weather forecast in tabular form."
+      "content": "time-service:Get the date for today.\nweather:user-profile:Get my location.\nGet hourly weather forecast for ${date} in ${location}.\nquery:Print hourly weather forecast in tabular form."
     }
   ],
   [
@@ -6128,7 +6478,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for today in my location.\nquery:Print hourly weather forecast in tabular form."
+      "content": "time-service:Get the date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Print hourly weather forecast in tabular form."
     }
   ],
   [
@@ -6142,7 +6492,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get date for today.\nweather:Get hourly weather forecast for today in Chicirea, Ia\u0219i, Romania.\nquery:Print hourly weather forecast in tabular form."
+      "content": "time-service:Get the date for today.\nweather:Get hourly weather forecast for ${date} in Chicirea, Ia\u0219i, Romania.\nquery:Print hourly weather forecast in tabular form."
     }
   ],
   [
@@ -6156,7 +6506,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for today in my location.\nquery:Summarize weather forecast for today."
+      "content": "time-service:Get the date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Summarize weather forecast for today."
     }
   ],
   [
@@ -6170,7 +6520,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get date for today.\nweather:Get hourly weather forecast for today in Sibiu, Romania.\nquery:Summarize weather forecast for today in Sibiu, Romania."
+      "content": "time-service:Get the date for today.\nweather:Get hourly weather forecast for ${date} in Sibiu, Romania.\nquery:Summarize weather forecast for today in Sibiu, Romania."
     }
   ],
   [
@@ -6184,7 +6534,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for today in my location.\nquery:Create a summary of today weather."
+      "content": "time-service:Get the date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Create a summary of today weather."
     }
   ],
   [
@@ -6198,7 +6548,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for today in my location.\nquery:Create a summary of today weather forecast."
+      "content": "time-service:Get the date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Create a summary of today weather forecast."
     }
   ],
   [
@@ -6212,7 +6562,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for today in my location.\nquery:Today forecast summary."
+      "content": "time-service:Get the date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Today forecast summary."
     }
   ],
   [
@@ -6226,7 +6576,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for today in my location.\nquery:Get today forecast summary in my location."
+      "content": "time-service:Get the date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Get today forecast summary in my location."
     }
   ],
   [
@@ -6240,7 +6590,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for today in my location.\nquery:Get today weather forecast and create a summary."
+      "content": "time-service:Get the date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Get today weather forecast and create a summary."
     }
   ],
   [
@@ -6254,7 +6604,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get date for today.\nweather:Get hourly weather forecast for today in Focsani, Romania.\nquery:Today forecast summary for Focsani, Romania."
+      "content": "time-service:Get the date for today.\nweather:Get hourly weather forecast for ${date} in Focsani, Romania.\nquery:Today forecast summary for Focsani, Romania."
     }
   ],
   [
@@ -6268,7 +6618,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for today in my location.\nquery:Print today weather forecast in condensed format."
+      "content": "time-service:Get the date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Print today weather forecast in condensed format."
     }
   ],
   [
@@ -6282,7 +6632,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for today in my location.\nquery:Write concise weather forecast for today."
+      "content": "time-service:Get the date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Write concise weather forecast for today."
     }
   ],
   [
@@ -6296,7 +6646,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for today in my location.\nquery:Brief today weather forecast."
+      "content": "time-service:Get the date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Brief today weather forecast."
     }
   ],
   [
@@ -6310,7 +6660,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for today in my location.\nquery:Essential aspects of today weather forecast."
+      "content": "time-service:Get the date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Essential aspects of today weather forecast."
     }
   ],
   [
@@ -6324,7 +6674,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for today in my location.\nquery:Summarize hourly forecast for today."
+      "content": "time-service:Get the date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Summarize hourly forecast for today."
     }
   ],
   [
@@ -6338,7 +6688,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for today in my location.\nquery:How will be weather today? Please use a summarized format."
+      "content": "time-service:Get the date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:How will be weather today? Please use a summarized format."
     }
   ],
   [
@@ -6352,7 +6702,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for today in my location.\nquery:Display a summary of today forecast."
+      "content": "time-service:Get the date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Display a summary of today forecast."
     }
   ],
   [
@@ -6366,7 +6716,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for today in my location.\nquery:Display today forecast summary."
+      "content": "time-service:Get the date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Display today forecast summary."
     }
   ],
   [
@@ -6380,7 +6730,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get date for today.\nweather:Get hourly weather forecast for today in Chicirea, Ia\u0219i, Romania.\nquery:Display a today summary of forecast in Chicirea, Ia\u0219i, Romania."
+      "content": "time-service:Get the date for today.\nweather:Get hourly weather forecast for ${date} in Chicirea, Ia\u0219i, Romania.\nquery:Display a today summary of forecast in Chicirea, Ia\u0219i, Romania."
     }
   ],
   [
@@ -6394,7 +6744,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for today in my location.\nquery:Do I need a rain coat today?"
+      "content": "time-service:Get the date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Do I need a rain coat today?"
     }
   ],
   [
@@ -6408,7 +6758,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for today in my location.\nquery:Will I need an umbrella today?"
+      "content": "time-service:Get the date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Will I need an umbrella today?"
     }
   ],
   [
@@ -6422,7 +6772,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for today in my location.\nquery:Shall I get an umbrella this afternoon?"
+      "content": "time-service:Get the date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Shall I get an umbrella this afternoon?"
     }
   ],
   [
@@ -6436,7 +6786,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for today in my location.\nquery:Do we have rainy prognosis today? To take my umbrella with me?"
+      "content": "time-service:Get the date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Do we have rainy prognosis today? To take my umbrella with me?"
     }
   ],
   [
@@ -6450,7 +6800,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for today in my location.\nquery:Is there an hour today good for walking?"
+      "content": "time-service:Get the date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Is there an hour today good for walking?"
     }
   ],
   [
@@ -6464,7 +6814,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for today in my location.\nquery:Will we have heavy snow today?"
+      "content": "time-service:Get the date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Will we have heavy snow today?"
     }
   ],
   [
@@ -6478,7 +6828,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for today in my location.\nquery:When could I go for a short walk today?"
+      "content": "time-service:Get the date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:When could I go for a short walk today?"
     }
   ],
   [
@@ -6492,7 +6842,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for today in my location.\nquery:When is more appropriate for a short stroll today?"
+      "content": "time-service:Get the date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:When is more appropriate for a short stroll today?"
     }
   ],
   [
@@ -6506,7 +6856,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for today in my location.\nquery:When is the best time for a short walk today?"
+      "content": "time-service:Get the date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:When is the best time for a short walk today?"
     }
   ],
   [
@@ -6520,7 +6870,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for today in my location.\nquery:When can I ride my bike to the mall today?"
+      "content": "time-service:Get the date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:When can I ride my bike to the mall today?"
     }
   ],
   [
@@ -6534,7 +6884,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for today in my location.\nquery:What time can I go to the mall by bike today?"
+      "content": "time-service:Get the date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:What time can I go to the mall by bike today?"
     }
   ],
   [
@@ -6548,7 +6898,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for today in my location.\nquery:What's it like outside? Do I need warm clothes?"
+      "content": "time-service:Get the date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:What's it like outside? Do I need warm clothes?"
     }
   ],
   [
@@ -6562,7 +6912,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for today in my location.\nquery:Do I need thick clothes to go to the store?"
+      "content": "time-service:Get the date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Do I need thick clothes to go to the store?"
     }
   ],
   [
@@ -6576,7 +6926,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for today in my location.\nquery:Around what times of this day can I carry out outdoor activities?"
+      "content": "time-service:Get the date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Around what times of this day can I carry out outdoor activities?"
     }
   ],
   [
@@ -6590,7 +6940,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for today in my location.\nquery:I have some work to do outside today. When could I do it?"
+      "content": "time-service:Get the date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:I have some work to do outside today. When could I do it?"
     }
   ],
   [
@@ -6604,7 +6954,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for the next two weeks in my location.\nquery:Print daily weather forecast in tabular form."
+      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for the next two weeks in ${location}.\nquery:Print daily weather forecast in tabular form."
     }
   ],
   [
@@ -6618,7 +6968,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for the next two weeks in my location.\nquery:Print daily weather forecast in tabular form."
+      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for the next two weeks in ${location}.\nquery:Print daily weather forecast in tabular form."
     }
   ],
   [
@@ -6632,7 +6982,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for the next two weeks in my location.\nquery:Print daily weather forecast in tabular form."
+      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for the next two weeks in ${location}.\nquery:Print daily weather forecast in tabular form."
     }
   ],
   [
@@ -6646,7 +6996,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for the next two weeks in my location.\nquery:Print daily weather forecast in tabular form."
+      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for the next two weeks in ${location}.\nquery:Print daily weather forecast in tabular form."
     }
   ],
   [
@@ -6674,7 +7024,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for the next two weeks in my location.\nquery:Print daily weather forecast in tabular form."
+      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for the next two weeks in ${location}.\nquery:Print daily weather forecast in tabular form."
     }
   ],
   [
@@ -6688,7 +7038,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for the next two weeks in my location.\nquery:Print daily weather forecast in tabular form."
+      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for the next two weeks in ${location}.\nquery:Print daily weather forecast in tabular form."
     }
   ],
   [
@@ -6702,7 +7052,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for next week in my location.\nquery:Print daily weather forecast in tabular form."
+      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for next week in ${location}.\nquery:Print daily weather forecast in tabular form."
     }
   ],
   [
@@ -6716,7 +7066,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for this week in my location.\nquery:Print daily weather forecast in tabular form."
+      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for this week in ${location}.\nquery:Print daily weather forecast in tabular form."
     }
   ],
   [
@@ -6730,7 +7080,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for this week, in my location.\nquery:Print daily weather forecast in tabular form."
+      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for this week, in ${location}.\nquery:Print daily weather forecast in tabular form."
     }
   ],
   [
@@ -6772,7 +7122,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for this week in my location.\nquery:Print daily weather forecast in tabular form."
+      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for this week in ${location}.\nquery:Print daily weather forecast in tabular form."
     }
   ],
   [
@@ -6786,7 +7136,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for this week in my location.\nquery:Print daily weather forecast in tabular form."
+      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for this week in ${location}.\nquery:Print daily weather forecast in tabular form."
     }
   ],
   [
@@ -6800,7 +7150,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for the next two weeks in my location.\nquery:Print daily weather forecast in tabular form."
+      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for the next two weeks in ${location}.\nquery:Print daily weather forecast in tabular form."
     }
   ],
   [
@@ -6828,7 +7178,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for the next 3 days in my location.\nquery:Print daily weather forecast in tabular form."
+      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for the next 3 days in ${location}.\nquery:Print daily weather forecast in tabular form."
     }
   ],
   [
@@ -6842,7 +7192,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for the next 5 days in my location.\nquery:Print daily weather forecast in tabular form."
+      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for the next 5 days in ${location}.\nquery:Print daily weather forecast in tabular form."
     }
   ],
   [
@@ -6870,7 +7220,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for the next 4 days in my location.\nquery:Print daily weather forecast in tabular form."
+      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for the next 4 days in ${location}.\nquery:Print daily weather forecast in tabular form."
     }
   ],
   [
@@ -6898,7 +7248,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for the next 10 days in my location.\nquery:Print daily weather forecast in tabular form."
+      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for the next 10 days in ${location}.\nquery:Print daily weather forecast in tabular form."
     }
   ],
   [
@@ -6926,7 +7276,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for the next two weeks in my location?\nquery:Recommend one day in the next two weeks for some outdoor activities."
+      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for the next two weeks in ${location}?\nquery:Recommend one day in the next two weeks for some outdoor activities."
     }
   ],
   [
@@ -6940,7 +7290,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for the next two weeks in my location?\nquery:Give me a day in the next 2 weeks when we can plant some trees."
+      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for the next two weeks in ${location}?\nquery:Give me a day in the next 2 weeks when we can plant some trees."
     }
   ],
   [
@@ -6954,7 +7304,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for the next week in my location?\nquery:Can we go swimming this weekend?"
+      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for the next week in ${location}?\nquery:Can we go swimming this weekend?"
     }
   ],
   [
@@ -6968,7 +7318,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for the next two weeks in my location?\nquery:I would need two full days without rain this week, to paint the fence."
+      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for the next two weeks in ${location}?\nquery:I would need two full days without rain this week, to paint the fence."
     }
   ],
   [
@@ -6982,7 +7332,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for the next two weeks in my location?\nquery:When we might have a few good days for gardening in the coming period?"
+      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for the next two weeks in ${location}?\nquery:When we might have a few good days for gardening in the coming period?"
     }
   ],
   [
@@ -6996,7 +7346,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for the next two weeks in my location?\nquery:I would need 3-4 days without rain to repair the roof."
+      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for the next two weeks in ${location}?\nquery:I would need 3-4 days without rain to repair the roof."
     }
   ],
   [
@@ -7010,7 +7360,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for the next two weeks in my location?\nquery:Choose two days of good weather to fix the exterior walls."
+      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for the next two weeks in ${location}?\nquery:Choose two days of good weather to fix the exterior walls."
     }
   ],
   [
@@ -7024,7 +7374,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for the next two weeks in my location?\nquery:Four consecutive days without rain to replace the outside plaster."
+      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for the next two weeks in ${location}?\nquery:Four consecutive days without rain to replace the outside plaster."
     }
   ],
   [
@@ -7038,7 +7388,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for the next two weeks in my location?\nquery:I may need to upgrade the greenhouse. I've estimated a 3 day effort. When can we schedule this in the next two weeks?"
+      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for the next two weeks in ${location}?\nquery:I may need to upgrade the greenhouse. I've estimated a 3 day effort. When can we schedule this in the next two weeks?"
     }
   ],
   [
@@ -9316,7 +9666,7 @@
     },
     {
       "role": "user",
-      "content": "can this rust regex pattern r\"(?s)(^get\\s+.+\\s+user).*\" match the user prompt: Get my user name."
+      "content": "can this rust regex pattern r\"(?s)(^get\\s+.+\\s+user).*\" match the user prompt: Get my username."
     },
     {
       "role": "model",

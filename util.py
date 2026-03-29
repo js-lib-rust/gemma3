@@ -109,12 +109,14 @@ def parse_gemma_function_response(text):
                 return {'true': True, 'false': False}.get(v.lower(), v.strip("'\""))
 
     return [{
+        "agent": agent,
         "name": name,
         "arguments": {
             k: cast((v1 or v2).strip())
             for k, v1, v2 in re.findall(r"(\w+):(?:<escape>(.*?)<escape>|([^,}]*))", args)
         }
-    } for name, args in re.findall(r"<start_function_call>call:(\w+)\{(.*?)}<end_function_call>", text, re.DOTALL)]
+    } for agent, name, args in
+        re.findall(r"<start_function_call>call:([^_]+)_(\w+)\{(.*?)}<end_function_call>", text, re.DOTALL)]
 
 
 # ---------------------------------------------------------

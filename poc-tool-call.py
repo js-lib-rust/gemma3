@@ -52,14 +52,14 @@ print("tools:")
 [print(f"- {tool}") for tool in tools]
 
 with open("data/tool/hera.train.jsonl", 'r', encoding='UTF-8') as file:
-    function_list = [json.loads(line) for line in file if line.strip()]
+    function_list = [json.loads(line) for line in file if line.strip() and not line.startswith("/*")]
 dataset = Dataset.from_list(function_list)
 dataset = dataset.map(create_conversation)
 print()
-print(f"messages: {dataset['messages'][0]}")
+# print(f"messages: {dataset['messages'][0]}")
 
 text = processor.apply_chat_template(dataset['messages'][0], tools=tools, tokenize=False)
-print(text)
+# print(text)
 
 tools_prompt = """<bos>\
 start_of_turn>developer
@@ -86,8 +86,7 @@ What is the reimbursement limit for travel meals?<end_of_turn>
 
 text = """<bos>\
 start_of_turn>developer
-You are a model that can do function calling with the following functions\
-<start_function_declaration>declaration:search_knowledge_base{\
+You are a model that can do function calling with the following functions<start_function_declaration>declaration:search_knowledge_base{\
 description:<escape>Search internal company documents, policies and project data.<escape>,\
 parameters:{properties:{query:{description:<escape>query string<escape>,type:<escape>STRING<escape>}},\
 required:[<escape>query<escape>],type:<escape>OBJECT<escape>}}<end_function_declaration>\
@@ -101,9 +100,15 @@ What is the reimbursement limit for travel meals?<end_of_turn>
 """
 
 text = """<bos><start_of_turn>developer
-You are a model that can do function calling with the following functions<start_function_declaration>declaration:hera_describe_device{description:<escape>Create a detailed description of the requested device.<escape>,parameters:{properties:{device:{description:<escape>device name is a required string parameter; if is missing do not invoke any function but return error message.<escape>,type:<escape>STRING<escape>}},required:[<escape>device<escape>],type:<escape>OBJECT<escape>}}<end_function_declaration><start_function_declaration>declaration:hera_get_device_actions{description:<escape>Retrieves the actions supported by a device.<escape>,parameters:{properties:{device:{description:<escape>device name is a required string parameter; if is missing do not invoke any function but return error message.<escape>,type:<escape>STRING<escape>}},required:[<escape>device<escape>],type:<escape>OBJECT<escape>}}<end_function_declaration><start_function_declaration>declaration:hera_get_heating_state{description:<escape>Get central heating state.<escape>,parameters:{type:<escape>OBJECT<escape>}}<end_function_declaration><start_function_declaration>declaration:hera_list_devices{description:<escape>List all devices registered to HERA.<escape>,parameters:{type:<escape>OBJECT<escape>}}<end_function_declaration><start_function_declaration>declaration:hera_read_humidity{description:<escape>Read current humidity.<escape>,parameters:{type:<escape>OBJECT<escape>}}<end_function_declaration><start_function_declaration>declaration:hera_read_sensors{description:<escape>Read all registered sensors.<escape>,parameters:{type:<escape>OBJECT<escape>}}<end_function_declaration><start_function_declaration>declaration:hera_read_temperature{description:<escape>Retrieves the current temperature reading from a specified zone within the home. If zone name parameter is not present into user prompt, use living room as default.<escape>,parameters:{properties:{zone:{description:<escape>is the location where the devices are placed; if you cannot determine the zone from user prompt use living room as default value.<escape>,type:<escape>STRING<escape>}},required:[<escape>zone<escape>],type:<escape>OBJECT<escape>}}<end_function_declaration><start_function_declaration>declaration:hera_run_diagnose{description:<escape>Check that a device is running properly and is reacheable and return a diagnose report.<escape>,parameters:{properties:{device:{description:<escape>device name is a required string parameter; if is missing do not invoke any function but return error message.<escape>,type:<escape>STRING<escape>}},required:[<escape>device<escape>],type:<escape>OBJECT<escape>}}<end_function_declaration><start_function_declaration>declaration:hera_start_heating{description:<escape>Start central heating.<escape>,parameters:{type:<escape>OBJECT<escape>}}<end_function_declaration><start_function_declaration>declaration:hera_stop_heating{description:<escape>Stop central heating.<escape>,parameters:{type:<escape>OBJECT<escape>}}<end_function_declaration><end_of_turn>
+You are a model that can do function calling with the following tools. Use variables from context data for arguments:
+
+Context:
+${my-room} = living room
+
+Tools:
+<start_function_declaration>declaration:hera_describe_device{description:<escape>Create a detailed description of the requested device.<escape>,parameters:{properties:{device:{description:<escape>device name is a required string parameter; if is missing do not invoke any function but return error message.<escape>,type:<escape>STRING<escape>}},required:[<escape>device<escape>],type:<escape>OBJECT<escape>}}<end_function_declaration><start_function_declaration>declaration:hera_get_device_actions{description:<escape>Retrieves the actions supported by a device.<escape>,parameters:{properties:{device:{description:<escape>device name is a required string parameter; if is missing do not invoke any function but return error message.<escape>,type:<escape>STRING<escape>}},required:[<escape>device<escape>],type:<escape>OBJECT<escape>}}<end_function_declaration><start_function_declaration>declaration:hera_get_heating_state{description:<escape>Get central heating state.<escape>,parameters:{type:<escape>OBJECT<escape>}}<end_function_declaration><start_function_declaration>declaration:hera_list_devices{description:<escape>List all devices registered to HERA.<escape>,parameters:{type:<escape>OBJECT<escape>}}<end_function_declaration><start_function_declaration>declaration:hera_read_humidity{description:<escape>Read current humidity.<escape>,parameters:{type:<escape>OBJECT<escape>}}<end_function_declaration><start_function_declaration>declaration:hera_read_sensors{description:<escape>Read all registered sensors.<escape>,parameters:{type:<escape>OBJECT<escape>}}<end_function_declaration><start_function_declaration>declaration:hera_read_temperature{description:<escape>Retrieves the current temperature reading from a specified zone within the home. If zone name parameter is not present into user prompt, use living room as default.<escape>,parameters:{properties:{zone:{description:<escape>is the location where the devices are placed; if you cannot determine the zone from user prompt use living room as default value.<escape>,type:<escape>STRING<escape>}},required:[<escape>zone<escape>],type:<escape>OBJECT<escape>}}<end_function_declaration><start_function_declaration>declaration:hera_run_diagnose{description:<escape>Check that a device is running properly and is reacheable and return a diagnose report.<escape>,parameters:{properties:{device:{description:<escape>device name is a required string parameter; if is missing do not invoke any function but return error message.<escape>,type:<escape>STRING<escape>}},required:[<escape>device<escape>],type:<escape>OBJECT<escape>}}<end_function_declaration><start_function_declaration>declaration:hera_start_heating{description:<escape>Start central heating.<escape>,parameters:{type:<escape>OBJECT<escape>}}<end_function_declaration><start_function_declaration>declaration:hera_stop_heating{description:<escape>Stop central heating.<escape>,parameters:{type:<escape>OBJECT<escape>}}<end_function_declaration><end_of_turn>
 <start_of_turn>user
-get living room temperature<end_of_turn>
+Read the temperature sensor in ${my-room}.<end_of_turn>
 <start_of_turn>model"""
 
 streamer = TextStreamer(processor)
@@ -120,7 +125,9 @@ config = {
     #'cache_implementation': "static"
 }
 
-for _ in range(10):
+print()
+print(f"text: {text}")
+for _ in range(1):
     print()
     print("Generating function call")
     start_time = time.time()

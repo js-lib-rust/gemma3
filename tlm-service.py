@@ -103,7 +103,15 @@ async def handle_slm_request(request):
 
             if tools:
                 # <start_function_call>call:hera_read_temperature{zone:<escape>living room<escape>}<end_function_call>
-                function = util.parse_gemma_function_response(output_text)[0]
+                function_call = output_text[0]
+                if not function_call.startswith("<start_function_call>call:"):
+                    function = {
+                        "agent": "unknown",
+                        "name": "unknown",
+                        "arguments": {}
+                    }
+                else:
+                    function = util.parse_gemma_function_response(output_text)[0]
 
                 response.append({
                     "function": function,

@@ -1,4 +1,10 @@
 # Save blood pressure measurement of 124/88 mmHg and heart rate of 75 bpm for Rotaru Iulian.
+from dataclasses import dataclass
+from typing import List
+
+from pydantic import BaseModel, Field
+
+
 def health_save_blood_measurement(person: str, systole: int, diastole: int, pulse: int):
     """
     Save person blood pressure and cardiac pulse in the medical database. Also compute pulse pressure as difference between systolic and diastolic pressures.
@@ -52,5 +58,44 @@ def health_read_medical_records(person: str, date: str):
 
     Args:
         person: human-readable person name, unique per medical database.
-        date: the past date we want to retrieve the medical records, in ISO 8601 format, e.g. 2026-03-24
+        date: the date we want to retrieve the medical records, in ISO 8601 format, e.g. 2026-03-24
+    """
+
+@dataclass
+class MedicalRecord:
+    """
+    Represents a single medical measurement.
+
+    Args:
+        timestamp: moment when record was created, in format YYYY-MM-DD HH:MM:SS.
+        person: human-readable person name, unique per medical database.
+        measurement: measurement type.
+        value: measurement numeric value.
+    """
+
+    timestamp: str
+    person: str
+    measurement: str
+    value: float
+
+
+def health_evaluate_medical_records(records: List[MedicalRecord]):
+    """
+    Evaluate medical records. Returns given records list with 'resolution' field updated.
+
+    Args:
+        records: A list of objects containing timestamp (ISO 8601), person name,
+                 the type of measurement (e.g., 'Heart Rate'), and the numeric value.
+                 Resolution field is not defined on input.
+    """
+    pass
+
+
+def health_compute_body_mass_index(weight: float, height: float):
+    """
+    Computer body mass index for given weight and height.
+
+    Args:
+        weight: person weight expressed in kg ((kilograms).
+        height: person height expressed in cm (centimeters).
     """

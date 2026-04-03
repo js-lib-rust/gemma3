@@ -103,7 +103,7 @@ async def handle_slm_request(request):
 
             if tools:
                 # <start_function_call>call:hera_read_temperature{zone:<escape>living room<escape>}<end_function_call>
-                function_call = output_text[0]
+                function_call = output_text
                 if not function_call.startswith("<start_function_call>call:"):
                     function = {
                         "agent": "unknown",

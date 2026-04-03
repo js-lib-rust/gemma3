@@ -363,11 +363,12 @@
 
 /* health - save body weight */
 [{"user":"my weight is 89","model":"user-profile:Get my username.\nuser-profile:Get my height.\nhealth:Save body weight of 89.00 kg and height of ${height} cm for ${username}.\nquery:Print the summary of the saved medical readings."}]
+[{"user":"save my weight of 88.5","model":"user-profile:Get my username.\nuser-profile:Get my height.\nhealth:Save body weight of 88.50 kg and height of ${height} cm for ${username}.\nquery:Print the summary of the saved medical readings."}]
 [{"user":"my body weight is 92","model":"user-profile:Get my username.\nuser-profile:Get my height.\nhealth:Save my body weight of 92.00 kg and height of ${height} cm for ${username}.\nquery:Print the summary of the saved medical readings."}]
-[{"user":"save weight 87.5","model":"user-profile:Get my username.\nuser-profile:Get my height.\nhealth:Save body weight of 87.50 kg and height of ${height} cm for ${username}.\nquery:Print the summary of the saved medical readings."}]
+[{"user":"save my weight 87.5","model":"user-profile:Get my username.\nuser-profile:Get my height.\nhealth:Save body weight of 87.50 kg and height of ${height} cm for ${username}.\nquery:Print the summary of the saved medical readings."}]
 [{"user":"register my weight of 94","model":"user-profile:Get my username.\nuser-profile:Get my height.\nhealth:Save body weight of 94.00 kg and height of ${height} cm for ${username}.\nquery:Print the summary of the saved medical readings."}]
 [{"user":"save my weight 88","model":"user-profile:Get my username.\nuser-profile:Get my height.\nhealth:Save body weight of 88.00 kg and height of ${height} cm for ${username}.\nquery:Print the summary of the saved medical readings."}]
-[{"user":"write body weight 75.5","model":"user-profile:Get my username.\nuser-profile:Get my height.\nhealth:Save body weight of 75.50 kg and height of ${height} cm for ${username}.\nquery:Print the summary of the saved medical readings."}]
+[{"user":"write my body weight 75.5","model":"user-profile:Get my username.\nuser-profile:Get my height.\nhealth:Save body weight of 75.50 kg and height of ${height} cm for ${username}.\nquery:Print the summary of the saved medical readings."}]
 [{"user":"record my weight 62 to medical database","model":"user-profile:Get my username.\nuser-profile:Get my height.\nhealth:Save body weight of 62.00 kg and height of ${height} cm for ${username}.\nquery:Print the summary of the saved medical readings."}]
 
 [{"user":"baciu vasile weight is 89.5","model":"user-profile:Get the height of Baciu Vasile.\nhealth:Save body weight of 89.50 kg and height of ${height} cm for Baciu Vasile.\nquery:Print the summary of the saved medical readings."}]

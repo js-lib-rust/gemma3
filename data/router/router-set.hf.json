@@ -4472,6 +4472,20 @@
     },
     {
       "role": "user",
+      "content": "save my weight of 88.5"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Get my height.\nhealth:Save body weight of 88.50 kg and height of ${height} cm for ${username}.\nquery:Print the summary of the saved medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
       "content": "my body weight is 92"
     },
     {
@@ -4486,7 +4500,7 @@
     },
     {
       "role": "user",
-      "content": "save weight 87.5"
+      "content": "save my weight 87.5"
     },
     {
       "role": "model",
@@ -4528,7 +4542,7 @@
     },
     {
       "role": "user",
-      "content": "write body weight 75.5"
+      "content": "write my body weight 75.5"
     },
     {
       "role": "model",

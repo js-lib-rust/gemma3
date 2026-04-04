@@ -762,11 +762,95 @@
     },
     {
       "role": "user",
+      "content": "print home devices"
+    },
+    {
+      "role": "model",
+      "content": "home-automation:List all the devices in the house.\nquery:Print a list of devices in the home."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "print devices from home"
+    },
+    {
+      "role": "model",
+      "content": "home-automation:List all the devices in the house.\nquery:Print a list of devices in the home."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
       "content": "list home devices"
     },
     {
       "role": "model",
-      "content": "home-automation:List all the devices in the house.\nquery:Print a list of home devices as table."
+      "content": "home-automation:List all the devices in the house.\nquery:List the devices in the home."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "list home devices grouped by zone"
+    },
+    {
+      "role": "model",
+      "content": "home-automation:List all the devices in the house.\nquery:List the devices in the home grouped by zones."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "list home devices as table"
+    },
+    {
+      "role": "model",
+      "content": "home-automation:List all the devices in the house.\nquery:Print a list of devices in the home as table."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "display devices from home automation"
+    },
+    {
+      "role": "model",
+      "content": "home-automation:List all the devices in the house.\nquery:Display devices from the home automation."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "give me a summary of all devices from home sorted by name"
+    },
+    {
+      "role": "model",
+      "content": "home-automation:List all the devices in the house.\nquery:Print a summary of all devices in the home, sorted by name."
     }
   ],
   [
@@ -790,11 +874,11 @@
     },
     {
       "role": "user",
-      "content": "give me a summary of all devices from home sorted by zone"
+      "content": "describe air quality sensor from bedroom"
     },
     {
       "role": "model",
-      "content": "home-automation:List all the devices in the house.\nquery:Print a summary of all devices in the home, sorted by zone."
+      "content": "home-automation:Get description of the air quality sensor from the bedroom.\nquery:Describe the air quality sensor from the bedroom."
     }
   ],
   [
@@ -804,11 +888,67 @@
     },
     {
       "role": "user",
-      "content": "describe air quality sensor from bedroom"
+      "content": "describe dehumidifier appliance"
     },
     {
       "role": "model",
-      "content": "home-automation:Get description of the bedroom air quality sensor.\nquery:Describe the bedroom air quality sensor."
+      "content": "home-automation:Get description of the dehumidifier appliance.\nquery:Describe the dehumidifier appliance."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "tell me about dishwasher actuator"
+    },
+    {
+      "role": "model",
+      "content": "home-automation:Get description of the dishwasher actuator.\nquery:Describe the dishwasher actuator."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "short account of living room thermostat"
+    },
+    {
+      "role": "model",
+      "content": "home-automation:Get description of the thermostat from the living room.\nquery:Describe the thermostat from the living room."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "print short description of kitchen light actuator"
+    },
+    {
+      "role": "model",
+      "content": "home-automation:Get description of the light actuator from the kitchen.\nquery:Describe the light actuator from the kitchen."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "display a brief description of motion detection sensor from cellar"
+    },
+    {
+      "role": "model",
+      "content": "home-automation:Get description of the motion detection sensor from the cellar.\nquery:Describe the motion detection sensor from the cellar."
     }
   ],
   [
@@ -822,7 +962,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Get description of the kitchen humidity sensor.\nquery:Print a short description of the kitchen humidity sensor."
+      "content": "home-automation:Get description of the humidity sensor from the kitchen.\nquery:Describe the humidity sensor from the kitchen."
     }
   ],
   [
@@ -836,7 +976,21 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Get description of the living room temperature sensor.\nquery:Print technical details about the living room temperature sensor."
+      "content": "home-automation:Get description of the temperature sensor from the living room.\nquery:Describe the temperature sensor from the living room."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "print actions supported by washing machine actuator"
+    },
+    {
+      "role": "model",
+      "content": "home-automation:List actions supported by the washing machine actuator.\nquery:Print the actions supported by washing machine actuator."
     }
   ],
   [
@@ -850,7 +1004,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:List actions supported by the pantry carbon dioxide sensor.\nquery:Print the actions supported by the carbon dioxide sensor in the pantry."
+      "content": "home-automation:List actions supported by the carbon dioxide sensor from the pantry.\nquery:Print the actions supported by the carbon dioxide sensor from the pantry."
     }
   ],
   [
@@ -864,7 +1018,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:List actions supported by the kitchen gas detection sensor.\nquery:Print the actions supported by the gas detection sensor in the kitchen."
+      "content": "home-automation:List actions supported by the gas detection sensor from the kitchen.\nquery:Print the actions supported by the gas detection sensor from the kitchen."
     }
   ],
   [
@@ -874,11 +1028,67 @@
     },
     {
       "role": "user",
-      "content": "what actions are supported by water leaks sensor from porch"
+      "content": "display actions of light actuator from kids' room"
     },
     {
       "role": "model",
-      "content": "home-automation:List actions supported by the porch water leaks sensor.\nquery:Print the actions supported by the water leaks sensor in the porch."
+      "content": "home-automation:List actions supported by the light actuator from the kid's room.\nquery:Print the actions supported by the light actuator from the kid's room."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "what actions are supported by water leaks sensor from porch?"
+    },
+    {
+      "role": "model",
+      "content": "home-automation:List actions supported by the water leaks sensor from the porch.\nquery:Print the actions supported by the water leaks sensor from the porch."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "what are actions provided by kitchen gas leaks sensor?"
+    },
+    {
+      "role": "model",
+      "content": "home-automation:List actions supported by the gas leaks sensor from the kitchen.\nquery:Print the actions supported by the gas leaks sensor from the kitchen."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "actions provided by bathroom electrovalve"
+    },
+    {
+      "role": "model",
+      "content": "home-automation:List actions supported by the electrovalve from the bathroom.\nquery:Print the actions supported by the electrovalve from the bathroom."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "bedroom smart light actions"
+    },
+    {
+      "role": "model",
+      "content": "home-automation:List actions supported by the smart light from the bedroom.\nquery:Print the actions supported by the smart light from the bedroom."
     }
   ],
   [
@@ -3968,6 +4178,48 @@
     },
     {
       "role": "user",
+      "content": "create diagnosis report for entire home"
+    },
+    {
+      "role": "model",
+      "content": "home-automation:Run a full diagnosis on the home automation system.\nquery:Create a complete diagnostic report for the home automation system."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "status report for entire home"
+    },
+    {
+      "role": "model",
+      "content": "home-automation:Run a full diagnosis on the home automation system.\nquery:Create a complete diagnostic report for the home automation system."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "condition report for the entire home"
+    },
+    {
+      "role": "model",
+      "content": "home-automation:Run a full diagnosis on the home automation system.\nquery:Create a complete diagnostic report for the home automation system."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
       "content": "check the home status"
     },
     {
@@ -4066,11 +4318,39 @@
     },
     {
       "role": "user",
+      "content": "create diagnose for bathroom temperature sensor"
+    },
+    {
+      "role": "model",
+      "content": "home-automation:Run device diagnosis on the temperature sensor from the bathroom.\nquery:Create a diagnostic report for the temperature sensor from the bathroom."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
       "content": "diagnose dht sensor from kitchen"
     },
     {
       "role": "model",
-      "content": "home-automation:Run device diagnosis on the kitchen DHT sensor.\nquery:Create a diagnostic report for the DHT sensor in the kitchen."
+      "content": "home-automation:Run device diagnosis on the DHT sensor from the kitchen.\nquery:Create a diagnostic report for the DHT sensor from the kitchen."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "status report for garage proximity sensor"
+    },
+    {
+      "role": "model",
+      "content": "home-automation:Run device diagnosis on the proximity sensor from the garage.\nquery:Create a diagnostic report for the proximity sensor from the garage."
     }
   ],
   [
@@ -4098,7 +4378,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Run device diagnosis on the bathroom humidity sensor.\nquery:Create a diagnostic report for the bathroom humidity sensor."
+      "content": "home-automation:Run device diagnosis on the humidity sensor from the bathroom.\nquery:Create a diagnostic report for the humidity sensor from the bathroom."
     }
   ],
   [
@@ -4112,7 +4392,49 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Run device diagnosis on the veranda water leaks sensor.\nquery:Create a diagnostic report for the veranda water leaks sensor."
+      "content": "home-automation:Run device diagnosis on the water leaks sensor from the veranda.\nquery:Create a diagnostic report for the water leaks sensor from the veranda."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "check food dispenser status"
+    },
+    {
+      "role": "model",
+      "content": "home-automation:Run device diagnosis on the food dispenser.\nquery:Create a diagnostic report for the food dispenser."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "is the smart light from hallway in order?"
+    },
+    {
+      "role": "model",
+      "content": "home-automation:Run device diagnosis on the smart light from the hallway.\nquery:Is the smart light in the hallway okay?"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "is something wrong with vacuum cleaner?"
+    },
+    {
+      "role": "model",
+      "content": "home-automation:Run device diagnosis on the vacuum cleaner.\nquery:Is there something wrong with the vacuum cleaner?"
     }
   ],
   [
@@ -4126,7 +4448,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Run device diagnosis on the kitchen gas detector sensor.\nquery:Is the gas detector in the kitchen working properly?"
+      "content": "home-automation:Run device diagnosis on the gas detector sensor from the kitchen.\nquery:Is the gas detector in the kitchen working properly?"
     }
   ],
   [

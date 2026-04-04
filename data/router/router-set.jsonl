@@ -319,7 +319,11 @@
 [{"user":"motion detection sensor values from library","model":"home-automation:Read all the motion detection sensors in the library.\nquery:Print the value of motion detection sensors in the library."}]
 
 /* home automation - run diagnosis  */
+[{"user":"check the home status","model":"home-automation:Run a full diagnosis on the home automation system.\nquery:Create a complete diagnostic report for the home automation system."}]
+[{"user":"verify all devices in apartment","model":"home-automation:Run a full diagnosis on the home automation system.\nquery:Create a complete diagnostic report for the home automation system."}]
 [{"user":"run full diagnose on entire home","model":"home-automation:Run a full diagnosis on the home automation system.\nquery:Create a complete diagnostic report for the home automation system."}]
+[{"user":"execute system diagnosis on entire home","model":"home-automation:Run a full diagnosis on the home automation system.\nquery:Create a complete diagnostic report for the home automation system."}]
+[{"user":"diagnose home automation system","model":"home-automation:Run a full diagnosis on the home automation system.\nquery:Create a complete diagnostic report for the home automation system."}]
 [{"user":"perform a system health check for the entire apartment. report any issues or anomalies detected","model":"home-automation:Run a full diagnosis on the home automation system.\nquery:Create a complete diagnostic report for the home automation system."}]
 [{"user":"are there malfunctioning sensors in house?","model":"home-automation:Run a full diagnosis on the home automation system.\nquery:Are there any faulty sensors in the house?"}]
 [{"user":"diagnose dht sensor from kitchen","model":"home-automation:Run device diagnosis on the kitchen DHT sensor.\nquery:Create a diagnostic report for the DHT sensor in the kitchen."}]

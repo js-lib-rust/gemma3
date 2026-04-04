@@ -598,7 +598,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get the business email address of Gog\u0103lniceanu \u0218tefan."
+      "content": "user-profile:Get the business email address of Gogălniceanu Ștefan."
     }
   ],
   [
@@ -1084,7 +1084,7 @@
     },
     {
       "role": "user",
-      "content": "it\u2019s drafty and freezing in here"
+      "content": "it’s drafty and freezing in here"
     },
     {
       "role": "model",
@@ -1126,7 +1126,7 @@
     },
     {
       "role": "user",
-      "content": "i'm shivering, it\u2019s freezing!"
+      "content": "i'm shivering, it’s freezing!"
     },
     {
       "role": "model",
@@ -3968,7 +3968,63 @@
     },
     {
       "role": "user",
+      "content": "check the home status"
+    },
+    {
+      "role": "model",
+      "content": "home-automation:Run a full diagnosis on the home automation system.\nquery:Create a complete diagnostic report for the home automation system."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "verify all devices in apartment"
+    },
+    {
+      "role": "model",
+      "content": "home-automation:Run a full diagnosis on the home automation system.\nquery:Create a complete diagnostic report for the home automation system."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
       "content": "run full diagnose on entire home"
+    },
+    {
+      "role": "model",
+      "content": "home-automation:Run a full diagnosis on the home automation system.\nquery:Create a complete diagnostic report for the home automation system."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "execute system diagnosis on entire home"
+    },
+    {
+      "role": "model",
+      "content": "home-automation:Run a full diagnosis on the home automation system.\nquery:Create a complete diagnostic report for the home automation system."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "diagnose home automation system"
     },
     {
       "role": "model",
@@ -4220,11 +4276,11 @@
     },
     {
       "role": "user",
-      "content": "blood measurements for p\u0103tra\u0219cu constantin are 119 81 64"
+      "content": "blood measurements for pătrașcu constantin are 119 81 64"
     },
     {
       "role": "model",
-      "content": "health:Save blood pressure measurement of 119/81 mmHg and heart rate of 64 bpm for P\u0103tra\u0219cu Constantin.\nquery:Print the summary of the saved medical readings."
+      "content": "health:Save blood pressure measurement of 119/81 mmHg and heart rate of 64 bpm for Pătrașcu Constantin.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -4294,7 +4350,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nhealth:Save body temperature of 35.00 \u00b0C for ${username}.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get my username.\nhealth:Save body temperature of 35.00 °C for ${username}.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -4308,7 +4364,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nhealth:Save body temperature of 34.30 \u00b0C for ${username}.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get my username.\nhealth:Save body temperature of 34.30 °C for ${username}.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -4322,7 +4378,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nhealth:Save body temperature of 35.90 \u00b0C for ${username}.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get my username.\nhealth:Save body temperature of 35.90 °C for ${username}.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -4336,7 +4392,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nhealth:Save body temperature of 34.80 \u00b0C for ${username}.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get my username.\nhealth:Save body temperature of 34.80 °C for ${username}.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -4350,7 +4406,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nhealth:Save body temperature of 35.20 \u00b0C for ${username}.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get my username.\nhealth:Save body temperature of 35.20 °C for ${username}.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -4364,7 +4420,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nhealth:Save body temperature of 37.10 \u00b0C for ${username}.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get my username.\nhealth:Save body temperature of 37.10 °C for ${username}.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -4378,7 +4434,7 @@
     },
     {
       "role": "model",
-      "content": "health:Save body temperature of 35.10 \u00b0C for Cojocaru Cristian.\nquery:Print the summary of the saved medical readings."
+      "content": "health:Save body temperature of 35.10 °C for Cojocaru Cristian.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -4392,7 +4448,7 @@
     },
     {
       "role": "model",
-      "content": "health:Save body temperature of 35.20 \u00b0C for Acatrinei Liviu.\nquery:Print the summary of the saved medical readings."
+      "content": "health:Save body temperature of 35.20 °C for Acatrinei Liviu.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -4402,11 +4458,11 @@
     },
     {
       "role": "user",
-      "content": "save temperature 35.6 for gog\u0103lniceanu \u0219tefan"
+      "content": "save temperature 35.6 for gogălniceanu ștefan"
     },
     {
       "role": "model",
-      "content": "health:Save body temperature of 35.60 \u00b0C for Gog\u0103lniceanu \u0218tefan.\nquery:Print the summary of the saved medical readings."
+      "content": "health:Save body temperature of 35.60 °C for Gogălniceanu Ștefan.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -4420,7 +4476,7 @@
     },
     {
       "role": "model",
-      "content": "health:Save body temperature of 36.20 \u00b0C for Lontkowschi George.\nquery:Print the summary of the saved medical readings."
+      "content": "health:Save body temperature of 36.20 °C for Lontkowschi George.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -4434,7 +4490,7 @@
     },
     {
       "role": "model",
-      "content": "health:Save body temperature of 34.10 \u00b0C for Teodorescu Tiberiu Dinu.\nquery:Print the summary of the saved medical readings."
+      "content": "health:Save body temperature of 34.10 °C for Teodorescu Tiberiu Dinu.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -4448,7 +4504,7 @@
     },
     {
       "role": "model",
-      "content": "health:Save body temperature of 36.70 \u00b0C for Dorneanu Deliana.\nquery:Print the summary of the saved medical readings."
+      "content": "health:Save body temperature of 36.70 °C for Dorneanu Deliana.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -4658,7 +4714,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get the height of Rotaru \u0218tefan.\nhealth:Save body weight of 103.50 kg and height of ${height} cm for Rotaru \u0218tefan.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get the height of Rotaru Ștefan.\nhealth:Save body weight of 103.50 kg and height of ${height} cm for Rotaru Ștefan.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -4780,11 +4836,11 @@
     },
     {
       "role": "user",
-      "content": "save glucose level of 105 to f\u00e2nt\u00e2naru eugenia"
+      "content": "save glucose level of 105 to fântânaru eugenia"
     },
     {
       "role": "model",
-      "content": "health:Save blood glucose level of 105 mg/dL for F\u00e2nt\u00e2naru Eugenia.\nquery:Print the summary of the saved medical readings."
+      "content": "health:Save blood glucose level of 105 mg/dL for Fântânaru Eugenia.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -5092,7 +5148,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get the date for today.\nhealth:Read medical records from ${date} for Gog\u0103lniceanu \u0218tefan.\nquery:Print the summary of the medical readings."
+      "content": "time-service:Get the date for today.\nhealth:Read medical records from ${date} for Gogălniceanu Ștefan.\nquery:Print the summary of the medical readings."
     }
   ],
   [
@@ -5928,11 +5984,11 @@
     },
     {
       "role": "user",
-      "content": "weather in pa\u0219cani, romania"
+      "content": "weather in pașcani, romania"
     },
     {
       "role": "model",
-      "content": "weather:Get current weather in Pa\u0219cani, Romania.\nquery:Weather in Pa\u0219cani, Romania?"
+      "content": "weather:Get current weather in Pașcani, Romania.\nquery:Weather in Pașcani, Romania?"
     }
   ],
   [
@@ -5942,11 +5998,11 @@
     },
     {
       "role": "user",
-      "content": "is it raining right now in tome\u0219ti, romania"
+      "content": "is it raining right now in tomești, romania"
     },
     {
       "role": "model",
-      "content": "weather:Get current weather in Tome\u0219ti, Romania.\nquery:Is it raining right now in Tome\u0219ti, Romania?"
+      "content": "weather:Get current weather in Tomești, Romania.\nquery:Is it raining right now in Tomești, Romania?"
     }
   ],
   [
@@ -5956,11 +6012,11 @@
     },
     {
       "role": "user",
-      "content": "is it sunny right now in sili\u0219tea, gume\u0219ti, romania"
+      "content": "is it sunny right now in siliștea, gumești, romania"
     },
     {
       "role": "model",
-      "content": "weather:Get current weather in Sili\u0219tea, Gume\u0219ti, Romania.\nquery:Is it sunny right now in Sili\u0219tea, Gume\u0219ti, Romania?"
+      "content": "weather:Get current weather in Siliștea, Gumești, Romania.\nquery:Is it sunny right now in Siliștea, Gumești, Romania?"
     }
   ],
   [
@@ -5984,11 +6040,11 @@
     },
     {
       "role": "user",
-      "content": "what is weather like on constan\u021ba, rom\u00e2nia"
+      "content": "what is weather like on constanța, românia"
     },
     {
       "role": "model",
-      "content": "weather:Get current weather in Constan\u021ba, Rom\u00e2nia.\nquery:What is the weather like in Constan\u021ba, Rom\u00e2nia?"
+      "content": "weather:Get current weather in Constanța, România.\nquery:What is the weather like in Constanța, România?"
     }
   ],
   [
@@ -6002,7 +6058,7 @@
     },
     {
       "role": "model",
-      "content": "weather:Get current weather in Ia\u0219i, Romania.\nquery:Tell me about the weather in Ia\u0219i, Romania?"
+      "content": "weather:Get current weather in Iași, Romania.\nquery:Tell me about the weather in Iași, Romania?"
     }
   ],
   [
@@ -6040,11 +6096,11 @@
     },
     {
       "role": "user",
-      "content": "how is weather in bra\u0219ov right now"
+      "content": "how is weather in brașov right now"
     },
     {
       "role": "model",
-      "content": "weather:Get current weather in Bra\u0219ov, Romania.\nquery:What is the weather in Bra\u0219ov, Romania right now?"
+      "content": "weather:Get current weather in Brașov, Romania.\nquery:What is the weather in Brașov, Romania right now?"
     }
   ],
   [
@@ -6110,11 +6166,11 @@
     },
     {
       "role": "user",
-      "content": "how cold is in piatra-neam\u021b, romania"
+      "content": "how cold is in piatra-neamț, romania"
     },
     {
       "role": "model",
-      "content": "weather:Get current weather in Piatra-Neam\u021b, Romania.\nquery:How cold is in Piatra-Neam\u021b, Romania?"
+      "content": "weather:Get current weather in Piatra-Neamț, Romania.\nquery:How cold is in Piatra-Neamț, Romania?"
     }
   ],
   [
@@ -6124,11 +6180,11 @@
     },
     {
       "role": "user",
-      "content": "how cold is now in t\u00e2rgu-neam\u021b, romania"
+      "content": "how cold is now in târgu-neamț, romania"
     },
     {
       "role": "model",
-      "content": "weather:Get current weather in T\u00e2rgu-Neam\u021b, Romania.\nquery:How cold is now in T\u00e2rgu-Neam\u021b, Romania?"
+      "content": "weather:Get current weather in Târgu-Neamț, Romania.\nquery:How cold is now in Târgu-Neamț, Romania?"
     }
   ],
   [
@@ -6460,11 +6516,11 @@
     },
     {
       "role": "user",
-      "content": "hourly forecast for today on sculeni, ia\u0219i, rom\u00e2nia"
+      "content": "hourly forecast for today on sculeni, iași, românia"
     },
     {
       "role": "model",
-      "content": "time-service:Get the date for today.\nweather:Get hourly weather forecast for ${date} in Sculeni, Ia\u0219i, Rom\u00e2nia.\nquery:Print hourly weather forecast in tabular form."
+      "content": "time-service:Get the date for today.\nweather:Get hourly weather forecast for ${date} in Sculeni, Iași, România.\nquery:Print hourly weather forecast in tabular form."
     }
   ],
   [
@@ -6506,7 +6562,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get the date for today.\nweather:Get hourly weather forecast for ${date} in Chicirea, Ia\u0219i, Romania.\nquery:Print hourly weather forecast in tabular form."
+      "content": "time-service:Get the date for today.\nweather:Get hourly weather forecast for ${date} in Chicirea, Iași, Romania.\nquery:Print hourly weather forecast in tabular form."
     }
   ],
   [
@@ -6744,7 +6800,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get the date for today.\nweather:Get hourly weather forecast for ${date} in Chicirea, Ia\u0219i, Romania.\nquery:Display a today summary of forecast in Chicirea, Ia\u0219i, Romania."
+      "content": "time-service:Get the date for today.\nweather:Get hourly weather forecast for ${date} in Chicirea, Iași, Romania.\nquery:Display a today summary of forecast in Chicirea, Iași, Romania."
     }
   ],
   [
@@ -7174,11 +7230,11 @@
     },
     {
       "role": "user",
-      "content": "get forecast for next two weeks in v\u0103lenii de jos, timi\u0219, rom\u00e2nia"
+      "content": "get forecast for next two weeks in vălenii de jos, timiș, românia"
     },
     {
       "role": "model",
-      "content": "weather:Get daily weather forecast for the next two weeks in V\u0103lenii de jos, Timi\u0219, Rom\u00e2nia.\nquery:Print daily weather forecast in tabular form."
+      "content": "weather:Get daily weather forecast for the next two weeks in Vălenii de jos, Timiș, România.\nquery:Print daily weather forecast in tabular form."
     }
   ],
   [
@@ -7272,11 +7328,11 @@
     },
     {
       "role": "user",
-      "content": "list 10 days forecast for negre\u0219ti, vaslui, romania"
+      "content": "list 10 days forecast for negrești, vaslui, romania"
     },
     {
       "role": "model",
-      "content": "weather:Get daily weather forecast for the next 10 days in Negre\u0219ti, Vaslui, Romania.\nquery:Print daily weather forecast in tabular form."
+      "content": "weather:Get daily weather forecast for the next 10 days in Negrești, Vaslui, Romania.\nquery:Print daily weather forecast in tabular form."
     }
   ],
   [
@@ -8140,11 +8196,11 @@
     },
     {
       "role": "user",
-      "content": "what are the most famous sculptures by constantin br\u00e2ncu\u0219i?"
+      "content": "what are the most famous sculptures by constantin brâncuși?"
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about Constantin Br\u00e2ncu\u0219i\nquery:List the works of Constantin Br\u00e2ncu\u0219i."
+      "content": "wikipedia:Read article about Constantin Brâncuși\nquery:List the works of Constantin Brâncuși."
     }
   ],
   [
@@ -10510,7 +10566,7 @@
     },
     {
       "role": "model",
-      "content": "answer:Body Mass Index (BMI) is calculated by dividing an adult's weight in kilograms (kg) by their height in meters squared (m\u00b2)."
+      "content": "answer:Body Mass Index (BMI) is calculated by dividing an adult's weight in kilograms (kg) by their height in meters squared (m²)."
     }
   ]
 ]

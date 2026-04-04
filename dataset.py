@@ -98,7 +98,7 @@ def hf_router_set():
             turns.append({"role": "user", "content": turn["user"]})
             turns.append({"role": "model", "content": turn['model']})
         hf_dataset.append(turns)
-    print(json.dumps(hf_dataset, indent=2))
+    print(json.dumps(hf_dataset, indent=2, ensure_ascii=False))
 
 
 def escape(s):

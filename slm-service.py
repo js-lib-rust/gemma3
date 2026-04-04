@@ -180,8 +180,6 @@ class RequestHandler(BaseHTTPRequestHandler):  # type: ignore
         print(f'context: {context}')
         prompt = request['prompt']
         print(f'prompt: {prompt}')
-        use_temperature = request['use_temperature']
-        print(f'use_temperature: {use_temperature}')
         use_history = request['use_history']
         print(f'use_history: {use_history}')
 
@@ -217,13 +215,11 @@ class RequestHandler(BaseHTTPRequestHandler):  # type: ignore
             'streamer': streamer,
             'use_cache': True,
             'past_key_values': past_key_values,
+            'temperature': 1.0,
+            'num_beams': 1,
+            'top_k': 1,
+            'top_p': 1.0
         }
-        if not use_temperature:
-            print('configure text generation without temperature')
-            generate_config['temperature'] = 1.0
-            generate_config['num_beams'] = 1
-            generate_config['top_k'] = 1
-            generate_config['top_p'] = 1.0
         print("generate_config: ", generate_config)
         _ = model.generate(**model_inputs, **generate_config)
 

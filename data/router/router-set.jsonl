@@ -64,9 +64,11 @@
 /* home automation - list devices */
 [{"user":"print home devices","model":"home-automation:List all the devices in the house.\nquery:Print a list of devices in the home."}]
 [{"user":"print devices from home","model":"home-automation:List all the devices in the house.\nquery:Print a list of devices in the home."}]
+[{"user":"print devices from home as table","model":"home-automation:List all the devices in the house.\nquery:Print a list of devices in the home as table."}]
 [{"user":"list home devices","model":"home-automation:List all the devices in the house.\nquery:List the devices in the home."}]
+[{"user":"list home devices sorted by name","model":"home-automation:List all the devices in the house.\nquery:List the devices in the home sorted by name."}]
 [{"user":"list home devices grouped by zone","model":"home-automation:List all the devices in the house.\nquery:List the devices in the home grouped by zones."}]
-[{"user":"list home devices as table","model":"home-automation:List all the devices in the house.\nquery:Print a list of devices in the home as table."}]
+[{"user":"list home devices in tabular format","model":"home-automation:List all the devices in the house.\nquery:Print a list of devices in the home as table."}]
 [{"user":"display devices from home automation","model":"home-automation:List all the devices in the house.\nquery:Display devices from the home automation."}]
 [{"user":"give me a summary of all devices from home sorted by name","model":"home-automation:List all the devices in the house.\nquery:Print a summary of all devices in the home, sorted by name."}]
 [{"user":"what devices do we have in home?","model":"home-automation:List all the devices in the house.\nquery:What devices do we have at home?"}]
@@ -81,15 +83,17 @@
 [{"user":"give a short description of kitchen humidity sensor","model":"home-automation:Get description of the humidity sensor from the kitchen.\nquery:Describe the humidity sensor from the kitchen."}]
 [{"user":"what technical details do you know about temperature sensor from living room?","model":"home-automation:Get description of the temperature sensor from the living room.\nquery:Describe the temperature sensor from the living room."}]
 
-/* home automation - describe devices */
-[{"user":"print actions supported by washing machine actuator","model":"home-automation:List actions supported by the washing machine actuator.\nquery:Print the actions supported by washing machine actuator."}]
-[{"user":"actions supported by co2 sensor from pantry","model":"home-automation:List actions supported by the carbon dioxide sensor from the pantry.\nquery:Print the actions supported by the carbon dioxide sensor from the pantry."}]
-[{"user":"list actions of gas detection from kitchen","model":"home-automation:List actions supported by the gas detection sensor from the kitchen.\nquery:Print the actions supported by the gas detection sensor from the kitchen."}]
-[{"user":"display actions of light actuator from kids' room","model":"home-automation:List actions supported by the light actuator from the kid's room.\nquery:Print the actions supported by the light actuator from the kid's room."}]
-[{"user":"what actions are supported by water leaks sensor from porch?","model":"home-automation:List actions supported by the water leaks sensor from the porch.\nquery:Print the actions supported by the water leaks sensor from the porch."}]
-[{"user":"what are actions provided by kitchen gas leaks sensor?","model":"home-automation:List actions supported by the gas leaks sensor from the kitchen.\nquery:Print the actions supported by the gas leaks sensor from the kitchen."}]
-[{"user":"actions provided by bathroom electrovalve","model":"home-automation:List actions supported by the electrovalve from the bathroom.\nquery:Print the actions supported by the electrovalve from the bathroom."}]
-[{"user":"bedroom smart light actions","model":"home-automation:List actions supported by the smart light from the bedroom.\nquery:Print the actions supported by the smart light from the bedroom."}]
+/* home automation - device actions */
+[{"user":"print actions supported by washing machine actuator","model":"home-automation:Get actions supported by the washing machine actuator.\nquery:Print the actions supported by washing machine actuator."}]
+[{"user":"print actions supported by dishwasher as table","model":"home-automation:Get actions supported by the dishwasher.\nquery:Print the actions supported by dishwasher as table."}]
+[{"user":"actions supported by co2 sensor from pantry","model":"home-automation:Get actions supported by the carbon dioxide sensor from the pantry.\nquery:Print the actions supported by the carbon dioxide sensor from the pantry."}]
+[{"user":"list actions of gas detection from kitchen","model":"home-automation:Get actions supported by the gas detection sensor from the kitchen.\nquery:List the actions supported by the gas detection sensor from the kitchen."}]
+[{"user":"display actions of light actuator from kids' room","model":"home-automation:Get actions supported by the light actuator from the kid's room.\nquery:Display the actions supported by the light actuator from the kid's room."}]
+[{"user":"display actions of smart light from garage in tabular form","model":"home-automation:Get actions supported by the smart light actuator from garage.\nquery:Display the actions supported by the smart light from the garage as table."}]
+[{"user":"what actions are supported by water leaks sensor from porch?","model":"home-automation:Get actions supported by the water leaks sensor from the porch.\nquery:What actions are supported by the water leaks sensor from the porch?"}]
+[{"user":"what are actions provided by kitchen gas leaks sensor?","model":"home-automation:Get actions supported by the gas leaks sensor from the kitchen.\nquery:What actions are provided by the gas leaks sensor from the kitchen?"}]
+[{"user":"actions provided by bathroom electrovalve","model":"home-automation:Get actions supported by the electrovalve from the bathroom.\nquery:Print the actions supported by the electrovalve from the bathroom."}]
+[{"user":"bedroom smart light actions","model":"home-automation:Get actions supported by the smart light from the bedroom.\nquery:Print the actions supported by the smart light from the bedroom."}]
 
 /* home automation - turn on heating */
 [{"user":"start central heating","model":"home-automation:Turn on the central heating.\nquery:Print the central heating status."}]
@@ -344,16 +348,19 @@
 [{"user":"perform a system health check for the entire apartment. report any issues or anomalies detected","model":"home-automation:Run a full diagnosis on the home automation system.\nquery:Create a complete diagnostic report for the home automation system."}]
 [{"user":"are there malfunctioning sensors in house?","model":"home-automation:Run a full diagnosis on the home automation system.\nquery:Are there any faulty sensors in the house?"}]
 
+[{"user":"run device diagnosis on thermostat","model":"home-automation:Run device diagnosis on the thermostat.\nquery:Create a diagnostic report for the thermostat."}]
+[{"user":"exec device debugging to bathroom humidity","model":"home-automation:Run device diagnosis on the humidity sensor from bathroom.\nquery:Create a diagnostic report for the humidity sensor from bathroom."}]
 [{"user":"create diagnose for bathroom temperature sensor","model":"home-automation:Run device diagnosis on the temperature sensor from the bathroom.\nquery:Create a diagnostic report for the temperature sensor from the bathroom."}]
 [{"user":"diagnose dht sensor from kitchen","model":"home-automation:Run device diagnosis on the DHT sensor from the kitchen.\nquery:Create a diagnostic report for the DHT sensor from the kitchen."}]
 [{"user":"status report for garage proximity sensor","model":"home-automation:Run device diagnosis on the proximity sensor from the garage.\nquery:Create a diagnostic report for the proximity sensor from the garage."}]
-[{"user":"check motion detection","model":"home-automation:Run device diagnosis on the motion detection sensor.\nquery:Create a diagnostic report for the motion detection sensor."}]
+[{"user":"check motion detection sensor","model":"home-automation:Run device diagnosis on the motion detection sensor.\nquery:Create a diagnostic report for the motion detection sensor."}]
 [{"user":"sanity check on humidity sensor from bathroom","model":"home-automation:Run device diagnosis on the humidity sensor from the bathroom.\nquery:Create a diagnostic report for the humidity sensor from the bathroom."}]
 [{"user":"health status of the water leaks sensor from veranda","model":"home-automation:Run device diagnosis on the water leaks sensor from the veranda.\nquery:Create a diagnostic report for the water leaks sensor from the veranda."}]
 [{"user":"check food dispenser status","model":"home-automation:Run device diagnosis on the food dispenser.\nquery:Create a diagnostic report for the food dispenser."}]
-[{"user":"is the smart light from hallway in order?","model":"home-automation:Run device diagnosis on the smart light from the hallway.\nquery:Is the smart light in the hallway okay?"}]
-[{"user":"is something wrong with vacuum cleaner?","model":"home-automation:Run device diagnosis on the vacuum cleaner.\nquery:Is there something wrong with the vacuum cleaner?"}]
-[{"user":"is kitchen gas detector working?","model":"home-automation:Run device diagnosis on the gas detector sensor from the kitchen.\nquery:Is the gas detector in the kitchen working properly?"}]
+[{"user":"perform device diagnosis to washing machine","model":"home-automation:Run device diagnosis on the washing machine.\nquery:Create a diagnostic report for the washing machine."}]
+[{"user":"execute device diagnose on smart light from hallway","model":"home-automation:Run device diagnosis on the smart light from the hallway.\nquery:Create a diagnostic report for the smart light from the hallway."}]
+[{"user":"verify vacuum cleaner","model":"home-automation:Run device diagnosis on the vacuum cleaner.\nquery:Create a diagnostic report for the vacuum cleaner."}]
+[{"user":"diagnose gas detector from kitchen","model":"home-automation:Run device diagnosis on the gas detector sensor from the kitchen.\nquery:Create a diagnostic report for the gas detector sensor from the kitchen."}]
 
 /* health - save blood measurements */
 [{"user":"my blood measurements are 125 85 70","model":"user-profile:Get my username.\nhealth:Save blood pressure measurement of 125/85 mmHg and heart rate of 70 bpm for ${username}.\nquery:Print the summary of the saved medical readings."}]

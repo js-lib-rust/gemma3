@@ -1018,7 +1018,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Get actions supported by the washing machine actuator.\nquery:Print the actions supported by washing machine actuator."
+      "content": "home-automation:Get the actions supported by the washing machine actuator.\nquery:Print the actions supported by washing machine actuator."
     }
   ],
   [
@@ -1032,7 +1032,21 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Get actions supported by the dishwasher.\nquery:Print the actions supported by dishwasher as table."
+      "content": "home-automation:Get the actions supported by the dishwasher.\nquery:Print the actions supported by dishwasher, as table."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "print actions supported by bathroom drier as jsonl"
+    },
+    {
+      "role": "model",
+      "content": "home-automation:Get the actions supported by the drier in the bathroom.\nquery:Print the actions supported by drier in the bathroom, as JSONL."
     }
   ],
   [
@@ -1046,7 +1060,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Get actions supported by the carbon dioxide sensor from the pantry.\nquery:Print the actions supported by the carbon dioxide sensor from the pantry."
+      "content": "home-automation:Get the actions supported by the carbon dioxide sensor in the pantry.\nquery:Print the actions supported by the carbon dioxide sensor in the pantry."
     }
   ],
   [
@@ -1060,7 +1074,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Get actions supported by the gas detection sensor from the kitchen.\nquery:List the actions supported by the gas detection sensor from the kitchen."
+      "content": "home-automation:Get the actions supported by the gas detection sensor in the kitchen.\nquery:List the actions supported by the gas detection sensor in the kitchen."
     }
   ],
   [
@@ -1074,7 +1088,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Get actions supported by the light actuator from the kid's room.\nquery:Display the actions supported by the light actuator from the kid's room."
+      "content": "home-automation:Get the actions supported by the light actuator in the kid's room.\nquery:Display the actions supported by the light actuator in the kid's room."
     }
   ],
   [
@@ -1088,7 +1102,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Get actions supported by the smart light actuator from garage.\nquery:Display the actions supported by the smart light from the garage as table."
+      "content": "home-automation:Get the actions supported by the smart light actuator in the garage.\nquery:Display the actions supported by the smart light in the garage, as table."
     }
   ],
   [
@@ -1102,7 +1116,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Get actions supported by the water leaks sensor from the porch.\nquery:What actions are supported by the water leaks sensor from the porch?"
+      "content": "home-automation:Get the actions supported by the water leaks sensor in the porch.\nquery:What actions are supported by the water leaks sensor in the porch?"
     }
   ],
   [
@@ -1116,7 +1130,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Get actions supported by the gas leaks sensor from the kitchen.\nquery:What actions are provided by the gas leaks sensor from the kitchen?"
+      "content": "home-automation:Get the actions supported by the gas leaks sensor in the kitchen.\nquery:What actions are provided by the gas leaks sensor in the kitchen?"
     }
   ],
   [
@@ -1130,7 +1144,21 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Get actions supported by the electrovalve from the bathroom.\nquery:Print the actions supported by the electrovalve from the bathroom."
+      "content": "home-automation:Get the actions supported by the electrovalve in the bathroom.\nquery:Print the actions supported by the electrovalve in the bathroom."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "actions provided by front door locker in jsonl format"
+    },
+    {
+      "role": "model",
+      "content": "home-automation:Get the actions supported by the front door locker.\nquery:Print the actions supported by the front door locker, as JSONL."
     }
   ],
   [
@@ -1144,7 +1172,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Get actions supported by the smart light from the bedroom.\nquery:Print the actions supported by the smart light from the bedroom."
+      "content": "home-automation:Get the actions supported by the smart light in the bedroom.\nquery:Print the actions supported by the smart light in the bedroom."
     }
   ],
   [

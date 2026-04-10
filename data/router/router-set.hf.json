@@ -384,6 +384,62 @@
     },
     {
       "role": "user",
+      "content": "get date for 2026-04-10"
+    },
+    {
+      "role": "model",
+      "content": "time-service:Get the date for 2026-04-10."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get date for 1964-03-15 13:40:00"
+    },
+    {
+      "role": "model",
+      "content": "time-service:Get the date for 2026-04-10."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get date for april 1"
+    },
+    {
+      "role": "model",
+      "content": "time-service:Get the date for april 1."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get date for february 14, 2025"
+    },
+    {
+      "role": "model",
+      "content": "time-service:Get the date for february 14, 2025."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
       "content": "get my username"
     },
     {
@@ -402,7 +458,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my personal phone number."
+      "content": "user-profile:Get my username.\nuser-profile:Get personal phone number for ${username}."
     }
   ],
   [
@@ -416,7 +472,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my business phone number."
+      "content": "user-profile:Get my username.\nuser-profile:Get business phone number for ${username}."
     }
   ],
   [
@@ -430,7 +486,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my personal email address."
+      "content": "user-profile:Get my username.\nuser-profile:Get personal email address for ${username}."
     }
   ],
   [
@@ -444,7 +500,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my business email address."
+      "content": "user-profile:Get my username.\nuser-profile:Get business email address for ${username}."
     }
   ],
   [
@@ -458,7 +514,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my height."
+      "content": "user-profile:Get my username.\nuser-profile:Get height for ${username}."
     }
   ],
   [
@@ -472,7 +528,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my birth date."
+      "content": "user-profile:Get my username.\nuser-profile:Get birth date for ${username}."
     }
   ],
   [
@@ -486,7 +542,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my age."
+      "content": "user-profile:Get my username.\nuser-profile:Get age for ${username}."
     }
   ],
   [
@@ -500,7 +556,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my profession."
+      "content": "user-profile:Get my username.\nuser-profile:Get profession for ${username}."
     }
   ],
   [
@@ -514,7 +570,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my location."
+      "content": "user-profile:Get my username.\nuser-profile:Get location for ${username}."
     }
   ],
   [
@@ -528,7 +584,35 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my social security number."
+      "content": "user-profile:Get my username.\nuser-profile:Get social security number for ${username}."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get my skill level"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Get skill level for ${username}."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get my education"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Get education for ${username}."
     }
   ],
   [
@@ -542,7 +626,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get the username of Rotaru Iulian."
+      "content": "user-profile:Get the username for Rotaru Iulian."
     }
   ],
   [
@@ -556,7 +640,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get the personal phone number of Lontkowschi Mirela Petronela."
+      "content": "user-profile:Get the personal phone number for Lontkowschi Mirela Petronela."
     }
   ],
   [
@@ -570,7 +654,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get the business phone number of Simeria Anca."
+      "content": "user-profile:Get the business phone number for Simeria Anca."
     }
   ],
   [
@@ -584,7 +668,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get the personal email address of Gavriliu Nicolaie."
+      "content": "user-profile:Get the personal email address for Gavriliu Nicolaie."
     }
   ],
   [
@@ -598,7 +682,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get the business email address of Gogălniceanu Ștefan."
+      "content": "user-profile:Get the business email address for Gogălniceanu Ștefan."
     }
   ],
   [
@@ -608,11 +692,11 @@
     },
     {
       "role": "user",
-      "content": "get height for rusu florentin"
+      "content": "get rusu florentin's height"
     },
     {
       "role": "model",
-      "content": "user-profile:Get the height of Rusu Florentin."
+      "content": "user-profile:Get the height for Rusu Florentin."
     }
   ],
   [
@@ -626,7 +710,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get the birth date of Baciu Vasile."
+      "content": "user-profile:Get the birth date for Baciu Vasile."
     }
   ],
   [
@@ -640,7 +724,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get the age of Acatrinei Liviu."
+      "content": "user-profile:Get the age for Acatrinei Liviu."
     }
   ],
   [
@@ -650,11 +734,11 @@
     },
     {
       "role": "user",
-      "content": "get profession for adam iosif"
+      "content": "get adam iosif's profession"
     },
     {
       "role": "model",
-      "content": "user-profile:Get the profession of Adam Iosif."
+      "content": "user-profile:Get the profession for Adam Iosif."
     }
   ],
   [
@@ -668,7 +752,21 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get the location of Miron Daniela Elena."
+      "content": "user-profile:Get the location for Miron Daniela Elena."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get vaino george viorel's education"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get the education for Vaino George Viorel."
     }
   ],
   [
@@ -682,7 +780,693 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get the social security number of Dorneanu Deliana."
+      "content": "user-profile:Get the social security number for Dorneanu Deliana."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "save my personal phone number 0770861711 in user profile"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Set the personal phone number to 0770861711 for ${username}.\nuser-profile:Get the personal phone number for ${username}.\nquery:Print the personal phone number for ${username}."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "change personal phone number 0770861712 in my user profile"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Set the personal phone number to 0770861712 for ${username}.\nuser-profile:Get the personal phone number for ${username}.\nquery:Print the personal phone number for ${username}."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "set my business phone number 0734990887 in user profile"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Set the business phone number to 0734990887 for ${username}.\nuser-profile:Get the business phone number for ${username}.\nquery:Print the business phone number for ${username}."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "persist my business phone number 0734990889 in my user profile"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Set the business phone number to 0734990889 for ${username}.\nuser-profile:Get the business phone number for ${username}.\nquery:Print the business phone number for ${username}."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "update my personal email address of mr.iulianrotaru@gmail.com in my user profile"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Set the personal email address to mr.iulianrotaru@gmail.com for ${username}.\nuser-profile:Get the personal email address for ${username}.\nquery:Print the personal email address for ${username}."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "set my business email address to bogdan.jipa@gnotis.ro in my profile"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Set the business email address to bogdan.jipa@gnotis.ro for ${username}.\nuser-profile:Get the business email address for ${username}.\nquery:Print the business email address for ${username}."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "record my birth date property of 1964-03-15"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Set the birth date to 1964-03-15 for ${username}.\nuser-profile:Get the birth date for ${username}.\nquery:Print the birth date for ${username}."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "set my birth date of 1964-04-11 to my user profile"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Set the birth date to 1964-04-11 for ${username}.\nuser-profile:Get the birth date for ${username}.\nquery:Print the birth date for ${username}."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "change my location property to valea lupului, iași, romania"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Set the location to Valea Lupului, Iași, Romania for ${username}.\nuser-profile:Get the location for ${username}.\nquery:Print the location for ${username}."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "set skill level to expert in my user profile"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Set the skill level to expert for ${username}.\nuser-profile:Get the skill level for ${username}.\nquery:Print the skill level for ${username}."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "set my skill level to master in my user profile"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Set the skill level to master for ${username}.\nuser-profile:Get the skill level for ${username}.\nquery:Print the skill level for ${username}."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "save driving license to professional in my user profile"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Set the driving license to professional for ${username}.\nuser-profile:Get the driving license for ${username}.\nquery:Print the driving license for ${username}."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "persist my social security number property of 1640315227781 in my user profile"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Set the social security number to 1640315227781 for ${username}.\nuser-profile:Get the social security number for ${username}.\nquery:Print the social security number for ${username}."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "update social security number of 2670821213785 in my user profile"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Set the social security number to 2670821213785 for ${username}.\nuser-profile:Get the social security number for ${username}.\nquery:Print the social security number for ${username}."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "modify education to software developer in my user profile"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Set the education to software developer for ${username}.\nuser-profile:Get the education for ${username}.\nquery:Print the education for ${username}."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "set my education property to warrant officer military school"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Set the education to warrant officer military school for ${username}.\nuser-profile:Get the education for ${username}.\nquery:Print the education for ${username}."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "create my profession of full stack developer in user profile"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Set the profession to full stack developer for ${username}.\nuser-profile:Get the profession for ${username}.\nquery:Print the profession for ${username}."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "save my profession property as car mechanic"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Set the profession to car mechanic for ${username}.\nuser-profile:Get the profession for ${username}.\nquery:Print the profession for ${username}."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "write profession of teacher in my user profile"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Set the profession to teacher for ${username}.\nuser-profile:Get the profession for ${username}.\nquery:Print the profession for ${username}."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "update last working place to telekom in my user profile"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Set the last working place to Telekom for ${username}.\nuser-profile:Get the last working place for ${username}.\nquery:Print the last working place for ${username}."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "modify hobbies to programming and reading in my user profile"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Set the hobbies to programming and reading for ${username}.\nuser-profile:Get the hobbies for ${username}.\nquery:Print the hobbies for ${username}."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "create username for simeria anca in user profile"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Set the username for Simeria Anca.\nuser-profile:Get the username for Simeria Anca.\nquery:Print the username for Simeria Anca."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "update username property for lupu mihaela in user profile"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Set the username for Lupu Mihaela.\nuser-profile:Get the username for Lupu Mihaela.\nquery:Print the username for Lupu Mihaela."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "change username for lupu mihaela to gavriliu mihaela in user profile"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Set the username Gavriliu Mihaela for Lupu Mihaela.\nuser-profile:Get the username for Gavriliu Mihaela.\nquery:Print the username for Gavriliu Mihaela."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "save personal phone number 0770861711 for acatrinei liviu in user profile"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Set the personal phone number to 0770861711 for Acatrinei Liviu.\nuser-profile:Get the personal phone number for Acatrinei Liviu.\nquery:Print the personal phone number for Acatrinei Liviu."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "update personal phone for lontkowschi mirela petronela to 0771555666 in user profile"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Set the personal phone number to 0771555666 for Lontkowschi Mirela Petronela.\nuser-profile:Get the personal phone number for Lontkowschi Mirela Petronela.\nquery:Print the personal phone number for Lontkowschi Mirela Petronela."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "set user property personal phone number for paduraru adrian to 0777333567 in user profile"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Set the personal phone number to 0777333567 for Păduraru Adrian.\nuser-profile:Get the personal phone number for Păduraru Adrian.\nquery:Print the personal phone number for Păduraru Adrian."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "register butnicu dan's personal phone number as 0777432569 in user profile"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Set the personal phone number to 0777432569 for Butnicu Dan.\nuser-profile:Get the personal phone number for Butnicu Dan.\nquery:Print the personal phone number for Butnicu Dan."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "set business phone number 0734990887 for gavriliu mihaela in user profile"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Set the business phone number to 0734990887 for Gavriliu Mihaela.\nuser-profile:Get the business phone number for Gavriliu Mihaela.\nquery:Print the business phone number for Gavriliu Mihaela."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "create work phone property of 0746523787 for gogalniceanu mioara"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Set the business phone number to 0746523787 for Gogălniceanu Mioara.\nuser-profile:Get the business phone number for Gogălniceanu Mioara.\nquery:Print the business phone number for Gogălniceanu Mioara."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "update personal email address mr.iulianrotaru@gmail.com for rotaru iulian in user profile"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Set the personal email address to mr.iulianrotaru@gmail.com for Rotaru Iulian.\nuser-profile:Get the personal email address for Rotaru Iulian.\nquery:Print the personal email address for Rotaru Iulian."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "set user property business email address to bogdan.jipa@gnotis.ro for jipa bogdan"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Set the business email address to bogdan.jipa@gnotis.ro for Jipa Bogdan.\nuser-profile:Get the business email address for Jipa Bogdan.\nquery:Print the business email address for Jipa Bogdan."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "save user property height of 176 cm for rusu florentin"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Set the height to 176 cm for Rusu Florentin.\nuser-profile:Get the height for Rusu Florentin.\nquery:Print the height for Rusu Florentin."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "write height property of 168 cm for trofin gabriela in user profile"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Set the height to 168 cm for Trofin Gabriela.\nuser-profile:Get the height for Trofin Gabriela.\nquery:Print the height for Trofin Gabriela."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "update height property to 178 cm of gavriliu nicolae"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Set the height to 178 cm for Gavriliu Nicolae.\nuser-profile:Get the height for Gavriliu Nicolae.\nquery:Print the height for Gavriliu Nicolae."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "record birth date 1964-03-15 for baciu vasile in user profile"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Set the birth date to 1964-03-15 for Baciu Vasile.\nuser-profile:Get the birth date for Baciu Vasile.\nquery:Print the birth date for Baciu Vasile."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "update birth date 1967-08-21 for miron gabriela in user profile"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Set the birth date to 1967-08-21 for Miron Gabriela.\nuser-profile:Get the birth date for Miron Gabriela.\nquery:Print the birth date for Miron Gabriela."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "persist social security number property of 1640315227781 for acatrinei alin"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Set the social security number to 1640315227781 for Acatrinei Alin.\nuser-profile:Get the social security number for Acatrinei Alin.\nquery:Print the social security number for Acatrinei Alin."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "update SSN of 2670821213785 for miron daniela elena in user profile"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Set the social security number to 2670821213785 for Miron Daniela Elena.\nuser-profile:Get the social security number for Miron Daniela Elena.\nquery:Print the social security number for Miron Daniela Elena."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "set education to warrant officer military school for vaino george viorel"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Set the education to warrant officer military school for Vaino George Viorel.\nuser-profile:Get the education for Vaino George Viorel.\nquery:Print the education for Vaino George Viorel."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "modify education to sanitary high school for ghinea marica"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Set the education to sanitary high school for Ghinea Marica.\nuser-profile:Get the education for Ghinea Marica.\nquery:Print the education for Ghinea Marica."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "create profession of full stack developer for adam iosif"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Set the profession to full stack developer for Adam Iosif.\nuser-profile:Get the profession for Adam Iosif.\nquery:Print the profession for Adam Iosif."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "record profession property to nurse for dorneanu deliana"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Set the profession to nurse for Dorneanu Deliana.\nuser-profile:Get the profession for Dorneanu Deliana.\nquery:Print the profession for Dorneanu Deliana."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "set profession to fighter pilot for gavriliu dora"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Set the profession to fighter pilot for Gavriliu Dora.\nuser-profile:Get the profession for Gavriliu Dora.\nquery:Print the profession for Gavriliu Dora."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "save the user property location to valea lupului, iași, romania for dorneanu deliana"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Set the location to Valea Lupului, Iași, Romania for Dorneanu Deliana.\nuser-profile:Get the location for Dorneanu Deliana.\nquery:Print the location for Dorneanu Deliana."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "write rotaru stefan's location as iași, romania in user profile"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Set the location to Iași, Romania for Rotaru Ștefan.\nuser-profile:Get the location for Rotaru Ștefan.\nquery:Print the location for Rotaru Ștefan."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "set skill level to expert for moromete ilie in user profile"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Set the skill level to expert for Moromete Ilie.\nuser-profile:Get the skill level for Moromete Ilie.\nquery:Print the skill level for Moromete Ilie."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "save driving license to commercial for dorneanu ioan silviu in user profile"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Set the driving license to commercial for Dorneanu Ioan Silviu.\nuser-profile:Get the driving license for Dorneanu Ioan Silviu.\nquery:Print the driving license for Dorneanu Ioan Silviu."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "write driving license to personal for dorneanu ioana sorana in user profile"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Set the driving license to personal for Dorneanu Ioana Sorana.\nuser-profile:Get the driving license for Dorneanu Ioana Sorana.\nquery:Print the driving license for Dorneanu Ioana Sorana."
     }
   ],
   [
@@ -5540,7 +6324,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nhealth:Read medical records from 2026-01-13 for ${username}.\nquery:Print the summary of the medical readings."
+      "content": "time-service:Get the date for 2026-01-13.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:Print the summary of the medical readings."
     }
   ],
   [
@@ -5554,7 +6338,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nhealth:Read medical records from 2026-02-04 for ${username}.\nquery:Print the summary of the medical readings."
+      "content": "time-service:Get the date for 2026-02-04.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:Print the summary of the medical readings."
     }
   ],
   [
@@ -5680,7 +6464,7 @@
     },
     {
       "role": "model",
-      "content": "health:Read medical records from 2022-11-13 for Savulescu Marcel.\nquery:Print the summary of the medical readings."
+      "content": "time-service:Get the date for 2022-11-13.\nhealth:Read medical records from ${date} for Savulescu Marcel.\nquery:Print the summary of the medical readings."
     }
   ],
   [
@@ -5750,7 +6534,7 @@
     },
     {
       "role": "model",
-      "content": "health:Read medical records from 2026-02-04 for Paduraru Adrian.\nquery:Print the summary of the medical readings."
+      "content": "time-service:Get the date for 2026-02-04.\nhealth:Read medical records from ${date} for Paduraru Adrian.\nquery:Print the summary of the medical readings."
     }
   ],
   [
@@ -6030,7 +6814,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nhealth:Read medical records from 2026-01-12 for ${username}.\nquery:Create a healthcare professional report based on the medical records."
+      "content": "time-service:Get the date for january 12, 2026.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:Create a healthcare professional report based on the medical records."
     }
   ],
   [
@@ -6044,7 +6828,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nhealth:Read medical records from 2025-03-15 for ${username}.\nquery:Create a healthcare professional report based on the medical records."
+      "content": "time-service:Get the date for march 15, 2025.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:Create a healthcare professional report based on the medical records."
     }
   ],
   [
@@ -6058,7 +6842,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nhealth:Read medical records from 2025-12-01 for ${username}.\nquery:Create a healthcare professional report based on the medical records."
+      "content": "time-service:Get the date for 2025-12-01.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:Create a healthcare professional report based on the medical records."
     }
   ],
   [
@@ -6072,7 +6856,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nhealth:Read medical records from 2024-11-12 for ${username}.\nquery:Create a healthcare professional report based on the medical records."
+      "content": "time-service:Get the date for 2024-11-12.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:Create a healthcare professional report based on the medical records."
     }
   ],
   [
@@ -6731,34 +7515,6 @@
     {
       "role": "model",
       "content": "user-profile:Get my location.\nweather:Get current weather in ${location}.\nquery:What do you think about a short stroll? Doable?"
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "kids are playing outside. isn't too cold?"
-    },
-    {
-      "role": "model",
-      "content": "user-profile:Get my location.\nweather:Get current weather in my location.\nquery:The children are playing outside. Isn't it too cold?"
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "is alright for kids to play outside?"
-    },
-    {
-      "role": "model",
-      "content": "user-profile:Get my location.\nweather:Get current weather in my location.\nquery:Is it alright for children to play outside?"
     }
   ],
   [

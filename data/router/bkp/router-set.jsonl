@@ -228,6 +228,7 @@
 [{"user":"isn't it too hot in this room?","model":"home-automation:Turn off the central heating."}]
 [{"user":"what do you think, is not too hot in here?","model":"home-automation:Turn off the central heating."}]
 
+/* home automation - heating status */
 [{"user":"status of central heating","model":"home-automation:Read the status of the central heating system.\nquery:Central heating status."}]
 [{"user":"print heating state","model":"home-automation:Read the status of the central heating system.\nquery:Print the heating status."}]
 [{"user":"get central heating status","model":"home-automation:Read the status of the central heating system.\nquery:Get the status of your central heating."}]
@@ -249,6 +250,7 @@
 [{"user":"is current temperature from climate system too low?","model":"home-automation:Read the status of the central heating system.\nquery:Is the current temperature from the climate system too low?"}]
 [{"user":"what is heating reference temperature?","model":"home-automation:Read the status of the central heating system.\nquery:What is the reference temperature for heating?"}]
 
+/* home automation - read sensor */
 [{"user":"what's living room temp","model":"home-automation:Read the temperature sensor in the living room.\nquery:What is the temperature in the living room?"}]
 [{"user":"what is the temperature in the sitting room?","model":"home-automation:Read the temperature sensor in the living room.\nquery:What is the temperature in the living room?"}]
 [{"user":"living temp","model":"home-automation:Read the temperature sensor in the living room.\nquery:What is the temperature in the living room?"}]

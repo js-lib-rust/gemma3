@@ -2180,7 +2180,21 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Turn on the central heating.\nquery:Print the central heating status."
+      "content": "home-automation:Turn on the central heating.\nquery:Print the central heating status report."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "start heating"
+    },
+    {
+      "role": "model",
+      "content": "home-automation:Turn on the central heating.\nquery:Print the central heating status report."
     }
   ],
   [
@@ -2194,7 +2208,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Turn on the central heating.\nquery:Print the central heating status."
+      "content": "home-automation:Turn on the central heating.\nquery:Print the central heating status report."
     }
   ],
   [
@@ -2208,7 +2222,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Turn on the central heating.\nquery:Print the central heating status."
+      "content": "home-automation:Turn on the central heating.\nquery:Print the central heating status report."
     }
   ],
   [
@@ -2222,7 +2236,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Turn on the central heating.\nquery:Print the central heating status."
+      "content": "home-automation:Turn on the central heating.\nquery:Print the central heating status report."
     }
   ],
   [
@@ -2236,7 +2250,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Turn on the central heating.\nquery:Print the central heating status."
+      "content": "home-automation:Turn on the central heating.\nquery:Print the central heating status report."
     }
   ],
   [
@@ -2250,7 +2264,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Turn on the central heating.\nquery:Print the central heating status."
+      "content": "home-automation:Turn on the central heating.\nquery:Print the central heating status report."
     }
   ],
   [
@@ -2264,7 +2278,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Turn on the central heating.\nquery:Print the central heating status."
+      "content": "home-automation:Turn on the central heating.\nquery:Print the central heating status report."
     }
   ],
   [
@@ -2278,7 +2292,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Turn on the central heating.\nquery:Print the central heating status."
+      "content": "home-automation:Turn on the central heating.\nquery:Print the central heating status report."
     }
   ],
   [
@@ -2292,161 +2306,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Turn on the central heating.\nquery:Print the central heating status."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "is too cold in my room"
-    },
-    {
-      "role": "model",
-      "content": "home-automation:Turn on the central heating."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "is too cold in here"
-    },
-    {
-      "role": "model",
-      "content": "home-automation:Turn on the central heating."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "i'm freezing here"
-    },
-    {
-      "role": "model",
-      "content": "home-automation:Turn on the central heating."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "seems like room temperature is far too low"
-    },
-    {
-      "role": "model",
-      "content": "home-automation:Turn on the central heating."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "it is incredibly cold in my room"
-    },
-    {
-      "role": "model",
-      "content": "home-automation:Turn on the central heating."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "it’s drafty and freezing in here"
-    },
-    {
-      "role": "model",
-      "content": "home-automation:Turn on the central heating."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "the temperature feels really low"
-    },
-    {
-      "role": "model",
-      "content": "home-automation:Turn on the central heating."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "i'm really feeling the chill in this room"
-    },
-    {
-      "role": "model",
-      "content": "home-automation:Turn on the central heating."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "i'm shivering, it’s freezing!"
-    },
-    {
-      "role": "model",
-      "content": "home-automation:Turn on the central heating."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "this room is ice cold"
-    },
-    {
-      "role": "model",
-      "content": "home-automation:Turn on the central heating."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "isn't it too cold in the room?"
-    },
-    {
-      "role": "model",
-      "content": "home-automation:Turn on the central heating."
+      "content": "home-automation:Turn on the central heating.\nquery:Print the central heating status report."
     }
   ],
   [
@@ -2460,7 +2320,21 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Turn off the central heating.\nquery:Print the central heating status."
+      "content": "home-automation:Turn off the central heating.\nquery:Print the central heating status report."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "stop heating"
+    },
+    {
+      "role": "model",
+      "content": "home-automation:Turn off the central heating.\nquery:Print the central heating status report."
     }
   ],
   [
@@ -2474,7 +2348,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Turn off the central heating.\nquery:Print the central heating status."
+      "content": "home-automation:Turn off the central heating.\nquery:Print the central heating status report."
     }
   ],
   [
@@ -2488,7 +2362,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Turn off the central heating.\nquery:Print the central heating status."
+      "content": "home-automation:Turn off the central heating.\nquery:Print the central heating status report."
     }
   ],
   [
@@ -2502,7 +2376,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Turn off the central heating.\nquery:Print the central heating status."
+      "content": "home-automation:Turn off the central heating.\nquery:Print the central heating status report."
     }
   ],
   [
@@ -2516,7 +2390,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Turn off the central heating.\nquery:Print the central heating status."
+      "content": "home-automation:Turn off the central heating.\nquery:Print the central heating status report."
     }
   ],
   [
@@ -2530,7 +2404,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Turn off the central heating.\nquery:Print the central heating status."
+      "content": "home-automation:Turn off the central heating.\nquery:Print the central heating status report."
     }
   ],
   [
@@ -2544,7 +2418,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Turn off the central heating.\nquery:Print the central heating status."
+      "content": "home-automation:Turn off the central heating.\nquery:Print the central heating status report."
     }
   ],
   [
@@ -2558,7 +2432,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Turn off the central heating.\nquery:Print the central heating status."
+      "content": "home-automation:Turn off the central heating.\nquery:Print the central heating status report."
     }
   ],
   [
@@ -2572,7 +2446,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Turn off the central heating.\nquery:Print the central heating status."
+      "content": "home-automation:Turn off the central heating.\nquery:Print the central heating status report."
     }
   ],
   [
@@ -2586,7 +2460,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Turn off the central heating.\nquery:Print the central heating status."
+      "content": "home-automation:Turn off the central heating.\nquery:Print the central heating status report."
     }
   ],
   [
@@ -2600,7 +2474,7 @@
     },
     {
       "role": "model",
-      "content": "home-automation:Turn off the central heating.\nquery:Print the central heating status."
+      "content": "home-automation:Turn off the central heating.\nquery:Print the central heating status report."
     }
   ],
   [
@@ -2610,11 +2484,11 @@
     },
     {
       "role": "user",
-      "content": "enough heat"
+      "content": "create central heating status report"
     },
     {
       "role": "model",
-      "content": "home-automation:Turn off the central heating."
+      "content": "home-automation:Read the status of the central heating system.\nquery:Create the central heating status report."
     }
   ],
   [
@@ -2624,221 +2498,11 @@
     },
     {
       "role": "user",
-      "content": "enough heat. turn off heating."
+      "content": "print heating status report"
     },
     {
       "role": "model",
-      "content": "home-automation:Turn off the central heating."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "it is hot enough"
-    },
-    {
-      "role": "model",
-      "content": "home-automation:Turn off the central heating."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "is warm enough in here"
-    },
-    {
-      "role": "model",
-      "content": "home-automation:Turn off the central heating."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "i think it's warm enough"
-    },
-    {
-      "role": "model",
-      "content": "home-automation:Turn off the central heating."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "is a little too hot in here"
-    },
-    {
-      "role": "model",
-      "content": "home-automation:Turn off the central heating."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "it's quite warm here"
-    },
-    {
-      "role": "model",
-      "content": "home-automation:Turn off the central heating."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "the room is now comfortably warm"
-    },
-    {
-      "role": "model",
-      "content": "home-automation:Turn off the central heating."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "it is comfortably warm in here"
-    },
-    {
-      "role": "model",
-      "content": "home-automation:Turn off the central heating."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "it is comfortably warm in here. you can close heating"
-    },
-    {
-      "role": "model",
-      "content": "home-automation:Turn off the central heating."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "you made the room warm enough"
-    },
-    {
-      "role": "model",
-      "content": "home-automation:Turn off the central heating."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "you made it warm enough"
-    },
-    {
-      "role": "model",
-      "content": "home-automation:Turn off the central heating."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "no need to run heater anymore"
-    },
-    {
-      "role": "model",
-      "content": "home-automation:Turn off the central heating."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "room temperature is good now"
-    },
-    {
-      "role": "model",
-      "content": "home-automation:Turn off the central heating."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "room temperature is good. you can close heating."
-    },
-    {
-      "role": "model",
-      "content": "home-automation:Turn off the central heating."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "isn't it too hot in this room?"
-    },
-    {
-      "role": "model",
-      "content": "home-automation:Turn off the central heating."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "what do you think, is not too hot in here?"
-    },
-    {
-      "role": "model",
-      "content": "home-automation:Turn off the central heating."
+      "content": "home-automation:Read the status of the central heating system.\nquery:Print heating status report."
     }
   ],
   [
@@ -3077,20 +2741,6 @@
     {
       "role": "model",
       "content": "home-automation:Read the status of the central heating system.\nquery:What is the heating setpoint?"
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "is current temperature from climate system too low?"
-    },
-    {
-      "role": "model",
-      "content": "home-automation:Read the status of the central heating system.\nquery:Is the current temperature from the climate system too low?"
     }
   ],
   [

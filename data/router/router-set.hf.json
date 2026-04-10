@@ -412,20 +412,6 @@
     },
     {
       "role": "user",
-      "content": "get date for april 1"
-    },
-    {
-      "role": "model",
-      "content": "time-service:Get the date for april 1."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
       "content": "get date for february 14, 2025"
     },
     {
@@ -440,11 +426,81 @@
     },
     {
       "role": "user",
+      "content": "get date for 20230821"
+    },
+    {
+      "role": "model",
+      "content": "time-service:Get the date for 20230821."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get date for 1987 04 28"
+    },
+    {
+      "role": "model",
+      "content": "time-service:Get the date for 1987 04 28."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get date for april 1"
+    },
+    {
+      "role": "model",
+      "content": "time-service:Get the date for april 1."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get date for 2023"
+    },
+    {
+      "role": "model",
+      "content": "time-service:Get the date for 2023."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get date for june 2023"
+    },
+    {
+      "role": "model",
+      "content": "time-service:Get the date for june 2023."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
       "content": "get my username"
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username."
+      "content": "user-profile:Get my username.\nquery:Print my username."
     }
   ],
   [
@@ -458,7 +514,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Get personal phone number for ${username}."
+      "content": "user-profile:Get my username.\nuser-profile:Get the personal phone number of ${username}.\nquery:Print my personal phone number."
     }
   ],
   [
@@ -472,7 +528,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Get business phone number for ${username}."
+      "content": "user-profile:Get my username.\nuser-profile:Get the business phone number of ${username}.\nquery:Print my business phone number."
     }
   ],
   [
@@ -486,7 +542,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Get personal email address for ${username}."
+      "content": "user-profile:Get my username.\nuser-profile:Get the personal email address of ${username}.\nquery:Print my personal email address."
     }
   ],
   [
@@ -500,7 +556,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Get business email address for ${username}."
+      "content": "user-profile:Get my username.\nuser-profile:Get the business email address of ${username}.\nquery:Print my business email address."
     }
   ],
   [
@@ -514,7 +570,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Get height for ${username}."
+      "content": "user-profile:Get my username.\nuser-profile:Get the height of ${username}.\nquery:Print my height."
     }
   ],
   [
@@ -528,7 +584,35 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Get birth date for ${username}."
+      "content": "user-profile:Get my username.\nuser-profile:Get the birth date of ${username}.\nquery:Print my birth date."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get my birth day"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Get the birth day of ${username}.\nquery:Print my birth day."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get my birth place"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Get the birth place of ${username}.\nquery:Print my birth place."
     }
   ],
   [
@@ -542,7 +626,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Get age for ${username}."
+      "content": "user-profile:Get my username.\nuser-profile:Get the age of ${username}.\nquery:Print my age."
     }
   ],
   [
@@ -556,7 +640,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Get profession for ${username}."
+      "content": "user-profile:Get my username.\nuser-profile:Get the profession of ${username}.\nquery:Print my profession."
     }
   ],
   [
@@ -570,7 +654,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Get location for ${username}."
+      "content": "user-profile:Get my username.\nuser-profile:Get the location of ${username}.\nquery:Print my location."
     }
   ],
   [
@@ -580,25 +664,11 @@
     },
     {
       "role": "user",
-      "content": "get my social security number"
+      "content": "get my place"
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Get social security number for ${username}."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "get my skill level"
-    },
-    {
-      "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Get skill level for ${username}."
+      "content": "user-profile:Get my username.\nuser-profile:Get the place of ${username}.\nquery:Print my place."
     }
   ],
   [
@@ -612,7 +682,63 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Get education for ${username}."
+      "content": "user-profile:Get my username.\nuser-profile:Get the education of ${username}.\nquery:Print my education."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get my hobbies"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Get the hobbies of ${username}.\nquery:Print my hobbies."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get my skill level"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Get the skill level of ${username}.\nquery:Print my skill level."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get my social security number"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Get the social security number of ${username}.\nquery:Print my social security number."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get my birth certificate's serial"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Get the birth certificate serial of ${username}.\nquery:Print my birth certificate serial."
     }
   ],
   [
@@ -626,7 +752,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get the username for Rotaru Iulian."
+      "content": "user-profile:Get the username of Rotaru Iulian.\nquery:Print the username for Rotaru Iulian."
     }
   ],
   [
@@ -640,7 +766,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get the personal phone number for Lontkowschi Mirela Petronela."
+      "content": "user-profile:Get the personal phone number of Lontkowschi Mirela Petronela.\nquery:Print the personal phone number for Lontkowschi Mirela Petronela."
     }
   ],
   [
@@ -654,7 +780,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get the business phone number for Simeria Anca."
+      "content": "user-profile:Get the business phone number of Simeria Anca.\nquery:Print the business phone number for Simeria Anca."
     }
   ],
   [
@@ -668,7 +794,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get the personal email address for Gavriliu Nicolaie."
+      "content": "user-profile:Get the personal email address of Gavriliu Nicolaie.\nquery:Print the personal email address for Gavriliu Nicolaie."
     }
   ],
   [
@@ -682,7 +808,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get the business email address for Gogălniceanu Ștefan."
+      "content": "user-profile:Get the business email address of Gogălniceanu Ștefan.\nquery:Print the business email address for Gogălniceanu Ștefan."
     }
   ],
   [
@@ -696,7 +822,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get the height for Rusu Florentin."
+      "content": "user-profile:Get the height of Rusu Florentin.\nquery:Print the height for Rusu Florentin."
     }
   ],
   [
@@ -710,7 +836,35 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get the birth date for Baciu Vasile."
+      "content": "user-profile:Get the birth date of Baciu Vasile.\nquery:Print the birth date for Baciu Vasile."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get birth day for acatrinei ingrid"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get the birth day of Acatrinei Ingrid.\nquery:Print the birth day for Acatrinei Ingrid."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get birth place of gogalniceanu mioara"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get the birth place of Gogălniceanu Mioara.\nquery:Print the birth place for Gogălniceanu Mioara."
     }
   ],
   [
@@ -724,7 +878,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get the age for Acatrinei Liviu."
+      "content": "user-profile:Get the age of Acatrinei Liviu.\nquery:Print the age for Acatrinei Liviu."
     }
   ],
   [
@@ -738,7 +892,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get the profession for Adam Iosif."
+      "content": "user-profile:Get the profession of Adam Iosif.\nquery:Print the profession for Adam Iosif."
     }
   ],
   [
@@ -752,7 +906,21 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get the location for Miron Daniela Elena."
+      "content": "user-profile:Get the location of Miron Daniela Elena.\nquery:Print the location for Miron Daniela Elena."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get the place of miron aurelia"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get the place of Miron Aurelia.\nquery:Print the place for Miron Aurelia."
     }
   ],
   [
@@ -766,7 +934,35 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get the education for Vaino George Viorel."
+      "content": "user-profile:Get the education of Vaino George Viorel.\nquery:Print the education for Vaino George Viorel."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get hobbies of cornea sofica"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get the hobbies of Cornea Sofica.\nquery:Print the hobbies for Cornea Sofica."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get skill level for petrovici traian"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get the skill level of Petrovici Traian.\nquery:Print the skill level for Petrovici Traian."
     }
   ],
   [
@@ -780,7 +976,21 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get the social security number for Dorneanu Deliana."
+      "content": "user-profile:Get the social security number of Dorneanu Deliana.\nquery:Print the social security number for Dorneanu Deliana."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get birth certificate's serial for dorneanu ioana sorana"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get the birth certificate serial of Dorneanu Ioana Sorana.\nquery:Print the birth certificate serial for Dorneanu Ioana Sorana."
     }
   ],
   [

@@ -5620,11 +5620,11 @@
     },
     {
       "role": "user",
-      "content": "save my weight of 88.5"
+      "content": "my weight measurement is 89.75"
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Get my height.\nhealth:Save body weight of 88.50 kg and height of ${height} cm for ${username}.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get my username.\nuser-profile:Get my height.\nhealth:Save body weight of 89.75 kg and height of ${height} cm for ${username}.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -5639,6 +5639,48 @@
     {
       "role": "model",
       "content": "user-profile:Get my username.\nuser-profile:Get my height.\nhealth:Save my body weight of 92.00 kg and height of ${height} cm for ${username}.\nquery:Print the summary of the saved medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "insert my body weight 82.5"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Get my height.\nhealth:Save body weight of 82.50 kg and height of ${height} cm for ${username}.\nquery:Print the summary of the saved medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "insert my weight of 86 into health db"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Get my height.\nhealth:Save body weight of 86.00 kg and height of ${height} cm for ${username}.\nquery:Print the summary of the saved medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "save my weight of 88.5"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Get my height.\nhealth:Save body weight of 88.50 kg and height of ${height} cm for ${username}.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [

@@ -86,6 +86,7 @@ class StreamerWriter(TextStreamer):
 
     def on_finalized_text(self, text, stream_end=False):
         text = re.sub('<end_of_turn>', '', text)
+        text = text.replace('<turn|>', '')
         if stream_end:
             text = text.replace(tokenizer.eos_token, '')
 

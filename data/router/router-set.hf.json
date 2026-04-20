@@ -272,6 +272,230 @@
     },
     {
       "role": "user",
+      "content": "get units for distance"
+    },
+    {
+      "role": "model",
+      "content": "measure-units:Get the measure units for distance."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get units for speed"
+    },
+    {
+      "role": "model",
+      "content": "measure-units:Get the measure units for speed."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get units for height"
+    },
+    {
+      "role": "model",
+      "content": "measure-units:Get the measure units for height."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get units for person height"
+    },
+    {
+      "role": "model",
+      "content": "measure-units:Get the measure units for person height."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get units for area"
+    },
+    {
+      "role": "model",
+      "content": "measure-units:Get the measure units for area."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get units for surface"
+    },
+    {
+      "role": "model",
+      "content": "measure-units:Get the measure units for surface."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get units for volume"
+    },
+    {
+      "role": "model",
+      "content": "measure-units:Get the measure units for volume."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get units for fluid volume"
+    },
+    {
+      "role": "model",
+      "content": "measure-units:Get the measure units for fluid volume."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get units for mass"
+    },
+    {
+      "role": "model",
+      "content": "measure-units:Get the measure units for mass."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get units for temperature"
+    },
+    {
+      "role": "model",
+      "content": "measure-units:Get the measure units for temperature."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get units for environment humidity"
+    },
+    {
+      "role": "model",
+      "content": "measure-units:Get the measure units for environment humidity."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get units for blood pressure"
+    },
+    {
+      "role": "model",
+      "content": "measure-units:Get the measure units for blood pressure."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get units for pulse pressure"
+    },
+    {
+      "role": "model",
+      "content": "measure-units:Get the measure units for pulse pressure."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get units for heart rate"
+    },
+    {
+      "role": "model",
+      "content": "measure-units:Get the measure units for heart rate."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get units for blood glucose"
+    },
+    {
+      "role": "model",
+      "content": "measure-units:Get the measure units for blood glucose."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get units for body mass index"
+    },
+    {
+      "role": "model",
+      "content": "measure-units:Get the measure units for body mass index."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
       "content": "get current date and time"
     },
     {
@@ -496,6 +720,160 @@
     },
     {
       "role": "user",
+      "content": "compute time period as the difference of 2026-02-24 and 1971-09-10"
+    },
+    {
+      "role": "model",
+      "content": "time-service:Compute time period as the difference in days between 2026-02-24 and 1971-09-10."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "what is duration length as difference in seconds of 08:45:00 and 10:25:30"
+    },
+    {
+      "role": "model",
+      "content": "time-service:Compute duration length as the difference in seconds between 2026-02-24 and 1971-09-10."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get the period of time as difference between 2026-02-22 and 1972-10-20"
+    },
+    {
+      "role": "model",
+      "content": "time-service:Compute period of time as the difference in days between 2026-02-22 and 1972-10-20."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "determine period as difference in years for 2026-03-11 and 1977-08-26"
+    },
+    {
+      "role": "model",
+      "content": "time-service:Compute period as the difference in years between 2026-03-11 and 1977-08-26."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "figure out the duration as the difference in years and months between 2026-04-13 and 1964-03-15"
+    },
+    {
+      "role": "model",
+      "content": "time-service:Compute duration as the difference in years and months between 2026-04-13 and 1964-03-15."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get duration value as difference in months between 2023-05-17 and 2025-10-25"
+    },
+    {
+      "role": "model",
+      "content": "time-service:Compute duration value as the difference in months between 2023-05-17 and 2025-10-25."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get interval in days between 2026-04-10 and 2026-03-25"
+    },
+    {
+      "role": "model",
+      "content": "time-service:Compute interval as the difference in days between 2026-04-10 and 2026-03-25."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get elapsed time in hours between 2026-03-12 12:30:00 and 2026-03-09 22:15:00"
+    },
+    {
+      "role": "model",
+      "content": "time-service:Compute elapsed time as the difference in hours between 2026-03-12 12:30:00 and 2026-03-09 22:15:00."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "compute elapsed time in hours for 11:45:00 and 20:35:00"
+    },
+    {
+      "role": "model",
+      "content": "time-service:Compute elapsed time as the difference in hours between 11:45:00 and 20:35:00."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "calculate elapsed time in minutes between 2026-03-12 12:30:30 and 2026-03-12 11:15:00"
+    },
+    {
+      "role": "model",
+      "content": "time-service:Compute elapsed time as the difference in minutes between 2026-03-12 12:30:30 and 2026-03-12 11:15:00."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "compute elapsed time in minutes between 13:20:40 and 10:25:10"
+    },
+    {
+      "role": "model",
+      "content": "time-service:Compute elapsed time as the difference in minutes between 13:20:40 and 10:25:10."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
       "content": "get my username"
     },
     {
@@ -566,20 +944,6 @@
     },
     {
       "role": "user",
-      "content": "get my height"
-    },
-    {
-      "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Get the height of ${username}.\nquery:Print my height."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
       "content": "get my birth date"
     },
     {
@@ -594,39 +958,11 @@
     },
     {
       "role": "user",
-      "content": "get my birth day"
-    },
-    {
-      "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Get the birth day of ${username}.\nquery:Print my birth day."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
       "content": "get my birth place"
     },
     {
       "role": "model",
       "content": "user-profile:Get my username.\nuser-profile:Get the birth place of ${username}.\nquery:Print my birth place."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "get my age"
-    },
-    {
-      "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Get the age of ${username}.\nquery:Print my age."
     }
   ],
   [
@@ -734,11 +1070,333 @@
     },
     {
       "role": "user",
+      "content": "get my SSN"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Get the social security number of ${username}.\nquery:Print my social security number."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get my identity card serial"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Get the identity card serial of ${username}.\nquery:Print my identity card serial."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
       "content": "get my birth certificate's serial"
     },
     {
       "role": "model",
       "content": "user-profile:Get my username.\nuser-profile:Get the birth certificate serial of ${username}.\nquery:Print my birth certificate serial."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get my birthday"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Get the birth date of ${username}.\nquery:Print my birthday."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "please tell me when is my birthday"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Get the birth date of ${username}.\nquery:Please tell me when is my birthday."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "do you know when is my birthday?"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Get the birth date of ${username}.\nquery:Do you know when is my birthday."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "what is my birthday?"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Get the birth date of ${username}.\nquery:What is my birthday?"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get my age"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Get the birth date of ${username}.\ntime-service:Get date for today.\ntime-service:Compute age as the difference in years between ${date} and ${birth_date}.\nquery:Print the age for ${username}."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "please get my age"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Get the birth date of ${username}.\ntime-service:Get date for today.\ntime-service:Compute age as the difference in years between ${date} and ${birth_date}.\nquery:Print the age for ${username}."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "retrieve my age"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Get the birth date of ${username}.\ntime-service:Get date for today.\ntime-service:Compute age as the difference in years between ${date} and ${birth_date}.\nquery:Print the age for ${username}."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "please acquire my age"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Get the birth date of ${username}.\ntime-service:Get date for today.\ntime-service:Compute age as the difference in years between ${date} and ${birth_date}.\nquery:Print the age for ${username}."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "compute my age"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Get the birth date of ${username}.\ntime-service:Get date for today.\ntime-service:Compute age as the difference in years between ${date} and ${birth_date}.\nquery:Print the age for ${username}."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "calculate my age"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Get the birth date of ${username}.\ntime-service:Get date for today.\ntime-service:Compute age as the difference in years between ${date} and ${birth_date}.\nquery:Print the age for ${username}."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "determine my age"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Get the birth date of ${username}.\ntime-service:Get date for today.\ntime-service:Compute age as the difference in years between ${date} and ${birth_date}.\nquery:Print the age for ${username}."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "figure out my age"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Get the birth date of ${username}.\ntime-service:Get date for today.\ntime-service:Compute age as the difference in years between ${date} and ${birth_date}.\nquery:Print the age for ${username}."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "what is my age?"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Get the birth date of ${username}.\ntime-service:Get date for today.\ntime-service:Compute age as the difference in years between ${date} and ${birth_date}.\nquery:Print the age for ${username}."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get my height"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Get the height of ${username}.\nmeasure-units:Get the measure units for person height.\nquery:Print my height in ${person_height_units}."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get my height from user profile"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Get the height of ${username}.\nmeasure-units:Get the measure units for person height.\nquery:Print my height in ${person_height_units}."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get my person height"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Get the height of ${username}.\nmeasure-units:Get the measure units for person height.\nquery:Print my height in ${person_height_units}."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "retrieve my height"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Get the height of ${username}.\nmeasure-units:Get the measure units for person height.\nquery:Print my height in ${person_height_units}."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "read my height"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Get the height of ${username}.\nmeasure-units:Get the measure units for person height.\nquery:Print my height in ${person_height_units}."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "read my height from my profile"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Get the height of ${username}.\nmeasure-units:Get the measure units for person height.\nquery:Print my height in ${person_height_units}."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "find my height"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Get the height of ${username}.\nmeasure-units:Get the measure units for person height.\nquery:Print my height in ${person_height_units}."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "what is my height?"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Get the height of ${username}.\nmeasure-units:Get the measure units for person height.\nquery:Print my height in ${person_height_units}."
     }
   ],
   [
@@ -766,7 +1424,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get the personal phone number of Lontkowschi Mirela Petronela.\nquery:Print the personal phone number for Lontkowschi Mirela Petronela."
+      "content": "Get the username for Lontkowschi Mirela Petronela.\nuser-profile:Get the personal phone number of ${username}.\nquery:Print the personal phone number for ${username}."
     }
   ],
   [
@@ -780,7 +1438,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get the business phone number of Simeria Anca.\nquery:Print the business phone number for Simeria Anca."
+      "content": "Get the username for Simeria Anca.\nuser-profile:Get the business phone number of ${username}.\nquery:Print the business phone number for ${username}."
     }
   ],
   [
@@ -794,7 +1452,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get the personal email address of Gavriliu Nicolaie.\nquery:Print the personal email address for Gavriliu Nicolaie."
+      "content": "Get the username for Gavriliu Nicolaie.\nuser-profile:Get the personal email address of ${username}.\nquery:Print the personal email address for ${username}."
     }
   ],
   [
@@ -808,21 +1466,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get the business email address of Gogălniceanu Ștefan.\nquery:Print the business email address for Gogălniceanu Ștefan."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "get rusu florentin's height"
-    },
-    {
-      "role": "model",
-      "content": "user-profile:Get the height of Rusu Florentin.\nquery:Print the height for Rusu Florentin."
+      "content": "Get the username for Gogălniceanu Ștefan.\nuser-profile:Get the business email address of ${username}.\nquery:Print the business email address for ${username}."
     }
   ],
   [
@@ -836,21 +1480,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get the birth date of Baciu Vasile.\nquery:Print the birth date for Baciu Vasile."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "get birth day for acatrinei ingrid"
-    },
-    {
-      "role": "model",
-      "content": "user-profile:Get the birth day of Acatrinei Ingrid.\nquery:Print the birth day for Acatrinei Ingrid."
+      "content": "Get the username for Baciu Vasile.\nuser-profile:Get the birth date of ${username}.\nquery:Print the birth date for ${username}."
     }
   ],
   [
@@ -864,21 +1494,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get the birth place of Gogălniceanu Mioara.\nquery:Print the birth place for Gogălniceanu Mioara."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "get age of acatrinei liviu"
-    },
-    {
-      "role": "model",
-      "content": "user-profile:Get the age of Acatrinei Liviu.\nquery:Print the age for Acatrinei Liviu."
+      "content": "Get the username for Gogălniceanu Mioara.\nuser-profile:Get the birth place of ${username}.\nquery:Print the birth place for ${username}."
     }
   ],
   [
@@ -892,7 +1508,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get the profession of Adam Iosif.\nquery:Print the profession for Adam Iosif."
+      "content": "Get the username for Adam Iosif.\nuser-profile:Get the profession of ${username}.\nquery:Print the profession for ${username}."
     }
   ],
   [
@@ -906,7 +1522,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get the location of Miron Daniela Elena.\nquery:Print the location for Miron Daniela Elena."
+      "content": "Get the username for Miron Daniela Elena.\nuser-profile:Get the location of ${username}.\nquery:Print the location for ${username}."
     }
   ],
   [
@@ -920,7 +1536,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get the place of Miron Aurelia.\nquery:Print the place for Miron Aurelia."
+      "content": "Get the username for Miron Aurelia.\nuser-profile:Get the place of ${username}.\nquery:Print the place for ${username}."
     }
   ],
   [
@@ -934,7 +1550,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get the education of Vaino George Viorel.\nquery:Print the education for Vaino George Viorel."
+      "content": "Get the username for Vaino George Viorel.\nuser-profile:Get the education of ${username}.\nquery:Print the education for ${username}."
     }
   ],
   [
@@ -948,7 +1564,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get the hobbies of Cornea Sofica.\nquery:Print the hobbies for Cornea Sofica."
+      "content": "Get the username for Cornea Sofica.\nuser-profile:Get the hobbies of ${username}.\nquery:Print the hobbies for ${username}."
     }
   ],
   [
@@ -962,7 +1578,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get the skill level of Petrovici Traian.\nquery:Print the skill level for Petrovici Traian."
+      "content": "Get the username for Petrovici Traian.\nuser-profile:Get the skill level of ${username}.\nquery:Print the skill level for ${username}."
     }
   ],
   [
@@ -976,7 +1592,35 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get the social security number of Dorneanu Deliana.\nquery:Print the social security number for Dorneanu Deliana."
+      "content": "Get the username for Dorneanu Deliana.\nuser-profile:Get the social security number of ${username}.\nquery:Print the social security number for ${username}."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get SSN for dorneanu stefan"
+    },
+    {
+      "role": "model",
+      "content": "Get the username for Dorneanu Ștefan.\nuser-profile:Get the social security number of ${username}.\nquery:Print the social security number for ${username}."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get identity card serial for rusu maria"
+    },
+    {
+      "role": "model",
+      "content": "Get the username for Rusu Maria.\nuser-profile:Get the identity card serial of ${username}.\nquery:Print the identity card serial for ${username}."
     }
   ],
   [
@@ -990,7 +1634,217 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get the birth certificate serial of Dorneanu Ioana Sorana.\nquery:Print the birth certificate serial for Dorneanu Ioana Sorana."
+      "content": "Get the username for Dorneanu Ioana Sorana.\nuser-profile:Get the birth certificate serial of ${username}.\nquery:Print the birth certificate serial for ${username}."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get birthday for acatrinei ingrid"
+    },
+    {
+      "role": "model",
+      "content": "Get the username for Acatrinei Ingrid.\nuser-profile:Get the birth date of ${username}.\nquery:Print the birthday for ${username}."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "what is birthday of preda marin?"
+    },
+    {
+      "role": "model",
+      "content": "Get the username for Preda Marin.\nuser-profile:Get the birth date of ${username}.\nquery:What is the birthday of ${username}?"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get age of acatrinei liviu"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get the username for Acatrinei Liviu.\nuser-profile:Get the birth date of ${username}.\ntime-service:Get date for today.\ntime-service:Compute age as the difference in years between ${date} and ${birth_date}.\nquery:Print the age for ${username}."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "please get the age for gogalniceanu denis"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get the username for Gogălniceanu Denis.\nuser-profile:Get the birth date of ${username}.\ntime-service:Get date for today.\ntime-service:Compute age as the difference in years between ${date} and ${birth_date}.\nquery:Print the age for ${username}."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "retrieve age of rusu florin"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get the username for Rusu Florin.\nuser-profile:Get the birth date of ${username}.\ntime-service:Get date for today.\ntime-service:Compute age as the difference in years between ${date} and ${birth_date}.\nquery:Print the age for ${username}."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "please acquire age for baciu vasile"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get the username for Baciu Vasile.\nuser-profile:Get the birth date of ${username}.\ntime-service:Get date for today.\ntime-service:Compute age as the difference in years between ${date} and ${birth_date}.\nquery:Print the age for ${username}."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "compute rotaru mihai age"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get the username for Rotaru Mihai.\nuser-profile:Get the birth date of ${username}.\ntime-service:Get date for today.\ntime-service:Compute age as the difference in years between ${date} and ${birth_date}.\nquery:Print the age for ${username}."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "calculate the age of rusu dragoș"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get the username for Rusu Dragoș.\nuser-profile:Get the birth date of ${username}.\ntime-service:Get date for today.\ntime-service:Compute age as the difference in years between ${date} and ${birth_date}.\nquery:Print the age for ${username}."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "determine the age for dorneanu sorana ioana"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get the username for Dorneanu Sorana Ioana.\nuser-profile:Get the birth date of ${username}.\ntime-service:Get date for today.\ntime-service:Compute age as the difference in years between ${date} and ${birth_date}.\nquery:Print the age for ${username}."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "figure out miron elena age"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get the username for Miron Elena.\nuser-profile:Get the birth date of ${username}.\ntime-service:Get date for today.\ntime-service:Compute age as the difference in years between ${date} and ${birth_date}.\nquery:Print the age for ${username}."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "what is the age of dorneanu ioan silviu?"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get the username for Dorneanu Ioan Silviu.\nuser-profile:Get the birth date of ${username}.\ntime-service:Get date for today.\ntime-service:Compute age as the difference in years between ${date} and ${birth_date}.\nquery:Print the age for ${username}."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get the height of gogalniceanu florin"
+    },
+    {
+      "role": "model",
+      "content": "Get the username for Gogălniceanu Florin.\nuser-profile:Get the height of ${username}.\nmeasure-units:Get the measure units for person height.\nquery:Print the height for ${username} in ${person_height_units}."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get the height of rotaru iulian"
+    },
+    {
+      "role": "model",
+      "content": "Get the username for Rotaru Iulian.\nuser-profile:Get the height of ${username}.\nmeasure-units:Get the measure units for person height.\nquery:Print the height for ${username} in ${person_height_units}."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get person height of pascaru radu"
+    },
+    {
+      "role": "model",
+      "content": "Get the username for Pascaru Radu.\nuser-profile:Get the height of ${username}.\nmeasure-units:Get the measure units for person height.\nquery:Print the person height for ${username} in ${person_height_units}."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get rusu florentin's height"
+    },
+    {
+      "role": "model",
+      "content": "Get the username for Rusu Florentin.\nuser-profile:Get the height of ${username}.\nmeasure-units:Get the measure units for person height.\nquery:Print the height for ${username} in ${person_height_units}."
     }
   ],
   [
@@ -1154,11 +2008,11 @@
     },
     {
       "role": "user",
-      "content": "save driving license to professional in my user profile"
+      "content": "save driving license type to professional in my user profile"
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Set the driving license to professional for ${username}.\nuser-profile:Get the driving license for ${username}.\nquery:Print the driving license for ${username}."
+      "content": "user-profile:Get my username.\nuser-profile:Set the driving license type to professional for ${username}.\nuser-profile:Get the driving license type for ${username}.\nquery:Print the driving license type for ${username}."
     }
   ],
   [
@@ -1658,11 +2512,11 @@
     },
     {
       "role": "user",
-      "content": "save driving license to commercial for dorneanu ioan silviu in user profile"
+      "content": "save driving license type to commercial for dorneanu ioan silviu in user profile"
     },
     {
       "role": "model",
-      "content": "user-profile:Set the driving license to commercial for Dorneanu Ioan Silviu.\nuser-profile:Get the driving license for Dorneanu Ioan Silviu.\nquery:Print the driving license for Dorneanu Ioan Silviu."
+      "content": "user-profile:Set the driving license type to commercial for Dorneanu Ioan Silviu.\nuser-profile:Get the driving license type for Dorneanu Ioan Silviu.\nquery:Print the driving license type for Dorneanu Ioan Silviu."
     }
   ],
   [
@@ -1672,11 +2526,81 @@
     },
     {
       "role": "user",
-      "content": "write driving license to personal for dorneanu ioana sorana in user profile"
+      "content": "write driving license type to personal for dorneanu ioana sorana in user profile"
     },
     {
       "role": "model",
-      "content": "user-profile:Set the driving license to personal for Dorneanu Ioana Sorana.\nuser-profile:Get the driving license for Dorneanu Ioana Sorana.\nquery:Print the driving license for Dorneanu Ioana Sorana."
+      "content": "user-profile:Set the driving license type to personal for Dorneanu Ioana Sorana.\nuser-profile:Get the driving license type for Dorneanu Ioana Sorana.\nquery:Print the driving license type for Dorneanu Ioana Sorana."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "what is my driving license type?"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Get the driving license type of ${username}.\nquery:What is my driving license type?"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "what are my hobbies?"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Get the hobbies of ${username}.\nquery:What are my hobbies?"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "when my social security number was updated?"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Get the social security number of ${username}.\nquery:When my social security number was updated?"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "when my height was last modified?"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Get the height of ${username}.\nquery:When my height was last modified?"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "update time for my location"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Get the location of ${username}.\nquery:When my location was updated?"
     }
   ],
   [
@@ -5228,7 +6152,7 @@
     },
     {
       "role": "user",
-      "content": "my blood measurements are 125 85 70"
+      "content": "save my blood measurements of 125 85 70"
     },
     {
       "role": "model",
@@ -5256,7 +6180,7 @@
     },
     {
       "role": "user",
-      "content": "save my blood 128 81 55"
+      "content": "record my blood 128 81 55"
     },
     {
       "role": "model",
@@ -5270,7 +6194,7 @@
     },
     {
       "role": "user",
-      "content": "save blood readings: 130 82 85"
+      "content": "write blood readings: 130 82 85"
     },
     {
       "role": "model",
@@ -5354,7 +6278,7 @@
     },
     {
       "role": "user",
-      "content": "rusu florentin blood measurements are 118 82 63"
+      "content": "save rusu florentin blood measurements of 118 82 63"
     },
     {
       "role": "model",
@@ -5368,7 +6292,7 @@
     },
     {
       "role": "user",
-      "content": "blood measurements for pătrașcu constantin are 119 81 64"
+      "content": "record blood measurements for pătrașcu constantin of 119 81 64"
     },
     {
       "role": "model",
@@ -5382,7 +6306,7 @@
     },
     {
       "role": "user",
-      "content": "save blood 115 75 60 to Gavriliu Mihaela"
+      "content": "write blood 115 75 60 to Gavriliu Mihaela"
     },
     {
       "role": "model",
@@ -5396,7 +6320,7 @@
     },
     {
       "role": "user",
-      "content": "save rotaru lucian blood readings: 112 65 78"
+      "content": "set rotaru lucian blood readings: 112 65 78"
     },
     {
       "role": "model",
@@ -5438,7 +6362,7 @@
     },
     {
       "role": "user",
-      "content": "my temperature is 35.0"
+      "content": "save my body temperature of 35.0"
     },
     {
       "role": "model",
@@ -5522,7 +6446,7 @@
     },
     {
       "role": "user",
-      "content": "cojocaru cristian temperature is 35.1"
+      "content": "save cojocaru cristian temperature 35.1"
     },
     {
       "role": "model",
@@ -5536,7 +6460,7 @@
     },
     {
       "role": "user",
-      "content": "temperature for acatrinei liviu is 35.2"
+      "content": "write temperature for acatrinei liviu of 35.2"
     },
     {
       "role": "model",
@@ -5606,11 +6530,11 @@
     },
     {
       "role": "user",
-      "content": "my weight is 89"
+      "content": "save my weight of 89"
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Get my height.\nhealth:Save body weight of 89.00 kg and height of ${height} cm for ${username}.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get my username.\nuser-profile:Get the height of ${username}.\nhealth:Save body weight of 89.00 kg and height of ${height} cm for ${username}.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -5620,11 +6544,11 @@
     },
     {
       "role": "user",
-      "content": "my weight measurement is 89.75"
+      "content": "write weight measurement 89.75"
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Get my height.\nhealth:Save body weight of 89.75 kg and height of ${height} cm for ${username}.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get my username.\nuser-profile:Get the height of ${username}.\nhealth:Save body weight of 89.75 kg and height of ${height} cm for ${username}.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -5634,11 +6558,11 @@
     },
     {
       "role": "user",
-      "content": "my body weight is 92"
+      "content": "record my body weight of 92"
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Get my height.\nhealth:Save my body weight of 92.00 kg and height of ${height} cm for ${username}.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get my username.\nuser-profile:Get the height of ${username}.\nhealth:Save my body weight of 92.00 kg and height of ${height} cm for ${username}.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -5652,7 +6576,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Get my height.\nhealth:Save body weight of 82.50 kg and height of ${height} cm for ${username}.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get my username.\nuser-profile:Get the height of ${username}.\nhealth:Save body weight of 82.50 kg and height of ${height} cm for ${username}.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -5666,7 +6590,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Get my height.\nhealth:Save body weight of 86.00 kg and height of ${height} cm for ${username}.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get my username.\nuser-profile:Get the height of ${username}.\nhealth:Save body weight of 86.00 kg and height of ${height} cm for ${username}.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -5680,7 +6604,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Get my height.\nhealth:Save body weight of 88.50 kg and height of ${height} cm for ${username}.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get my username.\nuser-profile:Get the height of ${username}.\nhealth:Save body weight of 88.50 kg and height of ${height} cm for ${username}.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -5694,7 +6618,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Get my height.\nhealth:Save body weight of 87.50 kg and height of ${height} cm for ${username}.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get my username.\nuser-profile:Get the height of ${username}.\nhealth:Save body weight of 87.50 kg and height of ${height} cm for ${username}.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -5708,7 +6632,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Get my height.\nhealth:Save body weight of 94.00 kg and height of ${height} cm for ${username}.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get my username.\nuser-profile:Get the height of ${username}.\nhealth:Save body weight of 94.00 kg and height of ${height} cm for ${username}.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -5722,7 +6646,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Get my height.\nhealth:Save body weight of 88.00 kg and height of ${height} cm for ${username}.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get my username.\nuser-profile:Get the height of ${username}.\nhealth:Save body weight of 88.00 kg and height of ${height} cm for ${username}.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -5736,7 +6660,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Get my height.\nhealth:Save body weight of 75.50 kg and height of ${height} cm for ${username}.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get my username.\nuser-profile:Get the height of ${username}.\nhealth:Save body weight of 75.50 kg and height of ${height} cm for ${username}.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -5750,7 +6674,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Get my height.\nhealth:Save body weight of 62.00 kg and height of ${height} cm for ${username}.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get my username.\nuser-profile:Get the height of ${username}.\nhealth:Save body weight of 62.00 kg and height of ${height} cm for ${username}.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -5760,7 +6684,7 @@
     },
     {
       "role": "user",
-      "content": "baciu vasile weight is 89.5"
+      "content": "insert baciu vasile weight of 89.5"
     },
     {
       "role": "model",
@@ -5774,7 +6698,7 @@
     },
     {
       "role": "user",
-      "content": "weight of agavriloaiei ioana is 56"
+      "content": "record weight for agavriloaiei ioana of 56"
     },
     {
       "role": "model",
@@ -5886,7 +6810,7 @@
     },
     {
       "role": "user",
-      "content": "my glucose level is 103"
+      "content": "insert my glucose level of 103"
     },
     {
       "role": "model",
@@ -5900,7 +6824,7 @@
     },
     {
       "role": "user",
-      "content": "my blood sugar is 107"
+      "content": "record my blood sugar 107"
     },
     {
       "role": "model",
@@ -5942,7 +6866,7 @@
     },
     {
       "role": "user",
-      "content": "gavriliu petronela glucose level is 102"
+      "content": "save gavriliu petronela glucose level of 102"
     },
     {
       "role": "model",
@@ -5956,7 +6880,7 @@
     },
     {
       "role": "user",
-      "content": "blood glucose level for gavriliu andrei is 95"
+      "content": "record blood glucose level for gavriliu andrei of 95"
     },
     {
       "role": "model",
@@ -6614,6 +7538,90 @@
     },
     {
       "role": "user",
+      "content": "what is my weight"
+    },
+    {
+      "role": "model",
+      "content": "time-service:Get the date for today.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:What is my weight?"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "what is my today weight?"
+    },
+    {
+      "role": "model",
+      "content": "time-service:Get the date for today.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:What is my today weight?"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "what was my yesterday weight"
+    },
+    {
+      "role": "model",
+      "content": "time-service:Get the date for yesterday.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:What was my yesterday weight?"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "what was my weight on yesterday?"
+    },
+    {
+      "role": "model",
+      "content": "time-service:Get the date for yesterday.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:What was my weight on yesterday?"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "how much did i weigh yesterday?"
+    },
+    {
+      "role": "model",
+      "content": "time-service:Get the date for yesterday.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:How much did I weigh yesterday?"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "my weight on the day before yesterday"
+    },
+    {
+      "role": "model",
+      "content": "time-service:Get the date for teh day before yesterday.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:Print my weight on the day before yesterday."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
       "content": "medical report"
     },
     {
@@ -7080,7 +8088,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my location.\nweather:Get current weather in ${location}.\nquery:How is the weather?"
+      "content": "user-profile:Get my username.\nuser-profile:Get the location of ${username}.\nweather:Get current weather in ${location}.\nquery:How is the weather?"
     }
   ],
   [
@@ -7094,7 +8102,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my location.\nweather:Get current weather in ${location}.\nquery:How is the weather right now?"
+      "content": "user-profile:Get my username.\nuser-profile:Get the location of ${username}.\nweather:Get current weather in ${location}.\nquery:How is the weather right now?"
     }
   ],
   [
@@ -7108,7 +8116,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my location.\nweather:Get current weather in ${location}.\nquery:How is the weather outside?"
+      "content": "user-profile:Get my username.\nuser-profile:Get the location of ${username}.\nweather:Get current weather in ${location}.\nquery:How is the weather outside?"
     }
   ],
   [
@@ -7164,7 +8172,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my location.\nweather:Get current weather in ${location}.\nquery:Check weather."
+      "content": "user-profile:Get my username.\nuser-profile:Get the location of ${username}.\nweather:Get current weather in ${location}.\nquery:Check weather."
     }
   ],
   [
@@ -7206,7 +8214,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my location.\nweather:Get current weather in ${location}.\nquery:How is outdoor?"
+      "content": "user-profile:Get my username.\nuser-profile:Get the location of ${username}.\nweather:Get current weather in ${location}.\nquery:How is outdoor?"
     }
   ],
   [
@@ -7248,7 +8256,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my location.\nweather:Get current weather in ${location}.\nquery:How's outside?"
+      "content": "user-profile:Get my username.\nuser-profile:Get the location of ${username}.\nweather:Get current weather in ${location}.\nquery:How's outside?"
     }
   ],
   [
@@ -7262,7 +8270,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my location.\nweather:Get current weather in ${location}.\nquery:How cold is out there?"
+      "content": "user-profile:Get my username.\nuser-profile:Get the location of ${username}.\nweather:Get current weather in ${location}.\nquery:How cold is out there?"
     }
   ],
   [
@@ -7276,7 +8284,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my location.\nweather:Get current weather in ${location}.\nquery:How cold is out there in this moment?"
+      "content": "user-profile:Get my username.\nuser-profile:Get the location of ${username}.\nweather:Get current weather in ${location}.\nquery:How cold is out there in this moment?"
     }
   ],
   [
@@ -7290,7 +8298,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my location.\nweather:Get current weather in ${location}.\nquery:How warm is outside?"
+      "content": "user-profile:Get my username.\nuser-profile:Get the location of ${username}.\nweather:Get current weather in ${location}.\nquery:How warm is outside?"
     }
   ],
   [
@@ -7360,7 +8368,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my location.\nweather:Get current weather in ${location}.\nquery:Is it raining? Should I take my umbrella?"
+      "content": "user-profile:Get my username.\nuser-profile:Get the location of ${username}.\nweather:Get current weather in ${location}.\nquery:Is it raining? Should I take my umbrella?"
     }
   ],
   [
@@ -7374,7 +8382,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my location.\nweather:Get current weather in ${location}.\nquery:Can I go for a bike ride?"
+      "content": "user-profile:Get my username.\nuser-profile:Get the location of ${username}.\nweather:Get current weather in ${location}.\nquery:Can I go for a bike ride?"
     }
   ],
   [
@@ -7388,7 +8396,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my location.\nweather:Get current weather in ${location}.\nquery:Can I go for a bike ride?"
+      "content": "user-profile:Get my username.\nuser-profile:Get the location of ${username}.\nweather:Get current weather in ${location}.\nquery:Can I go for a bike ride?"
     }
   ],
   [
@@ -7402,7 +8410,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my location.\nweather:Get current weather in ${location}.\nquery:Is fine out there for a bike?"
+      "content": "user-profile:Get my username.\nuser-profile:Get the location of ${username}.\nweather:Get current weather in ${location}.\nquery:Is fine out there for a bike?"
     }
   ],
   [
@@ -7416,7 +8424,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my location.\nweather:Get current weather in ${location}.\nquery:What do you think about a short stroll? Doable?"
+      "content": "user-profile:Get my username.\nuser-profile:Get the location of ${username}.\nweather:Get current weather in ${location}.\nquery:What do you think about a short stroll? Doable?"
     }
   ],
   [
@@ -7430,7 +8438,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get the date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Print hourly weather forecast in tabular form."
+      "content": "time-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:Get the location of ${username}.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Print hourly weather forecast in tabular form."
     }
   ],
   [
@@ -7472,7 +8480,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get the date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Print hourly weather forecast in tabular form."
+      "content": "time-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:Get the location of ${username}.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Print hourly weather forecast in tabular form."
     }
   ],
   [
@@ -7486,7 +8494,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get the date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Print hourly weather forecast in tabular form."
+      "content": "time-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:Get the location of ${username}.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Print hourly weather forecast in tabular form."
     }
   ],
   [
@@ -7500,7 +8508,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get the date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Print hourly weather forecast in tabular form."
+      "content": "time-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:Get the location of ${username}.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Print hourly weather forecast in tabular form."
     }
   ],
   [
@@ -7514,7 +8522,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get the date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Print hourly weather forecast in tabular form."
+      "content": "time-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:Get the location of ${username}.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Print hourly weather forecast in tabular form."
     }
   ],
   [
@@ -7528,7 +8536,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get the date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Print hourly weather forecast in tabular form."
+      "content": "time-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:Get the location of ${username}.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Print hourly weather forecast in tabular form."
     }
   ],
   [
@@ -7542,7 +8550,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get the date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Print hourly weather forecast in tabular form."
+      "content": "time-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:Get the location of ${username}.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Print hourly weather forecast in tabular form."
     }
   ],
   [
@@ -7570,7 +8578,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get the date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Print hourly weather forecast in tabular form."
+      "content": "time-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:Get the location of ${username}.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Print hourly weather forecast in tabular form."
     }
   ],
   [
@@ -7584,7 +8592,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get the date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Print hourly weather forecast in tabular form."
+      "content": "time-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:Get the location of ${username}.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Print hourly weather forecast in tabular form."
     }
   ],
   [
@@ -7612,7 +8620,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get the date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Print hourly weather forecast in tabular form."
+      "content": "time-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:Get the location of ${username}.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Print hourly weather forecast in tabular form."
     }
   ],
   [
@@ -7640,7 +8648,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get the date for today.\nweather:user-profile:Get my location.\nGet hourly weather forecast for ${date} in ${location}.\nquery:Print hourly weather forecast in tabular form."
+      "content": "time-service:Get the date for today.\nweather:user-profile:Get my username.\nuser-profile:Get the location of ${username}.\nGet hourly weather forecast for ${date} in ${location}.\nquery:Print hourly weather forecast in tabular form."
     }
   ],
   [
@@ -7654,7 +8662,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get the date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Print hourly weather forecast in tabular form."
+      "content": "time-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:Get the location of ${username}.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Print hourly weather forecast in tabular form."
     }
   ],
   [
@@ -7682,7 +8690,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get the date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Summarize weather forecast for today."
+      "content": "time-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:Get the location of ${username}.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Summarize weather forecast for today."
     }
   ],
   [
@@ -7710,7 +8718,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get the date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Create a summary of today weather."
+      "content": "time-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:Get the location of ${username}.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Create a summary of today weather."
     }
   ],
   [
@@ -7724,7 +8732,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get the date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Create a summary of today weather forecast."
+      "content": "time-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:Get the location of ${username}.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Create a summary of today weather forecast."
     }
   ],
   [
@@ -7738,7 +8746,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get the date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Today forecast summary."
+      "content": "time-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:Get the location of ${username}.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Today forecast summary."
     }
   ],
   [
@@ -7752,7 +8760,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get the date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Get today forecast summary in my location."
+      "content": "time-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:Get the location of ${username}.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Get today forecast summary in my location."
     }
   ],
   [
@@ -7766,7 +8774,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get the date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Get today weather forecast and create a summary."
+      "content": "time-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:Get the location of ${username}.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Get today weather forecast and create a summary."
     }
   ],
   [
@@ -7794,7 +8802,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get the date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Print today weather forecast in condensed format."
+      "content": "time-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:Get the location of ${username}.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Print today weather forecast in condensed format."
     }
   ],
   [
@@ -7808,7 +8816,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get the date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Write concise weather forecast for today."
+      "content": "time-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:Get the location of ${username}.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Write concise weather forecast for today."
     }
   ],
   [
@@ -7822,7 +8830,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get the date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Brief today weather forecast."
+      "content": "time-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:Get the location of ${username}.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Brief today weather forecast."
     }
   ],
   [
@@ -7836,7 +8844,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get the date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Essential aspects of today weather forecast."
+      "content": "time-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:Get the location of ${username}.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Essential aspects of today weather forecast."
     }
   ],
   [
@@ -7850,7 +8858,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get the date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Summarize hourly forecast for today."
+      "content": "time-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:Get the location of ${username}.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Summarize hourly forecast for today."
     }
   ],
   [
@@ -7864,7 +8872,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get the date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:How will be weather today? Please use a summarized format."
+      "content": "time-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:Get the location of ${username}.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:How will be weather today? Please use a summarized format."
     }
   ],
   [
@@ -7878,7 +8886,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get the date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Display a summary of today forecast."
+      "content": "time-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:Get the location of ${username}.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Display a summary of today forecast."
     }
   ],
   [
@@ -7892,7 +8900,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get the date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Display today forecast summary."
+      "content": "time-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:Get the location of ${username}.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Display today forecast summary."
     }
   ],
   [
@@ -7920,7 +8928,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get the date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Do I need a rain coat today?"
+      "content": "time-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:Get the location of ${username}.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Do I need a rain coat today?"
     }
   ],
   [
@@ -7934,7 +8942,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get the date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Will I need an umbrella today?"
+      "content": "time-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:Get the location of ${username}.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Will I need an umbrella today?"
     }
   ],
   [
@@ -7948,7 +8956,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get the date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Shall I get an umbrella this afternoon?"
+      "content": "time-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:Get the location of ${username}.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Shall I get an umbrella this afternoon?"
     }
   ],
   [
@@ -7962,7 +8970,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get the date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Do we have rainy prognosis today? To take my umbrella with me?"
+      "content": "time-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:Get the location of ${username}.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Do we have rainy prognosis today? To take my umbrella with me?"
     }
   ],
   [
@@ -7976,7 +8984,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get the date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Is there an hour today good for walking?"
+      "content": "time-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:Get the location of ${username}.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Is there an hour today good for walking?"
     }
   ],
   [
@@ -7990,7 +8998,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get the date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Will we have heavy snow today?"
+      "content": "time-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:Get the location of ${username}.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Will we have heavy snow today?"
     }
   ],
   [
@@ -8004,7 +9012,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get the date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:When could I go for a short walk today?"
+      "content": "time-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:Get the location of ${username}.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:When could I go for a short walk today?"
     }
   ],
   [
@@ -8018,7 +9026,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get the date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:When is more appropriate for a short stroll today?"
+      "content": "time-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:Get the location of ${username}.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:When is more appropriate for a short stroll today?"
     }
   ],
   [
@@ -8032,7 +9040,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get the date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:When is the best time for a short walk today?"
+      "content": "time-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:Get the location of ${username}.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:When is the best time for a short walk today?"
     }
   ],
   [
@@ -8046,7 +9054,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get the date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:When can I ride my bike to the mall today?"
+      "content": "time-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:Get the location of ${username}.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:When can I ride my bike to the mall today?"
     }
   ],
   [
@@ -8060,7 +9068,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get the date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:What time can I go to the mall by bike today?"
+      "content": "time-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:Get the location of ${username}.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:What time can I go to the mall by bike today?"
     }
   ],
   [
@@ -8074,7 +9082,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get the date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:What's it like outside? Do I need warm clothes?"
+      "content": "time-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:Get the location of ${username}.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:What's it like outside? Do I need warm clothes?"
     }
   ],
   [
@@ -8088,7 +9096,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get the date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Do I need thick clothes to go to the store?"
+      "content": "time-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:Get the location of ${username}.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Do I need thick clothes to go to the store?"
     }
   ],
   [
@@ -8102,7 +9110,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get the date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Around what times of this day can I carry out outdoor activities?"
+      "content": "time-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:Get the location of ${username}.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Around what times of this day can I carry out outdoor activities?"
     }
   ],
   [
@@ -8116,7 +9124,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get the date for today.\nuser-profile:Get my location.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:I have some work to do outside today. When could I do it?"
+      "content": "time-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:Get the location of ${username}.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:I have some work to do outside today. When could I do it?"
     }
   ],
   [
@@ -8130,7 +9138,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for the next two weeks in ${location}.\nquery:Print daily weather forecast in tabular form."
+      "content": "user-profile:Get my username.\nuser-profile:Get the location of ${username}.\nweather:Get daily weather forecast for the next two weeks in ${location}.\nquery:Print daily weather forecast in tabular form."
     }
   ],
   [
@@ -8144,7 +9152,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for the next two weeks in ${location}.\nquery:Print daily weather forecast in tabular form."
+      "content": "user-profile:Get my username.\nuser-profile:Get the location of ${username}.\nweather:Get daily weather forecast for the next two weeks in ${location}.\nquery:Print daily weather forecast in tabular form."
     }
   ],
   [
@@ -8158,7 +9166,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for the next two weeks in ${location}.\nquery:Print daily weather forecast in tabular form."
+      "content": "user-profile:Get my username.\nuser-profile:Get the location of ${username}.\nweather:Get daily weather forecast for the next two weeks in ${location}.\nquery:Print daily weather forecast in tabular form."
     }
   ],
   [
@@ -8172,7 +9180,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for the next two weeks in ${location}.\nquery:Print daily weather forecast in tabular form."
+      "content": "user-profile:Get my username.\nuser-profile:Get the location of ${username}.\nweather:Get daily weather forecast for the next two weeks in ${location}.\nquery:Print daily weather forecast in tabular form."
     }
   ],
   [
@@ -8200,7 +9208,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for the next two weeks in ${location}.\nquery:Print daily weather forecast in tabular form."
+      "content": "user-profile:Get my username.\nuser-profile:Get the location of ${username}.\nweather:Get daily weather forecast for the next two weeks in ${location}.\nquery:Print daily weather forecast in tabular form."
     }
   ],
   [
@@ -8214,7 +9222,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for the next two weeks in ${location}.\nquery:Print daily weather forecast in tabular form."
+      "content": "user-profile:Get my username.\nuser-profile:Get the location of ${username}.\nweather:Get daily weather forecast for the next two weeks in ${location}.\nquery:Print daily weather forecast in tabular form."
     }
   ],
   [
@@ -8228,7 +9236,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for next week in ${location}.\nquery:Print daily weather forecast in tabular form."
+      "content": "user-profile:Get my username.\nuser-profile:Get the location of ${username}.\nweather:Get daily weather forecast for next week in ${location}.\nquery:Print daily weather forecast in tabular form."
     }
   ],
   [
@@ -8242,7 +9250,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for this week in ${location}.\nquery:Print daily weather forecast in tabular form."
+      "content": "user-profile:Get my username.\nuser-profile:Get the location of ${username}.\nweather:Get daily weather forecast for this week in ${location}.\nquery:Print daily weather forecast in tabular form."
     }
   ],
   [
@@ -8256,7 +9264,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for this week, in ${location}.\nquery:Print daily weather forecast in tabular form."
+      "content": "user-profile:Get my username.\nuser-profile:Get the location of ${username}.\nweather:Get daily weather forecast for this week, in ${location}.\nquery:Print daily weather forecast in tabular form."
     }
   ],
   [
@@ -8298,7 +9306,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for this week in ${location}.\nquery:Print daily weather forecast in tabular form."
+      "content": "user-profile:Get my username.\nuser-profile:Get the location of ${username}.\nweather:Get daily weather forecast for this week in ${location}.\nquery:Print daily weather forecast in tabular form."
     }
   ],
   [
@@ -8312,7 +9320,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for this week in ${location}.\nquery:Print daily weather forecast in tabular form."
+      "content": "user-profile:Get my username.\nuser-profile:Get the location of ${username}.\nweather:Get daily weather forecast for this week in ${location}.\nquery:Print daily weather forecast in tabular form."
     }
   ],
   [
@@ -8326,7 +9334,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for the next two weeks in ${location}.\nquery:Print daily weather forecast in tabular form."
+      "content": "user-profile:Get my username.\nuser-profile:Get the location of ${username}.\nweather:Get daily weather forecast for the next two weeks in ${location}.\nquery:Print daily weather forecast in tabular form."
     }
   ],
   [
@@ -8354,7 +9362,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for the next 3 days in ${location}.\nquery:Print daily weather forecast in tabular form."
+      "content": "user-profile:Get my username.\nuser-profile:Get the location of ${username}.\nweather:Get daily weather forecast for the next 3 days in ${location}.\nquery:Print daily weather forecast in tabular form."
     }
   ],
   [
@@ -8368,7 +9376,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for the next 5 days in ${location}.\nquery:Print daily weather forecast in tabular form."
+      "content": "user-profile:Get my username.\nuser-profile:Get the location of ${username}.\nweather:Get daily weather forecast for the next 5 days in ${location}.\nquery:Print daily weather forecast in tabular form."
     }
   ],
   [
@@ -8382,7 +9390,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for the next 5 days in Vaslui, Romania.\nquery:Print daily weather forecast in tabular form."
+      "content": "user-profile:Get my username.\nuser-profile:Get the location of ${username}.\nweather:Get daily weather forecast for the next 5 days in Vaslui, Romania.\nquery:Print daily weather forecast in tabular form."
     }
   ],
   [
@@ -8396,7 +9404,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for the next 4 days in ${location}.\nquery:Print daily weather forecast in tabular form."
+      "content": "user-profile:Get my username.\nuser-profile:Get the location of ${username}.\nweather:Get daily weather forecast for the next 4 days in ${location}.\nquery:Print daily weather forecast in tabular form."
     }
   ],
   [
@@ -8424,7 +9432,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for the next 10 days in ${location}.\nquery:Print daily weather forecast in tabular form."
+      "content": "user-profile:Get my username.\nuser-profile:Get the location of ${username}.\nweather:Get daily weather forecast for the next 10 days in ${location}.\nquery:Print daily weather forecast in tabular form."
     }
   ],
   [
@@ -8452,7 +9460,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for the next two weeks in ${location}?\nquery:Recommend one day in the next two weeks for some outdoor activities."
+      "content": "user-profile:Get my username.\nuser-profile:Get the location of ${username}.\nweather:Get daily weather forecast for the next two weeks in ${location}?\nquery:Recommend one day in the next two weeks for some outdoor activities."
     }
   ],
   [
@@ -8466,7 +9474,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for the next two weeks in ${location}?\nquery:Give me a day in the next 2 weeks when we can plant some trees."
+      "content": "user-profile:Get my username.\nuser-profile:Get the location of ${username}.\nweather:Get daily weather forecast for the next two weeks in ${location}?\nquery:Give me a day in the next 2 weeks when we can plant some trees."
     }
   ],
   [
@@ -8480,7 +9488,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for the next week in ${location}?\nquery:Can we go swimming this weekend?"
+      "content": "user-profile:Get my username.\nuser-profile:Get the location of ${username}.\nweather:Get daily weather forecast for the next week in ${location}?\nquery:Can we go swimming this weekend?"
     }
   ],
   [
@@ -8494,7 +9502,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for the next two weeks in ${location}?\nquery:I would need two full days without rain this week, to paint the fence."
+      "content": "user-profile:Get my username.\nuser-profile:Get the location of ${username}.\nweather:Get daily weather forecast for the next two weeks in ${location}?\nquery:I would need two full days without rain this week, to paint the fence."
     }
   ],
   [
@@ -8508,7 +9516,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for the next two weeks in ${location}?\nquery:When we might have a few good days for gardening in the coming period?"
+      "content": "user-profile:Get my username.\nuser-profile:Get the location of ${username}.\nweather:Get daily weather forecast for the next two weeks in ${location}?\nquery:When we might have a few good days for gardening in the coming period?"
     }
   ],
   [
@@ -8522,7 +9530,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for the next two weeks in ${location}?\nquery:I would need 3-4 days without rain to repair the roof."
+      "content": "user-profile:Get my username.\nuser-profile:Get the location of ${username}.\nweather:Get daily weather forecast for the next two weeks in ${location}?\nquery:I would need 3-4 days without rain to repair the roof."
     }
   ],
   [
@@ -8536,7 +9544,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for the next two weeks in ${location}?\nquery:Choose two days of good weather to fix the exterior walls."
+      "content": "user-profile:Get my username.\nuser-profile:Get the location of ${username}.\nweather:Get daily weather forecast for the next two weeks in ${location}?\nquery:Choose two days of good weather to fix the exterior walls."
     }
   ],
   [
@@ -8550,7 +9558,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for the next two weeks in ${location}?\nquery:Four consecutive days without rain to replace the outside plaster."
+      "content": "user-profile:Get my username.\nuser-profile:Get the location of ${username}.\nweather:Get daily weather forecast for the next two weeks in ${location}?\nquery:Four consecutive days without rain to replace the outside plaster."
     }
   ],
   [
@@ -8564,7 +9572,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my location.\nweather:Get daily weather forecast for the next two weeks in ${location}?\nquery:I may need to upgrade the greenhouse. I've estimated a 3 day effort. When can we schedule this in the next two weeks?"
+      "content": "user-profile:Get my username.\nuser-profile:Get the location of ${username}.\nweather:Get daily weather forecast for the next two weeks in ${location}?\nquery:I may need to upgrade the greenhouse. I've estimated a 3 day effort. When can we schedule this in the next two weeks?"
     }
   ],
   [
@@ -8648,7 +9656,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about Ion Creanga.\nquery:Create a comprehensive and detailed essay about Ion Creanga life and works."
+      "content": "wikipedia:Read article about Ion Creanga.\nwikipedia:Create a comprehensive and detailed essay about Ion Creanga life and works."
     }
   ],
   [
@@ -8662,7 +9670,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about Aurel Vlaicu.\nquery:Create a comprehensive and detailed essay about Aurel Vlaicu death."
+      "content": "wikipedia:Read article about Aurel Vlaicu.\nwikipedia:Create a comprehensive and detailed essay about Aurel Vlaicu death."
     }
   ],
   [
@@ -8676,7 +9684,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about Leo Tolstoy.\nquery:Create a comprehensive and detailed essay about Leo Tolstoy childhood."
+      "content": "wikipedia:Read article about Leo Tolstoy.\nwikipedia:Create a comprehensive and detailed essay about Leo Tolstoy childhood."
     }
   ],
   [
@@ -8690,7 +9698,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about Joan of Arc.\nquery:Create a comprehensive and detailed essay about Joan of Arc."
+      "content": "wikipedia:Read article about Joan of Arc.\nwikipedia:Create a comprehensive and detailed essay about Joan of Arc."
     }
   ],
   [
@@ -8704,7 +9712,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about Eiffel Tower.\nquery:Create a comprehensive and detailed essay about Eiffel Tower."
+      "content": "wikipedia:Read article about Eiffel Tower.\nwikipedia:Create a comprehensive and detailed essay about Eiffel Tower."
     }
   ],
   [
@@ -8718,7 +9726,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about Roman Empire.\nquery:Create a comprehensive and detailed essay about Roman Empire."
+      "content": "wikipedia:Read article about Roman Empire.\nwikipedia:Create a comprehensive and detailed essay about Roman Empire."
     }
   ],
   [
@@ -8732,7 +9740,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about Romania.\nquery:Create a comprehensive and detailed essay about Romania's early history."
+      "content": "wikipedia:Read article about Romania.\nwikipedia:Create a comprehensive and detailed essay about Romania's early history."
     }
   ],
   [
@@ -8746,7 +9754,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about Oscar Wilde.\nquery:Create a comprehensive and detailed essay about Oscar Wild's work."
+      "content": "wikipedia:Read article about Oscar Wilde.\nwikipedia:Create a comprehensive and detailed essay about Oscar Wild's work."
     }
   ],
   [
@@ -8760,7 +9768,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about Apollo 11.\nquery:Create a comprehensive and detailed essay about Apollo 11 mission."
+      "content": "wikipedia:Read article about Apollo 11.\nwikipedia:Create a comprehensive and detailed essay about Apollo 11 mission."
     }
   ],
   [
@@ -8774,7 +9782,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about American Civil War.\nquery:Create a comprehensive and detailed essay about American Civil War."
+      "content": "wikipedia:Read article about American Civil War.\nwikipedia:Create a comprehensive and detailed essay about American Civil War."
     }
   ],
   [
@@ -8788,7 +9796,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about Thomas Edison.\nquery:Create a comprehensive and detailed essay about Thomas Edison's inventions."
+      "content": "wikipedia:Read article about Thomas Edison.\nwikipedia:Create a comprehensive and detailed essay about Thomas Edison's inventions."
     }
   ],
   [
@@ -8802,7 +9810,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about Stephen the Great.\nquery:Create a comprehensive and detailed essay about Stephen the Great conflicts with Poland."
+      "content": "wikipedia:Read article about Stephen the Great.\nwikipedia:Create a comprehensive and detailed essay about Stephen the Great conflicts with Poland."
     }
   ],
   [
@@ -8816,7 +9824,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about Wright Flyer.\nquery:Create a comprehensive and detailed essay about Wright Flyer's first flight."
+      "content": "wikipedia:Read article about Wright Flyer.\nwikipedia:Create a comprehensive and detailed essay about Wright Flyer's first flight."
     }
   ],
   [
@@ -8830,7 +9838,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about Panama Canal.\nquery:Create a comprehensive and detailed essay about the history of the Panama Canal."
+      "content": "wikipedia:Read article about Panama Canal.\nwikipedia:Create a comprehensive and detailed essay about the history of the Panama Canal."
     }
   ],
   [
@@ -8844,7 +9852,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about Danube.\nquery:Create a comprehensive and detailed essay about Danube river."
+      "content": "wikipedia:Read article about Danube.\nwikipedia:Create a comprehensive and detailed essay about Danube river."
     }
   ],
   [
@@ -8858,7 +9866,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about French Revolution.\nquery:Create a comprehensive and detailed essay about French Revolution."
+      "content": "wikipedia:Read article about French Revolution.\nwikipedia:Create a comprehensive and detailed essay about French Revolution."
     }
   ],
   [
@@ -8872,7 +9880,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about computer.\nquery:Create a comprehensive and detailed essay about computer architecture."
+      "content": "wikipedia:Read article about computer.\nwikipedia:Create a comprehensive and detailed essay about computer architecture."
     }
   ],
   [
@@ -8886,7 +9894,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about lunar lander.\nquery:Create a comprehensive and detailed essay about lunar lander."
+      "content": "wikipedia:Read article about lunar lander.\nwikipedia:Create a comprehensive and detailed essay about lunar lander."
     }
   ],
   [
@@ -8900,7 +9908,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about electric vehicle.\nquery:Create a comprehensive and detailed essay about electric vehicles."
+      "content": "wikipedia:Read article about electric vehicle.\nwikipedia:Create a comprehensive and detailed essay about electric vehicles."
     }
   ],
   [
@@ -8914,7 +9922,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about Serengeti National Park.\nquery:Create a comprehensive and detailed essay about Serengeti ecosystem."
+      "content": "wikipedia:Read article about Serengeti National Park.\nwikipedia:Create a comprehensive and detailed essay about Serengeti ecosystem."
     }
   ],
   [
@@ -8928,7 +9936,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about 'The Adventures of Tom Sawyer'.\nquery:Create a short summary of the 'The Adventures of Tom Sawyer' book."
+      "content": "wikipedia:Read article about 'The Adventures of Tom Sawyer'.\nwikipedia:Create a short summary of the 'The Adventures of Tom Sawyer' book."
     }
   ],
   [
@@ -8942,7 +9950,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about 'David Copperfield'.\nquery:Create a short summary of the 'David Copperfield' book."
+      "content": "wikipedia:Read article about 'David Copperfield'.\nwikipedia:Create a short summary of the 'David Copperfield' book."
     }
   ],
   [
@@ -8956,7 +9964,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about 'Life on the Mississippi'.\nquery:Create a summary of the 'Life on the Mississippi' book."
+      "content": "wikipedia:Read article about 'Life on the Mississippi'.\nwikipedia:Create a summary of the 'Life on the Mississippi' book."
     }
   ],
   [
@@ -8970,7 +9978,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about 'Adventures of Huckleberry Finn'.\nquery:Create a summary of the 'Adventures of Huckleberry Finn' book."
+      "content": "wikipedia:Read article about 'Adventures of Huckleberry Finn'.\nwikipedia:Create a summary of the 'Adventures of Huckleberry Finn' book."
     }
   ],
   [
@@ -8984,7 +9992,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about 'A Connecticut Yankee in King Arthur's Court'.\nquery:Create a summary of the 'A Connecticut Yankee in King Arthur's Court' book."
+      "content": "wikipedia:Read article about 'A Connecticut Yankee in King Arthur's Court'.\nwikipedia:Create a summary of the 'A Connecticut Yankee in King Arthur's Court' book."
     }
   ],
   [
@@ -8998,7 +10006,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about 'Oliver Twist'.\nquery:Create a summary of the 'Oliver Twist' book."
+      "content": "wikipedia:Read article about 'Oliver Twist'.\nwikipedia:Create a summary of the 'Oliver Twist' book."
     }
   ],
   [
@@ -9012,7 +10020,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about 'The Grapes of Wrath'.\nquery:Create a short summary of the 'The Grapes of Wrath' book."
+      "content": "wikipedia:Read article about 'The Grapes of Wrath'.\nwikipedia:Create a short summary of the 'The Grapes of Wrath' book."
     }
   ],
   [
@@ -9026,7 +10034,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about Stephen the Great.\nquery:Create a summary of Stephen the Great's Battle of Vaslui."
+      "content": "wikipedia:Read article about Stephen the Great.\nwikipedia:Create a summary of Stephen the Great's Battle of Vaslui."
     }
   ],
   [
@@ -9036,11 +10044,11 @@
     },
     {
       "role": "user",
-      "content": "summary of barbarossa plan from ww2"
+      "content": "summary of 'Operation_Barbarossa' from ww2"
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about Operation Barbarossa.\nquery:Create a summary of the Operation Barbarossa from World War II."
+      "content": "wikipedia:Read article about 'Operation Barbarossa'.\nwikipedia:Create a summary of the Operation Barbarossa from World War II."
     }
   ],
   [
@@ -9054,7 +10062,77 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about Operation Market Garden.\nquery:Create a summary of the Operation Market Garden from World War II."
+      "content": "wikipedia:Read article about 'Operation Market Garden'.\nwikipedia:Create a summary of the Operation Market Garden from World War II."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "summarize the plot of the movie 'Arkansas_(film)' from 2020"
+    },
+    {
+      "role": "model",
+      "content": "wikipedia:Read article about 'Arkansas (film)'.\nwikipedia:Create a summary for the plot of the movie Arkansas from 2020."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "create plot summary for movie 'The_Magnificent_Seven_(2016_film)'"
+    },
+    {
+      "role": "model",
+      "content": "wikipedia:Read article about 'The Magnificent Seven (2016 film)'.\nwikipedia:Create a summary for the plot of the movie The Magnificent Seven from 2016."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "plot summary of movie 'Dune_(2021_film)'"
+    },
+    {
+      "role": "model",
+      "content": "wikipedia:Read article about 'Dune (2021 film)'.\nwikipedia:Create a summary for the plot of the movie Dune from 2021."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "write summary of movie plot '47_Ronin_(2013_film)'"
+    },
+    {
+      "role": "model",
+      "content": "wikipedia:Read article about '47 Ronin (2013 film)'.\nwikipedia:Create a summary for the plot of the movie 47 Ronin from 2013."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "book brief summary for 'Dune_(novel)'"
+    },
+    {
+      "role": "model",
+      "content": "wikipedia:Read article about 'Dune (novel)'.\nwikipedia:Create a short plot summary of the novel Dune."
     }
   ],
   [
@@ -9068,7 +10146,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about lion.\nquery:Create a story in a narrative style about a day from a lions pride."
+      "content": "wikipedia:Read article about lion.\nwikipedia:Create a story in a narrative style about a day from a lions pride."
     }
   ],
   [
@@ -9082,7 +10160,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about Aurel Vlaicu.\nquery:Create a story in a narrative style about Aurel Vlaicu attempt to cross the mountains."
+      "content": "wikipedia:Read article about Aurel Vlaicu.\nwikipedia:Create a story in a narrative style about Aurel Vlaicu attempt to cross the mountains."
     }
   ],
   [
@@ -9096,7 +10174,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about Marie Curie.\nquery:Create a story in a narrative style about Marie Curie's discovery of radioactivity."
+      "content": "wikipedia:Read article about Marie Curie.\nwikipedia:Create a story in a narrative style about Marie Curie's discovery of radioactivity."
     }
   ],
   [
@@ -9110,7 +10188,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about hunting.\nquery:Create a story in a narrative style about primitive humans hunting."
+      "content": "wikipedia:Read article about hunting.\nwikipedia:Create a story in a narrative style about primitive humans hunting."
     }
   ],
   [
@@ -9124,7 +10202,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about Oscar Wilde.\nquery:Create a story in a narrative style about Oscar Wilde's time in prison."
+      "content": "wikipedia:Read article about Oscar Wilde.\nwikipedia:Create a story in a narrative style about Oscar Wilde's time in prison."
     }
   ],
   [
@@ -9138,7 +10216,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about Thomas Edison.\nquery:Create a story in a narrative style about Thomas Edison inventing the electric light."
+      "content": "wikipedia:Read article about Thomas Edison.\nwikipedia:Create a story in a narrative style about Thomas Edison inventing the electric light."
     }
   ],
   [
@@ -9152,7 +10230,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about Christopher Columbus.\nquery:Create a story in a narrative style about America's discovery by Christopher Columbus."
+      "content": "wikipedia:Read article about Christopher Columbus.\nwikipedia:Create a story in a narrative style about America's discovery by Christopher Columbus."
     }
   ],
   [
@@ -9166,7 +10244,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about Jack London.\nquery:Create a story in a narrative style about Jack London's participation in the gold rush."
+      "content": "wikipedia:Read article about Jack London.\nwikipedia:Create a story in a narrative style about Jack London's participation in the gold rush."
     }
   ],
   [
@@ -9180,7 +10258,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about Jack London\nquery:List the works of Jack London."
+      "content": "wikipedia:Read article about Jack London\nwikipedia:List the works of Jack London."
     }
   ],
   [
@@ -9194,7 +10272,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about Mihail Sadoveanu\nquery:List the works of Mihail Sadoveanu."
+      "content": "wikipedia:Read article about Mihail Sadoveanu\nwikipedia:List the works of Mihail Sadoveanu."
     }
   ],
   [
@@ -9208,7 +10286,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about Pablo Picasso\nquery:List the works of Pablo Picasso."
+      "content": "wikipedia:Read article about Pablo Picasso\nwikipedia:List the works of Pablo Picasso."
     }
   ],
   [
@@ -9222,7 +10300,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about Franz Kafka\nquery:List the works of Franz Kafka."
+      "content": "wikipedia:Read article about Franz Kafka\nwikipedia:List the works of Franz Kafka."
     }
   ],
   [
@@ -9236,7 +10314,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about John Steinbeck\nquery:List the works of John Steinbeck."
+      "content": "wikipedia:Read article about John Steinbeck\nwikipedia:List the works of John Steinbeck."
     }
   ],
   [
@@ -9250,7 +10328,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about John Steinbeck\nquery:List the works of John Steinbeck."
+      "content": "wikipedia:Read article about John Steinbeck\nwikipedia:List the works of John Steinbeck."
     }
   ],
   [
@@ -9264,7 +10342,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about Camil Petrescu\nquery:List the works of Camil Petrescu."
+      "content": "wikipedia:Read article about Camil Petrescu\nwikipedia:List the works of Camil Petrescu."
     }
   ],
   [
@@ -9278,7 +10356,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about Alexandre Dumas\nquery:List the works of Alexandre Dumas."
+      "content": "wikipedia:Read article about Alexandre Dumas\nwikipedia:List the works of Alexandre Dumas."
     }
   ],
   [
@@ -9292,7 +10370,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about Alexandre Dumas, son\nquery:List the works of Alexandre Dumas, son."
+      "content": "wikipedia:Read article about Alexandre Dumas, son\nwikipedia:List the works of Alexandre Dumas, son."
     }
   ],
   [
@@ -9306,7 +10384,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about Constantin Brâncuși\nquery:List the works of Constantin Brâncuși."
+      "content": "wikipedia:Read article about Constantin Brâncuși\nwikipedia:List the works of Constantin Brâncuși."
     }
   ],
   [
@@ -9320,7 +10398,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about Ludwig van Beethoven\nquery:List the works of Ludwig van Beethoven."
+      "content": "wikipedia:Read article about Ludwig van Beethoven\nwikipedia:List the works of Ludwig van Beethoven."
     }
   ],
   [
@@ -9334,7 +10412,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about Vincent van Gogh\nquery:List the works of Vincent van Gogh."
+      "content": "wikipedia:Read article about Vincent van Gogh\nwikipedia:List the works of Vincent van Gogh."
     }
   ],
   [
@@ -9348,7 +10426,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about George Enescu\nquery:List the works of George Enescu."
+      "content": "wikipedia:Read article about George Enescu\nwikipedia:List the works of George Enescu."
     }
   ],
   [
@@ -9362,7 +10440,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about Ion Creanga\nquery:List the stories of Ion Creanga."
+      "content": "wikipedia:Read article about Ion Creanga\nwikipedia:List the stories of Ion Creanga."
     }
   ],
   [
@@ -9376,7 +10454,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about Mark Twain\nquery:List the stories of Mark Twain."
+      "content": "wikipedia:Read article about Mark Twain\nwikipedia:List the stories of Mark Twain."
     }
   ],
   [
@@ -9390,7 +10468,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about Brothers Grimm\nquery:List the stories of Brothers Grimm."
+      "content": "wikipedia:Read article about Brothers Grimm\nwikipedia:List the stories of Brothers Grimm."
     }
   ],
   [
@@ -9404,7 +10482,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about Hans Christian Andersen\nquery:List the stories of Hans Christian Andersen."
+      "content": "wikipedia:Read article about Hans Christian Andersen\nwikipedia:List the stories of Hans Christian Andersen."
     }
   ],
   [
@@ -9418,7 +10496,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about Cezar Petrescu\nquery:List the stories of Cezar Petrescu."
+      "content": "wikipedia:Read article about Cezar Petrescu\nwikipedia:List the stories of Cezar Petrescu."
     }
   ],
   [
@@ -9432,7 +10510,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about Dr. Seuss\nquery:List the stories of Dr. Seuss."
+      "content": "wikipedia:Read article about Dr. Seuss\nwikipedia:List the stories of Dr. Seuss."
     }
   ],
   [
@@ -9446,7 +10524,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about Aesop's Fables\nquery:List the fables of Aesop."
+      "content": "wikipedia:Read article about Aesop's Fables\nwikipedia:List the fables of Aesop."
     }
   ],
   [
@@ -9460,7 +10538,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about Aesop's Fables\nquery:List the fables of Aesop."
+      "content": "wikipedia:Read article about Aesop's Fables\nwikipedia:List the fables of Aesop."
     }
   ],
   [
@@ -9474,7 +10552,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about La Fontaine's Fables.\nquery:List the fables of Jean de La Fontaine."
+      "content": "wikipedia:Read article about La Fontaine's Fables.\nwikipedia:List the fables of Jean de La Fontaine."
     }
   ],
   [
@@ -9488,7 +10566,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about Ivan Krylov.\nquery:List the fables of Ivan Krylov."
+      "content": "wikipedia:Read article about Ivan Krylov.\nwikipedia:List the fables of Ivan Krylov."
     }
   ],
   [
@@ -9502,7 +10580,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about Hans Christian Andersen.\nquery:List the fables of Hans Christian Andersen."
+      "content": "wikipedia:Read article about Hans Christian Andersen.\nwikipedia:List the fables of Hans Christian Andersen."
     }
   ],
   [
@@ -9516,7 +10594,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about John Gay.\nquery:List the fables of John Gay."
+      "content": "wikipedia:Read article about John Gay.\nwikipedia:List the fables of John Gay."
     }
   ],
   [
@@ -9530,7 +10608,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about Ignacy Krasicki.\nquery:List the fables of Ignacy Krasicki."
+      "content": "wikipedia:Read article about Ignacy Krasicki.\nwikipedia:List the fables of Ignacy Krasicki."
     }
   ],
   [
@@ -9544,7 +10622,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about Franz Kafka.\nquery:List the fables of Franz Kafka."
+      "content": "wikipedia:Read article about Franz Kafka.\nwikipedia:List the fables of Franz Kafka."
     }
   ],
   [
@@ -9558,7 +10636,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about James Thurber.\nquery:List the fables of James Thurber."
+      "content": "wikipedia:Read article about James Thurber.\nwikipedia:List the fables of James Thurber."
     }
   ],
   [
@@ -9572,7 +10650,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about Mihai Eminescu.\nquery:In what period did Mihai Eminescu live?"
+      "content": "wikipedia:Read article about Mihai Eminescu.\nwikipedia:In what period did Mihai Eminescu live?"
     }
   ],
   [
@@ -9586,7 +10664,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about Eiffel Tower.\nquery:What is the height of Eiffel Tower?"
+      "content": "wikipedia:Read article about Eiffel Tower.\nwikipedia:What is the height of Eiffel Tower?"
     }
   ],
   [
@@ -9600,7 +10678,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about Nile.\nquery:What is the length of Nile river?"
+      "content": "wikipedia:Read article about Nile.\nwikipedia:What is the length of Nile river?"
     }
   ],
   [
@@ -9614,7 +10692,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about Norway.\nquery:What is the capital city of norway?"
+      "content": "wikipedia:Read article about Norway.\nwikipedia:What is the capital city of norway?"
     }
   ],
   [
@@ -9628,7 +10706,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about Switzerland.\nquery:How many citizens does switzerland have?"
+      "content": "wikipedia:Read article about Switzerland.\nwikipedia:How many citizens does switzerland have?"
     }
   ],
   [
@@ -9642,7 +10720,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about Romania.\nquery:What are the largest cities in Romania?"
+      "content": "wikipedia:Read article about Romania.\nwikipedia:What are the largest cities in Romania?"
     }
   ],
   [
@@ -9656,7 +10734,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about Albert Einstein.\nquery:When did Albert Einstein create relativity?"
+      "content": "wikipedia:Read article about Albert Einstein.\nwikipedia:When did Albert Einstein create relativity?"
     }
   ],
   [
@@ -9670,7 +10748,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about lion.\nquery:How big is a lion?"
+      "content": "wikipedia:Read article about lion.\nwikipedia:How big is a lion?"
     }
   ],
   [
@@ -9684,7 +10762,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about cheetah.\nquery:What is the speed of a cheetah?"
+      "content": "wikipedia:Read article about cheetah.\nwikipedia:What is the speed of a cheetah?"
     }
   ],
   [
@@ -9698,7 +10776,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about sky.\nquery:Why the sky is blue?"
+      "content": "wikipedia:Read article about sky.\nwikipedia:Why the sky is blue?"
     }
   ],
   [
@@ -9712,7 +10790,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about Moon.\nquery:How far is the Moon?"
+      "content": "wikipedia:Read article about Moon.\nwikipedia:How far is the Moon?"
     }
   ],
   [
@@ -9726,7 +10804,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about Mars.\nquery:How many moons does mars have?"
+      "content": "wikipedia:Read article about Mars.\nwikipedia:How many moons does mars have?"
     }
   ],
   [
@@ -9740,7 +10818,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about solar system.\nquery:How many planets does our solar system have?"
+      "content": "wikipedia:Read article about solar system.\nwikipedia:How many planets does our solar system have?"
     }
   ],
   [
@@ -9754,7 +10832,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about solar system.\nquery:What is the largest planet from solar system?"
+      "content": "wikipedia:Read article about solar system.\nwikipedia:What is the largest planet from solar system?"
     }
   ],
   [
@@ -9768,7 +10846,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about International Space Station.\nquery:What is the speed of the international space station?."
+      "content": "wikipedia:Read article about International Space Station.\nwikipedia:What is the speed of the international space station?."
     }
   ],
   [
@@ -9782,7 +10860,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about Stephen the Great.\nquery:When Stephen the Great ruled Moldavia?"
+      "content": "wikipedia:Read article about Stephen the Great.\nwikipedia:When Stephen the Great ruled Moldavia?"
     }
   ],
   [
@@ -9796,7 +10874,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about solar system.\nquery:List the planets from our solar system and their diameters."
+      "content": "wikipedia:Read article about solar system.\nwikipedia:List the planets from our solar system and their diameters."
     }
   ],
   [
@@ -9810,7 +10888,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about list of largest cities.\nquery:List the population of the largest cities on earth."
+      "content": "wikipedia:Read article about list of largest cities.\nwikipedia:List the population of the largest cities on earth."
     }
   ],
   [
@@ -9824,7 +10902,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about Big Tech.\nquery:What are the 'magnificent seven' companies?"
+      "content": "wikipedia:Read article about Big Tech.\nwikipedia:What are the 'magnificent seven' companies?"
     }
   ],
   [
@@ -9838,7 +10916,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about Denmark.\nquery:Is Greenland an independent state?"
+      "content": "wikipedia:Read article about Denmark.\nwikipedia:Is Greenland an independent state?"
     }
   ],
   [
@@ -9852,7 +10930,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about Christopher Columbus.\nquery:In which year Christopher Columbus discovered America?"
+      "content": "wikipedia:Read article about Christopher Columbus.\nwikipedia:In which year Christopher Columbus discovered America?"
     }
   ],
   [
@@ -9866,7 +10944,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about Tokyo City.\nquery:Extract facts about Tokyo City."
+      "content": "wikipedia:Read article about Tokyo City.\nwikipedia:Extract facts about Tokyo City."
     }
   ],
   [
@@ -9880,7 +10958,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about Stephen the Great.\nquery:Extract facts about Stephen the Great."
+      "content": "wikipedia:Read article about Stephen the Great.\nwikipedia:Extract facts about Stephen the Great."
     }
   ],
   [
@@ -9894,7 +10972,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about Mangalia.\nquery:Extract facts about Mangalia locality."
+      "content": "wikipedia:Read article about Mangalia.\nwikipedia:Extract facts about Mangalia locality."
     }
   ],
   [
@@ -9908,7 +10986,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about Singapore.\nquery:Extract facts about the economy of Singapore."
+      "content": "wikipedia:Read article about Singapore.\nwikipedia:Extract facts about the economy of Singapore."
     }
   ],
   [
@@ -9922,7 +11000,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about Romania.\nquery:Extract facts about the economy of Romania."
+      "content": "wikipedia:Read article about Romania.\nwikipedia:Extract facts about the economy of Romania."
     }
   ],
   [
@@ -9936,7 +11014,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about Danube.\nquery:Extract facts about Danube river."
+      "content": "wikipedia:Read article about Danube.\nwikipedia:Extract facts about Danube river."
     }
   ],
   [
@@ -9950,7 +11028,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about International Space Station.\nquery:Extract facts about International Space Station."
+      "content": "wikipedia:Read article about International Space Station.\nwikipedia:Extract facts about International Space Station."
     }
   ],
   [
@@ -9964,7 +11042,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about lion.\nquery:Extract facts about the physical characteristics of the lion."
+      "content": "wikipedia:Read article about lion.\nwikipedia:Extract facts about the physical characteristics of the lion."
     }
   ],
   [
@@ -9978,7 +11056,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about Saturn V.\nquery:Extract facts about Saturn V rocket."
+      "content": "wikipedia:Read article about Saturn V.\nwikipedia:Extract facts about Saturn V rocket."
     }
   ],
   [
@@ -9992,7 +11070,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about Ferrari.\nquery:Extract facts about the physical properties of Ferrari cars."
+      "content": "wikipedia:Read article about Ferrari.\nwikipedia:Extract facts about the physical properties of Ferrari cars."
     }
   ],
   [
@@ -10006,7 +11084,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about Antonov AN-2.\nquery:Extract facts about Antonov AN-2 plane."
+      "content": "wikipedia:Read article about Antonov AN-2.\nwikipedia:Extract facts about Antonov AN-2 plane."
     }
   ],
   [
@@ -10020,7 +11098,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about Stephen the Great.\nquery:Write a brief description of Stephen the Great's Battle of Vaslui."
+      "content": "wikipedia:Read article about Stephen the Great.\nwikipedia:Write a brief description of Stephen the Great's Battle of Vaslui."
     }
   ],
   [
@@ -10034,7 +11112,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about Charles Darwin.\nquery:Write a brief description of Charles Darwin's expedition with Beagle ship."
+      "content": "wikipedia:Read article about Charles Darwin.\nwikipedia:Write a brief description of Charles Darwin's expedition with Beagle ship."
     }
   ],
   [
@@ -10048,7 +11126,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about Galapagos.\nquery:Write a brief description of the Galapagos Islands."
+      "content": "wikipedia:Read article about Galapagos.\nwikipedia:Write a brief description of the Galapagos Islands."
     }
   ],
   [
@@ -10062,7 +11140,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about Yuri Gagarin.\nquery:Write a brief description of Yuri Gagarin's first space flight."
+      "content": "wikipedia:Read article about Yuri Gagarin.\nwikipedia:Write a brief description of Yuri Gagarin's first space flight."
     }
   ],
   [
@@ -10076,7 +11154,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about transatlantic flight.\nquery:Write a brief description of the first transatlantic flight."
+      "content": "wikipedia:Read article about transatlantic flight.\nwikipedia:Write a brief description of the first transatlantic flight."
     }
   ],
   [
@@ -10090,7 +11168,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about dragonfly.\nquery:Write a brief description of the dragonfly lifecycle."
+      "content": "wikipedia:Read article about dragonfly.\nwikipedia:Write a brief description of the dragonfly lifecycle."
     }
   ],
   [
@@ -10104,7 +11182,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about agile software development.\nquery:Write a brief description of the agile methodology in programming."
+      "content": "wikipedia:Read article about agile software development.\nwikipedia:Write a brief description of the agile methodology in programming."
     }
   ],
   [
@@ -10118,7 +11196,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about Trojan war.\nquery:Write a brief description of the Trojan War."
+      "content": "wikipedia:Read article about Trojan war.\nwikipedia:Write a brief description of the Trojan War."
     }
   ],
   [
@@ -10132,7 +11210,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about Amazon river.\nquery:Write a brief description of the Amazon river course."
+      "content": "wikipedia:Read article about Amazon river.\nwikipedia:Write a brief description of the Amazon river course."
     }
   ],
   [
@@ -10146,7 +11224,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about Amazon company.\nquery:Write a brief description of the Amazon cloud service."
+      "content": "wikipedia:Read article about Amazon company.\nwikipedia:Write a brief description of the Amazon cloud service."
     }
   ],
   [
@@ -10160,7 +11238,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about internal combustion engine.\nquery:Write a brief description of how an internal combustion engine works."
+      "content": "wikipedia:Read article about internal combustion engine.\nwikipedia:Write a brief description of how an internal combustion engine works."
     }
   ],
   [
@@ -10174,7 +11252,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about leaf.\nquery:Write a brief description of a leaf metabolism."
+      "content": "wikipedia:Read article about leaf.\nwikipedia:Write a brief description of a leaf metabolism."
     }
   ],
   [
@@ -10188,7 +11266,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about cell.\nquery:Write a brief description of how a cell is cloned."
+      "content": "wikipedia:Read article about cell.\nwikipedia:Write a brief description of how a cell is cloned."
     }
   ],
   [
@@ -10202,7 +11280,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about Ferdinand Magellan.\nquery:Write a brief description of Magellan's expedition around the world."
+      "content": "wikipedia:Read article about Ferdinand Magellan.\nwikipedia:Write a brief description of Magellan's expedition around the world."
     }
   ],
   [
@@ -10216,7 +11294,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about James Cook.\nquery:Write a brief description of James Cook's expedition to Antarctica."
+      "content": "wikipedia:Read article about James Cook.\nwikipedia:Write a brief description of James Cook's expedition to Antarctica."
     }
   ],
   [
@@ -10230,7 +11308,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about Apollo 11.\nquery:Write a brief description of the Apollo 11's trip to Moon."
+      "content": "wikipedia:Read article about Apollo 11.\nwikipedia:Write a brief description of the Apollo 11's trip to Moon."
     }
   ],
   [
@@ -10244,7 +11322,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about Everest.\nquery:Write a brief description of the first human ascent of Everest."
+      "content": "wikipedia:Read article about Everest.\nwikipedia:Write a brief description of the first human ascent of Everest."
     }
   ],
   [
@@ -10258,7 +11336,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about Nautilus.\nquery:Write a brief description of Jules Verne's Nautilus submarine."
+      "content": "wikipedia:Read article about Nautilus.\nwikipedia:Write a brief description of Jules Verne's Nautilus submarine."
     }
   ],
   [
@@ -10272,7 +11350,7 @@
     },
     {
       "role": "model",
-      "content": "wikipedia:Read article about hot air balloon.\nquery:Write a brief description of the first air balloon flight."
+      "content": "wikipedia:Read article about hot air balloon.\nwikipedia:Write a brief description of the first air balloon flight."
     }
   ],
   [

@@ -56,6 +56,7 @@ def prepare_dataset(examples):
 # ---------------------------------------------------------
 
 parser = argparse.ArgumentParser()
+parser.add_argument("--device", action="store", type=str, default="cuda:0")
 parser.add_argument("--model", action="store", type=str)
 parser.add_argument("--peft", action="store", type=str, choices=["LoRA", "QLoRA"])
 parser.add_argument("--lora-targets", action="store", type=str,
@@ -86,7 +87,7 @@ args = parser.parse_args()
 
 print()
 
-device = "cuda:0" if torch.cuda.is_available() else "cpu"
+device = args.device if torch.cuda.is_available() else "cpu"
 output_dir = f"./{args.output_dir}"
 model_path = util.get_model_path(args.model) if args.model.startswith('/') else args.model
 dtype = args.dtype

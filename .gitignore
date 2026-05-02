@@ -14,3 +14,4 @@ hera-270m/
 data/hass/
 .credentials
 */bkp/
+*.gguf

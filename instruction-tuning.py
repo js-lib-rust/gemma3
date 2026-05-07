@@ -8,7 +8,8 @@ from transformers import (
     AutoModelForCausalLM,
     TrainingArguments,
     Trainer,
-    DataCollatorForLanguageModeling
+    DataCollatorForLanguageModeling,
+    BitsAndBytesConfig,
 )
 from datasets import Dataset
 import os
@@ -139,9 +140,14 @@ model_config = {
 }
 if args.peft == "QLoRA":
     print("Adding QLoRA parameters to model configuration")
-    model_config['load_in_4bit'] = True
-    model_config['bnb_4bit_compute_dtype'] = dtype
-model = AutoModelForCausalLM.from_pretrained(model_path, **model_config)
+    quantization_config = BitsAndBytesConfig(
+        load_in_4bit=True,
+        bnb_4bit_quant_type="nf4",
+        bnb_4bit_compute_dtype=dtype
+    )
+else:
+    quantization_config = None
+model = AutoModelForCausalLM.from_pretrained(model_path, quantization_config=quantization_config, **model_config)
 if args.peft == "QLoRA":
     print("Preparing model for QLoRA training")
     model = prepare_model_for_kbit_training(model)

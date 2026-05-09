@@ -24,6 +24,7 @@ parser.add_argument("--quantization", action="store", type=str, choices=["none",
                     default="none")
 parser.add_argument("--dtype", action="store", type=util.dtype, default="float32")
 parser.add_argument("--max-new-tokens", action="store", type=int, default="1000")
+parser.add_argument("--port", action="store", type=int, default=1964)
 args = parser.parse_args()
 
 device = "cuda:0" if torch.cuda.is_available() else "cpu"
@@ -270,10 +271,9 @@ def signal_handler(signum, _frame, server):
 
 
 if __name__ == '__main__':
-    port = 1964
-    server_address = ('0.0.0.0', port)
+    server_address = ('0.0.0.0', args.port)
     httpd = AppServer(server_address, RequestHandler)
-    print(f"Starting HTTP server on port {port}...")
+    print(f"Starting HTTP server on port {args.port}...")
 
     signal.signal(signal.SIGTERM, lambda s, f: signal_handler(s, f, httpd))
     signal.signal(signal.SIGINT, lambda s, f: signal_handler(s, f, httpd))

@@ -10,7 +10,7 @@ from transformers import TokenizersBackend
 def get_model_path(model_name):
     if model_name.startswith('/'):
         model_name = model_name[1:]
-    model_path = os.environ.get("AI_MODEL_DIR").replace('\\', '/') + "/hugging-face/model/" + model_name
+    model_path = os.environ.get("AI_MODEL_DIR").replace('\\', '/') + "/model/" + model_name
     if not os.path.exists(model_path):
         raise Exception(f"Model path {model_path} not found.")
     return model_path

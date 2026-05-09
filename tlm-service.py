@@ -13,12 +13,13 @@ from transformers import (
 import util
 
 parser = argparse.ArgumentParser()
+parser.add_argument("--device", action="store", type=str, default="cuda:0")
 parser.add_argument("--model", action="store", type=str, default="router-270m")
 parser.add_argument("--dtype", action="store", type=util.dtype, default="float32")
 parser.add_argument("--port", action="store", type=int, default=1966)
 args = parser.parse_args()
 
-device = "cuda:0" if torch.cuda.is_available() else "cpu"
+device = args.device if torch.cuda.is_available() else "cpu"
 model_path = util.get_model_path(args.model) if args.model.startswith('/') else args.model
 print(f"Use device {device}")
 print(f"Use model {model_path}")

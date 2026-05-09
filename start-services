@@ -1,5 +1,8 @@
 #!/bin/sh
 
+echo starting router socket service ...
+systemctl start router-socket.service
+
 echo starting router service ...
 systemctl start router.service
 

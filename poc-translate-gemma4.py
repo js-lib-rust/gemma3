@@ -1,4 +1,3 @@
-import argparse
 import os
 import time
 
@@ -8,23 +7,6 @@ from transformers import (
     AutoTokenizer,
     TextStreamer, BitsAndBytesConfig,
 )
-
-model_dir = os.environ.get("AI_MODEL_DIR")
-base_model = model_dir + "/hugging-face/model/translategemma-4b-it"
-
-tokenizer = AutoTokenizer.from_pretrained(base_model)
-
-quantization = BitsAndBytesConfig(
-    load_in_4bit=True,
-    bnb_4bit_quant_type="nf4",
-    bnb_4bit_use_double_quant=True,
-    bnb_4bit_compute_dtype=torch.bfloat16,
-)
-model = AutoModelForCausalLM.from_pretrained(
-    base_model,
-    device_map="cuda:0",
-    dtype=torch.bfloat16,
-    quantization_config=quantization)
 
 text = """# Functional Description 
 The FSMS server retrieves work orders from specific SAP modules. Prior to operation, 
@@ -51,6 +33,25 @@ sequencing them as described above.
 In addition to orders, back-office operators can manually create actions directly within the FSMS server; these are 
 known as "FFA Actions." Once created, FFA actions follow the standard processing workflow."""
 
+model_dir = os.environ.get("AI_MODEL_DIR")
+print(f"model_dir: {model_dir}")
+base_model = model_dir + "/model/translategemma-4b-it"
+
+tokenizer = AutoTokenizer.from_pretrained(base_model)
+
+quantization = BitsAndBytesConfig(
+    load_in_4bit=True,
+    bnb_4bit_quant_type="nf4",
+    bnb_4bit_use_double_quant=True,
+    bnb_4bit_compute_dtype=torch.bfloat16,
+)
+model = AutoModelForCausalLM.from_pretrained(
+    base_model,
+    device_map="cuda:0",
+    dtype=torch.bfloat16,
+    quantization_config=quantization)
+print(f"Model memory: {model.get_memory_footprint()}")
+
 messages = [
     {
         "role": "user",
@@ -67,6 +68,7 @@ messages = [
 
 start_time = time.time()
 text = tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=True, enable_thinking=True)
+print(f"text: {text}")
 model_inputs = tokenizer([text], return_tensors="pt").to(model.device)
 
 streamer = TextStreamer(tokenizer, skip_prompt=True, skip_special_tokens=True)

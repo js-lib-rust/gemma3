@@ -2,7 +2,6 @@ import argparse
 import asyncio
 import struct
 import time
-
 import orjson
 import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM, DynamicCache
@@ -13,6 +12,9 @@ parser = argparse.ArgumentParser()
 parser.add_argument("--device", action="store", type=str, default="cuda:0")
 parser.add_argument("--model", action="store", type=str, default="router-270m")
 parser.add_argument("--dtype", action="store", type=util.dtype, default="bfloat16")
+parser.add_argument("--max-new-tokens", action="store", type=int, default=400)
+parser.add_argument("--confidence-probes", action="store", type=int, default=4)
+parser.add_argument("--confidence-threshold", action="store", type=float, default=0.98)
 parser.add_argument("--port", action="store", type=int, default=1965)
 args = parser.parse_args()
 
@@ -21,6 +23,9 @@ model_path = util.get_model_path(args.model) if args.model.startswith('/') else 
 print(f"Use device {device}")
 print(f"Use model {model_path}")
 print(f"Use dtype {args.dtype}")
+print(f"Use max_new_tokens {args.max_new_tokens}")
+print(f"Use confidence_probes {args.confidence_probes}")
+print(f"Use confidence_threshold {args.confidence_threshold}")
 print(f"Use port {args.port}")
 
 tokenizer = AutoTokenizer.from_pretrained(model_path)
@@ -42,43 +47,75 @@ def route_prompt(prompt):
     system = "Rewrite and route the next user prompt"
     chat = [{"role": "system", "content": system}, {"role": "user", "content": prompt}]
     chat_text = tokenizer.apply_chat_template(chat, tokenize=False, add_generation_prompt=True)
-    print(f"chat_text: {chat_text}")
-    inputs = tokenizer([chat_text], return_tensors="pt").to(model.device)
 
-    past_key_values = DynamicCache(config=model.config)
+    inputs = tokenizer([chat_text], return_tensors="pt", add_special_tokens=False).to(model.device)
+    input_len = inputs["input_ids"].shape[1]
+
+    past_key_values = DynamicCache()
     config = {
         'min_new_tokens': 1,
-        'max_new_tokens': 400,
+        'max_new_tokens': args.max_new_tokens,
         'do_sample': False,
         'temperature': 1.0,
         'num_beams': 1,
         'num_return_sequences': 1,
         'pad_token_id': tokenizer.eos_token_id,
-        'return_dict_in_generate': True,
-        'output_scores': True,
+        'return_dict_in_generate': False,
+        'output_scores': False,
         'repetition_penalty': 1.0,
         'no_repeat_ngram_size': 0,
         'past_key_values': past_key_values
     }
-    print(f"config: {config}")
+    current_input_ids = inputs["input_ids"]
+    generated_ids = list(inputs["input_ids"][0].tolist())
+    token_probs_list = []
 
-    outputs = model.generate(**inputs, **config)
-    generated_ids = outputs.sequences
-    transition_scores = model.compute_transition_scores(outputs.sequences, outputs.scores, normalize_logits=True)
+    # step 1: fail-fast confidence detection
+    for _ in range(args.confidence_probes):
+        with torch.no_grad():
+            outputs = model(current_input_ids, **config)
 
-    sequence_generated_ids = generated_ids[0][inputs["input_ids"].shape[1]:]
+        next_token_logits = outputs.logits[:, -1, :]
+        probs = torch.softmax(next_token_logits, dim=-1)
 
-    sequence_transition_scores = transition_scores[0]
-    token_probs = sequence_transition_scores.exp().cpu().numpy()
-    avg_confidence = float(token_probs.mean())
-    min_confidence = float(token_probs.min())
+        next_token_id = torch.argmax(probs, dim=-1)
+        token_prob = probs[0, next_token_id.item()].item()
+        token_str = tokenizer.decode(next_token_id[0], skip_special_tokens=False)
 
-    output_text = tokenizer.decode(sequence_generated_ids, skip_special_tokens=True)
-    print(f"output_text: {output_text}")
-    print(f"confidence: {avg_confidence:.4f} (min: {min_confidence:.4f})")
+        generated_ids.append(next_token_id.item())
+        token_probs_list.append(token_prob)
+        if token_str == "\n" or next_token_id.item() == tokenizer.eos_token_id:
+            break
+        current_input_ids = next_token_id.unsqueeze(0)
+
+    estimated_confidence = sum(token_probs_list) / len(token_probs_list) if token_probs_list else 0.0
+    print(f"estimated confidence: {estimated_confidence:.4f}")
+    failed_due_to_confidence = estimated_confidence < args.confidence_threshold
+
+    # step 2: continue text generation in batch only if confidence is above threshold
+    if not failed_due_to_confidence:
+        config['return_dict_in_generate'] = True
+        config['output_scores'] = True
+        outputs = model.generate(input_ids=torch.tensor([generated_ids]).to(model.device), **config)
+
+        transition_scores = model.compute_transition_scores(outputs.sequences, outputs.scores, normalize_logits=True)
+        sequence_transition_scores = transition_scores[0]
+        token_probs = sequence_transition_scores.exp().cpu().numpy()
+        token_probs_list.extend(token_probs)
+
+        generated_ids = outputs.sequences[0][input_len:]
+        text = tokenizer.decode(generated_ids, skip_special_tokens=True)
+        confidence = float(sum(token_probs_list) / len(token_probs_list))
+
+    else:
+        text = f"Low estimated confidence: {estimated_confidence:.4f}"
+        confidence = 0.0
+
     processing_time = time.time() - request_start_time
-    print(f"processing_time: {processing_time}")
-    return output_text, avg_confidence, processing_time
+    print(f"text: {text}")
+    print(f"confidence: {confidence:.4f}")
+    print(f"processing_time: {processing_time:.6f}")
+    return text, confidence, processing_time
 
 
 class SocketServer:
@@ -131,8 +168,14 @@ class SocketServer:
         except Exception as e:
             print(f"[!] Error handling {addr}: {e}")
         finally:
-            writer.close()
-            await writer.wait_closed()
+            try:
+                writer.close()
+                await writer.wait_closed()
+            except ConnectionResetError:
+                # Ignore error: the connection is already reset, which is why we are here.
+                pass
+            except Exception as e:
+                print(f"Error during closing: {e}")
             print(f"[*] Connection with {addr} closed.")
 
     async def run(self):

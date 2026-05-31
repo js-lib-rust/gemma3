@@ -6,272 +6,6 @@
     },
     {
       "role": "user",
-      "content": "get system status"
-    },
-    {
-      "role": "model",
-      "content": "system:Get system status."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "system status"
-    },
-    {
-      "role": "model",
-      "content": "system:Get system status."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "status"
-    },
-    {
-      "role": "model",
-      "content": "system:Get system status."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "how are you"
-    },
-    {
-      "role": "model",
-      "content": "system:Get system status."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "shutdown the system"
-    },
-    {
-      "role": "model",
-      "content": "system:Shutdown the system."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "system shutdown"
-    },
-    {
-      "role": "model",
-      "content": "system:Shutdown the system."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "shutdown"
-    },
-    {
-      "role": "model",
-      "content": "system:Shutdown the system."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "list conversation history"
-    },
-    {
-      "role": "model",
-      "content": "system:List conversation history."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "list conversations"
-    },
-    {
-      "role": "model",
-      "content": "system:List conversation history."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "print history"
-    },
-    {
-      "role": "model",
-      "content": "system:List conversation history."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "history"
-    },
-    {
-      "role": "model",
-      "content": "system:List conversation history."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "clear conversation history"
-    },
-    {
-      "role": "model",
-      "content": "system:Clear conversation history."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "clean conversation"
-    },
-    {
-      "role": "model",
-      "content": "system:Clear conversation history."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "start new conversation"
-    },
-    {
-      "role": "model",
-      "content": "system:Clear conversation history."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "new conversation"
-    },
-    {
-      "role": "model",
-      "content": "system:Clear conversation history."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "forget all"
-    },
-    {
-      "role": "model",
-      "content": "system:Clear conversation history."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "clean"
-    },
-    {
-      "role": "model",
-      "content": "system:Clear conversation history."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "clear"
-    },
-    {
-      "role": "model",
-      "content": "system:Clear conversation history."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "reset"
-    },
-    {
-      "role": "model",
-      "content": "system:Clear conversation history."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
       "content": "get units for distance"
     },
     {
@@ -1172,7 +906,63 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Get the birth date of ${username}.\ntime-service:Get date for today.\ntime-service:Compute age as the difference in years between ${date} and ${birth_date}.\nquery:Print the age for ${username}."
+      "content": "user-profile:Get my username.\nuser-profile:Get the birth date of ${username}.\ntime-service:Get date for today.\ntime-service:Compute age as the difference in years between ${date} and ${birth_date}.\nprinter:Print computed age in years for ${username}."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get my age in years"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Get the birth date of ${username}.\ntime-service:Get date for today.\ntime-service:Compute age as the difference in years between ${date} and ${birth_date}.\nprinter:Print computed age in years for ${username}."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get my age in months"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Get the birth date of ${username}.\ntime-service:Get date for today.\ntime-service:Compute age as the difference in months between ${date} and ${birth_date}.\nprinter:Print computed age in months for ${username}."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get my age in weeks"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Get the birth date of ${username}.\ntime-service:Get date for today.\ntime-service:Compute age as the difference in weeks between ${date} and ${birth_date}.\nprinter:Print computed age in weeks for ${username}."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get my age in days"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Get the birth date of ${username}.\ntime-service:Get date for today.\ntime-service:Compute age as the difference in days between ${date} and ${birth_date}.\nprinter:Print computed age in days for ${username}."
     }
   ],
   [
@@ -1186,7 +976,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Get the birth date of ${username}.\ntime-service:Get date for today.\ntime-service:Compute age as the difference in years between ${date} and ${birth_date}.\nquery:Print the age for ${username}."
+      "content": "user-profile:Get my username.\nuser-profile:Get the birth date of ${username}.\ntime-service:Get date for today.\ntime-service:Compute age as the difference in years between ${date} and ${birth_date}.\nprinter:Print computed age in years for ${username}."
     }
   ],
   [
@@ -1200,7 +990,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Get the birth date of ${username}.\ntime-service:Get date for today.\ntime-service:Compute age as the difference in years between ${date} and ${birth_date}.\nquery:Print the age for ${username}."
+      "content": "user-profile:Get my username.\nuser-profile:Get the birth date of ${username}.\ntime-service:Get date for today.\ntime-service:Compute age as the difference in years between ${date} and ${birth_date}.\nprinter:Print computed age in years for ${username}."
     }
   ],
   [
@@ -1214,7 +1004,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Get the birth date of ${username}.\ntime-service:Get date for today.\ntime-service:Compute age as the difference in years between ${date} and ${birth_date}.\nquery:Print the age for ${username}."
+      "content": "user-profile:Get my username.\nuser-profile:Get the birth date of ${username}.\ntime-service:Get date for today.\ntime-service:Compute age as the difference in years between ${date} and ${birth_date}.\nprinter:Print computed age in years for ${username}."
     }
   ],
   [
@@ -1228,7 +1018,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Get the birth date of ${username}.\ntime-service:Get date for today.\ntime-service:Compute age as the difference in years between ${date} and ${birth_date}.\nquery:Print the age for ${username}."
+      "content": "user-profile:Get my username.\nuser-profile:Get the birth date of ${username}.\ntime-service:Get date for today.\ntime-service:Compute age as the difference in years between ${date} and ${birth_date}.\nprinter:Print computed age in years for ${username}."
     }
   ],
   [
@@ -1238,11 +1028,11 @@
     },
     {
       "role": "user",
-      "content": "calculate my age"
+      "content": "calculate my age in years"
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Get the birth date of ${username}.\ntime-service:Get date for today.\ntime-service:Compute age as the difference in years between ${date} and ${birth_date}.\nquery:Print the age for ${username}."
+      "content": "user-profile:Get my username.\nuser-profile:Get the birth date of ${username}.\ntime-service:Get date for today.\ntime-service:Compute age as the difference in years between ${date} and ${birth_date}.\nprinter:Print computed age in years for ${username}."
     }
   ],
   [
@@ -1252,11 +1042,11 @@
     },
     {
       "role": "user",
-      "content": "determine my age"
+      "content": "determine my age in minutes"
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Get the birth date of ${username}.\ntime-service:Get date for today.\ntime-service:Compute age as the difference in years between ${date} and ${birth_date}.\nquery:Print the age for ${username}."
+      "content": "user-profile:Get my username.\nuser-profile:Get the birth date of ${username}.\ntime-service:Get date for today.\ntime-service:Compute age as the difference in minutes between ${date} and ${birth_date}.\nprinter:Print computed age in minutes for ${username}."
     }
   ],
   [
@@ -1266,11 +1056,11 @@
     },
     {
       "role": "user",
-      "content": "figure out my age"
+      "content": "figure out my age in days"
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Get the birth date of ${username}.\ntime-service:Get date for today.\ntime-service:Compute age as the difference in years between ${date} and ${birth_date}.\nquery:Print the age for ${username}."
+      "content": "user-profile:Get my username.\nuser-profile:Get the birth date of ${username}.\ntime-service:Get date for today.\ntime-service:Compute age as the difference in days between ${date} and ${birth_date}.\nquery:Print the age for in days ${username}."
     }
   ],
   [
@@ -1284,7 +1074,91 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Get the birth date of ${username}.\ntime-service:Get date for today.\ntime-service:Compute age as the difference in years between ${date} and ${birth_date}.\nquery:Print the age for ${username}."
+      "content": "user-profile:Get my username.\nuser-profile:Get the birth date of ${username}.\ntime-service:Get date for today.\ntime-service:Compute age as the difference in years between ${date} and ${birth_date}.\nprinter:Print computed age in years for ${username}."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "what is my age in months?"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Get the birth date of ${username}.\ntime-service:Get date for today.\ntime-service:Compute age as the difference in months between ${date} and ${birth_date}.\nprinter:Print computed age in months for ${username}."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "what is my age in weeks?"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Get the birth date of ${username}.\ntime-service:Get date for today.\ntime-service:Compute age as the difference in weeks between ${date} and ${birth_date}.\nprinter:Print computed age in weeks for ${username}."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "what is my age in days?"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Get the birth date of ${username}.\ntime-service:Get date for today.\ntime-service:Compute age as the difference in days between ${date} and ${birth_date}.\nprinter:Print computed age in days for ${username}."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": " how many seconds i lived so far?"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Get the birth date of ${username}.\ntime-service:Get date for today.\ntime-service:Compute age as the difference in seconds between ${date} and ${birth_date}.\nprinter:Print computed age in seconds for ${username}."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": " how many minutes i lived?"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Get the birth date of ${username}.\ntime-service:Get date for today.\ntime-service:Compute age as the difference in minutes between ${date} and ${birth_date}.\nprinter:Print computed age in minutes for ${username}."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": " how many weeks i lived?"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Get the birth date of ${username}.\ntime-service:Get date for today.\ntime-service:Compute age as the difference in weeks between ${date} and ${birth_date}.\nprinter:Print computed age in weeks for ${username}."
     }
   ],
   [
@@ -1410,7 +1284,35 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get the username of Rotaru Iulian.\nquery:Print the username for Rotaru Iulian."
+      "content": "user-profile:Get the username of Rotaru Iulian.\nquery:Print the username for ${username}."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get postal address for rotaru iulian"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get the username of Rotaru Iulian.\nquery:Print the postal address for ${username}."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get postal code for gogalniceanu mioara"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get the username of Gogalniceanu Mioara.\nquery:Print the postal code for ${username}."
     }
   ],
   [
@@ -1424,7 +1326,7 @@
     },
     {
       "role": "model",
-      "content": "Get the username for Lontkowschi Mirela Petronela.\nuser-profile:Get the personal phone number of ${username}.\nquery:Print the personal phone number for ${username}."
+      "content": "user-profile:Get the username for Lontkowschi Mirela Petronela.\nuser-profile:Get the personal phone number of ${username}.\nquery:Print the personal phone number for ${username}."
     }
   ],
   [
@@ -1438,7 +1340,7 @@
     },
     {
       "role": "model",
-      "content": "Get the username for Simeria Anca.\nuser-profile:Get the business phone number of ${username}.\nquery:Print the business phone number for ${username}."
+      "content": "user-profile:Get the username for Simeria Anca.\nuser-profile:Get the business phone number of ${username}.\nquery:Print the business phone number for ${username}."
     }
   ],
   [
@@ -1452,7 +1354,7 @@
     },
     {
       "role": "model",
-      "content": "Get the username for Gavriliu Nicolaie.\nuser-profile:Get the personal email address of ${username}.\nquery:Print the personal email address for ${username}."
+      "content": "user-profile:Get the username for Gavriliu Nicolaie.\nuser-profile:Get the personal email address of ${username}.\nquery:Print the personal email address for ${username}."
     }
   ],
   [
@@ -1466,7 +1368,7 @@
     },
     {
       "role": "model",
-      "content": "Get the username for Gogălniceanu Ștefan.\nuser-profile:Get the business email address of ${username}.\nquery:Print the business email address for ${username}."
+      "content": "user-profile:Get the username for Gogălniceanu Ștefan.\nuser-profile:Get the business email address of ${username}.\nquery:Print the business email address for ${username}."
     }
   ],
   [
@@ -1480,7 +1382,7 @@
     },
     {
       "role": "model",
-      "content": "Get the username for Baciu Vasile.\nuser-profile:Get the birth date of ${username}.\nquery:Print the birth date for ${username}."
+      "content": "user-profile:Get the username for Baciu Vasile.\nuser-profile:Get the birth date of ${username}.\nquery:Print the birth date for ${username}."
     }
   ],
   [
@@ -1494,7 +1396,7 @@
     },
     {
       "role": "model",
-      "content": "Get the username for Gogălniceanu Mioara.\nuser-profile:Get the birth place of ${username}.\nquery:Print the birth place for ${username}."
+      "content": "user-profile:Get the username for Gogălniceanu Mioara.\nuser-profile:Get the birth place of ${username}.\nquery:Print the birth place for ${username}."
     }
   ],
   [
@@ -1508,7 +1410,7 @@
     },
     {
       "role": "model",
-      "content": "Get the username for Adam Iosif.\nuser-profile:Get the profession of ${username}.\nquery:Print the profession for ${username}."
+      "content": "user-profile:Get the username for Adam Iosif.\nuser-profile:Get the profession of ${username}.\nquery:Print the profession for ${username}."
     }
   ],
   [
@@ -1522,7 +1424,7 @@
     },
     {
       "role": "model",
-      "content": "Get the username for Miron Daniela Elena.\nuser-profile:Get the location of ${username}.\nquery:Print the location for ${username}."
+      "content": "user-profile:Get the username for Miron Daniela Elena.\nuser-profile:Get the location of ${username}.\nquery:Print the location for ${username}."
     }
   ],
   [
@@ -1536,7 +1438,7 @@
     },
     {
       "role": "model",
-      "content": "Get the username for Miron Aurelia.\nuser-profile:Get the place of ${username}.\nquery:Print the place for ${username}."
+      "content": "user-profile:Get the username for Miron Aurelia.\nuser-profile:Get the place of ${username}.\nquery:Print the place for ${username}."
     }
   ],
   [
@@ -1550,7 +1452,7 @@
     },
     {
       "role": "model",
-      "content": "Get the username for Vaino George Viorel.\nuser-profile:Get the education of ${username}.\nquery:Print the education for ${username}."
+      "content": "user-profile:Get the username for Vaino George Viorel.\nuser-profile:Get the education of ${username}.\nquery:Print the education for ${username}."
     }
   ],
   [
@@ -1564,7 +1466,7 @@
     },
     {
       "role": "model",
-      "content": "Get the username for Cornea Sofica.\nuser-profile:Get the hobbies of ${username}.\nquery:Print the hobbies for ${username}."
+      "content": "user-profile:Get the username for Cornea Sofica.\nuser-profile:Get the hobbies of ${username}.\nquery:Print the hobbies for ${username}."
     }
   ],
   [
@@ -1578,7 +1480,7 @@
     },
     {
       "role": "model",
-      "content": "Get the username for Petrovici Traian.\nuser-profile:Get the skill level of ${username}.\nquery:Print the skill level for ${username}."
+      "content": "user-profile:Get the username for Petrovici Traian.\nuser-profile:Get the skill level of ${username}.\nquery:Print the skill level for ${username}."
     }
   ],
   [
@@ -1592,7 +1494,7 @@
     },
     {
       "role": "model",
-      "content": "Get the username for Dorneanu Deliana.\nuser-profile:Get the social security number of ${username}.\nquery:Print the social security number for ${username}."
+      "content": "user-profile:Get the username for Dorneanu Deliana.\nuser-profile:Get the social security number of ${username}.\nquery:Print the social security number for ${username}."
     }
   ],
   [
@@ -1606,7 +1508,7 @@
     },
     {
       "role": "model",
-      "content": "Get the username for Dorneanu Ștefan.\nuser-profile:Get the social security number of ${username}.\nquery:Print the social security number for ${username}."
+      "content": "user-profile:Get the username for Dorneanu Ștefan.\nuser-profile:Get the social security number of ${username}.\nquery:Print the social security number for ${username}."
     }
   ],
   [
@@ -1620,7 +1522,7 @@
     },
     {
       "role": "model",
-      "content": "Get the username for Rusu Maria.\nuser-profile:Get the identity card serial of ${username}.\nquery:Print the identity card serial for ${username}."
+      "content": "user-profile:Get the username for Rusu Maria.\nuser-profile:Get the identity card serial of ${username}.\nquery:Print the identity card serial for ${username}."
     }
   ],
   [
@@ -1634,7 +1536,7 @@
     },
     {
       "role": "model",
-      "content": "Get the username for Dorneanu Ioana Sorana.\nuser-profile:Get the birth certificate serial of ${username}.\nquery:Print the birth certificate serial for ${username}."
+      "content": "user-profile:Get the username for Dorneanu Ioana Sorana.\nuser-profile:Get the birth certificate serial of ${username}.\nquery:Print the birth certificate serial for ${username}."
     }
   ],
   [
@@ -1648,7 +1550,7 @@
     },
     {
       "role": "model",
-      "content": "Get the username for Acatrinei Ingrid.\nuser-profile:Get the birth date of ${username}.\nquery:Print the birthday for ${username}."
+      "content": "user-profile:Get the username for Acatrinei Ingrid.\nuser-profile:Get the birth date of ${username}.\nprinter:Print the birthday for ${username}."
     }
   ],
   [
@@ -1662,7 +1564,133 @@
     },
     {
       "role": "model",
-      "content": "Get the username for Preda Marin.\nuser-profile:Get the birth date of ${username}.\nquery:What is the birthday of ${username}?"
+      "content": "user-profile:Get the username for Preda Marin.\nuser-profile:Get the birth date of ${username}.\nprinter:Print the birthday for ${username}."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "when is rotaru lucian birthday?"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get the username for Rotaru Lucian.\nuser-profile:Get the birth date of ${username}.\nprinter:Print the birthday for ${username}."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "when is dorneanu deliana birthday"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get the username for Dorneanu Deliana.\nuser-profile:Get the birth date of ${username}.\nprinter:Print the birthday for ${username}."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "birthday of miron elena daniela"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get the username for Miron Elena Daniela.\nuser-profile:Get the birth date of ${username}.\nprinter:Print the birthday for ${username}."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "how many days until rotaru lucian's birthday?"
+    },
+    {
+      "role": "model",
+      "content": "time-service:Get date for today.\nuser-profile:Get the username for Rotaru Lucian.\nuser-profile:Get the birth date of ${username}.\ntime-service:Compute days as the difference in days between ${date} and ${birth_date}.\nquery:How many days until the birthday of ${username}?."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "how many days till birthday of rotaru iulian?"
+    },
+    {
+      "role": "model",
+      "content": "time-service:Get date for today.\nuser-profile:Get the username for Rotaru Iulian.\nuser-profile:Get the birth date of ${username}.\ntime-service:Compute days as the difference in days between ${date} and ${birth_date}.\nquery:How many days until the birthday of ${username}?."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "how many days to september 10?"
+    },
+    {
+      "role": "model",
+      "content": "time-service:Get today date for today.\ntime-service:Get school date for September, 10th.\ntime-service:Compute days as the difference in days between ${today_date} and ${school_date}.\nquery:How many days until September, 10th?."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "how long until mother's day?"
+    },
+    {
+      "role": "model",
+      "content": "time-service:Get today date for today.\ntime-service:Get mother date for March, 8th.\ntime-service:Compute days as the difference in days between ${today_date} and ${mother_date}.\nquery:How long until Mother's Day?"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "how long do we have to wait until june 1"
+    },
+    {
+      "role": "model",
+      "content": "time-service:Get today date for today.\ntime-service:Get child date for June, 1st.\ntime-service:Compute days as the difference in days between ${today_date} and ${child_date}.\nquery:How long do we have to wait until June 1st?"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "how many days till children's day?"
+    },
+    {
+      "role": "model",
+      "content": "time-service:Get today date for today.\ntime-service:Get child date for June, 1st.\ntime-service:Compute days as the difference in days between ${today_date} and ${child_date}.\nquery:How many days are left until Children's Day?"
     }
   ],
   [
@@ -1676,7 +1704,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get the username for Acatrinei Liviu.\nuser-profile:Get the birth date of ${username}.\ntime-service:Get date for today.\ntime-service:Compute age as the difference in years between ${date} and ${birth_date}.\nquery:Print the age for ${username}."
+      "content": "user-profile:Get the username for Acatrinei Liviu.\nuser-profile:Get the birth date of ${username}.\ntime-service:Get date for today.\ntime-service:Compute age as the difference in years between ${date} and ${birth_date}.\nprinter:Print computed age in years for ${username}."
     }
   ],
   [
@@ -1690,7 +1718,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get the username for Gogălniceanu Denis.\nuser-profile:Get the birth date of ${username}.\ntime-service:Get date for today.\ntime-service:Compute age as the difference in years between ${date} and ${birth_date}.\nquery:Print the age for ${username}."
+      "content": "user-profile:Get the username for Gogălniceanu Denis.\nuser-profile:Get the birth date of ${username}.\ntime-service:Get date for today.\ntime-service:Compute age as the difference in years between ${date} and ${birth_date}.\nprinter:Print computed age in years for ${username}."
     }
   ],
   [
@@ -1704,7 +1732,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get the username for Rusu Florin.\nuser-profile:Get the birth date of ${username}.\ntime-service:Get date for today.\ntime-service:Compute age as the difference in years between ${date} and ${birth_date}.\nquery:Print the age for ${username}."
+      "content": "user-profile:Get the username for Rusu Florin.\nuser-profile:Get the birth date of ${username}.\ntime-service:Get date for today.\ntime-service:Compute age as the difference in years between ${date} and ${birth_date}.\nprinter:Print computed age in years for ${username}."
     }
   ],
   [
@@ -1714,11 +1742,11 @@
     },
     {
       "role": "user",
-      "content": "please acquire age for baciu vasile"
+      "content": "please acquire age in weeks for baciu vasile"
     },
     {
       "role": "model",
-      "content": "user-profile:Get the username for Baciu Vasile.\nuser-profile:Get the birth date of ${username}.\ntime-service:Get date for today.\ntime-service:Compute age as the difference in years between ${date} and ${birth_date}.\nquery:Print the age for ${username}."
+      "content": "user-profile:Get the username for Baciu Vasile.\nuser-profile:Get the birth date of ${username}.\ntime-service:Get date for today.\ntime-service:Compute age as the difference in weeks between ${date} and ${birth_date}.\nprinter:Print computed age in weeks for ${username}."
     }
   ],
   [
@@ -1732,7 +1760,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get the username for Rotaru Mihai.\nuser-profile:Get the birth date of ${username}.\ntime-service:Get date for today.\ntime-service:Compute age as the difference in years between ${date} and ${birth_date}.\nquery:Print the age for ${username}."
+      "content": "user-profile:Get the username for Rotaru Mihai.\nuser-profile:Get the birth date of ${username}.\ntime-service:Get date for today.\ntime-service:Compute age as the difference in years between ${date} and ${birth_date}.\nprinter:Print computed age in years for ${username}."
     }
   ],
   [
@@ -1742,11 +1770,11 @@
     },
     {
       "role": "user",
-      "content": "calculate the age of rusu dragoș"
+      "content": "calculate the age in months of rusu dragoș"
     },
     {
       "role": "model",
-      "content": "user-profile:Get the username for Rusu Dragoș.\nuser-profile:Get the birth date of ${username}.\ntime-service:Get date for today.\ntime-service:Compute age as the difference in years between ${date} and ${birth_date}.\nquery:Print the age for ${username}."
+      "content": "user-profile:Get the username for Rusu Dragoș.\nuser-profile:Get the birth date of ${username}.\ntime-service:Get date for today.\ntime-service:Compute age as the difference in months between ${date} and ${birth_date}.\nprinter:Print computed age in months for ${username}."
     }
   ],
   [
@@ -1760,7 +1788,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get the username for Dorneanu Sorana Ioana.\nuser-profile:Get the birth date of ${username}.\ntime-service:Get date for today.\ntime-service:Compute age as the difference in years between ${date} and ${birth_date}.\nquery:Print the age for ${username}."
+      "content": "user-profile:Get the username for Dorneanu Sorana Ioana.\nuser-profile:Get the birth date of ${username}.\ntime-service:Get date for today.\ntime-service:Compute age as the difference in years between ${date} and ${birth_date}.\nprinter:Print computed age in years for ${username}."
     }
   ],
   [
@@ -1770,11 +1798,11 @@
     },
     {
       "role": "user",
-      "content": "figure out miron elena age"
+      "content": "figure out miron elena age in years"
     },
     {
       "role": "model",
-      "content": "user-profile:Get the username for Miron Elena.\nuser-profile:Get the birth date of ${username}.\ntime-service:Get date for today.\ntime-service:Compute age as the difference in years between ${date} and ${birth_date}.\nquery:Print the age for ${username}."
+      "content": "user-profile:Get the username for Miron Elena.\nuser-profile:Get the birth date of ${username}.\ntime-service:Get date for today.\ntime-service:Compute age as the difference in years between ${date} and ${birth_date}.\nprinter:Print computed age in years for ${username}."
     }
   ],
   [
@@ -1784,11 +1812,11 @@
     },
     {
       "role": "user",
-      "content": "what is the age of dorneanu ioan silviu?"
+      "content": "what is the age in days of dorneanu ioan silviu?"
     },
     {
       "role": "model",
-      "content": "user-profile:Get the username for Dorneanu Ioan Silviu.\nuser-profile:Get the birth date of ${username}.\ntime-service:Get date for today.\ntime-service:Compute age as the difference in years between ${date} and ${birth_date}.\nquery:Print the age for ${username}."
+      "content": "user-profile:Get the username for Dorneanu Ioan Silviu.\nuser-profile:Get the birth date of ${username}.\ntime-service:Get date for today.\ntime-service:Compute age as the difference in days between ${date} and ${birth_date}.\nprinter:Print computed age in days for ${username}."
     }
   ],
   [
@@ -1854,11 +1882,11 @@
     },
     {
       "role": "user",
-      "content": "save my personal phone number 0770861711 in user profile"
+      "content": "save my personal phone number +40 770 861711 in user profile"
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Set the personal phone number to 0770861711 for ${username}.\nuser-profile:Get the personal phone number for ${username}.\nquery:Print the personal phone number for ${username}."
+      "content": "user-profile:Get my username.\nuser-profile:Set the personal phone number to +40 770 861711 for ${username}.\nuser-profile:Get the personal phone number for ${username}.\nquery:Print the personal phone number for ${username}."
     }
   ],
   [
@@ -1868,11 +1896,11 @@
     },
     {
       "role": "user",
-      "content": "change personal phone number 0770861712 in my user profile"
+      "content": "change personal phone number 0770-861712 in my user profile"
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Set the personal phone number to 0770861712 for ${username}.\nuser-profile:Get the personal phone number for ${username}.\nquery:Print the personal phone number for ${username}."
+      "content": "user-profile:Get my username.\nuser-profile:Set the personal phone number to +40 770 861712 for ${username}.\nuser-profile:Get the personal phone number for ${username}.\nquery:Print the personal phone number for ${username}."
     }
   ],
   [
@@ -1882,11 +1910,11 @@
     },
     {
       "role": "user",
-      "content": "set my business phone number 0734990887 in user profile"
+      "content": "set my business phone number +40 734-990887 in user profile"
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Set the business phone number to 0734990887 for ${username}.\nuser-profile:Get the business phone number for ${username}.\nquery:Print the business phone number for ${username}."
+      "content": "user-profile:Get my username.\nuser-profile:Set the business phone number to +40 734 990887 for ${username}.\nuser-profile:Get the business phone number for ${username}.\nquery:Print the business phone number for ${username}."
     }
   ],
   [
@@ -1900,7 +1928,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Set the business phone number to 0734990889 for ${username}.\nuser-profile:Get the business phone number for ${username}.\nquery:Print the business phone number for ${username}."
+      "content": "user-profile:Get my username.\nuser-profile:Set the business phone number to +40 734 990889 for ${username}.\nuser-profile:Get the business phone number for ${username}.\nquery:Print the business phone number for ${username}."
     }
   ],
   [
@@ -2148,6 +2176,34 @@
     },
     {
       "role": "user",
+      "content": "set my postal address to jud. Iasi, sat Valea Lupului, str. Rubinului nr. 12F, bl. Y7, et. parter, ap. 8"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Set the postal address to jud. Iasi, sat Valea Lupului, str. Rubinului nr. 12F, bl. Y7, et. parter, ap. 8 for ${username}.\nuser-profile:Get the postal address for ${username}.\nquery:Print the postal address for ${username}."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "set my postal code to 7854"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Set the postal code to 7854 for ${username}.\nuser-profile:Get the postal code for ${username}.\nquery:Print the postal code for ${username}."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
       "content": "create username for simeria anca in user profile"
     },
     {
@@ -2190,11 +2246,11 @@
     },
     {
       "role": "user",
-      "content": "save personal phone number 0770861711 for acatrinei liviu in user profile"
+      "content": "save personal phone number 0770-861-711 for acatrinei liviu in user profile"
     },
     {
       "role": "model",
-      "content": "user-profile:Set the personal phone number to 0770861711 for Acatrinei Liviu.\nuser-profile:Get the personal phone number for Acatrinei Liviu.\nquery:Print the personal phone number for Acatrinei Liviu."
+      "content": "user-profile:Set the personal phone number to +40 770 861711 for Acatrinei Liviu.\nuser-profile:Get the personal phone number for Acatrinei Liviu.\nquery:Print the personal phone number for Acatrinei Liviu."
     }
   ],
   [
@@ -2204,11 +2260,11 @@
     },
     {
       "role": "user",
-      "content": "update personal phone for lontkowschi mirela petronela to 0771555666 in user profile"
+      "content": "update personal phone for lontkowschi mirela petronela to 0771-555666 in user profile"
     },
     {
       "role": "model",
-      "content": "user-profile:Set the personal phone number to 0771555666 for Lontkowschi Mirela Petronela.\nuser-profile:Get the personal phone number for Lontkowschi Mirela Petronela.\nquery:Print the personal phone number for Lontkowschi Mirela Petronela."
+      "content": "user-profile:Set the personal phone number to +40 771 555666 for Lontkowschi Mirela Petronela.\nuser-profile:Get the personal phone number for Lontkowschi Mirela Petronela.\nquery:Print the personal phone number for Lontkowschi Mirela Petronela."
     }
   ],
   [
@@ -2218,11 +2274,11 @@
     },
     {
       "role": "user",
-      "content": "set user property personal phone number for paduraru adrian to 0777333567 in user profile"
+      "content": "set user property personal phone number for paduraru adrian to 0777 333567 in user profile"
     },
     {
       "role": "model",
-      "content": "user-profile:Set the personal phone number to 0777333567 for Păduraru Adrian.\nuser-profile:Get the personal phone number for Păduraru Adrian.\nquery:Print the personal phone number for Păduraru Adrian."
+      "content": "user-profile:Set the personal phone number to +40 777 333567 for Păduraru Adrian.\nuser-profile:Get the personal phone number for Păduraru Adrian.\nquery:Print the personal phone number for Păduraru Adrian."
     }
   ],
   [
@@ -2232,11 +2288,11 @@
     },
     {
       "role": "user",
-      "content": "register butnicu dan's personal phone number as 0777432569 in user profile"
+      "content": "register butnicu dan's personal phone number as +40 777-432569 in user profile"
     },
     {
       "role": "model",
-      "content": "user-profile:Set the personal phone number to 0777432569 for Butnicu Dan.\nuser-profile:Get the personal phone number for Butnicu Dan.\nquery:Print the personal phone number for Butnicu Dan."
+      "content": "user-profile:Set the personal phone number to +40 777 432569 for Butnicu Dan.\nuser-profile:Get the personal phone number for Butnicu Dan.\nquery:Print the personal phone number for Butnicu Dan."
     }
   ],
   [
@@ -2246,11 +2302,11 @@
     },
     {
       "role": "user",
-      "content": "set business phone number 0734990887 for gavriliu mihaela in user profile"
+      "content": "set business phone number +40 734 990887 for gavriliu mihaela in user profile"
     },
     {
       "role": "model",
-      "content": "user-profile:Set the business phone number to 0734990887 for Gavriliu Mihaela.\nuser-profile:Get the business phone number for Gavriliu Mihaela.\nquery:Print the business phone number for Gavriliu Mihaela."
+      "content": "user-profile:Set the business phone number to +40 7349 90887 for Gavriliu Mihaela.\nuser-profile:Get the business phone number for Gavriliu Mihaela.\nquery:Print the business phone number for Gavriliu Mihaela."
     }
   ],
   [
@@ -2264,7 +2320,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Set the business phone number to 0746523787 for Gogălniceanu Mioara.\nuser-profile:Get the business phone number for Gogălniceanu Mioara.\nquery:Print the business phone number for Gogălniceanu Mioara."
+      "content": "user-profile:Set the business phone number to +40 746 523787 for Gogălniceanu Mioara.\nuser-profile:Get the business phone number for Gogălniceanu Mioara.\nquery:Print the business phone number for Gogălniceanu Mioara."
     }
   ],
   [
@@ -2531,6 +2587,20 @@
     {
       "role": "model",
       "content": "user-profile:Set the driving license type to personal for Dorneanu Ioana Sorana.\nuser-profile:Get the driving license type for Dorneanu Ioana Sorana.\nquery:Print the driving license type for Dorneanu Ioana Sorana."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "set postal address to jud. Iasi, mun. Iasi, str. Stejar nr. 13B, bl. I2, sc. C, et. 4, ap. 3 for fantanaru eugenia"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Set the postal address to jud. Iasi, mun. Iasi, str. Stejar nr. 13B, bl. I2, sc. C, et. 4, ap. 3 for Fantanaru Eugenia.\nuser-profile:Get the postal address for Fantanaru Eugenia.\nquery:Print the postal address for Fantanaru Eugenia."
     }
   ],
   [
@@ -6530,11 +6600,81 @@
     },
     {
       "role": "user",
+      "content": "save my weight 93.75"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Get the height of ${username}.\nhealth:Save body weight of 93.75 kg and height of ${height} cm for ${username}.\nquery:Print the summary of the saved medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
       "content": "save my weight of 89"
     },
     {
       "role": "model",
       "content": "user-profile:Get my username.\nuser-profile:Get the height of ${username}.\nhealth:Save body weight of 89.00 kg and height of ${height} cm for ${username}.\nquery:Print the summary of the saved medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "save my body weight of 89.00"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Get the height of ${username}.\nhealth:Save body weight of 89.00 kg and height of ${height} cm for ${username}.\nquery:Print the summary of the saved medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "save my weight 88"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Get the height of ${username}.\nhealth:Save body weight of 88.00 kg and height of ${height} cm for ${username}.\nquery:Print the summary of the saved medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "save my weight of 88.5"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Get the height of ${username}.\nhealth:Save body weight of 88.50 kg and height of ${height} cm for ${username}.\nquery:Print the summary of the saved medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "save my weight 87.75"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Get the height of ${username}.\nhealth:Save body weight of 87.75 kg and height of ${height} cm for ${username}.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -6586,39 +6726,11 @@
     },
     {
       "role": "user",
-      "content": "insert my weight of 86 into health db"
+      "content": "insert my weight of 86.25 into health db"
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Get the height of ${username}.\nhealth:Save body weight of 86.00 kg and height of ${height} cm for ${username}.\nquery:Print the summary of the saved medical readings."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "save my weight of 88.5"
-    },
-    {
-      "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Get the height of ${username}.\nhealth:Save body weight of 88.50 kg and height of ${height} cm for ${username}.\nquery:Print the summary of the saved medical readings."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "save my weight 87.5"
-    },
-    {
-      "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Get the height of ${username}.\nhealth:Save body weight of 87.50 kg and height of ${height} cm for ${username}.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get my username.\nuser-profile:Get the height of ${username}.\nhealth:Save body weight of 86.25 kg and height of ${height} cm for ${username}.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -6633,20 +6745,6 @@
     {
       "role": "model",
       "content": "user-profile:Get my username.\nuser-profile:Get the height of ${username}.\nhealth:Save body weight of 94.00 kg and height of ${height} cm for ${username}.\nquery:Print the summary of the saved medical readings."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "save my weight 88"
-    },
-    {
-      "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Get the height of ${username}.\nhealth:Save body weight of 88.00 kg and height of ${height} cm for ${username}.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -6768,11 +6866,11 @@
     },
     {
       "role": "user",
-      "content": "logs weight of 103.5 for rotaru stefan"
+      "content": "logs weight of 103.75 for rotaru stefan"
     },
     {
       "role": "model",
-      "content": "user-profile:Get the height of Rotaru Ștefan.\nhealth:Save body weight of 103.50 kg and height of ${height} cm for Rotaru Ștefan.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get the height of Rotaru Ștefan.\nhealth:Save body weight of 103.75 kg and height of ${height} cm for Rotaru Ștefan.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -6782,11 +6880,11 @@
     },
     {
       "role": "user",
-      "content": "record adam nicolae ioan weight 66.5"
+      "content": "record adam nicolae ioan weight 66.25"
     },
     {
       "role": "model",
-      "content": "user-profile:Get the height of Adam Nicolae Ioan.\nhealth:Save body weight of 66.50 kg and height of ${height} cm for Adam Nicolae Ioan.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get the height of Adam Nicolae Ioan.\nhealth:Save body weight of 66.25 kg and height of ${height} cm for Adam Nicolae Ioan.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -6796,11 +6894,11 @@
     },
     {
       "role": "user",
-      "content": "write marton csaba weight of 77 kg"
+      "content": "write marton csaba weight of 77.75 kg"
     },
     {
       "role": "model",
-      "content": "user-profile:Get the height of Marton Csaba.\nhealth:Save body weight of 77.00 kg and height of ${height} cm for Marton Csaba.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get the height of Marton Csaba.\nhealth:Save body weight of 77.75 kg and height of ${height} cm for Marton Csaba.\nquery:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -9643,3114 +9741,6 @@
     {
       "role": "model",
       "content": "weather:Get daily weather forecast for the next week in Constanta, Romania?\nquery:What about going to the sea at Constanta, this week? Will the weather help us?"
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "essay about ion creanga life and works"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about Ion Creanga.\nwikipedia:Create a comprehensive and detailed essay about Ion Creanga life and works."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "generate an essay on aurel vlaicu death"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about Aurel Vlaicu.\nwikipedia:Create a comprehensive and detailed essay about Aurel Vlaicu death."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "detailed description of leo tolstoy childhood"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about Leo Tolstoy.\nwikipedia:Create a comprehensive and detailed essay about Leo Tolstoy childhood."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "create a paper about joan of arc"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about Joan of Arc.\nwikipedia:Create a comprehensive and detailed essay about Joan of Arc."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "describe the eiffel tower in an essay"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about Eiffel Tower.\nwikipedia:Create a comprehensive and detailed essay about Eiffel Tower."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "write an essay about roman empire"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about Roman Empire.\nwikipedia:Create a comprehensive and detailed essay about Roman Empire."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "compose an essay about romania early history"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about Romania.\nwikipedia:Create a comprehensive and detailed essay about Romania's early history."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "load wiki article about oscar wild and create an essay about his work"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about Oscar Wilde.\nwikipedia:Create a comprehensive and detailed essay about Oscar Wild's work."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "compose an essay on apollo 11 mission based on wikipedia article"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about Apollo 11.\nwikipedia:Create a comprehensive and detailed essay about Apollo 11 mission."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "generate an essay about american civil war"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about American Civil War.\nwikipedia:Create a comprehensive and detailed essay about American Civil War."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "create a exhaustive survey of thomas edison inventions"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about Thomas Edison.\nwikipedia:Create a comprehensive and detailed essay about Thomas Edison's inventions."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "historical account about stephen the great conflicts with poland"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about Stephen the Great.\nwikipedia:Create a comprehensive and detailed essay about Stephen the Great conflicts with Poland."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "detailed account about wright flyer first flight"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about Wright Flyer.\nwikipedia:Create a comprehensive and detailed essay about Wright Flyer's first flight."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "historical account of the panama canal"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about Panama Canal.\nwikipedia:Create a comprehensive and detailed essay about the history of the Panama Canal."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "write a detailed study of danube river"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about Danube.\nwikipedia:Create a comprehensive and detailed essay about Danube river."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "comprehensive history of the french revolution"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about French Revolution.\nwikipedia:Create a comprehensive and detailed essay about French Revolution."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "create a complete examination of the computer architecture"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about computer.\nwikipedia:Create a comprehensive and detailed essay about computer architecture."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "create a broad examination of lunar lander"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about lunar lander.\nwikipedia:Create a comprehensive and detailed essay about lunar lander."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "generate a detailed study of electric vehicles"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about electric vehicle.\nwikipedia:Create a comprehensive and detailed essay about electric vehicles."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "write a exhaustive study of serengeti ecosystem"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about Serengeti National Park.\nwikipedia:Create a comprehensive and detailed essay about Serengeti ecosystem."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "create a short summary of tom sawyer"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about 'The Adventures of Tom Sawyer'.\nwikipedia:Create a short summary of the 'The Adventures of Tom Sawyer' book."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "brief me the novel david copperfield"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about 'David Copperfield'.\nwikipedia:Create a short summary of the 'David Copperfield' book."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "create a summary of novel 'life on mississippi'"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about 'Life on the Mississippi'.\nwikipedia:Create a summary of the 'Life on the Mississippi' book."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "write summary about huckleberry finn"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about 'Adventures of Huckleberry Finn'.\nwikipedia:Create a summary of the 'Adventures of Huckleberry Finn' book."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "compose a summary about book an yankee at king arthur"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about 'A Connecticut Yankee in King Arthur's Court'.\nwikipedia:Create a summary of the 'A Connecticut Yankee in King Arthur's Court' book."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "generate a summary for oliver twist book"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about 'Oliver Twist'.\nwikipedia:Create a summary of the 'Oliver Twist' book."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "write concise summary of grapes of wrath"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about 'The Grapes of Wrath'.\nwikipedia:Create a short summary of the 'The Grapes of Wrath' book."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "summary of battle from vaslui lead by stephen the great"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about Stephen the Great.\nwikipedia:Create a summary of Stephen the Great's Battle of Vaslui."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "summary of 'Operation_Barbarossa' from ww2"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about 'Operation Barbarossa'.\nwikipedia:Create a summary of the Operation Barbarossa from World War II."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "create a summary of market garden plan from ww2"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about 'Operation Market Garden'.\nwikipedia:Create a summary of the Operation Market Garden from World War II."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "summarize the plot of the movie 'Arkansas_(film)' from 2020"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about 'Arkansas (film)'.\nwikipedia:Create a summary for the plot of the movie Arkansas from 2020."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "create plot summary for movie 'The_Magnificent_Seven_(2016_film)'"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about 'The Magnificent Seven (2016 film)'.\nwikipedia:Create a summary for the plot of the movie The Magnificent Seven from 2016."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "plot summary of movie 'Dune_(2021_film)'"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about 'Dune (2021 film)'.\nwikipedia:Create a summary for the plot of the movie Dune from 2021."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "write summary of movie plot '47_Ronin_(2013_film)'"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about '47 Ronin (2013 film)'.\nwikipedia:Create a summary for the plot of the movie 47 Ronin from 2013."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "book brief summary for 'Dune_(novel)'"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about 'Dune (novel)'.\nwikipedia:Create a short plot summary of the novel Dune."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "write story about a day from a lions pride"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about lion.\nwikipedia:Create a story in a narrative style about a day from a lions pride."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "story about aurel vlaicu attempt to cross mountains"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about Aurel Vlaicu.\nwikipedia:Create a story in a narrative style about Aurel Vlaicu attempt to cross the mountains."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "create a story for marie curie discovery of radioactivity"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about Marie Curie.\nwikipedia:Create a story in a narrative style about Marie Curie's discovery of radioactivity."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "story primitive humans hunting"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about hunting.\nwikipedia:Create a story in a narrative style about primitive humans hunting."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "create a story about oscar wilde time in prison"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about Oscar Wilde.\nwikipedia:Create a story in a narrative style about Oscar Wilde's time in prison."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "write a story of thomas edison inventing electric light"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about Thomas Edison.\nwikipedia:Create a story in a narrative style about Thomas Edison inventing the electric light."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "story about america discovery by christopher columbus"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about Christopher Columbus.\nwikipedia:Create a story in a narrative style about America's discovery by Christopher Columbus."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "create a story about jack london participation in gold rush"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about Jack London.\nwikipedia:Create a story in a narrative style about Jack London's participation in the gold rush."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "what are the relevant works of jack london"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about Jack London\nwikipedia:List the works of Jack London."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "create a list of mihail sadoveanu's novels, novellas and short stories"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about Mihail Sadoveanu\nwikipedia:List the works of Mihail Sadoveanu."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "what are most known works of pablo picasso"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about Pablo Picasso\nwikipedia:List the works of Pablo Picasso."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "list notable works of franz kafka"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about Franz Kafka\nwikipedia:List the works of Franz Kafka."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "print a list of the novels, novellas and stories of john steinbeck"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about John Steinbeck\nwikipedia:List the works of John Steinbeck."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "what are the books written by john steinbeck?"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about John Steinbeck\nwikipedia:List the works of John Steinbeck."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "enumerate books of camil petrescu"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about Camil Petrescu\nwikipedia:List the works of Camil Petrescu."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "list alexandre dumas novels"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about Alexandre Dumas\nwikipedia:List the works of Alexandre Dumas."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "what books is Alexandre Dumas, son, known for?"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about Alexandre Dumas, son\nwikipedia:List the works of Alexandre Dumas, son."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "what are the most famous sculptures by constantin brâncuși?"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about Constantin Brâncuși\nwikipedia:List the works of Constantin Brâncuși."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "list compositions of ludwig van beethoven"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about Ludwig van Beethoven\nwikipedia:List the works of Ludwig van Beethoven."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "list remarkable paints of vicent van gogh"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about Vincent van Gogh\nwikipedia:List the works of Vincent van Gogh."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "print george enescu musical works"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about George Enescu\nwikipedia:List the works of George Enescu."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "list all stories written by ion creanga"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about Ion Creanga\nwikipedia:List the stories of Ion Creanga."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "what are the stories written by mark twain"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about Mark Twain\nwikipedia:List the stories of Mark Twain."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "enumerate brothers grimm well known stories"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about Brothers Grimm\nwikipedia:List the stories of Brothers Grimm."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "fairy tales by hans christian andersen"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about Hans Christian Andersen\nwikipedia:List the stories of Hans Christian Andersen."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "fairy tales and short stories for children by cezar petrescu"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about Cezar Petrescu\nwikipedia:List the stories of Cezar Petrescu."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "list the stories written by dr. seuss"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about Dr. Seuss\nwikipedia:List the stories of Dr. Seuss."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "list aesop fables"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about Aesop's Fables\nwikipedia:List the fables of Aesop."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "list all known fables written by aesop"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about Aesop's Fables\nwikipedia:List the fables of Aesop."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "fables by jean de la fontaine"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about La Fontaine's Fables.\nwikipedia:List the fables of Jean de La Fontaine."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "list of fables writen by russian author ivan krylov"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about Ivan Krylov.\nwikipedia:List the fables of Ivan Krylov."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "what fables is hans christian andersen known for?"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about Hans Christian Andersen.\nwikipedia:List the fables of Hans Christian Andersen."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "enumerate john gay's fables"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about John Gay.\nwikipedia:List the fables of John Gay."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "polish fables by ignacy krasicki"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about Ignacy Krasicki.\nwikipedia:List the fables of Ignacy Krasicki."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "list franz kafka's fables"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about Franz Kafka.\nwikipedia:List the fables of Franz Kafka."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "list of the james thurber fables"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about James Thurber.\nwikipedia:List the fables of James Thurber."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "in what period did mihai eminescu live?"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about Mihai Eminescu.\nwikipedia:In what period did Mihai Eminescu live?"
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "what is the height of eiffel tower?"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about Eiffel Tower.\nwikipedia:What is the height of Eiffel Tower?"
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "what is the length of nile river?"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about Nile.\nwikipedia:What is the length of Nile river?"
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "what is the capital city of norway?"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about Norway.\nwikipedia:What is the capital city of norway?"
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "how many citizens does switzerland have?"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about Switzerland.\nwikipedia:How many citizens does switzerland have?"
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "what are the largest cities in romania?"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about Romania.\nwikipedia:What are the largest cities in Romania?"
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "when did albert einstein create relativity?"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about Albert Einstein.\nwikipedia:When did Albert Einstein create relativity?"
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "how big is a lion?"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about lion.\nwikipedia:How big is a lion?"
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "what is the speed of a cheetah?"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about cheetah.\nwikipedia:What is the speed of a cheetah?"
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "why the sky is blue?"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about sky.\nwikipedia:Why the sky is blue?"
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "how far is the moon?"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about Moon.\nwikipedia:How far is the Moon?"
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "how many moons does mars have?"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about Mars.\nwikipedia:How many moons does mars have?"
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "how many planets does our solar system have?"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about solar system.\nwikipedia:How many planets does our solar system have?"
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "what is the largest planet from solar system?"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about solar system.\nwikipedia:What is the largest planet from solar system?"
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "what is the speed of the international space station?"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about International Space Station.\nwikipedia:What is the speed of the international space station?."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "when stephen the great ruled moldavia?"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about Stephen the Great.\nwikipedia:When Stephen the Great ruled Moldavia?"
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "please list planets from our solar system and their diameter"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about solar system.\nwikipedia:List the planets from our solar system and their diameters."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "list population of largest cities on earth"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about list of largest cities.\nwikipedia:List the population of the largest cities on earth."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "what are 'magnificent seven' companies?"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about Big Tech.\nwikipedia:What are the 'magnificent seven' companies?"
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "is greenland an independent state?"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about Denmark.\nwikipedia:Is Greenland an independent state?"
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "in which year christopher columbus discovered america?"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about Christopher Columbus.\nwikipedia:In which year Christopher Columbus discovered America?"
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "extract facts about tokyo city"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about Tokyo City.\nwikipedia:Extract facts about Tokyo City."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "please show me some facts about stephen the great"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about Stephen the Great.\nwikipedia:Extract facts about Stephen the Great."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "some statistics about mangalia locality"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about Mangalia.\nwikipedia:Extract facts about Mangalia locality."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "print economical statistics about singapore"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about Singapore.\nwikipedia:Extract facts about the economy of Singapore."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "print some data about romania's economy"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about Romania.\nwikipedia:Extract facts about the economy of Romania."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "list interesting facts about danube river"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about Danube.\nwikipedia:Extract facts about Danube river."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "some characteristics of international space station"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about International Space Station.\nwikipedia:Extract facts about International Space Station."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "display physical characteristics of a lion"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about lion.\nwikipedia:Extract facts about the physical characteristics of the lion."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "tell me some facts about saturn 5 rocket"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about Saturn V.\nwikipedia:Extract facts about Saturn V rocket."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "retrieve physical properties of a ferrari car"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about Ferrari.\nwikipedia:Extract facts about the physical properties of Ferrari cars."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "get the properties of antonov an-2 plane"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about Antonov AN-2.\nwikipedia:Extract facts about Antonov AN-2 plane."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "describe vaslui battle of stephen the great"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about Stephen the Great.\nwikipedia:Write a brief description of Stephen the Great's Battle of Vaslui."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "short description of the charles darwin expedition with beagle ship"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about Charles Darwin.\nwikipedia:Write a brief description of Charles Darwin's expedition with Beagle ship."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "create a brief account of galapagos islands"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about Galapagos.\nwikipedia:Write a brief description of the Galapagos Islands."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "write a short description about first space flight of yuri gagarin"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about Yuri Gagarin.\nwikipedia:Write a brief description of Yuri Gagarin's first space flight."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "what is the story, on short, of the first atlantic flight"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about transatlantic flight.\nwikipedia:Write a brief description of the first transatlantic flight."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "please describe briefly the dragonfly lifecycle"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about dragonfly.\nwikipedia:Write a brief description of the dragonfly lifecycle."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "tell me couple words about agile methodology in programing"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about agile software development.\nwikipedia:Write a brief description of the agile methodology in programming."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "compose a concise account about trojan war"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about Trojan war.\nwikipedia:Write a brief description of the Trojan War."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "brief me on amazon river course"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about Amazon river.\nwikipedia:Write a brief description of the Amazon river course."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "describe in couple words the amazon cloud service"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about Amazon company.\nwikipedia:Write a brief description of the Amazon cloud service."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "please explain in layman terms how an internal combustion engine works"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about internal combustion engine.\nwikipedia:Write a brief description of how an internal combustion engine works."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "describe in simple terms a leaf metabolism"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about leaf.\nwikipedia:Write a brief description of a leaf metabolism."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "how a cell is cloning? please describe in simple terms"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about cell.\nwikipedia:Write a brief description of how a cell is cloned."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "write a very short story of magellan expedition around the world"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about Ferdinand Magellan.\nwikipedia:Write a brief description of Magellan's expedition around the world."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "tell the short story of james cook antarctic expedition"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about James Cook.\nwikipedia:Write a brief description of James Cook's expedition to Antarctica."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "briefly outlines apollo 11 trip to moon"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about Apollo 11.\nwikipedia:Write a brief description of the Apollo 11's trip to Moon."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "write a concise story about first everest ascent by humans"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about Everest.\nwikipedia:Write a brief description of the first human ascent of Everest."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "get a short description of jules verne nautilus submarine"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about Nautilus.\nwikipedia:Write a brief description of Jules Verne's Nautilus submarine."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "create a brief story of first air balloon flight"
-    },
-    {
-      "role": "model",
-      "content": "wikipedia:Read article about hot air balloon.\nwikipedia:Write a brief description of the first air balloon flight."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "how to use if condition for a python string not equal with a value"
-    },
-    {
-      "role": "model",
-      "content": "programming:How to use if condition for a Python string not equal with a value?"
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "how to split a python string by first colon only"
-    },
-    {
-      "role": "model",
-      "content": "programming:How to split a Python string by first colon only?"
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "how to reverse a python string"
-    },
-    {
-      "role": "model",
-      "content": "programming:How to reverse a Python string?"
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "uppercase a python string"
-    },
-    {
-      "role": "model",
-      "content": "programming:Uppercase a Python string."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "how to escape a python string for use in a json?"
-    },
-    {
-      "role": "model",
-      "content": "programming:How to escape a Python string for use in a JSON?"
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "is array a built-in python type"
-    },
-    {
-      "role": "model",
-      "content": "programming:Is array a built-in Python type?"
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "demonstrate me how to read a list of names from a file in python"
-    },
-    {
-      "role": "model",
-      "content": "programming:Demonstrate me how to read a list of names from a file in Python?"
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "how to calculate the area of a triangle given its base and height in python"
-    },
-    {
-      "role": "model",
-      "content": "programming:How to calculate the area of a triangle given its base and height in Python?"
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "calculate in python the standard deviation of a list of numbers"
-    },
-    {
-      "role": "model",
-      "content": "programming:Calculate in Python the standard deviation of a list of numbers."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "is there a built-in python function to find the common elements between two lists"
-    },
-    {
-      "role": "model",
-      "content": "programming:Is there a built-in Python function to find the common elements between two lists?"
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "how to use python to check that a given string is a valid email address"
-    },
-    {
-      "role": "model",
-      "content": "programming:How to use Python to check that a given string is a valid email address?"
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "generate in python a random password of a specified length"
-    },
-    {
-      "role": "model",
-      "content": "programming:Generate in Python a random password of a specified length."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "python script to convert a string from one unit of measurement to another"
-    },
-    {
-      "role": "model",
-      "content": "programming:Python script to convert a string from one unit of measurement to another."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "remove duplicate elements from a python list of strings"
-    },
-    {
-      "role": "model",
-      "content": "programming:Remove duplicate elements from a Python list of strings."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "write python function to calculate the area of a circle given its radius"
-    },
-    {
-      "role": "model",
-      "content": "programming:Write a Python function to calculate the area of a circle given its radius."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "i need a python script to read a csv file containing sales data"
-    },
-    {
-      "role": "model",
-      "content": "programming:I need a Python script to read a CSV file containing sales data."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "create a python class representing a car. add a method to calculate the fuel consumption per 100 km"
-    },
-    {
-      "role": "model",
-      "content": "programming:Create a Python class representing a car. Add a method to calculate the fuel consumption per 100 km."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "generate a python program that simulates a simple dice roll"
-    },
-    {
-      "role": "model",
-      "content": "programming:Generate a Python program that simulates a simple dice roll."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "i want a python function that takes a list of integers and returns the average"
-    },
-    {
-      "role": "model",
-      "content": "programming:I want a Python function that takes a list of integers and returns the average."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "write a python script to check if a given string is a palindrome"
-    },
-    {
-      "role": "model",
-      "content": "programming:Write a Python script to check if a given string is a palindrome."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "develop a python program that takes a temperature in celsius as input and converts it to fahrenheit"
-    },
-    {
-      "role": "model",
-      "content": "programming:Develop a Python program that takes a temperature in Celsius as input and converts it to Fahrenheit."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "i need a python function to find the largest number in a list of floating-point numbers"
-    },
-    {
-      "role": "model",
-      "content": "programming:I need a Python function to find the largest number in a list of floating-point numbers."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "create a python script that reads a text file and counts the number of words in it"
-    },
-    {
-      "role": "model",
-      "content": "programming:Create a Python script that reads a text file and counts the number of words in it."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "write a python program to implement a simple calculator that can perform addition, subtraction, multiplication, and division"
-    },
-    {
-      "role": "model",
-      "content": "programming:Write a Python program to implement a simple calculator that can perform addition, subtraction, multiplication, and division."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "generate a python function to calculate the distance between two points given their coordinates"
-    },
-    {
-      "role": "model",
-      "content": "programming:Generate a Python function to calculate the distance between two points given their coordinates."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "i'm building a simple game in python. can you provide a basic structure for a function that simulates a player moving a certain number of steps"
-    },
-    {
-      "role": "model",
-      "content": "programming:I'm building a simple game in Python.  Can you provide a basic structure for a function that simulates a player moving a certain number of steps?"
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "write a python script to generate a sequence of random numbers between 1 and 100"
-    },
-    {
-      "role": "model",
-      "content": "programming:Write a Python script to generate a sequence of random numbers between 1 and 100."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "create a python class representing a rectangle"
-    },
-    {
-      "role": "model",
-      "content": "programming:Create a Python class representing a rectangle."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "write a python program to determine if a number is prime"
-    },
-    {
-      "role": "model",
-      "content": "programming:Write a Python program to determine if a number is prime."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "create a python program that simulates a simple queue using a list"
-    },
-    {
-      "role": "model",
-      "content": "programming:Create a Python program that simulates a simple queue using a list."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "how to use an enumeration of strings on python args parser"
-    },
-    {
-      "role": "model",
-      "content": "programming:How to use a string enumeration on a Python argument parser?"
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "get a default value when python dictionary key is missing"
-    },
-    {
-      "role": "model",
-      "content": "programming:Gets a default value when the Python dictionary key is missing."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "convert python string to boolean"
-    },
-    {
-      "role": "model",
-      "content": "programming:Converts python string to boolean."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "is there a switch / case flow control in python?"
-    },
-    {
-      "role": "model",
-      "content": "programming:Is there a switch/case flow control in Python?"
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "how to check a substring is part of a python string?"
-    },
-    {
-      "role": "model",
-      "content": "programming:How do I check if a substring is part of a Python string?"
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "how to throw an exception in python?"
-    },
-    {
-      "role": "model",
-      "content": "programming:How to throw an exception in Python?"
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "is possible to dynamically add a method to a class in python?"
-    },
-    {
-      "role": "model",
-      "content": "programming:Is it possible to dynamically add a method to a class in Python?"
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "please create a java spring rest controller with an endpoint using url parameters"
-    },
-    {
-      "role": "model",
-      "content": "programming:Please create a Java Spring REST controller with an endpoint using URL parameters."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "create a java static method to compute body mass index from given weight and height"
-    },
-    {
-      "role": "model",
-      "content": "programming:Create a static method in Java to calculate body mass index from a given weight and height."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "there is a json list with objects with the same schema. how to deserialize in rust using serde_json"
-    },
-    {
-      "role": "model",
-      "content": "programming:There is a JSON list of objects with the same schema. How to deserialize in Rust using serde_json?"
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "can this rust regex pattern r\"(?s)(^get\\s+.+\\s+user).*\" match the user prompt: Get my username."
-    },
-    {
-      "role": "model",
-      "content": "programming:Can this Rust regex pattern r\"(?s)(^get\\s+.+\\s+user).*\" match the user prompt: Get my username."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "how to make a rust regex pattern not case sensitive?"
-    },
-    {
-      "role": "model",
-      "content": "programming:How do I make a Rust regex pattern case-insensitive?"
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "how to rename field on rust serde json?"
-    },
-    {
-      "role": "model",
-      "content": "programming:How to rename field on Rust Serde JSON?"
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "how to remove a non empty directory from linux command line?"
-    },
-    {
-      "role": "model",
-      "content": "linux-admin:How to remove a non-empty directory from the Linux command line?"
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "how to create a reverse proxy using apache2 on linux? let's say we want to redirect entire HTTPS traffic to http://192.168.0.3:8020/"
-    },
-    {
-      "role": "model",
-      "content": "linux-admin:How to create a reverse proxy using Apache2 on Linux? Let's say we want to redirect all HTTPS traffic to http://192.168.0.3:8020/"
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "what apache2 modules to enable for a reverse proxy?"
-    },
-    {
-      "role": "model",
-      "content": "linux-admin:Which Apache2 modules should I enable for a reverse proxy?"
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "how to upgrade ubuntu version?"
-    },
-    {
-      "role": "model",
-      "content": "linux-admin:How to upgrade Ubuntu version?"
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "how to enable modules in linux apache2?"
-    },
-    {
-      "role": "model",
-      "content": "linux-admin:How to enable modules in Apache2 on linux?"
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "which expression is more appropriate: 'what is the weather like?' or 'how is the weather?'"
-    },
-    {
-      "role": "model",
-      "content": "language:Which expression is more appropriate: \"What is the weather like?\" or \"How is the weather?\""
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "how to properly ask if living room window is opened"
-    },
-    {
-      "role": "model",
-      "content": "language:How to properly ask if living room window is opened?"
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "how is correct: \"the balcony door is closed\" or \"the balcony door is shut\"?"
-    },
-    {
-      "role": "model",
-      "content": "language:How is correct: \"the balcony door is closed\" or \"the balcony door is shut\"?"
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "is the question \"what's the weather like?\" correctly formulated?"
-    },
-    {
-      "role": "model",
-      "content": "language:Is the question \"what's the weather like?\" correctly formulated?"
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "is the question 'do we have water leaks in salon?' correctly expressed?"
-    },
-    {
-      "role": "model",
-      "content": "language:Is the question \"do we have water leaks in salon?\" correctly expressed?"
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "can i use the phrase \"today's weather prognosis\" to ask for today weather forecast?"
-    },
-    {
-      "role": "model",
-      "content": "language:Can i use the phrase \"today's weather prognosis\" to ask for today weather forecast?"
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "is correct to ask 'is bathroom not shut?'?"
-    },
-    {
-      "role": "model",
-      "content": "language:Is it correct to ask \"is bathroom not shut?\"?"
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "is next expression correctly phrased: \"carbon level in the kitchen\"?"
-    },
-    {
-      "role": "model",
-      "content": "language:Is next expression correctly phrased: \"carbon level in the kitchen\"?"
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "is statement \"save my blood pressure of 120/80\" correctly phrased?"
-    },
-    {
-      "role": "model",
-      "content": "language:Is the statement \"save my blood pressure of 120/80\" correctly phrased?"
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "does the expression \"disengage the climate\" make sense in english?"
-    },
-    {
-      "role": "model",
-      "content": "language:Does the expression \"disengage the climate\" make sense in English?"
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "does the question \"is sleeping room shut?\" make sense in english?"
-    },
-    {
-      "role": "model",
-      "content": "language:Does the question \"is sleeping room shut?\" make sense in English?"
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "does phrase \"get the heater status\" have meaning in english?"
-    },
-    {
-      "role": "model",
-      "content": "language:Does the phrase \"get the heater status\" have any meaning in English?"
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "is reasonable to state in english 'the bedroom windows are wide opened'?"
-    },
-    {
-      "role": "model",
-      "content": "language:Is it reasonable to state in English \"the bedroom windows are wide opened\"?"
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "is it reasonable to say in english: engage the climate system"
-    },
-    {
-      "role": "model",
-      "content": "language:Is it reasonable to say in English \"engage the climate system\"?"
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "is reasonable to ask in english \"is the front door not shut?\"?"
-    },
-    {
-      "role": "model",
-      "content": "language:Is it reasonable to ask in English \"is the front door not shut?\"?"
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "what means cursum perficio?"
-    },
-    {
-      "role": "model",
-      "content": "language:What means cursum perficio?"
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "translate to romanian: indicating a mild overweight status"
-    },
-    {
-      "role": "model",
-      "content": "translation:Translate to Romanian: \"indicating a mild overweight status\"."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "translate into romanian: kitchen air monitor"
-    },
-    {
-      "role": "model",
-      "content": "translation:Translate to Romanian: \"kitchen air monitor\"."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "please translate into french next question: how will be weather today on deprecen, slovakia?"
-    },
-    {
-      "role": "model",
-      "content": "translation:Translate to French: \"how will be weather today on deprecen, slovakia?\"."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "translate in german 'generate a detailed study of electric vehicles'"
-    },
-    {
-      "role": "model",
-      "content": "translation:Translate to German: \"generate a detailed study of electric vehicles\"."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "translate to japanese \"record my temperature: 37.1\""
-    },
-    {
-      "role": "model",
-      "content": "translation:Translate to Japanese: \"record my temperature: 37.1\"."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "can you translate to korean \"write my blood readings: 120 with 84 and 76\""
-    },
-    {
-      "role": "model",
-      "content": "translation:Translate to Korean: \"write my blood readings: 120 with 84 and 76\"."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "can you please translate \"list 10 days forecast\" into italian"
-    },
-    {
-      "role": "model",
-      "content": "translation:Translate to Italian: \"list 10 days forecast\"."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "translate \"save glucose level of 105\" to spanish"
-    },
-    {
-      "role": "model",
-      "content": "translation:Translate to Spanish: \"save glucose level of 105\"."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "can you please translate 'start the central heating' in romanian?"
-    },
-    {
-      "role": "model",
-      "content": "translation:Translate to Romanian: \"start the central heating\"."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "translate question 'is latch off on front door?' into russian"
-    },
-    {
-      "role": "model",
-      "content": "translation:Translate to Russian: \"is latch off on front door?\"."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "make a translation of question 'are there any opened windows?' in greek"
-    },
-    {
-      "role": "model",
-      "content": "translation:Translate to Greek: \"are there any opened windows?\"."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "interpret phrase 'what is the temperature in the sitting room?' in portuguese"
-    },
-    {
-      "role": "model",
-      "content": "translation:Translate to Portuguese: \"what is the temperature in the sitting room?\"."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "restate 'gas concentration in the kitchen' in slovak"
-    },
-    {
-      "role": "model",
-      "content": "translation:Translate to Slovak: \"gas concentration in the kitchen\"."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "restate in chinese: 'my glucose level is 128'"
-    },
-    {
-      "role": "model",
-      "content": "translation:Translate to Chinese: \"my glucose level is 128\"."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "how would you translate \"medical readings from january 22\" into serbian?"
-    },
-    {
-      "role": "model",
-      "content": "translation:Translate to Serbian: \"medical readings from january 22\"."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "how to say \"stop heater\" in czech?"
-    },
-    {
-      "role": "model",
-      "content": "translation:Translate to Czech: \"stop heater\"."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "how do you, please, say \"engage the climate system\" in spanish?"
-    },
-    {
-      "role": "model",
-      "content": "translation:Translate to Spanish: \"engage the climate system\"."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "how do you ask in australian \"how is outside?\"?"
-    },
-    {
-      "role": "model",
-      "content": "translation:Translate to Australian: \"how is outside?\"."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "how to ask in french \"is the heating running?\"?"
-    },
-    {
-      "role": "model",
-      "content": "translation:Translate to French: \"is the heating running?\"."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "explain to a child why sky is blue"
-    },
-    {
-      "role": "model",
-      "content": "child-learning:Explain to a child why the sky is blue."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "why are flowers so colorful? please explain as for a child"
-    },
-    {
-      "role": "model",
-      "content": "child-learning:Explain to a child why the flowers are so colorful."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "what is a fable? explain in simple terms, at kindergarten level"
-    },
-    {
-      "role": "model",
-      "content": "child-learning:Explain to a child what is a fable."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "how rocket flies? answer proper for a child"
-    },
-    {
-      "role": "model",
-      "content": "child-learning:Explain to a child how a rocket flies."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "create a simple explanation of why there are stars in the sky suitable for a young audience"
-    },
-    {
-      "role": "model",
-      "content": "child-learning:Explain to a child why there are stars in the sky."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "imagine you are talking to a child about why is important to recycle"
-    },
-    {
-      "role": "model",
-      "content": "child-learning:Explain to a child why is important to recycle."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "summarize the concept of energy for a child"
-    },
-    {
-      "role": "model",
-      "content": "child-learning:Explain to a child the concept of energy."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "kindergarten-level summary about social behavior in a lions pride"
-    },
-    {
-      "role": "model",
-      "content": "child-learning:Explain to a child the social behavior in a lions pride."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "create a summary suitable for a child about computer components"
-    },
-    {
-      "role": "model",
-      "content": "child-learning:Explain to a child the components of a computer."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "create a child-friendly summary of the components of a steam engine"
-    },
-    {
-      "role": "model",
-      "content": "child-learning:Explain to a child the components of a steam engine."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "describe the water cycle in nature for a child"
-    },
-    {
-      "role": "model",
-      "content": "child-learning:Explain to a child the water cycle in nature."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "describe to a child how bicycle works"
-    },
-    {
-      "role": "model",
-      "content": "child-learning:Explain to a child how a bicycle works."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "explain to a child how airplane flies"
-    },
-    {
-      "role": "model",
-      "content": "child-learning:Explain to a child how an airplane flies."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "make clear to kindergarten pupils how fish swims"
-    },
-    {
-      "role": "model",
-      "content": "child-learning:Explain to a child how a fish swims."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "make a child to understand why we have different languages"
-    },
-    {
-      "role": "model",
-      "content": "child-learning:Explain to a child why we have different languages."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "teaches an elementary school student why trees have leaves"
-    },
-    {
-      "role": "model",
-      "content": "child-learning:Explain to a child why the trees have leaves."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "how body mass index is calculated?"
-    },
-    {
-      "role": "model",
-      "content": "answer:Body Mass Index (BMI) is calculated by dividing an adult's weight in kilograms (kg) by their height in meters squared (m²)."
     }
   ]
 ]

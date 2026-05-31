@@ -1,0 +1,127 @@
+[
+  {
+    "type": "function",
+    "function": {
+      "name": "user_get_property",
+      "description": "Retrieves a property value from a specific user profile.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "username": {
+            "type": "string",
+            "description": "The unique, human-readable identifier for the user."
+          },
+          "property": {
+            "type": "string",
+            "description": "The name of the property to retrieve."
+          }
+        },
+        "required": [
+          "username",
+          "property"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "user_list_properties",
+      "description": "Lists all properties and their values for a specific user profile.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "username": {
+            "type": "string",
+            "description": "The unique, human-readable identifier for the user."
+          }
+        },
+        "required": [
+          "username"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "user_remove_property",
+      "description": "Removes a specific property from a user profile.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "username": {
+            "type": "string",
+            "description": "The unique, human-readable identifier for the user."
+          },
+          "property": {
+            "type": "string",
+            "description": "The name of the property to be deleted."
+          }
+        },
+        "required": [
+          "username",
+          "property"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "user_set_property",
+      "description": "Sets a property value for a specific user profile.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "username": {
+            "type": "string",
+            "description": "The unique, human-readable identifier for the user."
+          },
+          "property": {
+            "type": "string",
+            "description": "The name of the property to set (must be unique per user)."
+          },
+          "value": {
+            "type": "string",
+            "description": "The value to assign to the property as a string."
+          }
+        },
+        "required": [
+          "username",
+          "property",
+          "value"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "user_update_property",
+      "description": "Updates an existing property for a specific user profile. If the property does not exist for the given user, no changes are made.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "username": {
+            "type": "string",
+            "description": "The unique, human-readable identifier for the user."
+          },
+          "property": {
+            "type": "string",
+            "description": "The name of the existing property to update."
+          },
+          "value": {
+            "type": "string",
+            "description": "The new value to assign to the property."
+          }
+        },
+        "required": [
+          "username",
+          "property",
+          "value"
+        ]
+      }
+    }
+  }
+]

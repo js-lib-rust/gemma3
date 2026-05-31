@@ -1,0 +1,39 @@
+/* user_set_property */
+{"prompt":"Set the social security number to 1640315227781 for user Rotaru Iulian.","function":"user_set_property","arguments":{"username":"Rotaru Iulian","property":"social security number","value":"1640315227781"}}
+{"prompt":"Set the business phone number to 0770555666 for user Agavriloaiei Lucian.","function":"user_set_property","arguments":{"username":"Agavriloaiei Lucian","property":"business Phone number","value":"0770555666"}}
+{"prompt":"Set the birth date to 1967-10-21 for user Gavriliu Mihaela.","function":"user_set_property","arguments":{"username":"Gavriliu Mihaela","property":"birth date","value":"1967-10-21"}}
+{"prompt":"Set the birth place to Ierbiceni, Iasi, Romania for user Lupu Mihaela.","function":"user_set_property","arguments":{"username":"Lupu Mihaela","property":"birth place","value":"Ierbiceni, Iasi, Romania"}}
+{"prompt":"Set the place to Tomești, Iasi for user Simeria Anca.","function":"user_set_property","arguments":{"username":"Simeria Anca","property":"place","value":"Tomești, Iasi"}}
+{"prompt":"Set the location to Iasi, Romania for user Vaino Alina.","function":"user_set_property","arguments":{"username":"Vaino Alina","property":"location","value":"Iasi, Romania"}}
+
+/* user_update_property */
+{"prompt":"Update the location to Valea Lupului, Iași, Romania for user Dorneanu Sorana Ioana.","function":"user_update_property","arguments":{"username":"Dorneanu Sorana Ioana","property":"location","value":"Valea Lupului, Iași, Romania"}}
+{"prompt":"Update the social status to maried for user Gogălniceanu Ștefan.","function":"user_update_property","arguments":{"username":"Gogălniceanu Ștefan","property":"social status","value":"maried"}}
+{"prompt":"Update the driving license type to professional for user Fântânaru Gheorghe.","function":"user_update_property","arguments":{"username":"Fântânaru Gheorghe","property":"driving license type","value":"professional"}}
+{"prompt":"Update the personal email address to rotaru.ionut@gmail.com for user Rotaru Ionuț Ciprian.","function":"user_update_property","arguments":{"username":"Rotaru Ionuț Ciprian","property":"personal email address","value":"rotaru.ionut@gmail.com"}}
+{"prompt":"Update the last working place to Delgaz SA for user Acatrinei Ingrid.","function":"user_update_property","arguments":{"username":"Acatrinei Ingrid","property":"last working place","value":"Delgaz SA"}}
+{"prompt":"Update the education to military school for user Lontkowschi George.","function":"user_update_property","arguments":{"username":"Lontkowschi George","property":"education","value":"military school"}}
+
+/* user_get_property */
+{"prompt":"Get the personal phone number of user Baciu Vasile.","function":"user_get_property","arguments":{"username":"Baciu Vasile","property":"personal phone number"}}
+{"prompt":"Get the postal address of user Miron Elena Daniela.","function":"user_get_property","arguments":{"username":"Miron Elena Daniela","property":"postal address"}}
+{"prompt":"Get the personal email address of user Rotaru Stefan.","function":"user_get_property","arguments":{"username":"Rotaru Stefan","property":"personal email address"}}
+{"prompt":"Get the working place of user Fantanaru Eugenia.","function":"user_get_property","arguments":{"username":"Fantanaru Eugenia","property":"working place"}}
+{"prompt":"Get the social status of user Dorneanu Deliana.","function":"user_get_property","arguments":{"username":"Dorneanu Deliana","property":"social status"}}
+{"prompt":"Get the hobbies of user Paduraru Adrian.","function":"user_get_property","arguments":{"username":"Paduraru Adrian","property":"hobbies"}}
+
+/* user_remove_property */
+{"prompt":"Remove profession from user Adam Iosif.","function":"user_remove_property","arguments":{"username":"Adam Iosif","property":"profession"}}
+{"prompt":"Remove business email address from user Savulescu Marcel.","function":"user_remove_property","arguments":{"username":"Savulescu Marcel","property":"business email address"}}
+{"prompt":"Remove postal code from user Vaino George Viorel.","function":"user_remove_property","arguments":{"username":"Vaino George Viorel","property":"postal code"}}
+{"prompt":"Remove skill level from user Cornea Sorin.","function":"user_remove_property","arguments":{"username":"Cornea Sorin","property":"skill level"}}
+{"prompt":"Remove driving license type from user Petrovici Traian.","function":"user_remove_property","arguments":{"username":"Petrovici Traian","property":"driving license type"}}
+{"prompt":"Remove education from user Trofin Gabriela.","function":"user_remove_property","arguments":{"username":"Trofin Gabriela","property":"education"}}
+
+/* user_list_properties */
+{"prompt":"List properties for user Paduraru Mihaela.","function":"user_list_properties","arguments":{"username":"Paduraru Mihaela"}}
+{"prompt":"List properties for user Rusu Florentin.","function":"user_list_properties","arguments":{"username":"Rusu Florentin"}}
+{"prompt":"List properties for user Cojocaru Cristian.","function":"user_list_properties","arguments":{"username":"Cojocaru Cristian"}}
+{"prompt":"List properties for user Acatrinei Liviu.","function":"user_list_properties","arguments":{"username":"Acatrinei Liviu"}}
+{"prompt":"List properties for user Lontkowschi Mirela Petronela.","function":"user_list_properties","arguments":{"username":"Lontkowschi Mirela Petronela"}}
+{"prompt":"List properties for user Gherasim Florentina.","function":"user_list_properties","arguments":{"username":"Gherasim Florentina"}}

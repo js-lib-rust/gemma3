@@ -1,0 +1,49 @@
+def user_set_property(username: str, property: str, value: str):
+    """
+    Sets a property value for a specific user profile.
+
+    Args:
+        username: The unique, human-readable identifier for the user.
+        property: The name of the property to set (must be unique per user).
+        value: The value to assign to the property as a string.
+    """
+
+
+def user_update_property(username: str, property: str, value: str):
+    """
+    Updates an existing property for a specific user profile. If the property does not exist for the given user, no changes are made.
+
+    Args:
+        username: The unique, human-readable identifier for the user.
+        property: The name of the existing property to update.
+        value: The new value to assign to the property.
+    """
+
+
+def user_get_property(username: str, property: str):
+    """
+    Retrieves a property value from a specific user profile.
+
+    Args:
+        username: The unique, human-readable identifier for the user.
+        property: The name of the property to retrieve.
+    """
+
+
+def user_remove_property(username: str, property: str):
+    """
+    Removes a specific property from a user profile.
+
+    Args:
+        username: The unique, human-readable identifier for the user.
+        property: The name of the property to be deleted.
+    """
+
+
+def user_list_properties(username: str):
+    """
+    Lists all properties and their values for a specific user profile.
+
+    Args:
+        username: The unique, human-readable identifier for the user.
+    """

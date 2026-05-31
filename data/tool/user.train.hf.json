@@ -1,0 +1,758 @@
+[
+  [
+    {
+      "role": "system",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Set the social security number to 1640315227781 for user Rotaru Iulian."
+    },
+    {
+      "role": "model",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "user_set_property",
+            "arguments": {
+              "username": "Rotaru Iulian",
+              "property": "social security number",
+              "value": "1640315227781"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Set the business phone number to 0770555666 for user Agavriloaiei Lucian."
+    },
+    {
+      "role": "model",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "user_set_property",
+            "arguments": {
+              "username": "Agavriloaiei Lucian",
+              "property": "business Phone number",
+              "value": "0770555666"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Set the birth date to 1967-10-21 for user Gavriliu Mihaela."
+    },
+    {
+      "role": "model",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "user_set_property",
+            "arguments": {
+              "username": "Gavriliu Mihaela",
+              "property": "birth date",
+              "value": "1967-10-21"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Set the birth place to Ierbiceni, Iasi, Romania for user Lupu Mihaela."
+    },
+    {
+      "role": "model",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "user_set_property",
+            "arguments": {
+              "username": "Lupu Mihaela",
+              "property": "birth place",
+              "value": "Ierbiceni, Iasi, Romania"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Set the place to Tomești, Iasi for user Simeria Anca."
+    },
+    {
+      "role": "model",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "user_set_property",
+            "arguments": {
+              "username": "Simeria Anca",
+              "property": "place",
+              "value": "Tomești, Iasi"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Set the location to Iasi, Romania for user Vaino Alina."
+    },
+    {
+      "role": "model",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "user_set_property",
+            "arguments": {
+              "username": "Vaino Alina",
+              "property": "location",
+              "value": "Iasi, Romania"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Update the location to Valea Lupului, Iași, Romania for user Dorneanu Sorana Ioana."
+    },
+    {
+      "role": "model",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "user_update_property",
+            "arguments": {
+              "username": "Dorneanu Sorana Ioana",
+              "property": "location",
+              "value": "Valea Lupului, Iași, Romania"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Update the social status to maried for user Gogălniceanu Ștefan."
+    },
+    {
+      "role": "model",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "user_update_property",
+            "arguments": {
+              "username": "Gogălniceanu Ștefan",
+              "property": "social status",
+              "value": "maried"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Update the driving license type to professional for user Fântânaru Gheorghe."
+    },
+    {
+      "role": "model",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "user_update_property",
+            "arguments": {
+              "username": "Fântânaru Gheorghe",
+              "property": "driving license type",
+              "value": "professional"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Update the personal email address to rotaru.ionut@gmail.com for user Rotaru Ionuț Ciprian."
+    },
+    {
+      "role": "model",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "user_update_property",
+            "arguments": {
+              "username": "Rotaru Ionuț Ciprian",
+              "property": "personal email address",
+              "value": "rotaru.ionut@gmail.com"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Update the last working place to Delgaz SA for user Acatrinei Ingrid."
+    },
+    {
+      "role": "model",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "user_update_property",
+            "arguments": {
+              "username": "Acatrinei Ingrid",
+              "property": "last working place",
+              "value": "Delgaz SA"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Update the education to military school for user Lontkowschi George."
+    },
+    {
+      "role": "model",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "user_update_property",
+            "arguments": {
+              "username": "Lontkowschi George",
+              "property": "education",
+              "value": "military school"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Get the personal phone number of user Baciu Vasile."
+    },
+    {
+      "role": "model",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "user_get_property",
+            "arguments": {
+              "username": "Baciu Vasile",
+              "property": "personal phone number"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Get the postal address of user Miron Elena Daniela."
+    },
+    {
+      "role": "model",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "user_get_property",
+            "arguments": {
+              "username": "Miron Elena Daniela",
+              "property": "postal address"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Get the personal email address of user Rotaru Stefan."
+    },
+    {
+      "role": "model",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "user_get_property",
+            "arguments": {
+              "username": "Rotaru Stefan",
+              "property": "personal email address"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Get the working place of user Fantanaru Eugenia."
+    },
+    {
+      "role": "model",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "user_get_property",
+            "arguments": {
+              "username": "Fantanaru Eugenia",
+              "property": "working place"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Get the social status of user Dorneanu Deliana."
+    },
+    {
+      "role": "model",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "user_get_property",
+            "arguments": {
+              "username": "Dorneanu Deliana",
+              "property": "social status"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Get the hobbies of user Paduraru Adrian."
+    },
+    {
+      "role": "model",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "user_get_property",
+            "arguments": {
+              "username": "Paduraru Adrian",
+              "property": "hobbies"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Remove profession from user Adam Iosif."
+    },
+    {
+      "role": "model",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "user_remove_property",
+            "arguments": {
+              "username": "Adam Iosif",
+              "property": "profession"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Remove business email address from user Savulescu Marcel."
+    },
+    {
+      "role": "model",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "user_remove_property",
+            "arguments": {
+              "username": "Savulescu Marcel",
+              "property": "business email address"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Remove postal code from user Vaino George Viorel."
+    },
+    {
+      "role": "model",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "user_remove_property",
+            "arguments": {
+              "username": "Vaino George Viorel",
+              "property": "postal code"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Remove skill level from user Cornea Sorin."
+    },
+    {
+      "role": "model",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "user_remove_property",
+            "arguments": {
+              "username": "Cornea Sorin",
+              "property": "skill level"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Remove driving license type from user Petrovici Traian."
+    },
+    {
+      "role": "model",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "user_remove_property",
+            "arguments": {
+              "username": "Petrovici Traian",
+              "property": "driving license type"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Remove education from user Trofin Gabriela."
+    },
+    {
+      "role": "model",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "user_remove_property",
+            "arguments": {
+              "username": "Trofin Gabriela",
+              "property": "education"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "List properties for user Paduraru Mihaela."
+    },
+    {
+      "role": "model",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "user_list_properties",
+            "arguments": {
+              "username": "Paduraru Mihaela"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "List properties for user Rusu Florentin."
+    },
+    {
+      "role": "model",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "user_list_properties",
+            "arguments": {
+              "username": "Rusu Florentin"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "List properties for user Cojocaru Cristian."
+    },
+    {
+      "role": "model",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "user_list_properties",
+            "arguments": {
+              "username": "Cojocaru Cristian"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "List properties for user Acatrinei Liviu."
+    },
+    {
+      "role": "model",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "user_list_properties",
+            "arguments": {
+              "username": "Acatrinei Liviu"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "List properties for user Lontkowschi Mirela Petronela."
+    },
+    {
+      "role": "model",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "user_list_properties",
+            "arguments": {
+              "username": "Lontkowschi Mirela Petronela"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "List properties for user Gherasim Florentina."
+    },
+    {
+      "role": "model",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "user_list_properties",
+            "arguments": {
+              "username": "Gherasim Florentina"
+            }
+          }
+        }
+      ]
+    }
+  ]
+]

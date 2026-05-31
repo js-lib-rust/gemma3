@@ -636,11 +636,25 @@
     },
     {
       "role": "user",
-      "content": "get my business phone number"
+      "content": "get my phone number"
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Get the business phone number of ${username}.\nquery:Print my business phone number."
+      "content": "user-profile:Get my username.\nuser-profile:Get the personal phone number of ${username}.\nquery:Print my personal phone number."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get my phone"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Get the personal phone number of ${username}.\nquery:Print my personal phone number."
     }
   ],
   [
@@ -664,7 +678,105 @@
     },
     {
       "role": "user",
+      "content": "get my email address"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Get the personal email address of ${username}.\nquery:Print my personal email address."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get my email"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Get the personal email address of ${username}.\nquery:Print my personal email address."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get my business phone number"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Get the business phone number of ${username}.\nquery:Print my business phone number."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get my business phone"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Get the business phone number of ${username}.\nquery:Print my business phone number."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get my work phone"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Get the business phone number of ${username}.\nquery:Print my business phone number."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
       "content": "get my business email address"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Get the business email address of ${username}.\nquery:Print my business email address."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get my business email"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Get the business email address of ${username}.\nquery:Print my business email address."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get my work email"
     },
     {
       "role": "model",

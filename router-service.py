@@ -89,7 +89,6 @@ def route_prompt(prompt):
         current_input_ids = next_token_id.unsqueeze(0)
 
     estimated_confidence = sum(token_probs_list) / len(token_probs_list) if token_probs_list else 0.0
-    print(f"estimated confidence: {estimated_confidence:.4f}")
     failed_due_to_confidence = estimated_confidence < args.confidence_threshold
 
     # step 2: continue text generation in batch only if confidence is above threshold
@@ -112,10 +111,11 @@ def route_prompt(prompt):
         confidence = 0.0
 
     processing_time = time.time() - request_start_time
-    print(f"text: {text}")
+    print(f"estimated confidence: {estimated_confidence:.4f}")
     print(f"confidence: {confidence:.4f}")
+    print(f"text: {text}")
     print(f"processing_time: {processing_time:.6f}")
-    return text, confidence, processing_time
+    return estimated_confidence, confidence, text, processing_time
 
 
 class SocketServer:
@@ -151,9 +151,14 @@ class SocketServer:
                         print(f"[{addr}] Data received: {message.get('payload')}")
                         prompt = message.get('payload').get('prompt')
                         print(f"prompt: {prompt}")
-                        text, confidence, duration = route_prompt(prompt)
-                        await send_json(writer, {"type": "response", "text": text, "confidence": confidence,
-                                                 "duration": duration})
+                        estimated_confidence, confidence, text, processing_time = route_prompt(prompt)
+                        await send_json(writer, {
+                            "type": "response",
+                            "estimated_confidence": estimated_confidence,
+                            "confidence": confidence,
+                            "text": text,
+                            "processing_time": processing_time
+                        })
 
                     else:
                         print(f"[{addr}] Unknown message type: {msg_type}")

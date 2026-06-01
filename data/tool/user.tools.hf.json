@@ -69,6 +69,35 @@
   {
     "type": "function",
     "function": {
+      "name": "user_rename_property",
+      "description": "Renames an existing property to a new name for a specific user profile.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "username": {
+            "type": "string",
+            "description": "The unique, human-readable identifier for the user."
+          },
+          "old_property": {
+            "type": "string",
+            "description": "The current name of the property to be renamed."
+          },
+          "new_property": {
+            "type": "string",
+            "description": "The new name to assign to the property."
+          }
+        },
+        "required": [
+          "username",
+          "old_property",
+          "new_property"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
       "name": "user_set_property",
       "description": "Sets a property value for a specific user profile.",
       "parameters": {

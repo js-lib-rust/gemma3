@@ -20,6 +20,17 @@ def user_update_property(username: str, property: str, value: str):
     """
 
 
+def user_rename_property(username: str, old_property: str, new_property: str):
+    """
+    Renames an existing property to a new name for a specific user profile.
+
+    Args:
+        username: The unique, human-readable identifier for the user.
+        old_property: The current name of the property to be renamed.
+        new_property: The new name to assign to the property.
+    """
+
+
 def user_get_property(username: str, property: str):
     """
     Retrieves a property value from a specific user profile.

@@ -32,6 +32,32 @@
     },
     {
       "role": "user",
+      "content": "Set the personal email address to mr.iulianrotaru@gmail.com for Rotaru Iulian."
+    },
+    {
+      "role": "model",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "user_set_property",
+            "arguments": {
+              "username": "Rotaru Iulian",
+              "property": "personal email address",
+              "value": "mr.iulianrotaru@gmail.com"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
       "content": "Set the business phone number to +40 770 555666 for Agavriloaiei Lucian."
     },
     {
@@ -45,6 +71,32 @@
               "username": "Agavriloaiei Lucian",
               "property": "business phone number",
               "value": "+40 770 555666"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Set the business email address to patricia.vatavu@delgaz-grid.ro for Vatavu Patricia."
+    },
+    {
+      "role": "model",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "user_set_property",
+            "arguments": {
+              "username": "Vatavu Patricia",
+              "property": "business email address",
+              "value": "patricia.vatavu@delgaz-grid.ro"
             }
           }
         }
@@ -266,6 +318,32 @@
     },
     {
       "role": "user",
+      "content": "Update the personal email address to aacatrinei@yahoo.com for Acatrinei Alin."
+    },
+    {
+      "role": "model",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "user_update_property",
+            "arguments": {
+              "username": "Acatrinei Alin",
+              "property": "personal email address",
+              "value": "aacatrinei@yahoo.com"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
       "content": "Update the location to Valea Lupului, Iași, Romania for Dorneanu Sorana Ioana."
     },
     {
@@ -344,7 +422,7 @@
     },
     {
       "role": "user",
-      "content": "Update the personal email address to rotaru.ionut@gmail.com for Rotaru Ionuț Ciprian."
+      "content": "Update the business email address to rotaru.ionut@gmail.com for Rotaru Ionuț Ciprian."
     },
     {
       "role": "model",
@@ -355,7 +433,7 @@
             "name": "user_update_property",
             "arguments": {
               "username": "Rotaru Ionuț Ciprian",
-              "property": "personal email address",
+              "property": "business email address",
               "value": "rotaru.ionut@gmail.com"
             }
           }
@@ -624,6 +702,31 @@
     },
     {
       "role": "user",
+      "content": "Get the business email address of Berfelea Ana-Maria."
+    },
+    {
+      "role": "model",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "user_get_property",
+            "arguments": {
+              "username": "Berfelea Ana-Maria",
+              "property": "business email address"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
       "content": "Remove profession from Adam Iosif."
     },
     {
@@ -649,7 +752,7 @@
     },
     {
       "role": "user",
-      "content": "Remove business email address from Savulescu Marcel."
+      "content": "Remove business email address from Săvulescu Marcel."
     },
     {
       "role": "model",
@@ -659,7 +762,7 @@
           "function": {
             "name": "user_remove_property",
             "arguments": {
-              "username": "Savulescu Marcel",
+              "username": "Săvulescu Marcel",
               "property": "business email address"
             }
           }
@@ -774,7 +877,7 @@
     },
     {
       "role": "user",
-      "content": "List properties for Paduraru Mihaela."
+      "content": "List user profile properties for Paduraru Mihaela."
     },
     {
       "role": "model",
@@ -798,7 +901,7 @@
     },
     {
       "role": "user",
-      "content": "List properties for Rusu Florentin."
+      "content": "List user profile properties for Rusu Florentin."
     },
     {
       "role": "model",
@@ -822,7 +925,7 @@
     },
     {
       "role": "user",
-      "content": "List properties for Cojocaru Cristian."
+      "content": "List user profile properties for Cojocaru Cristian."
     },
     {
       "role": "model",
@@ -846,7 +949,7 @@
     },
     {
       "role": "user",
-      "content": "List properties for Acatrinei Liviu."
+      "content": "List user profile properties for Acatrinei Liviu."
     },
     {
       "role": "model",
@@ -870,7 +973,7 @@
     },
     {
       "role": "user",
-      "content": "List properties for Lontkowschi Mirela Petronela."
+      "content": "List user profile properties for Lontkowschi Mirela Petronela."
     },
     {
       "role": "model",
@@ -894,7 +997,7 @@
     },
     {
       "role": "user",
-      "content": "List properties for Gherasim Florentina."
+      "content": "List user profile properties for Gherasim Florentina."
     },
     {
       "role": "model",

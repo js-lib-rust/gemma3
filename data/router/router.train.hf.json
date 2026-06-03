@@ -6,6 +6,76 @@
     },
     {
       "role": "user",
+      "content": "get units for blood pressure"
+    },
+    {
+      "role": "model",
+      "content": "measure-units:Get the measure units for blood pressure."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get units for pulse pressure"
+    },
+    {
+      "role": "model",
+      "content": "measure-units:Get the measure units for pulse pressure."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get units for heart rate"
+    },
+    {
+      "role": "model",
+      "content": "measure-units:Get the measure units for heart rate."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get units for blood glucose"
+    },
+    {
+      "role": "model",
+      "content": "measure-units:Get the measure units for blood glucose."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get units for body mass index"
+    },
+    {
+      "role": "model",
+      "content": "measure-units:Get the measure units for body mass index."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
       "content": "get units for distance"
     },
     {
@@ -160,11 +230,11 @@
     },
     {
       "role": "user",
-      "content": "get units for blood pressure"
+      "content": "what are the units of length?"
     },
     {
       "role": "model",
-      "content": "measure-units:Get the measure units for blood pressure."
+      "content": "measure-units:Get the measure units for length."
     }
   ],
   [
@@ -174,11 +244,11 @@
     },
     {
       "role": "user",
-      "content": "get units for pulse pressure"
+      "content": "show me distance measurements"
     },
     {
       "role": "model",
-      "content": "measure-units:Get the measure units for pulse pressure."
+      "content": "measure-units:Get the measure units for distance."
     }
   ],
   [
@@ -188,11 +258,11 @@
     },
     {
       "role": "user",
-      "content": "get units for heart rate"
+      "content": "how is distance measured?"
     },
     {
       "role": "model",
-      "content": "measure-units:Get the measure units for heart rate."
+      "content": "measure-units:Get the measure units for distance."
     }
   ],
   [
@@ -202,11 +272,11 @@
     },
     {
       "role": "user",
-      "content": "get units for blood glucose"
+      "content": "list units for weight"
     },
     {
       "role": "model",
-      "content": "measure-units:Get the measure units for blood glucose."
+      "content": "measure-units:Get the measure units for mass/weight."
     }
   ],
   [
@@ -216,11 +286,599 @@
     },
     {
       "role": "user",
-      "content": "get units for body mass index"
+      "content": "what units do we use for mass?"
     },
     {
       "role": "model",
-      "content": "measure-units:Get the measure units for body mass index."
+      "content": "measure-units:Get the measure units for mass/weight."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "how much does something weigh in units?"
+    },
+    {
+      "role": "model",
+      "content": "measure-units:Get the measure units for mass/weight."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "units for volume"
+    },
+    {
+      "role": "model",
+      "content": "measure-units:Get the measure units for volume."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "what are the volumetric units?"
+    },
+    {
+      "role": "model",
+      "content": "measure-units:Get the measure units for volume."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "give me the capacity units"
+    },
+    {
+      "role": "model",
+      "content": "measure-units:Get the measure units for volume."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "how do you measure temperature?"
+    },
+    {
+      "role": "model",
+      "content": "measure-units:Get the measure units for temperature."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "thermal units"
+    },
+    {
+      "role": "model",
+      "content": "measure-units:Get the measure units for temperature."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "what are the units for heat?"
+    },
+    {
+      "role": "model",
+      "content": "measure-units:Get the measure units for temperature."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "show me time units"
+    },
+    {
+      "role": "model",
+      "content": "measure-units:Get the measure units for time."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "what are the increments of time?"
+    },
+    {
+      "role": "model",
+      "content": "measure-units:Get the measure units for time."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "how is duration measured?"
+    },
+    {
+      "role": "model",
+      "content": "measure-units:Get the measure units for time."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "tell me the units for area"
+    },
+    {
+      "role": "model",
+      "content": "measure-units:Get the measure units for area."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "what are the units of surface measurement?"
+    },
+    {
+      "role": "model",
+      "content": "measure-units:Get the measure units for area."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "units for speed"
+    },
+    {
+      "role": "model",
+      "content": "measure-units:Get the measure units for velocity/speed."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "how fast is measured in what units?"
+    },
+    {
+      "role": "model",
+      "content": "measure-units:Get the measure units for velocity/speed."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "give me units for force"
+    },
+    {
+      "role": "model",
+      "content": "measure-units:Get the measure units for force."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "what are the units for pressure?"
+    },
+    {
+      "role": "model",
+      "content": "measure-units:Get the measure units for pressure."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "units for energy"
+    },
+    {
+      "role": "model",
+      "content": "measure-units:Get the measure units for energy."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "how is power measured?"
+    },
+    {
+      "role": "model",
+      "content": "measure-units:Get the measure units for power."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "units of electricity"
+    },
+    {
+      "role": "model",
+      "content": "measure-units:Get the measure units for electrical charge/current."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "what are the units for light intensity?"
+    },
+    {
+      "role": "model",
+      "content": "measure-units:Get the measure units for luminous intensity."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get units for mass"
+    },
+    {
+      "role": "model",
+      "content": "measure-units:Get the measure units for mass."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "what are the standard units for length?"
+    },
+    {
+      "role": "model",
+      "content": "measure-units:Get the measure units for length."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "list all the ways to measure volume"
+    },
+    {
+      "role": "model",
+      "content": "measure-units:Get the measure units for volume."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "units of measurement for mass"
+    },
+    {
+      "role": "model",
+      "content": "measure-units:Get the measure units for mass."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "distance units please"
+    },
+    {
+      "role": "model",
+      "content": "measure-units:Get the measure units for distance."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "what are the measurement units for temperature?"
+    },
+    {
+      "role": "model",
+      "content": "measure-units:Get the measure units for temperature."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "how do people measure area?"
+    },
+    {
+      "role": "model",
+      "content": "measure-units:Get the measure units for area."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "give me a list of time units"
+    },
+    {
+      "role": "model",
+      "content": "measure-units:Get the measure units for time."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "what are the units for weight?"
+    },
+    {
+      "role": "model",
+      "content": "measure-units:Get the measure units for weight."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "units for velocity"
+    },
+    {
+      "role": "model",
+      "content": "measure-units:Get the measure units for velocity."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "tell me the units used for pressure"
+    },
+    {
+      "role": "model",
+      "content": "measure-units:Get the measure units for pressure."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "how is energy quantified in units?"
+    },
+    {
+      "role": "model",
+      "content": "measure-units:Get the measure units for energy."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "units of frequency"
+    },
+    {
+      "role": "model",
+      "content": "measure-units:Get the measure units for frequency."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "what are the units for brightness?"
+    },
+    {
+      "role": "model",
+      "content": "measure-units:Get the measure units for luminance."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "show units for current"
+    },
+    {
+      "role": "model",
+      "content": "measure-units:Get the measure units for electric current."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "give me the units for voltage"
+    },
+    {
+      "role": "model",
+      "content": "measure-units:Get the measure units for voltage."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "what are the measurement units for density?"
+    },
+    {
+      "role": "model",
+      "content": "measure-units:Get the measure units for density."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "units of flux"
+    },
+    {
+      "role": "model",
+      "content": "measure-units:Get the measure units for flux."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "how is wavelength measured?"
+    },
+    {
+      "role": "model",
+      "content": "measure-units:Get the measure units for wavelength."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "units for length and width"
+    },
+    {
+      "role": "model",
+      "content": "measure-units:Get the measure units for area/dimension."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "what are the units for mass and weight?"
+    },
+    {
+      "role": "model",
+      "content": "measure-units:Get the measure units for mass/weight."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "list distance and speed units"
+    },
+    {
+      "role": "model",
+      "content": "measure-units:Get the measure units for distance/speed."
     }
   ],
   [
@@ -612,7 +1270,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nquery:Print my username."
+      "content": "user-profile:Get my username.\nprinter:Print my username."
     }
   ],
   [
@@ -626,7 +1284,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Get the personal phone number of ${username}.\nquery:Print my personal phone number."
+      "content": "user-profile:Get my username.\nuser-profile:Get the personal phone number of ${username}.\nprinter:Print my personal phone number."
     }
   ],
   [
@@ -640,7 +1298,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Get the personal phone number of ${username}.\nquery:Print my personal phone number."
+      "content": "user-profile:Get my username.\nuser-profile:Get the personal phone number of ${username}.\nprinter:Print my personal phone number."
     }
   ],
   [
@@ -654,7 +1312,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Get the personal phone number of ${username}.\nquery:Print my personal phone number."
+      "content": "user-profile:Get my username.\nuser-profile:Get the personal phone number of ${username}.\nprinter:Print my personal phone number."
     }
   ],
   [
@@ -668,7 +1326,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Get the personal email address of ${username}.\nquery:Print my personal email address."
+      "content": "user-profile:Get my username.\nuser-profile:Get the personal email address of ${username}.\nprinter:Print my personal email address."
     }
   ],
   [
@@ -682,7 +1340,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Get the personal email address of ${username}.\nquery:Print my personal email address."
+      "content": "user-profile:Get my username.\nuser-profile:Get the personal email address of ${username}.\nprinter:Print my personal email address."
     }
   ],
   [
@@ -696,7 +1354,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Get the personal email address of ${username}.\nquery:Print my personal email address."
+      "content": "user-profile:Get my username.\nuser-profile:Get the personal email address of ${username}.\nprinter:Print my personal email address."
     }
   ],
   [
@@ -710,7 +1368,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Get the business phone number of ${username}.\nquery:Print my business phone number."
+      "content": "user-profile:Get my username.\nuser-profile:Get the business phone number of ${username}.\nprinter:Print my business phone number."
     }
   ],
   [
@@ -724,7 +1382,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Get the business phone number of ${username}.\nquery:Print my business phone number."
+      "content": "user-profile:Get my username.\nuser-profile:Get the business phone number of ${username}.\nprinter:Print my business phone number."
     }
   ],
   [
@@ -738,7 +1396,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Get the business phone number of ${username}.\nquery:Print my business phone number."
+      "content": "user-profile:Get my username.\nuser-profile:Get the business phone number of ${username}.\nprinter:Print my business phone number."
     }
   ],
   [
@@ -752,7 +1410,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Get the business email address of ${username}.\nquery:Print my business email address."
+      "content": "user-profile:Get my username.\nuser-profile:Get the business email address of ${username}.\nprinter:Print my business email address."
     }
   ],
   [
@@ -766,7 +1424,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Get the business email address of ${username}.\nquery:Print my business email address."
+      "content": "user-profile:Get my username.\nuser-profile:Get the business email address of ${username}.\nprinter:Print my business email address."
     }
   ],
   [
@@ -780,7 +1438,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Get the business email address of ${username}.\nquery:Print my business email address."
+      "content": "user-profile:Get my username.\nuser-profile:Get the business email address of ${username}.\nprinter:Print my business email address."
     }
   ],
   [
@@ -794,7 +1452,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Get the birth date of ${username}.\nquery:Print my birth date."
+      "content": "user-profile:Get my username.\nuser-profile:Get the birth date of ${username}.\nprinter:Print my birth date."
     }
   ],
   [
@@ -808,7 +1466,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Get the birth place of ${username}.\nquery:Print my birth place."
+      "content": "user-profile:Get my username.\nuser-profile:Get the birth place of ${username}.\nprinter:Print my birth place."
     }
   ],
   [
@@ -822,7 +1480,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Get the profession of ${username}.\nquery:Print my profession."
+      "content": "user-profile:Get my username.\nuser-profile:Get the profession of ${username}.\nprinter:Print my profession."
     }
   ],
   [
@@ -836,7 +1494,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Get the location of ${username}.\nquery:Print my location."
+      "content": "user-profile:Get my username.\nuser-profile:Get the location of ${username}.\nprinter:Print my location."
     }
   ],
   [
@@ -850,7 +1508,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Get the place of ${username}.\nquery:Print my place."
+      "content": "user-profile:Get my username.\nuser-profile:Get the place of ${username}.\nprinter:Print my place."
     }
   ],
   [
@@ -864,7 +1522,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Get the education of ${username}.\nquery:Print my education."
+      "content": "user-profile:Get my username.\nuser-profile:Get the education of ${username}.\nprinter:Print my education."
     }
   ],
   [
@@ -878,7 +1536,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Get the hobbies of ${username}.\nquery:Print my hobbies."
+      "content": "user-profile:Get my username.\nuser-profile:Get the hobbies of ${username}.\nprinter:Print my hobbies."
     }
   ],
   [
@@ -892,7 +1550,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Get the skill level of ${username}.\nquery:Print my skill level."
+      "content": "user-profile:Get my username.\nuser-profile:Get the skill level of ${username}.\nprinter:Print my skill level."
     }
   ],
   [
@@ -906,7 +1564,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Get the social security number of ${username}.\nquery:Print my social security number."
+      "content": "user-profile:Get my username.\nuser-profile:Get the social security number of ${username}.\nprinter:Print my social security number."
     }
   ],
   [
@@ -920,7 +1578,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Get the social security number of ${username}.\nquery:Print my social security number."
+      "content": "user-profile:Get my username.\nuser-profile:Get the social security number of ${username}.\nprinter:Print my social security number."
     }
   ],
   [
@@ -934,7 +1592,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Get the identity card serial of ${username}.\nquery:Print my identity card serial."
+      "content": "user-profile:Get my username.\nuser-profile:Get the identity card serial of ${username}.\nprinter:Print my identity card serial."
     }
   ],
   [
@@ -948,7 +1606,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Get the birth certificate serial of ${username}.\nquery:Print my birth certificate serial."
+      "content": "user-profile:Get my username.\nuser-profile:Get the birth certificate serial of ${username}.\nprinter:Print my birth certificate serial."
     }
   ],
   [
@@ -962,7 +1620,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Get the birth date of ${username}.\nquery:Print my birthday."
+      "content": "user-profile:Get my username.\nuser-profile:Get the birth date of ${username}.\nprinter:Print my birthday."
     }
   ],
   [
@@ -976,7 +1634,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Get the birth date of ${username}.\nquery:Please tell me when is my birthday."
+      "content": "user-profile:Get my username.\nuser-profile:Get the birth date of ${username}.\nprinter:Please tell me when is my birthday."
     }
   ],
   [
@@ -990,7 +1648,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Get the birth date of ${username}.\nquery:Do you know when is my birthday."
+      "content": "user-profile:Get my username.\nuser-profile:Get the birth date of ${username}.\nprinter:Do you know when is my birthday."
     }
   ],
   [
@@ -1004,7 +1662,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Get the birth date of ${username}.\nquery:What is my birthday?"
+      "content": "user-profile:Get my username.\nuser-profile:Get the birth date of ${username}.\nprinter:What is my birthday?"
     }
   ],
   [
@@ -1172,7 +1830,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Get the birth date of ${username}.\ntime-service:Get date for today.\ntime-service:Compute age as the difference in days between ${date} and ${birth_date}.\nquery:Print the age for in days ${username}."
+      "content": "user-profile:Get my username.\nuser-profile:Get the birth date of ${username}.\ntime-service:Get date for today.\ntime-service:Compute age as the difference in days between ${date} and ${birth_date}.\nprinter:Print the age for in days ${username}."
     }
   ],
   [
@@ -1284,7 +1942,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Get the height of ${username}.\nmeasure-units:Get the measure units for person height.\nquery:Print my height in ${person_height_units}."
+      "content": "user-profile:Get my username.\nuser-profile:Get the height of ${username}.\nmeasure-units:Get the measure units for person height.\nprinter:Print my height in ${person_height_units}."
     }
   ],
   [
@@ -1298,7 +1956,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Get the height of ${username}.\nmeasure-units:Get the measure units for person height.\nquery:Print my height in ${person_height_units}."
+      "content": "user-profile:Get my username.\nuser-profile:Get the height of ${username}.\nmeasure-units:Get the measure units for person height.\nprinter:Print my height in ${person_height_units}."
     }
   ],
   [
@@ -1312,7 +1970,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Get the height of ${username}.\nmeasure-units:Get the measure units for person height.\nquery:Print my height in ${person_height_units}."
+      "content": "user-profile:Get my username.\nuser-profile:Get the height of ${username}.\nmeasure-units:Get the measure units for person height.\nprinter:Print my height in ${person_height_units}."
     }
   ],
   [
@@ -1326,7 +1984,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Get the height of ${username}.\nmeasure-units:Get the measure units for person height.\nquery:Print my height in ${person_height_units}."
+      "content": "user-profile:Get my username.\nuser-profile:Get the height of ${username}.\nmeasure-units:Get the measure units for person height.\nprinter:Print my height in ${person_height_units}."
     }
   ],
   [
@@ -1340,7 +1998,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Get the height of ${username}.\nmeasure-units:Get the measure units for person height.\nquery:Print my height in ${person_height_units}."
+      "content": "user-profile:Get my username.\nuser-profile:Get the height of ${username}.\nmeasure-units:Get the measure units for person height.\nprinter:Print my height in ${person_height_units}."
     }
   ],
   [
@@ -1354,7 +2012,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Get the height of ${username}.\nmeasure-units:Get the measure units for person height.\nquery:Print my height in ${person_height_units}."
+      "content": "user-profile:Get my username.\nuser-profile:Get the height of ${username}.\nmeasure-units:Get the measure units for person height.\nprinter:Print my height in ${person_height_units}."
     }
   ],
   [
@@ -1368,7 +2026,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Get the height of ${username}.\nmeasure-units:Get the measure units for person height.\nquery:Print my height in ${person_height_units}."
+      "content": "user-profile:Get my username.\nuser-profile:Get the height of ${username}.\nmeasure-units:Get the measure units for person height.\nprinter:Print my height in ${person_height_units}."
     }
   ],
   [
@@ -1382,7 +2040,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Get the height of ${username}.\nmeasure-units:Get the measure units for person height.\nquery:Print my height in ${person_height_units}."
+      "content": "user-profile:Get my username.\nuser-profile:Get the height of ${username}.\nmeasure-units:Get the measure units for person height.\nprinter:Print my height in ${person_height_units}."
     }
   ],
   [
@@ -1396,7 +2054,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get the username of Rotaru Iulian.\nquery:Print the username for ${username}."
+      "content": "user-profile:Get the username of Rotaru Iulian.\nprinter:Print the username for ${username}."
     }
   ],
   [
@@ -1410,7 +2068,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get the username of Rotaru Iulian.\nquery:Print the postal address for ${username}."
+      "content": "user-profile:Get the username of Rotaru Iulian.\nuser-profile:Get the postal address of ${username}.\nprinter:Print the postal address for ${username}."
     }
   ],
   [
@@ -1424,7 +2082,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get the username of Gogalniceanu Mioara.\nquery:Print the postal code for ${username}."
+      "content": "user-profile:Get the username of Gogalniceanu Mioara.user-profile:Get the postal code of ${username}.\n\nprinter:Print the postal code for ${username}."
     }
   ],
   [
@@ -1438,7 +2096,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get the username for Lontkowschi Mirela Petronela.\nuser-profile:Get the personal phone number of ${username}.\nquery:Print the personal phone number for ${username}."
+      "content": "user-profile:Get the username for Lontkowschi Mirela Petronela.\nuser-profile:Get the personal phone number of ${username}.\nprinter:Print the personal phone number for ${username}."
     }
   ],
   [
@@ -1452,7 +2110,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get the username for Simeria Anca.\nuser-profile:Get the business phone number of ${username}.\nquery:Print the business phone number for ${username}."
+      "content": "user-profile:Get the username for Simeria Anca.\nuser-profile:Get the business phone number of ${username}.\nprinter:Print the business phone number for ${username}."
     }
   ],
   [
@@ -1466,7 +2124,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get the username for Gavriliu Nicolaie.\nuser-profile:Get the personal email address of ${username}.\nquery:Print the personal email address for ${username}."
+      "content": "user-profile:Get the username for Gavriliu Nicolaie.\nuser-profile:Get the personal email address of ${username}.\nprinter:Print the personal email address for ${username}."
     }
   ],
   [
@@ -1480,7 +2138,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get the username for Gogălniceanu Ștefan.\nuser-profile:Get the business email address of ${username}.\nquery:Print the business email address for ${username}."
+      "content": "user-profile:Get the username for Gogălniceanu Ștefan.\nuser-profile:Get the business email address of ${username}.\nprinter:Print the business email address for ${username}."
     }
   ],
   [
@@ -1494,7 +2152,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get the username for Baciu Vasile.\nuser-profile:Get the birth date of ${username}.\nquery:Print the birth date for ${username}."
+      "content": "user-profile:Get the username for Baciu Vasile.\nuser-profile:Get the birth date of ${username}.\nprinter:Print the birth date for ${username}."
     }
   ],
   [
@@ -1508,7 +2166,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get the username for Gogălniceanu Mioara.\nuser-profile:Get the birth place of ${username}.\nquery:Print the birth place for ${username}."
+      "content": "user-profile:Get the username for Gogălniceanu Mioara.\nuser-profile:Get the birth place of ${username}.\nprinter:Print the birth place for ${username}."
     }
   ],
   [
@@ -1522,7 +2180,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get the username for Adam Iosif.\nuser-profile:Get the profession of ${username}.\nquery:Print the profession for ${username}."
+      "content": "user-profile:Get the username for Adam Iosif.\nuser-profile:Get the profession of ${username}.\nprinter:Print the profession for ${username}."
     }
   ],
   [
@@ -1536,7 +2194,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get the username for Miron Daniela Elena.\nuser-profile:Get the location of ${username}.\nquery:Print the location for ${username}."
+      "content": "user-profile:Get the username for Miron Daniela Elena.\nuser-profile:Get the location of ${username}.\nprinter:Print the location for ${username}."
     }
   ],
   [
@@ -1550,7 +2208,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get the username for Miron Aurelia.\nuser-profile:Get the place of ${username}.\nquery:Print the place for ${username}."
+      "content": "user-profile:Get the username for Miron Aurelia.\nuser-profile:Get the place of ${username}.\nprinter:Print the place for ${username}."
     }
   ],
   [
@@ -1564,7 +2222,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get the username for Vaino George Viorel.\nuser-profile:Get the education of ${username}.\nquery:Print the education for ${username}."
+      "content": "user-profile:Get the username for Vaino George Viorel.\nuser-profile:Get the education of ${username}.\nprinter:Print the education for ${username}."
     }
   ],
   [
@@ -1578,7 +2236,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get the username for Cornea Sofica.\nuser-profile:Get the hobbies of ${username}.\nquery:Print the hobbies for ${username}."
+      "content": "user-profile:Get the username for Cornea Sofica.\nuser-profile:Get the hobbies of ${username}.\nprinter:Print the hobbies for ${username}."
     }
   ],
   [
@@ -1592,7 +2250,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get the username for Petrovici Traian.\nuser-profile:Get the skill level of ${username}.\nquery:Print the skill level for ${username}."
+      "content": "user-profile:Get the username for Petrovici Traian.\nuser-profile:Get the skill level of ${username}.\nprinter:Print the skill level for ${username}."
     }
   ],
   [
@@ -1606,7 +2264,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get the username for Dorneanu Deliana.\nuser-profile:Get the social security number of ${username}.\nquery:Print the social security number for ${username}."
+      "content": "user-profile:Get the username for Dorneanu Deliana.\nuser-profile:Get the social security number of ${username}.\nprinter:Print the social security number for ${username}."
     }
   ],
   [
@@ -1620,7 +2278,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get the username for Dorneanu Ștefan.\nuser-profile:Get the social security number of ${username}.\nquery:Print the social security number for ${username}."
+      "content": "user-profile:Get the username for Dorneanu Ștefan.\nuser-profile:Get the social security number of ${username}.\nprinter:Print the social security number for ${username}."
     }
   ],
   [
@@ -1634,7 +2292,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get the username for Rusu Maria.\nuser-profile:Get the identity card serial of ${username}.\nquery:Print the identity card serial for ${username}."
+      "content": "user-profile:Get the username for Rusu Maria.\nuser-profile:Get the identity card serial of ${username}.\nprinter:Print the identity card serial for ${username}."
     }
   ],
   [
@@ -1648,7 +2306,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get the username for Dorneanu Ioana Sorana.\nuser-profile:Get the birth certificate serial of ${username}.\nquery:Print the birth certificate serial for ${username}."
+      "content": "user-profile:Get the username for Dorneanu Ioana Sorana.\nuser-profile:Get the birth certificate serial of ${username}.\nprinter:Print the birth certificate serial for ${username}."
     }
   ],
   [
@@ -1732,7 +2390,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get date for today.\nuser-profile:Get the username for Rotaru Lucian.\nuser-profile:Get the birth date of ${username}.\ntime-service:Compute days as the difference in days between ${date} and ${birth_date}.\nquery:How many days until the birthday of ${username}?."
+      "content": "time-service:Get date for today.\nuser-profile:Get the username for Rotaru Lucian.\nuser-profile:Get the birth date of ${username}.\ntime-service:Compute days as the difference in days between ${date} and ${birth_date}.\nprinter:How many days until the birthday of ${username}?."
     }
   ],
   [
@@ -1746,7 +2404,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get date for today.\nuser-profile:Get the username for Rotaru Iulian.\nuser-profile:Get the birth date of ${username}.\ntime-service:Compute days as the difference in days between ${date} and ${birth_date}.\nquery:How many days until the birthday of ${username}?."
+      "content": "time-service:Get date for today.\nuser-profile:Get the username for Rotaru Iulian.\nuser-profile:Get the birth date of ${username}.\ntime-service:Compute days as the difference in days between ${date} and ${birth_date}.\nprinter:How many days until the birthday of ${username}?."
     }
   ],
   [
@@ -1760,7 +2418,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get today date for today.\ntime-service:Get school date for September, 10th.\ntime-service:Compute days as the difference in days between ${today_date} and ${school_date}.\nquery:How many days until September, 10th?."
+      "content": "time-service:Get today date for today.\ntime-service:Get school date for September, 10th.\ntime-service:Compute days as the difference in days between ${today_date} and ${school_date}.\nprinter:How many days until September, 10th?."
     }
   ],
   [
@@ -1774,7 +2432,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get today date for today.\ntime-service:Get mother date for March, 8th.\ntime-service:Compute days as the difference in days between ${today_date} and ${mother_date}.\nquery:How long until Mother's Day?"
+      "content": "time-service:Get today date for today.\ntime-service:Get mother date for March, 8th.\ntime-service:Compute days as the difference in days between ${today_date} and ${mother_date}.\nprinter:How long until Mother's Day?"
     }
   ],
   [
@@ -1788,7 +2446,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get today date for today.\ntime-service:Get child date for June, 1st.\ntime-service:Compute days as the difference in days between ${today_date} and ${child_date}.\nquery:How long do we have to wait until June 1st?"
+      "content": "time-service:Get today date for today.\ntime-service:Get child date for June, 1st.\ntime-service:Compute days as the difference in days between ${today_date} and ${child_date}.\nprinter:How long do we have to wait until June 1st?"
     }
   ],
   [
@@ -1802,7 +2460,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get today date for today.\ntime-service:Get child date for June, 1st.\ntime-service:Compute days as the difference in days between ${today_date} and ${child_date}.\nquery:How many days are left until Children's Day?"
+      "content": "time-service:Get today date for today.\ntime-service:Get child date for June, 1st.\ntime-service:Compute days as the difference in days between ${today_date} and ${child_date}.\nprinter:How many days are left until Children's Day?"
     }
   ],
   [
@@ -1942,7 +2600,7 @@
     },
     {
       "role": "model",
-      "content": "Get the username for Gogălniceanu Florin.\nuser-profile:Get the height of ${username}.\nmeasure-units:Get the measure units for person height.\nquery:Print the height for ${username} in ${person_height_units}."
+      "content": "user-profile:Get the username for Gogălniceanu Florin.\nuser-profile:Get the height of ${username}.\nmeasure-units:Get the measure units for person height.\nprinter:Print the height for ${username} in ${person_height_units}."
     }
   ],
   [
@@ -1956,7 +2614,7 @@
     },
     {
       "role": "model",
-      "content": "Get the username for Rotaru Iulian.\nuser-profile:Get the height of ${username}.\nmeasure-units:Get the measure units for person height.\nquery:Print the height for ${username} in ${person_height_units}."
+      "content": "user-profile:Get the username for Rotaru Iulian.\nuser-profile:Get the height of ${username}.\nmeasure-units:Get the measure units for person height.\nprinter:Print the height for ${username} in ${person_height_units}."
     }
   ],
   [
@@ -1970,7 +2628,7 @@
     },
     {
       "role": "model",
-      "content": "Get the username for Pascaru Radu.\nuser-profile:Get the height of ${username}.\nmeasure-units:Get the measure units for person height.\nquery:Print the person height for ${username} in ${person_height_units}."
+      "content": "user-profile:Get the username for Pascaru Radu.\nuser-profile:Get the height of ${username}.\nmeasure-units:Get the measure units for person height.\nprinter:Print the person height for ${username} in ${person_height_units}."
     }
   ],
   [
@@ -1984,7 +2642,7 @@
     },
     {
       "role": "model",
-      "content": "Get the username for Rusu Florentin.\nuser-profile:Get the height of ${username}.\nmeasure-units:Get the measure units for person height.\nquery:Print the height for ${username} in ${person_height_units}."
+      "content": "user-profile:Get the username for Rusu Florentin.\nuser-profile:Get the height of ${username}.\nmeasure-units:Get the measure units for person height.\nprinter:Print the height for ${username} in ${person_height_units}."
     }
   ],
   [
@@ -1998,21 +2656,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Set the personal phone number to +40 770 861711 for ${username}.\nuser-profile:Get the personal phone number for ${username}.\nquery:Print the personal phone number for ${username}."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "change personal phone number 0770-861712 in my user profile"
-    },
-    {
-      "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Set the personal phone number to +40 770 861712 for ${username}.\nuser-profile:Get the personal phone number for ${username}.\nquery:Print the personal phone number for ${username}."
+      "content": "user-profile:Get my username.\nuser-profile:Set the personal phone number to +40 770 861711 for ${username}.\nuser-profile:Get the personal phone number for ${username}.\nprinter:Print the personal phone number for ${username}."
     }
   ],
   [
@@ -2026,7 +2670,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Set the business phone number to +40 734 990887 for ${username}.\nuser-profile:Get the business phone number for ${username}.\nquery:Print the business phone number for ${username}."
+      "content": "user-profile:Get my username.\nuser-profile:Set the business phone number to +40 734 990887 for ${username}.\nuser-profile:Get the business phone number for ${username}.\nprinter:Print the business phone number for ${username}."
     }
   ],
   [
@@ -2040,7 +2684,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Set the business phone number to +40 734 990889 for ${username}.\nuser-profile:Get the business phone number for ${username}.\nquery:Print the business phone number for ${username}."
+      "content": "user-profile:Get my username.\nuser-profile:Set the business phone number to +40 734 990889 for ${username}.\nuser-profile:Get the business phone number for ${username}.\nprinter:Print the business phone number for ${username}."
     }
   ],
   [
@@ -2050,11 +2694,11 @@
     },
     {
       "role": "user",
-      "content": "update my personal email address of mr.iulianrotaru@gmail.com in my user profile"
+      "content": "set my business email to iulian.rotaru@delgaz-grid.ro"
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Set the personal email address to mr.iulianrotaru@gmail.com for ${username}.\nuser-profile:Get the personal email address for ${username}.\nquery:Print the personal email address for ${username}."
+      "content": "user-profile:Get my username.\nuser-profile:Set the business email address to iulian.rotaru@delgaz-grid.ro for ${username}.\nuser-profile:Get the business email address for ${username}.\nprinter:Print the business email address for ${username}."
     }
   ],
   [
@@ -2064,11 +2708,11 @@
     },
     {
       "role": "user",
-      "content": "set my business email address to bogdan.jipa@gnotis.ro in my profile"
+      "content": "set my business email address to iulian.rotaru@gnotis.ro in my profile"
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Set the business email address to bogdan.jipa@gnotis.ro for ${username}.\nuser-profile:Get the business email address for ${username}.\nquery:Print the business email address for ${username}."
+      "content": "user-profile:Get my username.\nuser-profile:Set the business email address to iulian.rotaru@gnotis.ro for ${username}.\nuser-profile:Get the business email address for ${username}.\nprinter:Print the business email address for ${username}."
     }
   ],
   [
@@ -2082,7 +2726,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Set the birth date to 1964-03-15 for ${username}.\nuser-profile:Get the birth date for ${username}.\nquery:Print the birth date for ${username}."
+      "content": "user-profile:Get my username.\nuser-profile:Set the birth date to 1964-03-15 for ${username}.\nuser-profile:Get the birth date for ${username}.\nprinter:Print the birth date for ${username}."
     }
   ],
   [
@@ -2096,21 +2740,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Set the birth date to 1964-04-11 for ${username}.\nuser-profile:Get the birth date for ${username}.\nquery:Print the birth date for ${username}."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "change my location property to valea lupului, iași, romania"
-    },
-    {
-      "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Set the location to Valea Lupului, Iași, Romania for ${username}.\nuser-profile:Get the location for ${username}.\nquery:Print the location for ${username}."
+      "content": "user-profile:Get my username.\nuser-profile:Set the birth date to 1964-04-11 for ${username}.\nuser-profile:Get the birth date for ${username}.\nprinter:Print the birth date for ${username}."
     }
   ],
   [
@@ -2124,7 +2754,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Set the skill level to expert for ${username}.\nuser-profile:Get the skill level for ${username}.\nquery:Print the skill level for ${username}."
+      "content": "user-profile:Get my username.\nuser-profile:Set the skill level to expert for ${username}.\nuser-profile:Get the skill level for ${username}.\nprinter:Print the skill level for ${username}."
     }
   ],
   [
@@ -2138,7 +2768,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Set the skill level to master for ${username}.\nuser-profile:Get the skill level for ${username}.\nquery:Print the skill level for ${username}."
+      "content": "user-profile:Get my username.\nuser-profile:Set the skill level to master for ${username}.\nuser-profile:Get the skill level for ${username}.\nprinter:Print the skill level for ${username}."
     }
   ],
   [
@@ -2152,7 +2782,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Set the driving license type to professional for ${username}.\nuser-profile:Get the driving license type for ${username}.\nquery:Print the driving license type for ${username}."
+      "content": "user-profile:Get my username.\nuser-profile:Set the driving license type to professional for ${username}.\nuser-profile:Get the driving license type for ${username}.\nprinter:Print the driving license type for ${username}."
     }
   ],
   [
@@ -2166,35 +2796,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Set the social security number to 1640315227781 for ${username}.\nuser-profile:Get the social security number for ${username}.\nquery:Print the social security number for ${username}."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "update social security number of 2670821213785 in my user profile"
-    },
-    {
-      "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Set the social security number to 2670821213785 for ${username}.\nuser-profile:Get the social security number for ${username}.\nquery:Print the social security number for ${username}."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "modify education to software developer in my user profile"
-    },
-    {
-      "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Set the education to software developer for ${username}.\nuser-profile:Get the education for ${username}.\nquery:Print the education for ${username}."
+      "content": "user-profile:Get my username.\nuser-profile:Set the social security number to 1640315227781 for ${username}.\nuser-profile:Get the social security number for ${username}.\nprinter:Print the social security number for ${username}."
     }
   ],
   [
@@ -2208,7 +2810,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Set the education to warrant officer military school for ${username}.\nuser-profile:Get the education for ${username}.\nquery:Print the education for ${username}."
+      "content": "user-profile:Get my username.\nuser-profile:Set the education to warrant officer military school for ${username}.\nuser-profile:Get the education for ${username}.\nprinter:Print the education for ${username}."
     }
   ],
   [
@@ -2222,7 +2824,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Set the profession to full stack developer for ${username}.\nuser-profile:Get the profession for ${username}.\nquery:Print the profession for ${username}."
+      "content": "user-profile:Get my username.\nuser-profile:Set the profession to full stack developer for ${username}.\nuser-profile:Get the profession for ${username}.\nprinter:Print the profession for ${username}."
     }
   ],
   [
@@ -2236,7 +2838,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Set the profession to car mechanic for ${username}.\nuser-profile:Get the profession for ${username}.\nquery:Print the profession for ${username}."
+      "content": "user-profile:Get my username.\nuser-profile:Set the profession to car mechanic for ${username}.\nuser-profile:Get the profession for ${username}.\nprinter:Print the profession for ${username}."
     }
   ],
   [
@@ -2246,39 +2848,11 @@
     },
     {
       "role": "user",
-      "content": "write profession of teacher in my user profile"
+      "content": "write profession of teacher in my profile"
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Set the profession to teacher for ${username}.\nuser-profile:Get the profession for ${username}.\nquery:Print the profession for ${username}."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "update last working place to telekom in my user profile"
-    },
-    {
-      "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Set the last working place to Telekom for ${username}.\nuser-profile:Get the last working place for ${username}.\nquery:Print the last working place for ${username}."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "modify hobbies to programming and reading in my user profile"
-    },
-    {
-      "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Set the hobbies to programming and reading for ${username}.\nuser-profile:Get the hobbies for ${username}.\nquery:Print the hobbies for ${username}."
+      "content": "user-profile:Get my username.\nuser-profile:Set the profession to teacher for ${username}.\nuser-profile:Get the profession for ${username}.\nprinter:Print the profession for ${username}."
     }
   ],
   [
@@ -2292,7 +2866,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Set the postal address to jud. Iasi, sat Valea Lupului, str. Rubinului nr. 12F, bl. Y7, et. parter, ap. 8 for ${username}.\nuser-profile:Get the postal address for ${username}.\nquery:Print the postal address for ${username}."
+      "content": "user-profile:Get my username.\nuser-profile:Set the postal address to jud. Iasi, sat Valea Lupului, str. Rubinului nr. 12F, bl. Y7, et. parter, ap. 8 for ${username}.\nuser-profile:Get the postal address for ${username}.\nprinter:Print the postal address for ${username}."
     }
   ],
   [
@@ -2302,11 +2876,95 @@
     },
     {
       "role": "user",
-      "content": "set my postal code to 7854"
+      "content": "set my postal code to 7854 in user profile"
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Set the postal code to 7854 for ${username}.\nuser-profile:Get the postal code for ${username}.\nquery:Print the postal code for ${username}."
+      "content": "user-profile:Get my username.\nuser-profile:Set the postal code to 7854 for ${username}.\nuser-profile:Get the postal code for ${username}.\nprinter:Print the postal code for ${username}."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "set clothing size to XXL in my user profile"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Set the clothing size to XXL for ${username}.\nuser-profile:Get the clothing size for ${username}.\nprinter:Print the clothing size for ${username}."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "save my shoes size of 42.5 in my profile"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Set the shoes size to 42.5 for ${username}.\nuser-profile:Get the shoes size for ${username}.\nprinter:Print the shoes size for ${username}."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "set height of 172 in my user profile"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Set the height to 176 for ${username}.\nuser-profile:Get the height for ${username}.\nprinter:Print the height for ${username}."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "save my blood type of O- in user profile"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Set the blood type to O- for ${username}.\nuser-profile:Get the blood type for ${username}.\nprinter:Print the blood type for ${username}."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "create property blood type of O- in my user profile"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Set the blood type to 7854 for ${username}.\nuser-profile:Get the blood type for ${username}.\nprinter:Print the blood type for ${username}."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "set my blood group to AB+"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Set the blood group to AB+ for ${username}.\nuser-profile:Get the blood group for ${username}.\nprinter:Print the blood group for ${username}."
     }
   ],
   [
@@ -2320,35 +2978,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Set the username for Simeria Anca.\nuser-profile:Get the username for Simeria Anca.\nquery:Print the username for Simeria Anca."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "update username property for lupu mihaela in user profile"
-    },
-    {
-      "role": "model",
-      "content": "user-profile:Set the username for Lupu Mihaela.\nuser-profile:Get the username for Lupu Mihaela.\nquery:Print the username for Lupu Mihaela."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "change username for lupu mihaela to gavriliu mihaela in user profile"
-    },
-    {
-      "role": "model",
-      "content": "user-profile:Set the username Gavriliu Mihaela for Lupu Mihaela.\nuser-profile:Get the username for Gavriliu Mihaela.\nquery:Print the username for Gavriliu Mihaela."
+      "content": "user-profile:Get user ID for Simeria Anca.\nuser-profile:Set the username to Simeria Anca for ${user_id}.\nuser-profile:Get the username for ${username}.\nprinter:Print the username for ${username}."
     }
   ],
   [
@@ -2362,21 +2992,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Set the personal phone number to +40 770 861711 for Acatrinei Liviu.\nuser-profile:Get the personal phone number for Acatrinei Liviu.\nquery:Print the personal phone number for Acatrinei Liviu."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "update personal phone for lontkowschi mirela petronela to 0771-555666 in user profile"
-    },
-    {
-      "role": "model",
-      "content": "user-profile:Set the personal phone number to +40 771 555666 for Lontkowschi Mirela Petronela.\nuser-profile:Get the personal phone number for Lontkowschi Mirela Petronela.\nquery:Print the personal phone number for Lontkowschi Mirela Petronela."
+      "content": "user-profile:Get the username for Acatrinei Liviu.\nuser-profile:Set the personal phone number to +40 770 861711 for ${username}.\nuser-profile:Get the personal phone number for ${username}.\nprinter:Print the personal phone number for ${username}."
     }
   ],
   [
@@ -2390,7 +3006,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Set the personal phone number to +40 777 333567 for Păduraru Adrian.\nuser-profile:Get the personal phone number for Păduraru Adrian.\nquery:Print the personal phone number for Păduraru Adrian."
+      "content": "user-profile:Get the username for Păduraru Adrian.\nuser-profile:Set the personal phone number to +40 777 333567 for ${username}.\nuser-profile:Get the personal phone number for ${username}.\nprinter:Print the personal phone number for ${username}."
     }
   ],
   [
@@ -2404,7 +3020,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Set the personal phone number to +40 777 432569 for Butnicu Dan.\nuser-profile:Get the personal phone number for Butnicu Dan.\nquery:Print the personal phone number for Butnicu Dan."
+      "content": "user-profile:Get the username for Butnicu Dan.\nuser-profile:Set the personal phone number to +40 777 432569 for ${username}.\nuser-profile:Get the personal phone number for ${username}.\nprinter:Print the personal phone number for ${username}."
     }
   ],
   [
@@ -2418,7 +3034,21 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Set the business phone number to +40 7349 90887 for Gavriliu Mihaela.\nuser-profile:Get the business phone number for Gavriliu Mihaela.\nquery:Print the business phone number for Gavriliu Mihaela."
+      "content": "user-profile:Get the username for Gavriliu Mihaela.\nuser-profile:Set the business phone number to +40 7349 90887 for ${username}.\nuser-profile:Get the business phone number for ${username}.\nprinter:Print the business phone number for ${username}."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "set business email to mihaela.gavriliu@gnotis.ro for gavriliu mihaela"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get the username for Gavriliu Mihaela.\nuser-profile:Set the business email address to mihaela.gavriliu@gnotis.ro for ${username}.\nuser-profile:Get the business email address for ${username}.\nprinter:Print the business email address for ${username}."
     }
   ],
   [
@@ -2432,21 +3062,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Set the business phone number to +40 746 523787 for Gogălniceanu Mioara.\nuser-profile:Get the business phone number for Gogălniceanu Mioara.\nquery:Print the business phone number for Gogălniceanu Mioara."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "update personal email address mr.iulianrotaru@gmail.com for rotaru iulian in user profile"
-    },
-    {
-      "role": "model",
-      "content": "user-profile:Set the personal email address to mr.iulianrotaru@gmail.com for Rotaru Iulian.\nuser-profile:Get the personal email address for Rotaru Iulian.\nquery:Print the personal email address for Rotaru Iulian."
+      "content": "user-profile:Get the username for Gogalniceanu Mioara.\nuser-profile:Set the business phone number to +40 746 523787 for ${username}.\nuser-profile:Get the business phone number for ${username}.\nprinter:Print the business phone number for ${username}."
     }
   ],
   [
@@ -2460,7 +3076,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Set the business email address to bogdan.jipa@gnotis.ro for Jipa Bogdan.\nuser-profile:Get the business email address for Jipa Bogdan.\nquery:Print the business email address for Jipa Bogdan."
+      "content": "user-profile:Get the username for Jipa Bogdan.\nuser-profile:Set the business email address to bogdan.jipa@gnotis.ro for ${username}\nuser-profile:Get the business email address for ${username}\nprinter:Print the business email address for ${username}"
     }
   ],
   [
@@ -2474,7 +3090,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Set the height to 176 cm for Rusu Florentin.\nuser-profile:Get the height for Rusu Florentin.\nquery:Print the height for Rusu Florentin."
+      "content": "user-profile:Get the username for Rusu Florentin.\nuser-profile:Set the height to 176 cm for ${username}\nuser-profile:Get the height for ${username}\nprinter:Print the height for ${username}"
     }
   ],
   [
@@ -2488,21 +3104,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Set the height to 168 cm for Trofin Gabriela.\nuser-profile:Get the height for Trofin Gabriela.\nquery:Print the height for Trofin Gabriela."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "update height property to 178 cm of gavriliu nicolae"
-    },
-    {
-      "role": "model",
-      "content": "user-profile:Set the height to 178 cm for Gavriliu Nicolae.\nuser-profile:Get the height for Gavriliu Nicolae.\nquery:Print the height for Gavriliu Nicolae."
+      "content": "user-profile:Get the username for Trofin Gabriela.\nuser-profile:Set the height to 168 cm for ${username}\nuser-profile:Get the height for ${username}\nprinter:Print the height for ${username}"
     }
   ],
   [
@@ -2516,21 +3118,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Set the birth date to 1964-03-15 for Baciu Vasile.\nuser-profile:Get the birth date for Baciu Vasile.\nquery:Print the birth date for Baciu Vasile."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "update birth date 1967-08-21 for miron gabriela in user profile"
-    },
-    {
-      "role": "model",
-      "content": "user-profile:Set the birth date to 1967-08-21 for Miron Gabriela.\nuser-profile:Get the birth date for Miron Gabriela.\nquery:Print the birth date for Miron Gabriela."
+      "content": "user-profile:Get the username for Baciu vasile.\nuser-profile:Set the birth date to 1964-03-15 for ${username}\nuser-profile:Get the birth date for ${username}\nprinter:Print the birth date for ${username}"
     }
   ],
   [
@@ -2544,21 +3132,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Set the social security number to 1640315227781 for Acatrinei Alin.\nuser-profile:Get the social security number for Acatrinei Alin.\nquery:Print the social security number for Acatrinei Alin."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "update SSN of 2670821213785 for miron daniela elena in user profile"
-    },
-    {
-      "role": "model",
-      "content": "user-profile:Set the social security number to 2670821213785 for Miron Daniela Elena.\nuser-profile:Get the social security number for Miron Daniela Elena.\nquery:Print the social security number for Miron Daniela Elena."
+      "content": "user-profile:Get the username for Acatrinei Alin.\nuser-profile:Set the social security number to 1640315227781 for ${username}\nuser-profile:Get the social security number for ${username}\nprinter:Print the social security number for ${username}"
     }
   ],
   [
@@ -2572,21 +3146,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Set the education to warrant officer military school for Vaino George Viorel.\nuser-profile:Get the education for Vaino George Viorel.\nquery:Print the education for Vaino George Viorel."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "modify education to sanitary high school for ghinea marica"
-    },
-    {
-      "role": "model",
-      "content": "user-profile:Set the education to sanitary high school for Ghinea Marica.\nuser-profile:Get the education for Ghinea Marica.\nquery:Print the education for Ghinea Marica."
+      "content": "user-profile:Get the username for Vaino George Viorel.\nuser-profile:Set the education to warrant officer military school for ${username}\nuser-profile:Get the education for ${username}\nprinter:Print the education for ${username}"
     }
   ],
   [
@@ -2600,7 +3160,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Set the profession to full stack developer for Adam Iosif.\nuser-profile:Get the profession for Adam Iosif.\nquery:Print the profession for Adam Iosif."
+      "content": "user-profile:Get the username for Adam Iosif.\nuser-profile:Set the profession to full stack developer for ${username}\nuser-profile:Get the profession for ${username}\nprinter:Print the profession for ${username}"
     }
   ],
   [
@@ -2614,7 +3174,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Set the profession to nurse for Dorneanu Deliana.\nuser-profile:Get the profession for Dorneanu Deliana.\nquery:Print the profession for Dorneanu Deliana."
+      "content": "user-profile:Get the username for Dorneanu Deliana.\nuser-profile:Set the profession to nurse for ${username}\nuser-profile:Get the profession for ${username}\nprinter:Print the profession for ${username}"
     }
   ],
   [
@@ -2628,7 +3188,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Set the profession to fighter pilot for Gavriliu Dora.\nuser-profile:Get the profession for Gavriliu Dora.\nquery:Print the profession for Gavriliu Dora."
+      "content": "user-profile:Get the username for Gavriliu Dora.\nuser-profile:Set the profession to fighter pilot for ${username}\nuser-profile:Get the profession for ${username}\nprinter:Print the profession for ${username}"
     }
   ],
   [
@@ -2642,7 +3202,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Set the location to Valea Lupului, Iași, Romania for Dorneanu Deliana.\nuser-profile:Get the location for Dorneanu Deliana.\nquery:Print the location for Dorneanu Deliana."
+      "content": "user-profile:Get the username for Dorneanu Deliana.\nuser-profile:Set the location to Valea Lupului, Iași, Romania for ${username}\nuser-profile:Get the location for ${username}\nprinter:Print the location for ${username}"
     }
   ],
   [
@@ -2656,7 +3216,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Set the location to Iași, Romania for Rotaru Ștefan.\nuser-profile:Get the location for Rotaru Ștefan.\nquery:Print the location for Rotaru Ștefan."
+      "content": "user-profile:Get the username for Rotaru Ștefan.\nuser-profile:Set the location to Iași, Romania for ${username}.\nuser-profile:Get the location for ${username}.\nprinter:Print the location for ${username}."
     }
   ],
   [
@@ -2670,7 +3230,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Set the skill level to expert for Moromete Ilie.\nuser-profile:Get the skill level for Moromete Ilie.\nquery:Print the skill level for Moromete Ilie."
+      "content": "user-profile:Get the username for Moromete Ilie.\nuser-profile:Set the skill level to expert for ${username}\nuser-profile:Get the skill level for ${username}\nprinter:Print the skill level for ${username}"
     }
   ],
   [
@@ -2684,7 +3244,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Set the driving license type to commercial for Dorneanu Ioan Silviu.\nuser-profile:Get the driving license type for Dorneanu Ioan Silviu.\nquery:Print the driving license type for Dorneanu Ioan Silviu."
+      "content": "user-profile:Get the username for Dorneanu Ioan Silviu.\nuser-profile:Set the driving license type to commercial for ${username}\nuser-profile:Get the driving license type for ${username}\nprinter:Print the driving license type for ${username}"
     }
   ],
   [
@@ -2698,7 +3258,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Set the driving license type to personal for Dorneanu Ioana Sorana.\nuser-profile:Get the driving license type for Dorneanu Ioana Sorana.\nquery:Print the driving license type for Dorneanu Ioana Sorana."
+      "content": "user-profile:Get the username for Dorneanu Ioana Sorana.\nuser-profile:Set the driving license type to personal for ${username}\nuser-profile:Get the driving license type for ${username}\nprinter:Print the driving license type for ${username}"
     }
   ],
   [
@@ -2712,7 +3272,693 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Set the postal address to jud. Iasi, mun. Iasi, str. Stejar nr. 13B, bl. I2, sc. C, et. 4, ap. 3 for Fantanaru Eugenia.\nuser-profile:Get the postal address for Fantanaru Eugenia.\nquery:Print the postal address for Fantanaru Eugenia."
+      "content": "user-profile:Get the username for Fantanaru Eugenia.\nuser-profile:Set the postal address to jud. Iasi, mun. Iasi, str. Stejar nr. 13B, bl. I2, sc. C, et. 4, ap. 3 for ${username}\nuser-profile:Get the postal address for ${username}\nprinter:Print the postal address for ${username}"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "set business email to lucian.ghinea@delgaz-grid.ro for ghinea lucian"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get the username for Ghinea Lucian.\nuser-profile:Set the business email address to lucian.ghinea@delgaz-grid.ro for ${username}\nuser-profile:Get the business email address for ${username}\nprinter:Print the business email address for ${username}"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "change personal phone number 0770-861712 in my user profile"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Update the personal phone number to +40 770 861712 for ${username}.\nuser-profile:Get the personal phone number for ${username}.\nprinter:Print the personal phone number for ${username}."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "update my personal email address of mr.iulianrotaru@gmail.com in my user profile"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Update the personal email address to mr.iulianrotaru@gmail.com for ${username}.\nuser-profile:Get the personal email address for ${username}.\nprinter:Print the personal email address for ${username}."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "change my location property to valea lupului, iași, romania"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Update the location to Valea Lupului, Iași, Romania for ${username}.\nuser-profile:Get the location for ${username}.\nprinter:Print the location for ${username}."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "update social security number of 2670821213785 in my user profile"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Update the social security number to 2670821213785 for ${username}.\nuser-profile:Get the social security number for ${username}.\nprinter:Print the social security number for ${username}."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "modify education to software developer in my user profile"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Update the education to software developer for ${username}.\nuser-profile:Get the education for ${username}.\nprinter:Print the education for ${username}."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "update last working place to telekom in my user profile"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Update the last working place to Telekom for ${username}.\nuser-profile:Get the last working place for ${username}.\nprinter:Print the last working place for ${username}."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "modify hobbies to programming and reading in my user profile"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Update the hobbies to programming and reading for ${username}.\nuser-profile:Get the hobbies for ${username}.\nprinter:Print the hobbies for ${username}."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "replace my business email address with iulian.rotaru@delgaz-grid.ro"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Update the business email address to iulian.rotaru@delgaz-grid.ro for ${username}.\nuser-profile:Get the business email address for ${username}.\nprinter:Print the business email address for ${username}."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "replace blood type property with B+"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Update the blood type to B+ for ${username}.\nuser-profile:Get the blood type for ${username}.\nprinter:Print the blood type for ${username}."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "update username property for lupu mihaela in user profile"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Update the username for Lupu Mihaela.\nuser-profile:Get the username for Lupu Mihaela.\nprinter:Print the username for Lupu Mihaela."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "change username for lupu mihaela to gavriliu mihaela in user profile"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Update the username Gavriliu Mihaela for Lupu Mihaela.\nuser-profile:Get the username for Gavriliu Mihaela.\nprinter:Print the username for Gavriliu Mihaela."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "update personal phone for lontkowschi mirela petronela to 0771-555666 in user profile"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Update the personal phone number to +40 771 555666 for Lontkowschi Mirela Petronela.\nuser-profile:Get the personal phone number for Lontkowschi Mirela Petronela.\nprinter:Print the personal phone number for Lontkowschi Mirela Petronela."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "update personal email address mr.iulianrotaru@gmail.com for rotaru iulian in user profile"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Update the personal email address to mr.iulianrotaru@gmail.com for Rotaru Iulian.\nuser-profile:Get the personal email address for Rotaru Iulian.\nprinter:Print the personal email address for Rotaru Iulian."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "rewrite height property to 178 cm of gavriliu nicolae"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Update the height to 178 cm for Gavriliu Nicolae.\nuser-profile:Get the height for Gavriliu Nicolae.\nprinter:Print the height for Gavriliu Nicolae."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "replace birth date with 1967-08-21 for miron gabriela in user profile"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Update the birth date to 1967-08-21 for Miron Gabriela.\nuser-profile:Get the birth date for Miron Gabriela.\nprinter:Print the birth date for Miron Gabriela."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "update SSN of 2670821213785 for miron daniela elena in user profile"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Update the social security number to 2670821213785 for Miron Daniela Elena.\nuser-profile:Get the social security number for Miron Daniela Elena.\nprinter:Print the social security number for Miron Daniela Elena."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "modify education to sanitary high school for ghinea marica"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Update the education to sanitary high school for Ghinea Marica.\nuser-profile:Get the education for Ghinea Marica.\nprinter:Print the education for Ghinea Marica."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "change business email to iulian.rotaru@delgaz-grid.ro for rotaru iulian"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Update the business email address to iulian.rotaru@delgaz-grid.ro for Rotaru Iulian.\nuser-profile:Get the business email address for Rotaru Iulian.\nprinter:Print the business email address for Rotaru Iulian."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "remove business phone number from my user profile"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Get the business phone number of ${username}.\nuser-profile:Remove business phone number from ${username}.\nprinter:Print removed property value and inform that business phone number was removed."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "remove my body length property from user profile"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Get the body length of ${username}.\nuser-profile:Remove body length from ${username}.\nprinter:Print removed property value and inform that body length was removed."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "clear blood type property from my profile"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Get the blood type of ${username}.\nuser-profile:Remove blood type from ${username}.\nprinter:Print removed property value and inform that blood type was removed."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "delete my skill level property from profile"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Get the skill level of ${username}.\nuser-profile:Remove skill level from ${username}.\nprinter:Print removed property value and inform that skill level was removed."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "erase place property from my profile"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Get the place of ${username}.\nuser-profile:Remove place from ${username}.\nprinter:Print removed property value and inform that place was removed."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "clear my birthday in my user profile"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Get the birthday of ${username}.\nuser-profile:Remove birthday from ${username}.\nprinter:Print removed property value and inform that birthday was removed."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "take off education level from my profile"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Get the education level of ${username}.\nuser-profile:Remove education level from ${username}.\nprinter:Print removed property value and inform that birthday was removed."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "please delete my email address"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Get the personal email address of ${username}.\nuser-profile:Remove personal email address from ${username}.\nprinter:Print removed property value and inform that personal email address was removed."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get rid of my social security number"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Get the social security number of ${username}.\nuser-profile:Remove social security number from ${username}.\nprinter:Print removed property value and inform that social security number was removed."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "forget my postal address"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Get the postal address of ${username}.\nuser-profile:Remove postal address from ${username}.\nprinter:Print removed property value and inform that postal address was removed."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "unset location on my user profile"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Get the location of ${username}.\nuser-profile:Remove location from ${username}.\nprinter:Print removed property value and inform that location was removed."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "I need to take my business email off my profile."
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Get the business email address of ${username}.\nuser-profile:Remove business email address from ${username}.\nprinter:Print removed property value and inform that business email address was removed."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "list my user profile"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:List user profile properties for ${username}.\nprinter:List all properties in my user profile."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "list my user profile as table"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:List user profile properties for ${username}.\nprinter:List all properties in my user profile as table."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "list my user profile grouped by category"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:List user profile properties for ${username}.\nprinter:List all properties in my user profile grouped by category."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "list all properties in my user profile"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:List user profile properties for ${username}.\nprinter:List all properties in my user profile."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "dump my user profile values"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:List user profile properties for ${username}.\nprinter:Dump my user profile values."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "return all key-value pairs from my user profile"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:List user profile properties for ${username}.\nprinter:Return all key-value pairs in my user profile."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "please create a list of all my properties from my user profile"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:List user profile properties for ${username}.\nprinter:Please create a list of all the properties in my user profile."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "list all my properties from user profile"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:List user profile properties for ${username}.\nprinter:List all properties in my user profile."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "print my user profile"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:List user profile properties for ${username}.\nprinter:Print my user profile."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "list my user profile properties"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:List user profile properties for ${username}.\nprinter:List all properties in my user profile."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "list my user profile attributes"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:List user profile properties for ${username}.\nprinter:List all attributes in my user profile."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "display my user profile"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:List user profile properties for ${username}.\nprinter:Display my user profile."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "display my user profile grouped by type"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:List user profile properties for ${username}.\nprinter:Display my user profile grouped by type."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "list all my properties"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:List user profile properties for ${username}.\nprinter:List all my properties."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "print my properties in tabular form"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:List user profile properties for ${username}.\nprinter:Print my properties in tabular form."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "display all my user properties in table format"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:List user profile properties for ${username}.\nprinter:Display all my user properties in table format."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "what do you know about me?"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:List user profile properties for ${username}.\nprinter:What do you know about me?"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "please show me all the details in my profile"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:List user profile properties for ${username}.\nprinter:Please show me all the details in my profile."
     }
   ],
   [
@@ -2783,76 +4029,6 @@
     {
       "role": "model",
       "content": "user-profile:Get my username.\nuser-profile:Get the location of ${username}.\nquery:When my location was updated?"
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "convert jsonl to markdown table"
-    },
-    {
-      "role": "model",
-      "content": "converter:Convert JSONL flat objects to markdown table."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "convert jsonl objects to markdown"
-    },
-    {
-      "role": "model",
-      "content": "converter:Convert JSONL flat objects to markdown table."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "convert flat objects in jsonl format to markdown table"
-    },
-    {
-      "role": "model",
-      "content": "converter:Convert JSONL flat objects to markdown table."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "convert jsonl objects to html table"
-    },
-    {
-      "role": "model",
-      "content": "converter:Convert JSONL flat objects to HTML table."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "convert jsonl objects to html ordered list"
-    },
-    {
-      "role": "model",
-      "content": "converter:Convert JSONL flat objects to HTML ordered list."
     }
   ],
   [
@@ -6338,7 +7514,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nhealth:Save blood pressure measurement of 125/85 mmHg and heart rate of 70 bpm for ${username}.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get my username.\nhealth:Save blood pressure measurement of 125/85 mmHg and heart rate of 70 bpm for ${username}.\nprinter:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -6348,11 +7524,11 @@
     },
     {
       "role": "user",
-      "content": "save blood 125 85 70"
+      "content": "save my blood 125 85 70"
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nhealth:Save blood pressure measurement of 125/85 mmHg and heart rate of 70 bpm for ${username}.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get my username.\nhealth:Save blood pressure measurement of 125/85 mmHg and heart rate of 70 bpm for ${username}.\nprinter:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -6366,7 +7542,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nhealth:Save blood pressure measurement of 128/81 mmHg and heart rate of 55 bpm for ${username}.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get my username.\nhealth:Save blood pressure measurement of 128/81 mmHg and heart rate of 55 bpm for ${username}.\nprinter:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -6376,11 +7552,11 @@
     },
     {
       "role": "user",
-      "content": "write blood readings: 130 82 85"
+      "content": "write my blood readings: 130 82 85"
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nhealth:Save blood pressure measurement of 130/82 mmHg and heart rate of 85 bpm for ${username}.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get my username.\nhealth:Save blood pressure measurement of 130/82 mmHg and heart rate of 85 bpm for ${username}.\nprinter:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -6390,11 +7566,11 @@
     },
     {
       "role": "user",
-      "content": "record blood measurements: 110 66 84"
+      "content": "record my blood measurements: 110 66 84"
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nhealth:Save blood pressure measurement of 110/66 mmHg and heart rate of 84 bpm for ${username}.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get my username.\nhealth:Save blood pressure measurement of 110/66 mmHg and heart rate of 84 bpm for ${username}.\nprinter:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -6404,11 +7580,11 @@
     },
     {
       "role": "user",
-      "content": "logs blood readings: 133 92 87"
+      "content": "logs my blood readings: 133 92 87"
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nhealth:Save blood pressure measurement of 133/92 mmHg and heart rate of 87 bpm for ${username}.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get my username.\nhealth:Save blood pressure measurement of 133/92 mmHg and heart rate of 87 bpm for ${username}.\nprinter:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -6422,7 +7598,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nhealth:Save blood pressure measurement of 136/90 mmHg and heart rate of 82 bpm for ${username}.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get my username.\nhealth:Save blood pressure measurement of 136/90 mmHg and heart rate of 82 bpm for ${username}.\nprinter:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -6432,11 +7608,11 @@
     },
     {
       "role": "user",
-      "content": "write blood readings: 119 with 81 and 93"
+      "content": "write my blood readings: 119 with 81 and 93"
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nhealth:Save blood pressure measurement of 119/81 mmHg and heart rate of 93 bpm for ${username}.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get my username.\nhealth:Save blood pressure measurement of 119/81 mmHg and heart rate of 93 bpm for ${username}.\nprinter:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -6450,7 +7626,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nhealth:Save blood pressure measurement of 120/84 mmHg and heart rate of 76 bpm for ${username}.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get my username.\nhealth:Save blood pressure measurement of 120/84 mmHg and heart rate of 76 bpm for ${username}.\nprinter:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -6464,7 +7640,7 @@
     },
     {
       "role": "model",
-      "content": "health:Save blood pressure measurement of 118/82 mmHg and heart rate of 63 bpm for Rusu Florentin.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get the username for Rusu Florentin.\nhealth:Save blood pressure measurement of 118/82 mmHg and heart rate of 63 bpm for ${username}.\nprinter:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -6478,7 +7654,7 @@
     },
     {
       "role": "model",
-      "content": "health:Save blood pressure measurement of 119/81 mmHg and heart rate of 64 bpm for Pătrașcu Constantin.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get the username for Pătrașcu Constantin.\nhealth:Save blood pressure measurement of 119/81 mmHg and heart rate of 64 bpm for ${username}.\nprinter:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -6492,7 +7668,7 @@
     },
     {
       "role": "model",
-      "content": "health:Save blood pressure measurement of 115/75 mmHg and heart rate of 60 bpm for Gavriliu Mihaela.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get the username for Gavriliu Mihaela.\nhealth:Save blood pressure measurement of 115/75 mmHg and heart rate of 60 bpm for ${username}.\nprinter:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -6506,7 +7682,7 @@
     },
     {
       "role": "model",
-      "content": "health:Save blood pressure measurement of 112/65 mmHg and heart rate of 78 bpm for Rotaru Lucian.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get the username for Rotaru Lucian.\nhealth:Save blood pressure measurement of 112/65 mmHg and heart rate of 78 bpm for ${username}.\nprinter:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -6520,7 +7696,7 @@
     },
     {
       "role": "model",
-      "content": "health:Save blood pressure measurement of 133/92 mmHg and heart rate of 87 bpm for Miron Elena Daniela.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get the username for Miron Elena Daniela.\nhealth:Save blood pressure measurement of 133/92 mmHg and heart rate of 87 bpm for ${username}.\nprinter:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -6534,7 +7710,21 @@
     },
     {
       "role": "model",
-      "content": "health:Save blood pressure measurement of 125/83 mmHg and heart rate of 73 bpm for Rotaru Iulian.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get the username for Rotaru Iulian.\nhealth:Save blood pressure measurement of 125/83 mmHg and heart rate of 73 bpm for ${username}.\nprinter:Print the summary of the saved medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "save my temperature 35.1"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nhealth:Save body temperature of 35.10 °C for ${username}.\nprinter:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -6548,7 +7738,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nhealth:Save body temperature of 35.00 °C for ${username}.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get my username.\nhealth:Save body temperature of 35.00 °C for ${username}.\nprinter:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -6558,11 +7748,11 @@
     },
     {
       "role": "user",
-      "content": "save temperature 34.3"
+      "content": "save my temperature of 34.3"
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nhealth:Save body temperature of 34.30 °C for ${username}.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get my username.\nhealth:Save body temperature of 34.30 °C for ${username}.\nprinter:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -6572,11 +7762,11 @@
     },
     {
       "role": "user",
-      "content": "logs body temperature 35.9"
+      "content": "logs my body temperature 35.9"
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nhealth:Save body temperature of 35.90 °C for ${username}.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get my username.\nhealth:Save body temperature of 35.90 °C for ${username}.\nprinter:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -6586,11 +7776,11 @@
     },
     {
       "role": "user",
-      "content": "write temperature 34.8"
+      "content": "write my temperature 34.8"
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nhealth:Save body temperature of 34.80 °C for ${username}.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get my username.\nhealth:Save body temperature of 34.80 °C for ${username}.\nprinter:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -6604,7 +7794,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nhealth:Save body temperature of 35.20 °C for ${username}.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get my username.\nhealth:Save body temperature of 35.20 °C for ${username}.\nprinter:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -6618,7 +7808,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nhealth:Save body temperature of 37.10 °C for ${username}.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get my username.\nhealth:Save body temperature of 37.10 °C for ${username}.\nprinter:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -6632,7 +7822,7 @@
     },
     {
       "role": "model",
-      "content": "health:Save body temperature of 35.10 °C for Cojocaru Cristian.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get the username for Cojocaru Cristian.\nhealth:Save body temperature of 35.10 °C for ${username}.\nprinter:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -6646,7 +7836,7 @@
     },
     {
       "role": "model",
-      "content": "health:Save body temperature of 35.20 °C for Acatrinei Liviu.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get the username for Acatrinei Liviu.\nhealth:Save body temperature of 35.20 °C for ${username}.\nprinter:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -6660,7 +7850,7 @@
     },
     {
       "role": "model",
-      "content": "health:Save body temperature of 35.60 °C for Gogălniceanu Ștefan.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get the username for Gogălniceanu Ștefan.\nhealth:Save body temperature of 35.60 °C for ${username}.\nprinter:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -6674,7 +7864,7 @@
     },
     {
       "role": "model",
-      "content": "health:Save body temperature of 36.20 °C for Lontkowschi George.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get the username for Lontkowschi George.\nhealth:Save body temperature of 36.20 °C for ${username}.\nprinter:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -6688,7 +7878,7 @@
     },
     {
       "role": "model",
-      "content": "health:Save body temperature of 34.10 °C for Teodorescu Tiberiu Dinu.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get the username for Teodorescu Tiberiu Dinu.\nhealth:Save body temperature of 34.10 °C for ${username}.\nprinter:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -6702,7 +7892,7 @@
     },
     {
       "role": "model",
-      "content": "health:Save body temperature of 36.70 °C for Dorneanu Deliana.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get the username for Dorneanu Deliana.\nhealth:Save body temperature of 36.70 °C for ${username}.\nprinter:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -6716,7 +7906,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Get the height of ${username}.\nhealth:Save body weight of 93.75 kg and height of ${height} cm for ${username}.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get my username.\nuser-profile:Get the height of ${username}.\nhealth:Save body weight of 93.75 kg and height of ${height} cm for ${username}.\nprinter:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -6730,7 +7920,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Get the height of ${username}.\nhealth:Save body weight of 89.00 kg and height of ${height} cm for ${username}.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get my username.\nuser-profile:Get the height of ${username}.\nhealth:Save body weight of 89.00 kg and height of ${height} cm for ${username}.\nprinter:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -6744,7 +7934,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Get the height of ${username}.\nhealth:Save body weight of 89.00 kg and height of ${height} cm for ${username}.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get my username.\nuser-profile:Get the height of ${username}.\nhealth:Save body weight of 89.00 kg and height of ${height} cm for ${username}.\nprinter:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -6758,7 +7948,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Get the height of ${username}.\nhealth:Save body weight of 88.00 kg and height of ${height} cm for ${username}.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get my username.\nuser-profile:Get the height of ${username}.\nhealth:Save body weight of 88.00 kg and height of ${height} cm for ${username}.\nprinter:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -6772,7 +7962,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Get the height of ${username}.\nhealth:Save body weight of 88.50 kg and height of ${height} cm for ${username}.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get my username.\nuser-profile:Get the height of ${username}.\nhealth:Save body weight of 88.50 kg and height of ${height} cm for ${username}.\nprinter:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -6782,11 +7972,11 @@
     },
     {
       "role": "user",
-      "content": "save my weight 87.75"
+      "content": "save my weight measurement of 87.75"
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Get the height of ${username}.\nhealth:Save body weight of 87.75 kg and height of ${height} cm for ${username}.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get my username.\nuser-profile:Get the height of ${username}.\nhealth:Save body weight of 87.75 kg and height of ${height} cm for ${username}.\nprinter:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -6796,11 +7986,11 @@
     },
     {
       "role": "user",
-      "content": "write weight measurement 89.75"
+      "content": "write my weight measurement 89.75"
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Get the height of ${username}.\nhealth:Save body weight of 89.75 kg and height of ${height} cm for ${username}.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get my username.\nuser-profile:Get the height of ${username}.\nhealth:Save body weight of 89.75 kg and height of ${height} cm for ${username}.\nprinter:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -6814,7 +8004,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Get the height of ${username}.\nhealth:Save my body weight of 92.00 kg and height of ${height} cm for ${username}.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get my username.\nuser-profile:Get the height of ${username}.\nhealth:Save my body weight of 92.00 kg and height of ${height} cm for ${username}.\nprinter:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -6828,7 +8018,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Get the height of ${username}.\nhealth:Save body weight of 82.50 kg and height of ${height} cm for ${username}.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get my username.\nuser-profile:Get the height of ${username}.\nhealth:Save body weight of 82.50 kg and height of ${height} cm for ${username}.\nprinter:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -6842,7 +8032,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Get the height of ${username}.\nhealth:Save body weight of 86.25 kg and height of ${height} cm for ${username}.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get my username.\nuser-profile:Get the height of ${username}.\nhealth:Save body weight of 86.25 kg and height of ${height} cm for ${username}.\nprinter:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -6856,7 +8046,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Get the height of ${username}.\nhealth:Save body weight of 94.00 kg and height of ${height} cm for ${username}.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get my username.\nuser-profile:Get the height of ${username}.\nhealth:Save body weight of 94.00 kg and height of ${height} cm for ${username}.\nprinter:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -6870,7 +8060,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Get the height of ${username}.\nhealth:Save body weight of 75.50 kg and height of ${height} cm for ${username}.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get my username.\nuser-profile:Get the height of ${username}.\nhealth:Save body weight of 75.50 kg and height of ${height} cm for ${username}.\nprinter:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -6884,7 +8074,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nuser-profile:Get the height of ${username}.\nhealth:Save body weight of 62.00 kg and height of ${height} cm for ${username}.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get my username.\nuser-profile:Get the height of ${username}.\nhealth:Save body weight of 62.00 kg and height of ${height} cm for ${username}.\nprinter:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -6898,7 +8088,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get the height of Baciu Vasile.\nhealth:Save body weight of 89.50 kg and height of ${height} cm for Baciu Vasile.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get the username for Baciu Vasile\nuser-profile:Get the height of ${username}.\nhealth:Save body weight of 89.50 kg and height of ${height} cm for ${username}\nprinter:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -6912,7 +8102,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get the height of Agavriloaiei Ioana.\nhealth:Save body weight of 56.00 kg and height of ${height} cm for Agavriloaiei Ioana.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get the username for Agavriloaiei Ioana.\nuser-profile:Get the height of ${username}.\nhealth:Save body weight of 56.00 kg and height of ${height} cm for ${username}\nprinter:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -6926,7 +8116,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get the height of Preda Marin.\nhealth:Save body weight of 88.50 kg and height of ${height} cm for Preda Marin.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get the username for Preda Marin.\nuser-profile:Get the height of Preda Marin.\nhealth:Save body weight of 88.50 kg and height of ${height} cm for ${username}\nprinter:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -6940,7 +8130,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get the height of Jipa Bogdan.\nhealth:Save body weight of 74.00 kg and height of ${height} cm for Jipa Bogdan.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get the username for Jipa Bogdan.\nuser-profile:Get the height of ${username}.\nhealth:Save body weight of 74.00 kg and height of ${height} cm for ${username}\nprinter:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -6954,7 +8144,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get the height of Rotaru Mihai.\nhealth:Save body weight of 76.50 kg and height of ${height} cm for Rotaru Mihai.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get the username for Rotaru Mihai.\nuser-profile:Get the height of ${username}.\nhealth:Save body weight of 76.50 kg and height of ${height} cm for ${username}\nprinter:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -6968,7 +8158,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get the height of Dorneanu Sorana Ioana.\nhealth:Save body weight of 22.50 kg and height of ${height} cm for Dorneanu Sorana Ioana.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get the username for Dorneanu Sorana Ioana.\nuser-profile:Get the height of ${username}.\nhealth:Save body weight of 22.50 kg and height of ${height} cm for ${username}\nprinter:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -6982,7 +8172,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get the height of Rotaru Ștefan.\nhealth:Save body weight of 103.75 kg and height of ${height} cm for Rotaru Ștefan.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get the username for Rotaru Ștefan.\nuser-profile:Get the height of ${username}.\nhealth:Save body weight of 103.75 kg and height of ${height} cm for Rotaru Ștefan.\nprinter:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -6996,7 +8186,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get the height of Adam Nicolae Ioan.\nhealth:Save body weight of 66.25 kg and height of ${height} cm for Adam Nicolae Ioan.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get the username for Adam Nicolae Ioan.\nuser-profile:Get the height of ${username}.\nhealth:Save body weight of 66.25 kg and height of ${height} cm for ${username}\nprinter:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -7010,7 +8200,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get the height of Marton Csaba.\nhealth:Save body weight of 77.75 kg and height of ${height} cm for Marton Csaba.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get the username for Marton Csaba.\nuser-profile:Get the height of ${username}.\nhealth:Save body weight of 77.75 kg and height of ${height} cm for ${username}\nprinter:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -7024,7 +8214,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nhealth:Save blood glucose level of 103 mg/dL for ${username}.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get my username.\nhealth:Save blood glucose level of 103 mg/dL for ${username}.\nprinter:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -7038,7 +8228,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nhealth:Save blood glucose level of 107 mg/dL for ${username}.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get my username.\nhealth:Save blood glucose level of 107 mg/dL for ${username}.\nprinter:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -7048,11 +8238,25 @@
     },
     {
       "role": "user",
-      "content": "save glucose 94"
+      "content": "write my blood sugar level of 127"
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nhealth:Save blood glucose level of 94 mg/dL for ${username}.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get my username.\nhealth:Save blood glucose level of 127 mg/dL for ${username}.\nprinter:Print the summary of the saved medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "save my glucose 94"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nhealth:Save blood glucose level of 94 mg/dL for ${username}.\nprinter:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -7066,7 +8270,7 @@
     },
     {
       "role": "model",
-      "content": "user-profile:Get my username.\nhealth:Save blood glucose level of 118 mg/dL for ${username}.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get my username.\nhealth:Save blood glucose level of 118 mg/dL for ${username}.\nprinter:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -7080,7 +8284,7 @@
     },
     {
       "role": "model",
-      "content": "health:Save blood glucose level of 102 mg/dL for Gavriliu Petronela.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get the username for Gavriliu Petronela\nhealth:Save blood glucose level of 102 mg/dL for ${username}\nprinter:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -7094,7 +8298,7 @@
     },
     {
       "role": "model",
-      "content": "health:Save blood glucose level of 95 mg/dL for Gavriliu Andrei.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get the username for Gavriliu Andrei.\nhealth:Save blood glucose level of 95 mg/dL for ${username}\nprinter:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -7108,7 +8312,7 @@
     },
     {
       "role": "model",
-      "content": "health:Save blood glucose level of 105 mg/dL for Fântânaru Eugenia.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get the username for Fântânaru Eugenia\nhealth:Save blood glucose level of 105 mg/dL for ${username}.\nprinter:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -7122,7 +8326,7 @@
     },
     {
       "role": "model",
-      "content": "health:Save blood glucose level of 98 mg/dL for Agavriloaiei Mariana.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get the username for Agavriloaiei Mariana.\nhealth:Save blood glucose level of 98 mg/dL for ${username}\nprinter:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -7136,7 +8340,7 @@
     },
     {
       "role": "model",
-      "content": "health:Save blood glucose level of 128 mg/dL for Glodeanu Razvan.\nquery:Print the summary of the saved medical readings."
+      "content": "user-profile:Get the username for Glodeanu Razvan.\nhealth:Save blood glucose level of 128 mg/dL for ${username}\nprinter:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -7150,7 +8354,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get the date for today.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:Print the summary of the medical readings."
+      "content": "time-service:Get the date for ${username}\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:Print the summary of the medical readings."
     }
   ],
   [
@@ -7164,7 +8368,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get the date for today.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:Print the summary of the medical readings."
+      "content": "time-service:Get the date for ${username}\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:Print the summary of the medical readings."
     }
   ],
   [
@@ -7178,7 +8382,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get the date for today.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:Print the summary of the medical readings."
+      "content": "time-service:Get the date for ${username}\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:Print the summary of the medical readings."
     }
   ],
   [
@@ -7192,7 +8396,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get the date for today.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:Print the summary of the medical readings."
+      "content": "time-service:Get the date for ${username}\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:Print the summary of the medical readings."
     }
   ],
   [
@@ -7206,7 +8410,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get the date for today.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:Print the summary of the medical readings."
+      "content": "time-service:Get the date for ${username}\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:Print the summary of the medical readings."
     }
   ],
   [
@@ -7220,7 +8424,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get the date for today.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:Print the summary of the medical readings."
+      "content": "time-service:Get the date for ${username}\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:Print the summary of the medical readings."
     }
   ],
   [
@@ -7234,7 +8438,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get the date for the day before yesterday.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:Print the summary of the medical readings."
+      "content": "time-service:Get the date for ${username}\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:Print the summary of the medical readings."
     }
   ],
   [
@@ -7248,7 +8452,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get the date for today.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:Print the summary of the medical readings."
+      "content": "time-service:Get the date for ${username}\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:Print the summary of the medical readings."
     }
   ],
   [
@@ -7262,7 +8466,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get the date for today.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:Print the summary of the medical readings."
+      "content": "time-service:Get the date for ${username}\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:Print the summary of the medical readings."
     }
   ],
   [
@@ -7276,7 +8480,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get the date for today.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:Print the summary of the medical readings."
+      "content": "time-service:Get the date for ${username}\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:Print the summary of the medical readings."
     }
   ],
   [
@@ -7290,7 +8494,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get the date for yesterday.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:Print the summary of the medical readings."
+      "content": "time-service:Get the date for ${username}\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:Print the summary of the medical readings."
     }
   ],
   [
@@ -7304,7 +8508,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get the date for yesterday.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:Print the summary of the medical readings."
+      "content": "time-service:Get the date for ${username}\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:Print the summary of the medical readings."
     }
   ],
   [
@@ -7318,7 +8522,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get the date for yesterday.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:Print the summary of the medical readings."
+      "content": "time-service:Get the date for ${username}\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:Print the summary of the medical readings."
     }
   ],
   [
@@ -7332,7 +8536,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get the date for january 22.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:Print the summary of the medical readings."
+      "content": "time-service:Get the date for ${username}\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:Print the summary of the medical readings."
     }
   ],
   [
@@ -7346,7 +8550,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get the date for february 2.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:Print the summary of the medical readings."
+      "content": "time-service:Get the date for ${username}\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:Print the summary of the medical readings."
     }
   ],
   [
@@ -7388,7 +8592,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get the date for today.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:Print the summary of the medical readings."
+      "content": "time-service:Get the date for ${username}\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:Print the summary of the medical readings."
     }
   ],
   [
@@ -7402,7 +8606,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get the date for today.\nhealth:Read medical records from ${date} for Rotaru Iulian.\nquery:Print the summary of the medical readings."
+      "content": "user-profile:Get the username for Rotaru Iulian.\ntime-service:Get the date for ${username}\nhealth:Read medical records from ${date} for ${username}\nquery:Print the summary of the medical readings."
     }
   ],
   [
@@ -7416,7 +8620,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get the date for today.\nhealth:Read medical records from ${date} for Gogălniceanu Ștefan.\nquery:Print the summary of the medical readings."
+      "content": "user-profile:Get the username for Gogălniceanu Ștefan.\ntime-service:Get the date for ${username}\nhealth:Read medical records from ${date} for ${username}.\nquery:Print the summary of the medical readings."
     }
   ],
   [
@@ -7430,7 +8634,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get the date for today.\nhealth:Read medical records from ${date} for Acatrinei Ingrid.\nquery:Print the summary of the medical readings."
+      "content": "user-profile:Get the username for Acatrinei Ingrid.\ntime-service:Get the date for ${username}\nhealth:Read medical records from ${date} for ${username}\nquery:Print the summary of the medical readings."
     }
   ],
   [
@@ -7444,7 +8648,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get the date for today.\nhealth:Read medical records from ${date} for Lontkowschi Mirela Petronela.\nquery:Print the summary of the medical readings."
+      "content": "user-profile:Get the username for Lontkowschi Mirela Petronela.\ntime-service:Get the date for ${username}\nhealth:Read medical records from ${date} for ${username}\nquery:Print the summary of the medical readings."
     }
   ],
   [
@@ -7458,7 +8662,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get the date for the day before yesterday.\nhealth:Read medical records from the ${date} for Miron Silvia.\nquery:Print the summary of the medical readings."
+      "content": "user-profile:Get the username for Miron Silvia.\ntime-service:Get the date for ${username}\nhealth:Read medical records from the ${date} for ${username}\nquery:Print the summary of the medical readings."
     }
   ],
   [
@@ -7472,7 +8676,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get the date for february 12.\nhealth:Read medical records from ${date} for Cornea Sorin.\nquery:Print the summary of the medical readings."
+      "content": "user-profile:Get the username for Cornea Sorin.\ntime-service:Get the date for ${username}\nhealth:Read medical records from ${date} for ${username}\nquery:Print the summary of the medical readings."
     }
   ],
   [
@@ -7486,7 +8690,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get the date for september 10.\nhealth:Read medical records from ${date} for Mihalache Ioan.\nquery:Print the summary of the medical readings."
+      "content": "user-profile:Get the username for Mihalache Ioan.\ntime-service:Get the date for ${username}\nhealth:Read medical records from ${date} for ${username}\nquery:Print the summary of the medical readings."
     }
   ],
   [
@@ -7500,7 +8704,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get the date for 2022-11-13.\nhealth:Read medical records from ${date} for Savulescu Marcel.\nquery:Print the summary of the medical readings."
+      "content": "user-profile:Get the username for Savulescu Marcel.\ntime-service:Get the date for 2022-11-13.\nhealth:Read medical records from ${date} for ${username}\nquery:Print the summary of the medical readings."
     }
   ],
   [
@@ -7514,7 +8718,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get the date for today.\nhealth:Read medical records from ${date} for Gavriliu Mihaela.\nquery:Print the summary of the medical readings."
+      "content": "user-profile:Get the username for Gavriliu Mihaela.\ntime-service:Get the date for ${username}\nhealth:Read medical records from ${date} for ${username}\nquery:Print the summary of the medical readings."
     }
   ],
   [
@@ -7528,7 +8732,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get the date for today.\nhealth:Read medical records from ${date} for Pascaru Radu.\nquery:Print the summary of the medical readings."
+      "content": "user-profile:Get the username for Pascaru Radu.\ntime-service:Get the date for ${username}\nhealth:Read medical records from ${date} for ${username}\nquery:Print the summary of the medical readings."
     }
   ],
   [
@@ -7542,7 +8746,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get the date for yesterday.\nhealth:Read medical records from ${date} for Oprea Lucian.\nquery:Print the summary of the medical readings."
+      "content": "user-profile:Get the username for Oprea Lucian.\ntime-service:Get the date for ${username}\nhealth:Read medical records from ${date} for ${username}\nquery:Print the summary of the medical readings."
     }
   ],
   [
@@ -7556,7 +8760,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get the date for today.\nhealth:Read medical records from ${date} for Cubasa Leonardo.\nquery:Print the summary of the medical readings."
+      "content": "user-profile:Get the username for Cubasa Leonardo.\ntime-service:Get the date for ${username}\nhealth:Read medical records from ${date} for ${username}\nquery:Print the summary of the medical readings."
     }
   ],
   [
@@ -7570,7 +8774,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get the date for 2026-02-04.\nhealth:Read medical records from ${date} for Paduraru Adrian.\nquery:Print the summary of the medical readings."
+      "content": "user-profile:Get the username for Paduraru Adrian.\ntime-service:Get the date for 2026-02-04.\nhealth:Read medical records from ${date} for ${username}\nquery:Print the summary of the medical readings."
     }
   ],
   [
@@ -7584,7 +8788,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get the date for today.\nhealth:Read medical records from ${date} for Avarvarei Ileana.\nquery:Print the summary of the medical readings."
+      "content": "time-service:Get the date for ${username}\nhealth:Read medical records from ${date} for ${username}\nquery:Print the summary of the medical readings."
     }
   ],
   [
@@ -7598,7 +8802,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get the date for today.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for my user name.\nconverter:Convert JSONL flat objects to markdown table.\nquery:Print the summary of medical readings as markdown table."
+      "content": "time-service:Get the date for ${username}\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}\nconverter:Convert JSONL flat objects to markdown table.\nquery:Print the summary of medical readings as markdown table."
     }
   ],
   [
@@ -7612,7 +8816,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get the date for today.\nhealth:Read medical records from ${date} for Dorneanu Simona.\nconverter:Convert JSONL flat objects to markdown table.\nquery:Print the summary of medical readings as markdown table."
+      "content": "time-service:Get the date for ${username}\nhealth:Read medical records from ${date} for ${username}\nconverter:Convert JSONL flat objects to markdown table.\nquery:Print the summary of medical readings as markdown table."
     }
   ],
   [
@@ -7626,7 +8830,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get the date for today.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:Print the summary of the medical readings."
+      "content": "time-service:Get the date for ${username}\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:Print the summary of the medical readings."
     }
   ],
   [
@@ -7640,7 +8844,7 @@
     },
     {
       "role": "model",
-      "content": "time-service:Get the date for this monday.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:Print the summary of the medical readings."
+      "content": "time-service:Get the date for ${username}\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:Print the summary of the medical readings."
     }
   ],
   [
@@ -7678,7 +8882,7 @@
     },
     {
       "role": "user",
-      "content": "investigate today health records"
+      "content": "investigate my health records from today"
     },
     {
       "role": "model",
@@ -7720,7 +8924,7 @@
     },
     {
       "role": "user",
-      "content": "do you see problems on today health records?"
+      "content": "do you see problems on my health records from today?"
     },
     {
       "role": "model",
@@ -7734,7 +8938,7 @@
     },
     {
       "role": "user",
-      "content": "analyze health readings from yesterday"
+      "content": "analyze my health readings from yesterday"
     },
     {
       "role": "model",
@@ -7832,11 +9036,11 @@
     },
     {
       "role": "user",
-      "content": "medical report"
+      "content": "create my medical report for today readings"
     },
     {
       "role": "model",
-      "content": "time-service:Get the date for today.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:Create a healthcare professional report based on the medical records."
+      "content": "time-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:List user profile properties for ${username}.\nhealth:Read medical records from ${date} for ${username}.\nquery:Create a healthcare professional report based on the medical records. You may information from provided user profile."
     }
   ],
   [
@@ -7846,11 +9050,11 @@
     },
     {
       "role": "user",
-      "content": "create medical report"
+      "content": "generate my today medical report"
     },
     {
       "role": "model",
-      "content": "time-service:Get the date for today.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:Create a healthcare professional report based on the medical records."
+      "content": "time-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:List user profile properties for ${username}.\nhealth:Read medical records from ${date} for ${username}.\nquery:Create a healthcare professional report based on the medical records. You may information from provided user profile."
     }
   ],
   [
@@ -7860,11 +9064,11 @@
     },
     {
       "role": "user",
-      "content": "print health report from today records"
+      "content": "print my health report from today records"
     },
     {
       "role": "model",
-      "content": "time-service:Get the date for today.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:Create a healthcare professional report based on the medical records."
+      "content": "time-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:List user profile properties for ${username}.\nhealth:Read medical records from ${date} for ${username}.\nquery:Create a healthcare professional report based on the medical records. You may information from provided user profile."
     }
   ],
   [
@@ -7874,11 +9078,11 @@
     },
     {
       "role": "user",
-      "content": "today medical report"
+      "content": "get my today medical report"
     },
     {
       "role": "model",
-      "content": "time-service:Get the date for today.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:Create a healthcare professional report based on the medical records."
+      "content": "time-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:List user profile properties for ${username}.\nhealth:Read medical records from ${date} for ${username}.\nquery:Create a healthcare professional report based on the medical records. You may information from provided user profile."
     }
   ],
   [
@@ -7888,11 +9092,11 @@
     },
     {
       "role": "user",
-      "content": "medical report for today"
+      "content": "my medical report for today"
     },
     {
       "role": "model",
-      "content": "time-service:Get the date for today.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:Create a healthcare professional report based on the medical records."
+      "content": "time-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:List user profile properties for ${username}.\nhealth:Read medical records from ${date} for ${username}.\nquery:Create a healthcare professional report based on the medical records. You may information from provided user profile."
     }
   ],
   [
@@ -7902,11 +9106,11 @@
     },
     {
       "role": "user",
-      "content": "yesterday medical report"
+      "content": "my yesterday medical report"
     },
     {
       "role": "model",
-      "content": "time-service:Get the date for today.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:Create a healthcare professional report based on the medical records."
+      "content": "time-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:List user profile properties for ${username}.\nhealth:Read medical records from ${date} for ${username}.\nquery:Create a healthcare professional report based on the medical records. You may information from provided user profile."
     }
   ],
   [
@@ -7916,11 +9120,11 @@
     },
     {
       "role": "user",
-      "content": "health report from yesterday measurements"
+      "content": "my health report from yesterday measurements"
     },
     {
       "role": "model",
-      "content": "time-service:Get the date for today.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:Create a healthcare professional report based on the medical records."
+      "content": "time-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:List user profile properties for ${username}.\nhealth:Read medical records from ${date} for ${username}.\nquery:Create a healthcare professional report based on the medical records. You may information from provided user profile."
     }
   ],
   [
@@ -7930,11 +9134,11 @@
     },
     {
       "role": "user",
-      "content": "medical report for january 12, 2026"
+      "content": "my medical report for january 12, 2026"
     },
     {
       "role": "model",
-      "content": "time-service:Get the date for january 12, 2026.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:Create a healthcare professional report based on the medical records."
+      "content": "time-service:Get the date for january 12, 2026.\nuser-profile:Get my username.\nuser-profile:List user profile properties for ${username}.\nhealth:Read medical records from ${date} for ${username}.\nquery:Create a healthcare professional report based on the medical records. You may information from provided user profile."
     }
   ],
   [
@@ -7944,11 +9148,11 @@
     },
     {
       "role": "user",
-      "content": "display health report from march 15, 2025"
+      "content": "display my health report from march 15, 2025"
     },
     {
       "role": "model",
-      "content": "time-service:Get the date for march 15, 2025.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:Create a healthcare professional report based on the medical records."
+      "content": "time-service:Get the date for march 15, 2025.\nuser-profile:Get my username.\nuser-profile:List user profile properties for ${username}.\nhealth:Read medical records from ${date} for ${username}.\nquery:Create a healthcare professional report based on the medical records. You may information from provided user profile."
     }
   ],
   [
@@ -7958,11 +9162,11 @@
     },
     {
       "role": "user",
-      "content": "print health report for 2025-12-01"
+      "content": "print my health report for 2025-12-01"
     },
     {
       "role": "model",
-      "content": "time-service:Get the date for 2025-12-01.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:Create a healthcare professional report based on the medical records."
+      "content": "time-service:Get the date for 2025-12-01.\nuser-profile:Get my username.\nuser-profile:List user profile properties for ${username}.\nhealth:Read medical records from ${date} for ${username}.\nquery:Create a healthcare professional report based on the medical records. You may information from provided user profile."
     }
   ],
   [
@@ -7972,11 +9176,81 @@
     },
     {
       "role": "user",
-      "content": "health status report for 2024-11-12"
+      "content": "my health status report for 2024-11-12"
     },
     {
       "role": "model",
-      "content": "time-service:Get the date for 2024-11-12.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:Create a healthcare professional report based on the medical records."
+      "content": "time-service:Get the date for 2024-11-12.\nuser-profile:Get my username.\nuser-profile:List user profile properties for ${username}.\nhealth:Read medical records from ${date} for ${username}.\nquery:Create a healthcare professional report based on the medical records. You may information from provided user profile."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "compute bmi for my height and a weight of 85"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my height.\nhealth:Calculate body mass index for a weight of 85.00 kg and height of ${height} cm.\nquery:Print computed body mass index."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "figure my body mass for a weight of 92"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my height.\nhealth:Calculate body mass index for a weight of 92.00 kg and height of ${height} cm.\nquery:Print computed body mass index."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "what is my bmi for a weight of 73.5?"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my height.\nhealth:Calculate body mass index for a weight of 73.50 kg and height of ${height} cm.\nquery:What is my BMI for a weight of 73.5 kg?"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "what would be my BMI for a weight of 78?"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my height.\nhealth:Calculate body mass index for a weight of 78.00 kg and height of ${height} cm.\nquery:What would my BMI be for a weight of 78 kg?"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "what would be my body mass index if i will weight 77 kg?"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my height.\nhealth:Calculate body mass index for a weight of 77.00 kg and height of ${height} cm.\nquery:What would my body mass index be if I weighed 77 kg?"
     }
   ],
   [
@@ -8061,76 +9335,6 @@
     {
       "role": "model",
       "content": "user-profile:Get my height.\nhealth:Calculate body mass index for a weight of 86.50 kg and height of ${height} cm.\nquery:Print computed body mass index."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "compute bmi for my height and a weight of 85"
-    },
-    {
-      "role": "model",
-      "content": "user-profile:Get my height.\nhealth:Calculate body mass index for a weight of 85.00 kg and height of ${height} cm.\nquery:Print computed body mass index."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "figure my body mass for a weight of 92"
-    },
-    {
-      "role": "model",
-      "content": "user-profile:Get my height.\nhealth:Calculate body mass index for a weight of 92.00 kg and height of ${height} cm.\nquery:Print computed body mass index."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "what is my bmi for a weight of 73.5?"
-    },
-    {
-      "role": "model",
-      "content": "user-profile:Get my height.\nhealth:Calculate body mass index for a weight of 73.50 kg and height of ${height} cm.\nquery:What is my BMI for a weight of 73.5 kg?"
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "what would be my BMI for a weight of 78?"
-    },
-    {
-      "role": "model",
-      "content": "user-profile:Get my height.\nhealth:Calculate body mass index for a weight of 78.00 kg and height of ${height} cm.\nquery:What would my BMI be for a weight of 78 kg?"
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "what would be my body mass index if i will weight 77 kg?"
-    },
-    {
-      "role": "model",
-      "content": "user-profile:Get my height.\nhealth:Calculate body mass index for a weight of 77.00 kg and height of ${height} cm.\nquery:What would my body mass index be if I weighed 77 kg?"
     }
   ],
   [
@@ -8294,11 +9498,67 @@
     },
     {
       "role": "user",
+      "content": "what is the weather like in my location?"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Get the location of ${username}.\nweather:Get current weather in ${location}.\nquery:What is the weather like in my location?"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "what is the weather like in my place?"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Get the location of ${username}.\nweather:Get current weather in ${location}.\nquery:What is the weather like in my place?"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "what is the weather like?"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Get the location of ${username}.\nweather:Get current weather in ${location}.\nquery:What is the weather like?"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
       "content": "how is weather"
     },
     {
       "role": "model",
       "content": "user-profile:Get my username.\nuser-profile:Get the location of ${username}.\nweather:Get current weather in ${location}.\nquery:How is the weather?"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "how is weather in my place"
+    },
+    {
+      "role": "model",
+      "content": "user-profile:Get my username.\nuser-profile:Get the location of ${username}.\nweather:Get current weather in ${location}.\nquery:How is the weather in my place?"
     }
   ],
   [
@@ -8336,48 +9596,6 @@
     },
     {
       "role": "user",
-      "content": "weather in pașcani, romania"
-    },
-    {
-      "role": "model",
-      "content": "weather:Get current weather in Pașcani, Romania.\nquery:Weather in Pașcani, Romania?"
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "is it raining right now in tomești, romania"
-    },
-    {
-      "role": "model",
-      "content": "weather:Get current weather in Tomești, Romania.\nquery:Is it raining right now in Tomești, Romania?"
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "is it sunny right now in siliștea, gumești, romania"
-    },
-    {
-      "role": "model",
-      "content": "weather:Get current weather in Siliștea, Gumești, Romania.\nquery:Is it sunny right now in Siliștea, Gumești, Romania?"
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
       "content": "check weather"
     },
     {
@@ -8392,67 +9610,11 @@
     },
     {
       "role": "user",
-      "content": "what is weather like on constanța, românia"
-    },
-    {
-      "role": "model",
-      "content": "weather:Get current weather in Constanța, România.\nquery:What is the weather like in Constanța, România?"
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "tell me the weather in iasi, romania"
-    },
-    {
-      "role": "model",
-      "content": "weather:Get current weather in Iași, Romania.\nquery:Tell me about the weather in Iași, Romania?"
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
       "content": "how is outdoor?"
     },
     {
       "role": "model",
       "content": "user-profile:Get my username.\nuser-profile:Get the location of ${username}.\nweather:Get current weather in ${location}.\nquery:How is outdoor?"
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "how is weather in bucharest"
-    },
-    {
-      "role": "model",
-      "content": "weather:Get current weather in Bucharest, Romania.\nquery:How is the weather in Bucharest, Romania?"
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "how is weather in brașov right now"
-    },
-    {
-      "role": "model",
-      "content": "weather:Get current weather in Brașov, Romania.\nquery:What is the weather in Brașov, Romania right now?"
     }
   ],
   [
@@ -8509,62 +9671,6 @@
     {
       "role": "model",
       "content": "user-profile:Get my username.\nuser-profile:Get the location of ${username}.\nweather:Get current weather in ${location}.\nquery:How warm is outside?"
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "how cold is in piatra-neamț, romania"
-    },
-    {
-      "role": "model",
-      "content": "weather:Get current weather in Piatra-Neamț, Romania.\nquery:How cold is in Piatra-Neamț, Romania?"
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "how cold is now in târgu-neamț, romania"
-    },
-    {
-      "role": "model",
-      "content": "weather:Get current weather in Târgu-Neamț, Romania.\nquery:How cold is now in Târgu-Neamț, Romania?"
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "i wish to know the weather for cluj napoca, romania"
-    },
-    {
-      "role": "model",
-      "content": "weather:Get current weather in Cluj-Napoca, Romania.\nquery:I wish to know the weather in Cluj-Napoca, Romania?"
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "how is current weather on california"
-    },
-    {
-      "role": "model",
-      "content": "weather:Get current weather in California.\nquery:How is current weather in California?"
     }
   ],
   [
@@ -8635,6 +9741,160 @@
     {
       "role": "model",
       "content": "user-profile:Get my username.\nuser-profile:Get the location of ${username}.\nweather:Get current weather in ${location}.\nquery:What do you think about a short stroll? Doable?"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "weather in pașcani, romania"
+    },
+    {
+      "role": "model",
+      "content": "weather:Get current weather in Pașcani, Romania.\nquery:Weather in Pașcani, Romania?"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "is it raining right now in tomești, romania"
+    },
+    {
+      "role": "model",
+      "content": "weather:Get current weather in Tomești, Romania.\nquery:Is it raining right now in Tomești, Romania?"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "is it sunny right now in siliștea, gumești, romania"
+    },
+    {
+      "role": "model",
+      "content": "weather:Get current weather in Siliștea, Gumești, Romania.\nquery:Is it sunny right now in Siliștea, Gumești, Romania?"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "what is weather like on constanța, românia"
+    },
+    {
+      "role": "model",
+      "content": "weather:Get current weather in Constanța, România.\nquery:What is the weather like in Constanța, România?"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "tell me the weather in iasi, romania"
+    },
+    {
+      "role": "model",
+      "content": "weather:Get current weather in Iași, Romania.\nquery:Tell me about the weather in Iași, Romania?"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "how cold is in piatra-neamț, romania"
+    },
+    {
+      "role": "model",
+      "content": "weather:Get current weather in Piatra-Neamț, Romania.\nquery:How cold is in Piatra-Neamț, Romania?"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "how cold is now in târgu-neamț, romania"
+    },
+    {
+      "role": "model",
+      "content": "weather:Get current weather in Târgu-Neamț, Romania.\nquery:How cold is now in Târgu-Neamț, Romania?"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "i wish to know the weather for cluj napoca, romania"
+    },
+    {
+      "role": "model",
+      "content": "weather:Get current weather in Cluj-Napoca, Romania.\nquery:I wish to know the weather in Cluj-Napoca, Romania?"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "how is current weather on california"
+    },
+    {
+      "role": "model",
+      "content": "weather:Get current weather in California.\nquery:How is current weather in California?"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "how is weather in bucharest"
+    },
+    {
+      "role": "model",
+      "content": "weather:Get current weather in Bucharest, Romania.\nquery:How is the weather in Bucharest, Romania?"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "how is weather in brașov right now"
+    },
+    {
+      "role": "model",
+      "content": "weather:Get current weather in Brașov, Romania.\nquery:What is the weather in Brașov, Romania right now?"
     }
   ],
   [

@@ -31,16 +31,6 @@ def user_rename_property(username: str, old_property: str, new_property: str):
     """
 
 
-def user_get_property(username: str, property: str):
-    """
-    Retrieves a property value from a specific user profile.
-
-    Args:
-        username: The unique, human-readable identifier for the user.
-        property: The name of the property to retrieve.
-    """
-
-
 def user_remove_property(username: str, property: str):
     """
     Removes a specific property from a user profile.
@@ -48,6 +38,16 @@ def user_remove_property(username: str, property: str):
     Args:
         username: The unique, human-readable identifier for the user.
         property: The name of the property to be deleted.
+    """
+
+
+def user_get_property(username: str, property: str):
+    """
+    Retrieves a property value from a specific user profile.
+
+    Args:
+        username: The unique, human-readable identifier for the user.
+        property: The name of the property to retrieve.
     """
 
 

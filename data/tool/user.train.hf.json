@@ -6,7 +6,7 @@
     },
     {
       "role": "user",
-      "content": "Set the social security number to 1640315227781 for Rotaru Iulian."
+      "content": "Set the social security number property to 1640315227781 for Rotaru Iulian."
     },
     {
       "role": "model",
@@ -32,33 +32,7 @@
     },
     {
       "role": "user",
-      "content": "Set the personal email address to mr.iulianrotaru@gmail.com for Rotaru Iulian."
-    },
-    {
-      "role": "model",
-      "tool_calls": [
-        {
-          "type": "function",
-          "function": {
-            "name": "user_set_property",
-            "arguments": {
-              "username": "Rotaru Iulian",
-              "property": "personal email address",
-              "value": "mr.iulianrotaru@gmail.com"
-            }
-          }
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "You are a model that can do function calling with the following functions"
-    },
-    {
-      "role": "user",
-      "content": "Set the business phone number to +40 770 555666 for Agavriloaiei Lucian."
+      "content": "Set the business phone number property to +40 770 555666 for Agavriloaiei Lucian."
     },
     {
       "role": "model",
@@ -84,7 +58,7 @@
     },
     {
       "role": "user",
-      "content": "Set the business email address to patricia.vatavu@delgaz-grid.ro for Vatavu Patricia."
+      "content": "Set the business email address property to patricia.vatavu@delgaz-grid.ro for Vatavu Patricia."
     },
     {
       "role": "model",
@@ -110,7 +84,7 @@
     },
     {
       "role": "user",
-      "content": "Set the birth date to 1967-10-21 for Gavriliu Mihaela."
+      "content": "Set the birth date property to 1967-10-21 for Gavriliu Mihaela."
     },
     {
       "role": "model",
@@ -136,7 +110,7 @@
     },
     {
       "role": "user",
-      "content": "Set the birth place to Ierbiceni, Iasi, Romania for Lupu Mihaela."
+      "content": "Set the birth place property to Ierbiceni, Iasi, Romania for Lupu Mihaela."
     },
     {
       "role": "model",
@@ -162,137 +136,7 @@
     },
     {
       "role": "user",
-      "content": "Set the location to Iasi, Romania for Vaino Alina."
-    },
-    {
-      "role": "model",
-      "tool_calls": [
-        {
-          "type": "function",
-          "function": {
-            "name": "user_set_property",
-            "arguments": {
-              "username": "Vaino Alina",
-              "property": "location",
-              "value": "Iasi, Romania"
-            }
-          }
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "You are a model that can do function calling with the following functions"
-    },
-    {
-      "role": "user",
-      "content": "Set the work phone to +40 232 444777 for Butnicu Dan."
-    },
-    {
-      "role": "model",
-      "tool_calls": [
-        {
-          "type": "function",
-          "function": {
-            "name": "user_set_property",
-            "arguments": {
-              "username": "Butnicu Dan",
-              "property": "work phone",
-              "value": "+40 232 444777"
-            }
-          }
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "You are a model that can do function calling with the following functions"
-    },
-    {
-      "role": "user",
-      "content": "Set the IBAN to RO60 RZBR 0000 0600 0779 8113 for Agavriloaiei Ioana."
-    },
-    {
-      "role": "model",
-      "tool_calls": [
-        {
-          "type": "function",
-          "function": {
-            "name": "user_set_property",
-            "arguments": {
-              "username": "Agavriloaiei Ioana",
-              "property": "IBAN",
-              "value": "RO60 RZBR 0000 0600 0779 8113"
-            }
-          }
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "You are a model that can do function calling with the following functions"
-    },
-    {
-      "role": "user",
-      "content": "Set the postal code to 785612 for Vatavu Patricia."
-    },
-    {
-      "role": "model",
-      "tool_calls": [
-        {
-          "type": "function",
-          "function": {
-            "name": "user_set_property",
-            "arguments": {
-              "username": "Vatavu Patricia",
-              "property": "postal code",
-              "value": "785612"
-            }
-          }
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "You are a model that can do function calling with the following functions"
-    },
-    {
-      "role": "user",
-      "content": "Set the street number to 13 for Fantanaru Eugenia."
-    },
-    {
-      "role": "model",
-      "tool_calls": [
-        {
-          "type": "function",
-          "function": {
-            "name": "user_set_property",
-            "arguments": {
-              "username": "Fantanaru Eugenia",
-              "property": "street number",
-              "value": "13"
-            }
-          }
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "You are a model that can do function calling with the following functions"
-    },
-    {
-      "role": "user",
-      "content": "Set the postal address to jud. Iasi, sat Valea Lupului, str. Rubinului nr. 12F, bl. Y7, et. parter, ap. 8 for Rotaru Octavian."
+      "content": "Set the postal address property to jud. Iasi, sat Valea Lupului, str. Rubinului nr. 12F, bl. Y7, et. parter, ap. 8 for Rotaru Octavian."
     },
     {
       "role": "model",
@@ -318,7 +162,7 @@
     },
     {
       "role": "user",
-      "content": "Update the personal email address to aacatrinei@yahoo.com for Acatrinei Alin."
+      "content": "Update the personal email address property to aacatrinei@yahoo.com for Acatrinei Alin."
     },
     {
       "role": "model",
@@ -344,7 +188,7 @@
     },
     {
       "role": "user",
-      "content": "Update the location to Valea Lupului, Iași, Romania for Dorneanu Sorana Ioana."
+      "content": "Update the location property to Valea Lupului, Iași, Romania for Dorneanu Sorana Ioana."
     },
     {
       "role": "model",
@@ -370,7 +214,7 @@
     },
     {
       "role": "user",
-      "content": "Update the social status to maried for Gogălniceanu Ștefan."
+      "content": "Update the social status property to maried for Gogălniceanu Ștefan."
     },
     {
       "role": "model",
@@ -396,7 +240,7 @@
     },
     {
       "role": "user",
-      "content": "Update the driving license type to professional for Fântânaru Gheorghe."
+      "content": "Update the driving license type property to professional for Fântânaru Gheorghe."
     },
     {
       "role": "model",
@@ -422,7 +266,7 @@
     },
     {
       "role": "user",
-      "content": "Update the business email address to rotaru.ionut@gmail.com for Rotaru Ionuț Ciprian."
+      "content": "Update the business email address property to rotaru.ionut@gmail.com for Rotaru Ionuț Ciprian."
     },
     {
       "role": "model",
@@ -448,7 +292,7 @@
     },
     {
       "role": "user",
-      "content": "Update the last working place to Delgaz SA for Acatrinei Ingrid."
+      "content": "Update the last working place property to Delgaz SA for Acatrinei Ingrid."
     },
     {
       "role": "model",
@@ -474,7 +318,7 @@
     },
     {
       "role": "user",
-      "content": "Update the education to military school for Lontkowschi George."
+      "content": "Rename the personal email address property to personal email for Rotaru Adelina."
     },
     {
       "role": "model",
@@ -484,9 +328,9 @@
           "function": {
             "name": "user_update_property",
             "arguments": {
-              "username": "Lontkowschi George",
-              "property": "education",
-              "value": "military school"
+              "username": "Rotaru Adelina",
+              "old_property": "personal email address",
+              "new_property": "personal email"
             }
           }
         }
@@ -500,7 +344,7 @@
     },
     {
       "role": "user",
-      "content": "Update the work phone to +40 567 123444 for Rotaru Ilie."
+      "content": "Rename the social security number property to SSN for Miron Gabriela."
     },
     {
       "role": "model",
@@ -510,9 +354,9 @@
           "function": {
             "name": "user_update_property",
             "arguments": {
-              "username": "Rotaru Ilie",
-              "property": "work phone",
-              "value": "+40 567 123444"
+              "username": "Miron Gabriela",
+              "old_property": "social security number",
+              "new_property": "SSN"
             }
           }
         }
@@ -526,7 +370,7 @@
     },
     {
       "role": "user",
-      "content": "Update the postal code to 349857 for Miron Ioan."
+      "content": "Rename the last working place property to current working place for Miron Cristian."
     },
     {
       "role": "model",
@@ -536,9 +380,9 @@
           "function": {
             "name": "user_update_property",
             "arguments": {
-              "username": "Miron Ioan",
-              "property": "postal code",
-              "value": "349857"
+              "username": "Miron Cristian",
+              "old_property": "last working place",
+              "new_property": "current working place"
             }
           }
         }
@@ -552,7 +396,7 @@
     },
     {
       "role": "user",
-      "content": "Get the personal phone number of Baciu Vasile."
+      "content": "Rename the postal address property to permanent residence for Rotaru Ioan."
     },
     {
       "role": "model",
@@ -560,10 +404,11 @@
         {
           "type": "function",
           "function": {
-            "name": "user_get_property",
+            "name": "user_update_property",
             "arguments": {
-              "username": "Baciu Vasile",
-              "property": "personal phone number"
+              "username": "Rotaru Ioan",
+              "old_property": "postal address",
+              "new_property": "permanent residence"
             }
           }
         }
@@ -577,7 +422,7 @@
     },
     {
       "role": "user",
-      "content": "Get the postal address of Miron Elena Daniela."
+      "content": "Rename the marital status property to civil status for Mutica Catalin."
     },
     {
       "role": "model",
@@ -585,10 +430,11 @@
         {
           "type": "function",
           "function": {
-            "name": "user_get_property",
+            "name": "user_update_property",
             "arguments": {
-              "username": "Miron Elena Daniela",
-              "property": "postal address"
+              "username": "Mutica Catalin",
+              "old_property": "civil status",
+              "new_property": "married"
             }
           }
         }
@@ -602,7 +448,7 @@
     },
     {
       "role": "user",
-      "content": "Get the personal email address of Rotaru Stefan."
+      "content": "Rename the genre property to sex for Mutica Catalin."
     },
     {
       "role": "model",
@@ -610,10 +456,11 @@
         {
           "type": "function",
           "function": {
-            "name": "user_get_property",
+            "name": "user_update_property",
             "arguments": {
-              "username": "Rotaru Stefan",
-              "property": "personal email address"
+              "username": "Mutica Catalin",
+              "old_property": "marital status",
+              "new_property": "married"
             }
           }
         }
@@ -627,107 +474,7 @@
     },
     {
       "role": "user",
-      "content": "Get the working place of Fantanaru Eugenia."
-    },
-    {
-      "role": "model",
-      "tool_calls": [
-        {
-          "type": "function",
-          "function": {
-            "name": "user_get_property",
-            "arguments": {
-              "username": "Fantanaru Eugenia",
-              "property": "working place"
-            }
-          }
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "You are a model that can do function calling with the following functions"
-    },
-    {
-      "role": "user",
-      "content": "Get the social status of Dorneanu Deliana."
-    },
-    {
-      "role": "model",
-      "tool_calls": [
-        {
-          "type": "function",
-          "function": {
-            "name": "user_get_property",
-            "arguments": {
-              "username": "Dorneanu Deliana",
-              "property": "social status"
-            }
-          }
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "You are a model that can do function calling with the following functions"
-    },
-    {
-      "role": "user",
-      "content": "Get the hobbies of Paduraru Adrian."
-    },
-    {
-      "role": "model",
-      "tool_calls": [
-        {
-          "type": "function",
-          "function": {
-            "name": "user_get_property",
-            "arguments": {
-              "username": "Paduraru Adrian",
-              "property": "hobbies"
-            }
-          }
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "You are a model that can do function calling with the following functions"
-    },
-    {
-      "role": "user",
-      "content": "Get the business email address of Berfelea Ana-Maria."
-    },
-    {
-      "role": "model",
-      "tool_calls": [
-        {
-          "type": "function",
-          "function": {
-            "name": "user_get_property",
-            "arguments": {
-              "username": "Berfelea Ana-Maria",
-              "property": "business email address"
-            }
-          }
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "You are a model that can do function calling with the following functions"
-    },
-    {
-      "role": "user",
-      "content": "Remove profession from Adam Iosif."
+      "content": "Remove the profession property from Adam Iosif."
     },
     {
       "role": "model",
@@ -752,7 +499,7 @@
     },
     {
       "role": "user",
-      "content": "Remove business email address from Săvulescu Marcel."
+      "content": "Remove the business email address property from Săvulescu Marcel."
     },
     {
       "role": "model",
@@ -777,7 +524,7 @@
     },
     {
       "role": "user",
-      "content": "Remove postal code from Vaino George Viorel."
+      "content": "Remove the postal code property from Vaino George Viorel."
     },
     {
       "role": "model",
@@ -802,7 +549,7 @@
     },
     {
       "role": "user",
-      "content": "Remove skill level from Cornea Sorin."
+      "content": "Remove the skill level property from Cornea Sorin."
     },
     {
       "role": "model",
@@ -827,7 +574,7 @@
     },
     {
       "role": "user",
-      "content": "Remove driving license type from Petrovici Traian."
+      "content": "Remove the driving license type property from Petrovici Traian."
     },
     {
       "role": "model",
@@ -852,7 +599,7 @@
     },
     {
       "role": "user",
-      "content": "Remove education from Trofin Gabriela."
+      "content": "Remove the education property from Trofin Gabriela."
     },
     {
       "role": "model",
@@ -864,6 +611,156 @@
             "arguments": {
               "username": "Trofin Gabriela",
               "property": "education"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Get the personal phone number property of Baciu Vasile."
+    },
+    {
+      "role": "model",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "user_get_property",
+            "arguments": {
+              "username": "Baciu Vasile",
+              "property": "personal phone number"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Get the postal address property of Miron Elena Daniela."
+    },
+    {
+      "role": "model",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "user_get_property",
+            "arguments": {
+              "username": "Miron Elena Daniela",
+              "property": "postal address"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Get the personal email address property of Rotaru Stefan."
+    },
+    {
+      "role": "model",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "user_get_property",
+            "arguments": {
+              "username": "Rotaru Stefan",
+              "property": "personal email address"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Get the working place property of Fantanaru Eugenia."
+    },
+    {
+      "role": "model",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "user_get_property",
+            "arguments": {
+              "username": "Fantanaru Eugenia",
+              "property": "working place"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Get the social status property of Dorneanu Deliana."
+    },
+    {
+      "role": "model",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "user_get_property",
+            "arguments": {
+              "username": "Dorneanu Deliana",
+              "property": "social status"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Get the hobbies property of Paduraru Adrian."
+    },
+    {
+      "role": "model",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "user_get_property",
+            "arguments": {
+              "username": "Paduraru Adrian",
+              "property": "hobbies"
             }
           }
         }

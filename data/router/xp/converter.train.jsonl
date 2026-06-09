@@ -1,0 +1,6 @@
+/* format converter */
+[{"user":"convert jsonl to markdown table","model":"goal:Convert data format.\nconverter:Convert JSONL flat objects to markdown table."}]
+[{"user":"convert jsonl objects to markdown","model":"goal:Convert data format.\nconverter:Convert JSONL flat objects to markdown table."}]
+[{"user":"convert flat objects in jsonl format to markdown table","model":"goal:Convert data format.\nconverter:Convert JSONL flat objects to markdown table."}]
+[{"user":"convert jsonl objects to html table","model":"goal:Convert data format.\nconverter:Convert JSONL flat objects to HTML table."}]
+[{"user":"convert jsonl objects to html ordered list","model":"goal:Convert data format.\nconverter:Convert JSONL flat objects to HTML ordered list."}]

@@ -24,7 +24,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Write measurements to medical database.\nuser-profile:Get my username.\nhealth:Save blood pressure measurement of 125/85 mmHg and heart rate of 70 bpm for ${username}.\nprinter:Print the summary of the saved medical readings."
+      "content": "goal:Write blood measurements to medical database.\nuser-profile:Get my username.\nhealth:Save blood pressure measurement of 125/85 mmHg and heart rate of 70 bpm for ${username}.\nprinter:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -38,7 +38,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Write measurements to medical database.\nuser-profile:Get my username.\nhealth:Save blood pressure measurement of 125/85 mmHg and heart rate of 70 bpm for ${username}.\nprinter:Print the summary of the saved medical readings."
+      "content": "goal:Write blood measurements to medical database.\nuser-profile:Get my username.\nhealth:Save blood pressure measurement of 125/85 mmHg and heart rate of 70 bpm for ${username}.\nprinter:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -52,7 +52,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Write measurements to medical database.\nuser-profile:Get my username.\nhealth:Save blood pressure measurement of 128/81 mmHg and heart rate of 55 bpm for ${username}.\nprinter:Print the summary of the saved medical readings."
+      "content": "goal:Write blood measurements to medical database.\nuser-profile:Get my username.\nhealth:Save blood pressure measurement of 128/81 mmHg and heart rate of 55 bpm for ${username}.\nprinter:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -66,7 +66,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Write measurements to medical database.\nuser-profile:Get my username.\nhealth:Save blood pressure measurement of 130/82 mmHg and heart rate of 85 bpm for ${username}.\nprinter:Print the summary of the saved medical readings."
+      "content": "goal:Write blood measurements to medical database.\nuser-profile:Get my username.\nhealth:Save blood pressure measurement of 130/82 mmHg and heart rate of 85 bpm for ${username}.\nprinter:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -80,7 +80,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Write measurements to medical database.\nuser-profile:Get my username.\nhealth:Save blood pressure measurement of 110/66 mmHg and heart rate of 84 bpm for ${username}.\nprinter:Print the summary of the saved medical readings."
+      "content": "goal:Write blood measurements to medical database.\nuser-profile:Get my username.\nhealth:Save blood pressure measurement of 110/66 mmHg and heart rate of 84 bpm for ${username}.\nprinter:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -94,7 +94,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Write measurements to medical database.\nuser-profile:Get my username.\nhealth:Save blood pressure measurement of 133/92 mmHg and heart rate of 87 bpm for ${username}.\nprinter:Print the summary of the saved medical readings."
+      "content": "goal:Write blood measurements to medical database.\nuser-profile:Get my username.\nhealth:Save blood pressure measurement of 133/92 mmHg and heart rate of 87 bpm for ${username}.\nprinter:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -108,7 +108,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Write measurements to medical database.\nuser-profile:Get my username.\nhealth:Save blood pressure measurement of 136/90 mmHg and heart rate of 82 bpm for ${username}.\nprinter:Print the summary of the saved medical readings."
+      "content": "goal:Write blood measurements to medical database.\nuser-profile:Get my username.\nhealth:Save blood pressure measurement of 136/90 mmHg and heart rate of 82 bpm for ${username}.\nprinter:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -122,7 +122,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Write measurements to medical database.\nuser-profile:Get my username.\nhealth:Save blood pressure measurement of 119/81 mmHg and heart rate of 93 bpm for ${username}.\nprinter:Print the summary of the saved medical readings."
+      "content": "goal:Write blood measurements to medical database.\nuser-profile:Get my username.\nhealth:Save blood pressure measurement of 119/81 mmHg and heart rate of 93 bpm for ${username}.\nprinter:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -136,7 +136,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Write measurements to medical database.\nuser-profile:Get my username.\nhealth:Save blood pressure measurement of 120/84 mmHg and heart rate of 76 bpm for ${username}.\nprinter:Print the summary of the saved medical readings."
+      "content": "goal:Write blood measurements to medical database.\nuser-profile:Get my username.\nhealth:Save blood pressure measurement of 120/84 mmHg and heart rate of 76 bpm for ${username}.\nprinter:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -150,7 +150,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Write measurements to medical database.\nuser-profile:Get the username for Rusu Florentin.\nhealth:Save blood pressure measurement of 118/82 mmHg and heart rate of 63 bpm for ${username}.\nprinter:Print the summary of the saved medical readings."
+      "content": "goal:Write blood measurements to medical database.\nuser-profile:Get the username for Rusu Florentin.\nhealth:Save blood pressure measurement of 118/82 mmHg and heart rate of 63 bpm for ${username}.\nprinter:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -164,7 +164,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Write measurements to medical database.\nuser-profile:Get the username for Pătrașcu Constantin.\nhealth:Save blood pressure measurement of 119/81 mmHg and heart rate of 64 bpm for ${username}.\nprinter:Print the summary of the saved medical readings."
+      "content": "goal:Write blood measurements to medical database.\nuser-profile:Get the username for Pătrașcu Constantin.\nhealth:Save blood pressure measurement of 119/81 mmHg and heart rate of 64 bpm for ${username}.\nprinter:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -178,7 +178,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Write measurements to medical database.\nuser-profile:Get the username for Gavriliu Mihaela.\nhealth:Save blood pressure measurement of 115/75 mmHg and heart rate of 60 bpm for ${username}.\nprinter:Print the summary of the saved medical readings."
+      "content": "goal:Write blood measurements to medical database.\nuser-profile:Get the username for Gavriliu Mihaela.\nhealth:Save blood pressure measurement of 115/75 mmHg and heart rate of 60 bpm for ${username}.\nprinter:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -192,7 +192,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Write measurements to medical database.\nuser-profile:Get the username for Rotaru Lucian.\nhealth:Save blood pressure measurement of 112/65 mmHg and heart rate of 78 bpm for ${username}.\nprinter:Print the summary of the saved medical readings."
+      "content": "goal:Write blood measurements to medical database.\nuser-profile:Get the username for Rotaru Lucian.\nhealth:Save blood pressure measurement of 112/65 mmHg and heart rate of 78 bpm for ${username}.\nprinter:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -206,7 +206,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Write measurements to medical database.\nuser-profile:Get the username for Miron Elena Daniela.\nhealth:Save blood pressure measurement of 133/92 mmHg and heart rate of 87 bpm for ${username}.\nprinter:Print the summary of the saved medical readings."
+      "content": "goal:Write blood measurements to medical database.\nuser-profile:Get the username for Miron Elena Daniela.\nhealth:Save blood pressure measurement of 133/92 mmHg and heart rate of 87 bpm for ${username}.\nprinter:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -220,7 +220,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Write measurements to medical database.\nuser-profile:Get the username for Rotaru Iulian.\nhealth:Save blood pressure measurement of 125/83 mmHg and heart rate of 73 bpm for ${username}.\nprinter:Print the summary of the saved medical readings."
+      "content": "goal:Write blood measurements to medical database.\nuser-profile:Get the username for Rotaru Iulian.\nhealth:Save blood pressure measurement of 125/83 mmHg and heart rate of 73 bpm for ${username}.\nprinter:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -234,7 +234,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Write measurements to medical database.\nuser-profile:Get my username.\nhealth:Save body temperature of 35.10 °C for ${username}.\nprinter:Print the summary of the saved medical readings."
+      "content": "goal:Write body temperature to medical database.\nuser-profile:Get my username.\nhealth:Save body temperature of 35.10 °C for ${username}.\nprinter:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -248,7 +248,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Write measurements to medical database.\nuser-profile:Get my username.\nhealth:Save body temperature of 35.00 °C for ${username}.\nprinter:Print the summary of the saved medical readings."
+      "content": "goal:Write body temperature to medical database.\nuser-profile:Get my username.\nhealth:Save body temperature of 35.00 °C for ${username}.\nprinter:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -262,7 +262,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Write measurements to medical database.\nuser-profile:Get my username.\nhealth:Save body temperature of 34.30 °C for ${username}.\nprinter:Print the summary of the saved medical readings."
+      "content": "goal:Write body temperature to medical database.\nuser-profile:Get my username.\nhealth:Save body temperature of 34.30 °C for ${username}.\nprinter:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -276,7 +276,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Write measurements to medical database.\nuser-profile:Get my username.\nhealth:Save body temperature of 35.90 °C for ${username}.\nprinter:Print the summary of the saved medical readings."
+      "content": "goal:Write body temperature to medical database.\nuser-profile:Get my username.\nhealth:Save body temperature of 35.90 °C for ${username}.\nprinter:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -290,7 +290,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Write measurements to medical database.\nuser-profile:Get my username.\nhealth:Save body temperature of 34.80 °C for ${username}.\nprinter:Print the summary of the saved medical readings."
+      "content": "goal:Write body temperature to medical database.\nuser-profile:Get my username.\nhealth:Save body temperature of 34.80 °C for ${username}.\nprinter:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -304,7 +304,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Write measurements to medical database.\nuser-profile:Get my username.\nhealth:Save body temperature of 35.20 °C for ${username}.\nprinter:Print the summary of the saved medical readings."
+      "content": "goal:Write body temperature to medical database.\nuser-profile:Get my username.\nhealth:Save body temperature of 35.20 °C for ${username}.\nprinter:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -318,7 +318,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Write measurements to medical database.\nuser-profile:Get my username.\nhealth:Save body temperature of 37.10 °C for ${username}.\nprinter:Print the summary of the saved medical readings."
+      "content": "goal:Write body temperature to medical database.\nuser-profile:Get my username.\nhealth:Save body temperature of 37.10 °C for ${username}.\nprinter:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -332,7 +332,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Write measurements to medical database.\nuser-profile:Get the username for Cojocaru Cristian.\nhealth:Save body temperature of 35.10 °C for ${username}.\nprinter:Print the summary of the saved medical readings."
+      "content": "goal:Write body temperature to medical database.\nuser-profile:Get the username for Cojocaru Cristian.\nhealth:Save body temperature of 35.10 °C for ${username}.\nprinter:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -346,7 +346,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Write measurements to medical database.\nuser-profile:Get the username for Acatrinei Liviu.\nhealth:Save body temperature of 35.20 °C for ${username}.\nprinter:Print the summary of the saved medical readings."
+      "content": "goal:Write body temperature to medical database.\nuser-profile:Get the username for Acatrinei Liviu.\nhealth:Save body temperature of 35.20 °C for ${username}.\nprinter:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -360,7 +360,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Write measurements to medical database.\nuser-profile:Get the username for Gogălniceanu Ștefan.\nhealth:Save body temperature of 35.60 °C for ${username}.\nprinter:Print the summary of the saved medical readings."
+      "content": "goal:Write body temperature to medical database.\nuser-profile:Get the username for Gogălniceanu Ștefan.\nhealth:Save body temperature of 35.60 °C for ${username}.\nprinter:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -374,7 +374,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Write measurements to medical database.\nuser-profile:Get the username for Lontkowschi George.\nhealth:Save body temperature of 36.20 °C for ${username}.\nprinter:Print the summary of the saved medical readings."
+      "content": "goal:Write body temperature to medical database.\nuser-profile:Get the username for Lontkowschi George.\nhealth:Save body temperature of 36.20 °C for ${username}.\nprinter:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -388,7 +388,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Write measurements to medical database.\nuser-profile:Get the username for Teodorescu Tiberiu Dinu.\nhealth:Save body temperature of 34.10 °C for ${username}.\nprinter:Print the summary of the saved medical readings."
+      "content": "goal:Write body temperature to medical database.\nuser-profile:Get the username for Teodorescu Tiberiu Dinu.\nhealth:Save body temperature of 34.10 °C for ${username}.\nprinter:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -402,7 +402,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Write measurements to medical database.\nuser-profile:Get the username for Dorneanu Deliana.\nhealth:Save body temperature of 36.70 °C for ${username}.\nprinter:Print the summary of the saved medical readings."
+      "content": "goal:Write body temperature to medical database.\nuser-profile:Get the username for Dorneanu Deliana.\nhealth:Save body temperature of 36.70 °C for ${username}.\nprinter:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -724,7 +724,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Write measurements to medical database.\nuser-profile:Get my username.\nhealth:Save blood glucose level of 103 mg/dL for ${username}.\nprinter:Print the summary of the saved medical readings."
+      "content": "goal:Write blood glucose to medical database.\nuser-profile:Get my username.\nhealth:Save blood glucose level of 103 mg/dL for ${username}.\nprinter:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -738,7 +738,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Write measurements to medical database.\nuser-profile:Get my username.\nhealth:Save blood glucose level of 107 mg/dL for ${username}.\nprinter:Print the summary of the saved medical readings."
+      "content": "goal:Write blood glucose to medical database.\nuser-profile:Get my username.\nhealth:Save blood glucose level of 107 mg/dL for ${username}.\nprinter:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -752,7 +752,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Write measurements to medical database.\nuser-profile:Get my username.\nhealth:Save blood glucose level of 127 mg/dL for ${username}.\nprinter:Print the summary of the saved medical readings."
+      "content": "goal:Write blood glucose to medical database.\nuser-profile:Get my username.\nhealth:Save blood glucose level of 127 mg/dL for ${username}.\nprinter:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -766,7 +766,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Write measurements to medical database.\nuser-profile:Get my username.\nhealth:Save blood glucose level of 94 mg/dL for ${username}.\nprinter:Print the summary of the saved medical readings."
+      "content": "goal:Write blood glucose to medical database.\nuser-profile:Get my username.\nhealth:Save blood glucose level of 94 mg/dL for ${username}.\nprinter:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -780,7 +780,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Write measurements to medical database.\nuser-profile:Get my username.\nhealth:Save blood glucose level of 118 mg/dL for ${username}.\nprinter:Print the summary of the saved medical readings."
+      "content": "goal:Write blood glucose to medical database.\nuser-profile:Get my username.\nhealth:Save blood glucose level of 118 mg/dL for ${username}.\nprinter:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -794,7 +794,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Write measurements to medical database.\nuser-profile:Get the username for Gavriliu Petronela\nhealth:Save blood glucose level of 102 mg/dL for ${username}.\nprinter:Print the summary of the saved medical readings."
+      "content": "goal:Write blood glucose to medical database.\nuser-profile:Get the username for Gavriliu Petronela\nhealth:Save blood glucose level of 102 mg/dL for ${username}.\nprinter:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -808,7 +808,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Write measurements to medical database.\nuser-profile:Get the username for Gavriliu Andrei.\nhealth:Save blood glucose level of 95 mg/dL for ${username}.\nprinter:Print the summary of the saved medical readings."
+      "content": "goal:Write blood glucose to medical database.\nuser-profile:Get the username for Gavriliu Andrei.\nhealth:Save blood glucose level of 95 mg/dL for ${username}.\nprinter:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -822,7 +822,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Write measurements to medical database.\nuser-profile:Get the username for Fântânaru Eugenia\nhealth:Save blood glucose level of 105 mg/dL for ${username}.\nprinter:Print the summary of the saved medical readings."
+      "content": "goal:Write blood glucose to medical database.\nuser-profile:Get the username for Fântânaru Eugenia\nhealth:Save blood glucose level of 105 mg/dL for ${username}.\nprinter:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -836,7 +836,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Write measurements to medical database.\nuser-profile:Get the username for Agavriloaiei Mariana.\nhealth:Save blood glucose level of 98 mg/dL for ${username}.\nprinter:Print the summary of the saved medical readings."
+      "content": "goal:Write blood glucose to medical database.\nuser-profile:Get the username for Agavriloaiei Mariana.\nhealth:Save blood glucose level of 98 mg/dL for ${username}.\nprinter:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -850,7 +850,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Write measurements to medical database.\nuser-profile:Get the username for Glodeanu Razvan.\nhealth:Save blood glucose level of 128 mg/dL for ${username}.\nprinter:Print the summary of the saved medical readings."
+      "content": "goal:Write blood glucose to medical database.\nuser-profile:Get the username for Glodeanu Razvan.\nhealth:Save blood glucose level of 128 mg/dL for ${username}.\nprinter:Print the summary of the saved medical readings."
     }
   ],
   [

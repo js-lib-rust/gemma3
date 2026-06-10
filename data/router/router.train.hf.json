@@ -416,6 +416,1994 @@
     },
     {
       "role": "model",
+      "content": "goal:Write body weight to medical database.\nuser-profile:Get my username.\nuser-profile:Get the height property of ${username}.\nhealth:Save body weight of 93.75 kg and height of ${height} cm for ${username}.\nprinter:Print the summary of the saved medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "save my weight of 89"
+    },
+    {
+      "role": "model",
+      "content": "goal:Write body weight to medical database.\nuser-profile:Get my username.\nuser-profile:Get the height property of ${username}.\nhealth:Save body weight of 89.00 kg and height of ${height} cm for ${username}.\nprinter:Print the summary of the saved medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "save my body weight of 89.00"
+    },
+    {
+      "role": "model",
+      "content": "goal:Write body weight to medical database.\nuser-profile:Get my username.\nuser-profile:Get the height property of ${username}.\nhealth:Save body weight of 89.00 kg and height of ${height} cm for ${username}.\nprinter:Print the summary of the saved medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "save my weight 88"
+    },
+    {
+      "role": "model",
+      "content": "goal:Write body weight to medical database.\nuser-profile:Get my username.\nuser-profile:Get the height property of ${username}.\nhealth:Save body weight of 88.00 kg and height of ${height} cm for ${username}.\nprinter:Print the summary of the saved medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "save my weight of 88.5"
+    },
+    {
+      "role": "model",
+      "content": "goal:Write body weight to medical database.\nuser-profile:Get my username.\nuser-profile:Get the height property of ${username}.\nhealth:Save body weight of 88.50 kg and height of ${height} cm for ${username}.\nprinter:Print the summary of the saved medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "save my weight measurement of 87.75"
+    },
+    {
+      "role": "model",
+      "content": "goal:Write body weight to medical database.\nuser-profile:Get my username.\nuser-profile:Get the height property of ${username}.\nhealth:Save body weight of 87.75 kg and height of ${height} cm for ${username}.\nprinter:Print the summary of the saved medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "write my weight measurement 89.75"
+    },
+    {
+      "role": "model",
+      "content": "goal:Write body weight to medical database.\nuser-profile:Get my username.\nuser-profile:Get the height property of ${username}.\nhealth:Save body weight of 89.75 kg and height of ${height} cm for ${username}.\nprinter:Print the summary of the saved medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "record my body weight of 92"
+    },
+    {
+      "role": "model",
+      "content": "goal:Write body weight to medical database.\nuser-profile:Get my username.\nuser-profile:Get the height property of ${username}.\nhealth:Save my body weight of 92.00 kg and height of ${height} cm for ${username}.\nprinter:Print the summary of the saved medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "insert my body weight 82.5"
+    },
+    {
+      "role": "model",
+      "content": "goal:Write body weight to medical database.\nuser-profile:Get my username.\nuser-profile:Get the height property of ${username}.\nhealth:Save body weight of 82.50 kg and height of ${height} cm for ${username}.\nprinter:Print the summary of the saved medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "insert my weight of 86.25 into health db"
+    },
+    {
+      "role": "model",
+      "content": "goal:Write body weight to medical database.\nuser-profile:Get my username.\nuser-profile:Get the height property of ${username}.\nhealth:Save body weight of 86.25 kg and height of ${height} cm for ${username}.\nprinter:Print the summary of the saved medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "register my weight of 94"
+    },
+    {
+      "role": "model",
+      "content": "goal:Write body weight to medical database.\nuser-profile:Get my username.\nuser-profile:Get the height property of ${username}.\nhealth:Save body weight of 94.00 kg and height of ${height} cm for ${username}.\nprinter:Print the summary of the saved medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "write my body weight 75.5"
+    },
+    {
+      "role": "model",
+      "content": "goal:Write body weight to medical database.\nuser-profile:Get my username.\nuser-profile:Get the height property of ${username}.\nhealth:Save body weight of 75.50 kg and height of ${height} cm for ${username}.\nprinter:Print the summary of the saved medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "record my weight 62 to medical database"
+    },
+    {
+      "role": "model",
+      "content": "goal:Write body weight to medical database.\nuser-profile:Get my username.\nuser-profile:Get the height property of ${username}.\nhealth:Save body weight of 62.00 kg and height of ${height} cm for ${username}.\nprinter:Print the summary of the saved medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "insert baciu vasile weight of 89.5"
+    },
+    {
+      "role": "model",
+      "content": "goal:Write body weight to medical database.\nuser-profile:Get the username for Baciu Vasile\nuser-profile:Get the height property of ${username}.\nhealth:Save body weight of 89.50 kg and height of ${height} cm for ${username}.\nprinter:Print the summary of the saved medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "record weight for agavriloaiei ioana of 56"
+    },
+    {
+      "role": "model",
+      "content": "goal:Write body weight to medical database.\nuser-profile:Get the username for Agavriloaiei Ioana.\nuser-profile:Get the height property of ${username}.\nhealth:Save body weight of 56.00 kg and height of ${height} cm for ${username}.\nprinter:Print the summary of the saved medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "save weight of 88.5 kg to preda marin"
+    },
+    {
+      "role": "model",
+      "content": "goal:Write body weight to medical database.\nuser-profile:Get the username for Preda Marin.\nuser-profile:Get the height property of Preda Marin.\nhealth:Save body weight of 88.50 kg and height of ${height} cm for ${username}.\nprinter:Print the summary of the saved medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "write weight 74 to Jipa Bogdan"
+    },
+    {
+      "role": "model",
+      "content": "goal:Write body weight to medical database.\nuser-profile:Get the username for Jipa Bogdan.\nuser-profile:Get the height property of ${username}.\nhealth:Save body weight of 74.00 kg and height of ${height} cm for ${username}.\nprinter:Print the summary of the saved medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "record weight 76.5 for rotaru mihai"
+    },
+    {
+      "role": "model",
+      "content": "goal:Write body weight to medical database.\nuser-profile:Get the username for Rotaru Mihai.\nuser-profile:Get the height property of ${username}.\nhealth:Save body weight of 76.50 kg and height of ${height} cm for ${username}.\nprinter:Print the summary of the saved medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "save dorneanu sorana ioana weight 22.5"
+    },
+    {
+      "role": "model",
+      "content": "goal:Write body weight to medical database.\nuser-profile:Get the username for Dorneanu Sorana Ioana.\nuser-profile:Get the height property of ${username}.\nhealth:Save body weight of 22.50 kg and height of ${height} cm for ${username}.\nprinter:Print the summary of the saved medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "logs weight of 103.75 for rotaru stefan"
+    },
+    {
+      "role": "model",
+      "content": "goal:Write body weight to medical database.\nuser-profile:Get the username for Rotaru Ștefan.\nuser-profile:Get the height property of ${username}.\nhealth:Save body weight of 103.75 kg and height of ${height} cm for ${username}.\nprinter:Print the summary of the saved medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "record adam nicolae ioan weight 66.25"
+    },
+    {
+      "role": "model",
+      "content": "goal:Write body weight to medical database.\nuser-profile:Get the username for Adam Nicolae Ioan.\nuser-profile:Get the height property of ${username}.\nhealth:Save body weight of 66.25 kg and height of ${height} cm for ${username}.\nprinter:Print the summary of the saved medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "write marton csaba weight of 77.75 kg"
+    },
+    {
+      "role": "model",
+      "content": "goal:Write body weight to medical database.\nuser-profile:Get the username for Marton Csaba.\nuser-profile:Get the height property of ${username}.\nhealth:Save body weight of 77.75 kg and height of ${height} cm for ${username}.\nprinter:Print the summary of the saved medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "insert my glucose level of 103"
+    },
+    {
+      "role": "model",
+      "content": "goal:Write measurements to medical database.\nuser-profile:Get my username.\nhealth:Save blood glucose level of 103 mg/dL for ${username}.\nprinter:Print the summary of the saved medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "record my blood sugar 107"
+    },
+    {
+      "role": "model",
+      "content": "goal:Write measurements to medical database.\nuser-profile:Get my username.\nhealth:Save blood glucose level of 107 mg/dL for ${username}.\nprinter:Print the summary of the saved medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "write my blood sugar level of 127"
+    },
+    {
+      "role": "model",
+      "content": "goal:Write measurements to medical database.\nuser-profile:Get my username.\nhealth:Save blood glucose level of 127 mg/dL for ${username}.\nprinter:Print the summary of the saved medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "save my glucose 94"
+    },
+    {
+      "role": "model",
+      "content": "goal:Write measurements to medical database.\nuser-profile:Get my username.\nhealth:Save blood glucose level of 94 mg/dL for ${username}.\nprinter:Print the summary of the saved medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "save my blood glucose of 118"
+    },
+    {
+      "role": "model",
+      "content": "goal:Write measurements to medical database.\nuser-profile:Get my username.\nhealth:Save blood glucose level of 118 mg/dL for ${username}.\nprinter:Print the summary of the saved medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "save gavriliu petronela glucose level of 102"
+    },
+    {
+      "role": "model",
+      "content": "goal:Write measurements to medical database.\nuser-profile:Get the username for Gavriliu Petronela\nhealth:Save blood glucose level of 102 mg/dL for ${username}.\nprinter:Print the summary of the saved medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "record blood glucose level for gavriliu andrei of 95"
+    },
+    {
+      "role": "model",
+      "content": "goal:Write measurements to medical database.\nuser-profile:Get the username for Gavriliu Andrei.\nhealth:Save blood glucose level of 95 mg/dL for ${username}.\nprinter:Print the summary of the saved medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "save glucose level of 105 to fântânaru eugenia"
+    },
+    {
+      "role": "model",
+      "content": "goal:Write measurements to medical database.\nuser-profile:Get the username for Fântânaru Eugenia\nhealth:Save blood glucose level of 105 mg/dL for ${username}.\nprinter:Print the summary of the saved medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "write agavriloaiei mariana glucose level of 98"
+    },
+    {
+      "role": "model",
+      "content": "goal:Write measurements to medical database.\nuser-profile:Get the username for Agavriloaiei Mariana.\nhealth:Save blood glucose level of 98 mg/dL for ${username}.\nprinter:Print the summary of the saved medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "record glodeanu razvan blood sugar of 128"
+    },
+    {
+      "role": "model",
+      "content": "goal:Write measurements to medical database.\nuser-profile:Get the username for Glodeanu Razvan.\nhealth:Save blood glucose level of 128 mg/dL for ${username}.\nprinter:Print the summary of the saved medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "read my medical records from today"
+    },
+    {
+      "role": "model",
+      "content": "goal:List records from medical database.\ntime-service:Get the date for today.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:Print the summary of the medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "read my medical records"
+    },
+    {
+      "role": "model",
+      "content": "goal:List records from medical database.\ntime-service:Get the date for today.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:Print the summary of the medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "list my health measurements"
+    },
+    {
+      "role": "model",
+      "content": "goal:List records from medical database.\ntime-service:Get the date for today.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:Print the summary of the medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "show my health measurements"
+    },
+    {
+      "role": "model",
+      "content": "goal:List records from medical database.\ntime-service:Get the date for today.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:Print the summary of the medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "my health measurements"
+    },
+    {
+      "role": "model",
+      "content": "goal:List records from medical database.\ntime-service:Get the date for today.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:Print the summary of the medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "my health records"
+    },
+    {
+      "role": "model",
+      "content": "goal:List records from medical database.\ntime-service:Get the date for today.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:Print the summary of the medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "my health records from day before yesterday"
+    },
+    {
+      "role": "model",
+      "content": "goal:List records from medical database.\ntime-service:Get the date for day before yesterday.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:Print the summary of the medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "my medical readings"
+    },
+    {
+      "role": "model",
+      "content": "goal:List records from medical database.\ntime-service:Get the date for today.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:Print the summary of the medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "display my health readings"
+    },
+    {
+      "role": "model",
+      "content": "goal:List records from medical database.\ntime-service:Get the date for today.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:Print the summary of the medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "list my today medical readings"
+    },
+    {
+      "role": "model",
+      "content": "goal:List records from medical database.\ntime-service:Get the date for today.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:Print the summary of the medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "my yesterday health measurements"
+    },
+    {
+      "role": "model",
+      "content": "goal:List records from medical database.\ntime-service:Get the date for yesterday.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:Print the summary of the medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "my yesterday medical readings"
+    },
+    {
+      "role": "model",
+      "content": "goal:List records from medical database.\ntime-service:Get the date for yesterday.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:Print the summary of the medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "my yesterday medical records"
+    },
+    {
+      "role": "model",
+      "content": "goal:List records from medical database.\ntime-service:Get the date for yesterday.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:Print the summary of the medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "my medical readings from january 22"
+    },
+    {
+      "role": "model",
+      "content": "goal:List records from medical database.\ntime-service:Get the date for January, 22.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:Print the summary of the medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "my health records from february 2"
+    },
+    {
+      "role": "model",
+      "content": "goal:List records from medical database.\ntime-service:Get the date for February, 2.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:Print the summary of the medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "my health measurement in 2026-01-13"
+    },
+    {
+      "role": "model",
+      "content": "goal:List records from medical database.\ntime-service:Get the date for 2026-01-13.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:Print the summary of the medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "list my health measurement in 2026-02-04"
+    },
+    {
+      "role": "model",
+      "content": "goal:List records from medical database.\ntime-service:Get the date for 2026-02-04.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:Print the summary of the medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "print my today medical records"
+    },
+    {
+      "role": "model",
+      "content": "goal:List records from medical database.\ntime-service:Get the date for today.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:Print the summary of the medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "read rotaru iulian medical records from today"
+    },
+    {
+      "role": "model",
+      "content": "goal:List records from medical database.\nuser-profile:Get the username for Rotaru Iulian.\ntime-service:Get the date for today.\nhealth:Read medical records from ${date} for ${username}.\nquery:Print the summary of the medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "read medical records for gogalniceanu stefan"
+    },
+    {
+      "role": "model",
+      "content": "goal:List records from medical database.\nuser-profile:Get the username for Gogălniceanu Ștefan.\ntime-service:Get the date for today.\nhealth:Read medical records from ${date} for ${username}.\nquery:Print the summary of the medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "read today medical records for acatrinei ingrid"
+    },
+    {
+      "role": "model",
+      "content": "goal:List records from medical database.\nuser-profile:Get the username for Acatrinei Ingrid.\ntime-service:Get the date for today.\nhealth:Read medical records from ${date} for ${username}.\nquery:Print the summary of the medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "list health measurements for lontkowschi mirela petronela"
+    },
+    {
+      "role": "model",
+      "content": "goal:List records from medical database.\nuser-profile:Get the username for Lontkowschi Mirela Petronela.\ntime-service:Get the date for today.\nhealth:Read medical records from ${date} for ${username}.\nquery:Print the summary of the medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "miron silvia health records from day before yesterday"
+    },
+    {
+      "role": "model",
+      "content": "goal:List records from medical database.\nuser-profile:Get the username for Miron Silvia.\ntime-service:Get the date for yesterday.\nhealth:Read medical records from the ${date} for ${username}.\nquery:Print the summary of the medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "readings from february 12 for cornea sorin"
+    },
+    {
+      "role": "model",
+      "content": "goal:List records from medical database.\nuser-profile:Get the username for Cornea Sorin.\ntime-service:Get the date for today.\nhealth:Read medical records from ${date} for ${username}.\nquery:Print the summary of the medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "read medical records from september 10 for mihalache ioan"
+    },
+    {
+      "role": "model",
+      "content": "goal:List records from medical database.\nuser-profile:Get the username for Mihalache Ioan.\ntime-service:Get the date for September, 10.\nhealth:Read medical records from ${date} for ${username}.\nquery:Print the summary of the medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "read medical records from 2022-11-13 for savulescu marcel"
+    },
+    {
+      "role": "model",
+      "content": "goal:List records from medical database.\nuser-profile:Get the username for Savulescu Marcel.\ntime-service:Get the date for 2022-11-13.\nhealth:Read medical records from ${date} for ${username}.\nquery:Print the summary of the medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "print today medical records for gavriliu mihaela"
+    },
+    {
+      "role": "model",
+      "content": "goal:List records from medical database.\nuser-profile:Get the username for Gavriliu Mihaela.\ntime-service:Get the date for today.\nhealth:Read medical records from ${date} for ${username}.\nquery:Print the summary of the medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "display pascaru radu health readings"
+    },
+    {
+      "role": "model",
+      "content": "goal:List records from medical database.\nuser-profile:Get the username for Pascaru Radu.\ntime-service:Get the date for today.\nhealth:Read medical records from ${date} for ${username}.\nquery:Print the summary of the medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "yesterday medical readings of oprea lucian"
+    },
+    {
+      "role": "model",
+      "content": "goal:List records from medical database.\nuser-profile:Get the username for Oprea Lucian.\ntime-service:Get the date for yesterday.\nhealth:Read medical records from ${date} for ${username}.\nquery:Print the summary of the medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "show health measurements of cubasa leonardo"
+    },
+    {
+      "role": "model",
+      "content": "goal:List records from medical database.\nuser-profile:Get the username for Cubasa Leonardo.\ntime-service:Get the date for today.\nhealth:Read medical records from ${date} for ${username}.\nquery:Print the summary of the medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "list health measurement in 2026-02-04 of paduraru adrian"
+    },
+    {
+      "role": "model",
+      "content": "goal:List records from medical database.\nuser-profile:Get the username for Paduraru Adrian.\ntime-service:Get the date for 2026-02-04.\nhealth:Read medical records from ${date} for ${username}.\nquery:Print the summary of the medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "print today medical records for avarvarei ileana"
+    },
+    {
+      "role": "model",
+      "content": "goal:List records from medical database.\ntime-service:Get the date for today.\nhealth:Read medical records from ${date} for ${username}.\nquery:Print the summary of the medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "print today medical records as markdown table"
+    },
+    {
+      "role": "model",
+      "content": "goal:List records from medical database.\ntime-service:Get the date for today.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nconverter:Convert JSONL flat objects to markdown table.\nquery:Print the summary of medical readings as markdown table."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "print today medical records as markdown table for dorneanu simona"
+    },
+    {
+      "role": "model",
+      "content": "goal:List records from medical database.\ntime-service:Get the date for today.\nhealth:Read medical records from ${date} for ${username}.\nconverter:Convert JSONL flat objects to markdown table.\nquery:Print the summary of medical readings as markdown table."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "print health measurements"
+    },
+    {
+      "role": "model",
+      "content": "goal:List records from medical database.\ntime-service:Get the date for today.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:Print the summary of the medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "print medical records from this monday"
+    },
+    {
+      "role": "model",
+      "content": "goal:List records from medical database.\ntime-service:Get the date for last Monday.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:Print the summary of the medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "is there something wrong with my today medical readings?"
+    },
+    {
+      "role": "model",
+      "content": "goal:Evaluate medical readings.\ntime-service:Get the date for today.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nhealth:Evaluate medical readings.\nquery:Is there something wrong with my today medical readings?"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "check my today medical readings"
+    },
+    {
+      "role": "model",
+      "content": "goal:Evaluate medical readings.\ntime-service:Get the date for today.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nhealth:Evaluate medical readings.\nquery:Check my today medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "investigate my health records from today"
+    },
+    {
+      "role": "model",
+      "content": "goal:Evaluate medical readings.\ntime-service:Get the date for today.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nhealth:Evaluate medical readings.\nquery:Investigate today health records."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "evaluate my medical records from today"
+    },
+    {
+      "role": "model",
+      "content": "goal:Evaluate medical readings.\ntime-service:Get the date for today.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nhealth:Evaluate medical readings.\nquery:Evaluate my medical records from today."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "what is your opinion about my medical readings from today?"
+    },
+    {
+      "role": "model",
+      "content": "goal:Evaluate medical readings.\ntime-service:Get the date for today.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nhealth:Evaluate medical readings.\nquery:What is your opinion about my medical readings from today?"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "do you see problems on my health records from today?"
+    },
+    {
+      "role": "model",
+      "content": "goal:Evaluate medical readings.\ntime-service:Get the date for today.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nhealth:Evaluate medical readings.\nquery:Do you see problems on today health records?"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "analyze my health readings from yesterday"
+    },
+    {
+      "role": "model",
+      "content": "goal:Evaluate medical readings.\ntime-service:Get the date for yesterday.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nhealth:Evaluate medical readings.\nquery:Analyze health readings from today?"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get my blood pressure readings"
+    },
+    {
+      "role": "model",
+      "content": "goal:Execute query on medical database.\ntime-service:Get the date for today.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:What are my blood measurements today?"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get my blood measurements recorded yesterday"
+    },
+    {
+      "role": "model",
+      "content": "goal:Execute query on medical database.\ntime-service:Get the date for yesterday.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:What are my blood measurements today?"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "give me my heart measurements, taken this monday"
+    },
+    {
+      "role": "model",
+      "content": "goal:Execute query on medical database.\ntime-service:Get the date for last Monday.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:What are my blood measurements today?"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "what are my blood measurements from today"
+    },
+    {
+      "role": "model",
+      "content": "goal:Execute query on medical database.\ntime-service:Get the date for today.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:What are my blood measurements today?"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get my weight from medical database"
+    },
+    {
+      "role": "model",
+      "content": "goal:Execute query on medical database.\ntime-service:Get the date for today.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:What is my weight?"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get my recorded weight"
+    },
+    {
+      "role": "model",
+      "content": "goal:Execute query on medical database.\ntime-service:Get the date for today.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:What is my weight?"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "what is my weight measurement"
+    },
+    {
+      "role": "model",
+      "content": "goal:Execute query on medical database.\ntime-service:Get the date for today.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:What is my weight?"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "what is my today weight?"
+    },
+    {
+      "role": "model",
+      "content": "goal:Execute query on medical database.\ntime-service:Get the date for today.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:What is my today weight?"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "what was my yesterday weight"
+    },
+    {
+      "role": "model",
+      "content": "goal:Execute query on medical database.\ntime-service:Get the date for yesterday.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:What was my yesterday weight?"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "what was my weight on yesterday?"
+    },
+    {
+      "role": "model",
+      "content": "goal:Execute query on medical database.\ntime-service:Get the date for yesterday.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:What was my weight on yesterday?"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "how much did i weigh yesterday?"
+    },
+    {
+      "role": "model",
+      "content": "goal:Execute query on medical database.\ntime-service:Get the date for yesterday.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:How much did I weigh yesterday?"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "my weight on the day before yesterday"
+    },
+    {
+      "role": "model",
+      "content": "goal:Execute query on medical database.\ntime-service:Get the date for the day before yesterday.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:What was my weight on ${date}?"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "my weight measured 3 days ago"
+    },
+    {
+      "role": "model",
+      "content": "goal:Execute query on medical database.\ntime-service:Get the date for 3 days ago.\nuser-profile:Get my username.\nhealth:Read medical records from ${date} for ${username}.\nquery:What was my weight on ${date}?"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "create my medical report for today readings"
+    },
+    {
+      "role": "model",
+      "content": "goal:Create a report on the medical records.\ntime-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:List user profile properties for ${username}.\nhealth:Read medical records from ${date} for ${username}.\nquery:Create a healthcare professional report based on the medical records. You may use information from provided user profile."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "make a report of my vitals from today"
+    },
+    {
+      "role": "model",
+      "content": "goal:Create a report on the medical records.\ntime-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:List user profile properties for ${username}.\nhealth:Read medical records from ${date} for ${username}.\nquery:Create a healthcare professional report based on the medical records. You may use information from provided user profile."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "generate my today medical report"
+    },
+    {
+      "role": "model",
+      "content": "goal:Create a report on the medical records.\ntime-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:List user profile properties for ${username}.\nhealth:Read medical records from ${date} for ${username}.\nquery:Create a healthcare professional report based on the medical records. You may use information from provided user profile."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "print my health report from today records"
+    },
+    {
+      "role": "model",
+      "content": "goal:Create a report on the medical records.\ntime-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:List user profile properties for ${username}.\nhealth:Read medical records from ${date} for ${username}.\nquery:Create a healthcare professional report based on the medical records. You may use information from provided user profile."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get my today medical report"
+    },
+    {
+      "role": "model",
+      "content": "goal:Create a report on the medical records.\ntime-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:List user profile properties for ${username}.\nhealth:Read medical records from ${date} for ${username}.\nquery:Create a healthcare professional report based on the medical records. You may use information from provided user profile."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "my medical report for today"
+    },
+    {
+      "role": "model",
+      "content": "goal:Create a report on the medical records.\ntime-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:List user profile properties for ${username}.\nhealth:Read medical records from ${date} for ${username}.\nquery:Create a healthcare professional report based on the medical records. You may use information from provided user profile."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "my yesterday medical report"
+    },
+    {
+      "role": "model",
+      "content": "goal:Create a report on the medical records.\ntime-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:List user profile properties for ${username}.\nhealth:Read medical records from ${date} for ${username}.\nquery:Create a healthcare professional report based on the medical records. You may use information from provided user profile."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "my health report from yesterday measurements"
+    },
+    {
+      "role": "model",
+      "content": "goal:Create a report on the medical records.\ntime-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:List user profile properties for ${username}.\nhealth:Read medical records from ${date} for ${username}.\nquery:Create a healthcare professional report based on the medical records. You may use information from provided user profile."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "my medical report for january 12, 2026"
+    },
+    {
+      "role": "model",
+      "content": "goal:Create a report on the medical records.\ntime-service:Get the date for January 12, 2026.\nuser-profile:Get my username.\nuser-profile:List user profile properties for ${username}.\nhealth:Read medical records from ${date} for ${username}.\nquery:Create a healthcare professional report based on the medical records. You may use information from provided user profile."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "display my health report from march 15, 2025"
+    },
+    {
+      "role": "model",
+      "content": "goal:Create a report on the medical records.\ntime-service:Get the date for March 15, 2025.\nuser-profile:Get my username.\nuser-profile:List user profile properties for ${username}.\nhealth:Read medical records from ${date} for ${username}.\nquery:Create a healthcare professional report based on the medical records. You may use information from provided user profile."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "print my health report for 2025-12-01"
+    },
+    {
+      "role": "model",
+      "content": "goal:Create a report on the medical records.\ntime-service:Get the date for 2025-12-01.\nuser-profile:Get my username.\nuser-profile:List user profile properties for ${username}.\nhealth:Read medical records from ${date} for ${username}.\nquery:Create a healthcare professional report based on the medical records. You may use information from provided user profile."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "my health status report for 2024-11-12"
+    },
+    {
+      "role": "model",
+      "content": "goal:Create a report on the medical records.\ntime-service:Get the date for 2024-11-12.\nuser-profile:Get my username.\nuser-profile:List user profile properties for ${username}.\nhealth:Read medical records from ${date} for ${username}.\nquery:Create a healthcare professional report based on the medical records. You may use information from provided user profile."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "compile a report of all my medical readings for april 12, 2025"
+    },
+    {
+      "role": "model",
+      "content": "goal:Create a report on the medical records.\ntime-service:Get the date for April 12, 2025.\nuser-profile:Get my username.\nuser-profile:List user profile properties for ${username}.\nhealth:Read medical records from ${date} for ${username}.\nquery:Create a healthcare professional report based on the medical records. You may use information from provided user profile."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "please prepare a medical report for my doctor based on my data from last monday"
+    },
+    {
+      "role": "model",
+      "content": "goal:Create a report on the medical records.\ntime-service:Get the date for last Monday.\nuser-profile:Get my username.\nuser-profile:List user profile properties for ${username}.\nhealth:Read medical records from ${date} for ${username}.\nquery:Create a healthcare professional report based on the medical records. You may use information from provided user profile."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "compute bmi for my height and a weight of 85"
+    },
+    {
+      "role": "model",
+      "content": "goal:Compute body mass index.\nuser-profile:Get my height.\nhealth:Calculate body mass index for a weight of 85.00 kg and height of ${height} cm.\nquery:Print computed body mass index."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "figure my body mass for a weight of 92"
+    },
+    {
+      "role": "model",
+      "content": "goal:Compute body mass index.\nuser-profile:Get my height.\nhealth:Calculate body mass index for a weight of 92.00 kg and height of ${height} cm.\nquery:Print computed body mass index."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "what is my bmi for a weight of 73.5?"
+    },
+    {
+      "role": "model",
+      "content": "goal:Compute body mass index.\nuser-profile:Get my height.\nhealth:Calculate body mass index for a weight of 73.50 kg and height of ${height} cm.\nquery:What is my BMI for a weight of 73.5 kg?"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "what would be my BMI for a weight of 78?"
+    },
+    {
+      "role": "model",
+      "content": "goal:Compute body mass index.\nuser-profile:Get my height.\nhealth:Calculate body mass index for a weight of 78.00 kg and height of ${height} cm.\nquery:What would my BMI be for a weight of 78 kg?"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "what would be my body mass index if i will weight 77 kg?"
+    },
+    {
+      "role": "model",
+      "content": "goal:Compute body mass index.\nuser-profile:Get my height.\nhealth:Calculate body mass index for a weight of 77.00 kg and height of ${height} cm.\nquery:What would my body mass index be if I weighed 77 kg?"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "calculate body mass index for 88.5 kg and 172 cm"
+    },
+    {
+      "role": "model",
+      "content": "goal:Compute body mass index.\nhealth:Calculate body mass index for a weight of 88.50 kg and a height of 172 cm.\nquery:Print computed body mass index."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "compute body mass index for weight of 82 kg and height of 176 cm"
+    },
+    {
+      "role": "model",
+      "content": "goal:Compute body mass index.\nhealth:Calculate body mass index for a weight of 82.00 kg and a height of 176 cm.\nquery:Print computed body mass index."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "estimate bmi for 85.5 kg and 174 cm"
+    },
+    {
+      "role": "model",
+      "content": "goal:Compute body mass index.\nhealth:Calculate body mass index for a weight of 85.50 kg and a height of 174 cm.\nquery:Print computed body mass index."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "figure body mass index for 81 kg and 188 cm"
+    },
+    {
+      "role": "model",
+      "content": "goal:Compute body mass index.\nhealth:Calculate body mass index for a weight of 81.00 kg and a height of 188 cm.\nquery:Print computed body mass index."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "what is body mass index for height of 178 and weight of 84"
+    },
+    {
+      "role": "model",
+      "content": "goal:Compute body mass index.\nhealth:Calculate body mass index for a weight of 84.00 kg and a height of 178 cm.\nquery:Print computed body mass index."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "calculate mass index for 86.5 kg and my height"
+    },
+    {
+      "role": "model",
+      "content": "goal:Compute body mass index.\nuser-profile:Get my height.\nhealth:Calculate body mass index for a weight of 86.50 kg and height of ${height} cm.\nquery:Print computed body mass index."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "Save my blood pressure of 120 80 70 to medical database."
+    },
+    {
+      "role": "model",
+      "content": "goal:Write measurements to medical database.\nuser-profile:Get my username.\nhealth:Save blood pressure measurement of 120/80 mmHg and heart rate of 70 bpm for ${username}.\nprinter:Print the summary of the saved medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "Register my blood readings of 118 with 83 and 75."
+    },
+    {
+      "role": "model",
+      "content": "goal:Write measurements to medical database.\nuser-profile:Get my username.\nhealth:Save blood pressure measurement of 118/83 mmHg and heart rate of 75 bpm for ${username}.\nprinter:Print the summary of the saved medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "Please record these numbers for me: 127/74 blood pressure and 68 heart rate."
+    },
+    {
+      "role": "model",
+      "content": "goal:Write measurements to medical database.\nuser-profile:Get my username.\nhealth:Save blood pressure measurement of 118/83 mmHg and heart rate of 75 bpm for ${username}.\nprinter:Print the summary of the saved medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "save my blood measurements of 125 85 70"
+    },
+    {
+      "role": "model",
+      "content": "goal:Write measurements to medical database.\nuser-profile:Get my username.\nhealth:Save blood pressure measurement of 125/85 mmHg and heart rate of 70 bpm for ${username}.\nprinter:Print the summary of the saved medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "write my blood readings: 130 82 85"
+    },
+    {
+      "role": "model",
+      "content": "goal:Write measurements to medical database.\nuser-profile:Get my username.\nhealth:Save blood pressure measurement of 130/82 mmHg and heart rate of 85 bpm for ${username}.\nprinter:Print the summary of the saved medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "record my blood measurements: 110 66 84"
+    },
+    {
+      "role": "model",
+      "content": "goal:Write measurements to medical database.\nuser-profile:Get my username.\nhealth:Save blood pressure measurement of 110/66 mmHg and heart rate of 84 bpm for ${username}.\nprinter:Print the summary of the saved medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "logs my blood readings: 133 92 87"
+    },
+    {
+      "role": "model",
+      "content": "goal:Write measurements to medical database.\nuser-profile:Get my username.\nhealth:Save blood pressure measurement of 133/92 mmHg and heart rate of 87 bpm for ${username}.\nprinter:Print the summary of the saved medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "logs my blood readings: 136 90 82"
+    },
+    {
+      "role": "model",
+      "content": "goal:Write measurements to medical database.\nuser-profile:Get my username.\nhealth:Save blood pressure measurement of 136/90 mmHg and heart rate of 82 bpm for ${username}.\nprinter:Print the summary of the saved medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "write my blood readings: 119 with 81 and 93"
+    },
+    {
+      "role": "model",
+      "content": "goal:Write measurements to medical database.\nuser-profile:Get my username.\nhealth:Save blood pressure measurement of 119/81 mmHg and heart rate of 93 bpm for ${username}.\nprinter:Print the summary of the saved medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "write my blood readings: 120 with 84 and 76"
+    },
+    {
+      "role": "model",
+      "content": "goal:Write measurements to medical database.\nuser-profile:Get my username.\nhealth:Save blood pressure measurement of 120/84 mmHg and heart rate of 76 bpm for ${username}.\nprinter:Print the summary of the saved medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "save rusu florentin blood measurements of 118 82 63"
+    },
+    {
+      "role": "model",
+      "content": "goal:Write measurements to medical database.\nuser-profile:Get the username for Rusu Florentin.\nhealth:Save blood pressure measurement of 118/82 mmHg and heart rate of 63 bpm for ${username}.\nprinter:Print the summary of the saved medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "record blood measurements for pătrașcu constantin of 119 81 64"
+    },
+    {
+      "role": "model",
+      "content": "goal:Write measurements to medical database.\nuser-profile:Get the username for Pătrașcu Constantin.\nhealth:Save blood pressure measurement of 119/81 mmHg and heart rate of 64 bpm for ${username}.\nprinter:Print the summary of the saved medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "write blood 115 75 60 to Gavriliu Mihaela"
+    },
+    {
+      "role": "model",
+      "content": "goal:Write measurements to medical database.\nuser-profile:Get the username for Gavriliu Mihaela.\nhealth:Save blood pressure measurement of 115/75 mmHg and heart rate of 60 bpm for ${username}.\nprinter:Print the summary of the saved medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "set rotaru lucian blood readings: 112 65 78"
+    },
+    {
+      "role": "model",
+      "content": "goal:Write measurements to medical database.\nuser-profile:Get the username for Rotaru Lucian.\nhealth:Save blood pressure measurement of 112/65 mmHg and heart rate of 78 bpm for ${username}.\nprinter:Print the summary of the saved medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "logs blood readings: 133 92 87 for miron elena daniela"
+    },
+    {
+      "role": "model",
+      "content": "goal:Write measurements to medical database.\nuser-profile:Get the username for Miron Elena Daniela.\nhealth:Save blood pressure measurement of 133/92 mmHg and heart rate of 87 bpm for ${username}.\nprinter:Print the summary of the saved medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "write blood readings: 125 with 83 and 73 for rotaru iulian"
+    },
+    {
+      "role": "model",
+      "content": "goal:Write measurements to medical database.\nuser-profile:Get the username for Rotaru Iulian.\nhealth:Save blood pressure measurement of 125/83 mmHg and heart rate of 73 bpm for ${username}.\nprinter:Print the summary of the saved medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "save my temperature 35.1"
+    },
+    {
+      "role": "model",
+      "content": "goal:Write measurements to medical database.\nuser-profile:Get my username.\nhealth:Save body temperature of 35.10 °C for ${username}.\nprinter:Print the summary of the saved medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "save my body temperature of 35.0"
+    },
+    {
+      "role": "model",
+      "content": "goal:Write measurements to medical database.\nuser-profile:Get my username.\nhealth:Save body temperature of 35.00 °C for ${username}.\nprinter:Print the summary of the saved medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "save my temperature of 34.3"
+    },
+    {
+      "role": "model",
+      "content": "goal:Write measurements to medical database.\nuser-profile:Get my username.\nhealth:Save body temperature of 34.30 °C for ${username}.\nprinter:Print the summary of the saved medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "logs my body temperature 35.9"
+    },
+    {
+      "role": "model",
+      "content": "goal:Write measurements to medical database.\nuser-profile:Get my username.\nhealth:Save body temperature of 35.90 °C for ${username}.\nprinter:Print the summary of the saved medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "write my temperature 34.8"
+    },
+    {
+      "role": "model",
+      "content": "goal:Write measurements to medical database.\nuser-profile:Get my username.\nhealth:Save body temperature of 34.80 °C for ${username}.\nprinter:Print the summary of the saved medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "write my temperature 35.2"
+    },
+    {
+      "role": "model",
+      "content": "goal:Write measurements to medical database.\nuser-profile:Get my username.\nhealth:Save body temperature of 35.20 °C for ${username}.\nprinter:Print the summary of the saved medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "record my temperature: 37.1"
+    },
+    {
+      "role": "model",
+      "content": "goal:Write measurements to medical database.\nuser-profile:Get my username.\nhealth:Save body temperature of 37.10 °C for ${username}.\nprinter:Print the summary of the saved medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "save cojocaru cristian temperature 35.1"
+    },
+    {
+      "role": "model",
+      "content": "goal:Write measurements to medical database.\nuser-profile:Get the username for Cojocaru Cristian.\nhealth:Save body temperature of 35.10 °C for ${username}.\nprinter:Print the summary of the saved medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "write temperature for acatrinei liviu of 35.2"
+    },
+    {
+      "role": "model",
+      "content": "goal:Write measurements to medical database.\nuser-profile:Get the username for Acatrinei Liviu.\nhealth:Save body temperature of 35.20 °C for ${username}.\nprinter:Print the summary of the saved medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "save temperature 35.6 for gogălniceanu ștefan"
+    },
+    {
+      "role": "model",
+      "content": "goal:Write measurements to medical database.\nuser-profile:Get the username for Gogălniceanu Ștefan.\nhealth:Save body temperature of 35.60 °C for ${username}.\nprinter:Print the summary of the saved medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "logs body temperature 36.2 to lontkowschi george"
+    },
+    {
+      "role": "model",
+      "content": "goal:Write measurements to medical database.\nuser-profile:Get the username for Lontkowschi George.\nhealth:Save body temperature of 36.20 °C for ${username}.\nprinter:Print the summary of the saved medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "write temperature 34.1 for teodorescu tiberiu dinu"
+    },
+    {
+      "role": "model",
+      "content": "goal:Write measurements to medical database.\nuser-profile:Get the username for Teodorescu Tiberiu Dinu.\nhealth:Save body temperature of 34.10 °C for ${username}.\nprinter:Print the summary of the saved medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "record dorneanu deliana temperature: 36.7"
+    },
+    {
+      "role": "model",
+      "content": "goal:Write measurements to medical database.\nuser-profile:Get the username for Dorneanu Deliana.\nhealth:Save body temperature of 36.70 °C for ${username}.\nprinter:Print the summary of the saved medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "save my weight 93.75"
+    },
+    {
+      "role": "model",
       "content": "goal:Write measurements to medical database.\nuser-profile:Get my username.\nuser-profile:Get the height property of ${username}.\nhealth:Save body weight of 93.75 kg and height of ${height} cm for ${username}.\nprinter:Print the summary of the saved medical readings."
     }
   ],

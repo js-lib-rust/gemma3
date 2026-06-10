@@ -66,6 +66,7 @@ def route_prompt(prompt):
         'no_repeat_ngram_size': 0,
         'past_key_values': past_key_values
     }
+    print(f"model config: {config}")
     current_input_ids = inputs["input_ids"]
     generated_ids = list(inputs["input_ids"][0].tolist())
     token_probs_list = []

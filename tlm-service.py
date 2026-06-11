@@ -146,4 +146,4 @@ app = web.Application()
 app.router.add_post('/', handle_slm_request)
 
 if __name__ == '__main__':
-    web.run_app(app, host='0.0.0.0', port=args.port, access_log=None)
+    web.run_app(app, host='0.0.0.0', port=args.port, access_log=None, keepalive_timeout=28440)

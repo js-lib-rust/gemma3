@@ -1,0 +1,6 @@
+#!/bin/bash
+set -e
+
+python /opt/llama.cpp/convert_hf_to_gguf.py router-270m --outfile router-270m.gguf --outtype bf16
+/opt/llama.cpp/build/bin/llama-quantize router-270m.gguf router-270m-Q4_K_M.gguf Q4_K_M
+

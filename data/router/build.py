@@ -46,7 +46,7 @@ def build_router_dataset(output_filename: str = "router.train.hf.json"):
     print("🚀 Starting build process...")
 
     dataset: List[List[Dict[str, str]]] = []
-    jsonl_files = list(Path('.').glob('*.jsonl'))
+    jsonl_files = list(Path('.').glob('*.train.jsonl'))
 
     if not jsonl_files:
         print("❌ No .jsonl files found in the current directory.")

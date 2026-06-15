@@ -82,11 +82,11 @@ def route_prompt(prompt):
         next_token_id = torch.argmax(probs, dim=-1)
         token_prob = probs[0, next_token_id.item()].item()
         token_str = tokenizer.decode(next_token_id[0], skip_special_tokens=False)
-        if token_str == '\n' or next_token_id.item() == tokenizer.eos_token_id:
-            break
 
         generated_ids.append(next_token_id.item())
         token_probs_list.append(token_prob)
+        if token_str == '\n' or next_token_id.item() == tokenizer.eos_token_id:
+            break
         current_input_ids = next_token_id.unsqueeze(0)
 
     estimated_confidence = sum(token_probs_list) / len(token_probs_list) if token_probs_list else 0.0

@@ -440,53 +440,11 @@
     },
     {
       "role": "user",
-      "content": "save my weight of 89"
+      "content": "save my body weight of 89.00 to medical database"
     },
     {
       "role": "model",
       "content": "goal:Write body weight to medical database.\nuser-profile:Get my username.\nuser-profile:Get the height property of ${username}.\nhealth:Save body weight of 89.00 kg and height of ${height} cm for ${username}.\nprinter:Print the summary of the saved medical readings."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "save my body weight of 89.00"
-    },
-    {
-      "role": "model",
-      "content": "goal:Write body weight to medical database.\nuser-profile:Get my username.\nuser-profile:Get the height property of ${username}.\nhealth:Save body weight of 89.00 kg and height of ${height} cm for ${username}.\nprinter:Print the summary of the saved medical readings."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "save my weight 88"
-    },
-    {
-      "role": "model",
-      "content": "goal:Write body weight to medical database.\nuser-profile:Get my username.\nuser-profile:Get the height property of ${username}.\nhealth:Save body weight of 88.00 kg and height of ${height} cm for ${username}.\nprinter:Print the summary of the saved medical readings."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "save my weight of 88.5"
-    },
-    {
-      "role": "model",
-      "content": "goal:Write body weight to medical database.\nuser-profile:Get my username.\nuser-profile:Get the height property of ${username}.\nhealth:Save body weight of 88.50 kg and height of ${height} cm for ${username}.\nprinter:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -543,34 +501,6 @@
     {
       "role": "model",
       "content": "goal:Write body weight to medical database.\nuser-profile:Get my username.\nuser-profile:Get the height property of ${username}.\nhealth:Save body weight of 82.50 kg and height of ${height} cm for ${username}.\nprinter:Print the summary of the saved medical readings."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "insert my weight of 86.25 into health db"
-    },
-    {
-      "role": "model",
-      "content": "goal:Write body weight to medical database.\nuser-profile:Get my username.\nuser-profile:Get the height property of ${username}.\nhealth:Save body weight of 86.25 kg and height of ${height} cm for ${username}.\nprinter:Print the summary of the saved medical readings."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "register my weight of 94"
-    },
-    {
-      "role": "model",
-      "content": "goal:Write body weight to medical database.\nuser-profile:Get my username.\nuser-profile:Get the height property of ${username}.\nhealth:Save body weight of 94.00 kg and height of ${height} cm for ${username}.\nprinter:Print the summary of the saved medical readings."
     }
   ],
   [

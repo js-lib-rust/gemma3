@@ -8620,35 +8620,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Request hourly weather forecast from meteo server.\ntime-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:Get the location property of ${username}.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Print hourly weather forecast in tabular form."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "today weather forecast in paris"
-    },
-    {
-      "role": "model",
-      "content": "goal:Request hourly weather forecast from meteo server.\ntime-service:Get the date for today.\nweather:Get hourly weather forecast for ${date} in Paris, France.\nquery:Print hourly weather forecast in tabular form."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "today weather forecast for bucharest"
-    },
-    {
-      "role": "model",
-      "content": "goal:Request hourly weather forecast from meteo server.\ntime-service:Get the date for today.\nweather:Get hourly weather forecast for ${date} in Bucharest, Romania.\nquery:Print hourly weather forecast in tabular form."
+      "content": "goal:List hourly weather forecast from meteo server.\ntime-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:Get the location property of ${username}.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Print hourly weather forecast in tabular form."
     }
   ],
   [
@@ -8662,7 +8634,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Request hourly weather forecast from meteo server.\ntime-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:Get the location property of ${username}.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Print hourly weather forecast in tabular form."
+      "content": "goal:List hourly weather forecast from meteo server.\ntime-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:Get the location property of ${username}.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Print hourly weather forecast in tabular form."
     }
   ],
   [
@@ -8676,7 +8648,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Request hourly weather forecast from meteo server.\ntime-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:Get the location property of ${username}.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Print hourly weather forecast in tabular form."
+      "content": "goal:List hourly weather forecast from meteo server.\ntime-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:Get the location property of ${username}.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Print hourly weather forecast in tabular form."
     }
   ],
   [
@@ -8690,7 +8662,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Request hourly weather forecast from meteo server.\ntime-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:Get the location property of ${username}.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Print hourly weather forecast in tabular form."
+      "content": "goal:List hourly weather forecast from meteo server.\ntime-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:Get the location property of ${username}.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Print hourly weather forecast in tabular form."
     }
   ],
   [
@@ -8704,7 +8676,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Request hourly weather forecast from meteo server.\ntime-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:Get the location property of ${username}.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Print hourly weather forecast in tabular form."
+      "content": "goal:List hourly weather forecast from meteo server.\ntime-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:Get the location property of ${username}.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Print hourly weather forecast in tabular form."
     }
   ],
   [
@@ -8718,7 +8690,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Request hourly weather forecast from meteo server.\ntime-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:Get the location property of ${username}.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Print hourly weather forecast in tabular form."
+      "content": "goal:List hourly weather forecast from meteo server.\ntime-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:Get the location property of ${username}.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Print hourly weather forecast in tabular form."
     }
   ],
   [
@@ -8732,21 +8704,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Request hourly weather forecast from meteo server.\ntime-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:Get the location property of ${username}.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Print hourly weather forecast in tabular form."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "how will be weather today on deprecen, slovakia?"
-    },
-    {
-      "role": "model",
-      "content": "goal:Request hourly weather forecast from meteo server.\ntime-service:Get the date for today.\nweather:Get hourly weather forecast for ${date} in Deprecen, Slovakia.\nquery:Print hourly weather forecast in tabular form."
+      "content": "goal:List hourly weather forecast from meteo server.\ntime-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:Get the location property of ${username}.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Print hourly weather forecast in tabular form."
     }
   ],
   [
@@ -8760,7 +8718,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Request hourly weather forecast from meteo server.\ntime-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:Get the location property of ${username}.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Print hourly weather forecast in tabular form."
+      "content": "goal:List hourly weather forecast from meteo server.\ntime-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:Get the location property of ${username}.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Print hourly weather forecast in tabular form."
     }
   ],
   [
@@ -8774,21 +8732,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Request hourly weather forecast from meteo server.\ntime-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:Get the location property of ${username}.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Print hourly weather forecast in tabular form."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "will be cold today in valea lupului, romania?"
-    },
-    {
-      "role": "model",
-      "content": "goal:Request hourly weather forecast from meteo server.\ntime-service:Get the date for today.\nweather:Get hourly weather forecast for ${date} in Valea Lupului, Romania.\nquery:Print hourly weather forecast in tabular form."
+      "content": "goal:List hourly weather forecast from meteo server.\ntime-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:Get the location property of ${username}.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Print hourly weather forecast in tabular form."
     }
   ],
   [
@@ -8802,21 +8746,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Request hourly weather forecast from meteo server.\ntime-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:Get the location property of ${username}.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Print hourly weather forecast in tabular form."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "hourly forecast for today on sculeni, iași, românia"
-    },
-    {
-      "role": "model",
-      "content": "goal:Request hourly weather forecast from meteo server.\ntime-service:Get the date for today.\nweather:Get hourly weather forecast for ${date} in Sculeni, Iași, România.\nquery:Print hourly weather forecast in tabular form."
+      "content": "goal:List hourly weather forecast from meteo server.\ntime-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:Get the location property of ${username}.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Print hourly weather forecast in tabular form."
     }
   ],
   [
@@ -8830,7 +8760,91 @@
     },
     {
       "role": "model",
-      "content": "goal:Request hourly weather forecast from meteo server.\ntime-service:Get the date for today.\nweather:user-profile:Get my username.\nuser-profile:Get the location property of ${username}.\nGet hourly weather forecast for ${date} in ${location}.\nquery:Print hourly weather forecast in tabular form."
+      "content": "goal:List hourly weather forecast from meteo server.\ntime-service:Get the date for today.\nweather:user-profile:Get my username.\nuser-profile:Get the location property of ${username}.\nGet hourly weather forecast for ${date} in ${location}.\nquery:Print hourly weather forecast in tabular form."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "today weather forecast in paris"
+    },
+    {
+      "role": "model",
+      "content": "goal:List hourly weather forecast from meteo server.\ntime-service:Get the date for today.\nweather:Get hourly weather forecast for ${date} in Paris, France.\nquery:Print hourly weather forecast in tabular form."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "today weather forecast for bucharest"
+    },
+    {
+      "role": "model",
+      "content": "goal:List hourly weather forecast from meteo server.\ntime-service:Get the date for today.\nweather:Get hourly weather forecast for ${date} in Bucharest, Romania.\nquery:Print hourly weather forecast in tabular form."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "how will be weather today on deprecen, slovakia?"
+    },
+    {
+      "role": "model",
+      "content": "goal:List hourly weather forecast from meteo server.\ntime-service:Get the date for today.\nweather:Get hourly weather forecast for ${date} in Deprecen, Slovakia.\nquery:Print hourly weather forecast in tabular form."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "will be cold today in valea lupului, romania?"
+    },
+    {
+      "role": "model",
+      "content": "goal:List hourly weather forecast from meteo server.\ntime-service:Get the date for today.\nweather:Get hourly weather forecast for ${date} in Valea Lupului, Romania.\nquery:Print hourly weather forecast in tabular form."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "hourly forecast for today on sculeni, iași, românia"
+    },
+    {
+      "role": "model",
+      "content": "goal:List hourly weather forecast from meteo server.\ntime-service:Get the date for today.\nweather:Get hourly weather forecast for ${date} in Sculeni, Iași, România.\nquery:Print hourly weather forecast in tabular form."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "list today forecast in chicirea, iasi, romania"
+    },
+    {
+      "role": "model",
+      "content": "goal:List hourly weather forecast from meteo server.\ntime-service:Get the date for today.\nweather:Get hourly weather forecast for ${date} in Chicirea, Iași, Romania.\nquery:Print hourly weather forecast in tabular form."
     }
   ],
   [
@@ -8844,21 +8858,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Request hourly weather forecast from meteo server.\ntime-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:Get the location property of ${username}.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Print hourly weather forecast in tabular form."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "display today forecast in chicirea, iasi, romania"
-    },
-    {
-      "role": "model",
-      "content": "goal:Request hourly weather forecast from meteo server.\ntime-service:Get the date for today.\nweather:Get hourly weather forecast for ${date} in Chicirea, Iași, Romania.\nquery:Print hourly weather forecast in tabular form."
+      "content": "goal:Display weather forecast summary from meteo server.\ntime-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:Get the location property of ${username}.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Print hourly weather forecast in tabular form."
     }
   ],
   [
@@ -8872,7 +8872,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Request hourly weather forecast from meteo server.\ntime-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:Get the location property of ${username}.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Summarize weather forecast for today."
+      "content": "goal:Display weather forecast summary from meteo server.\ntime-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:Get the location property of ${username}.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Summarize weather forecast for today."
     }
   ],
   [
@@ -8882,11 +8882,11 @@
     },
     {
       "role": "user",
-      "content": "summarize weather forecast for today in sibiu"
+      "content": "print summary of today weather"
     },
     {
       "role": "model",
-      "content": "goal:Request hourly weather forecast from meteo server.\ntime-service:Get the date for today.\nweather:Get hourly weather forecast for ${date} in Sibiu, Romania.\nquery:Summarize weather forecast for today in Sibiu, Romania."
+      "content": "goal:Display weather forecast summary from meteo server.\ntime-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:Get the location property of ${username}.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Create a summary of today weather."
     }
   ],
   [
@@ -8900,7 +8900,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Request hourly weather forecast from meteo server.\ntime-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:Get the location property of ${username}.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Create a summary of today weather."
+      "content": "goal:Display weather forecast summary from meteo server.\ntime-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:Get the location property of ${username}.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Create a summary of today weather."
     }
   ],
   [
@@ -8914,7 +8914,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Request hourly weather forecast from meteo server.\ntime-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:Get the location property of ${username}.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Create a summary of today weather forecast."
+      "content": "goal:Display weather forecast summary from meteo server.\ntime-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:Get the location property of ${username}.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Create a summary of today weather forecast."
     }
   ],
   [
@@ -8928,7 +8928,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Request hourly weather forecast from meteo server.\ntime-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:Get the location property of ${username}.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Today forecast summary."
+      "content": "goal:Display weather forecast summary from meteo server.\ntime-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:Get the location property of ${username}.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Today forecast summary."
     }
   ],
   [
@@ -8942,7 +8942,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Request hourly weather forecast from meteo server.\ntime-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:Get the location property of ${username}.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Get today forecast summary in my location."
+      "content": "goal:Display weather forecast summary from meteo server.\ntime-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:Get the location property of ${username}.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Get today forecast summary in my location."
     }
   ],
   [
@@ -8956,21 +8956,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Request hourly weather forecast from meteo server.\ntime-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:Get the location property of ${username}.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Get today weather forecast and create a summary."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "today forecast summary for focsani"
-    },
-    {
-      "role": "model",
-      "content": "goal:Request hourly weather forecast from meteo server.\ntime-service:Get the date for today.\nweather:Get hourly weather forecast for ${date} in Focsani, Romania.\nquery:Today forecast summary for Focsani, Romania."
+      "content": "goal:Display weather forecast summary from meteo server.\ntime-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:Get the location property of ${username}.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Get today weather forecast and create a summary."
     }
   ],
   [
@@ -8984,7 +8970,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Request hourly weather forecast from meteo server.\ntime-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:Get the location property of ${username}.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Print today weather forecast in condensed format."
+      "content": "goal:Display weather forecast summary from meteo server.\ntime-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:Get the location property of ${username}.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Print today weather forecast in condensed format."
     }
   ],
   [
@@ -8998,7 +8984,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Request hourly weather forecast from meteo server.\ntime-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:Get the location property of ${username}.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Write concise weather forecast for today."
+      "content": "goal:Display weather forecast summary from meteo server.\ntime-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:Get the location property of ${username}.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Write concise weather forecast for today."
     }
   ],
   [
@@ -9012,7 +8998,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Request hourly weather forecast from meteo server.\ntime-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:Get the location property of ${username}.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Brief today weather forecast."
+      "content": "goal:Display weather forecast summary from meteo server.\ntime-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:Get the location property of ${username}.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Brief today weather forecast."
     }
   ],
   [
@@ -9026,7 +9012,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Request hourly weather forecast from meteo server.\ntime-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:Get the location property of ${username}.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Essential aspects of today weather forecast."
+      "content": "goal:Display weather forecast summary from meteo server.\ntime-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:Get the location property of ${username}.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Essential aspects of today weather forecast."
     }
   ],
   [
@@ -9040,7 +9026,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Request hourly weather forecast from meteo server.\ntime-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:Get the location property of ${username}.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Summarize hourly forecast for today."
+      "content": "goal:Display weather forecast summary from meteo server.\ntime-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:Get the location property of ${username}.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Summarize hourly forecast for today."
     }
   ],
   [
@@ -9054,7 +9040,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Request hourly weather forecast from meteo server.\ntime-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:Get the location property of ${username}.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:How will be weather today? Please use a summarized format."
+      "content": "goal:Display weather forecast summary from meteo server.\ntime-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:Get the location property of ${username}.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:How will be weather today? Please use a summarized format."
     }
   ],
   [
@@ -9068,7 +9054,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Request hourly weather forecast from meteo server.\ntime-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:Get the location property of ${username}.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Display a summary of today forecast."
+      "content": "goal:Display weather forecast summary from meteo server.\ntime-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:Get the location property of ${username}.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Display a summary of today forecast."
     }
   ],
   [
@@ -9082,7 +9068,35 @@
     },
     {
       "role": "model",
-      "content": "goal:Request hourly weather forecast from meteo server.\ntime-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:Get the location property of ${username}.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Display today forecast summary."
+      "content": "goal:Display weather forecast summary from meteo server.\ntime-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:Get the location property of ${username}.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:Display today forecast summary."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "summarize weather forecast for today in sibiu"
+    },
+    {
+      "role": "model",
+      "content": "goal:Display weather forecast summary from meteo server.\ntime-service:Get the date for today.\nweather:Get hourly weather forecast for ${date} in Sibiu, Romania.\nquery:Summarize weather forecast for today in Sibiu, Romania."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "today forecast summary for focsani"
+    },
+    {
+      "role": "model",
+      "content": "goal:Display weather forecast summary from meteo server.\ntime-service:Get the date for today.\nweather:Get hourly weather forecast for ${date} in Focsani, Romania.\nquery:Today forecast summary for Focsani, Romania."
     }
   ],
   [
@@ -9096,7 +9110,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Request hourly weather forecast from meteo server.\ntime-service:Get the date for today.\nweather:Get hourly weather forecast for ${date} in Chicirea, Iași, Romania.\nquery:Display a today summary of forecast in Chicirea, Iași, Romania."
+      "content": "goal:Display weather forecast summary from meteo server.\ntime-service:Get the date for today.\nweather:Get hourly weather forecast for ${date} in Chicirea, Iași, Romania.\nquery:Display a today summary of forecast in Chicirea, Iași, Romania."
     }
   ],
   [
@@ -9372,20 +9386,6 @@
     },
     {
       "role": "user",
-      "content": "weather forecast in alba-iulia, romania"
-    },
-    {
-      "role": "model",
-      "content": "goal:Request daily weather forecast from meteo server.\nweather:Get daily weather forecast for the next two weeks in Alba-Iulia, Romania.\nquery:Print daily weather forecast in tabular form."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
       "content": "daily weather forecast"
     },
     {
@@ -9456,34 +9456,6 @@
     },
     {
       "role": "user",
-      "content": "this week forecast on botosani, romania"
-    },
-    {
-      "role": "model",
-      "content": "goal:Request daily weather forecast from meteo server.\nweather:Get daily weather forecast for this week in Botosani, Romania.\nquery:Print daily weather forecast in tabular form."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "this week forecast for suceava, romania"
-    },
-    {
-      "role": "model",
-      "content": "goal:Request daily weather forecast from meteo server.\nweather:Get daily weather forecast for this week in Suceava, Romania.\nquery:Print daily weather forecast in tabular form."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
       "content": "give weather stats for this week"
     },
     {
@@ -9526,20 +9498,6 @@
     },
     {
       "role": "user",
-      "content": "get forecast for next two weeks in vălenii de jos, timiș, românia"
-    },
-    {
-      "role": "model",
-      "content": "goal:Request daily weather forecast from meteo server.\nweather:Get daily weather forecast for the next two weeks in Vălenii de jos, Timiș, România.\nquery:Print daily weather forecast in tabular form."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
       "content": "next 3 days forecast"
     },
     {
@@ -9568,20 +9526,6 @@
     },
     {
       "role": "user",
-      "content": "forecast for 5 days in vaslui, romania"
-    },
-    {
-      "role": "model",
-      "content": "goal:Request daily weather forecast from meteo server.\nuser-profile:Get my username.\nuser-profile:Get the location property of ${username}.\nweather:Get daily weather forecast for the next 5 days in Vaslui, Romania.\nquery:Print daily weather forecast in tabular form."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
       "content": "4 days forecast"
     },
     {
@@ -9596,11 +9540,11 @@
     },
     {
       "role": "user",
-      "content": "4 days forecast for oradea, romania"
+      "content": "list 10 days forecast"
     },
     {
       "role": "model",
-      "content": "goal:Request daily weather forecast from meteo server.\nweather:Get daily weather forecast for the next 4 days in Oradea, Romania.\nquery:Print daily weather forecast in tabular form."
+      "content": "goal:Request daily weather forecast from meteo server.\nuser-profile:Get my username.\nuser-profile:Get the location property of ${username}.\nweather:Get daily weather forecast for the next 10 days in ${location}.\nquery:Print daily weather forecast in tabular form."
     }
   ],
   [
@@ -9610,11 +9554,81 @@
     },
     {
       "role": "user",
-      "content": "list 10 days forecast"
+      "content": "weather forecast in alba-iulia, romania"
     },
     {
       "role": "model",
-      "content": "goal:Request daily weather forecast from meteo server.\nuser-profile:Get my username.\nuser-profile:Get the location property of ${username}.\nweather:Get daily weather forecast for the next 10 days in ${location}.\nquery:Print daily weather forecast in tabular form."
+      "content": "goal:Request daily weather forecast from meteo server.\nweather:Get daily weather forecast for the next two weeks in Alba-Iulia, Romania.\nquery:Print daily weather forecast in tabular form."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "this week forecast on botosani, romania"
+    },
+    {
+      "role": "model",
+      "content": "goal:Request daily weather forecast from meteo server.\nweather:Get daily weather forecast for this week in Botosani, Romania.\nquery:Print daily weather forecast in tabular form."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "this week forecast for suceava, romania"
+    },
+    {
+      "role": "model",
+      "content": "goal:Request daily weather forecast from meteo server.\nweather:Get daily weather forecast for this week in Suceava, Romania.\nquery:Print daily weather forecast in tabular form."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get forecast for next two weeks in vălenii de jos, timiș, românia"
+    },
+    {
+      "role": "model",
+      "content": "goal:Request daily weather forecast from meteo server.\nweather:Get daily weather forecast for the next two weeks in Vălenii de jos, Timiș, România.\nquery:Print daily weather forecast in tabular form."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "forecast for 5 days in vaslui, romania"
+    },
+    {
+      "role": "model",
+      "content": "goal:Request daily weather forecast from meteo server.\nuser-profile:Get my username.\nuser-profile:Get the location property of ${username}.\nweather:Get daily weather forecast for the next 5 days in Vaslui, Romania.\nquery:Print daily weather forecast in tabular form."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "4 days forecast for oradea, romania"
+    },
+    {
+      "role": "model",
+      "content": "goal:Request daily weather forecast from meteo server.\nweather:Get daily weather forecast for the next 4 days in Oradea, Romania.\nquery:Print daily weather forecast in tabular form."
     }
   ],
   [

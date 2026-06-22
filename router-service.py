@@ -5,7 +5,7 @@ import time
 import orjson
 import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM, DynamicCache
-
+import statistics
 import util
 
 parser = argparse.ArgumentParser()
@@ -43,6 +43,7 @@ async def send_json(writer, data):
 
 def route_prompt(prompt):
     request_start_time = time.time()
+    print(f"prompt: {prompt}")
 
     system = "Rewrite and route the next user prompt"
     chat = [{"role": "system", "content": system}, {"role": "user", "content": prompt}]
@@ -52,7 +53,7 @@ def route_prompt(prompt):
     input_len = inputs["input_ids"].shape[1]
 
     past_key_values = DynamicCache()
-    config = {
+    model_config = {
         'min_new_tokens': 1,
         'max_new_tokens': args.max_new_tokens,
         'do_sample': False,
@@ -66,7 +67,7 @@ def route_prompt(prompt):
         'no_repeat_ngram_size': 0,
         'past_key_values': past_key_values
     }
-    print(f"model config: {config}")
+    print(f"model_config: {model_config}")
     current_input_ids = inputs["input_ids"]
     generated_ids = list(inputs["input_ids"][0].tolist())
     token_probs_list = []
@@ -74,7 +75,7 @@ def route_prompt(prompt):
     # step 1: fail-fast confidence detection
     for _ in range(args.confidence_probes):
         with torch.no_grad():
-            outputs = model(current_input_ids, **config)
+            outputs = model(current_input_ids, **model_config)
 
         next_token_logits = outputs.logits[:, -1, :]
         probs = torch.softmax(next_token_logits, dim=-1)
@@ -89,14 +90,15 @@ def route_prompt(prompt):
             break
         current_input_ids = next_token_id.unsqueeze(0)
 
-    estimated_confidence = sum(token_probs_list) / len(token_probs_list) if token_probs_list else 0.0
+    print(f"token_probs_list: {token_probs_list}")
+    estimated_confidence = statistics.median(token_probs_list) if token_probs_list else 0.0
     failed_due_to_confidence = estimated_confidence < args.confidence_threshold
 
     # step 2: continue text generation in batch only if confidence is above threshold
     if not failed_due_to_confidence:
-        config['return_dict_in_generate'] = True
-        config['output_scores'] = True
-        outputs = model.generate(input_ids=torch.tensor([generated_ids]).to(model.device), **config)
+        model_config['return_dict_in_generate'] = True
+        model_config['output_scores'] = True
+        outputs = model.generate(input_ids=torch.tensor([generated_ids]).to(model.device), **model_config)
 
         transition_scores = model.compute_transition_scores(outputs.sequences, outputs.scores, normalize_logits=True)
         sequence_transition_scores = transition_scores[0]

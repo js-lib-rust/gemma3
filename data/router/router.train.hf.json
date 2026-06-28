@@ -6,6 +6,440 @@
     },
     {
       "role": "user",
+      "content": "find weather information and forecast apps in the default store"
+    },
+    {
+      "role": "model",
+      "content": "goal:Find apps in store.\napp-manager:Find weather information and forecast apps in the default store.\nprinter:Print apps list."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "i'm looking for a photo editing tool in the premium store"
+    },
+    {
+      "role": "model",
+      "content": "goal:Find apps in store.\napp-manager:Find photo editing apps in the premium store.\nprinter:Print apps list."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "can you search the default store for a fitness tracker app?"
+    },
+    {
+      "role": "model",
+      "content": "goal:Find apps in store.\napp-manager:Find fitness tracker apps in the default store.\nprinter:Print apps list."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "find me some games in the kids store that are about racing"
+    },
+    {
+      "role": "model",
+      "content": "goal:Find apps in store.\napp-manager:Find racing games apps in the kids store.\nprinter:Print apps list."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "search for music streaming applications in the global store"
+    },
+    {
+      "role": "model",
+      "content": "goal:Find apps in store.\napp-manager:Find music streaming apps in the global store.\nprinter:Print apps list."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "is there any budget management app available in the default store?"
+    },
+    {
+      "role": "model",
+      "content": "goal:Find apps in store.\napp-manager:Find budget management apps in the default store.\nprinter:Print apps list."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "download and install medical database app from default store"
+    },
+    {
+      "role": "model",
+      "content": "goal:Install app from store.\napp-manager:Install 'Medical Database' app from default store.\nprinter:Print app description."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "install my weather app"
+    },
+    {
+      "role": "model",
+      "content": "goal:Install app from store.\napp-manager:Install 'My Weather' app from default store.\nprinter:Print app description."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "download spotify app from the premium store"
+    },
+    {
+      "role": "model",
+      "content": "goal:Install app from store.\napp-manager:Install the 'Spotify' app from the premium store.\nprinter:Print app description."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "please install the angry birds game from kids store"
+    },
+    {
+      "role": "model",
+      "content": "goal:Install app from store.\napp-manager:Install the 'Angry Birds' app from the kids store.\nprinter:Print app description."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get the chrome browser from the default store"
+    },
+    {
+      "role": "model",
+      "content": "goal:Install app from store.\napp-manager:Install the 'Chrome Browser' app from the default store.\nprinter:Print app description."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "i want to install instagram from the global store"
+    },
+    {
+      "role": "model",
+      "content": "goal:Install app from store.\napp-manager:Install the 'Instagram' app from the global store.\nprinter:Print app description."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "put the Zoom app on my device from the default store"
+    },
+    {
+      "role": "model",
+      "content": "goal:Install app from store.\napp-manager:Install the 'Zoom' app from the premium store.\nprinter:Print app description."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "please update the wolfgang game"
+    },
+    {
+      "role": "model",
+      "content": "goal:Update installed app.\napp-manager:Update the 'Wolfgang' app.\nprinter:Print app release note."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "check if there is an update available for facebook"
+    },
+    {
+      "role": "model",
+      "content": "goal:Update installed app.\napp-manager:Update the 'Facebook' app.\nprinter:Print app release note."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "make sure WhatsApp is up to date"
+    },
+    {
+      "role": "model",
+      "content": "goal:Update installed app.\napp-manager:Update the 'WhatsApp' app.\nprinter:Print app release note."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "refresh the version of the netflix app"
+    },
+    {
+      "role": "model",
+      "content": "goal:Update installed app.\napp-manager:Update the 'netflix' app.\nprinter:Print app release note."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "i need to update my zoom client"
+    },
+    {
+      "role": "model",
+      "content": "goal:Update installed app.\napp-manager:Update the 'Zoom' app.\nprinter:Print app release note."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "run an update for the calculator app"
+    },
+    {
+      "role": "model",
+      "content": "goal:Update installed app.\napp-manager:Update the 'Calculator' app.\nprinter:Print app release note."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "please uninstall the sugar rush game"
+    },
+    {
+      "role": "model",
+      "content": "goal:Remove installed app.\napp-manager:Uninstall the 'Sugar Rush' app.\nprinter:Print uninstall performed note."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "remove candy crush app"
+    },
+    {
+      "role": "model",
+      "content": "goal:Remove installed app.\napp-manager:Uninstall the 'Candy Crush' app.\nprinter:Print uninstall performed note."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "delete the unused calculator app"
+    },
+    {
+      "role": "model",
+      "content": "goal:Remove installed app.\napp-manager:Uninstall the 'Sugar Rush' app.\nprinter:Print uninstall performed note."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "i don't want twitter app anymore, please uninstall it"
+    },
+    {
+      "role": "model",
+      "content": "goal:Remove installed app.\napp-manager:Uninstall the 'Twitter' app.\nprinter:Print uninstall performed note."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get rid of the old Flappy Bird game"
+    },
+    {
+      "role": "model",
+      "content": "goal:Remove installed app.\napp-manager:Uninstall the 'Flappy Bird' app.\nprinter:Print uninstall performed note."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "clean up the personal trainer app"
+    },
+    {
+      "role": "model",
+      "content": "goal:Remove installed app.\napp-manager:Uninstall the 'Personal Trainer' app.\nprinter:Print uninstall performed note."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "list installed apps with name like *medical* and limit 4"
+    },
+    {
+      "role": "model",
+      "content": "goal:List installed apps by criteria.\napp-manager:List installed apps, with name like *medical*, limit 4.\nprinter:Print apps list."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "show me first 10 installed apps, by name"
+    },
+    {
+      "role": "model",
+      "content": "goal:List installed apps by criteria.\napp-manager:List installed apps, by name, limit 10.\nprinter:Print apps list."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "what applications are already installed?"
+    },
+    {
+      "role": "model",
+      "content": "goal:List installed apps by criteria.\napp-manager:List installed apps, by name, limit 0.\nprinter:Print apps list."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "display my app list grouped by category, limit 20"
+    },
+    {
+      "role": "model",
+      "content": "goal:List installed apps by criteria.\napp-manager:List installed apps, grouped by category, limit 20.\nprinter:Print apps list."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "can you retrieve a list of 15 of my downloaded apps?"
+    },
+    {
+      "role": "model",
+      "content": "goal:List installed apps by criteria.\napp-manager:List installed apps, by name, limit 15.\nprinter:Print apps list."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "check which apps can be upgraded"
+    },
+    {
+      "role": "model",
+      "content": "goal:List installed apps by criteria.\napp-manager:List installed apps, marked as upgradable, limit 0.\nprinter:Print apps list."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
       "content": "how to properly measure waist circumference?"
     },
     {
@@ -25,6 +459,20 @@
     {
       "role": "model",
       "content": "goal:Route to default LLM."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "save my blood pressure of 118/72 mmHg and heart rate of 66 bpm to medical database"
+    },
+    {
+      "role": "model",
+      "content": "goal:Write blood measurements to medical database.\nuser-profile:Get my username.\nhealth:Save blood pressure measurement of 118/72 mmHg and heart rate of 66 bpm for ${username}.\nprinter:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -244,6 +692,20 @@
     },
     {
       "role": "user",
+      "content": "save my body temperature of 35.5 °C to medical database"
+    },
+    {
+      "role": "model",
+      "content": "goal:Write body temperature to medical database.\nuser-profile:Get my username.\nhealth:Save body temperature of 35.50 °C for ${username}.\nprinter:Print the summary of the saved medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
       "content": "save my temperature 35.1"
     },
     {
@@ -426,6 +888,20 @@
     },
     {
       "role": "user",
+      "content": "save my body weight of 93 kg to medical database"
+    },
+    {
+      "role": "model",
+      "content": "goal:Write body weight to medical database.\nuser-profile:Get my username.\nuser-profile:Get the height property of ${username}.\nhealth:Save body weight of 93.00 kg and height of ${height} cm for ${username}.\nprinter:Print the summary of the saved medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
       "content": "save my weight 93.75"
     },
     {
@@ -482,34 +958,6 @@
     },
     {
       "role": "user",
-      "content": "record my body weight of 92"
-    },
-    {
-      "role": "model",
-      "content": "goal:Write body weight to medical database.\nuser-profile:Get my username.\nuser-profile:Get the height property of ${username}.\nhealth:Save my body weight of 92.00 kg and height of ${height} cm for ${username}.\nprinter:Print the summary of the saved medical readings."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "insert my body weight 82.5"
-    },
-    {
-      "role": "model",
-      "content": "goal:Write body weight to medical database.\nuser-profile:Get my username.\nuser-profile:Get the height property of ${username}.\nhealth:Save body weight of 82.50 kg and height of ${height} cm for ${username}.\nprinter:Print the summary of the saved medical readings."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
       "content": "write my body weight 75.5"
     },
     {
@@ -524,11 +972,39 @@
     },
     {
       "role": "user",
+      "content": "record my body weight of 92"
+    },
+    {
+      "role": "model",
+      "content": "goal:Write body weight to medical database.\nuser-profile:Get my username.\nuser-profile:Get the height property of ${username}.\nhealth:Save my body weight of 92.00 kg and height of ${height} cm for ${username}.\nprinter:Print the summary of the saved medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
       "content": "record my weight 62 to medical database"
     },
     {
       "role": "model",
       "content": "goal:Write body weight to medical database.\nuser-profile:Get my username.\nuser-profile:Get the height property of ${username}.\nhealth:Save body weight of 62.00 kg and height of ${height} cm for ${username}.\nprinter:Print the summary of the saved medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "insert my body weight 82.5"
+    },
+    {
+      "role": "model",
+      "content": "goal:Write body weight to medical database.\nuser-profile:Get my username.\nuser-profile:Get the height property of ${username}.\nhealth:Save body weight of 82.50 kg and height of ${height} cm for ${username}.\nprinter:Print the summary of the saved medical readings."
     }
   ],
   [
@@ -664,6 +1140,48 @@
     },
     {
       "role": "user",
+      "content": "save my blood glucose of 134 mg/dL to medical database"
+    },
+    {
+      "role": "model",
+      "content": "goal:Write blood glucose to medical database.\nuser-profile:Get my username.\nhealth:Save blood glucose level of 134 mg/dL for ${username}.\nprinter:Print the summary of the saved medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "save my glucose 94"
+    },
+    {
+      "role": "model",
+      "content": "goal:Write blood glucose to medical database.\nuser-profile:Get my username.\nhealth:Save blood glucose level of 94 mg/dL for ${username}.\nprinter:Print the summary of the saved medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "save my blood glucose of 118"
+    },
+    {
+      "role": "model",
+      "content": "goal:Write blood glucose to medical database.\nuser-profile:Get my username.\nhealth:Save blood glucose level of 118 mg/dL for ${username}.\nprinter:Print the summary of the saved medical readings."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
       "content": "insert my glucose level of 103"
     },
     {
@@ -697,34 +1215,6 @@
     {
       "role": "model",
       "content": "goal:Write blood glucose to medical database.\nuser-profile:Get my username.\nhealth:Save blood glucose level of 127 mg/dL for ${username}.\nprinter:Print the summary of the saved medical readings."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "save my glucose 94"
-    },
-    {
-      "role": "model",
-      "content": "goal:Write blood glucose to medical database.\nuser-profile:Get my username.\nhealth:Save blood glucose level of 94 mg/dL for ${username}.\nprinter:Print the summary of the saved medical readings."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "save my blood glucose of 118"
-    },
-    {
-      "role": "model",
-      "content": "goal:Write blood glucose to medical database.\nuser-profile:Get my username.\nhealth:Save blood glucose level of 118 mg/dL for ${username}.\nprinter:Print the summary of the saved medical readings."
     }
   ],
   [

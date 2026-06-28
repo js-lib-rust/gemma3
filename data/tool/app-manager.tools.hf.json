@@ -1,0 +1,117 @@
+[
+  {
+    "type": "function",
+    "function": {
+      "name": "app_manager_find_apps",
+      "description": "Searches a specific application store for apps matching a text-based description.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "store_name": {
+            "type": "string",
+            "description": "The globally unique identifier for the application store to search."
+          },
+          "app_description": {
+            "type": "string",
+            "description": "A natural language string used to query and filter applications."
+          },
+          "limit": {
+            "type": "integer",
+            "description": "The maximum number of applications to return. If set to 0, no limit is applied."
+          }
+        },
+        "required": [
+          "store_name",
+          "app_description",
+          "limit"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "app_manager_install_app",
+      "description": "Fetches a specific application from a store and performs installation on the local system. Takes care to resolve dependencies.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "store_name": {
+            "type": "string",
+            "description": "The globally unique identifier for the source application store."
+          },
+          "app_name": {
+            "type": "string",
+            "description": "The unique name of the application within the specified store."
+          }
+        },
+        "required": [
+          "store_name",
+          "app_name"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "app_manager_list_installed_apps",
+      "description": "Retrieves a comprehensive list of all applications currently installed on the local system.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "filter": {
+            "type": "string",
+            "description": "A filtering criterion used to narrow down the list ('all', 'upgradable', 'by name ascendent', etc.)."
+          },
+          "limit": {
+            "type": "integer",
+            "description": "The maximum number of applications to return. If set to 0, no limit is applied."
+          }
+        },
+        "required": [
+          "filter",
+          "limit"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "app_manager_uninstall_app",
+      "description": "Removes an installed application from the local system.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "app_name": {
+            "type": "string",
+            "description": "The name of the application to be removed."
+          }
+        },
+        "required": [
+          "app_name"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "app_manager_update_app",
+      "description": "Updates a local application from its original installation store; this may trigger dependencies updates.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "app_name": {
+            "type": "string",
+            "description": "The name of the local application to be updated."
+          }
+        },
+        "required": [
+          "app_name"
+        ]
+      }
+    }
+  }
+]

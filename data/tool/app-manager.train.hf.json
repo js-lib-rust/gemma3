@@ -1,0 +1,746 @@
+[
+  [
+    {
+      "role": "system",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Find weather information and forecast apps in the default store, limit 10."
+    },
+    {
+      "role": "model",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "app_manager_find_apps",
+            "arguments": {
+              "store_name": "default",
+              "app_description": "weather information and forecast",
+              "limit": 10
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Find racing games apps in the Streamer store, limit 4."
+    },
+    {
+      "role": "model",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "app_manager_find_apps",
+            "arguments": {
+              "store_name": "Streamer",
+              "app_description": "racing games",
+              "limit": 4
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Find photo editing apps in the premium store, limit 8."
+    },
+    {
+      "role": "model",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "app_manager_find_apps",
+            "arguments": {
+              "store_name": "premium",
+              "app_description": "photo editing",
+              "limit": 8
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Find fitness tracker apps in the Google store, limit 2."
+    },
+    {
+      "role": "model",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "app_manager_find_apps",
+            "arguments": {
+              "store_name": "Google",
+              "app_description": "fitness tracker",
+              "limit": 2
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Find music streaming apps in the global store, limit 20."
+    },
+    {
+      "role": "model",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "app_manager_find_apps",
+            "arguments": {
+              "store_name": "global",
+              "app_description": "music streaming",
+              "limit": 20
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Find budget management apps in the Amazon store, limit 5."
+    },
+    {
+      "role": "model",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "app_manager_find_apps",
+            "arguments": {
+              "store_name": "Amazon",
+              "app_description": "budget management",
+              "limit": 5
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Install the 'My Weather' app from the default store."
+    },
+    {
+      "role": "model",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "app_manager_list_installed_apps",
+            "arguments": {
+              "store_name": "default",
+              "app_name": "My Weather"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Install the 'Chef Assistant' app from the Samsung store."
+    },
+    {
+      "role": "model",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "app_manager_list_installed_apps",
+            "arguments": {
+              "store_name": "Samsung",
+              "app_name": "Chef Assistant"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Install the 'Birds Encyclopedia' app from the Britannica store."
+    },
+    {
+      "role": "model",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "app_manager_list_installed_apps",
+            "arguments": {
+              "store_name": "Britannica",
+              "app_name": "Birds Encyclopedia"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Install the 'Jukebox' app from the Apple store."
+    },
+    {
+      "role": "model",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "app_manager_list_installed_apps",
+            "arguments": {
+              "store_name": "Apple",
+              "app_name": "Jukebox"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Install the 'Romanian Navigator' app from the Google store."
+    },
+    {
+      "role": "model",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "app_manager_list_installed_apps",
+            "arguments": {
+              "store_name": "Google",
+              "app_name": "Romanian Navigator"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Install the 'Math Tutor' app from the premium store."
+    },
+    {
+      "role": "model",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "app_manager_list_installed_apps",
+            "arguments": {
+              "store_name": "premium",
+              "app_name": "Math Tutor"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Update the 'My Weather' app."
+    },
+    {
+      "role": "model",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "app_manager_list_installed_apps",
+            "arguments": {
+              "app_name": "My Weather"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Update the 'Personal Medical History' app."
+    },
+    {
+      "role": "model",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "app_manager_list_installed_apps",
+            "arguments": {
+              "app_name": "Personal Medical History"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Update the 'Astrology Primer' app."
+    },
+    {
+      "role": "model",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "app_manager_list_installed_apps",
+            "arguments": {
+              "app_name": "Astrology Primer"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Update the 'Our Solar System' app."
+    },
+    {
+      "role": "model",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "app_manager_list_installed_apps",
+            "arguments": {
+              "app_name": "Our Solar System"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Update the 'Minecraft' app."
+    },
+    {
+      "role": "model",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "app_manager_list_installed_apps",
+            "arguments": {
+              "app_name": "Minecraft"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Update the 'The Movies DB' app."
+    },
+    {
+      "role": "model",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "app_manager_list_installed_apps",
+            "arguments": {
+              "app_name": "The Movies DB"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Uninstall the 'Deep Ocean 11' app."
+    },
+    {
+      "role": "model",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "app_manager_uninstall_app",
+            "arguments": {
+              "app_name": "Deep Ocean 11"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Uninstall the 'English Translator' app."
+    },
+    {
+      "role": "model",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "app_manager_uninstall_app",
+            "arguments": {
+              "app_name": "English Translator"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Uninstall the 'DOCX Generator' app."
+    },
+    {
+      "role": "model",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "app_manager_uninstall_app",
+            "arguments": {
+              "app_name": "DOCX Generator"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Uninstall the 'Image Editor' app."
+    },
+    {
+      "role": "model",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "app_manager_uninstall_app",
+            "arguments": {
+              "app_name": "Image Editor"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Uninstall the 'Wild Animals Tracker' app."
+    },
+    {
+      "role": "model",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "app_manager_uninstall_app",
+            "arguments": {
+              "app_name": "Wild Animals Tracker"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Uninstall the 'Weather Station' app."
+    },
+    {
+      "role": "model",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "app_manager_uninstall_app",
+            "arguments": {
+              "app_name": "Weather Station"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "List installed apps, with name like *medical*, limit 4."
+    },
+    {
+      "role": "model",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "app_manager_list_installed_apps",
+            "arguments": {
+              "filter": "with name like *medical*",
+              "limit": 4
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "List installed apps, by name, limit 10."
+    },
+    {
+      "role": "model",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "app_manager_list_installed_apps",
+            "arguments": {
+              "filter": "by name",
+              "limit": 10
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "List installed apps, by name ascending, limit 50."
+    },
+    {
+      "role": "model",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "app_manager_list_installed_apps",
+            "arguments": {
+              "filter": "by name ascending",
+              "limit": 50
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "List installed apps, by name descending, limit 20."
+    },
+    {
+      "role": "model",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "app_manager_list_installed_apps",
+            "arguments": {
+              "filter": "by name descending",
+              "limit": 20
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "List installed apps, grouped by category, limit 0."
+    },
+    {
+      "role": "model",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "app_manager_list_installed_apps",
+            "arguments": {
+              "filter": "grouped by category",
+              "limit": 0
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "List installed apps, marked as upgradable, limit 25."
+    },
+    {
+      "role": "model",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "app_manager_list_installed_apps",
+            "arguments": {
+              "filter": "marked as upgradable",
+              "limit": 25
+            }
+          }
+        }
+      ]
+    }
+  ]
+]

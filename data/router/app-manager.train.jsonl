@@ -1,0 +1,40 @@
+/* app manager - find apps in store */
+[{"user":"find weather information and forecast apps in the default store","model":"goal:Find apps in store.\napp-manager:Find weather information and forecast apps in the default store.\nprinter:Print apps list."}]
+[{"user":"i'm looking for a photo editing tool in the premium store","model":"goal:Find apps in store.\napp-manager:Find photo editing apps in the premium store.\nprinter:Print apps list."}]
+[{"user":"can you search the default store for a fitness tracker app?","model":"goal:Find apps in store.\napp-manager:Find fitness tracker apps in the default store.\nprinter:Print apps list."}]
+[{"user":"find me some games in the kids store that are about racing","model":"goal:Find apps in store.\napp-manager:Find racing games apps in the kids store.\nprinter:Print apps list."}]
+[{"user":"search for music streaming applications in the global store","model":"goal:Find apps in store.\napp-manager:Find music streaming apps in the global store.\nprinter:Print apps list."}]
+[{"user":"is there any budget management app available in the default store?","model":"goal:Find apps in store.\napp-manager:Find budget management apps in the default store.\nprinter:Print apps list."}]
+
+/* app manager - install app from store */
+[{"user":"download and install medical database app from default store","model":"goal:Install app from store.\napp-manager:Install 'Medical Database' app from default store.\nprinter:Print app description."}]
+[{"user":"install my weather app","model":"goal:Install app from store.\napp-manager:Install 'My Weather' app from default store.\nprinter:Print app description."}]
+[{"user":"download spotify app from the premium store","model":"goal:Install app from store.\napp-manager:Install the 'Spotify' app from the premium store.\nprinter:Print app description."}]
+[{"user":"please install the angry birds game from kids store","model":"goal:Install app from store.\napp-manager:Install the 'Angry Birds' app from the kids store.\nprinter:Print app description."}]
+[{"user":"get the chrome browser from the default store","model":"goal:Install app from store.\napp-manager:Install the 'Chrome Browser' app from the default store.\nprinter:Print app description."}]
+[{"user":"i want to install instagram from the global store","model":"goal:Install app from store.\napp-manager:Install the 'Instagram' app from the global store.\nprinter:Print app description."}]
+[{"user":"put the Zoom app on my device from the default store","model":"goal:Install app from store.\napp-manager:Install the 'Zoom' app from the premium store.\nprinter:Print app description."}]
+
+/* app manager - update installed app */
+[{"user":"please update the wolfgang game","model":"goal:Update installed app.\napp-manager:Update the 'Wolfgang' app.\nprinter:Print app release note."}]
+[{"user":"check if there is an update available for facebook","model":"goal:Update installed app.\napp-manager:Update the 'Facebook' app.\nprinter:Print app release note."}]
+[{"user":"make sure WhatsApp is up to date","model":"goal:Update installed app.\napp-manager:Update the 'WhatsApp' app.\nprinter:Print app release note."}]
+[{"user":"refresh the version of the netflix app","model":"goal:Update installed app.\napp-manager:Update the 'netflix' app.\nprinter:Print app release note."}]
+[{"user":"i need to update my zoom client","model":"goal:Update installed app.\napp-manager:Update the 'Zoom' app.\nprinter:Print app release note."}]
+[{"user":"run an update for the calculator app","model":"goal:Update installed app.\napp-manager:Update the 'Calculator' app.\nprinter:Print app release note."}]
+
+/* app manager - remove installed app */
+[{"user":"please uninstall the sugar rush game","model":"goal:Remove installed app.\napp-manager:Uninstall the 'Sugar Rush' app.\nprinter:Print uninstall performed note."}]
+[{"user":"remove candy crush app","model":"goal:Remove installed app.\napp-manager:Uninstall the 'Candy Crush' app.\nprinter:Print uninstall performed note."}]
+[{"user":"delete the unused calculator app","model":"goal:Remove installed app.\napp-manager:Uninstall the 'Sugar Rush' app.\nprinter:Print uninstall performed note."}]
+[{"user":"i don't want twitter app anymore, please uninstall it","model":"goal:Remove installed app.\napp-manager:Uninstall the 'Twitter' app.\nprinter:Print uninstall performed note."}]
+[{"user":"get rid of the old Flappy Bird game","model":"goal:Remove installed app.\napp-manager:Uninstall the 'Flappy Bird' app.\nprinter:Print uninstall performed note."}]
+[{"user":"clean up the personal trainer app","model":"goal:Remove installed app.\napp-manager:Uninstall the 'Personal Trainer' app.\nprinter:Print uninstall performed note."}]
+
+/* app manager - list installed apps by criteria */
+[{"user":"list installed apps with name like *medical* and limit 4","model":"goal:List installed apps by criteria.\napp-manager:List installed apps, with name like *medical*, limit 4.\nprinter:Print apps list."}]
+[{"user":"show me first 10 installed apps, by name","model":"goal:List installed apps by criteria.\napp-manager:List installed apps, by name, limit 10.\nprinter:Print apps list."}]
+[{"user":"what applications are already installed?","model":"goal:List installed apps by criteria.\napp-manager:List installed apps, by name, limit 0.\nprinter:Print apps list."}]
+[{"user":"display my app list grouped by category, limit 20","model":"goal:List installed apps by criteria.\napp-manager:List installed apps, grouped by category, limit 20.\nprinter:Print apps list."}]
+[{"user":"can you retrieve a list of 15 of my downloaded apps?","model":"goal:List installed apps by criteria.\napp-manager:List installed apps, by name, limit 15.\nprinter:Print apps list."}]
+[{"user":"check which apps can be upgraded","model":"goal:List installed apps by criteria.\napp-manager:List installed apps, marked as upgradable, limit 0.\nprinter:Print apps list."}]

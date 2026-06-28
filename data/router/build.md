@@ -74,4 +74,5 @@ Parallel train on two GPUs
 ```shell
 python dataset.py --task hf_router_set --file router/router.train.jsonl
 python instruction-tuning.py --epochs 2 --train-batch 1 --learning-rate 1e-5 --files router/router.train.hf.json --model /gemma-3-270m-it --output-dir router-270m --eval-steps 100 --save-steps 1000 --max-length 400 --assert-max-length
+python instruction-tuning.py --epochs 2 --train-batch 1 --learning-rate 8e-6 --files router/router.train.hf.json --model /gemma-3-270m-it --output-dir router-270m --eval-steps 100 --save-steps 1000 --max-length 200 --assert-max-length
 ```

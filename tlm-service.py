@@ -38,6 +38,7 @@ async def handle_slm_request(request):
         json_request = await request.json()
         tools = json_request.get('tools', None)
         if tools:
+            tool_name = tools
             tools_path = os.path.abspath(f"data/tool/{tools}.tools.hf.json")
             print(f"Loading tools {tools_path}")
             with open(tools_path, 'r', encoding='UTF-8') as file:
@@ -45,6 +46,7 @@ async def handle_slm_request(request):
             system_role = "developer"
             system = "You are a model that can do function calling with the following functions"
         else:
+            tool_name = ""
             system_role = "system"
             system = "Rewrite and route the next user prompt"
         prompt = json_request['prompt']
@@ -113,6 +115,8 @@ async def handle_slm_request(request):
                     }
                 else:
                     function = util.parse_gemma_function_response(output_text)[0]
+                    function['agent'] = tool_name
+                    function['name'] = function['name'].replace(tool_name.replace('-', '_') + '_', '')
 
                 response.append({
                     "function": function,

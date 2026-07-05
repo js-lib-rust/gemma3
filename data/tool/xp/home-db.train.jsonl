@@ -1,0 +1,7 @@
+/* home_db_list_devices */
+{"prompt":"List the humidity sensors.","function":"home_db_list_devices","arguments":{"device_type":"humidity sensor"}}
+{"prompt":"List the temperature sensors in the house.","function":"home_db_list_devices","device_type":"temperature sensor","arguments":{"zone_name":"house"}}
+{"prompt":"List all the devices in the kitchen.","function":"home_db_list_devices","device_type":"all","arguments":{"zone_name":"kitchen"}}
+
+/* home_db_get_device_description */
+{"prompt":"Get the description of the light actuator in the kitchen.","function":"home_db_get_device_description","device_name":"light","arguments":{"zone_name":"kitchen"}}

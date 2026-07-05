@@ -1,0 +1,23 @@
+/* user_set_property */
+{"prompt":"Set the blood group to AB+ for Luntraru Daniela.","function":"user_set_property","arguments":{"username":"Luntraru Daniela","property":"blood group","value":"AB+"}}
+{"prompt":"Set the bank account to RO72 INGB 0000 9999 0907 4256 for Lontkowschi Mirela Petronela.","function":"user_set_property","arguments":{"username":"Lontkowschi Mirela Petronela","property":"bank account","value":"RO72 INGB 0000 9999 0907 4256"}}
+{"prompt":"Set the school address to Baia Mare, str. Împăcării nr. 13 for Lodină Lăcrimioara.","function":"user_set_property","arguments":{"username":"Lodină Lăcrimioara","property":"school address","value":"Baia Mare, str. Împăcării nr. 13"}}
+
+/* user_update_property */
+{"prompt":"Update the personal email address to aacatrinei@yahoo.com for Acatrinei Alin.","function":"user_update_property","arguments":{"username":"Acatrinei Alin","property":"personal email address","value":"aacatrinei@yahoo.com"}}
+
+/* user_rename_property */
+{"prompt":"Rename the personal email address property to personal email for Rotaru Adelina.","function":"user_update_property","arguments":{"username":"Rotaru Adelina","old_property":"personal email address","new_property":"personal email"}}
+
+/* user_get_property */
+{"prompt":"Get the personal phone number of Baciu Vasile.","function":"user_get_property","arguments":{"username":"Baciu Vasile","property":"personal phone number"}}
+
+/* user_remove_property */
+{"prompt":"Remove profession competence from Piersic Florin.","function":"user_remove_property","arguments":{"username":"Adam Iosif","property":"profession competence"}}
+{"prompt":"Remove mental capabilities from Preda Marin.","function":"user_remove_property","arguments":{"username":"Preda Marin","property":"mental capabilities"}}
+{"prompt":"Remove writing skills from Caragiale Ioan Luca.","function":"user_remove_property","arguments":{"username":"Caragiale Ioan Luca","property":"writing skills"}}
+
+/* user_list_properties */
+{"prompt":"List user profile properties for Marton Csaba.","function":"user_list_properties","arguments":{"username":"Marton Csaba"}}
+{"prompt":"List user profile properties for Chiriac Corina.","function":"user_list_properties","arguments":{"username":"Chiriac Corina"}}
+{"prompt":"List user profile properties for Voicu Mădălina.","function":"user_list_properties","arguments":{"username":"Voicu Mădălina"}}

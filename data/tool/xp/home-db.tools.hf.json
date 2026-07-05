@@ -1,0 +1,50 @@
+[
+  {
+    "type": "function",
+    "function": {
+      "name": "home_db_get_device_description",
+      "description": "Get the technical description of the named device, optionally specifying the zone in which the device is located.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "device_name": {
+            "type": "string",
+            "description": "the human-readable name of the device."
+          },
+          "zone_name": {
+            "type": "string",
+            "nullable": true,
+            "description": "the name of the zone where device is located, optional."
+          }
+        },
+        "required": [
+          "device_name"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "home_db_list_devices",
+      "description": "List all devices of a certain type or 'all' keyword for any type, optionally specifying the zone where the devices are located.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "device_type": {
+            "type": "string",
+            "description": "the human-readable device type or 'all' for any type."
+          },
+          "zone_name": {
+            "type": "string",
+            "nullable": true,
+            "description": "the name of the zone where devices are located, optional."
+          }
+        },
+        "required": [
+          "device_type"
+        ]
+      }
+    }
+  }
+]

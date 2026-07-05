@@ -1,0 +1,142 @@
+[
+  {
+    "type": "function",
+    "function": {
+      "name": "home_automation_execute_action",
+      "description": "Execute action on named device, optionally specifying the zone in which the device is located.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "action_name": {
+            "type": "string",
+            "description": "action to be executed on device."
+          },
+          "device_name": {
+            "type": "string",
+            "description": "the human-readable name of the device."
+          },
+          "zone_name": {
+            "type": "string",
+            "nullable": true,
+            "description": "the name of the zone where the device is located, optional."
+          }
+        },
+        "required": [
+          "action_name",
+          "device_name"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "home_automation_get_device_status",
+      "description": "Get the internal status of the named device, optionally specifying the zone in which the device is located.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "device_name": {
+            "type": "string",
+            "description": "the human-readable name of the device."
+          },
+          "zone_name": {
+            "type": "string",
+            "nullable": true,
+            "description": "the name of the zone where device is located, optional."
+          }
+        },
+        "required": [
+          "device_name"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "home_automation_get_property",
+      "description": "Get the value of a physical property of the named device, optionally specifying the zone in which the device is located.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "physical_property": {
+            "type": "string",
+            "description": "physical property for which the value is obtained."
+          },
+          "device_name": {
+            "type": "string",
+            "description": "the human-readable name of the device."
+          },
+          "zone_name": {
+            "type": "string",
+            "nullable": true,
+            "description": "the name of the zone where device is located, optional."
+          }
+        },
+        "required": [
+          "physical_property",
+          "device_name"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "home_automation_read_sensor_value",
+      "description": "Read the value of the named sensor, optionally specifying the zone in which the sensor is located.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "sensor_name": {
+            "type": "string",
+            "description": "the human-readable name of the sensor."
+          },
+          "zone_name": {
+            "type": "string",
+            "nullable": true,
+            "description": "the name of the zone where the sensor is located, optional."
+          }
+        },
+        "required": [
+          "sensor_name"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "home_automation_set_property",
+      "description": "Set the physical property value to the named device, optionally specifying the zone in which the device is located.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "physical_property": {
+            "type": "string",
+            "description": "physical property to set."
+          },
+          "value": {
+            "type": "string",
+            "description": "new value for the physical property."
+          },
+          "device_name": {
+            "type": "string",
+            "description": "the human-readable name of the device."
+          },
+          "zone_name": {
+            "type": "string",
+            "nullable": true,
+            "description": "the name of the zone where device is located, optional."
+          }
+        },
+        "required": [
+          "physical_property",
+          "value",
+          "device_name"
+        ]
+      }
+    }
+  }
+]

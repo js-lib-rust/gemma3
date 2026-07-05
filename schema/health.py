@@ -61,25 +61,8 @@ def health_read_medical_records(person: str, date: str):
         date: the date we want to retrieve the medical records, in ISO 8601 format, e.g. 2026-03-24
     """
 
-@dataclass
-class MedicalRecord:
-    """
-    Represents a single medical measurement.
 
-    Args:
-        timestamp: moment when record was created, in format YYYY-MM-DD HH:MM:SS.
-        person: human-readable person name, unique per medical database.
-        measurement: measurement type.
-        value: measurement numeric value.
-    """
-
-    timestamp: str
-    person: str
-    measurement: str
-    value: float
-
-
-def health_evaluate_medical_records(records: List[MedicalRecord]):
+def health_evaluate_medical_records(records: List):
     """
     Evaluate medical records. Returns given records list with 'resolution' field updated.
 

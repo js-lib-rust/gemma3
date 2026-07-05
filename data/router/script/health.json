@@ -1,0 +1,14 @@
+{
+  "script": "save-my-blood-measurements.aiscript",
+  "prompts": [
+    {"x":"save my blood measurements of 125 85 70", "c":"systole:125 diastole:85 heart-rate:70"},
+    "save my blood 125 85 70",
+    "record my blood 128 81 55",
+    "write my blood readings: 130 82 85",
+    "record my blood measurements: 110 66 84",
+    "logs my blood readings: 133 92 87",
+    "logs my blood readings: 136 90 82",
+    "write my blood readings: 119 with 81 and 93",
+    "write my blood readings: 120 with 84 and 76"
+  ]
+}

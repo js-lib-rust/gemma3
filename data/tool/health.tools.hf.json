@@ -2,6 +2,49 @@
   {
     "type": "function",
     "function": {
+      "name": "health_compute_body_mass_index",
+      "description": "Computer body mass index for given weight and height.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "weight": {
+            "type": "number",
+            "description": "person weight expressed in kg ((kilograms)."
+          },
+          "height": {
+            "type": "number",
+            "description": "person height expressed in cm (centimeters)."
+          }
+        },
+        "required": [
+          "weight",
+          "height"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "health_evaluate_medical_records",
+      "description": "Evaluate medical records. Returns given records list with 'resolution' field updated.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "records": {
+            "type": "array",
+            "description": "A list of objects containing timestamp (ISO 8601), person name, the type of measurement (e.g., 'Heart Rate'), and the numeric value. Resolution field is not defined on input."
+          }
+        },
+        "required": [
+          "records"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
       "name": "health_read_medical_records",
       "description": "Read person records from the medical database for a specified date.",
       "parameters": {
@@ -13,7 +56,7 @@
           },
           "date": {
             "type": "string",
-            "description": "the past date we want to retrieve the medical records, in ISO 8601 format, e.g. 2026-03-24"
+            "description": "the date we want to retrieve the medical records, in ISO 8601 format, e.g. 2026-03-24"
           }
         },
         "required": [

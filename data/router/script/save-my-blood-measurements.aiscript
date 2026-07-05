@@ -1,0 +1,7 @@
+Write my blood pressure and heart rate measurements to medical database.
+Retrieve my username from user pofile then extract measurements from prompt and write to medical database.
+Print a summary of saved record.
+
+user-profile:Get my username.
+health:Save blood pressure measurement of 125/85 mmHg and heart rate of 70 bpm for ${username}.
+printer:Print the summary of the saved medical readings.

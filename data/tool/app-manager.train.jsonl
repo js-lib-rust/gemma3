@@ -7,20 +7,20 @@
 {"prompt":"Find budget management apps in the Amazon store, limit 5.","function":"app_manager_find_apps","arguments":{"store_name":"Amazon","app_description":"budget management","limit":5}}
 
 /* app_manager_install_app(store_name: str, app_name: str) */
-{"prompt":"Install the 'My Weather' app from the default store.","function":"app_manager_list_installed_apps","arguments":{"store_name":"default","app_name":"My Weather"}}
-{"prompt":"Install the 'Chef Assistant' app from the Samsung store.","function":"app_manager_list_installed_apps","arguments":{"store_name":"Samsung","app_name":"Chef Assistant"}}
-{"prompt":"Install the 'Birds Encyclopedia' app from the Britannica store.","function":"app_manager_list_installed_apps","arguments":{"store_name":"Britannica","app_name":"Birds Encyclopedia"}}
-{"prompt":"Install the 'Jukebox' app from the Apple store.","function":"app_manager_list_installed_apps","arguments":{"store_name":"Apple","app_name":"Jukebox"}}
-{"prompt":"Install the 'Romanian Navigator' app from the Google store.","function":"app_manager_list_installed_apps","arguments":{"store_name":"Google","app_name":"Romanian Navigator"}}
-{"prompt":"Install the 'Math Tutor' app from the premium store.","function":"app_manager_list_installed_apps","arguments":{"store_name":"premium","app_name":"Math Tutor"}}
+{"prompt":"Install the 'My Weather' app from the default store.","function":"app_manager_install_app","arguments":{"store_name":"default","app_name":"My Weather"}}
+{"prompt":"Install the 'Chef Assistant' app from the Samsung store.","function":"app_manager_install_app","arguments":{"store_name":"Samsung","app_name":"Chef Assistant"}}
+{"prompt":"Install the 'Birds Encyclopedia' app from the Britannica store.","function":"app_manager_install_app","arguments":{"store_name":"Britannica","app_name":"Birds Encyclopedia"}}
+{"prompt":"Install the 'Jukebox' app from the Apple store.","function":"app_manager_install_app","arguments":{"store_name":"Apple","app_name":"Jukebox"}}
+{"prompt":"Install the 'Romanian Navigator' app from the Google store.","function":"app_manager_install_app","arguments":{"store_name":"Google","app_name":"Romanian Navigator"}}
+{"prompt":"Install the 'Math Tutor' app from the premium store.","function":"app_manager_install_app","arguments":{"store_name":"premium","app_name":"Math Tutor"}}
 
 /* app_manager_update_app(app_name: str) */
-{"prompt":"Update the 'My Weather' app.","function":"app_manager_list_installed_apps","arguments":{"app_name":"My Weather"}}
-{"prompt":"Update the 'Personal Medical History' app.","function":"app_manager_list_installed_apps","arguments":{"app_name":"Personal Medical History"}}
-{"prompt":"Update the 'Astrology Primer' app.","function":"app_manager_list_installed_apps","arguments":{"app_name":"Astrology Primer"}}
-{"prompt":"Update the 'Our Solar System' app.","function":"app_manager_list_installed_apps","arguments":{"app_name":"Our Solar System"}}
-{"prompt":"Update the 'Minecraft' app.","function":"app_manager_list_installed_apps","arguments":{"app_name":"Minecraft"}}
-{"prompt":"Update the 'The Movies DB' app.","function":"app_manager_list_installed_apps","arguments":{"app_name":"The Movies DB"}}
+{"prompt":"Update the 'My Weather' app.","function":"app_manager_update_app","arguments":{"app_name":"My Weather"}}
+{"prompt":"Update the 'Personal Medical History' app.","function":"app_manager_update_app","arguments":{"app_name":"Personal Medical History"}}
+{"prompt":"Update the 'Astrology Primer' app.","function":"app_manager_update_app","arguments":{"app_name":"Astrology Primer"}}
+{"prompt":"Update the 'Our Solar System' app.","function":"app_manager_update_app","arguments":{"app_name":"Our Solar System"}}
+{"prompt":"Update the 'Minecraft' app.","function":"app_manager_update_app","arguments":{"app_name":"Minecraft"}}
+{"prompt":"Update the 'The Movies DB' app.","function":"app_manager_update_app","arguments":{"app_name":"The Movies DB"}}
 
 /* app_manager_uninstall_app(app_name: str) */
 {"prompt":"Uninstall the 'Deep Ocean 11' app.","function":"app_manager_uninstall_app","arguments":{"app_name":"Deep Ocean 11"}}

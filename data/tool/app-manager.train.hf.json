@@ -170,7 +170,7 @@
         {
           "type": "function",
           "function": {
-            "name": "app_manager_list_installed_apps",
+            "name": "app_manager_install_app",
             "arguments": {
               "store_name": "default",
               "app_name": "My Weather"
@@ -195,7 +195,7 @@
         {
           "type": "function",
           "function": {
-            "name": "app_manager_list_installed_apps",
+            "name": "app_manager_install_app",
             "arguments": {
               "store_name": "Samsung",
               "app_name": "Chef Assistant"
@@ -220,7 +220,7 @@
         {
           "type": "function",
           "function": {
-            "name": "app_manager_list_installed_apps",
+            "name": "app_manager_install_app",
             "arguments": {
               "store_name": "Britannica",
               "app_name": "Birds Encyclopedia"
@@ -245,7 +245,7 @@
         {
           "type": "function",
           "function": {
-            "name": "app_manager_list_installed_apps",
+            "name": "app_manager_install_app",
             "arguments": {
               "store_name": "Apple",
               "app_name": "Jukebox"
@@ -270,7 +270,7 @@
         {
           "type": "function",
           "function": {
-            "name": "app_manager_list_installed_apps",
+            "name": "app_manager_install_app",
             "arguments": {
               "store_name": "Google",
               "app_name": "Romanian Navigator"
@@ -295,7 +295,7 @@
         {
           "type": "function",
           "function": {
-            "name": "app_manager_list_installed_apps",
+            "name": "app_manager_install_app",
             "arguments": {
               "store_name": "premium",
               "app_name": "Math Tutor"
@@ -320,7 +320,7 @@
         {
           "type": "function",
           "function": {
-            "name": "app_manager_list_installed_apps",
+            "name": "app_manager_update_app",
             "arguments": {
               "app_name": "My Weather"
             }
@@ -344,7 +344,7 @@
         {
           "type": "function",
           "function": {
-            "name": "app_manager_list_installed_apps",
+            "name": "app_manager_update_app",
             "arguments": {
               "app_name": "Personal Medical History"
             }
@@ -368,7 +368,7 @@
         {
           "type": "function",
           "function": {
-            "name": "app_manager_list_installed_apps",
+            "name": "app_manager_update_app",
             "arguments": {
               "app_name": "Astrology Primer"
             }
@@ -392,7 +392,7 @@
         {
           "type": "function",
           "function": {
-            "name": "app_manager_list_installed_apps",
+            "name": "app_manager_update_app",
             "arguments": {
               "app_name": "Our Solar System"
             }
@@ -416,7 +416,7 @@
         {
           "type": "function",
           "function": {
-            "name": "app_manager_list_installed_apps",
+            "name": "app_manager_update_app",
             "arguments": {
               "app_name": "Minecraft"
             }
@@ -440,7 +440,7 @@
         {
           "type": "function",
           "function": {
-            "name": "app_manager_list_installed_apps",
+            "name": "app_manager_update_app",
             "arguments": {
               "app_name": "The Movies DB"
             }

@@ -6,11 +6,11 @@
     },
     {
       "role": "user",
-      "content": "find weather information and forecast apps in the default store"
+      "content": "find apps for learning math"
     },
     {
       "role": "model",
-      "content": "goal:Find apps in store.\napp-manager:Find weather information and forecast apps in the default store.\nprinter:Print apps list."
+      "content": "goal:Find apps in store.\napp-manager:Find learning math apps in the default store, limit 0.\nprinter:Print apps list."
     }
   ],
   [
@@ -20,11 +20,137 @@
     },
     {
       "role": "user",
-      "content": "i'm looking for a photo editing tool in the premium store"
+      "content": "find some apps for playing guitar, limit 4"
     },
     {
       "role": "model",
-      "content": "goal:Find apps in store.\napp-manager:Find photo editing apps in the premium store.\nprinter:Print apps list."
+      "content": "goal:Find apps in store.\napp-manager:Find playing guitar apps in the default store, limit 4.\nprinter:Print apps list."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "find first 10 cooking recipies apps"
+    },
+    {
+      "role": "model",
+      "content": "goal:Find apps in store.\napp-manager:Find cooking recipies apps in the default store, limit 10.\nprinter:Print apps list."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get cooking apps"
+    },
+    {
+      "role": "model",
+      "content": "goal:Find apps in store.\napp-manager:Find cooking apps in the default store, limit 0.\nprinter:Print apps list."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "search for fitness tracking apps, limit 10"
+    },
+    {
+      "role": "model",
+      "content": "goal:Find apps in store.\napp-manager:Find fitness tracking apps in the default store, limit 10.\nprinter:Print apps list."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "look for some medical care apps, limit 15"
+    },
+    {
+      "role": "model",
+      "content": "goal:Find apps in store.\napp-manager:Find medical care apps in the default store, limit 15.\nprinter:Print apps list."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "is there any europe travel guide app available?"
+    },
+    {
+      "role": "model",
+      "content": "goal:Find apps in store.\napp-manager:Find Europe travel guide apps in the default store, limit 0.\nprinter:Print apps list."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "can you find an astrology app?"
+    },
+    {
+      "role": "model",
+      "content": "goal:Find apps in store.\napp-manager:Find astrology apps in the default store, limit 0.\nprinter:Print apps list."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "are there any photo editing applications?"
+    },
+    {
+      "role": "model",
+      "content": "goal:Find apps in store.\napp-manager:Find photo editing apps in the default store, limit 0.\nprinter:Print apps list."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "find weather information and forecast apps in the default store, maximum 10"
+    },
+    {
+      "role": "model",
+      "content": "goal:Find apps in store.\napp-manager:Find weather information and forecast apps in the default store, limit 10.\nprinter:Print apps list."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "i'm looking for a photo editing tool in the premium store, limit 20"
+    },
+    {
+      "role": "model",
+      "content": "goal:Find apps in store.\napp-manager:Find photo editing apps in the premium store, limit 20.\nprinter:Print apps list."
     }
   ],
   [
@@ -38,7 +164,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Find apps in store.\napp-manager:Find fitness tracker apps in the default store.\nprinter:Print apps list."
+      "content": "goal:Find apps in store.\napp-manager:Find fitness tracker apps in the default store, limit 0.\nprinter:Print apps list."
     }
   ],
   [
@@ -48,11 +174,11 @@
     },
     {
       "role": "user",
-      "content": "find me some games in the kids store that are about racing"
+      "content": "find me some games in the kids store that are about racing limit 10"
     },
     {
       "role": "model",
-      "content": "goal:Find apps in store.\napp-manager:Find racing games apps in the kids store.\nprinter:Print apps list."
+      "content": "goal:Find apps in store.\napp-manager:Find racing games apps in the kids store, limit 10.\nprinter:Print apps list."
     }
   ],
   [
@@ -62,11 +188,11 @@
     },
     {
       "role": "user",
-      "content": "search for music streaming applications in the global store"
+      "content": "search for music streaming applications in the global store, limit 8"
     },
     {
       "role": "model",
-      "content": "goal:Find apps in store.\napp-manager:Find music streaming apps in the global store.\nprinter:Print apps list."
+      "content": "goal:Find apps in store.\napp-manager:Find music streaming apps in the global store, limit 8.\nprinter:Print apps list."
     }
   ],
   [
@@ -80,7 +206,119 @@
     },
     {
       "role": "model",
-      "content": "goal:Find apps in store.\napp-manager:Find budget management apps in the default store.\nprinter:Print apps list."
+      "content": "goal:Find apps in store.\napp-manager:Find budget management apps in the default store, limit 0.\nprinter:Print apps list."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "are there any romanian auto navigator apps in the premium store?"
+    },
+    {
+      "role": "model",
+      "content": "goal:Find apps in store.\napp-manager:Find romanian auto navigator apps in the premium store, limit 0.\nprinter:Print apps list."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "install wild birds atlas app"
+    },
+    {
+      "role": "model",
+      "content": "goal:Install app from store.\napp-manager:Install the 'Wild Birds Atlas' app from the default store.\nprinter:Print app description."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "download my jukebox application"
+    },
+    {
+      "role": "model",
+      "content": "goal:Install app from store.\napp-manager:Install the 'My Jukebox' app from the default store.\nprinter:Print app description."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "please install the digital ocean app"
+    },
+    {
+      "role": "model",
+      "content": "goal:Install app from store.\napp-manager:Install the 'Digital Ocean' app from the default store.\nprinter:Print app description."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "add learning piano app"
+    },
+    {
+      "role": "model",
+      "content": "goal:Install app from store.\napp-manager:Install the 'Learning Piano' app from the default store.\nprinter:Print app description."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get the calculator app"
+    },
+    {
+      "role": "model",
+      "content": "goal:Install app from store.\napp-manager:Install the 'Calculator' app from the default store.\nprinter:Print app description."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "fetch how to drive a car app"
+    },
+    {
+      "role": "model",
+      "content": "goal:Install app from store.\napp-manager:Install the 'How to Drive a Car' app from the default store.\nprinter:Print app description."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "acquire the premium weather app"
+    },
+    {
+      "role": "model",
+      "content": "goal:Install app from store.\napp-manager:Install the 'Premium weather' app from the default store.\nprinter:Print app description."
     }
   ],
   [
@@ -94,7 +332,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Install app from store.\napp-manager:Install 'Medical Database' app from default store.\nprinter:Print app description."
+      "content": "goal:Install app from store.\napp-manager:Install the 'Medical Database' app from the default store.\nprinter:Print app description."
     }
   ],
   [
@@ -108,7 +346,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Install app from store.\napp-manager:Install 'My Weather' app from default store.\nprinter:Print app description."
+      "content": "goal:Install app from store.\napp-manager:Install the 'My Weather' app from the default store.\nprinter:Print app description."
     }
   ],
   [
@@ -179,6 +417,34 @@
     {
       "role": "model",
       "content": "goal:Install app from store.\napp-manager:Install the 'Zoom' app from the premium store.\nprinter:Print app description."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "update system editor app"
+    },
+    {
+      "role": "model",
+      "content": "goal:Update installed app.\napp-manager:Update the 'System Editor' app.\nprinter:Print app release note."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "upgrade the game 'the last of us'"
+    },
+    {
+      "role": "model",
+      "content": "goal:Update installed app.\napp-manager:Update the 'The Last of Us' app.\nprinter:Print app release note."
     }
   ],
   [
@@ -356,11 +622,39 @@
     },
     {
       "role": "user",
+      "content": "list all installed apps"
+    },
+    {
+      "role": "model",
+      "content": "goal:List installed apps.\napp-manager:List installed apps, by name, limit 0.\nprinter:Print apps list."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
       "content": "list installed apps with name like *medical* and limit 4"
     },
     {
       "role": "model",
-      "content": "goal:List installed apps by criteria.\napp-manager:List installed apps, with name like *medical*, limit 4.\nprinter:Print apps list."
+      "content": "goal:List installed apps.\napp-manager:List installed apps, with name like *medical*, limit 4.\nprinter:Print apps list."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "list all installed apps with name like tools*"
+    },
+    {
+      "role": "model",
+      "content": "goal:List installed apps.\napp-manager:List installed apps, with name like tools*, limit 0.\nprinter:Print apps list."
     }
   ],
   [
@@ -374,7 +668,7 @@
     },
     {
       "role": "model",
-      "content": "goal:List installed apps by criteria.\napp-manager:List installed apps, by name, limit 10.\nprinter:Print apps list."
+      "content": "goal:List installed apps.\napp-manager:List installed apps, by name, limit 10.\nprinter:Print apps list."
     }
   ],
   [
@@ -388,7 +682,7 @@
     },
     {
       "role": "model",
-      "content": "goal:List installed apps by criteria.\napp-manager:List installed apps, by name, limit 0.\nprinter:Print apps list."
+      "content": "goal:List installed apps.\napp-manager:List installed apps, by name, limit 0.\nprinter:Print apps list."
     }
   ],
   [
@@ -402,7 +696,7 @@
     },
     {
       "role": "model",
-      "content": "goal:List installed apps by criteria.\napp-manager:List installed apps, grouped by category, limit 20.\nprinter:Print apps list."
+      "content": "goal:List installed apps.\napp-manager:List installed apps, grouped by category, limit 20.\nprinter:Print apps list."
     }
   ],
   [
@@ -416,7 +710,35 @@
     },
     {
       "role": "model",
-      "content": "goal:List installed apps by criteria.\napp-manager:List installed apps, by name, limit 15.\nprinter:Print apps list."
+      "content": "goal:List installed apps.\napp-manager:List installed apps, by name, limit 15.\nprinter:Print apps list."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "list upgradable apps"
+    },
+    {
+      "role": "model",
+      "content": "goal:List installed apps.\napp-manager:List installed apps, marked as upgradable, limit 0.\nprinter:Print apps list."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "list upgradable apps, limit 8"
+    },
+    {
+      "role": "model",
+      "content": "goal:List installed apps.\napp-manager:List installed apps, marked as upgradable, limit 8.\nprinter:Print apps list."
     }
   ],
   [
@@ -430,7 +752,7 @@
     },
     {
       "role": "model",
-      "content": "goal:List installed apps by criteria.\napp-manager:List installed apps, marked as upgradable, limit 0.\nprinter:Print apps list."
+      "content": "goal:List installed apps.\napp-manager:List installed apps, marked as upgradable, limit 0.\nprinter:Print apps list."
     }
   ],
   [
@@ -455,6 +777,48 @@
     {
       "role": "user",
       "content": "what do you know about aurel vlaicu?"
+    },
+    {
+      "role": "model",
+      "content": "goal:Route to default LLM."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "hi there"
+    },
+    {
+      "role": "model",
+      "content": "goal:Route to default LLM."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "in above release note there is a field named update type. please list all reasonable values"
+    },
+    {
+      "role": "model",
+      "content": "goal:Route to default LLM."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "how gladiators salute caesar when entering arena?"
     },
     {
       "role": "model",
@@ -9811,6 +10175,20 @@
     {
       "role": "model",
       "content": "goal:Asses an action based on hourly weather forecast.\ntime-service:Get the date for today.\nuser-profile:Get my username.\nuser-profile:Get the location property of ${username}.\nweather:Get hourly weather forecast for ${date} in ${location}.\nquery:I have some work to do outside today. When could I do it?"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "list weather forecast for next two weeks"
+    },
+    {
+      "role": "model",
+      "content": "goal:Request daily weather forecast from meteo server.\nuser-profile:Get my username.\nuser-profile:Get the location property of ${username}.\nweather:Get daily weather forecast for the next two weeks in ${location}.\nquery:Print daily weather forecast in tabular form."
     }
   ],
   [

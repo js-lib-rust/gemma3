@@ -1,14 +1,35 @@
-/* app manager - find apps in store */
-[{"user":"find weather information and forecast apps in the default store","model":"goal:Find apps in store.\napp-manager:Find weather information and forecast apps in the default store.\nprinter:Print apps list."}]
-[{"user":"i'm looking for a photo editing tool in the premium store","model":"goal:Find apps in store.\napp-manager:Find photo editing apps in the premium store.\nprinter:Print apps list."}]
-[{"user":"can you search the default store for a fitness tracker app?","model":"goal:Find apps in store.\napp-manager:Find fitness tracker apps in the default store.\nprinter:Print apps list."}]
-[{"user":"find me some games in the kids store that are about racing","model":"goal:Find apps in store.\napp-manager:Find racing games apps in the kids store.\nprinter:Print apps list."}]
-[{"user":"search for music streaming applications in the global store","model":"goal:Find apps in store.\napp-manager:Find music streaming apps in the global store.\nprinter:Print apps list."}]
-[{"user":"is there any budget management app available in the default store?","model":"goal:Find apps in store.\napp-manager:Find budget management apps in the default store.\nprinter:Print apps list."}]
+/* app manager - find apps in default store */
+[{"user":"find apps for learning math","model":"goal:Find apps in store.\napp-manager:Find learning math apps in the default store, limit 0.\nprinter:Print apps list."}]
+[{"user":"find some apps for playing guitar, limit 4","model":"goal:Find apps in store.\napp-manager:Find playing guitar apps in the default store, limit 4.\nprinter:Print apps list."}]
+[{"user":"find first 10 cooking recipies apps","model":"goal:Find apps in store.\napp-manager:Find cooking recipies apps in the default store, limit 10.\nprinter:Print apps list."}]
+[{"user":"get cooking apps","model":"goal:Find apps in store.\napp-manager:Find cooking apps in the default store, limit 0.\nprinter:Print apps list."}]
+[{"user":"search for fitness tracking apps, limit 10","model":"goal:Find apps in store.\napp-manager:Find fitness tracking apps in the default store, limit 10.\nprinter:Print apps list."}]
+[{"user":"look for some medical care apps, limit 15","model":"goal:Find apps in store.\napp-manager:Find medical care apps in the default store, limit 15.\nprinter:Print apps list."}]
+[{"user":"is there any europe travel guide app available?","model":"goal:Find apps in store.\napp-manager:Find Europe travel guide apps in the default store, limit 0.\nprinter:Print apps list."}]
+[{"user":"can you find an astrology app?","model":"goal:Find apps in store.\napp-manager:Find astrology apps in the default store, limit 0.\nprinter:Print apps list."}]
+[{"user":"are there any photo editing applications?","model":"goal:Find apps in store.\napp-manager:Find photo editing apps in the default store, limit 0.\nprinter:Print apps list."}]
 
-/* app manager - install app from store */
-[{"user":"download and install medical database app from default store","model":"goal:Install app from store.\napp-manager:Install 'Medical Database' app from default store.\nprinter:Print app description."}]
-[{"user":"install my weather app","model":"goal:Install app from store.\napp-manager:Install 'My Weather' app from default store.\nprinter:Print app description."}]
+/* app manager - find apps in the store */
+[{"user":"find weather information and forecast apps in the default store, maximum 10","model":"goal:Find apps in store.\napp-manager:Find weather information and forecast apps in the default store, limit 10.\nprinter:Print apps list."}]
+[{"user":"i'm looking for a photo editing tool in the premium store, limit 20","model":"goal:Find apps in store.\napp-manager:Find photo editing apps in the premium store, limit 20.\nprinter:Print apps list."}]
+[{"user":"can you search the default store for a fitness tracker app?","model":"goal:Find apps in store.\napp-manager:Find fitness tracker apps in the default store, limit 0.\nprinter:Print apps list."}]
+[{"user":"find me some games in the kids store that are about racing limit 10","model":"goal:Find apps in store.\napp-manager:Find racing games apps in the kids store, limit 10.\nprinter:Print apps list."}]
+[{"user":"search for music streaming applications in the global store, limit 8","model":"goal:Find apps in store.\napp-manager:Find music streaming apps in the global store, limit 8.\nprinter:Print apps list."}]
+[{"user":"is there any budget management app available in the default store?","model":"goal:Find apps in store.\napp-manager:Find budget management apps in the default store, limit 0.\nprinter:Print apps list."}]
+[{"user":"are there any romanian auto navigator apps in the premium store?","model":"goal:Find apps in store.\napp-manager:Find romanian auto navigator apps in the premium store, limit 0.\nprinter:Print apps list."}]
+
+/* app manager - install app from default store */
+[{"user":"install wild birds atlas app","model":"goal:Install app from store.\napp-manager:Install the 'Wild Birds Atlas' app from the default store.\nprinter:Print app description."}]
+[{"user":"download my jukebox application","model":"goal:Install app from store.\napp-manager:Install the 'My Jukebox' app from the default store.\nprinter:Print app description."}]
+[{"user":"please install the digital ocean app","model":"goal:Install app from store.\napp-manager:Install the 'Digital Ocean' app from the default store.\nprinter:Print app description."}]
+[{"user":"add learning piano app","model":"goal:Install app from store.\napp-manager:Install the 'Learning Piano' app from the default store.\nprinter:Print app description."}]
+[{"user":"get the calculator app","model":"goal:Install app from store.\napp-manager:Install the 'Calculator' app from the default store.\nprinter:Print app description."}]
+[{"user":"fetch how to drive a car app","model":"goal:Install app from store.\napp-manager:Install the 'How to Drive a Car' app from the default store.\nprinter:Print app description."}]
+[{"user":"acquire the premium weather app","model":"goal:Install app from store.\napp-manager:Install the 'Premium weather' app from the default store.\nprinter:Print app description."}]
+
+/* app manager - install app from the store */
+[{"user":"download and install medical database app from default store","model":"goal:Install app from store.\napp-manager:Install the 'Medical Database' app from the default store.\nprinter:Print app description."}]
+[{"user":"install my weather app","model":"goal:Install app from store.\napp-manager:Install the 'My Weather' app from the default store.\nprinter:Print app description."}]
 [{"user":"download spotify app from the premium store","model":"goal:Install app from store.\napp-manager:Install the 'Spotify' app from the premium store.\nprinter:Print app description."}]
 [{"user":"please install the angry birds game from kids store","model":"goal:Install app from store.\napp-manager:Install the 'Angry Birds' app from the kids store.\nprinter:Print app description."}]
 [{"user":"get the chrome browser from the default store","model":"goal:Install app from store.\napp-manager:Install the 'Chrome Browser' app from the default store.\nprinter:Print app description."}]
@@ -16,6 +37,8 @@
 [{"user":"put the Zoom app on my device from the default store","model":"goal:Install app from store.\napp-manager:Install the 'Zoom' app from the premium store.\nprinter:Print app description."}]
 
 /* app manager - update installed app */
+[{"user":"update system editor app","model":"goal:Update installed app.\napp-manager:Update the 'System Editor' app.\nprinter:Print app release note."}]
+[{"user":"upgrade the game 'the last of us'","model":"goal:Update installed app.\napp-manager:Update the 'The Last of Us' app.\nprinter:Print app release note."}]
 [{"user":"please update the wolfgang game","model":"goal:Update installed app.\napp-manager:Update the 'Wolfgang' app.\nprinter:Print app release note."}]
 [{"user":"check if there is an update available for facebook","model":"goal:Update installed app.\napp-manager:Update the 'Facebook' app.\nprinter:Print app release note."}]
 [{"user":"make sure WhatsApp is up to date","model":"goal:Update installed app.\napp-manager:Update the 'WhatsApp' app.\nprinter:Print app release note."}]
@@ -31,10 +54,14 @@
 [{"user":"get rid of the old Flappy Bird game","model":"goal:Remove installed app.\napp-manager:Uninstall the 'Flappy Bird' app.\nprinter:Print uninstall performed note."}]
 [{"user":"clean up the personal trainer app","model":"goal:Remove installed app.\napp-manager:Uninstall the 'Personal Trainer' app.\nprinter:Print uninstall performed note."}]
 
-/* app manager - list installed apps by criteria */
-[{"user":"list installed apps with name like *medical* and limit 4","model":"goal:List installed apps by criteria.\napp-manager:List installed apps, with name like *medical*, limit 4.\nprinter:Print apps list."}]
-[{"user":"show me first 10 installed apps, by name","model":"goal:List installed apps by criteria.\napp-manager:List installed apps, by name, limit 10.\nprinter:Print apps list."}]
-[{"user":"what applications are already installed?","model":"goal:List installed apps by criteria.\napp-manager:List installed apps, by name, limit 0.\nprinter:Print apps list."}]
-[{"user":"display my app list grouped by category, limit 20","model":"goal:List installed apps by criteria.\napp-manager:List installed apps, grouped by category, limit 20.\nprinter:Print apps list."}]
-[{"user":"can you retrieve a list of 15 of my downloaded apps?","model":"goal:List installed apps by criteria.\napp-manager:List installed apps, by name, limit 15.\nprinter:Print apps list."}]
-[{"user":"check which apps can be upgraded","model":"goal:List installed apps by criteria.\napp-manager:List installed apps, marked as upgradable, limit 0.\nprinter:Print apps list."}]
+/* app manager - list installed apps */
+[{"user":"list all installed apps","model":"goal:List installed apps.\napp-manager:List installed apps, by name, limit 0.\nprinter:Print apps list."}]
+[{"user":"list installed apps with name like *medical* and limit 4","model":"goal:List installed apps.\napp-manager:List installed apps, with name like *medical*, limit 4.\nprinter:Print apps list."}]
+[{"user":"list all installed apps with name like tools*","model":"goal:List installed apps.\napp-manager:List installed apps, with name like tools*, limit 0.\nprinter:Print apps list."}]
+[{"user":"show me first 10 installed apps, by name","model":"goal:List installed apps.\napp-manager:List installed apps, by name, limit 10.\nprinter:Print apps list."}]
+[{"user":"what applications are already installed?","model":"goal:List installed apps.\napp-manager:List installed apps, by name, limit 0.\nprinter:Print apps list."}]
+[{"user":"display my app list grouped by category, limit 20","model":"goal:List installed apps.\napp-manager:List installed apps, grouped by category, limit 20.\nprinter:Print apps list."}]
+[{"user":"can you retrieve a list of 15 of my downloaded apps?","model":"goal:List installed apps.\napp-manager:List installed apps, by name, limit 15.\nprinter:Print apps list."}]
+[{"user":"list upgradable apps","model":"goal:List installed apps.\napp-manager:List installed apps, marked as upgradable, limit 0.\nprinter:Print apps list."}]
+[{"user":"list upgradable apps, limit 8","model":"goal:List installed apps.\napp-manager:List installed apps, marked as upgradable, limit 8.\nprinter:Print apps list."}]
+[{"user":"check which apps can be upgraded","model":"goal:List installed apps.\napp-manager:List installed apps, marked as upgradable, limit 0.\nprinter:Print apps list."}]

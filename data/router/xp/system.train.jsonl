@@ -18,3 +18,13 @@
 [{"user":"clean","model":"system:Clear conversation history."}]
 [{"user":"clear","model":"system:Clear conversation history."}]
 [{"user":"reset","model":"system:Clear conversation history."}]
+
+/* system global properties */
+[{"user":"get my username","model":"... goal:Deduce the normalized date and time.\ntime-service:Get the current date and time."}]
+
+/* response is SQL, mongo, neoj ... sort of jdbc drivers */
+/* next comments are not really in scope here but keep them as reminder */
+/* idea is to have a NQL (Natural Query Language) -- not necessarily natural but common -- for all databases */
+/* quite possible that NQL to be GraphQL -- the goal is to have a single query language natural and simple enough to be acceptable by router script */
+/* is acceptable to have two translation layers: natural language prompt -> NQl -> specific QL */
+[{"user":"get query language type for medical database","model":"... goal:Deduce the normalized date and time.\ntime-service:Get the current date and time."}]

@@ -2,7 +2,7 @@
   {
     "type": "function",
     "function": {
-      "name": "user_get_property",
+      "name": "user_profile_get_property",
       "description": "Retrieves a property value from a specific user profile.",
       "parameters": {
         "type": "object",
@@ -26,7 +26,7 @@
   {
     "type": "function",
     "function": {
-      "name": "user_list_properties",
+      "name": "user_profile_list_properties",
       "description": "Lists all properties and their values for a specific user profile.",
       "parameters": {
         "type": "object",
@@ -45,7 +45,7 @@
   {
     "type": "function",
     "function": {
-      "name": "user_remove_property",
+      "name": "user_profile_remove_property",
       "description": "Removes a specific property from a user profile.",
       "parameters": {
         "type": "object",
@@ -69,7 +69,7 @@
   {
     "type": "function",
     "function": {
-      "name": "user_rename_property",
+      "name": "user_profile_rename_property",
       "description": "Renames an existing property to a new name for a specific user profile.",
       "parameters": {
         "type": "object",
@@ -98,7 +98,7 @@
   {
     "type": "function",
     "function": {
-      "name": "user_set_property",
+      "name": "user_profile_set_property",
       "description": "Sets a property value for a specific user profile.",
       "parameters": {
         "type": "object",
@@ -127,7 +127,7 @@
   {
     "type": "function",
     "function": {
-      "name": "user_update_property",
+      "name": "user_profile_update_property",
       "description": "Updates an existing property for a specific user profile. If the property does not exist for the given user, no changes are made.",
       "parameters": {
         "type": "object",

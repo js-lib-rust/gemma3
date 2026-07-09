@@ -39,6 +39,6 @@ python instruction-tuning.py --epochs 2 --train-batch 1 --learning-rate 8e-6 --f
 ## Function 270M
 
 ```shell
-python dataset.py --task hf_function_set --file tool/user.train.jsonl
+python dataset.py --task hf_function_set --file tool/user-profile.train.jsonl
 python dataset.py --task hf_tool_schema --tool user --file tool/user.tools.hf.json
 ```

@@ -1,4 +1,4 @@
-def user_set_property(username: str, property: str, value: str):
+def user_profile_set_property(username: str, property: str, value: str):
     """
     Sets a property value for a specific user profile.
 
@@ -9,7 +9,7 @@ def user_set_property(username: str, property: str, value: str):
     """
 
 
-def user_update_property(username: str, property: str, value: str):
+def user_profile_update_property(username: str, property: str, value: str):
     """
     Updates an existing property for a specific user profile. If the property does not exist for the given user, no changes are made.
 
@@ -20,7 +20,7 @@ def user_update_property(username: str, property: str, value: str):
     """
 
 
-def user_rename_property(username: str, old_property: str, new_property: str):
+def user_profile_rename_property(username: str, old_property: str, new_property: str):
     """
     Renames an existing property to a new name for a specific user profile.
 
@@ -31,7 +31,7 @@ def user_rename_property(username: str, old_property: str, new_property: str):
     """
 
 
-def user_remove_property(username: str, property: str):
+def user_profile_remove_property(username: str, property: str):
     """
     Removes a specific property from a user profile.
 
@@ -41,7 +41,7 @@ def user_remove_property(username: str, property: str):
     """
 
 
-def user_get_property(username: str, property: str):
+def user_profile_get_property(username: str, property: str):
     """
     Retrieves a property value from a specific user profile.
 
@@ -51,7 +51,7 @@ def user_get_property(username: str, property: str):
     """
 
 
-def user_list_properties(username: str):
+def user_profile_list_properties(username: str):
     """
     Lists all properties and their values for a specific user profile.
 

@@ -14,7 +14,7 @@
         {
           "type": "function",
           "function": {
-            "name": "user_set_property",
+            "name": "user_profile_set_property",
             "arguments": {
               "username": "Rotaru Iulian",
               "property": "social security number",
@@ -40,7 +40,7 @@
         {
           "type": "function",
           "function": {
-            "name": "user_set_property",
+            "name": "user_profile_set_property",
             "arguments": {
               "username": "Agavriloaiei Lucian",
               "property": "business phone number",
@@ -66,7 +66,7 @@
         {
           "type": "function",
           "function": {
-            "name": "user_set_property",
+            "name": "user_profile_set_property",
             "arguments": {
               "username": "Vatavu Patricia",
               "property": "business email address",
@@ -92,7 +92,7 @@
         {
           "type": "function",
           "function": {
-            "name": "user_set_property",
+            "name": "user_profile_set_property",
             "arguments": {
               "username": "Gavriliu Mihaela",
               "property": "birth date",
@@ -118,7 +118,7 @@
         {
           "type": "function",
           "function": {
-            "name": "user_set_property",
+            "name": "user_profile_set_property",
             "arguments": {
               "username": "Lupu Mihaela",
               "property": "birth place",
@@ -144,7 +144,7 @@
         {
           "type": "function",
           "function": {
-            "name": "user_set_property",
+            "name": "user_profile_set_property",
             "arguments": {
               "username": "Rotaru Octavian",
               "property": "postal address",
@@ -170,7 +170,7 @@
         {
           "type": "function",
           "function": {
-            "name": "user_update_property",
+            "name": "user_profile_update_property",
             "arguments": {
               "username": "Acatrinei Alin",
               "property": "personal email address",
@@ -196,7 +196,7 @@
         {
           "type": "function",
           "function": {
-            "name": "user_update_property",
+            "name": "user_profile_update_property",
             "arguments": {
               "username": "Dorneanu Sorana Ioana",
               "property": "location",
@@ -222,7 +222,7 @@
         {
           "type": "function",
           "function": {
-            "name": "user_update_property",
+            "name": "user_profile_update_property",
             "arguments": {
               "username": "Gogălniceanu Ștefan",
               "property": "social status",
@@ -248,7 +248,7 @@
         {
           "type": "function",
           "function": {
-            "name": "user_update_property",
+            "name": "user_profile_update_property",
             "arguments": {
               "username": "Fântânaru Gheorghe",
               "property": "driving license type",
@@ -274,7 +274,7 @@
         {
           "type": "function",
           "function": {
-            "name": "user_update_property",
+            "name": "user_profile_update_property",
             "arguments": {
               "username": "Rotaru Ionuț Ciprian",
               "property": "business email address",
@@ -300,7 +300,7 @@
         {
           "type": "function",
           "function": {
-            "name": "user_update_property",
+            "name": "user_profile_update_property",
             "arguments": {
               "username": "Acatrinei Ingrid",
               "property": "last working place",
@@ -326,7 +326,7 @@
         {
           "type": "function",
           "function": {
-            "name": "user_update_property",
+            "name": "user_profile_update_property",
             "arguments": {
               "username": "Rotaru Adelina",
               "old_property": "personal email address",
@@ -352,7 +352,7 @@
         {
           "type": "function",
           "function": {
-            "name": "user_update_property",
+            "name": "user_profile_update_property",
             "arguments": {
               "username": "Miron Gabriela",
               "old_property": "social security number",
@@ -378,7 +378,7 @@
         {
           "type": "function",
           "function": {
-            "name": "user_update_property",
+            "name": "user_profile_update_property",
             "arguments": {
               "username": "Miron Cristian",
               "old_property": "last working place",
@@ -404,7 +404,7 @@
         {
           "type": "function",
           "function": {
-            "name": "user_update_property",
+            "name": "user_profile_update_property",
             "arguments": {
               "username": "Rotaru Ioan",
               "old_property": "postal address",
@@ -430,7 +430,7 @@
         {
           "type": "function",
           "function": {
-            "name": "user_update_property",
+            "name": "user_profile_update_property",
             "arguments": {
               "username": "Mutica Catalin",
               "old_property": "civil status",
@@ -456,7 +456,7 @@
         {
           "type": "function",
           "function": {
-            "name": "user_update_property",
+            "name": "user_profile_update_property",
             "arguments": {
               "username": "Mutica Catalin",
               "old_property": "marital status",
@@ -482,7 +482,7 @@
         {
           "type": "function",
           "function": {
-            "name": "user_remove_property",
+            "name": "user_profile_remove_property",
             "arguments": {
               "username": "Adam Iosif",
               "property": "profession"
@@ -507,7 +507,7 @@
         {
           "type": "function",
           "function": {
-            "name": "user_remove_property",
+            "name": "user_profile_remove_property",
             "arguments": {
               "username": "Săvulescu Marcel",
               "property": "business email address"
@@ -532,7 +532,7 @@
         {
           "type": "function",
           "function": {
-            "name": "user_remove_property",
+            "name": "user_profile_remove_property",
             "arguments": {
               "username": "Vaino George Viorel",
               "property": "postal code"
@@ -557,7 +557,7 @@
         {
           "type": "function",
           "function": {
-            "name": "user_remove_property",
+            "name": "user_profile_remove_property",
             "arguments": {
               "username": "Cornea Sorin",
               "property": "skill level"
@@ -582,7 +582,7 @@
         {
           "type": "function",
           "function": {
-            "name": "user_remove_property",
+            "name": "user_profile_remove_property",
             "arguments": {
               "username": "Petrovici Traian",
               "property": "driving license type"
@@ -607,7 +607,7 @@
         {
           "type": "function",
           "function": {
-            "name": "user_remove_property",
+            "name": "user_profile_remove_property",
             "arguments": {
               "username": "Trofin Gabriela",
               "property": "education"
@@ -632,7 +632,7 @@
         {
           "type": "function",
           "function": {
-            "name": "user_get_property",
+            "name": "user_profile_get_property",
             "arguments": {
               "username": "Baciu Vasile",
               "property": "personal phone number"
@@ -657,7 +657,7 @@
         {
           "type": "function",
           "function": {
-            "name": "user_get_property",
+            "name": "user_profile_get_property",
             "arguments": {
               "username": "Miron Elena Daniela",
               "property": "postal address"
@@ -682,7 +682,7 @@
         {
           "type": "function",
           "function": {
-            "name": "user_get_property",
+            "name": "user_profile_get_property",
             "arguments": {
               "username": "Rotaru Stefan",
               "property": "personal email address"
@@ -707,7 +707,7 @@
         {
           "type": "function",
           "function": {
-            "name": "user_get_property",
+            "name": "user_profile_get_property",
             "arguments": {
               "username": "Fantanaru Eugenia",
               "property": "working place"
@@ -732,7 +732,7 @@
         {
           "type": "function",
           "function": {
-            "name": "user_get_property",
+            "name": "user_profile_get_property",
             "arguments": {
               "username": "Dorneanu Deliana",
               "property": "social status"
@@ -757,7 +757,7 @@
         {
           "type": "function",
           "function": {
-            "name": "user_get_property",
+            "name": "user_profile_get_property",
             "arguments": {
               "username": "Paduraru Adrian",
               "property": "hobbies"
@@ -782,7 +782,7 @@
         {
           "type": "function",
           "function": {
-            "name": "user_list_properties",
+            "name": "user_profile_list_properties",
             "arguments": {
               "username": "Paduraru Mihaela"
             }
@@ -806,7 +806,7 @@
         {
           "type": "function",
           "function": {
-            "name": "user_list_properties",
+            "name": "user_profile_list_properties",
             "arguments": {
               "username": "Rusu Florentin"
             }
@@ -830,7 +830,7 @@
         {
           "type": "function",
           "function": {
-            "name": "user_list_properties",
+            "name": "user_profile_list_properties",
             "arguments": {
               "username": "Cojocaru Cristian"
             }
@@ -854,7 +854,7 @@
         {
           "type": "function",
           "function": {
-            "name": "user_list_properties",
+            "name": "user_profile_list_properties",
             "arguments": {
               "username": "Acatrinei Liviu"
             }
@@ -878,7 +878,7 @@
         {
           "type": "function",
           "function": {
-            "name": "user_list_properties",
+            "name": "user_profile_list_properties",
             "arguments": {
               "username": "Lontkowschi Mirela Petronela"
             }
@@ -902,7 +902,7 @@
         {
           "type": "function",
           "function": {
-            "name": "user_list_properties",
+            "name": "user_profile_list_properties",
             "arguments": {
               "username": "Gherasim Florentina"
             }

@@ -1,0 +1,79 @@
+/* home_automation_list_devices */
+{"prompt":"List all the devices in the house.","function":"home_automation_list_devices","arguments":{}}
+{"prompt":"What devices do we have at home?","function":"home_automation_list_devices","arguments":{}}
+{"prompt":"List all devices with their current state (on/off, locked, temperature).","function":"home_automation_list_devices","arguments":{}}
+{"prompt":"Show me the device topology, including child devices.","function":"home_automation_list_devices","arguments":{}}
+{"prompt":"Display a table of all entities by zone and device type.","function":"home_automation_list_devices","arguments":{}}
+{"prompt":"Can you list everything that is connected to the smart home?","function":"home_automation_list_devices","arguments":{}}
+
+/* home_automation_describe_device */
+{"prompt":"Get description of the bedroom air quality sensor.","function":"home_automation_describe_device","arguments":{"device":"bedroom air quality sensor"}}
+{"prompt":"Describe flood detection sensor.","function":"home_automation_describe_device","arguments":{"device":"flood detection sensor"}}
+{"prompt":"Tell me about the capabilities of my garage door sensor.","function":"home_automation_describe_device","arguments":{"device":"garage door sensor"}}
+{"prompt":"Please get a definition of the speed sensor.","function":"home_automation_describe_device","arguments":{"device":"speed sensor"}}
+{"prompt":"Create a comprehensive description of the garden moisture sensor.","function":"home_automation_describe_device","arguments":{"device":"garden moisture sensor"}}
+{"prompt":"What do you know about motion detection device from garage.","function":"home_automation_describe_device","arguments":{"device":"motion detection device from garage"}}
+
+/* home_automation_get_device_actions */
+{"prompt":"List actions supported by the pantry carbon dioxide sensor.","function":"home_automation_get_device_actions","arguments":{"device":"pantry carbon dioxide sensor"}}
+{"prompt":"List actions of proximity sensor.","function":"home_automation_get_device_actions","arguments":{"device":"proximity sensor"}}
+{"prompt":"Describe the operations of the garage door actuator.","function":"home_automation_get_device_actions","arguments":{"device":"garage door actuator"}}
+{"prompt":"Show me the actions supported by the window contact sensors.","function":"home_automation_get_device_actions","arguments":{"device":"window contact sensors"}}
+{"prompt":"Please list the actions supported by luminosity sensor from balcony.","function":"home_automation_get_device_actions","arguments":{"device":"luminosity sensor from balcony"}}
+{"prompt":"Actions supported by humidity sensor?","function":"home_automation_get_device_actions","arguments":{"device":"humidity sensor"}}
+
+/* home_automation_read_temperature */
+{"prompt":"Read the temperature sensor in the living room.","function":"home_automation_read_temperature","arguments":{"zone":"living room"}}
+{"prompt":"Read the temperature sensor in the kitchen.","function":"home_automation_read_temperature","arguments":{"zone":"kitchen"}}
+{"prompt":"What is the living room temperature?","function":"home_automation_read_temperature","arguments":{"zone":"living room"}}
+{"prompt":"Is it too hot in the cellar?","function":"home_automation_read_temperature","arguments":{"zone":"cellar"}}
+{"prompt":"Get bathroom temperature.","function":"home_automation_read_temperature","arguments":{"zone":"bathroom"}}
+{"prompt":"Bedroom temperature.","function":"home_automation_read_temperature","arguments":{"zone":"bedroom"}}
+
+/* home_automation_read_humidity */
+{"prompt":"Read the humidity sensor in the cellar.","function":"home_automation_read_humidity","arguments":{"zone":"cellar"}}
+{"prompt":"Get kitchen humidity percent.","function":"home_automation_read_humidity","arguments":{"zone":"kitchen"}}
+{"prompt":"What is humidity level in the bathroom?","function":"home_automation_read_humidity","arguments":{"zone":"bathroom"}}
+{"prompt":"Read humidity sensor from greenhouse.","function":"home_automation_read_humidity","arguments":{"zone":"greenhouse"}}
+{"prompt":"Show me the humidity percent in the cellar.","function":"home_automation_read_humidity","arguments":{"zone":"cellar"}}
+{"prompt":"Bathroom humidity.","function":"home_automation_read_humidity","arguments":{"zone":"bathroom"}}
+
+/* home_automation_read_sensors */
+{"prompt":"Read all the sensors in the house.","function":"home_automation_read_sensors","arguments":{"zone":"system"}}
+{"prompt":"Displays the values of all sensors in the house.","function":"home_automation_read_sensors","arguments":{"zone":"system"}}
+{"prompt":"Read sensors from kitchen.","function":"home_automation_read_sensors","arguments":{"zone":"kitchen"}}
+{"prompt":"List readings from the sensors in the living room.","function":"home_automation_read_sensors","arguments":{"zone":"living room"}}
+{"prompt":"Retrieve and list the values of all sensors from the greenhouse.","function":"home_automation_read_sensors","arguments":{"zone":"greenhouse"}}
+{"prompt":"Get current readings of sensors deployed in the balcony.","function":"home_automation_read_sensors","arguments":{"zone":"balcony"}}
+
+/* home_automation_start_heating */
+{"prompt":"Turn on the central heating.","function":"home_automation_start_heating","arguments":{}}
+{"prompt":"Turn heating on.","function":"home_automation_start_heating","arguments":{}}
+{"prompt":"Turn the central heating on.","function":"home_automation_start_heating","arguments":{}}
+{"prompt":"Start the central heating system.","function":"home_automation_start_heating","arguments":{}}
+{"prompt":"Start heating.","function":"home_automation_start_heating","arguments":{}}
+{"prompt":"Engage the central heating.","function":"home_automation_start_heating","arguments":{}}
+
+/* home_automation_stop_heating */
+{"prompt":"Turn off the central heating.","function":"home_automation_stop_heating","arguments":{}}
+{"prompt":"Turn heating off.","function":"home_automation_stop_heating","arguments":{}}
+{"prompt":"Turn the central heating off.","function":"home_automation_stop_heating","arguments":{}}
+{"prompt":"Turn off the central heating system.","function":"home_automation_stop_heating","arguments":{}}
+{"prompt":"Disengage the central heating system.","function":"home_automation_stop_heating","arguments":{}}
+{"prompt":"Disengage heating.","function":"home_automation_stop_heating","arguments":{}}
+
+/* home_automation_get_heating_state */
+{"prompt":"Read the status of the central heating system.","function":"home_automation_get_heating_state","arguments":{}}
+{"prompt":"What is the status of the central heating system.","function":"home_automation_get_heating_state","arguments":{}}
+{"prompt":"Is central heating running?","function":"home_automation_get_heating_state","arguments":{}}
+{"prompt":"Is heating on?","function":"home_automation_get_heating_state","arguments":{}}
+{"prompt":"Heating status?","function":"home_automation_get_heating_state","arguments":{}}
+{"prompt":"Can you check if the heating system is currently active?","function":"home_automation_get_heating_state","arguments":{}}
+
+/* home_automation_run_diagnose */
+{"prompt":"Run a full diagnosis on the home automation system.","function":"home_automation_run_diagnose","arguments":{"device":"system"}}
+{"prompt":"Execute home systems diagnosis.","function":"home_automation_run_diagnose","arguments":{"device":"system"}}
+{"prompt":"Run device diagnosis on the kitchen DHT sensor.","function":"home_automation_run_diagnose","arguments":{"device":"kitchen DHT sensor"}}
+{"prompt":"Execute a flood sensor diagnosis.","function":"home_automation_run_diagnose","arguments":{"device":"flood sensor"}}
+{"prompt":"Check the motion detection sensor.","function":"home_automation_run_diagnose","arguments":{"device":"motion detection sensor"}}
+{"prompt":"Is the front door lock working properly?","function":"home_automation_run_diagnose","arguments":{"device":"front door lock"}}

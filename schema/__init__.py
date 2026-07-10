@@ -1,9 +1,6 @@
 import importlib
 from transformers.utils import get_json_schema
 
-from .hera import *
-from schema.xp.home_automation import *
-
 __version__ = (1, 0, 0)
 
 

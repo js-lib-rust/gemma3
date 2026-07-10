@@ -832,6 +832,48 @@
     },
     {
       "role": "user",
+      "content": "is there an expression hanky panky?"
+    },
+    {
+      "role": "model",
+      "content": "goal:Route to default LLM."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "they say there are 12 form of intelligence. please list them"
+    },
+    {
+      "role": "model",
+      "content": "goal:Route to default LLM."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "is reasonable to not see knowledge as intelligence? after all an information storage and retrieval system is hardly intelligent"
+    },
+    {
+      "role": "model",
+      "content": "goal:Route to default LLM."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
       "content": "save my blood pressure of 118/72 mmHg and heart rate of 66 bpm to medical database"
     },
     {

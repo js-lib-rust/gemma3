@@ -21,7 +21,7 @@ python dataset.py --task hf_function_set --file tool/health.train.jsonl --use-fu
 First fine tune function gemma base model to hera:
 
 ```shell
-python instruction-tuning.py --epochs 2 --train-batch 1 --learning-rate 1e-5 --files tool/hera.train.hf.json --tools tool/hera.tools.hf.json --model /functiongemma-270m-it --output-dir hera-270m --eval-steps 50 --save-steps 1000 --assert-max-length
+python instruction-tuning.py --epochs 2 --train-batch 1 --learning-rate 1e-5 --files tool/home-automation.train.hf.json --tools tool/hera.tools.hf.json --model /functiongemma-270m-it --output-dir hera-270m --eval-steps 50 --save-steps 1000 --assert-max-length
 ```
 
 Then continue hera fine-tuning with health agent:
@@ -31,7 +31,7 @@ python instruction-tuning.py --epochs 2 --train-batch 1 --learning-rate 1e-5 --f
 ```
 
 ```shell
-python instruction-tuning.py --epochs 2 --train-batch 1 --learning-rate 8e-6 --files tool/hera.train.hf.json,tool/health.train.hf.json --tools tool/hera.tools.hf.json,tool/health.tools.hf.json --model /functiongemma-270m-it --output-dir function-270m --eval-steps 50 --save-steps 1000 --assert-max-length
+python instruction-tuning.py --epochs 2 --train-batch 1 --learning-rate 8e-6 --files tool/home-automation.train.hf.json,tool/health.train.hf.json --tools tool/hera.tools.hf.json,tool/health.tools.hf.json --model /functiongemma-270m-it --output-dir function-270m --eval-steps 50 --save-steps 1000 --assert-max-length
 ```
 
 ---

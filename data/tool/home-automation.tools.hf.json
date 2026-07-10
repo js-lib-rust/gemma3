@@ -2,7 +2,7 @@
   {
     "type": "function",
     "function": {
-      "name": "hera_describe_device",
+      "name": "home_automation_describe_device",
       "description": "Create a detailed description of the requested device.",
       "parameters": {
         "type": "object",
@@ -21,7 +21,7 @@
   {
     "type": "function",
     "function": {
-      "name": "hera_get_device_actions",
+      "name": "home_automation_get_device_actions",
       "description": "Retrieves the actions supported by a device.",
       "parameters": {
         "type": "object",
@@ -40,7 +40,7 @@
   {
     "type": "function",
     "function": {
-      "name": "hera_get_heating_state",
+      "name": "home_automation_get_heating_state",
       "description": "Get central heating state.",
       "parameters": {
         "type": "object",
@@ -51,7 +51,7 @@
   {
     "type": "function",
     "function": {
-      "name": "hera_list_devices",
+      "name": "home_automation_list_devices",
       "description": "List all devices registered to HERA.",
       "parameters": {
         "type": "object",
@@ -62,7 +62,7 @@
   {
     "type": "function",
     "function": {
-      "name": "hera_read_humidity",
+      "name": "home_automation_read_humidity",
       "description": "Read current humidity.",
       "parameters": {
         "type": "object",
@@ -73,7 +73,7 @@
   {
     "type": "function",
     "function": {
-      "name": "hera_read_sensors",
+      "name": "home_automation_read_sensors",
       "description": "Read all registered sensors.",
       "parameters": {
         "type": "object",
@@ -84,7 +84,7 @@
   {
     "type": "function",
     "function": {
-      "name": "hera_read_temperature",
+      "name": "home_automation_read_temperature",
       "description": "Read the current temperature from devices in a specified zone.",
       "parameters": {
         "type": "object",
@@ -103,7 +103,7 @@
   {
     "type": "function",
     "function": {
-      "name": "hera_run_diagnose",
+      "name": "home_automation_run_diagnose",
       "description": "Check that a device is reachable and running properly. Return a diagnosis report.",
       "parameters": {
         "type": "object",
@@ -122,7 +122,7 @@
   {
     "type": "function",
     "function": {
-      "name": "hera_start_heating",
+      "name": "home_automation_start_heating",
       "description": "Start central heating.",
       "parameters": {
         "type": "object",
@@ -133,7 +133,7 @@
   {
     "type": "function",
     "function": {
-      "name": "hera_stop_heating",
+      "name": "home_automation_stop_heating",
       "description": "Stop central heating.",
       "parameters": {
         "type": "object",

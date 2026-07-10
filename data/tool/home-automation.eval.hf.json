@@ -1,7 +1,7 @@
 [
   [
     {
-      "role": "developer",
+      "role": "system",
       "content": "You are a model that can do function calling with the following functions"
     },
     {
@@ -9,12 +9,12 @@
       "content": "what devices are in the house?"
     },
     {
-      "role": "assistant",
+      "role": "model",
       "tool_calls": [
         {
           "type": "function",
           "function": {
-            "name": "hera_get_system_summary",
+            "name": "home_automation_get_system_summary",
             "arguments": {}
           }
         }
@@ -23,7 +23,7 @@
   ],
   [
     {
-      "role": "developer",
+      "role": "system",
       "content": "You are a model that can do function calling with the following functions"
     },
     {
@@ -31,12 +31,12 @@
       "content": "list all devices"
     },
     {
-      "role": "assistant",
+      "role": "model",
       "tool_calls": [
         {
           "type": "function",
           "function": {
-            "name": "hera_get_system_summary",
+            "name": "home_automation_get_system_summary",
             "arguments": {}
           }
         }
@@ -45,7 +45,7 @@
   ],
   [
     {
-      "role": "developer",
+      "role": "system",
       "content": "You are a model that can do function calling with the following functions"
     },
     {
@@ -53,12 +53,12 @@
       "content": "show me temperature sensor description"
     },
     {
-      "role": "assistant",
+      "role": "model",
       "tool_calls": [
         {
           "type": "function",
           "function": {
-            "name": "hera_get_device_description",
+            "name": "home_automation_get_device_description",
             "arguments": {
               "device": "temperature sensor"
             }
@@ -69,7 +69,7 @@
   ],
   [
     {
-      "role": "developer",
+      "role": "system",
       "content": "You are a model that can do function calling with the following functions"
     },
     {
@@ -77,12 +77,12 @@
       "content": "describe flood sensor"
     },
     {
-      "role": "assistant",
+      "role": "model",
       "tool_calls": [
         {
           "type": "function",
           "function": {
-            "name": "hera_get_device_description",
+            "name": "home_automation_get_device_description",
             "arguments": {
               "device": "flood sensor"
             }
@@ -93,7 +93,7 @@
   ],
   [
     {
-      "role": "developer",
+      "role": "system",
       "content": "You are a model that can do function calling with the following functions"
     },
     {
@@ -101,12 +101,12 @@
       "content": "list actions of proximity sensor"
     },
     {
-      "role": "assistant",
+      "role": "model",
       "tool_calls": [
         {
           "type": "function",
           "function": {
-            "name": "hera_get_device_description",
+            "name": "home_automation_get_device_description",
             "arguments": {
               "device": "proximity sensor"
             }
@@ -117,7 +117,7 @@
   ],
   [
     {
-      "role": "developer",
+      "role": "system",
       "content": "You are a model that can do function calling with the following functions"
     },
     {
@@ -125,12 +125,12 @@
       "content": "what actions are supported by humidity sensor"
     },
     {
-      "role": "assistant",
+      "role": "model",
       "tool_calls": [
         {
           "type": "function",
           "function": {
-            "name": "hera_get_device_description",
+            "name": "home_automation_get_device_description",
             "arguments": {
               "device": "humidity sensor"
             }
@@ -141,7 +141,7 @@
   ],
   [
     {
-      "role": "developer",
+      "role": "system",
       "content": "You are a model that can do function calling with the following functions"
     },
     {
@@ -149,12 +149,12 @@
       "content": "print kitchen temperature"
     },
     {
-      "role": "assistant",
+      "role": "model",
       "tool_calls": [
         {
           "type": "function",
           "function": {
-            "name": "hera_read_temperature",
+            "name": "home_automation_read_temperature",
             "arguments": {
               "zone": "kitchen"
             }
@@ -165,7 +165,7 @@
   ],
   [
     {
-      "role": "developer",
+      "role": "system",
       "content": "You are a model that can do function calling with the following functions"
     },
     {
@@ -173,12 +173,12 @@
       "content": "living room temperature"
     },
     {
-      "role": "assistant",
+      "role": "model",
       "tool_calls": [
         {
           "type": "function",
           "function": {
-            "name": "hera_read_temperature",
+            "name": "home_automation_read_temperature",
             "arguments": {
               "zone": "living room"
             }
@@ -189,7 +189,7 @@
   ],
   [
     {
-      "role": "developer",
+      "role": "system",
       "content": "You are a model that can do function calling with the following functions"
     },
     {
@@ -197,12 +197,12 @@
       "content": "bathroom humidity"
     },
     {
-      "role": "assistant",
+      "role": "model",
       "tool_calls": [
         {
           "type": "function",
           "function": {
-            "name": "hera_read_humidity",
+            "name": "home_automation_read_humidity",
             "arguments": {
               "zone": "bathroom"
             }
@@ -213,7 +213,7 @@
   ],
   [
     {
-      "role": "developer",
+      "role": "system",
       "content": "You are a model that can do function calling with the following functions"
     },
     {
@@ -221,12 +221,12 @@
       "content": "start heating"
     },
     {
-      "role": "assistant",
+      "role": "model",
       "tool_calls": [
         {
           "type": "function",
           "function": {
-            "name": "hera_start_heating",
+            "name": "home_automation_start_heating",
             "arguments": {}
           }
         }
@@ -235,7 +235,7 @@
   ],
   [
     {
-      "role": "developer",
+      "role": "system",
       "content": "You are a model that can do function calling with the following functions"
     },
     {
@@ -243,12 +243,12 @@
       "content": "engage heating"
     },
     {
-      "role": "assistant",
+      "role": "model",
       "tool_calls": [
         {
           "type": "function",
           "function": {
-            "name": "hera_start_heating",
+            "name": "home_automation_start_heating",
             "arguments": {}
           }
         }
@@ -257,7 +257,7 @@
   ],
   [
     {
-      "role": "developer",
+      "role": "system",
       "content": "You are a model that can do function calling with the following functions"
     },
     {
@@ -265,12 +265,12 @@
       "content": "heating on"
     },
     {
-      "role": "assistant",
+      "role": "model",
       "tool_calls": [
         {
           "type": "function",
           "function": {
-            "name": "hera_start_heating",
+            "name": "home_automation_start_heating",
             "arguments": {}
           }
         }
@@ -279,7 +279,7 @@
   ],
   [
     {
-      "role": "developer",
+      "role": "system",
       "content": "You are a model that can do function calling with the following functions"
     },
     {
@@ -287,12 +287,12 @@
       "content": "stop heating"
     },
     {
-      "role": "assistant",
+      "role": "model",
       "tool_calls": [
         {
           "type": "function",
           "function": {
-            "name": "hera_stop_heating",
+            "name": "home_automation_stop_heating",
             "arguments": {}
           }
         }
@@ -301,7 +301,7 @@
   ],
   [
     {
-      "role": "developer",
+      "role": "system",
       "content": "You are a model that can do function calling with the following functions"
     },
     {
@@ -309,12 +309,12 @@
       "content": "disengage heating"
     },
     {
-      "role": "assistant",
+      "role": "model",
       "tool_calls": [
         {
           "type": "function",
           "function": {
-            "name": "hera_stop_heating",
+            "name": "home_automation_stop_heating",
             "arguments": {}
           }
         }
@@ -323,7 +323,7 @@
   ],
   [
     {
-      "role": "developer",
+      "role": "system",
       "content": "You are a model that can do function calling with the following functions"
     },
     {
@@ -331,12 +331,12 @@
       "content": "turn heating off"
     },
     {
-      "role": "assistant",
+      "role": "model",
       "tool_calls": [
         {
           "type": "function",
           "function": {
-            "name": "hera_stop_heating",
+            "name": "home_automation_stop_heating",
             "arguments": {}
           }
         }
@@ -345,7 +345,7 @@
   ],
   [
     {
-      "role": "developer",
+      "role": "system",
       "content": "You are a model that can do function calling with the following functions"
     },
     {
@@ -353,12 +353,12 @@
       "content": "read all sensors"
     },
     {
-      "role": "assistant",
+      "role": "model",
       "tool_calls": [
         {
           "type": "function",
           "function": {
-            "name": "hera_read_sensors",
+            "name": "home_automation_read_sensors",
             "arguments": {
               "zone": "system"
             }
@@ -369,7 +369,7 @@
   ],
   [
     {
-      "role": "developer",
+      "role": "system",
       "content": "You are a model that can do function calling with the following functions"
     },
     {
@@ -377,12 +377,12 @@
       "content": "read sensors from the lobby"
     },
     {
-      "role": "assistant",
+      "role": "model",
       "tool_calls": [
         {
           "type": "function",
           "function": {
-            "name": "hera_read_sensors",
+            "name": "home_automation_read_sensors",
             "arguments": {
               "zone": "lobby"
             }
@@ -393,7 +393,7 @@
   ],
   [
     {
-      "role": "developer",
+      "role": "system",
       "content": "You are a model that can do function calling with the following functions"
     },
     {
@@ -401,12 +401,12 @@
       "content": "read sensors on kitchen"
     },
     {
-      "role": "assistant",
+      "role": "model",
       "tool_calls": [
         {
           "type": "function",
           "function": {
-            "name": "hera_read_sensors",
+            "name": "home_automation_read_sensors",
             "arguments": {
               "zone": "kitchen"
             }
@@ -417,7 +417,7 @@
   ],
   [
     {
-      "role": "developer",
+      "role": "system",
       "content": "You are a model that can do function calling with the following functions"
     },
     {
@@ -425,12 +425,12 @@
       "content": "execute diagnose on luminosity-sensor"
     },
     {
-      "role": "assistant",
+      "role": "model",
       "tool_calls": [
         {
           "type": "function",
           "function": {
-            "name": "hera_run_diagnose",
+            "name": "home_automation_run_diagnose",
             "arguments": {
               "device": "luminosity-sensor"
             }
@@ -441,7 +441,7 @@
   ],
   [
     {
-      "role": "developer",
+      "role": "system",
       "content": "You are a model that can do function calling with the following functions"
     },
     {
@@ -449,12 +449,12 @@
       "content": "run full system diagnose"
     },
     {
-      "role": "assistant",
+      "role": "model",
       "tool_calls": [
         {
           "type": "function",
           "function": {
-            "name": "hera_run_diagnose",
+            "name": "home_automation_run_diagnose",
             "arguments": {
               "device": "system"
             }

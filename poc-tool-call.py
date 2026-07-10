@@ -51,7 +51,7 @@ print()
 print("tools:")
 [print(f"- {tool}") for tool in tools]
 
-with open("data/tool/hera.train.jsonl", 'r', encoding='UTF-8') as file:
+with open("data/tool/home-automation.train.jsonl", 'r', encoding='UTF-8') as file:
     function_list = [json.loads(line) for line in file if line.strip() and not line.startswith("/*")]
 dataset = Dataset.from_list(function_list)
 dataset = dataset.map(create_conversation)

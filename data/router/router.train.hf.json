@@ -6296,7 +6296,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Get property from user profile.\nuser-profile:Get my username.\nprinter:Print my username."
+      "content": "goal:Get property from user profile.\nuser-profile:Get my username.\nprinter:Print the user's username."
     }
   ],
   [
@@ -6310,7 +6310,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Get property from user profile.\nuser-profile:Get my username.\nuser-profile:Get the personal phone number property of ${username}.\nprinter:Print my personal phone number."
+      "content": "goal:Get property from user profile.\nuser-profile:Get my username.\nuser-profile:Get the personal phone number property of ${username}.\nprinter:Print the user's personal phone number."
     }
   ],
   [
@@ -6324,7 +6324,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Get property from user profile.\nuser-profile:Get my username.\nuser-profile:Get the personal phone number property of ${username}.\nprinter:Print my personal phone number."
+      "content": "goal:Get property from user profile.\nuser-profile:Get my username.\nuser-profile:Get the personal phone number property of ${username}.\nprinter:Print the user's personal phone number."
     }
   ],
   [
@@ -6338,7 +6338,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Get property from user profile.\nuser-profile:Get my username.\nuser-profile:Get the personal phone number property of ${username}.\nprinter:Print my personal phone number."
+      "content": "goal:Get property from user profile.\nuser-profile:Get my username.\nuser-profile:Get the personal phone number property of ${username}.\nprinter:Print the user's personal phone number."
     }
   ],
   [
@@ -6352,7 +6352,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Get property from user profile.\nuser-profile:Get my username.\nuser-profile:Get the personal email address property of ${username}.\nprinter:Print my personal email address."
+      "content": "goal:Get property from user profile.\nuser-profile:Get my username.\nuser-profile:Get the personal email address property of ${username}.\nprinter:Print the user's personal email address."
     }
   ],
   [
@@ -6366,7 +6366,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Get property from user profile.\nuser-profile:Get my username.\nuser-profile:Get the personal email address property of ${username}.\nprinter:Print my personal email address."
+      "content": "goal:Get property from user profile.\nuser-profile:Get my username.\nuser-profile:Get the personal email address property of ${username}.\nprinter:Print the user's personal email address."
     }
   ],
   [
@@ -6380,7 +6380,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Get property from user profile.\nuser-profile:Get my username.\nuser-profile:Get the personal email address property of ${username}.\nprinter:Print my personal email address."
+      "content": "goal:Get property from user profile.\nuser-profile:Get my username.\nuser-profile:Get the personal email address property of ${username}.\nprinter:Print the user's personal email address."
     }
   ],
   [
@@ -6394,7 +6394,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Get property from user profile.\nuser-profile:Get my username.\nuser-profile:Get the business phone number property of ${username}.\nprinter:Print my business phone number."
+      "content": "goal:Get property from user profile.\nuser-profile:Get my username.\nuser-profile:Get the business phone number property of ${username}.\nprinter:Print the user's business phone number."
     }
   ],
   [
@@ -6408,7 +6408,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Get property from user profile.\nuser-profile:Get my username.\nuser-profile:Get the business phone number property of ${username}.\nprinter:Print my business phone number."
+      "content": "goal:Get property from user profile.\nuser-profile:Get my username.\nuser-profile:Get the business phone number property of ${username}.\nprinter:Print the user's business phone number."
     }
   ],
   [
@@ -6422,119 +6422,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Get property from user profile.\nuser-profile:Get my username.\nuser-profile:Get the business phone number property of ${username}.\nprinter:Print my business phone number."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "get my business email address"
-    },
-    {
-      "role": "model",
-      "content": "goal:Get property from user profile.\nuser-profile:Get my username.\nuser-profile:Get the business email address property of ${username}.\nprinter:Print my business email address."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "get my business email"
-    },
-    {
-      "role": "model",
-      "content": "goal:Get property from user profile.\nuser-profile:Get my username.\nuser-profile:Get the business email address property of ${username}.\nprinter:Print my business email address."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "get my work email"
-    },
-    {
-      "role": "model",
-      "content": "goal:Get property from user profile.\nuser-profile:Get my username.\nuser-profile:Get the business email address property of ${username}.\nprinter:Print my business email address."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "get my birth date"
-    },
-    {
-      "role": "model",
-      "content": "goal:Get property from user profile.\nuser-profile:Get my username.\nuser-profile:Get the birth date property of ${username}.\nprinter:Print my birth date."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "get my birth place"
-    },
-    {
-      "role": "model",
-      "content": "goal:Get property from user profile.\nuser-profile:Get my username.\nuser-profile:Get the birth place property of ${username}.\nprinter:Print my birth place."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "get my profession"
-    },
-    {
-      "role": "model",
-      "content": "goal:Get property from user profile.\nuser-profile:Get my username.\nuser-profile:Get the profession property of ${username}.\nprinter:Print my profession."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "get my location"
-    },
-    {
-      "role": "model",
-      "content": "goal:Get property from user profile.\nuser-profile:Get my username.\nuser-profile:Get the location property of ${username}.\nprinter:Print my location."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "get my place"
-    },
-    {
-      "role": "model",
-      "content": "goal:Get property from user profile.\nuser-profile:Get my username.\nuser-profile:Get the place property of ${username}.\nprinter:Print my place."
+      "content": "goal:Get property from user profile.\nuser-profile:Get my username.\nuser-profile:Get the business phone number property of ${username}.\nprinter:Print the user's business phone number."
     }
   ],
   [
@@ -6548,7 +6436,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Get property from user profile.\nuser-profile:Get my username.\nuser-profile:Get the education property of ${username}.\nprinter:Print my education."
+      "content": "goal:Get property from user profile.\nuser-profile:Get my username.\nuser-profile:Get the education property of ${username}.\nprinter:Print the user's education."
     }
   ],
   [
@@ -6562,7 +6450,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Get property from user profile.\nuser-profile:Get my username.\nuser-profile:Get the hobbies property of ${username}.\nprinter:Print my hobbies."
+      "content": "goal:Get property from user profile.\nuser-profile:Get my username.\nuser-profile:Get the hobbies property of ${username}.\nprinter:Print the user's hobbies."
     }
   ],
   [
@@ -6576,7 +6464,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Get property from user profile.\nuser-profile:Get my username.\nuser-profile:Get the skill level property of ${username}.\nprinter:Print my skill level."
+      "content": "goal:Get property from user profile.\nuser-profile:Get my username.\nuser-profile:Get the skill level property of ${username}.\nprinter:Print the user's skill level."
     }
   ],
   [
@@ -6590,49 +6478,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Get property from user profile.\nuser-profile:Get my username.\nuser-profile:Get the social security number property of ${username}.\nprinter:Print my social security number."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "get my SSN"
-    },
-    {
-      "role": "model",
-      "content": "goal:Get property from user profile.\nuser-profile:Get my username.\nuser-profile:Get the social security number property of ${username}.\nprinter:Print my social security number."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "get my identity card serial"
-    },
-    {
-      "role": "model",
-      "content": "goal:Get property from user profile.\nuser-profile:Get my username.\nuser-profile:Get the identity card serial property of ${username}.\nprinter:Print my identity card serial."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "get my birth certificate's serial"
-    },
-    {
-      "role": "model",
-      "content": "goal:Get property from user profile.\nuser-profile:Get my username.\nuser-profile:Get the birth certificate serial property of ${username}.\nprinter:Print my birth certificate serial."
+      "content": "goal:Get property from user profile.\nuser-profile:Get my username.\nuser-profile:Get the social security number property of ${username}.\nprinter:Print the user's social security number."
     }
   ],
   [
@@ -6646,7 +6492,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Get property from user profile.\nuser-profile:Get my username.\nuser-profile:Get the birth date property of ${username}.\nprinter:Print my birthday."
+      "content": "goal:Get property from user profile.\nuser-profile:Get my username.\nuser-profile:Get the birth date property of ${username}.\nprinter:Print the user's birthday."
     }
   ],
   [
@@ -6702,7 +6548,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Get user height.\nuser-profile:Get my username.\nuser-profile:Get the height property of ${username}.\nmeasure-units:Get the measure units for person height.\nprinter:Print my height in ${person_height_units}."
+      "content": "goal:Get user height.\nuser-profile:Get my username.\nuser-profile:Get the height property of ${username}.\nmeasure-units:Get the measure units for person height.\nprinter:Print the user's height in ${person_height_units}."
     }
   ],
   [
@@ -6716,7 +6562,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Get user height.\nuser-profile:Get my username.\nuser-profile:Get the height property of ${username}.\nmeasure-units:Get the measure units for person height.\nprinter:Print my height in ${person_height_units}."
+      "content": "goal:Get user height.\nuser-profile:Get my username.\nuser-profile:Get the height property of ${username}.\nmeasure-units:Get the measure units for person height.\nprinter:Print the user's height in ${person_height_units}."
     }
   ],
   [
@@ -6730,7 +6576,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Get user height.\nuser-profile:Get my username.\nuser-profile:Get the height property of ${username}.\nmeasure-units:Get the measure units for person height.\nprinter:Print my height in ${person_height_units}."
+      "content": "goal:Get user height.\nuser-profile:Get my username.\nuser-profile:Get the height property of ${username}.\nmeasure-units:Get the measure units for person height.\nprinter:Print the user's height in ${person_height_units}."
     }
   ],
   [
@@ -6744,7 +6590,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Get user height.\nuser-profile:Get my username.\nuser-profile:Get the height property of ${username}.\nmeasure-units:Get the measure units for person height.\nprinter:Print my height in ${person_height_units}."
+      "content": "goal:Get user height.\nuser-profile:Get my username.\nuser-profile:Get the height property of ${username}.\nmeasure-units:Get the measure units for person height.\nprinter:Print the user's height in ${person_height_units}."
     }
   ],
   [
@@ -6758,7 +6604,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Get user height.\nuser-profile:Get my username.\nuser-profile:Get the height property of ${username}.\nmeasure-units:Get the measure units for person height.\nprinter:Print my height in ${person_height_units}."
+      "content": "goal:Get user height.\nuser-profile:Get my username.\nuser-profile:Get the height property of ${username}.\nmeasure-units:Get the measure units for person height.\nprinter:Print the user's height in ${person_height_units}."
     }
   ],
   [
@@ -6772,7 +6618,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Get user height.\nuser-profile:Get my username.\nuser-profile:Get the height property of ${username}.\nmeasure-units:Get the measure units for person height.\nprinter:Print my height in ${person_height_units}."
+      "content": "goal:Get user height.\nuser-profile:Get my username.\nuser-profile:Get the height property of ${username}.\nmeasure-units:Get the measure units for person height.\nprinter:Print the user's height in ${person_height_units}."
     }
   ],
   [
@@ -6786,7 +6632,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Get user height.\nuser-profile:Get my username.\nuser-profile:Get the height property of ${username}.\nmeasure-units:Get the measure units for person height.\nprinter:Print my height in ${person_height_units}."
+      "content": "goal:Get user height.\nuser-profile:Get my username.\nuser-profile:Get the height property of ${username}.\nmeasure-units:Get the measure units for person height.\nprinter:Print the user's height in ${person_height_units}."
     }
   ],
   [
@@ -6800,7 +6646,301 @@
     },
     {
       "role": "model",
-      "content": "goal:Get user height.\nuser-profile:Get my username.\nuser-profile:Get the height property of ${username}.\nmeasure-units:Get the measure units for person height.\nprinter:Print my height in ${person_height_units}."
+      "content": "goal:Get user height.\nuser-profile:Get my username.\nuser-profile:Get the height property of ${username}.\nmeasure-units:Get the measure units for person height.\nprinter:Print the user's height in ${person_height_units}."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get username for vatavu patricia"
+    },
+    {
+      "role": "model",
+      "content": "goal:Get property from user profile.\nuser-profile:Get username for Vatavu Patricia.\nprinter:Print the user's username."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get personal phone number property for rotaru lucian"
+    },
+    {
+      "role": "model",
+      "content": "goal:Get property from user profile.\nuser-profile:Get username for Rotaru Lucian.\nuser-profile:Get the personal phone number property of ${username}.\nprinter:Print the user's personal phone number."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "retrieve the phone number of marica lucian from user profile"
+    },
+    {
+      "role": "model",
+      "content": "goal:Get property from user profile.\nuser-profile:Get username for Marica Lucian.\nuser-profile:Get the personal phone number property of ${username}.\nprinter:Print the user's personal phone number."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "read rusu florentin's phone property"
+    },
+    {
+      "role": "model",
+      "content": "goal:Get property from user profile.\nuser-profile:Get username for Rusu Florentin.\nuser-profile:Get the personal phone number property of ${username}.\nprinter:Print the user's personal phone number."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "what is personal email address property of gogalniceanu mioara?"
+    },
+    {
+      "role": "model",
+      "content": "goal:Get property from user profile.\nuser-profile:Get username for Gogalniceanu Mioara.\nuser-profile:Get the personal email address property of ${username}.\nprinter:Print the user's personal email address."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get email address from user profile of dorneanu deliana"
+    },
+    {
+      "role": "model",
+      "content": "goal:Get property from user profile.\nuser-profile:Get username for Dorneanu Deliana.\nuser-profile:Get the personal email address property of ${username}.\nprinter:Print the user's personal email address."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "find email property in berfelea maria's profile"
+    },
+    {
+      "role": "model",
+      "content": "goal:Get property from user profile.\nuser-profile:Get username for Berfelea Maria.\nuser-profile:Get the personal email address property of ${username}.\nprinter:Print the user's personal email address."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "business phone number property of vaino alina"
+    },
+    {
+      "role": "model",
+      "content": "goal:Get property from user profile.\nuser-profile:Get username for Vaino Alina.\nuser-profile:Get the business phone number property of ${username}.\nprinter:Print the user's business phone number."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "what business phone is registered on profile of dorneanu sorana ioana?"
+    },
+    {
+      "role": "model",
+      "content": "goal:Get property from user profile.\nuser-profile:Get username for Dorneanu Sorana Ioana.\nuser-profile:Get the business phone number property of ${username}.\nprinter:Print the user's business phone number."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get work phone property for chiriac liliana"
+    },
+    {
+      "role": "model",
+      "content": "goal:Get property from user profile.\nuser-profile:Get username for Chiriac Liliana.\nuser-profile:Get the business phone number property of ${username}.\nprinter:Print the user's business phone number."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "read SSN property for user vaino gheorghe"
+    },
+    {
+      "role": "model",
+      "content": "goal:Get property from user profile.\nuser-profile:Get username for Vaino Gheorghe.\nuser-profile:Get the social security number property of ${username}.\nprinter:Print the user's social security number."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "print identity card serial from cornea daniel profile"
+    },
+    {
+      "role": "model",
+      "content": "goal:Get property from user profile.\nuser-profile:Get username for Cornea Daniel.\nuser-profile:Get the identity card serial property of ${username}.\nprinter:Print the user's identity card serial."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "display the birth certificate's serial property of solomon marian"
+    },
+    {
+      "role": "model",
+      "content": "goal:Get property from user profile.\nuser-profile:Get username for Solomon Marian.\nuser-profile:Get the birth certificate serial property of ${username}.\nprinter:Print the user's birth certificate serial."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get birthday of rotaru octavian"
+    },
+    {
+      "role": "model",
+      "content": "goal:Get property from user profile.\nuser-profile:Get username for Rotaru Octavian.\nuser-profile:Get the birth date property of ${username}.\nprinter:Print the user's birthday."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "please tell me when is chiralesa lenuta birthday"
+    },
+    {
+      "role": "model",
+      "content": "goal:Get property from user profile.\nuser-profile:Get username for Chiralesa Lenuta.\nuser-profile:Get the birth date property of ${username}.\nprinter:Please tell me when is my birthday."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "do you know when is dorneanu stefan birthday?"
+    },
+    {
+      "role": "model",
+      "content": "goal:Get property from user profile.\nuser-profile:Get username for Dorneanu Stefan.\nuser-profile:Get the birth date property of ${username}.\nprinter:Do you know when is my birthday."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "what is nicodim simion's birthday?"
+    },
+    {
+      "role": "model",
+      "content": "goal:Get property from user profile.\nuser-profile:Get username for Nicodim Simion.\nuser-profile:Get the birth date property of ${username}.\nprinter:What is my birthday?"
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get height of rotaru lucian"
+    },
+    {
+      "role": "model",
+      "content": "goal:Get user height.\nuser-profile:Get username for Rotaru Lucian.\nuser-profile:Get the height property of ${username}.\nmeasure-units:Get the measure units for person height.\nprinter:Print the user's height in ${person_height_units}."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "read ghinea marica's height from user profile"
+    },
+    {
+      "role": "model",
+      "content": "goal:Get user height.\nuser-profile:Get username for Ghinea Marica.\nuser-profile:Get the height property of ${username}.\nmeasure-units:Get the measure units for person height.\nprinter:Print the user's height in ${person_height_units}."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "retrieve the height property from silistru luca"
+    },
+    {
+      "role": "model",
+      "content": "goal:Get user height.\nuser-profile:Get username for Silistru Luca.\nuser-profile:Get the height property of ${username}.\nmeasure-units:Get the measure units for person height.\nprinter:Print the user's height in ${person_height_units}."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "what is moromete ilie's height?"
+    },
+    {
+      "role": "model",
+      "content": "goal:Get user height.\nuser-profile:Get username for Moromete Ilie.\nuser-profile:Get the height property of ${username}.\nmeasure-units:Get the measure units for person height.\nprinter:Print the user's height in ${person_height_units}."
     }
   ],
   [

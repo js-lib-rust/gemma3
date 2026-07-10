@@ -1,3 +1,12 @@
+/* user_profile_get_username */
+{"prompt":"Get username.","function":"user_profile_get_username","arguments":{}}
+{"prompt":"Get my username.","function":"user_profile_get_username","arguments":{}}
+{"prompt":"Get owner username.","function":"user_profile_get_username","arguments":{}}
+{"prompt":"Get username for Ghirvu Cătălin-Ioan.","function":"user_profile_get_username","arguments":{"user_id":"Ghirvu Cătălin-Ioan"}}
+{"prompt":"Get username for Achirițoaiei Bianca-Dumitrița.","function":"user_profile_get_username","arguments":{"user_id":"Achirițoaiei Bianca-Dumitrița"}}
+{"prompt":"Get username for Vatavu Viorel.","function":"user_profile_get_username","arguments":{"user_id":"Vatavu Viorel"}}
+{"prompt":"Get username for Berfelea Ana Maria.","function":"user_profile_get_username","arguments":{"user_id":"Berfelea Ana Maria"}}
+
 /* user_profile_set_property */
 {"prompt":"Set the social security number property to 1640315227781 for Rotaru Iulian.","function":"user_profile_set_property","arguments":{"username":"Rotaru Iulian","property":"social security number","value":"1640315227781"}}
 {"prompt":"Set the business phone number property to +40 770 555666 for Agavriloaiei Lucian.","function":"user_profile_set_property","arguments":{"username":"Agavriloaiei Lucian","property":"business phone number","value":"+40 770 555666"}}

@@ -26,6 +26,23 @@
   {
     "type": "function",
     "function": {
+      "name": "user_profile_get_username",
+      "description": "Retrieve the unique, human-readable name for a specific user. If no user_id is provided, the function defaults to retrieving the username of the system owner.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "user_id": {
+            "type": "string",
+            "nullable": true,
+            "description": "The unique identifier for the user. If None, defaults to the system owner."
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
       "name": "user_profile_list_properties",
       "description": "Lists all properties and their values for a specific user profile.",
       "parameters": {

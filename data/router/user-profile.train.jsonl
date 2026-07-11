@@ -200,7 +200,7 @@
 [{"user":"get person height of pascaru radu","model":"goal:Get user height.\nuser-profile:Get the username for Pascaru Radu.\nuser-profile:Get the height property of ${username}.\nmeasure-units:Get the measure units for person height.\nprinter:Print the person height for ${username} in ${person_height_units}."}]
 [{"user":"get rusu florentin's height","model":"goal:Get user height.\nuser-profile:Get the username for Rusu Florentin.\nuser-profile:Get the height property of ${username}.\nmeasure-units:Get the measure units for person height.\nprinter:Print the height for ${username} in ${person_height_units}."}]
 
-/* user profile - list properties */
+/* user profile - list my properties */
 [{"user":"list my user profile","model":"goal:List properties from user profile.\nuser-profile:Get my username.\nuser-profile:List user profile properties for ${username}.\nprinter:List all properties in my user profile."}]
 [{"user":"list my user profile as table","model":"goal:List properties from user profile.\nuser-profile:Get my username.\nuser-profile:List user profile properties for ${username}.\nprinter:List all properties in my user profile as table."}]
 [{"user":"list my user profile grouped by category","model":"goal:List properties from user profile.\nuser-profile:Get my username.\nuser-profile:List user profile properties for ${username}.\nprinter:List all properties in my user profile grouped by category."}]
@@ -211,15 +211,17 @@
 [{"user":"list all my properties from user profile","model":"goal:List properties from user profile.\nuser-profile:Get my username.\nuser-profile:List user profile properties for ${username}.\nprinter:List all properties in my user profile."}]
 [{"user":"print my user profile","model":"goal:List properties from user profile.\nuser-profile:Get my username.\nuser-profile:List user profile properties for ${username}.\nprinter:Print my user profile."}]
 [{"user":"list my user profile properties","model":"goal:List properties from user profile.\nuser-profile:Get my username.\nuser-profile:List user profile properties for ${username}.\nprinter:List all properties in my user profile."}]
-[{"user":"list my user profile attributes","model":"goal:List properties from user profile.\nuser-profile:Get my username.\nuser-profile:List user profile properties for ${username}.\nprinter:List all attributes in my user profile."}]
-[{"user":"display my user profile","model":"goal:List properties from user profile.\nuser-profile:Get my username.\nuser-profile:List user profile properties for ${username}.\nprinter:Display my user profile."}]
-[{"user":"display my user profile per categories","model":"goal:List properties from user profile.\nuser-profile:Get my username.\nuser-profile:List user profile properties for ${username}.\nprinter:Display my user profile per categories."}]
-[{"user":"display my user profile grouped by type","model":"goal:List properties from user profile.\nuser-profile:Get my username.\nuser-profile:List user profile properties for ${username}.\nprinter:Display my user profile grouped by type."}]
-[{"user":"list all my properties","model":"goal:List properties from user profile.\nuser-profile:Get my username.\nuser-profile:List user profile properties for ${username}.\nprinter:List all my properties."}]
-[{"user":"print my properties in tabular form","model":"goal:List properties from user profile.\nuser-profile:Get my username.\nuser-profile:List user profile properties for ${username}.\nprinter:Print my properties in tabular form."}]
-[{"user":"display all my user properties in table format","model":"goal:List properties from user profile.\nuser-profile:Get my username.\nuser-profile:List user profile properties for ${username}.\nprinter:Display all my user properties in table format."}]
-[{"user":"what do you know about me?","model":"goal:List properties from user profile.\nuser-profile:Get my username.\nuser-profile:List user profile properties for ${username}.\nprinter:What do you know about me?"}]
-[{"user":"please show me all the details in my profile","model":"goal:List properties from user profile.\nuser-profile:Get my username.\nuser-profile:List user profile properties for ${username}.\nprinter:Please show me all the details in my profile."}]
+
+/* user profile - list user properties */
+[{"user":"list user profile attributes for acatrinei ingrid","model":"goal:List properties from user profile.\nuser-profile:Get username for Acatrinei Ingrid.\nuser-profile:List user profile properties for ${username}.\nprinter:List all attributes in the user profile."}]
+[{"user":"display fantanaru gheorghe's user profile","model":"goal:List properties from user profile.\nuser-profile:Get username for Fantanaru Gheorghe.\nuser-profile:List user profile properties for ${username}.\nprinter:Display user profile for ${username}."}]
+[{"user":"display user profile per categories for avarvarei ileana","model":"goal:List properties from user profile.\nuser-profile:Get username for Avarvarei Ileana.\nuser-profile:List user profile properties for ${username}.\nprinter:Display user profile per categories for ${username}."}]
+[{"user":"display gigi berlogea user profile grouped by type","model":"goal:List properties from user profile.\nuser-profile:Get username for Gigi Berlogea.\nuser-profile:List user profile properties for ${username}.\nprinter:Display user profile grouped by type for ${username}."}]
+[{"user":"list all properties of gogalniceanu florin","model":"goal:List properties from user profile.\nuser-profile:Get username for Gogalniceanu Florin.\nuser-profile:List user profile properties for ${username}.\nprinter:List all properties for ${username}."}]
+[{"user":"print acatrinei liviu properties in tabular form","model":"goal:List properties from user profile.\nuser-profile:Get username for Acatrinei Liviu.\nuser-profile:List user profile properties for ${username}.\nprinter:Print properties for ${username} in tabular form."}]
+[{"user":"display all user properties for blașcu lucian in table format","model":"goal:List properties from user profile.\nuser-profile:Get username for Blașcu Lucian.\nuser-profile:List user profile properties for ${username}.\nprinter:Display all user properties for ${username} in table format."}]
+[{"user":"what do you know about vaino george viorel?","model":"goal:List properties from user profile.\nuser-profile:Get username for Vaino George Viorel.\nuser-profile:List user profile properties for ${username}.\nprinter:What do you know about ${username}?"}]
+[{"user":"please show me all the details in gherasim petronela's profile","model":"goal:List properties from user profile.\nuser-profile:Get username for Gherasim Petronela.\nuser-profile:List user profile properties for ${username}.\nprinter:Please show me all the details in ${username}'s profile."}]
 
 /* user profile - query properties */
 [{"user":"what is my driving license type?","model":"goal:Query properties from user profile.\nuser-profile:Get my username.\nuser-profile:Get the driving license type property of ${username}.\nquery:What is my driving license type?"}]

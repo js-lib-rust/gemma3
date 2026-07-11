@@ -8896,11 +8896,11 @@
     },
     {
       "role": "user",
-      "content": "list my user profile attributes"
+      "content": "list user profile attributes for acatrinei ingrid"
     },
     {
       "role": "model",
-      "content": "goal:List properties from user profile.\nuser-profile:Get my username.\nuser-profile:List user profile properties for ${username}.\nprinter:List all attributes in my user profile."
+      "content": "goal:List properties from user profile.\nuser-profile:Get username for Acatrinei Ingrid.\nuser-profile:List user profile properties for ${username}.\nprinter:List all attributes in the user profile."
     }
   ],
   [
@@ -8910,11 +8910,11 @@
     },
     {
       "role": "user",
-      "content": "display my user profile"
+      "content": "display fantanaru gheorghe's user profile"
     },
     {
       "role": "model",
-      "content": "goal:List properties from user profile.\nuser-profile:Get my username.\nuser-profile:List user profile properties for ${username}.\nprinter:Display my user profile."
+      "content": "goal:List properties from user profile.\nuser-profile:Get username for Fantanaru Gheorghe.\nuser-profile:List user profile properties for ${username}.\nprinter:Display user profile for ${username}."
     }
   ],
   [
@@ -8924,11 +8924,11 @@
     },
     {
       "role": "user",
-      "content": "display my user profile per categories"
+      "content": "display user profile per categories for avarvarei ileana"
     },
     {
       "role": "model",
-      "content": "goal:List properties from user profile.\nuser-profile:Get my username.\nuser-profile:List user profile properties for ${username}.\nprinter:Display my user profile per categories."
+      "content": "goal:List properties from user profile.\nuser-profile:Get username for Avarvarei Ileana.\nuser-profile:List user profile properties for ${username}.\nprinter:Display user profile per categories for ${username}."
     }
   ],
   [
@@ -8938,11 +8938,11 @@
     },
     {
       "role": "user",
-      "content": "display my user profile grouped by type"
+      "content": "display gigi berlogea user profile grouped by type"
     },
     {
       "role": "model",
-      "content": "goal:List properties from user profile.\nuser-profile:Get my username.\nuser-profile:List user profile properties for ${username}.\nprinter:Display my user profile grouped by type."
+      "content": "goal:List properties from user profile.\nuser-profile:Get username for Gigi Berlogea.\nuser-profile:List user profile properties for ${username}.\nprinter:Display user profile grouped by type for ${username}."
     }
   ],
   [
@@ -8952,11 +8952,11 @@
     },
     {
       "role": "user",
-      "content": "list all my properties"
+      "content": "list all properties of gogalniceanu florin"
     },
     {
       "role": "model",
-      "content": "goal:List properties from user profile.\nuser-profile:Get my username.\nuser-profile:List user profile properties for ${username}.\nprinter:List all my properties."
+      "content": "goal:List properties from user profile.\nuser-profile:Get username for Gogalniceanu Florin.\nuser-profile:List user profile properties for ${username}.\nprinter:List all properties for ${username}."
     }
   ],
   [
@@ -8966,11 +8966,11 @@
     },
     {
       "role": "user",
-      "content": "print my properties in tabular form"
+      "content": "print acatrinei liviu properties in tabular form"
     },
     {
       "role": "model",
-      "content": "goal:List properties from user profile.\nuser-profile:Get my username.\nuser-profile:List user profile properties for ${username}.\nprinter:Print my properties in tabular form."
+      "content": "goal:List properties from user profile.\nuser-profile:Get username for Acatrinei Liviu.\nuser-profile:List user profile properties for ${username}.\nprinter:Print properties for ${username} in tabular form."
     }
   ],
   [
@@ -8980,11 +8980,11 @@
     },
     {
       "role": "user",
-      "content": "display all my user properties in table format"
+      "content": "display all user properties for blașcu lucian in table format"
     },
     {
       "role": "model",
-      "content": "goal:List properties from user profile.\nuser-profile:Get my username.\nuser-profile:List user profile properties for ${username}.\nprinter:Display all my user properties in table format."
+      "content": "goal:List properties from user profile.\nuser-profile:Get username for Blașcu Lucian.\nuser-profile:List user profile properties for ${username}.\nprinter:Display all user properties for ${username} in table format."
     }
   ],
   [
@@ -8994,11 +8994,11 @@
     },
     {
       "role": "user",
-      "content": "what do you know about me?"
+      "content": "what do you know about vaino george viorel?"
     },
     {
       "role": "model",
-      "content": "goal:List properties from user profile.\nuser-profile:Get my username.\nuser-profile:List user profile properties for ${username}.\nprinter:What do you know about me?"
+      "content": "goal:List properties from user profile.\nuser-profile:Get username for Vaino George Viorel.\nuser-profile:List user profile properties for ${username}.\nprinter:What do you know about ${username}?"
     }
   ],
   [
@@ -9008,11 +9008,11 @@
     },
     {
       "role": "user",
-      "content": "please show me all the details in my profile"
+      "content": "please show me all the details in gherasim petronela's profile"
     },
     {
       "role": "model",
-      "content": "goal:List properties from user profile.\nuser-profile:Get my username.\nuser-profile:List user profile properties for ${username}.\nprinter:Please show me all the details in my profile."
+      "content": "goal:List properties from user profile.\nuser-profile:Get username for Gherasim Petronela.\nuser-profile:List user profile properties for ${username}.\nprinter:Please show me all the details in ${username}'s profile."
     }
   ],
   [

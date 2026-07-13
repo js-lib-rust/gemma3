@@ -6292,650 +6292,6 @@
     },
     {
       "role": "user",
-      "content": "get my username"
-    },
-    {
-      "role": "model",
-      "content": "goal:Get property from user profile.\nuser-profile:Get my username.\nprinter:Print the user's username."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "get my personal phone number"
-    },
-    {
-      "role": "model",
-      "content": "goal:Get property from user profile.\nvariables:Let property be personal phone number.\nuser-profile:Get my username.\nuser-profile:Get the ${property} property of ${username}.\nprinter:Print the ${property} for ${username}."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "get my phone number"
-    },
-    {
-      "role": "model",
-      "content": "goal:Get property from user profile.\nvariables:Let property be personal phone number.\nuser-profile:Get my username.\nuser-profile:Get the ${property} property of ${username}.\nprinter:Print the ${property} for ${username}."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "get my phone"
-    },
-    {
-      "role": "model",
-      "content": "goal:Get property from user profile.\nvariables:Let property be personal phone number.\nuser-profile:Get my username.\nuser-profile:Get the ${property} property of ${username}.\nprinter:Print the ${property} for ${username}."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "get my personal email address"
-    },
-    {
-      "role": "model",
-      "content": "goal:Get property from user profile.\nvariables:Let property be personal email address.\nuser-profile:Get my username.\nuser-profile:Get the ${property} property of ${username}.\nprinter:Print the ${property} for ${username}."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "get my email address"
-    },
-    {
-      "role": "model",
-      "content": "goal:Get property from user profile.\nvariables:Let property be personal email address.\nuser-profile:Get my username.\nuser-profile:Get the ${property} property of ${username}.\nprinter:Print the ${property} for ${username}."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "get my email"
-    },
-    {
-      "role": "model",
-      "content": "goal:Get property from user profile.\nvariables:Let property be personal email address.\nuser-profile:Get my username.\nuser-profile:Get the ${property} property of ${username}.\nprinter:Print the ${property} for ${username}."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "get my business phone number"
-    },
-    {
-      "role": "model",
-      "content": "goal:Get property from user profile.\nvariables:Let property be business phone number.\nuser-profile:Get my username.\nuser-profile:Get the ${property} property of ${username}.\nprinter:Print the ${property} for ${username}."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "get my business phone"
-    },
-    {
-      "role": "model",
-      "content": "goal:Get property from user profile.\nvariables:Let property be business phone number.\nuser-profile:Get my username.\nuser-profile:Get the ${property} property of ${username}.\nprinter:Print the ${property} for ${username}."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "get my work phone"
-    },
-    {
-      "role": "model",
-      "content": "goal:Get property from user profile.\nvariables:Let property be business phone number.\nuser-profile:Get my username.\nuser-profile:Get the ${property} property of ${username}.\nprinter:Print the ${property} for ${username}."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "get my education"
-    },
-    {
-      "role": "model",
-      "content": "goal:Get property from user profile.\nvariables:Let property be education.\nuser-profile:Get my username.\nuser-profile:Get the ${property} property of ${username}.\nprinter:Print the ${property} for ${username}."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "get my hobbies"
-    },
-    {
-      "role": "model",
-      "content": "goal:Get property from user profile.\nvariables:Let property be hobbies.\nuser-profile:Get my username.\nuser-profile:Get the ${property} property of ${username}.\nprinter:Print the ${property} for ${username}."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "get my skill level"
-    },
-    {
-      "role": "model",
-      "content": "goal:Get property from user profile.\nvariables:Let property be skill level.\nuser-profile:Get my username.\nuser-profile:Get the ${property} property of ${username}.\nprinter:Print the ${property} for ${username}."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "get my social security number"
-    },
-    {
-      "role": "model",
-      "content": "goal:Get property from user profile.\nvariables:Let property be social security number.\nuser-profile:Get my username.\nuser-profile:Get the ${property} property of ${username}.\nprinter:Print the ${property} for ${username}."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "get my birthday"
-    },
-    {
-      "role": "model",
-      "content": "goal:Get property from user profile.\nuser-profile:Get my username.\nuser-profile:Get the birth date property of ${username}.\nprinter:Print the user's birthday."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "please tell me when is my birthday"
-    },
-    {
-      "role": "model",
-      "content": "goal:Get property from user profile.\nuser-profile:Get my username.\nuser-profile:Get the birth date property of ${username}.\nprinter:Please tell me when is my birthday."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "do you know when is my birthday?"
-    },
-    {
-      "role": "model",
-      "content": "goal:Get property from user profile.\nuser-profile:Get my username.\nuser-profile:Get the birth date property of ${username}.\nprinter:Do you know when is my birthday."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "what is my birthday?"
-    },
-    {
-      "role": "model",
-      "content": "goal:Get property from user profile.\nuser-profile:Get my username.\nuser-profile:Get the birth date property of ${username}.\nprinter:What is my birthday?"
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "get my height"
-    },
-    {
-      "role": "model",
-      "content": "goal:Get user height.\nuser-profile:Get my username.\nuser-profile:Get the height property of ${username}.\nmeasure-units:Get the measure units for person height.\nprinter:Print the user's height in ${person_height_units}."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "get my height from user profile"
-    },
-    {
-      "role": "model",
-      "content": "goal:Get user height.\nuser-profile:Get my username.\nuser-profile:Get the height property of ${username}.\nmeasure-units:Get the measure units for person height.\nprinter:Print the user's height in ${person_height_units}."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "get my person height"
-    },
-    {
-      "role": "model",
-      "content": "goal:Get user height.\nuser-profile:Get my username.\nuser-profile:Get the height property of ${username}.\nmeasure-units:Get the measure units for person height.\nprinter:Print the user's height in ${person_height_units}."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "retrieve my height"
-    },
-    {
-      "role": "model",
-      "content": "goal:Get user height.\nuser-profile:Get my username.\nuser-profile:Get the height property of ${username}.\nmeasure-units:Get the measure units for person height.\nprinter:Print the user's height in ${person_height_units}."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "read my height"
-    },
-    {
-      "role": "model",
-      "content": "goal:Get user height.\nuser-profile:Get my username.\nuser-profile:Get the height property of ${username}.\nmeasure-units:Get the measure units for person height.\nprinter:Print the user's height in ${person_height_units}."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "read my height from my profile"
-    },
-    {
-      "role": "model",
-      "content": "goal:Get user height.\nuser-profile:Get my username.\nuser-profile:Get the height property of ${username}.\nmeasure-units:Get the measure units for person height.\nprinter:Print the user's height in ${person_height_units}."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "find my height"
-    },
-    {
-      "role": "model",
-      "content": "goal:Get user height.\nuser-profile:Get my username.\nuser-profile:Get the height property of ${username}.\nmeasure-units:Get the measure units for person height.\nprinter:Print the user's height in ${person_height_units}."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "what is my height?"
-    },
-    {
-      "role": "model",
-      "content": "goal:Get user height.\nuser-profile:Get my username.\nuser-profile:Get the height property of ${username}.\nmeasure-units:Get the measure units for person height.\nprinter:Print the user's height in ${person_height_units}."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "get personal phone number property for rotaru lucian"
-    },
-    {
-      "role": "model",
-      "content": "goal:Get property from user profile.\nvariables:Let property be personal phone number.\nvariables:Let username be Rotaru Lucian.\nuser-profile:Get the ${property} property of ${username}.\nprinter:Print the ${property} for ${username}."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "retrieve the phone number of marica lucian from user profile"
-    },
-    {
-      "role": "model",
-      "content": "goal:Get property from user profile.\nvariables:Let property be personal phone number.\nvariables:Let username be Marica Lucian.\nuser-profile:Get the ${property} property of ${username}.\nprinter:Print the ${property} for ${username}."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "read rusu florentin's phone property"
-    },
-    {
-      "role": "model",
-      "content": "goal:Get property from user profile.\nvariables:Let property be personal phone number.\nvariables:Let username be Rusu Florentin.\nuser-profile:Get the ${property} property of ${username}.\nprinter:Print the ${property} for ${username}."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "what is personal email address property of gogalniceanu mioara?"
-    },
-    {
-      "role": "model",
-      "content": "goal:Get property from user profile.\nvariables:Let property be personal email address.\nvariables:Let username be Gogalniceanu Mioara.\nuser-profile:Get the ${property} property of ${username}.\nprinter:Print the ${property} for ${username}."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "get email address from user profile of dorneanu deliana"
-    },
-    {
-      "role": "model",
-      "content": "goal:Get property from user profile.\nvariables:Let property be personal email address.\nvariables:Let username be Dorneanu Deliana.\nuser-profile:Get the ${property} property of ${username}.\nprinter:Print the ${property} for ${username}."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "find email property in berfelea ana-maria's profile"
-    },
-    {
-      "role": "model",
-      "content": "goal:Get property from user profile.\nvariables:Let property be personal email address.\nvariables:Let username be Berfelea Ana-Maria.\nuser-profile:Get the ${property} property of ${username}.\nprinter:Print the ${property} for ${username}."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "business phone number property of vaino alina"
-    },
-    {
-      "role": "model",
-      "content": "goal:Get property from user profile.\nvariables:Let property be business phone number.\nvariables:Let username be Vaino Alina.\nuser-profile:Get the ${property} property of ${username}.\nprinter:Print the ${property} for ${username}."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "what business phone is registered on profile of dorneanu sorana ioana?"
-    },
-    {
-      "role": "model",
-      "content": "goal:Get property from user profile.\nvariables:Let property be business phone number.\nvariables:Let username be Dorneanu Sorana Ioana.\nuser-profile:Get the ${property} property of ${username}.\nprinter:Print the ${property} for ${username}."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "get work phone property for chiriac liliana"
-    },
-    {
-      "role": "model",
-      "content": "goal:Get property from user profile.\nvariables:Let property be business phone number.\nvariables:Let username be Chiriac Liliana.\nuser-profile:Get the ${property} property of ${username}.\nprinter:Print the ${property} for ${username}."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "read SSN property for user vaino gheorghe"
-    },
-    {
-      "role": "model",
-      "content": "goal:Get property from user profile.\nvariables:Let property be social security number.\nvariables:Let username be Vaino Gheorghe.\nuser-profile:Get the ${property} property of ${username}.\nprinter:Print the ${property} for ${username}."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "print identity card serial from cornea daniel profile"
-    },
-    {
-      "role": "model",
-      "content": "goal:Get property from user profile.\nvariables:Let property be identity card serial.\nvariables:Let username be Cornea Daniel.\nuser-profile:Get the ${property} property of ${username}.\nprinter:Print the ${property} for ${username}."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "display the birth certificate's serial property of solomon marian"
-    },
-    {
-      "role": "model",
-      "content": "goal:Get property from user profile.\nvariables:Let property be birth certificate serial.\nvariables:Let username be Solomon Marian.\nuser-profile:Get the ${property} property of ${username}.\nprinter:Print the ${property} for ${username}."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "get birthday of rotaru octavian"
-    },
-    {
-      "role": "model",
-      "content": "goal:Get property from user profile.\nvariables:Let username be Rotaru Octavian.\nuser-profile:Get the birth date property of ${username}.\nprinter:Print the user's birthday."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "please tell me when is chiralesa lenuta birthday"
-    },
-    {
-      "role": "model",
-      "content": "goal:Get property from user profile.\nvariables:Let username be Chiralesa Lenuta.\nuser-profile:Get the birth date property of ${username}.\nprinter:Please tell me when is my birthday."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "do you know when is dorneanu stefan birthday?"
-    },
-    {
-      "role": "model",
-      "content": "goal:Get property from user profile.\nvariables:Let username be Dorneanu Stefan.\nuser-profile:Get the birth date property of ${username}.\nprinter:Do you know when is my birthday."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "what is nicodim simion's birthday?"
-    },
-    {
-      "role": "model",
-      "content": "goal:Get property from user profile.\nvariables:Let username be Nicodim Simion.\nuser-profile:Get the birth date property of ${username}.\nprinter:What is my birthday?"
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "get height of rotaru lucian"
-    },
-    {
-      "role": "model",
-      "content": "goal:Get user height.\nvariables:Let username be Rotaru Lucian.\nuser-profile:Get the height property of ${username}.\nmeasure-units:Get the measure units for person height.\nprinter:Print the user's height in ${person_height_units}."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "read ghinea marica's height from user profile"
-    },
-    {
-      "role": "model",
-      "content": "goal:Get user height.\nvariables:Let username be Ghinea Marica.\nuser-profile:Get the height property of ${username}.\nmeasure-units:Get the measure units for person height.\nprinter:Print the user's height in ${person_height_units}."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "retrieve the height property from silistru luca"
-    },
-    {
-      "role": "model",
-      "content": "goal:Get user height.\nvariables:Let username be Silistru Luca.\nuser-profile:Get the height property of ${username}.\nmeasure-units:Get the measure units for person height.\nprinter:Print the user's height in ${person_height_units}."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "what is moromete ilie's height?"
-    },
-    {
-      "role": "model",
-      "content": "goal:Get user height.\nvariables:Let username be Moromete Ilie.\nuser-profile:Get the height property of ${username}.\nmeasure-units:Get the measure units for person height.\nprinter:Print the user's height in ${person_height_units}."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
       "content": "save my personal phone number +40 770 861711 in user profile"
     },
     {
@@ -7808,7 +7164,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Rename property from user profile.\nvariables:Let old property be IQ.\nvariables:Let new property be intelligence quotient.\nuser-profile:Get my username.\nuser-profile:Rename the ${old_property} property to ${new_property} for ${username}.\nprinter:Informs about successful property renaming or failure condition."
+      "content": "goal:Rename property from user profile.\nvariables:Let old property be IQ.\nvariables:Let new property be intelligence quotient.\nuser-profile:Get my username.\nuser-profile:Rename the ${old_property} property to ${new_property} for ${username}.\nprinter:Report operation status."
     }
   ],
   [
@@ -7822,7 +7178,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Rename property from user profile.\nvariables:Let old property be birth date.\nvariables:Let new property be birthday.\nuser-profile:Get my username.\nuser-profile:Rename the ${old_property} property to ${new_property} for ${username}.\nprinter:Informs about successful property renaming or failure condition."
+      "content": "goal:Rename property from user profile.\nvariables:Let old property be birth date.\nvariables:Let new property be birthday.\nuser-profile:Get my username.\nuser-profile:Rename the ${old_property} property to ${new_property} for ${username}.\nprinter:Report operation status."
     }
   ],
   [
@@ -7832,53 +7188,11 @@
     },
     {
       "role": "user",
-      "content": "rename my marital status property to civil status"
+      "content": "rewrite social security number property to SSN in my user profile"
     },
     {
       "role": "model",
-      "content": "goal:Rename property from user profile.\nvariables:Let old property be marital status.\nvariables:Let new property be civil status.\nuser-profile:Get my username.\nuser-profile:Rename the ${old_property} property to ${new_property} for ${username}.\nprinter:Informs about successful property renaming or failure condition."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "rename social security number property to SSN in my user profile"
-    },
-    {
-      "role": "model",
-      "content": "goal:Rename property from user profile.\nvariables:Let old property be social security number.\nvariables:Let new property be SSN.\nuser-profile:Get my username.\nuser-profile:Rename the ${old_property} property to ${new_property} for ${username}.\nprinter:Informs about successful property renaming or failure condition."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "change property name from business email to work email in my user profile"
-    },
-    {
-      "role": "model",
-      "content": "goal:Rename property from user profile.\nvariables:Let old property be business email.\nvariables:Let new property be work email.\nuser-profile:Get my username.\nuser-profile:Rename the ${old_property} property to ${new_property} for ${username}.\nprinter:Informs about successful property renaming or failure condition."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "change name for my personal email address property to home email"
-    },
-    {
-      "role": "model",
-      "content": "goal:Rename property from user profile.\nvariables:Let old property be personal email address.\nvariables:Let new property be home email.\nuser-profile:Get my username.\nuser-profile:Rename the ${old_property} property to ${new_property} for ${username}.\nprinter:Informs about successful property renaming or failure condition."
+      "content": "goal:Rename property from user profile.\nvariables:Let old property be social security number.\nvariables:Let new property be SSN.\nuser-profile:Get my username.\nuser-profile:Rename the ${old_property} property to ${new_property} for ${username}.\nprinter:Report operation status."
     }
   ],
   [
@@ -7892,7 +7206,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Rename property from user profile.\nvariables:Let old property be waist circumference.\nvariables:Let new property be abdominal circumference.\nuser-profile:Get my username.\nuser-profile:Rename the ${old_property} property to ${new_property} for ${username}.\nprinter:Informs about successful property renaming or failure condition."
+      "content": "goal:Rename property from user profile.\nvariables:Let old property be waist circumference.\nvariables:Let new property be abdominal circumference.\nuser-profile:Get my username.\nuser-profile:Rename the ${old_property} property to ${new_property} for ${username}.\nprinter:Report operation status."
     }
   ],
   [
@@ -7902,11 +7216,11 @@
     },
     {
       "role": "user",
-      "content": "rewrite my property name from education to formal education"
+      "content": "change property name from business email to work email in my user profile"
     },
     {
       "role": "model",
-      "content": "goal:Rename property from user profile.\nvariables:Let old property be education.\nvariables:Let new property be formal education.\nuser-profile:Get my username.\nuser-profile:Rename the ${old_property} property to ${new_property} for ${username}.\nprinter:Informs about successful property renaming or failure condition."
+      "content": "goal:Rename property from user profile.\nvariables:Let old property be business email.\nvariables:Let new property be work email.\nuser-profile:Get my username.\nuser-profile:Rename the ${old_property} property to ${new_property} for ${username}.\nprinter:Report operation status."
     }
   ],
   [
@@ -7916,11 +7230,11 @@
     },
     {
       "role": "user",
-      "content": "replace my skills property name with competences"
+      "content": "modify property name from postal address to residence address in my user profile"
     },
     {
       "role": "model",
-      "content": "goal:Rename property from user profile.\nvariables:Let old property be skills.\nvariables:Let new property be competences.\nuser-profile:Get my username.\nuser-profile:Rename the ${old_property} property to ${new_property} for ${username}.\nprinter:Informs about successful property renaming or failure condition."
+      "content": "goal:Rename property from user profile.\nvariables:Let old property be postal address.\nvariables:Let new property be residence address.\nuser-profile:Get my username.\nuser-profile:Rename the ${old_property} property to ${new_property} for ${username}.\nprinter:Report operation status."
     }
   ],
   [
@@ -7930,11 +7244,81 @@
     },
     {
       "role": "user",
-      "content": "modify property name from postal address to residence in my user profile"
+      "content": "rename marital status property to civil status for vaino maria"
     },
     {
       "role": "model",
-      "content": "goal:Rename property from user profile.\nvariables:Let old property be postal address.\nvariables:Let new property be residence.\nuser-profile:Get my username.\nuser-profile:Rename the ${old_property} property to ${new_property} for ${username}.\nprinter:Informs about successful property renaming or failure condition."
+      "content": "goal:Rename property from user profile.\nvariables:Let old property be marital status.\nvariables:Let new property be civil status.\nvariables:Let username be Vaino Maria.\nuser-profile:Rename the ${old_property} property to ${new_property} for ${username}.\nprinter:Report operation status."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "change the property name of stratulat casandra's personal email address to home email"
+    },
+    {
+      "role": "model",
+      "content": "goal:Rename property from user profile.\nvariables:Let old property be personal email address.\nvariables:Let new property be home email.\nvariables:Let username be Stratulat Casandra.\nuser-profile:Get my username.\nuser-profile:Rename the ${old_property} property to ${new_property} for ${username}.\nprinter:Report operation status."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "update property name from waist circumference to abdominal circumference for obreja costel"
+    },
+    {
+      "role": "model",
+      "content": "goal:Rename property from user profile.\nvariables:Let old property be waist circumference.\nvariables:Let new property be abdominal circumference.\nvariables:Let username be Obreja Costel.\nuser-profile:Get my username.\nuser-profile:Rename the ${old_property} property to ${new_property} for ${username}.\nprinter:Report operation status."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "rewrite property name from education to formal education for antoci ioan"
+    },
+    {
+      "role": "model",
+      "content": "goal:Rename property from user profile.\nvariables:Let old property be education.\nvariables:Let new property be formal education.\nvariables:Let username be Antoci Ioan.\nuser-profile:Rename the ${old_property} property to ${new_property} for ${username}.\nprinter:Report operation status."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "replace skills property name with competences for rotaru ionut ciprian"
+    },
+    {
+      "role": "model",
+      "content": "goal:Rename property from user profile.\nvariables:Let old property be skills.\nvariables:Let new property be competences.\nvariables:Let username be Rotaru Ionut Ciprian.\nuser-profile:Rename the ${old_property} property to ${new_property} for ${username}.\nprinter:Report operation status."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "modify religion property to beliefs in nechifor constantin's user profile"
+    },
+    {
+      "role": "model",
+      "content": "goal:Rename property from user profile.\nvariables:Let old property be religion.\nvariables:Let new property be beliefs.\nvariables:Let username be Nechifor Constantin.\nuser-profile:Rename the ${old_property} property to ${new_property} for ${username}.\nprinter:Report operation status."
     }
   ],
   [
@@ -7948,7 +7332,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Remove property from user profile.\nvariables:Let property be business phone number.\nuser-profile:Get my username.\nuser-profile:Get the ${property} property of ${username}.\nuser-profile:Remove ${property} property from ${username}.\nprinter:Print removed property value and inform that ${property} was removed."
+      "content": "goal:Remove property from user profile.\nvariables:Let property be business phone number.\nuser-profile:Get my username.\nuser-profile:Get the ${property} property of ${username}.\nuser-profile:Remove ${property} property from ${username}.\nprinter:Report operation status."
     }
   ],
   [
@@ -7962,7 +7346,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Remove property from user profile.\nvariables:Let property be body length.\nuser-profile:Get my username.\nuser-profile:Get the ${property} property of ${username}.\nuser-profile:Remove ${property} property from ${username}.\nprinter:Print removed property value and inform that ${property} was removed."
+      "content": "goal:Remove property from user profile.\nvariables:Let property be body length.\nuser-profile:Get my username.\nuser-profile:Get the ${property} property of ${username}.\nuser-profile:Remove ${property} property from ${username}.\nprinter:Report operation status."
     }
   ],
   [
@@ -7976,7 +7360,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Remove property from user profile.\nvariables:Let property be blood type.\nuser-profile:Get my username.\nuser-profile:Get the ${property} property of ${username}.\nuser-profile:Remove ${property} property from ${username}.\nprinter:Print removed property value and inform that ${property} was removed."
+      "content": "goal:Remove property from user profile.\nvariables:Let property be blood type.\nuser-profile:Get my username.\nuser-profile:Get the ${property} property of ${username}.\nuser-profile:Remove ${property} property from ${username}.\nprinter:Report operation status."
     }
   ],
   [
@@ -7990,7 +7374,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Remove property from user profile.\nvariables:Let property be skill level.\nuser-profile:Get my username.\nuser-profile:Get the ${property} property of ${username}.\nuser-profile:Remove ${property} property from ${username}.\nprinter:Print removed property value and inform that ${property} was removed."
+      "content": "goal:Remove property from user profile.\nvariables:Let property be skill level.\nuser-profile:Get my username.\nuser-profile:Get the ${property} property of ${username}.\nuser-profile:Remove ${property} property from ${username}.\nprinter:Report operation status."
     }
   ],
   [
@@ -8004,7 +7388,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Remove property from user profile.\nvariables:Let property be place.\nuser-profile:Get my username.\nuser-profile:Get the ${property} property of ${username}.\nuser-profile:Remove ${property} property from ${username}.\nprinter:Print removed property value and inform that ${property} was removed."
+      "content": "goal:Remove property from user profile.\nvariables:Let property be place.\nuser-profile:Get my username.\nuser-profile:Get the ${property} property of ${username}.\nuser-profile:Remove ${property} property from ${username}.\nprinter:Report operation status."
     }
   ],
   [
@@ -8018,7 +7402,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Remove property from user profile.\nvariables:Let property be birthday.\nuser-profile:Get my username.\nuser-profile:Get the ${property} property of ${username}.\nuser-profile:Remove ${property} property from ${username}.\nprinter:Print removed property value and inform that ${property} was removed."
+      "content": "goal:Remove property from user profile.\nvariables:Let property be birthday.\nuser-profile:Get my username.\nuser-profile:Get the ${property} property of ${username}.\nuser-profile:Remove ${property} property from ${username}.\nprinter:Report operation status."
     }
   ],
   [
@@ -8028,11 +7412,11 @@
     },
     {
       "role": "user",
-      "content": "take off education level from my profile"
+      "content": "remove business email property from fântânaru mitică"
     },
     {
       "role": "model",
-      "content": "goal:Remove property from user profile.\nvariables:Let property be education level.\nuser-profile:Get my username.\nuser-profile:Get the ${property} property of ${username}.\nuser-profile:Remove ${property} property from ${username}.\nprinter:Print removed property value and inform that ${property} was removed."
+      "content": "goal:Remove property from user profile.\nvariables:Let property be business email address.\nvariables:Let username be Fântânaru Mitică.\nuser-profile:Get the ${property} property of ${username}.\nuser-profile:Remove ${property} property from ${username}.\nprinter:Report operation status."
     }
   ],
   [
@@ -8042,11 +7426,11 @@
     },
     {
       "role": "user",
-      "content": "please delete my email address"
+      "content": "take off education level from mutică cătălin's profile"
     },
     {
       "role": "model",
-      "content": "goal:Remove property from user profile.\nvariables:Let property be personal email address.\nuser-profile:Get my username.\nuser-profile:Get the ${property} property of ${username}.\nuser-profile:Remove ${property} property from ${username}.\nprinter:Print removed property value and inform that ${property} was removed."
+      "content": "goal:Remove property from user profile.\nvariables:Let property be education level.\nvariables:Let username be Mutică Cătălin.\nuser-profile:Get the ${property} property of ${username}.\nuser-profile:Remove ${property} property from ${username}.\nprinter:Report operation status."
     }
   ],
   [
@@ -8056,11 +7440,11 @@
     },
     {
       "role": "user",
-      "content": "get rid of my social security number"
+      "content": "please delete budaianu constantin cristian's email address from user profile"
     },
     {
       "role": "model",
-      "content": "goal:Remove property from user profile.\nvariables:Let property be social security number.\nuser-profile:Get my username.\nuser-profile:Get the ${property} property of ${username}.\nuser-profile:Remove ${property} property from ${username}.\nprinter:Print removed property value and inform that ${property} was removed."
+      "content": "goal:Remove property from user profile.\nvariables:Let property be email address.\nvariables:Let username be Budaianu Constantin Cristian.\nuser-profile:Get the ${property} property of ${username}.\nuser-profile:Remove ${property} property from ${username}.\nprinter:Report operation status."
     }
   ],
   [
@@ -8070,11 +7454,11 @@
     },
     {
       "role": "user",
-      "content": "forget my postal address"
+      "content": "get rid of social security number property from mardare cecilia"
     },
     {
       "role": "model",
-      "content": "goal:Remove property from user profile.\nvariables:Let property be postal address.\nuser-profile:Get my username.\nuser-profile:Get the ${property} property of ${username}.\nuser-profile:Remove ${property} property from ${username}.\nprinter:Print removed property value and inform that ${property} was removed."
+      "content": "goal:Remove property from user profile.\nvariables:Let property be social security number.\nvariables:Let username be Mardare Cecilia.\nuser-profile:Get the ${property} property of ${username}.\nuser-profile:Remove ${property} property from ${username}.\nprinter:Report operation status."
     }
   ],
   [
@@ -8084,11 +7468,11 @@
     },
     {
       "role": "user",
-      "content": "unset location on my user profile"
+      "content": "forget dumitrescu ovidiu's postal address from his user profile"
     },
     {
       "role": "model",
-      "content": "goal:Remove property from user profile.\nvariables:Let property be location.\nuser-profile:Get my username.\nuser-profile:Get the ${property} property of ${username}.\nuser-profile:Remove ${property} property from ${username}.\nprinter:Print removed property value and inform that ${property} was removed."
+      "content": "goal:Remove property from user profile.\nvariables:Let property be postal address.\nvariables:Let username be Dumitrescu Ovidiu.\nuser-profile:Get the ${property} property of ${username}.\nuser-profile:Remove ${property} property from ${username}.\nprinter:Report operation status."
     }
   ],
   [
@@ -8098,11 +7482,11 @@
     },
     {
       "role": "user",
-      "content": "I need to take my business email off my profile."
+      "content": "unset location property on user profile of gagea alexandru"
     },
     {
       "role": "model",
-      "content": "goal:Remove property from user profile.\nvariables:Let property be business email address.\nuser-profile:Get my username.\nuser-profile:Get the ${property} property of ${username}.\nuser-profile:Remove ${property} property from ${username}.\nprinter:Print removed property value and inform that ${property} was removed."
+      "content": "goal:Remove property from user profile.\nvariables:Let property be location.\nvariables:Let username be Gagea Alexandru.\nuser-profile:Get the ${property} property of ${username}.\nuser-profile:Remove ${property} property from ${username}.\nprinter:Report operation status."
     }
   ],
   [
@@ -8112,11 +7496,11 @@
     },
     {
       "role": "user",
-      "content": "get username for rotaru iulian"
+      "content": "get my username"
     },
     {
       "role": "model",
-      "content": "goal:Get property from user profile.\nuser-profile:Get the username for Rotaru Iulian.\nprinter:Print the username for ${username}."
+      "content": "goal:Get property from user profile.\nuser-profile:Get my username.\nprinter:Print the user's username."
     }
   ],
   [
@@ -8126,11 +7510,11 @@
     },
     {
       "role": "user",
-      "content": "get postal address for rotaru iulian"
+      "content": "get personal phone number from my profile"
     },
     {
       "role": "model",
-      "content": "goal:Get property from user profile.\nvariables:Let property be postal address.\nvariables:Let username be Rotaru Iulian.\nuser-profile:Get the ${property} property of ${username}.\nprinter:Print the ${property} for ${username}."
+      "content": "goal:Get property from user profile.\nvariables:Let property be personal phone number.\nuser-profile:Get my username.\nuser-profile:Get the ${property} property of ${username}.\nprinter:Print the ${property} for ${username}."
     }
   ],
   [
@@ -8140,11 +7524,11 @@
     },
     {
       "role": "user",
-      "content": "get postal code for gogalniceanu mioara"
+      "content": "retrieve my phone number from user profile"
     },
     {
       "role": "model",
-      "content": "goal:Get property from user profile.\nvariables:Let property be postal code.\nvariables:Let username be Gogalniceanu Mioara.\nuser-profile:Get the ${property} property of ${username}.\nprinter:Print the ${property} for ${username}."
+      "content": "goal:Get property from user profile.\nvariables:Let property be personal phone number.\nuser-profile:Get my username.\nuser-profile:Get the ${property} property of ${username}.\nprinter:Print the ${property} for ${username}."
     }
   ],
   [
@@ -8154,11 +7538,11 @@
     },
     {
       "role": "user",
-      "content": "get personal phone number for lontkowschi mirela petronela"
+      "content": "read my phone property"
     },
     {
       "role": "model",
-      "content": "goal:Get property from user profile.\nvariables:Let property be personal phone number.\nvariables:Let username be Lontkowschi Mirela Petronela.\nuser-profile:Get the ${property} property of ${username}.\nprinter:Print the ${property} for ${username}."
+      "content": "goal:Get property from user profile.\nvariables:Let property be personal phone number.\nuser-profile:Get my username.\nuser-profile:Get the ${property} property of ${username}.\nprinter:Print the ${property} for ${username}."
     }
   ],
   [
@@ -8168,11 +7552,11 @@
     },
     {
       "role": "user",
-      "content": "get business phone number simeria anca"
+      "content": "print my personal email address"
     },
     {
       "role": "model",
-      "content": "goal:Get property from user profile.\nvariables:Let property be business phone number.\nvariables:Let username be Simeria Anca.\nuser-profile:Get the ${property} property of ${username}.\nprinter:Print the ${property} for ${username}."
+      "content": "goal:Get property from user profile.\nvariables:Let property be personal email address.\nuser-profile:Get my username.\nuser-profile:Get the ${property} property of ${username}.\nprinter:Print the ${property} for ${username}."
     }
   ],
   [
@@ -8182,11 +7566,11 @@
     },
     {
       "role": "user",
-      "content": "get personal email address for gavriliu nicolaie"
+      "content": "display my email address"
     },
     {
       "role": "model",
-      "content": "goal:Get property from user profile.\nvariables:Let property be personal email address.\nvariables:Let username be Gavriliu Nicolaie.\nuser-profile:Get the ${property} property of ${username}.\nprinter:Print the ${property} for ${username}."
+      "content": "goal:Get property from user profile.\nvariables:Let property be personal email address.\nuser-profile:Get my username.\nuser-profile:Get the ${property} property of ${username}.\nprinter:Print the ${property} for ${username}."
     }
   ],
   [
@@ -8196,11 +7580,11 @@
     },
     {
       "role": "user",
-      "content": "get business email address for gogalniceanu stefan"
+      "content": "what is my email?"
     },
     {
       "role": "model",
-      "content": "goal:Get property from user profile.\nvariables:Let property be business email address.\nvariables:Let username be Gogălniceanu Ștefan.\nuser-profile:Get the ${property} property of ${username}.\nprinter:Print the ${property} for ${username}."
+      "content": "goal:Get property from user profile.\nvariables:Let property be personal email address.\nuser-profile:Get my username.\nuser-profile:Get the ${property} property of ${username}.\nprinter:Print the ${property} for ${username}."
     }
   ],
   [
@@ -8210,11 +7594,11 @@
     },
     {
       "role": "user",
-      "content": "get birth date baciu vasile"
+      "content": "find my business phone number"
     },
     {
       "role": "model",
-      "content": "goal:Get property from user profile.\nvariables:Let property be birth date.\nvariables:Let username be Baciu Vasile.\nuser-profile:Get the ${property} property of ${username}.\nprinter:Print the ${property} for ${username}."
+      "content": "goal:Get property from user profile.\nvariables:Let property be business phone number.\nuser-profile:Get my username.\nuser-profile:Get the ${property} property of ${username}.\nprinter:Print the ${property} for ${username}."
     }
   ],
   [
@@ -8224,11 +7608,11 @@
     },
     {
       "role": "user",
-      "content": "get birth place of gogalniceanu mioara"
+      "content": "get my business phone"
     },
     {
       "role": "model",
-      "content": "goal:Get property from user profile.\nvariables:Let property be birth place.\nvariables:Let username be Gogălniceanu Mioara.\nuser-profile:Get the ${property} property of ${username}.\nprinter:Print the ${property} for ${username}."
+      "content": "goal:Get property from user profile.\nvariables:Let property be business phone number.\nuser-profile:Get my username.\nuser-profile:Get the ${property} property of ${username}.\nprinter:Print the ${property} for ${username}."
     }
   ],
   [
@@ -8238,11 +7622,11 @@
     },
     {
       "role": "user",
-      "content": "get adam iosif's profession"
+      "content": "get my work phone"
     },
     {
       "role": "model",
-      "content": "goal:Get property from user profile.\nvariables:Let property be profession.\nvariables:Let username be Adam Iosif.\nuser-profile:Get the ${property} property of ${username}.\nprinter:Print the ${property} for ${username}."
+      "content": "goal:Get property from user profile.\nvariables:Let property be business phone number.\nuser-profile:Get my username.\nuser-profile:Get the ${property} property of ${username}.\nprinter:Print the ${property} for ${username}."
     }
   ],
   [
@@ -8252,11 +7636,11 @@
     },
     {
       "role": "user",
-      "content": "get location of miron daniela elena"
+      "content": "please tell me what my education is"
     },
     {
       "role": "model",
-      "content": "goal:Get property from user profile.\nvariables:Let property be location.\nvariables:Let username be Miron Daniela Elena.\nuser-profile:Get the ${property} property of ${username}.\nprinter:Print the ${property} for ${username}."
+      "content": "goal:Get property from user profile.\nvariables:Let property be education.\nuser-profile:Get my username.\nuser-profile:Get the ${property} property of ${username}.\nprinter:Print the ${property} for ${username}."
     }
   ],
   [
@@ -8266,11 +7650,11 @@
     },
     {
       "role": "user",
-      "content": "get the place of miron aurelia"
+      "content": "what are my hobbies?"
     },
     {
       "role": "model",
-      "content": "goal:Get property from user profile.\nvariables:Let property be place.\nvariables:Let username be Miron Aurelia.\nuser-profile:Get the ${property} property of ${username}.\nprinter:Print the ${property} for ${username}."
+      "content": "goal:Get property from user profile.\nvariables:Let property be hobbies.\nuser-profile:Get my username.\nuser-profile:Get the ${property} property of ${username}.\nprinter:Print the ${property} for ${username}."
     }
   ],
   [
@@ -8280,11 +7664,11 @@
     },
     {
       "role": "user",
-      "content": "get vaino george viorel's education"
+      "content": "get my skill level"
     },
     {
       "role": "model",
-      "content": "goal:Get property from user profile.\nvariables:Let property be education.\nvariables:Let username be Vaino George Viorel.\nuser-profile:Get the ${property} property of ${username}.\nprinter:Print the ${property} for ${username}."
+      "content": "goal:Get property from user profile.\nvariables:Let property be skill level.\nuser-profile:Get my username.\nuser-profile:Get the ${property} property of ${username}.\nprinter:Print the ${property} for ${username}."
     }
   ],
   [
@@ -8294,11 +7678,11 @@
     },
     {
       "role": "user",
-      "content": "get hobbies of cornea sofica"
+      "content": "get my social security number"
     },
     {
       "role": "model",
-      "content": "goal:Get property from user profile.\nvariables:Let property be hobbies.\nvariables:Let username be Cornea Sofica.\nuser-profile:Get the ${property} property of ${username}.\nprinter:Print the ${property} for ${username}."
+      "content": "goal:Get property from user profile.\nvariables:Let property be social security number.\nuser-profile:Get my username.\nuser-profile:Get the ${property} property of ${username}.\nprinter:Print the ${property} for ${username}."
     }
   ],
   [
@@ -8308,11 +7692,11 @@
     },
     {
       "role": "user",
-      "content": "get skill level for petrovici traian"
+      "content": "get personal phone number property for rotaru lucian"
     },
     {
       "role": "model",
-      "content": "goal:Get property from user profile.\nvariables:Let property be skill level.\nvariables:Let username be Petrovici Traian.\nuser-profile:Get the ${property} property of ${username}.\nprinter:Print the ${property} for ${username}."
+      "content": "goal:Get property from user profile.\nvariables:Let property be personal phone number.\nvariables:Let username be Rotaru Lucian.\nuser-profile:Get the ${property} property of ${username}.\nprinter:Print the ${property} for ${username}."
     }
   ],
   [
@@ -8322,11 +7706,11 @@
     },
     {
       "role": "user",
-      "content": "get social security number for dorneanu deliana"
+      "content": "retrieve the phone number of marica lucian from user profile"
     },
     {
       "role": "model",
-      "content": "goal:Get property from user profile.\nvariables:Let property be social security number.\nvariables:Let username be Dorneanu Deliana.\nuser-profile:Get the ${property} property of ${username}.\nprinter:Print the ${property} for ${username}."
+      "content": "goal:Get property from user profile.\nvariables:Let property be personal phone number.\nvariables:Let username be Marica Lucian.\nuser-profile:Get the ${property} property of ${username}.\nprinter:Print the ${property} for ${username}."
     }
   ],
   [
@@ -8336,11 +7720,11 @@
     },
     {
       "role": "user",
-      "content": "get SSN for dorneanu stefan"
+      "content": "read rusu florentin's phone property"
     },
     {
       "role": "model",
-      "content": "goal:Get property from user profile.\nvariables:Let property be social security number.\nvariables:Let username be Dorneanu Ștefan.\nuser-profile:Get the ${property} property of ${username}.\nprinter:Print the ${property} for ${username}."
+      "content": "goal:Get property from user profile.\nvariables:Let property be personal phone number.\nvariables:Let username be Rusu Florentin.\nuser-profile:Get the ${property} property of ${username}.\nprinter:Print the ${property} for ${username}."
     }
   ],
   [
@@ -8350,11 +7734,11 @@
     },
     {
       "role": "user",
-      "content": "get identity card serial for rusu maria"
+      "content": "what is personal email address property of gogalniceanu mioara?"
     },
     {
       "role": "model",
-      "content": "goal:Get property from user profile.\nvariables:Let property be identity card serial.\nvariables:Let username be Rusu Maria.\nuser-profile:Get the ${property} property of ${username}.\nprinter:Print the ${property} for ${username}."
+      "content": "goal:Get property from user profile.\nvariables:Let property be personal email address.\nvariables:Let username be Gogalniceanu Mioara.\nuser-profile:Get the ${property} property of ${username}.\nprinter:Print the ${property} for ${username}."
     }
   ],
   [
@@ -8364,11 +7748,11 @@
     },
     {
       "role": "user",
-      "content": "get birth certificate's serial for dorneanu ioana sorana"
+      "content": "get email address from user profile of dorneanu deliana"
     },
     {
       "role": "model",
-      "content": "goal:Get property from user profile.\nvariables:Let property be birth certificate serial.\nvariables:Let username be Dorneanu Ioana Sorana.\nuser-profile:Get the ${property} property of ${username}.\nprinter:Print the ${property} for ${username}."
+      "content": "goal:Get property from user profile.\nvariables:Let property be personal email address.\nvariables:Let username be Dorneanu Deliana.\nuser-profile:Get the ${property} property of ${username}.\nprinter:Print the ${property} for ${username}."
     }
   ],
   [
@@ -8378,11 +7762,11 @@
     },
     {
       "role": "user",
-      "content": "get birthday for acatrinei ingrid"
+      "content": "find email property in berfelea ana-maria's profile"
     },
     {
       "role": "model",
-      "content": "goal:Get user birthday.\nvariables:Let username be Acatrinei Ingrid.\nuser-profile:Get the birth date property of ${username}.\nquery:Get the birthday for ${username}."
+      "content": "goal:Get property from user profile.\nvariables:Let property be personal email address.\nvariables:Let username be Berfelea Ana-Maria.\nuser-profile:Get the ${property} property of ${username}.\nprinter:Print the ${property} for ${username}."
     }
   ],
   [
@@ -8392,11 +7776,11 @@
     },
     {
       "role": "user",
-      "content": "what is birthday of preda marin?"
+      "content": "business phone number property of vaino alina"
     },
     {
       "role": "model",
-      "content": "goal:Get user birthday.\nvariables:Let username be Preda Marin.\nuser-profile:Get the birth date property of ${username}.\nquery:What is birthday of ${username}?"
+      "content": "goal:Get property from user profile.\nvariables:Let property be business phone number.\nvariables:Let username be Vaino Alina.\nuser-profile:Get the ${property} property of ${username}.\nprinter:Print the ${property} for ${username}."
     }
   ],
   [
@@ -8406,11 +7790,11 @@
     },
     {
       "role": "user",
-      "content": "when is rotaru lucian birthday?"
+      "content": "what business phone is registered on profile of dorneanu sorana ioana?"
     },
     {
       "role": "model",
-      "content": "goal:Get user birthday.\nvariables:Let username be Rotaru Lucian.\nuser-profile:Get the birth date property of ${username}.\nquery:When is ${username} birthday?"
+      "content": "goal:Get property from user profile.\nvariables:Let property be business phone number.\nvariables:Let username be Dorneanu Sorana Ioana.\nuser-profile:Get the ${property} property of ${username}.\nprinter:Print the ${property} for ${username}."
     }
   ],
   [
@@ -8420,11 +7804,11 @@
     },
     {
       "role": "user",
-      "content": "when is dorneanu deliana birthday"
+      "content": "get work phone property for chiriac liliana"
     },
     {
       "role": "model",
-      "content": "goal:Get user birthday.\nvariables:Let username be Dorneanu Deliana.\nuser-profile:Get the birth date property of ${username}.\nquery:When is ${username} birthday?"
+      "content": "goal:Get property from user profile.\nvariables:Let property be business phone number.\nvariables:Let username be Chiriac Liliana.\nuser-profile:Get the ${property} property of ${username}.\nprinter:Print the ${property} for ${username}."
     }
   ],
   [
@@ -8434,11 +7818,11 @@
     },
     {
       "role": "user",
-      "content": "birthday of miron elena daniela"
+      "content": "read SSN property for user vaino gheorghe"
     },
     {
       "role": "model",
-      "content": "goal:Get user birthday.\nvariables:Let username be Miron Elena Daniela.\nuser-profile:Get the birth date property of ${username}.\nquery:Birthday of ${username}."
+      "content": "goal:Get property from user profile.\nvariables:Let property be social security number.\nvariables:Let username be Vaino Gheorghe.\nuser-profile:Get the ${property} property of ${username}.\nprinter:Print the ${property} for ${username}."
     }
   ],
   [
@@ -8448,11 +7832,11 @@
     },
     {
       "role": "user",
-      "content": "how many days until rotaru lucian's birthday?"
+      "content": "print identity card serial from cornea daniel profile"
     },
     {
       "role": "model",
-      "content": "goal:Compute period of time till event.\nvariables:Let username be Rotaru Lucian.\ntime-service:Get date for today.\nuser-profile:Get the birth date property of ${username}.\ntime-service:Compute days as the difference in days between ${date} and ${birth_date}.\nprinter:How many days until the birthday of ${username}?."
+      "content": "goal:Get property from user profile.\nvariables:Let property be identity card serial.\nvariables:Let username be Cornea Daniel.\nuser-profile:Get the ${property} property of ${username}.\nprinter:Print the ${property} for ${username}."
     }
   ],
   [
@@ -8462,249 +7846,11 @@
     },
     {
       "role": "user",
-      "content": "how many days till birthday of rotaru iulian?"
+      "content": "display the birth certificate's serial property of solomon marian"
     },
     {
       "role": "model",
-      "content": "goal:Compute period of time till event.\nvariables:Let username be Rotaru Iulian.\ntime-service:Get date for today.\nuser-profile:Get the birth date property of ${username}.\ntime-service:Compute days as the difference in days between ${date} and ${birth_date}.\nprinter:How many days until the birthday of ${username}?."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "how many days to september 10?"
-    },
-    {
-      "role": "model",
-      "content": "goal:Compute period of time till event.\ntime-service:Get today date for today.\ntime-service:Get school date for September, 10th.\ntime-service:Compute days as the difference in days between ${today_date} and ${school_date}.\nprinter:How many days until September, 10th?."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "how long until mother's day?"
-    },
-    {
-      "role": "model",
-      "content": "goal:Compute period of time till event.\ntime-service:Get today date for today.\ntime-service:Get mother date for March, 8th.\ntime-service:Compute days as the difference in days between ${today_date} and ${mother_date}.\nprinter:How long until Mother's Day?"
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "how long do we have to wait until june 1"
-    },
-    {
-      "role": "model",
-      "content": "goal:Compute period of time till event.\ntime-service:Get today date for today.\ntime-service:Get child date for June, 1st.\ntime-service:Compute days as the difference in days between ${today_date} and ${child_date}.\nprinter:How long do we have to wait until June 1st?"
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "how many days till children's day?"
-    },
-    {
-      "role": "model",
-      "content": "goal:Compute period of time till event.\ntime-service:Get today date for today.\ntime-service:Get child date for June, 1st.\ntime-service:Compute days as the difference in days between ${today_date} and ${child_date}.\nprinter:How many days are left until Children's Day?"
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "get age of acatrinei liviu"
-    },
-    {
-      "role": "model",
-      "content": "goal:Compute user age.\nvariables:Let username be Acatrinei Liviu.\nuser-profile:Get the birth date property of ${username}.\ntime-service:Get date for today.\ntime-service:Compute age as the difference in years between ${date} and ${birth_date}.\nprinter:Print computed age in years for ${username}."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "please get the age for gogalniceanu denis"
-    },
-    {
-      "role": "model",
-      "content": "goal:Compute user age.\nvariables:Let username be Gogălniceanu Denis.\nuser-profile:Get the birth date property of ${username}.\ntime-service:Get date for today.\ntime-service:Compute age as the difference in years between ${date} and ${birth_date}.\nprinter:Print computed age in years for ${username}."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "retrieve age of rusu florin"
-    },
-    {
-      "role": "model",
-      "content": "goal:Compute user age.\nvariables:Let username be Rusu Florin.\nuser-profile:Get the birth date property of ${username}.\ntime-service:Get date for today.\ntime-service:Compute age as the difference in years between ${date} and ${birth_date}.\nprinter:Print computed age in years for ${username}."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "please acquire age in weeks for baciu vasile"
-    },
-    {
-      "role": "model",
-      "content": "goal:Compute user age.\nvariables:Let username be Baciu Vasile.\nuser-profile:Get the birth date property of ${username}.\ntime-service:Get date for today.\ntime-service:Compute age as the difference in weeks between ${date} and ${birth_date}.\nprinter:Print computed age in weeks for ${username}."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "compute rotaru mihai age"
-    },
-    {
-      "role": "model",
-      "content": "goal:Compute user age.\nvariables:Let username be Rotaru Mihai.\nuser-profile:Get the birth date property of ${username}.\ntime-service:Get date for today.\ntime-service:Compute age as the difference in years between ${date} and ${birth_date}.\nprinter:Print computed age in years for ${username}."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "calculate the age in months of rusu dragoș"
-    },
-    {
-      "role": "model",
-      "content": "goal:Compute user age.\nvariables:Let username be Rusu Dragoș.\nuser-profile:Get the birth date property of ${username}.\ntime-service:Get date for today.\ntime-service:Compute age as the difference in months between ${date} and ${birth_date}.\nprinter:Print computed age in months for ${username}."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "determine the age for dorneanu sorana ioana"
-    },
-    {
-      "role": "model",
-      "content": "goal:Compute user age.\nvariables:Let username be Dorneanu Sorana Ioana.\nuser-profile:Get the birth date property of ${username}.\ntime-service:Get date for today.\ntime-service:Compute age as the difference in years between ${date} and ${birth_date}.\nprinter:Print computed age in years for ${username}."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "figure out miron elena age in years"
-    },
-    {
-      "role": "model",
-      "content": "goal:Compute user age.\nvariables:Let username be Miron Elena.\nuser-profile:Get the birth date property of ${username}.\ntime-service:Get date for today.\ntime-service:Compute age as the difference in years between ${date} and ${birth_date}.\nprinter:Print computed age in years for ${username}."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "what is the age in days of dorneanu ioan silviu?"
-    },
-    {
-      "role": "model",
-      "content": "goal:Compute user age.\nvariables:Let username be Dorneanu Ioan Silviu.\nuser-profile:Get the birth date property of ${username}.\ntime-service:Get date for today.\ntime-service:Compute age as the difference in days between ${date} and ${birth_date}.\nprinter:Print computed age in days for ${username}."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "get the height of gogalniceanu florin"
-    },
-    {
-      "role": "model",
-      "content": "goal:Get user height.\nvariables:Let username be Gogălniceanu Florin.\nuser-profile:Get the height property of ${username}.\nmeasure-units:Get the measure units for person height.\nprinter:Print the height for ${username} in ${person_height_units}."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "get the height of rotaru iulian"
-    },
-    {
-      "role": "model",
-      "content": "goal:Get user height.\nvariables:Let username be Rotaru Iulian.\nuser-profile:Get the height property of ${username}.\nmeasure-units:Get the measure units for person height.\nprinter:Print the height for ${username} in ${person_height_units}."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "get person height of pascaru radu"
-    },
-    {
-      "role": "model",
-      "content": "goal:Get user height.\nvariables:Let username be Pascaru Radu.\nuser-profile:Get the height property of ${username}.\nmeasure-units:Get the measure units for person height.\nprinter:Print the person height for ${username} in ${person_height_units}."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "get rusu florentin's height"
-    },
-    {
-      "role": "model",
-      "content": "goal:Get user height.\nvariables:Let username be Rusu Florentin.\nuser-profile:Get the height property of ${username}.\nmeasure-units:Get the measure units for person height.\nprinter:Print the height for ${username} in ${person_height_units}."
+      "content": "goal:Get property from user profile.\nvariables:Let property be birth certificate serial.\nvariables:Let username be Solomon Marian.\nuser-profile:Get the ${property} property of ${username}.\nprinter:Print the ${property} for ${username}."
     }
   ],
   [

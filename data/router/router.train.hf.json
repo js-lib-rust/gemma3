@@ -5694,7 +5694,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Deduce the normalized date and time.\ntime-service:Get the date for today."
+      "content": "goal:Deduce the normalized date and time.\nvariables:Let date expression be today.\ntime-service:Get the date for ${date_expression}."
     }
   ],
   [
@@ -5708,7 +5708,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Deduce the normalized date and time.\ntime-service:Get the date for yesterday."
+      "content": "goal:Deduce the normalized date and time.\nvariables:Let date expression be yesterday.\ntime-service:Get the date for ${date_expression}."
     }
   ],
   [
@@ -5722,7 +5722,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Deduce the normalized date and time.\ntime-service:Get the date for the day before yesterday."
+      "content": "goal:Deduce the normalized date and time.\nvariables:Let date expression be day before yesterday.\ntime-service:Get the date for ${date_expression}."
     }
   ],
   [
@@ -5736,7 +5736,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Deduce the normalized date and time.\ntime-service:Get the date for tomorrow."
+      "content": "goal:Deduce the normalized date and time.\nvariables:Let date expression be tomorrow.\ntime-service:Get the date for ${date_expression}."
     }
   ],
   [
@@ -5750,7 +5750,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Deduce the normalized date and time.\ntime-service:Get the date for the day after tomorrow."
+      "content": "goal:Deduce the normalized date and time.\nvariables:Let date expression be day after tomorrow.\ntime-service:Get the date for ${date_expression}."
     }
   ],
   [
@@ -5764,21 +5764,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Deduce the normalized date and time.\ntime-service:Get the date for 2026-04-10."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "get date for 1964-03-15 13:40:00"
-    },
-    {
-      "role": "model",
-      "content": "goal:Deduce the normalized date and time.\ntime-service:Get the date for 2026-04-10."
+      "content": "goal:Deduce the normalized date and time.\nvariables:Let date expression be 2026-04-10.\ntime-service:Get the date for ${date_expression}."
     }
   ],
   [
@@ -5792,7 +5778,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Deduce the normalized date and time.\ntime-service:Get the date for february 14, 2025."
+      "content": "goal:Deduce the normalized date and time.\nvariables:Let date expression be february 14, 2025.\ntime-service:Get the date for ${date_expression}."
     }
   ],
   [
@@ -5806,7 +5792,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Deduce the normalized date and time.\ntime-service:Get the date for 20230821."
+      "content": "goal:Deduce the normalized date and time.\nvariables:Let date expression be 20230821.\ntime-service:Get the date for ${date_expression}."
     }
   ],
   [
@@ -5820,7 +5806,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Deduce the normalized date and time.\ntime-service:Get the date for 1987 04 28."
+      "content": "goal:Deduce the normalized date and time.\nvariables:Let date expression be 1987 04 28.\ntime-service:Get the date for ${date_expression}."
     }
   ],
   [
@@ -5834,7 +5820,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Deduce the normalized date and time.\ntime-service:Get the date for april 1."
+      "content": "goal:Deduce the normalized date and time.\nvariables:Let date expression be april 1.\ntime-service:Get the date for ${date_expression}."
     }
   ],
   [
@@ -5848,7 +5834,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Deduce the normalized date and time.\ntime-service:Get the date for 2023."
+      "content": "goal:Deduce the normalized date and time.\nvariables:Let date expression be 2023.\ntime-service:Get the date for ${date_expression}."
     }
   ],
   [
@@ -5862,105 +5848,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Deduce the normalized date and time.\ntime-service:Get the date for june 2023."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "compute time period as the difference of 2026-02-24 and 1971-09-10"
-    },
-    {
-      "role": "model",
-      "content": "goal:Compute date and time difference.\ntime-service:Compute time period as the difference in days between 2026-02-24 and 1971-09-10."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "what is duration length as difference in seconds of 08:45:00 and 10:25:30"
-    },
-    {
-      "role": "model",
-      "content": "goal:Compute date and time difference.\ntime-service:Compute duration length as the difference in seconds between 2026-02-24 and 1971-09-10."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "get the period of time as difference between 2026-02-22 and 1972-10-20"
-    },
-    {
-      "role": "model",
-      "content": "goal:Compute date and time difference.\ntime-service:Compute period of time as the difference in days between 2026-02-22 and 1972-10-20."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "determine period as difference in years for 2026-03-11 and 1977-08-26"
-    },
-    {
-      "role": "model",
-      "content": "goal:Compute date and time difference.\ntime-service:Compute period as the difference in years between 2026-03-11 and 1977-08-26."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "figure out the duration as the difference in years and months between 2026-04-13 and 1964-03-15"
-    },
-    {
-      "role": "model",
-      "content": "goal:Compute date and time difference.\ntime-service:Compute duration as the difference in years and months between 2026-04-13 and 1964-03-15."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "get duration value as difference in months between 2023-05-17 and 2025-10-25"
-    },
-    {
-      "role": "model",
-      "content": "goal:Compute date and time difference.\ntime-service:Compute duration value as the difference in months between 2023-05-17 and 2025-10-25."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "get interval in days between 2026-04-10 and 2026-03-25"
-    },
-    {
-      "role": "model",
-      "content": "goal:Compute date and time difference.\ntime-service:Compute interval as the difference in days between 2026-04-10 and 2026-03-25."
+      "content": "goal:Deduce the normalized date and time.\nvariables:Let date expression be june 2023.\ntime-service:Get the date for ${date_expression}."
     }
   ],
   [
@@ -5974,21 +5862,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Compute date and time difference.\ntime-service:Compute elapsed time as the difference in hours between 2026-03-12 12:30:00 and 2026-03-09 22:15:00."
-    }
-  ],
-  [
-    {
-      "role": "system",
-      "content": "Route and rewrite the next user prompt"
-    },
-    {
-      "role": "user",
-      "content": "compute elapsed time in hours for 11:45:00 and 20:35:00"
-    },
-    {
-      "role": "model",
-      "content": "goal:Compute date and time difference.\ntime-service:Compute elapsed time as the difference in hours between 11:45:00 and 20:35:00."
+      "content": "goal:Compute date and time difference.\nvariables:Let start be 2026-03-12 12:30:00.\nvariables:Let end be 2026-03-09 22:15:00.\nvariables:Let units be hours.\ntime-service:Compute the difference in ${units} between ${start} and ${end}."
     }
   ],
   [
@@ -6002,7 +5876,119 @@
     },
     {
       "role": "model",
-      "content": "goal:Compute date and time difference.\ntime-service:Compute elapsed time as the difference in minutes between 2026-03-12 12:30:30 and 2026-03-12 11:15:00."
+      "content": "goal:Compute date and time difference.\nvariables:Let start be 2026-03-12 12:30:30.\nvariables:Let end be 2026-03-12 11:15:00.\nvariables:Let units be minutes.\ntime-service:Compute the difference in ${units} between ${start} and ${end}."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "compute time period as the difference of 2026-02-24 and 1971-09-10"
+    },
+    {
+      "role": "model",
+      "content": "goal:Compute date difference.\nvariables:Let start be 2026-02-24.\nvariables:Let end be 1971-09-10.\nvariables:Let units be days.\ntime-service:Compute the difference in ${units} between ${start} and ${end}."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get the period of time as difference between 2026-02-22 and 1972-10-20"
+    },
+    {
+      "role": "model",
+      "content": "goal:Compute date difference.\nvariables:Let start be 2026-02-22.\nvariables:Let end be 1972-10-20.\nvariables:Let units be days.\ntime-service:Compute the difference in ${units} between ${start} and ${end}."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "determine period as difference in years for 2026-03-11 and 1977-08-26"
+    },
+    {
+      "role": "model",
+      "content": "goal:Compute date difference.\nvariables:Let start be 2026-03-11.\nvariables:Let end be 1977-08-26.\nvariables:Let units be years.\ntime-service:Compute the difference in ${units} between ${start} and ${end}."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "figure out the duration as the difference in years and months between 2026-04-13 and 1964-03-15"
+    },
+    {
+      "role": "model",
+      "content": "goal:Compute date difference.\nvariables:Let start be 2026-04-13.\nvariables:Let end be 1964-03-15.\nvariables:Let units be years.\ntime-service:Compute the difference in ${units} between ${start} and ${end}."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get duration value as difference in months between 2023-05-17 and 2025-10-25"
+    },
+    {
+      "role": "model",
+      "content": "goal:Compute date difference.\nvariables:Let start be 2023-05-17.\nvariables:Let end be 2025-10-25.\nvariables:Let units be months.\ntime-service:Compute the difference in ${units} between ${start} and ${end}."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "get interval in days between 2026-04-10 and 2026-03-25"
+    },
+    {
+      "role": "model",
+      "content": "goal:Compute date difference.\nvariables:Let start be 2026-04-10.\nvariables:Let end be 2026-03-25.\nvariables:Let units be days.\ntime-service:Compute the difference in ${units} between ${start} and ${end}."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "what is duration length as difference in seconds of 08:45:00 and 10:25:30"
+    },
+    {
+      "role": "model",
+      "content": "goal:Compute time difference.\nvariables:Let start be 08:45:00.\nvariables:Let end be 10:25:30.\nvariables:Let units be seconds.\ntime-service:Compute the difference in ${units} between ${start} and ${end}."
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "Route and rewrite the next user prompt"
+    },
+    {
+      "role": "user",
+      "content": "compute elapsed time in hours for 11:45:00 and 20:35:00"
+    },
+    {
+      "role": "model",
+      "content": "goal:Compute time difference.\nvariables:Let start be 11:45:00.\nvariables:Let end be 20:35:00.\nvariables:Let units be hours.\ntime-service:Compute the difference in ${units} between ${start} and ${end}."
     }
   ],
   [
@@ -6016,7 +6002,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Compute date and time difference.\ntime-service:Compute elapsed time as the difference in minutes between 13:20:40 and 10:25:10."
+      "content": "goal:Compute time difference.\nvariables:Let start be 13:20:40.\nvariables:Let end be 10:25:10.\nvariables:Let units be minutes.\ntime-service:Compute the difference in ${units} between ${start} and ${end}."
     }
   ],
   [
@@ -6030,7 +6016,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Compute user age.\nuser-profile:Get my username.\nuser-profile:Get the birth date property of ${username}.\ntime-service:Get date for today.\ntime-service:Compute age as the difference in years between ${date} and ${birth_date}.\nprinter:Print computed age in years for ${username}."
+      "content": "goal:Compute user age.\nvariables:Let units be years.\nuser-profile:Get my username.\nuser-profile:Get the birth date property of ${username}.\ntime-service:Get date for today.\ntime-service:Compute the difference in ${units} between ${date} and ${birth_date}.\nprinter:Print computed age in years for ${username}."
     }
   ],
   [
@@ -6044,7 +6030,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Compute user age.\nuser-profile:Get my username.\nuser-profile:Get the birth date property of ${username}.\ntime-service:Get date for today.\ntime-service:Compute age as the difference in years between ${date} and ${birth_date}.\nprinter:Print computed age in years for ${username}."
+      "content": "goal:Compute user age.\nvariables:Let units be years.\nuser-profile:Get my username.\nuser-profile:Get the birth date property of ${username}.\ntime-service:Get date for today.\ntime-service:Compute the difference in ${units} between ${date} and ${birth_date}.\nprinter:Print computed age in years for ${username}."
     }
   ],
   [
@@ -6058,7 +6044,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Compute user age.\nuser-profile:Get my username.\nuser-profile:Get the birth date property of ${username}.\ntime-service:Get date for today.\ntime-service:Compute age as the difference in months between ${date} and ${birth_date}.\nprinter:Print computed age in months for ${username}."
+      "content": "goal:Compute user age.\nvariables:Let units be months.\nuser-profile:Get my username.\nuser-profile:Get the birth date property of ${username}.\ntime-service:Get date for today.\ntime-service:Compute the difference in ${units} between ${date} and ${birth_date}.\nprinter:Print computed age in months for ${username}."
     }
   ],
   [
@@ -6072,7 +6058,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Compute user age.\nuser-profile:Get my username.\nuser-profile:Get the birth date property of ${username}.\ntime-service:Get date for today.\ntime-service:Compute age as the difference in weeks between ${date} and ${birth_date}.\nprinter:Print computed age in weeks for ${username}."
+      "content": "goal:Compute user age.\nvariables:Let units be weeks.\nuser-profile:Get my username.\nuser-profile:Get the birth date property of ${username}.\ntime-service:Get date for today.\ntime-service:Compute the difference in ${units} between ${date} and ${birth_date}.\nprinter:Print computed age in weeks for ${username}."
     }
   ],
   [
@@ -6086,7 +6072,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Compute user age.\nuser-profile:Get my username.\nuser-profile:Get the birth date property of ${username}.\ntime-service:Get date for today.\ntime-service:Compute age as the difference in days between ${date} and ${birth_date}.\nprinter:Print computed age in days for ${username}."
+      "content": "goal:Compute user age.\nvariables:Let units be days.\nuser-profile:Get my username.\nuser-profile:Get the birth date property of ${username}.\ntime-service:Get date for today.\ntime-service:Compute the difference in ${units} between ${date} and ${birth_date}.\nprinter:Print computed age in days for ${username}."
     }
   ],
   [
@@ -6100,7 +6086,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Compute user age.\nuser-profile:Get my username.\nuser-profile:Get the birth date property of ${username}.\ntime-service:Get date for today.\ntime-service:Compute age as the difference in years between ${date} and ${birth_date}.\nprinter:Print computed age in years for ${username}."
+      "content": "goal:Compute user age.\nvariables:Let units be years.\nuser-profile:Get my username.\nuser-profile:Get the birth date property of ${username}.\ntime-service:Get date for today.\ntime-service:Compute the difference in ${units} between ${date} and ${birth_date}.\nprinter:Print computed age in years for ${username}."
     }
   ],
   [
@@ -6114,7 +6100,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Compute user age.\nuser-profile:Get my username.\nuser-profile:Get the birth date property of ${username}.\ntime-service:Get date for today.\ntime-service:Compute age as the difference in years between ${date} and ${birth_date}.\nprinter:Print computed age in years for ${username}."
+      "content": "goal:Compute user age.\nvariables:Let units be years.\nuser-profile:Get my username.\nuser-profile:Get the birth date property of ${username}.\ntime-service:Get date for today.\ntime-service:Compute the difference in ${units} between ${date} and ${birth_date}.\nprinter:Print computed age in years for ${username}."
     }
   ],
   [
@@ -6128,7 +6114,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Compute user age.\nuser-profile:Get my username.\nuser-profile:Get the birth date property of ${username}.\ntime-service:Get date for today.\ntime-service:Compute age as the difference in years between ${date} and ${birth_date}.\nprinter:Print computed age in years for ${username}."
+      "content": "goal:Compute user age.\nvariables:Let units be years.\nuser-profile:Get my username.\nuser-profile:Get the birth date property of ${username}.\ntime-service:Get date for today.\ntime-service:Compute the difference in ${units} between ${date} and ${birth_date}.\nprinter:Print computed age in years for ${username}."
     }
   ],
   [
@@ -6142,7 +6128,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Compute user age.\nuser-profile:Get my username.\nuser-profile:Get the birth date property of ${username}.\ntime-service:Get date for today.\ntime-service:Compute age as the difference in years between ${date} and ${birth_date}.\nprinter:Print computed age in years for ${username}."
+      "content": "goal:Compute user age.\nvariables:Let units be years.\nuser-profile:Get my username.\nuser-profile:Get the birth date property of ${username}.\ntime-service:Get date for today.\ntime-service:Compute the difference in ${units} between ${date} and ${birth_date}.\nprinter:Print computed age in years for ${username}."
     }
   ],
   [
@@ -6156,7 +6142,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Compute user age.\nuser-profile:Get my username.\nuser-profile:Get the birth date property of ${username}.\ntime-service:Get date for today.\ntime-service:Compute age as the difference in years between ${date} and ${birth_date}.\nprinter:Print computed age in years for ${username}."
+      "content": "goal:Compute user age.\nvariables:Let units be years.\nuser-profile:Get my username.\nuser-profile:Get the birth date property of ${username}.\ntime-service:Get date for today.\ntime-service:Compute the difference in ${units} between ${date} and ${birth_date}.\nprinter:Print computed age in years for ${username}."
     }
   ],
   [
@@ -6170,7 +6156,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Compute user age.\nuser-profile:Get my username.\nuser-profile:Get the birth date property of ${username}.\ntime-service:Get date for today.\ntime-service:Compute age as the difference in minutes between ${date} and ${birth_date}.\nprinter:Print computed age in minutes for ${username}."
+      "content": "goal:Compute user age.\nvariables:Let units be minutes.\nuser-profile:Get my username.\nuser-profile:Get the birth date property of ${username}.\ntime-service:Get date for today.\ntime-service:Compute the difference in ${units} between ${date} and ${birth_date}.\nprinter:Print computed age in minutes for ${username}."
     }
   ],
   [
@@ -6184,7 +6170,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Compute user age.\nuser-profile:Get my username.\nuser-profile:Get the birth date property of ${username}.\ntime-service:Get date for today.\ntime-service:Compute age as the difference in days between ${date} and ${birth_date}.\nprinter:Print the age for in days ${username}."
+      "content": "goal:Compute user age.\nvariables:Let units be days.\nuser-profile:Get my username.\nuser-profile:Get the birth date property of ${username}.\ntime-service:Get date for today.\ntime-service:Compute the difference in ${units} between ${date} and ${birth_date}.\nprinter:Print the age for in days ${username}."
     }
   ],
   [
@@ -6198,7 +6184,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Compute user age.\nuser-profile:Get my username.\nuser-profile:Get the birth date property of ${username}.\ntime-service:Get date for today.\ntime-service:Compute age as the difference in years between ${date} and ${birth_date}.\nprinter:Print computed age in years for ${username}."
+      "content": "goal:Query user age.\nvariables:Let units be years.\nuser-profile:Get my username.\nuser-profile:Get the birth date property of ${username}.\ntime-service:Get date for today.\ntime-service:Compute the difference in ${units} between ${date} and ${birth_date}.\nquery:What is my age in years?"
     }
   ],
   [
@@ -6212,7 +6198,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Compute user age.\nuser-profile:Get my username.\nuser-profile:Get the birth date property of ${username}.\ntime-service:Get date for today.\ntime-service:Compute age as the difference in months between ${date} and ${birth_date}.\nprinter:Print computed age in months for ${username}."
+      "content": "goal:Query user age.\nvariables:Let units be months.\nuser-profile:Get my username.\nuser-profile:Get the birth date property of ${username}.\ntime-service:Get date for today.\ntime-service:Compute the difference in ${units} between ${date} and ${birth_date}.\nquery:What is my age in months?"
     }
   ],
   [
@@ -6226,7 +6212,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Compute user age.\nuser-profile:Get my username.\nuser-profile:Get the birth date property of ${username}.\ntime-service:Get date for today.\ntime-service:Compute age as the difference in weeks between ${date} and ${birth_date}.\nprinter:Print computed age in weeks for ${username}."
+      "content": "goal:Query user age.\nvariables:Let units be weeks.\nuser-profile:Get my username.\nuser-profile:Get the birth date property of ${username}.\ntime-service:Get date for today.\ntime-service:Compute the difference in ${units} between ${date} and ${birth_date}.\nquery:What is my age in weeks?"
     }
   ],
   [
@@ -6240,7 +6226,7 @@
     },
     {
       "role": "model",
-      "content": "goal:Compute user age.\nuser-profile:Get my username.\nuser-profile:Get the birth date property of ${username}.\ntime-service:Get date for today.\ntime-service:Compute age as the difference in days between ${date} and ${birth_date}.\nprinter:Print computed age in days for ${username}."
+      "content": "goal:Query user age.\nvariables:Let units be days.\nuser-profile:Get my username.\nuser-profile:Get the birth date property of ${username}.\ntime-service:Get date for today.\ntime-service:Compute the difference in ${units} between ${date} and ${birth_date}.\nquery:What is my age in days?"
     }
   ],
   [
@@ -6250,11 +6236,11 @@
     },
     {
       "role": "user",
-      "content": " how many seconds i lived so far?"
+      "content": "how many seconds i lived so far?"
     },
     {
       "role": "model",
-      "content": "goal:Compute user age.\nuser-profile:Get my username.\nuser-profile:Get the birth date property of ${username}.\ntime-service:Get date for today.\ntime-service:Compute age as the difference in seconds between ${date} and ${birth_date}.\nprinter:Print computed age in seconds for ${username}."
+      "content": "goal:Query user age.\nvariables:Let units be seconds.\nuser-profile:Get my username.\nuser-profile:Get the birth date property of ${username}.\ntime-service:Get date for today.\ntime-service:Compute the difference in ${units} between ${date} and ${birth_date}.\nquery:How many seconds have I lived so far?"
     }
   ],
   [
@@ -6264,11 +6250,11 @@
     },
     {
       "role": "user",
-      "content": " how many minutes i lived?"
+      "content": "how many minutes i lived?"
     },
     {
       "role": "model",
-      "content": "goal:Compute user age.\nuser-profile:Get my username.\nuser-profile:Get the birth date property of ${username}.\ntime-service:Get date for today.\ntime-service:Compute age as the difference in minutes between ${date} and ${birth_date}.\nprinter:Print computed age in minutes for ${username}."
+      "content": "goal:Query user age.\nvariables:Let units be minutes.\nuser-profile:Get my username.\nuser-profile:Get the birth date property of ${username}.\ntime-service:Get date for today.\ntime-service:Compute the difference in ${units} between ${date} and ${birth_date}.\nquery:How many minutes did I live?"
     }
   ],
   [
@@ -6278,11 +6264,11 @@
     },
     {
       "role": "user",
-      "content": " how many weeks i lived?"
+      "content": "how many weeks i lived?"
     },
     {
       "role": "model",
-      "content": "goal:Compute user age.\nuser-profile:Get my username.\nuser-profile:Get the birth date property of ${username}.\ntime-service:Get date for today.\ntime-service:Compute age as the difference in weeks between ${date} and ${birth_date}.\nprinter:Print computed age in weeks for ${username}."
+      "content": "goal:Query user age.\nvariables:Let units be weeks.\nuser-profile:Get my username.\nuser-profile:Get the birth date property of ${username}.\ntime-service:Get date for today.\ntime-service:Compute the difference in ${units} between ${date} and ${birth_date}.\nquery:How many weeks have I lived?"
     }
   ],
   [

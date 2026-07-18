@@ -144,7 +144,7 @@
     },
     {
       "role": "user",
-      "content": "Get username for Berfelea Ana Maria."
+      "content": "Get username for Stolniceanu Ioana-Mădălina."
     },
     {
       "role": "model",
@@ -154,7 +154,7 @@
           "function": {
             "name": "user_profile_get_username",
             "arguments": {
-              "user_id": "Berfelea Ana Maria"
+              "user_id": "Stolniceanu Ioana-Mădălina"
             }
           }
         }
@@ -324,6 +324,32 @@
     },
     {
       "role": "user",
+      "content": "Set marital status property to divorced for Rotaru Lucian."
+    },
+    {
+      "role": "model",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "user_profile_set_property",
+            "arguments": {
+              "username": "Rotaru Lucian",
+              "property": "marital status",
+              "value": "divorced"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
       "content": "Update the personal email address property to aacatrinei@yahoo.com for Acatrinei Alin."
     },
     {
@@ -480,6 +506,32 @@
     },
     {
       "role": "user",
+      "content": "Update the marital status property to married for Vacariu Mircea."
+    },
+    {
+      "role": "model",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "user_profile_update_property",
+            "arguments": {
+              "username": "Vacariu Mircea",
+              "property": "marital status",
+              "value": "married"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
       "content": "Rename the personal email address property to personal email for Rotaru Adelina."
     },
     {
@@ -595,8 +647,8 @@
             "name": "user_profile_update_property",
             "arguments": {
               "username": "Mutica Catalin",
-              "old_property": "civil status",
-              "new_property": "married"
+              "old_property": "marital status",
+              "new_property": "civil status"
             }
           }
         }
@@ -610,7 +662,7 @@
     },
     {
       "role": "user",
-      "content": "Rename the genre property to sex for Mutica Catalin."
+      "content": "Rename the genre property to sex for Berfelea Ana-Maria."
     },
     {
       "role": "model",
@@ -620,9 +672,9 @@
           "function": {
             "name": "user_profile_update_property",
             "arguments": {
-              "username": "Mutica Catalin",
-              "old_property": "marital status",
-              "new_property": "married"
+              "username": "Berfelea Ana-Maria",
+              "old_property": "genre",
+              "new_property": "sex"
             }
           }
         }
@@ -736,7 +788,7 @@
     },
     {
       "role": "user",
-      "content": "Remove the driving license type property from Petrovici Traian."
+      "content": "Remove the religion property from Petrovici Traian."
     },
     {
       "role": "model",
@@ -747,7 +799,7 @@
             "name": "user_profile_remove_property",
             "arguments": {
               "username": "Petrovici Traian",
-              "property": "driving license type"
+              "property": "religion"
             }
           }
         }
@@ -786,7 +838,32 @@
     },
     {
       "role": "user",
-      "content": "Get the personal phone number property of Baciu Vasile."
+      "content": "Remove the marital status property from Acatrinei Ingrid."
+    },
+    {
+      "role": "model",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "user_profile_remove_property",
+            "arguments": {
+              "username": "Acatrinei Ingrid",
+              "property": "marital status"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Get the postal code property of Baciu Vasile."
     },
     {
       "role": "model",
@@ -797,7 +874,7 @@
             "name": "user_profile_get_property",
             "arguments": {
               "username": "Baciu Vasile",
-              "property": "personal phone number"
+              "property": "postal code"
             }
           }
         }
@@ -811,7 +888,7 @@
     },
     {
       "role": "user",
-      "content": "Get the postal address property of Miron Elena Daniela."
+      "content": "Get the blood group property of Miron Elena Daniela."
     },
     {
       "role": "model",
@@ -822,7 +899,7 @@
             "name": "user_profile_get_property",
             "arguments": {
               "username": "Miron Elena Daniela",
-              "property": "postal address"
+              "property": "blood group"
             }
           }
         }
@@ -836,7 +913,7 @@
     },
     {
       "role": "user",
-      "content": "Get the personal email address property of Rotaru Stefan."
+      "content": "Get the birth date property of Rotaru Stefan."
     },
     {
       "role": "model",
@@ -847,7 +924,7 @@
             "name": "user_profile_get_property",
             "arguments": {
               "username": "Rotaru Stefan",
-              "property": "personal email address"
+              "property": "birth date"
             }
           }
         }
@@ -923,6 +1000,31 @@
             "arguments": {
               "username": "Paduraru Adrian",
               "property": "hobbies"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "role": "system",
+      "content": "You are a model that can do function calling with the following functions"
+    },
+    {
+      "role": "user",
+      "content": "Get the marital status property of Onuțu Simona."
+    },
+    {
+      "role": "model",
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "user_profile_get_property",
+            "arguments": {
+              "username": "Onuțu Simona",
+              "property": "marital status"
             }
           }
         }

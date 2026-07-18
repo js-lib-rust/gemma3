@@ -5,7 +5,7 @@
 {"prompt":"Get username for Ghirvu Cătălin-Ioan.","function":"user_profile_get_username","arguments":{"user_id":"Ghirvu Cătălin-Ioan"}}
 {"prompt":"Get username for Achirițoaiei Bianca-Dumitrița.","function":"user_profile_get_username","arguments":{"user_id":"Achirițoaiei Bianca-Dumitrița"}}
 {"prompt":"Get username for Vatavu Viorel.","function":"user_profile_get_username","arguments":{"user_id":"Vatavu Viorel"}}
-{"prompt":"Get username for Berfelea Ana Maria.","function":"user_profile_get_username","arguments":{"user_id":"Berfelea Ana Maria"}}
+{"prompt":"Get username for Stolniceanu Ioana-Mădălina.","function":"user_profile_get_username","arguments":{"user_id":"Stolniceanu Ioana-Mădălina"}}
 
 /* user_profile_set_property */
 {"prompt":"Set the social security number property to 1640315227781 for Rotaru Iulian.","function":"user_profile_set_property","arguments":{"username":"Rotaru Iulian","property":"social security number","value":"1640315227781"}}
@@ -14,6 +14,7 @@
 {"prompt":"Set the birth date property to 1967-10-21 for Gavriliu Mihaela.","function":"user_profile_set_property","arguments":{"username":"Gavriliu Mihaela","property":"birth date","value":"1967-10-21"}}
 {"prompt":"Set the birth place property to Ierbiceni, Iasi, Romania for Lupu Mihaela.","function":"user_profile_set_property","arguments":{"username":"Lupu Mihaela","property":"birth place","value":"Ierbiceni, Iasi, Romania"}}
 {"prompt":"Set the postal address property to jud. Iasi, sat Valea Lupului, str. Rubinului nr. 12F, bl. Y7, et. parter, ap. 8 for Rotaru Octavian.","function":"user_profile_set_property","arguments":{"username":"Rotaru Octavian","property":"postal address","value":"jud. Iasi, sat Valea Lupului, str. Rubinului nr. 12F, bl. Y7, et. parter, ap. 8"}}
+{"prompt":"Set marital status property to divorced for Rotaru Lucian.","function":"user_profile_set_property","arguments":{"username":"Rotaru Lucian","property":"marital status","value":"divorced"}}
 
 /* user_profile_update_property */
 {"prompt":"Update the personal email address property to aacatrinei@yahoo.com for Acatrinei Alin.","function":"user_profile_update_property","arguments":{"username":"Acatrinei Alin","property":"personal email address","value":"aacatrinei@yahoo.com"}}
@@ -22,30 +23,33 @@
 {"prompt":"Update the driving license type property to professional for Fântânaru Gheorghe.","function":"user_profile_update_property","arguments":{"username":"Fântânaru Gheorghe","property":"driving license type","value":"professional"}}
 {"prompt":"Update the business email address property to rotaru.ionut@gmail.com for Rotaru Ionuț Ciprian.","function":"user_profile_update_property","arguments":{"username":"Rotaru Ionuț Ciprian","property":"business email address","value":"rotaru.ionut@gmail.com"}}
 {"prompt":"Update the last working place property to Delgaz SA for Acatrinei Ingrid.","function":"user_profile_update_property","arguments":{"username":"Acatrinei Ingrid","property":"last working place","value":"Delgaz SA"}}
+{"prompt":"Update the marital status property to married for Vacariu Mircea.","function":"user_profile_update_property","arguments":{"username":"Vacariu Mircea","property":"marital status","value":"married"}}
 
 /* user_profile_rename_property */
 {"prompt":"Rename the personal email address property to personal email for Rotaru Adelina.","function":"user_profile_update_property","arguments":{"username":"Rotaru Adelina","old_property":"personal email address","new_property":"personal email"}}
 {"prompt":"Rename the social security number property to SSN for Miron Gabriela.","function":"user_profile_update_property","arguments":{"username":"Miron Gabriela","old_property":"social security number","new_property":"SSN"}}
 {"prompt":"Rename the last working place property to current working place for Miron Cristian.","function":"user_profile_update_property","arguments":{"username":"Miron Cristian","old_property":"last working place","new_property":"current working place"}}
-{"prompt":"Rename the postal address property to permanent residence for Rotaru Ioan.","function":"user_profile_update_property","arguments":{"username":"Rotaru Ioan","old_property":"postal address","new_property":"permanent residence"}}
-{"prompt":"Rename the marital status property to civil status for Mutica Catalin.","function":"user_profile_update_property","arguments":{"username":"Mutica Catalin","old_property":"civil status","new_property":"married"}}
-{"prompt":"Rename the genre property to sex for Mutica Catalin.","function":"user_profile_update_property","arguments":{"username":"Mutica Catalin","old_property":"marital status","new_property":"married"}}
+{"prompt":"Rename the postal address property to permanent residence for Ana Robertino.","function":"user_profile_update_property","arguments":{"username":"Ana Robertino","old_property":"postal address","new_property":"permanent residence"}}
+{"prompt":"Rename the marital status property to civil status for Mutica Catalin.","function":"user_profile_update_property","arguments":{"username":"Mutica Catalin","old_property":"marital status","new_property":"civil status"}}
+{"prompt":"Rename the genre property to sex for Berfelea Ana-Maria.","function":"user_profile_update_property","arguments":{"username":"Berfelea Ana-Maria","old_property":"genre","new_property":"sex"}}
 
 /* user_profile_remove_property */
 {"prompt":"Remove the profession property from Adam Iosif.","function":"user_profile_remove_property","arguments":{"username":"Adam Iosif","property":"profession"}}
 {"prompt":"Remove the business email address property from Săvulescu Marcel.","function":"user_profile_remove_property","arguments":{"username":"Săvulescu Marcel","property":"business email address"}}
 {"prompt":"Remove the postal code property from Vaino George Viorel.","function":"user_profile_remove_property","arguments":{"username":"Vaino George Viorel","property":"postal code"}}
 {"prompt":"Remove the skill level property from Cornea Sorin.","function":"user_profile_remove_property","arguments":{"username":"Cornea Sorin","property":"skill level"}}
-{"prompt":"Remove the driving license type property from Petrovici Traian.","function":"user_profile_remove_property","arguments":{"username":"Petrovici Traian","property":"driving license type"}}
+{"prompt":"Remove the religion property from Petrovici Traian.","function":"user_profile_remove_property","arguments":{"username":"Petrovici Traian","property":"religion"}}
 {"prompt":"Remove the education property from Trofin Gabriela.","function":"user_profile_remove_property","arguments":{"username":"Trofin Gabriela","property":"education"}}
+{"prompt":"Remove the marital status property from Acatrinei Ingrid.","function":"user_profile_remove_property","arguments":{"username":"Acatrinei Ingrid","property":"marital status"}}
 
 /* user_profile_get_property */
-{"prompt":"Get the personal phone number property of Baciu Vasile.","function":"user_profile_get_property","arguments":{"username":"Baciu Vasile","property":"personal phone number"}}
-{"prompt":"Get the postal address property of Miron Elena Daniela.","function":"user_profile_get_property","arguments":{"username":"Miron Elena Daniela","property":"postal address"}}
-{"prompt":"Get the personal email address property of Rotaru Stefan.","function":"user_profile_get_property","arguments":{"username":"Rotaru Stefan","property":"personal email address"}}
+{"prompt":"Get the postal code property of Baciu Vasile.","function":"user_profile_get_property","arguments":{"username":"Baciu Vasile","property":"postal code"}}
+{"prompt":"Get the blood group property of Miron Elena Daniela.","function":"user_profile_get_property","arguments":{"username":"Miron Elena Daniela","property":"blood group"}}
+{"prompt":"Get the birth date property of Rotaru Stefan.","function":"user_profile_get_property","arguments":{"username":"Rotaru Stefan","property":"birth date"}}
 {"prompt":"Get the working place property of Fantanaru Eugenia.","function":"user_profile_get_property","arguments":{"username":"Fantanaru Eugenia","property":"working place"}}
 {"prompt":"Get the social status property of Dorneanu Deliana.","function":"user_profile_get_property","arguments":{"username":"Dorneanu Deliana","property":"social status"}}
 {"prompt":"Get the hobbies property of Paduraru Adrian.","function":"user_profile_get_property","arguments":{"username":"Paduraru Adrian","property":"hobbies"}}
+{"prompt":"Get the marital status property of Onuțu Simona.","function":"user_profile_get_property","arguments":{"username":"Onuțu Simona","property":"marital status"}}
 
 /* user_profile_list_properties */
 {"prompt":"List user profile properties for Paduraru Mihaela.","function":"user_profile_list_properties","arguments":{"username":"Paduraru Mihaela"}}

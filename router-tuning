@@ -1,0 +1,13 @@
+#!/bin/sh
+
+python instruction-tuning.py \
+--epochs 2 \
+--train-batch 1 \
+--learning-rate 8e-6 \
+--files router/router.train.hf.json \
+--model /gemma-3-270m-it \
+--output-dir router-270m \
+--eval-steps 100 \
+--save-steps 1000 \
+--max-length 200 \
+--assert-max-length
